@@ -32,7 +32,7 @@ if [ ! -d "$SERVER_MODS" ]; then
 fi
 
 python3 - "$SERVER_MODS" <<'EOF'
-import json, os, re, shutil, sys, urllib.request, zipfile
+import json, os, re, shutil, sys, urllib.parse, urllib.request, zipfile
 
 server_mods = sys.argv[1]
 changed = False
@@ -56,7 +56,18 @@ for name in sorted(os.listdir('mods')):
     if side and side.group(1) == 'client':
         continue
     fname = re.search(r'^filename = "(.+)"', txt, re.M).group(1)
-    url = re.search(r'^url = "(.+)"', txt, re.M).group(1)
+    url_m = re.search(r'^url = "(.+)"', txt, re.M)
+    if url_m:
+        url = url_m.group(1)
+    else:
+        # CurseForge metadata mode: no direct url; build the forgecdn one
+        fid = re.search(r'^file-id = (\d+)', txt, re.M)
+        if not fid:
+            print(f"!! {name}: no url and no file-id — skipping", file=sys.stderr)
+            continue
+        fid = int(fid.group(1))
+        url = (f"https://edge.forgecdn.net/files/{fid // 1000}/{fid % 1000}/"
+               + urllib.parse.quote(fname))
 
     if fname in server_jars:
         continue  # already in sync
