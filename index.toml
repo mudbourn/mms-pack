@@ -2488,6 +2488,11 @@ hash = "fa3e6df3d222c94014c840673aa92455210d404eadceb05dd5ab3ae5a3eab6db"
 metafile = true
 
 [[files]]
+file = "mods/mapsyncer-for-xaeroworldmap.pw.toml"
+hash = "1616970b3593908d772ac72a76a4afecd48ac3bd53f0b304f6884cd4b70ce6d2"
+metafile = true
+
+[[files]]
 file = "mods/midnightlib.pw.toml"
 hash = "1a8d8865ba726baf4f953f30737257d78a7c3529795f0b76fa67b90ab5038555"
 metafile = true
