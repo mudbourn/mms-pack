@@ -1,0 +1,13 @@
+name = "MapSyncer-for-XaeroWorldmap"
+filename = "mapsyncer-1.0.3-fabric-1.21.11-bugfix.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/AW5A8Q2T/versions/AuxMuSVP/mapsyncer-1.0.3-fabric-1.21.11-bugfix.jar"
+hash-format = "sha512"
+hash = "be21575a405e6294235ad8002281de7ef4456eec4b20f46388b4f8431152ab13c030774f2b233ba3ad78ffd9e38b96829cb341604765d51a0d381d6e7e476a29"
+
+[update]
+[update.modrinth]
+mod-id = "AW5A8Q2T"
+version = "AuxMuSVP"
