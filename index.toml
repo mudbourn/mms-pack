@@ -2147,11 +2147,6 @@ hash = "adcf2601fe44683e7b762d4f4874ed20299818b2e7eb926545903bb80e55524f"
 metafile = true
 
 [[files]]
-file = "mods/e4mc.pw.toml"
-hash = "a4cdd43fc5eb925a0561ff27db844f7f5b127212b75ca17e8734713c6d54f67c"
-metafile = true
-
-[[files]]
 file = "mods/easters-delight.pw.toml"
 hash = "45b4ea72737208acb14e6b2fddd2716bcb3ba342cc0ba95ca1f435f8037498b6"
 metafile = true
