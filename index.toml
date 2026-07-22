@@ -2503,7 +2503,7 @@ metafile = true
 
 [[files]]
 file = "mods/mms-mod-compat-support.pw.toml"
-hash = "01ea8a60395898d0030a17c667b5feedb4d36e8d17ead8b80f8ee5d6ae503060"
+hash = "0476281ddb77474f9ce87b9a8e0b8f89136eca15261e3c63bc89024a40ebf991"
 metafile = true
 
 [[files]]
