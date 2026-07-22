@@ -1783,10 +1783,6 @@ file = "config/yacl.json5"
 hash = "121b93764159be6fb7dab523b29a844e2bb78400ce8c48f52135a097e9b0006e"
 
 [[files]]
-file = "mms-add.sh"
-hash = "3cda35f4384560fff373f52672049302b2b643f53b6dcf8f01fbd3f6cf6fcf5c"
-
-[[files]]
 file = "mods/absolut-revive.pw.toml"
 hash = "cf778cadc90cec63aaf93fbd7fa1a66c4a59c9b3752217d9606a06f7d687a1c2"
 metafile = true
@@ -27880,10 +27876,6 @@ hash = "6c9c5b061b154cef1cbd3b6269635e79f6215495be8c138785069cb273d41d90"
 file = "servers.dat"
 hash = "2396f65caf7f45bde09efa3cc89af7c93079d694714b44a412486ee7650dc05e"
 preserve = true
-
-[[files]]
-file = "update-title.sh"
-hash = "059655cc4415bcb424649fd817a56ca6976237c885f01b408dc20cb15d69b8f8"
 
 [[files]]
 file = "xaero/minimap/Multiplayer_mc.mudbourn.info/config.txt"

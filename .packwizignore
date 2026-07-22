@@ -1,3 +1,6 @@
 .git/**
 /xaero/world-map/**
 *.mrpack
+/mms-add.sh
+/mms-deploy.sh
+/update-title.sh
