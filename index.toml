@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = ".packignore"
-hash = "f0038124c0ae425e565ef0299b35f07fce689ee09f22f9886e0282f4ac028857"
+hash = "4415a62fe157dbad0e0003ea3d657ce2b59cd7096ad1cbc5af029dffa7e980b5"
 
 [[files]]
 file = "LICENSE"
@@ -1943,10 +1943,6 @@ metafile = true
 file = "mods/call-your-nautilus.pw.toml"
 hash = "1fdff82937e5c40e0ddeeb33ec5922bb2db00d8f95f94434645e4bbe3f43e551"
 metafile = true
-
-[[files]]
-file = "mods/camera-glue-0.2.0.jar"
-hash = "51a9f2883fdaccf4b73d2538ec47d8d40fa25a13ca314b5a90303bab662966e1"
 
 [[files]]
 file = "mods/camera-glue.pw.toml"
