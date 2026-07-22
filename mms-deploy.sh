@@ -1,14 +1,27 @@
 #!/bin/zsh
 # mms-deploy — update the pack, publish to clients, and sync shared mods to the server.
 #
-# 1. packwiz update -a         bump every mod to latest
-# 2. packwiz refresh           rebuild index
-# 3. ./update-title.sh         re-apply preserve flags
-# 4. commit + push             clients pick it up on next Prism launch
-# 5. server sync               diff side=both/server mods against MMSLive01/mods,
+# 1. commit + push             any pending local changes ship first, untangled
+#                              from whatever packwiz is about to touch
+# 2. packwiz update -a         bump every mod to latest
+# 3. packwiz refresh           rebuild index
+# 4. ./update-title.sh         re-apply preserve flags
+# 5. commit + push             the packwiz changes; clients pick both up on
+#                              next Prism launch
+# 6. server sync               diff side=both/server mods against MMSLive01/mods,
 #                              copy new jars in, remove superseded versions
 set -e
 cd ~/Documents/GitHub/mms-pack
+
+# ship pending local edits before packwiz mixes its changes in with them
+git add -A
+if git diff --cached --quiet; then
+    echo "pack: no local changes to commit"
+else
+    git commit -m "local pack changes"
+    git push
+    echo "pack: local changes pushed"
+fi
 
 packwiz update -a
 packwiz refresh
@@ -16,7 +29,7 @@ packwiz refresh
 
 git add -A
 if git diff --cached --quiet; then
-    echo "pack: no changes to commit"
+    echo "pack: no mod updates to commit"
 else
     git commit -m "update mods"
     git push
