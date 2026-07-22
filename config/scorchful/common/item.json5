@@ -1,0 +1,24 @@
+{
+	// Toggle the water breathing effect from Turtle Armor
+	enableTurtleArmorEffects: true,
+	// Multiplies the Lung Capacity attribute value of Turtle Armor.
+	turtleArmorLungCapacityMultiplier: 1.0,
+	// How much Heat Resistance the Fire Protection enchantment should give, per level of Fire Protection.
+	fireProtectionHeatResistancePerLevel: 0.125,
+	// How much damage the Impaling enchantment should do to wet entities, per level of Impaling
+	impalingDamagePerLevel: 2.5,
+	// The threshold for how much body water needs to be collected before Rehydration will automatically rehydrate the player.
+	rehydrationDrinkSizeMultiplier: 1.0,
+	// Multiplier for the Rehydration drink size that controls the maximum amount of body water provided by a full suit of Rehydration armor.
+	maxRehydrationEfficiency: 0.75,
+	// Multiplies the amount of body water provided by consuming Refreshing food and drink.
+	refreshingWaterMultiplier: 1.0,
+	// Multiplies the amount of body water provided by consuming Sustaining food and drink.
+	sustainingWaterMultiplier: 1.0,
+	// Multiplies the amount of body water provided by consuming Hydrating food and drink.
+	hydratingWaterMultiplier: 1.0,
+	// Multiplies the amount of body water lost from consuming Hydrating food and drink.
+	parchingWaterMultiplier: 1.0,
+	// Controls what type of fireball is creating when throwing a fire charge. Small is just like firing from a Dispener and creates a fire on impact. Large is more like a Ghast and creates an explosion, and disabled disables this feature.
+	fireBallThrownType: "SMALL"
+}

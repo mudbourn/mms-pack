@@ -1,0 +1,13 @@
+name = "Combat Log"
+filename = "ly-combat-log-v1.0.3.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/8qIR8MrV/versions/gyOuV6DV/ly-combat-log-v1.0.3.jar"
+hash-format = "sha512"
+hash = "72b856101c0262644c0b4f7a2f21cc8de5fc758cc95b793fa7188d547b4c194fb62213e60078e9834fd76208b573f93c536989985b6723528100b295ec0d12d8"
+
+[update]
+[update.modrinth]
+mod-id = "8qIR8MrV"
+version = "gyOuV6DV"

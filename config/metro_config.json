@@ -1,0 +1,8 @@
+{
+  "speed": 0.83,
+  "spacing": 1.1,
+  "wagons": 5,
+  "brake_distance": 15.0,
+  "chunk_load_radius": 2,
+  "station_wait_multiplier": 1.0
+}

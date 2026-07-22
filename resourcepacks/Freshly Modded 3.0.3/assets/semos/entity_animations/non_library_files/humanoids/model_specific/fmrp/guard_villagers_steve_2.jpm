@@ -1,0 +1,75 @@
+{
+	"credit": "By Seb_Semos",
+	"animations": [
+		{
+			//Guard Villagers extra bits:
+			"shoulder_right.visible":"!nbt(Inventory,raw:iregex:.*chestplate.*)",
+			"shoulder_left.visible":"!nbt(Inventory,raw:iregex:.*chestplate.*)",
+			"quiver.visible":"ifb((varb.shield||varb.shield_offhand),varb.agressive&&varb.range_mainhand,is_alive&&varb.range_mainhand&&!varb.gun_mods)",
+			
+			//
+			"var.head_ty_fix":"if(is_riding,-3,if(varb.in_water,10,0))",
+			"var.body_ty_fix":"if(is_riding,0,if(varb.in_water,0,0))",
+			"var.leg_ty_fix": "if(is_riding,-1,if(varb.in_water,10,0))",
+			"varb.steve_head":"true"
+		},
+		{
+			//Body animations
+			"guard_villagers_face.ty":"0",
+			"head.ty":"var.head_ty_fix",
+			"hat.ty":"if(is_riding,head.ty,head.ty)",
+			"body.ty":"head.ty+var.body_ty_fix",
+			"left_leg.rx":"if(varb.in_water,-sin(limb_swing+age/4)/1.5,is_riding,torad(-80),left_leg.rx)",
+			"left_leg.ty":"var.leg_ty_fix+12",
+			"right_leg.rx":"if(varb.in_water,sin(limb_swing+age/4)/1.5,is_riding,torad(-80),right_leg.rx)",
+			"right_leg.ty":"var.leg_ty_fix+12",
+			"right_blink.visible":"(!is_right_handed&&is_aggressive&&varb.aim)||(var.blink>0.7&&var.blink2>0.5)",
+			"left_blink.visible":"(is_right_handed&&is_aggressive&&varb.aim)||(var.blink>0.7&&var.blink2>0.5)",
+			"var.swim_pose_right_rx":"torad(-35)-torad(sin(age/5)*30)",
+			"var.swim_pose_right_rz":"torad(55)",
+			"var.swim_pose_left_rx":"torad(-35)-torad(sin(age/5)*30)",
+			"var.swim_pose_left_rz":"torad(-55)",
+			"semos_cape.rx": "if(varb.back_shield,-torad(5),if(limb_speed>0.6, -torad(45),limb_speed>0.1, -torad(15),-torad(5)))"
+		},
+		{
+			//Layer following animations
+			"hat.rx":"head.rx",
+			"hat.ry":"head.ry",
+			"hat.rz":"head.rz",
+			"hat.tx":"head.tx",
+			"hat.ty":"head.ty",
+			"hat.tz":"head.tz",	
+			"headwear.rx":"head.rx",
+			"headwear.ry":"head.ry",
+			"headwear.rz":"head.rz",
+			"headwear.tx":"head.tx",
+			"headwear.ty":"head.ty",
+			"headwear.tz":"head.tz",
+			"jacket.rx":"body.rx",
+			"jacket.ry":"body.ry",
+			"jacket.rz":"body.rz",
+			"jacket.tx":"body.tx",
+			"jacket.ty":"body.ty",
+			"jacket.tz":"body.tz",
+			"right_pants.rx":"right_leg.rx",
+			"right_pants.ry":"right_leg.ry",
+			"right_pants.rz":"right_leg.rz",
+			"right_pants.tx":"right_leg.tx",
+			"right_pants.ty":"right_leg.ty",
+			"right_pants.tz":"right_leg.tz",
+			"left_pants.rx":"left_leg.rx",
+			"left_pants.ry":"left_leg.ry",
+			"left_pants.rz":"left_leg.rz",
+			"left_pants.tx":"left_leg.tx",
+			"left_pants.ty":"left_leg.ty",
+			"left_pants.tz":"left_leg.tz",
+			"hat.visible":"true",
+			"headwear.visible":"true",
+			"jacket.visible":"true",
+			"right_pants.visible":"true",
+			"left_pants.visible":"true",
+			"right_sleeve.visible":"true",
+			"left_sleeve.visible":"true"
+		}
+	]
+}

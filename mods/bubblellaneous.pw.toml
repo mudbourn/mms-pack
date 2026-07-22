@@ -1,0 +1,13 @@
+name = "Bubblellaneous"
+filename = "bubblellaneous-3.0.4.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/jDGGUJ9V/versions/5F53Wsaf/bubblellaneous-3.0.4.jar"
+hash-format = "sha512"
+hash = "2479a803a314d26bb150cb2d8f0cc09f04e990f19528cb97482f48ffb3d82de1e259b3e4db817fa322bf076a40b00642848d8548f55218c70a89ba28b511c21a"
+
+[update]
+[update.modrinth]
+mod-id = "jDGGUJ9V"
+version = "5F53Wsaf"

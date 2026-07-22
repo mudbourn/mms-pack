@@ -1,0 +1,17 @@
+[
+  {"version":1},
+  {"ingredient":{"id":"basicweapons:diamond_dagger"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"basicweapons:diamond_glaive"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:bow"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"expanded_weaponry:diamond_greatsword"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"jeg:bulletproof_vest_vi"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"expanded_weaponry:diamond_hammer"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:saddle"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:name_tag"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"weaponsexpanded:diamond_katana"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"basicweapons:diamond_club"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:wooden_sword"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:crossbow"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"weaponsexpanded:chain_crossbow"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"expanded_weaponry:slingshot"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+]

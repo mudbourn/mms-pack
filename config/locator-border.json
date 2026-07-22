@@ -1,0 +1,32 @@
+{
+  "enabled": true,
+  "waypoint": {
+    "inset": 4,
+    "color": "Waypoint",
+    "arrows": false,
+    "playerFace": {
+      "enabled": true,
+      "distanceScale": true,
+      "outline": {
+        "style": "Border",
+        "color": "Black"
+      }
+    },
+    "focus": {
+      "trigger": "Hover",
+      "scale": 1.2,
+      "inset": 2,
+      "labels": {
+        "name": true,
+        "distance": false
+      }
+    }
+  },
+  "overrides": [],
+  "compass": {
+    "enabled": false,
+    "intercardinal": false
+  },
+  "forceWaypoints": false,
+  "animations": true
+}

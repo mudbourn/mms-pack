@@ -1,0 +1,13 @@
+name = "UI Lib"
+filename = "uilib-19.1.0-fabric.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/AOEDs9Al/versions/5cv4tLxe/uilib-19.1.0-fabric.jar"
+hash-format = "sha512"
+hash = "eab4f636e476ba05f55cebaf6f7787f273f86ecdbc0f12879628e0c5c6c180b349641c647af21cb2c3d51db30cdb7a6dec473230132d077fdf4652588297088b"
+
+[update]
+[update.modrinth]
+mod-id = "AOEDs9Al"
+version = "5cv4tLxe"

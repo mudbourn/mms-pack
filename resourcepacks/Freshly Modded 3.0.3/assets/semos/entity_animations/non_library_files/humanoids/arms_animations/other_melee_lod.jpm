@@ -1,0 +1,112 @@
+{
+	"credit": "Created by Semos for Freshly Modded",
+	"animations": [
+		{
+			//Ardonis Staff
+			//Right
+			"var.ardonis_staff_right_arm_rx": "if(varb.agressive,right_arm.rx,torad(-45))",
+			"var.ardonis_staff_right_arm_ry": "if(varb.agressive,right_arm.ry,torad(-90))",
+			"var.ardonis_staff_right_arm_rz": "if(varb.agressive,right_arm.rz,torad(0))",
+			"var.ardonis_staff_right_arm_tx": "if(varb.agressive,right_arm.tx,-8.5)",
+			"var.ardonis_staff_right_arm_ty": "if(varb.agressive,right_arm.ty,2)",
+			"var.ardonis_staff_right_arm_tz": "if(varb.agressive,right_arm.tz,if(varb.attack,0,if(varb.chestplate,4.25,4))",
+			//Left
+			"var.ardonis_staff_left_arm_rx": "if(varb.agressive,left_arm.rx,torad(-45))",
+			"var.ardonis_staff_left_arm_ry": "if(varb.agressive,left_arm.ry,torad(90))",
+			"var.ardonis_staff_left_arm_rz": "if(varb.agressive,left_arm.rz,torad(0))",
+			"var.ardonis_staff_left_arm_tx": "if(varb.agressive,left_arm.tx,8.5)",
+			"var.ardonis_staff_left_arm_ty": "if(varb.agressive,left_arm.ty,2)",
+			"var.ardonis_staff_left_arm_tz": "if(varb.agressive,left_arm.tz,if(varb.chestplate,4.25,4))",
+			//Special Swords
+			//Right
+			"var.special_sword_right_arm_rx": "if(varb.agressive,right_arm.rx,torad(0))",
+			"var.special_sword_right_arm_ry": "if(varb.agressive,right_arm.ry,torad(90))",
+			"var.special_sword_right_arm_rz": "if(varb.agressive,right_arm.rz,torad(-35))",
+			"var.special_sword_right_arm_tx": "if(varb.agressive,right_arm.tx,2)",
+			"var.special_sword_right_arm_ty": "if(varb.agressive,right_arm.ty,-8)",
+			"var.special_sword_right_arm_tz": "if(varb.agressive,right_arm.tz,if(varb.chestplate,2.5,2.25))",
+			//Left
+			"var.special_sword_left_arm_rx": "if(varb.agressive,left_arm.rx,torad(0))",
+			"var.special_sword_left_arm_ry": "if(varb.agressive,left_arm.ry,torad(-90))",
+			"var.special_sword_left_arm_rz": "if(varb.agressive,left_arm.rz,torad(35))",
+			"var.special_sword_left_arm_tx": "if(varb.agressive,left_arm.tx,-2)",
+			"var.special_sword_left_arm_ty": "if(varb.agressive,left_arm.ty,-8)",
+			"var.special_sword_left_arm_tz": "if(varb.agressive,left_arm.tz,if(varb.chestplate,2.5,2.25))",
+			//Mace
+			//Right
+			"var.mace_right_arm_rx": "if(varb.agressive,right_arm.rx,torad(180))",
+			"var.mace_right_arm_ry": "if(varb.agressive,right_arm.ry,torad(90))",
+			"var.mace_right_arm_rz": "if(varb.agressive,right_arm.rz,torad(-35))",
+			"var.mace_right_arm_tx": "if(varb.agressive,right_arm.tx,if(varb.chestplate,6.5,5.5))",
+			"var.mace_right_arm_ty": "if(varb.agressive,right_arm.ty,11.5)",
+			"var.mace_right_arm_tz": "if(varb.agressive,right_arm.tz,2.25)",
+			//Left
+			"var.mace_left_arm_rx": "if(varb.agressive,left_arm.rx,torad(0))",
+			"var.mace_left_arm_ry": "if(varb.agressive,left_arm.ry,torad(90))",
+			"var.mace_left_arm_rz": "if(varb.agressive,left_arm.rz,torad(55))",
+			"var.mace_left_arm_tx": "if(varb.agressive,left_arm.tx,if(varb.chestplate,6.5,5.5))",
+			"var.mace_left_arm_ty": "if(varb.agressive,left_arm.ty,-0.5)",
+			"var.mace_left_arm_tz": "if(varb.agressive,left_arm.tz,4.25)",
+			//Triden
+			//Right
+			"var.trident_right_arm_rx": "if(varb.agressive,right_arm.rx,torad(180))",
+			"var.trident_right_arm_ry": "if(varb.agressive,right_arm.ry,torad(90))",
+			"var.trident_right_arm_rz": "if(varb.agressive,right_arm.rz,torad(-55))",
+			"var.trident_right_arm_tx": "if(varb.agressive,right_arm.tx,8)",
+			"var.trident_right_arm_ty": "if(varb.agressive,right_arm.ty,11.5)",
+			"var.trident_right_arm_tz": "if(varb.agressive,right_arm.tz,2.25)",
+			//Left
+			"var.trident_left_arm_rx": "if(varb.agressive,left_arm.rx,torad(0))",
+			"var.trident_left_arm_ry": "if(varb.agressive,left_arm.ry,torad(90))",
+			"var.trident_left_arm_rz": "if(varb.agressive,left_arm.rz,torad(55))",
+			"var.trident_left_arm_tx": "if(varb.agressive,left_arm.tx,4.5)",
+			"var.trident_left_arm_ty": "if(varb.agressive,left_arm.ty,-0.5)",
+			"var.trident_left_arm_tz": "if(varb.agressive,left_arm.tz,4.25)",
+			//Halbedier
+			//Right
+			"var.halbedier_right_arm_rx": "if(varb.agressive,right_arm.rx,torad(-45))",
+			"var.halbedier_right_arm_ry": "if(varb.agressive,right_arm.ry,torad(-90))",
+			"var.halbedier_right_arm_rz": "if(varb.agressive,right_arm.rz,torad(0))",
+			"var.halbedier_right_arm_tx": "if(varb.agressive,right_arm.tx,-8.5)",
+			"var.halbedier_right_arm_ty": "if(varb.agressive,right_arm.ty,2)",
+			"var.halbedier_right_arm_tz": "if(varb.agressive,right_arm.tz,if(varb.chestplate,4.5,3.5))",
+			//Left
+			"var.halbedier_left_arm_rx": "if(varb.agressive,left_arm.rx,torad(-45))",
+			"var.halbedier_left_arm_ry": "if(varb.agressive,left_arm.ry,torad(90))",
+			"var.halbedier_left_arm_rz": "if(varb.agressive,left_arm.rz,torad(0))",
+			"var.halbedier_left_arm_tx": "if(varb.agressive,left_arm.tx,8.5)",
+			"var.halbedier_left_arm_ty": "if(varb.agressive,left_arm.ty,2)",
+			"var.halbedier_left_arm_tz": "if(varb.agressive,left_arm.tz,if(varb.chestplate,4.5,3.5))",
+			//Scythe
+			//Right
+			"var.scythe_right_arm_rx": "if(varb.agressive,right_arm.rx,torad(-30))",
+			"var.scythe_right_arm_ry": "if(varb.agressive,right_arm.ry,torad(-90))",
+			"var.scythe_right_arm_rz": "if(varb.agressive,right_arm.rz,torad(0))",
+			"var.scythe_right_arm_tx": "if(varb.agressive,right_arm.tx,-6)",
+			"var.scythe_right_arm_ty": "if(varb.agressive,right_arm.ty,0)",
+			"var.scythe_right_arm_tz": "if(varb.agressive,right_arm.tz,if(varb.chestplate,4.5,4))",
+			//Left
+			"var.scythe_left_arm_rx": "if(varb.agressive,left_arm.rx,torad(-30))",
+			"var.scythe_left_arm_ry": "if(varb.agressive,left_arm.ry,torad(90))",
+			"var.scythe_left_arm_rz": "if(varb.agressive,left_arm.rz,torad(0))",
+			"var.scythe_left_arm_tx": "if(varb.agressive,left_arm.tx,6)",
+			"var.scythe_left_arm_ty": "if(varb.agressive,left_arm.ty,0)",
+			"var.scythe_left_arm_tz": "if(varb.agressive,left_arm.tz,if(varb.chestplate,4.5,4))",
+			//Fish
+			//Right
+			"var.fish_right_arm_rx": "if(varb.agressive,right_arm.rx,torad(0))",
+			"var.fish_right_arm_ry": "if(varb.agressive,right_arm.ry,0)",
+			"var.fish_right_arm_rz": "if(varb.agressive,right_arm.rz,torad(0))",
+			"var.fish_right_arm_tx": "if(varb.agressive,right_arm.tx,6.5)",
+			"var.fish_right_arm_ty": "if(varb.agressive,right_arm.ty,if(varb.chestplate,-12,-11))",
+			"var.fish_right_arm_tz": "if(varb.agressive,right_arm.tz,7)",
+			//Left
+			"var.fish_left_arm_rx": "if(varb.agressive,left_arm.rx,torad(0))",
+			"var.fish_left_arm_ry": "if(varb.agressive,left_arm.ry,0.2)",
+			"var.fish_left_arm_rz": "if(varb.agressive,left_arm.rz,torad(0))",
+			"var.fish_left_arm_tx": "if(varb.agressive,left_arm.tx,-6.5)",
+			"var.fish_left_arm_ty": "if(varb.agressive,left_arm.ty,if(varb.chestplate,-12,-11))",
+			"var.fish_left_arm_tz": "if(varb.agressive,left_arm.tz,7)"			
+		}
+	]
+}

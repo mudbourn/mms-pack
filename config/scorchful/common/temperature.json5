@@ -1,0 +1,44 @@
+{
+	// Multiplies the final temperature point change of all non-environment heating sources like fire and lava.
+	heatingMultiplier: 1.0,
+	// Multiplies the final temperature point change of all non-environment cooling sources like sweating and powder snow.
+	coolingMultiplier: 1.0,
+	// Multiplies the final temperature point change of an environment temperature change.
+	environmentTemperatureMultiplier: 1.0,
+	// Global toggle on all heating from the environment.
+	enableEnvironmentHeating: true,
+	// How many ticks should occur between applying heat to a player from the environment. Setting this to large values can be used to slow heat down. This may not be set to a value less than 1.
+	environmentHeatingTickInterval: 1,
+	// The maximum temperature scale that the environment can heat players to. Given as a percentage from 0 to 1 (0 = 0%, 1 = 100%)
+	maxEnvironmentHeatingScale: 1.0,
+	// Cutoff temperature for overheating in Celsius. Biomes at or above this temperature will apply environment heating to players. May not be less than 25°C.
+	minTemperatureForHeatC: 30.0,
+	// Specifies the number of Celsius/Kelvin degrees the temperature must be above the minimum heat threshold for each one-point increase in player temperature per tick. Must be positive and non-zero.
+	degreesCPerTemperatureIncrease: 10.0,
+	// A multiplier for overall sweating efficiency. Large values mean you will cool down faster from being wet.
+	sweatEfficiency: 1.0,
+	// A multiplier for sweating efficiency when the relative humidity is between 65% and 80^. This applies to rainy climates like Jungles, Swamps, etc.
+	humidBiomeSweatEfficiencyMultiplier: 1.0,
+	// A multiplier for sweating efficiency when the relative humidity is at or above 80%. This applies to rainy climates like Jungles, Swamps during the Wet Season (if a seasons mod is installed); to cave biomes; and to all non-arid biomes when it rains.
+	extraHumidBiomeSweatEfficiencyMultiplier: 1.0,
+	// A multiplier for sweating efficiency when the relative humidity is at or below 20%. This applies to arid climates like Deserts, Badlands, and Savannas, as well as The Nether.
+	aridBiomeSweatEfficiencyMultiplier: 1.0,
+	// Multiplies the temperature point change applied to entities when struck by a Fire Charge.
+	fireballTemperatureMultiplier: 1.0,
+	// Multiplies the temperature point change applied to entities on fire each tick.
+	burningTemperatureMultiplier: 1.0,
+	// Multiplies the temperature point change applied to entities that are on fire, but also have the Fire Resistance effect, each tick.
+	burningTemperatureMultiplierWithFireResistance: 0.25,
+	// Multiplies the temperature point change applied to entities swimming in Lava each tick.
+	inLavaTemperatureMultiplier: 1.0,
+	// Multiplies the temperature point change applied entities that are wet, each tick.
+	soakedTemperatureMultiplier: 1.0,
+	// Multiplies the temperature point change applied to entities in Powder Snow each tick. This only applies to entities that are currently warm.
+	powderSnowTemperatureMultiplier: 1.0,
+	// Multiplies the temperature point change applied each tick from entities standing on ice.
+	iceTemperatureMultiplier: 1.0,
+	// Multiplies the temperature point change applied to players after eating items with the tag #scorchful:is_cooling_food.
+	coolingFoodTemperatureMultiplier: 1.0,
+	// Multiplies the cooling to applied only to Striders each tick they are not in Lava.
+	striderCoolingTemperatureMultiplier: 1.0
+}

@@ -1,0 +1,9 @@
+{
+  "squids_drop_calamari": true,
+  "enable_villager_trades": true,
+  "enable_wandering_trader_trades": true,
+  "enable_potions": true,
+  "wild_cotton_chance": 32,
+  "wild_bell_peppers_chance": 15,
+  "wild_coffee_chance": 15
+}

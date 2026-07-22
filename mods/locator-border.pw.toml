@@ -1,0 +1,13 @@
+name = "Locator Border"
+filename = "locator-border-1.2.9+1.21.11-fabric.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/GFeIwdiw/versions/q993xExg/locator-border-1.2.9%2B1.21.11-fabric.jar"
+hash-format = "sha512"
+hash = "ed1baa8a7f6c118b5103cb1d0cab3eac62cf3e4b4be11e1ea83f78e4b6aa0aa5a7d071d5c4eb11265d0dc2e1428512197dbab6f29d916e7dae969d129449618e"
+
+[update]
+[update.modrinth]
+mod-id = "GFeIwdiw"
+version = "q993xExg"

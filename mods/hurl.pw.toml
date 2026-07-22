@@ -1,0 +1,13 @@
+name = "Hurl"
+filename = "hurl-1.0.4-1.21.11.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/aIPHvVbO/versions/P9iXLZtQ/hurl-1.0.4-1.21.11.jar"
+hash-format = "sha512"
+hash = "693bc055e980e5de63952e4a6b711c91f4370f230571221a1205279931743b332c1168970274d1ec006837fa88e3f64fefe46938c9870129348b4903442d9e8e"
+
+[update]
+[update.modrinth]
+mod-id = "aIPHvVbO"
+version = "P9iXLZtQ"

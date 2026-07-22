@@ -1,0 +1,93 @@
+{
+	"credit": "Created by FreshLX for Fresh Animations",
+	"textureSize": [64, 64],
+	"models": [
+		{
+			"part":"root",
+			"id":"root",
+			"model":"chest_animations.jpm",
+			"attach":"true"
+		},
+		{
+			"part": "lid",
+			"id": "lid",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0],
+			"submodels": [
+				{
+					"id": "Created_by_FreshLX_for_Fresh_Animations",
+					"invertAxis": "xy",
+					"translate": [0, 0, 0]
+				}
+			],
+			"animations": [
+				{
+					"varb.unique": "false"
+				}
+			]
+		},
+		{
+			"part": "base",
+			"id": "base",
+			"invertAxis": "xy",
+			"translate": [8, 0, 0],
+			"rotate": [-180, 0, 0],
+			"submodels": [
+				{
+					"id": "Created_by_FreshLX_for_Fresh_Animations",
+					"invertAxis": "xy",
+					"translate": [0, 0, 0]
+				},
+				{
+					"id": "back_pivot",
+					"invertAxis": "xy",
+					"translate": [-15, 0, -7],
+					"submodels": [
+						{
+							"id": "front_pivot",
+							"invertAxis": "xy",
+							"translate": [30, 0, 14],
+							"boxes": [
+								{"coordinates": [-30, -10, -14, 15, 10, 14], "textureOffset": [0, 19]}
+							],
+							"submodels": [
+								{
+									"id": "lid2",
+									"invertAxis": "xy",
+									"translate": [-15, -9, -14],
+									"boxes": [
+										{"coordinates": [-15, -5, 0, 15, 5, 14], "textureOffset": [0, 0]}
+									],
+									"submodels": [
+										{
+											"id": "latch",
+											"invertAxis": "xy",
+											"translate": [0, -2, 14],
+											"boxes": [
+												{"coordinates": [-1, 0, 0, 1, 4, 1], "textureOffset": [0, 0]}
+											]
+										}
+									]
+								},
+								{
+									"id": "button",
+									"invertAxis": "xy",
+									"translate": [-15, -8, -1],
+									"boxes": [
+										{"coordinates": [-1, -1, 0, 1, 2, 1], "textureOffset": [0, 5]}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"part": "knob",
+			"id": "knob",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		}
+	]
+}

@@ -1,0 +1,206 @@
+{
+	"credit": "Created by FreshLX for Fresh Animations",
+	"textureSize": [128, 128],
+	"models": [
+		{
+			"part": "bottom",
+			"id": "bottom",
+			"invertAxis": "xy",
+			"translate": [0, 8, -1],
+			"rotate": [0, -180, 0],
+			"submodels": [
+				{
+					"id": "Created_by_FreshLX_for_Fresh_Animations",
+					"invertAxis": "xy",
+					"translate": [0, 0, 0]
+				},
+				{
+					"id": "rotation",
+					"invertAxis": "xy",
+					"translate": [0, 2, 1],
+					"submodels": [
+						{
+							"id": "base",
+							"invertAxis": "xy",
+							"translate": [0, 0, 0],
+							"rotate": [-90, -90, 0],
+							"boxes": [
+								{"coordinates": [-14.5, -10, 2, 28, 20, 4], "textureOffset": [0, 0]},
+								{"coordinates": [-14.5, -8, -2, 28, 16, 4], "textureOffset": [0, 0]}
+							]
+						},
+						{
+							"id": "paddles",
+							"invertAxis": "xy",
+							"translate": [0, 3, 0],
+							"rotate": [0, -90, 0],
+							"submodels": [
+								{
+									"id": "paddle_left2",
+									"invertAxis": "xy",
+									"translate": [-4.5, 5, -11],
+									"rotate": [135, 0, 0],
+									"submodels": [
+										{
+											"id": "paddle_left_roll",
+											"invertAxis": "xy",
+											"translate": [0, 0, -5],
+											"boxes": [
+												{"coordinates": [0.01, -2, 13, 1, 6, 7], "textureOffset": [0, 24]},
+												{"coordinates": [-1, -1, 0, 2, 2, 18], "textureOffset": [0, 24]}
+											]
+										}
+									]
+								},
+								{
+									"id": "paddle_right2",
+									"invertAxis": "xy",
+									"translate": [-4.5, 5, 11],
+									"rotate": [135, -180, 0],
+									"submodels": [
+										{
+											"id": "paddle_right_roll",
+											"invertAxis": "xy",
+											"translate": [0, 0, -5],
+											"boxes": [
+												{"coordinates": [-1, -1, 0, 2, 2, 18], "textureOffset": [40, 24]},
+												{"coordinates": [-1.01, -2, 13, 1, 6, 7], "textureOffset": [40, 24]}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"id": "chest",
+							"invertAxis": "xy",
+							"translate": [0, 6, 7],
+							"boxes": [
+								{"coordinates": [-6, 0, -5.5, 12, 8, 12], "textureOffset": [0, 76]}
+							],
+							"submodels": [
+								{
+									"id": "lid",
+									"invertAxis": "xy",
+									"translate": [0, 7, 6.5],
+									"boxes": [
+										{"coordinates": [-6, 0, -12, 12, 5, 12], "textureOffset": [0, 59]}
+									],
+									"submodels": [
+										{
+											"id": "latch",
+											"invertAxis": "xy",
+											"translate": [0, 2, -12],
+											"boxes": [
+												{"coordinates": [-1, -4, -1, 2, 4, 1], "textureOffset": [0, 59]}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"animations": [
+				{
+					"varb.fcc": "frame_counter == var.frame_counter_prev",
+					"var.r": "random(id)*pi*4",
+					"varb.paddlingL": "paddle_left.rx!=-0.65449846",
+					"varb.paddlingR": "paddle_right.rx!=-0.65449846",
+					"var.moveA": "clamp( if( varb.fcc, var.moveA, limb_swing!=0 && varb.paddlingL && varb.paddlingR, var.moveA +2 *frame_time, var.moveA -2 *frame_time ), 0, 1 )",
+					"var.water": " clamp( if( varb.fcc, var.water, is_in_water && !is_on_ground, var.water  +6 *frame_time, var.water  -2 *frame_time ), 0, 1 )",
+					"var.ground": "clamp( if( varb.fcc, var.ground,                is_on_ground, var.ground +6 *frame_time, var.ground -2 *frame_time ), 0, 1 )",
+					"var.spinLA": "clamp( if( varb.fcc, var.spinLA, !varb.paddlingL &&  varb.paddlingR, var.spinLA +2 *frame_time, var.spinLA -2 *frame_time ), 0, 1 )",
+					"var.spinRA": "clamp( if( varb.fcc, var.spinRA,  varb.paddlingL && !varb.paddlingR, var.spinRA +2 *frame_time, var.spinRA -2 *frame_time ), 0, 1 )",
+					"var.move": " ( 0.5-0.5*cos( pow( var.moveA , 2 )*pi ) )",
+					"var.spinL": "( 0.5-0.5*cos( pow( var.spinLA, 2 )*pi ) )",
+					"var.spinR": "( 0.5-0.5*cos( pow( var.spinRA, 2 )*pi ) )",
+					"var.static": "if(between(random(id), 0, 0.3), 1, between(random(id), 0.3, 0.6), 2, 0)",
+					"var.yrot_offset": "if( varb.fcc, var.yrot_offset, var.yrot_offset +if( between( var.pre_roty-rot_y, -pi*2, -pi*2+0.2 ), -pi*2, between( var.pre_roty-rot_y, pi*2-0.2, pi*2 ), pi*2, 0 ) )",
+					"var.roty": "rot_y +var.yrot_offset",
+					"var.rotation": "if( varb.fcc, var.rotation, var.roty*min(1,frame_time*8) +var.rotation*max(0,1-frame_time*8) )",
+					"var.tilt": "clamp( (var.rotation-var.roty)*1.5, -1, 1 )",
+					"var.slide": "clamp( if( varb.fcc || between( var.tilt, -0.2, 0.2 ), var.slide, var.slide -45 *frame_time*var.tilt*abs(var.tilt) ), -1, 1 )",
+					"var.paddleLrx": "if( varb.fcc, var.paddleLtx, paddle_left.rx *min(1,frame_time*if(varb.paddlingL, 16, if(is_on_ground,6,2))) +var.paddleLrx*max(0,1-frame_time*if(varb.paddlingL, 16, if(is_on_ground,6,2))) )",
+					"var.paddleRrx": "if( varb.fcc, var.paddleRtx, paddle_right.rx*min(1,frame_time*if(varb.paddlingR, 16, if(is_on_ground,6,2))) +var.paddleRrx*max(0,1-frame_time*if(varb.paddlingR, 16, if(is_on_ground,6,2))) )",
+					"var.paddleLrz": "if( varb.fcc, var.paddleLtz, paddle_left.rz *min(1,frame_time*if(varb.paddlingL, 16, if(is_on_ground,6,2))) +var.paddleLrz*max(0,1-frame_time*if(varb.paddlingL, 16, if(is_on_ground,6,2))) )",
+					"var.paddleRrz": "if( varb.fcc, var.paddleRtz, paddle_right.rz*min(1,frame_time*if(varb.paddlingR, 16, if(is_on_ground,6,2))) +var.paddleRrz*max(0,1-frame_time*if(varb.paddlingR, 16, if(is_on_ground,6,2))) )",
+					"var.paddleLry": "if( varb.fcc, var.paddleLty, paddle_left.ry *min(1,frame_time*if(varb.paddlingL, 16, if(is_on_ground,6,2))) +var.paddleLry*max(0,1-frame_time*if(varb.paddlingL, 16, if(is_on_ground,6,2))) )",
+					"var.paddleRry": "if( varb.fcc, var.paddleRty, paddle_right.ry*min(1,frame_time*if(varb.paddlingR, 16, if(is_on_ground,6,2))) +var.paddleRry*max(0,1-frame_time*if(varb.paddlingR, 16, if(is_on_ground,6,2))) )"
+				},
+				{
+					"bottom.rx": "0",
+					"bottom.ry": "pi/2",
+					"bottom.rz": "0",
+					"bottom.tx": "14.5",
+					"bottom.ty": "4",
+					"bottom.tz": "0",
+					"var.base_tx": "0",
+					"var.base_tz": "14 +( (var.paddleLrx+var.paddleRrx+1.3)+(var.paddleLry-var.paddleRry+1.8) )/2*(1-var.water)",
+					"var.base_ty": "8 +( sin(var.r+time/15   )/6   +sin(var.r+time/12   )/8                                                    )*var.water  +torad( clamp( (var.paddleLrx+var.paddleRrx+1.3)*4 +1, -3, 0)*12 )*(1-var.water)",
+					"var.base_rx": "   ( cos(var.r+time/10.5 )/120 +cos(var.r+time/16.5 )/160 +torad((-(var.paddleLrx+var.paddleRrx+1.3)*1.5)) )*var.water  +torad( clamp( (var.paddleLrx+var.paddleRrx+1.3)*4 +1, -3, 0)    )*(1-var.water) +torad( -if(is_ridden,1,6) )*(1-var.ground)",
+					"var.base_rz": "   ( cos(var.r+time/12.75)/90  +cos(var.r+time/14.25)/120 +torad(( (var.paddleLry+var.paddleRry-pi )*3  )) )*var.water +(torad( clamp( (var.paddleLry+var.paddleRry-pi)*3    , -3, 3)    ) -var.base_rx*5*var.tilt )*(1-var.water) +torad( clamp(-20*var.tilt +3*var.slide,-10+3*var.move, 10-3*var.move ) )*(1-var.ground)",
+					"var.base_ry": "0",
+					"rotation.tx": "var.base_tx",
+					"rotation.tz": "var.base_tz",
+					"rotation.ty": "var.base_ty",
+					"rotation.rx": "var.base_rx",
+					"rotation.rz": "var.base_rz",
+					"rotation.ry": "var.base_ry"
+				},
+				{
+					"paddle_left2.tx": " if(!is_ridden, if(var.static==1,       6   , var.static==2,     6.4   ,       4.1  ), paddle_left.tx  +( ( var.paddleLry*4-3 )*(1-var.tilt*1.5) +3*clamp(-var.tilt*3, 0, 1) )           -( (-var.paddleRry*4-3+12.5)*(1+var.tilt*1.5) +9*clamp( var.tilt*3, 0, 1) )*var.spinL +6 )",
+					"paddle_right2.tx": "if(!is_ridden, if(var.static==1,       3.2 , var.static==2,     3.4   ,      -1.4  ), paddle_right.tx -( ( var.paddleLry*4-3 )*(1-var.tilt*1.5) +9*clamp(-var.tilt*3, 0, 1) )*var.spinR +( (-var.paddleRry*4-3+12.5)*(1+var.tilt*1.5) +3*clamp( var.tilt*3, 0, 1) )           +6 )",
+					"paddle_left2.ty": " if(!is_ridden, if(var.static==1,      -5.2 , var.static==2,    -3.1   ,      -5.2  ), paddle_left.ty  +(1-var.water) ) -1",
+					"paddle_right2.ty": "if(!is_ridden, if(var.static==1,      -3   , var.static==2,    -3     ,      -3    ), paddle_right.ty +(1-var.water) ) -1",
+					"paddle_left2.tz": " if(!is_ridden, if(var.static==1,      -6.55, var.static==2,     6.2   ,      -5.6  ), paddle_left.tz  +1 )",
+					"paddle_right2.tz": "if(!is_ridden, if(var.static==1,       6.65, var.static==2,     6.1   ,      -7.3  ), paddle_right.tz -1 )",
+					"paddle_left2.rx": " if(!is_ridden, if(var.static==1, torad( 20), var.static==2, torad(170), torad(  0) ), clamp(  ( var.paddleLrx*(1-var.tilt*1.5) +torad(-90*var.tilt *(1-var.spinL)          ) )           +( var.paddleRrx*(1+var.tilt*1.5) +torad( 90*var.tilt                                     ) )*var.spinL +0.1*(1-var.water), -0.63-2.37*var.water, 3 ) -( sin(-pi/4+var.r+time/15)/32 +sin(-pi/4+var.r+time/12)/36)*var.water +var.base_rx*2*(1-var.water) +var.base_rz*2 )",
+					"paddle_right2.rx": "if(!is_ridden, if(var.static==1, torad(170), var.static==2, torad(180), torad( 68) ), clamp(  ( var.paddleLrx*(1-var.tilt*1.5) +torad(-90*var.tilt                         ) )*var.spinR +( var.paddleRrx*(1+var.tilt*1.5) +torad( 90*var.tilt *(1-var.spinR)                      ) )           +0.1*(1-var.water), -0.63-2.37*var.water, 3 ) +(-sin(-pi/4+var.r+time/15)/32 -sin(-pi/4+var.r+time/12)/36)*var.water +var.base_rx*2*(1-var.water) -var.base_rz*2 )",
+					"paddle_left2.rz": " if(!is_ridden, if(var.static==1, torad(106), var.static==2, torad(100), torad( 90) ),         ( var.paddleLrz*(1-var.tilt*1.5)                                               )           -( var.paddleRrz*(1+var.tilt*1.5)                                                           )*var.spinL -0.23*var.move*(1-2*var.spinL)*(1-var.water) )",
+					"paddle_right2.rz": "if(!is_ridden, if(var.static==1, torad( 90), var.static==2, torad( 90), torad( 90) ),        -( var.paddleLrz*(1-var.tilt*1.5)                                               )*var.spinR +( var.paddleRrz*(1+var.tilt*1.5)                                                           )           -0.23*var.move*(1-2*var.spinR)*(1-var.water) )",
+					"paddle_left2.ry": " if(!is_ridden, if(var.static==1, torad(  4), var.static==2, torad(1.5), torad( 10) ),         ( var.paddleLry*(1-var.tilt    ) +torad(-90*max(0,var.tilt) *(1-var.spinL)   ) )           +( var.paddleRry*(1+var.tilt    ) +torad(-90*min(0,var.tilt)  -180          -180*var.tilt ) )*var.spinL )",
+					"paddle_right2.ry": "if(!is_ridden, if(var.static==1, torad(  0), var.static==2, torad(  0), torad(  0) ),         ( var.paddleLry*(1-var.tilt    ) +torad(-90*max(0,var.tilt)                  ) )*var.spinR +( var.paddleRry*(1+var.tilt    ) +torad(-90*min(0,var.tilt) *(1-var.spinR) -180*var.tilt ) )           )",
+					"paddle_left_roll.rz": " if(!is_ridden, 0, torad(-160*var.spinL )*var.water +1.6*(1-var.water) )",
+					"paddle_right_roll.rz": "if(!is_ridden, 0, torad( 160*var.spinR )*var.water -1.6*(1-var.water) )",
+					"chest.tx": "var.slide*2"
+				},
+				{
+					"var.pre_roty": "rot_y",
+					"var.frame_counter_prev": "frame_counter"
+				}
+			]
+		},
+		{
+			"part": "paddle_left",
+			"id": "paddle_left",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		},
+		{
+			"part": "paddle_right",
+			"id": "paddle_right",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		},
+		{
+			"part": "chest_base",
+			"id": "chest_base",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		},
+		{
+			"part": "chest_lid",
+			"id": "chest_lid",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		},
+		{
+			"part": "chest_knob",
+			"id": "chest_knob",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		}
+	]
+}

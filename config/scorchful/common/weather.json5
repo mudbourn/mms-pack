@@ -1,0 +1,10 @@
+{
+	// Enable/disable sand piles accumulating on the ground during sandstorms.
+	doSandPileAccumulation: true,
+	// Sets the maximum height of sand piles that can accumulate during sand storms. Maximum value is 8.
+	sandPileAccumulationHeight: 1,
+	// How much to multiply the total speed of entities on the surface by during Sandstorms. Negative values provide slowness, positive values provide speed.
+	sandstormSlownessAmountPercent: -0.3,
+	// How much to multiply the total follow range of entities on the surface by during Sandstorms. Negative values decrease follow range, positive values increase it.
+	sandstormFollowRangeReductionPercent: -0.5
+}

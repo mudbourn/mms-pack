@@ -1,0 +1,13 @@
+name = "Mob Civil War"
+filename = "civil-war-1.2.0-mc1.21.11.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/JS7W12Jd/versions/mpVVvN7u/civil-war-1.2.0-mc1.21.11.jar"
+hash-format = "sha512"
+hash = "fffb9f834f6e0d6abce740e6f6b6334e97420d270678ea361096988960b66f6753d017822e752ec276710d3dedf7ee68d8309b9fd98241fbdc341653464adbcd"
+
+[update]
+[update.modrinth]
+mod-id = "JS7W12Jd"
+version = "mpVVvN7u"

@@ -1,0 +1,13 @@
+name = "Expanded Weaponry"
+filename = "expanded_weaponry-0.8.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/q8rZUpjS/versions/91zQqaH6/expanded_weaponry-0.8.jar"
+hash-format = "sha512"
+hash = "d309ea6248958e28ad032329859d20d84ad504d08703b82a661935f341928f058769cc945c66a1b107316603ca83490d077f34210ac457d00b9ac626544fc540"
+
+[update]
+[update.modrinth]
+mod-id = "q8rZUpjS"
+version = "91zQqaH6"

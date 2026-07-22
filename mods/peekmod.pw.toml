@@ -1,0 +1,13 @@
+name = "Let Me Peek"
+filename = "peek-1.0.3+1.21.11.jar"
+side = "server"
+
+[download]
+url = "https://cdn.modrinth.com/data/1yiACNNS/versions/Wz3tPUOW/peek-1.0.3%2B1.21.11.jar"
+hash-format = "sha512"
+hash = "8ea86d4cb40380bd37a6b1e2b771a3fd22983e1ea9e2cb4f4b8643c4c0e03e87790d7860b1c001672f4d3f83f575a43ced60d1d999b278bc8ec6bcfc43cfbd57"
+
+[update]
+[update.modrinth]
+mod-id = "1yiACNNS"
+version = "Wz3tPUOW"

@@ -1,0 +1,22 @@
+{
+	// Toggle for all fog density and color changing features
+	enableFogChanges: true,
+	// Toggles the fog density and color changes for sandstorms
+	enableSandstormFog: true,
+	// Toggles the fog density and color changes for blizzards
+	enableBlizzardFog: true,
+	// Toggles the fog density and color changes for dense fog (affects Pale Gardens and Swamps)
+	enableDenseFog: true,
+	// Enables ambient wind particles in windy biomes
+	enableAmbientWindParticles: true,
+	// Enables ambient wind sounds in windy biomes, has no effect in deserts/badlands due to vanilla mechanic
+	enableAmbientWindSounds: true,
+	// Enables the strong wind sounds from sandstorms and blizzards
+	enableStrongWindSounds: true,
+	// Enables the black rain effect in biomes like the Pale Garden
+	enableBlackRain: true,
+	// Adjusts how close fog closes in during weather, must be positive
+	fogDistanceMultiplier: 1.0,
+	// Adjusts how often ambient wind particles appear (does not affect sandstorms), must be positive
+	windParticleChanceMultiplier: 1.0
+}

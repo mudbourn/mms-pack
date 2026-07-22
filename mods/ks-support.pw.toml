@@ -1,0 +1,10 @@
+name = "Ks Support"
+filename = "ks-support-0.3.0.jar"
+side = "both"
+
+[download]
+url = "https://raw.githubusercontent.com/mudbourn/mms-pack/main/mods/ks-support-0.3.0.jar"
+hash-format = "sha512"
+hash = "42aabee8413c65072d790f1e2a4a8ae524b55a0b297eecd1b8a97c6634c66e872e1eaedf32e3e03b1295d036a51580836e8012426ea2daf2f8a1dd112d387c95"
+
+[update]

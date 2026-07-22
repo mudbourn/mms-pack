@@ -1,0 +1,13 @@
+name = "Trigger Happy Ghast"
+filename = "TriggerHappyGhast-Fabric-1.21.11-2.3.0.jar"
+side = "server"
+
+[download]
+url = "https://cdn.modrinth.com/data/LP6eu152/versions/DmVFN3Be/TriggerHappyGhast-Fabric-1.21.11-2.3.0.jar"
+hash-format = "sha512"
+hash = "d2a2b9d8d84731d79e0668e4be19dc3943842934a1069c2d8f7d8b9ad5446f7a79ed149b17329be51f45489419de967b7f120aa81701085c8c71e931fc63c4e1"
+
+[update]
+[update.modrinth]
+mod-id = "LP6eu152"
+version = "DmVFN3Be"

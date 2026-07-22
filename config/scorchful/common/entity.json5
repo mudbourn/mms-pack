@@ -1,0 +1,12 @@
+{
+	// Toggles hallucinations when overheating in the desert like boats and flowers.
+	enableDesertVisions: true,
+	// How much to multiply an entity's (including players) hostile mob detection range by.
+	fearDetectionRangeMultiplier: 2.0,
+	// Multiplies the soaking points that are applied when an entity is hit with any Splash Potion.
+	soakingFromSplashPotionsMultiplier: 1.0,
+	// How many soaking points to add when touching water or rain each tick. Note that submerging yourself in water will fully soak you, regardless of what this is set to.
+	touchingWaterWetnessIncrease: 1,
+	// Multiplies the soaking points that are removed from an entity that is on fire each tick.
+	onFireDryRateMultiplier: 1.0
+}

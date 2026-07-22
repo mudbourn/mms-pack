@@ -1,0 +1,13 @@
+name = "Shield Upgrades"
+filename = "shield-upgrades-1.1.2.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/qhzGVNi1/versions/FRNsqOsE/shield-upgrades-1.1.2.jar"
+hash-format = "sha512"
+hash = "f09ad77cb09b523e70c660cdc129b66b7de09c0f226e2346b1303b8601c992d71f168d93025446a3a8fb7f5dc8a9a55cffe6ff4edef15df61d230b449724e398"
+
+[update]
+[update.modrinth]
+mod-id = "qhzGVNi1"
+version = "FRNsqOsE"

@@ -1,0 +1,20 @@
+{
+	"credit": "Created by Semos",
+	"textureSize": [128, 128],
+	"id": "attachement_points_right",
+	"invertAxis": "xy",
+	"translate": [0, 0, 0],
+	"submodels": [
+		{
+			"id": "right_handheld_item",
+			"invertAxis": "xy",
+			"translate": [5, 22, 0],
+			"boxes": [
+				{"coordinates": [-1, -10, -2, 4, 12, 4], "textureOffset": [33, 32]}
+			],
+			"attachments": {
+				"right_handheld_item": [0, 0, 0]
+			}
+		}			
+	]
+}

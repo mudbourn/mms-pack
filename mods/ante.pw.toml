@@ -1,0 +1,13 @@
+name = "Anvil Never Too Expensive"
+filename = "AnvilNeverTooExpensive-fabric-1.21+-1.2.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/TEOa2X8B/versions/Q4HKC0iZ/AnvilNeverTooExpensive-fabric-1.21%2B-1.2.1.jar"
+hash-format = "sha512"
+hash = "975eb796968ab27f2c1f237c12866ee8ad3e123a57ca0997bcd5040b6486fe1f04a6112af4482f3e9b83efaf053771b0437c7bf823bc2ed7418930ae94f53fe0"
+
+[update]
+[update.modrinth]
+mod-id = "TEOa2X8B"
+version = "Q4HKC0iZ"

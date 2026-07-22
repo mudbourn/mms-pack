@@ -1,0 +1,13 @@
+name = "Invisible Armor Recipe"
+filename = "invisible-armor-recipe-1.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/cc6cTA8L/versions/6DEyG7NA/invisible-armor-recipe-1.0.jar"
+hash-format = "sha512"
+hash = "896c453d170bc98213146096840b5732e13db0a8144c330f0ede92e290852ceb717290fcf21e4a0d8c446c802d612c7d4b7e264ceca9205a2bb44b321de71632"
+
+[update]
+[update.modrinth]
+mod-id = "cc6cTA8L"
+version = "6DEyG7NA"

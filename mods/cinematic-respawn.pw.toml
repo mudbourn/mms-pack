@@ -1,0 +1,13 @@
+name = "Cinematic Respawn"
+filename = "cinematic_respawn-1.21.11-fabric-1.1.0.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/CFJWaa89/versions/zTJlah7h/cinematic_respawn-1.21.11-fabric-1.1.0.jar"
+hash-format = "sha512"
+hash = "e91ee775f056c5f99b480bbaf53193c8e82c4e8bcc9f032202b4356cfcbbd78ea14e55f186151b9140704974df9a1e6d1447400d444a3602fafaf2d69a5d9f21"
+
+[update]
+[update.modrinth]
+mod-id = "CFJWaa89"
+version = "zTJlah7h"

@@ -1,0 +1,13 @@
+name = "Thermoo"
+filename = "thermoo-9.1.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/9TbXlAut/versions/JXIL16Ku/thermoo-9.1.0.jar"
+hash-format = "sha512"
+hash = "697882cbeab4d05375507872819b9a1806c98a3e4f187f69d31482acf8ba5a60b5e29d9718ab0cbc65cadac3a739e2366918084511b9de2d0b018cfb52422c20"
+
+[update]
+[update.modrinth]
+mod-id = "9TbXlAut"
+version = "JXIL16Ku"

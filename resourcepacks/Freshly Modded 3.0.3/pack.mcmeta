@@ -1,0 +1,38 @@
+{
+    "pack": {
+        "pack_format": 15,
+        "supported_formats":[15,88],
+		"min_format":[15,0],
+		"max_format":[88,1],
+		"description": "\u00a76■ Semos Animation Lib Optional\n\u00a71■ By Semos \u00A78 (1.20 -> 26.2)"
+	},
+	
+        "overlays": {
+            "entries": [
+				{
+                    "directory": "1.21.1_frostiful",
+                    "formats": [34,54],
+					"min_format":[34,0],
+					"max_format":[54,0]
+                },
+				{
+                    "directory": "1.21.1_up",
+                    "formats": [34,88],
+					"min_format":[34,0],
+					"max_format":[88,1]
+                },
+				{
+                    "directory": "1.21.4_up",
+                    "formats": [46,88],
+					"min_format":[46,0],
+					"max_format":[88,1]
+                },
+				{
+                    "directory": "1.21.11_guards",
+                    "formats": [75,88],
+					"min_format":[75,0],
+					"max_format":[88,1]
+                }
+            ]
+        }
+    }

@@ -1,0 +1,13 @@
+name = "Arc Lib"
+filename = "arc-19.1.1-fabric.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/H3eKhxi7/versions/4xFAUSvG/arc-19.1.1-fabric.jar"
+hash-format = "sha512"
+hash = "72f51370d2a3c524fc325109ee8992a62edf5b4765ec11f113eb3587affe05f040a47802c5a9fe1995003877f46e93fc520db06b67dd86b49c495e72c7685dbc"
+
+[update]
+[update.modrinth]
+mod-id = "H3eKhxi7"
+version = "4xFAUSvG"

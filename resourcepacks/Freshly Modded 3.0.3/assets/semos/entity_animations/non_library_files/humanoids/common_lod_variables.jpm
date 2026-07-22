@@ -1,0 +1,20 @@
+{
+	"credit": "By Seb_Semos",
+	"animations": [
+		{	
+			"var.aggro":"if(is_aggressive,max((random(id)*10)/2,2),max(0,var.aggro-0.1*frame_time*20))",
+			"varb.aggro":"var.aggro>0.01",
+			"varb.agressive":"varb.aggro||varb.is_doing_magic",
+			"varb.attack":"varb.aggro&&swing_progress!=0",
+			"varb.helmet":"nbt(Inventory,raw:iregex:.*helmet.*)||nbt(Items,raw:iregex:.*helmet.*)||nbt(ArmorItems,raw:iregex:.*helmet.*)",
+			"varb.chestplate":"nbt(Inventory,raw:iregex:.*chestplate.*)||nbt(Items,raw:iregex:.*chestplate.*)||nbt(ArmorItems,raw:iregex:.*chestplate.*)",
+			"varb.leggings":"nbt(Inventory,raw:iregex:.*leggings.*)||nbt(Items,raw:iregex:.*leggings.*)||nbt(ArmorItems,raw:iregex:.*leggings.*)",
+			"varb.boots":"nbt(Inventory,raw:iregex:.*boots.*)||nbt(Items,raw:iregex:.*boots.*)||nbt(ArmorItems,raw:iregex:.*boots.*)",
+			"var.blink":"sin((10*sin(0.5*(random(id)+age/30)-1)))+sin(5*(random(id)+age/30)-1)",
+			"var.blink2":"sin(2*sin((age/75)+3))",
+			"varb.blinking":"var.blink>0.7&&var.blink2>0.5",
+			"varb.sleeping":"nbt(SleepingX,raw:iregex:.*)||nbt(sleeping_pos,raw:iregex:.*)",
+			"varb.in_water":"!is_riding&&!is_on_ground&&is_in_water"
+		}		
+	]
+}

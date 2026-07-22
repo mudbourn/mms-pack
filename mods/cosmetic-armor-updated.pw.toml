@@ -1,0 +1,13 @@
+name = "Cosmetic Armor Updated"
+filename = "CosmeticArmor+1.21.11-1.7.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/J3Ftszs0/versions/8PLDSHkS/CosmeticArmor%2B1.21.11-1.7.0.jar"
+hash-format = "sha512"
+hash = "82622007853e987cae5ec17365c53d1871b5447b9eb60bc3cf37e71330d35d29d99e0827f780e2aa54ffec10ea38b5a5ba7cbc38cf8ef7b0e095190410ac202e"
+
+[update]
+[update.modrinth]
+mod-id = "J3Ftszs0"
+version = "8PLDSHkS"

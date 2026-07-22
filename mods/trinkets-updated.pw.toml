@@ -1,0 +1,13 @@
+name = "Trinkets Updated"
+filename = "trinkets-3.11.0-beta.2+1.21.11.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/XaT8sLP6/versions/DHE2OnLP/trinkets-3.11.0-beta.2%2B1.21.11.jar"
+hash-format = "sha512"
+hash = "02b8ad67214fc321b4a2129973c34e60af31be2eb07bf1117668f17f5a20be0bb3c62d1a10b661a07e64a536cd8573e15cbb124f2dcd85727cfc3747ff19ea41"
+
+[update]
+[update.modrinth]
+mod-id = "XaT8sLP6"
+version = "DHE2OnLP"

@@ -1,0 +1,23 @@
+{
+	"credit":"By Seb_Semos",
+	"animations":[
+		{
+			//Shield detection
+			"varb.shield":"nbt(HandItems,raw:iregex:.*shield.*)||nbt(equipment,raw:iregex:.*shield.*)",
+			//Melee weapons detection
+			"varb.sword":"nbt(HandItems,raw:iregex:.*sword.*)||nbt(equipment,raw:iregex:.*sword.*",
+			"varb.axe":"nbt(HandItems,raw:iregex:.*axe.*)||nbt(equipment,raw:iregex:.*axe.*)"
+		},
+		{
+			//Range weapons detection
+			"varb.crossbow":"nbt(HandItems,raw:iregex:.*crossbow.*)||nbt(equipment,raw:iregex:.*crossbow.*)",
+			"varb.bow":"nbt(HandItems,raw:iregex:.*bow.*)||nbt(equipment,raw:iregex:.*bow.*)",
+			"varb.range":"varb.bow||varb.crossbow"
+		},
+		{
+			//Misc detection
+			"varb.aim":"(varb.agressive||varb.is_doing_magic)&&varb.range",
+			"varb.aiming":"(varb.agressive||varb.is_doing_magic)&&is_swinging_right_arm&&varb.range"
+		}
+	]
+}

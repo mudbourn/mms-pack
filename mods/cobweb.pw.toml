@@ -1,0 +1,13 @@
+name = "Cobweb"
+filename = "cobweb-fabric-1.21.11-1.4.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/dQcfqGbl/versions/5zc1dsfq/cobweb-fabric-1.21.11-1.4.0.jar"
+hash-format = "sha512"
+hash = "9035b27f2581497339dfba7defa683053c3e3c3554d7aa0c3626f27a849d52abd6cd08ae16bcebab02a11df5c4a329c4d78691e9756e862e2a880be47b5b5099"
+
+[update]
+[update.modrinth]
+mod-id = "dQcfqGbl"
+version = "5zc1dsfq"

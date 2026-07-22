@@ -1,0 +1,14 @@
+{
+  "jobsplus.job.jobsplus.smith.name": "Blacksmith",
+  "jobsplus.job.jobsplus.smith.description": "The Blacksmith is a master of forging and armor. Use the Blacksmith's powerups to make your armor last longer!",
+  "jobsplus.job.jobsplus.hunter.name": "Archer",
+  "jobsplus.job.jobsplus.hunter.description": "The Archer is a master of marksmanship. Use the Archer's powerups to keep your bow in top shape!",
+  "jobsplus.job.jobsplus.alchemist.name": "Cleric",
+  "jobsplus.job.jobsplus.alchemist.description": "The Cleric is a master of potions and brewing. Use the Cleric's powerups to make your potions even stronger!",
+  "jobsplus.powerup.jobsplus.smith.root.name": "Blacksmith",
+  "jobsplus.powerup.jobsplus.smith.root.description": "The Blacksmith is a master of forging and armor. Use the Blacksmith's powerups to make your armor last longer!",
+  "jobsplus.powerup.jobsplus.hunter.root.name": "Archer",
+  "jobsplus.powerup.jobsplus.hunter.root.description": "The Archer is a master of marksmanship. Use the Archer's powerups to keep your bow in top shape!",
+  "jobsplus.powerup.jobsplus.alchemist.root.name": "Cleric",
+  "jobsplus.powerup.jobsplus.alchemist.root.description": "The Cleric is a master of potions and brewing. Use the Cleric's powerups to make your potions even stronger!"
+}

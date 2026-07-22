@@ -1,0 +1,19 @@
+{
+  "registerClosedCaptionsKeybind": true,
+  "registerChatKeybind": true,
+  "registerAutoJumpKeybind": true,
+  "registerSneakModeKeybind": true,
+  "registerSprintModeKeybind": true,
+  "registerAttackModeKeybind": true,
+  "registerUseModeKeybind": true,
+  "registerOperatorItemsTabKeybind": true,
+  "registerSwapMainHandKeybind": true,
+  "registerToggleAllSkinLayersKeybind": true,
+  "registerToggleCapeKeybind": true,
+  "registerToggleHatKeybind": true,
+  "registerToggleJacketKeybind": true,
+  "registerToggleLeftSleeveKeybind": true,
+  "registerToggleRightSleeveKeybind": true,
+  "registerToggleLeftPantsKeybind": true,
+  "registerToggleRightPantsKeybind": true
+}

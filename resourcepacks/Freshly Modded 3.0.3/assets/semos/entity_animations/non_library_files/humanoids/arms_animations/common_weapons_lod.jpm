@@ -1,0 +1,136 @@
+{
+	"credit":"By Seb_Semos",
+	"animations":[
+		{
+			//Idle animations
+			//Right
+			"var.right_arm_idle_rx":"if(varb.in_water&&!varb.agressive,var.swim_pose_right_rx,right_arm.rx)",
+			"var.right_arm_idle_ry":"right_arm.ry",
+			"var.right_arm_idle_rz":"if(varb.in_water&&!varb.agressive,var.swim_pose_right_rz,right_arm.rz)",
+			//Left
+			"var.left_arm_idle_rx":"if(varb.in_water&&!varb.agressive,var.swim_pose_left_rx,left_arm.rx)",
+			"var.left_arm_idle_ry":"left_arm.ry",
+			"var.left_arm_idle_rz": "if(varb.in_water&&!varb.agressive,var.swim_pose_left_rz,left_arm.rz)",
+
+			//No weapon in hand/tool
+			//Right
+			"var.empty_arm_right_arm_rx":"var.right_arm_idle_rx",
+			"var.empty_arm_right_arm_ry":"var.right_arm_idle_ry",
+			"var.empty_arm_right_arm_rz":"var.right_arm_idle_rz",
+			"var.empty_arm_right_arm_tx":"var.right_arm_idle_tx",
+			"var.empty_arm_right_arm_ty":"var.right_arm_idle_ty",
+			"var.empty_arm_right_arm_tz":"var.right_arm_idle_tz",
+			//Left
+			"var.empty_arm_left_arm_rx":"var.left_arm_idle_rx",
+			"var.empty_arm_left_arm_ry":"var.left_arm_idle_ry",
+			"var.empty_arm_left_arm_rz":"var.left_arm_idle_rz",
+			"var.empty_arm_left_arm_tx":"var.left_arm_idle_tx",
+			"var.empty_arm_left_arm_ty":"var.left_arm_idle_ty",
+			"var.empty_arm_left_arm_tz":"var.left_arm_idle_tz",
+
+			//Other items than weapons/tools are considered food			
+			//Right	
+			"var.food_right_arm_rx":"if(varb.eat_left_handed,right_arm.rx,torad(-90))",
+			"var.food_right_arm_ry":"if(varb.eat_left_handed,right_arm.ry,torad(0))",
+			"var.food_right_arm_rz":"if(varb.eat_left_handed,right_arm.rz,torad(-13))",
+			"var.food_right_arm_tx":"if(varb.eat_left_handed,right_arm.tx,-2)",
+			"var.food_right_arm_ty":"if(varb.eat_left_handed,right_arm.ty,11.5)",
+			"var.food_right_arm_tz":"if(varb.eat_left_handed,right_arm.tz,if(varb.chestplate,2,3))",
+			//Left
+			"var.food_left_arm_rx":"if(varb.eat_right_handed,left_arm.rx,torad(-90))",
+			"var.food_left_arm_ry":"if(varb.eat_right_handed,left_arm.ry,torad(0))",
+			"var.food_left_arm_rz":"if(varb.eat_right_handed,left_arm.rz,torad(13))",
+			"var.food_left_arm_tx":"if(varb.eat_right_handed,left_arm.tx,2)",
+			"var.food_left_arm_ty":"if(varb.eat_right_handed,left_arm.ty,11.5)",
+			"var.food_left_arm_tz":"if(varb.eat_right_handed,left_arm.tz,if(varb.chestplate,2,3))",
+			
+			//Weapon custom placement
+			//Without animation lib, only swords, shields, bows and crossbows, other weapons will inherit of those custom placement, wich can make them appear a bit off.
+			"var.shield_right_arm_rx":"if(varb.agressive,right_arm.rx,torad(40))",
+			"var.shield_right_arm_ry":"if(varb.agressive,right_arm.ry,torad(90))",
+			"var.shield_right_arm_rz":"if(varb.agressive,right_arm.rz,torad(0))",
+			"var.shield_right_arm_tx":"if(varb.agressive,right_arm.tx,-3.5)",
+			"var.shield_right_arm_ty":"if(varb.agressive,right_arm.ty,+2)",
+			"var.shield_right_arm_tz":"if(varb.agressive,right_arm.tz,0.5)",
+			//Left
+			"var.shield_left_arm_rx":"if(varb.agressive,left_arm.rx,torad(40))",
+			"var.shield_left_arm_ry":"if(varb.agressive,left_arm.ry,torad(-90))",
+			"var.shield_left_arm_rz":"if(varb.agressive,left_arm.rz,torad(0))",
+			"var.shield_left_arm_tx":"if(varb.agressive,left_arm.tx,3.5)",
+			"var.shield_left_arm_ty":"if(varb.agressive,left_arm.ty,+2)",
+			"var.shield_left_arm_tz":"if(varb.agressive,left_arm.tz,0.5)"
+		},
+		{	
+			"var.sword_right_arm_rx": "if(varb.agressive,right_arm.rx,torad(35))",
+			"var.sword_right_arm_ry": "if(varb.agressive,right_arm.ry,torad(180))",
+			"var.sword_right_arm_rz": "if(varb.agressive,right_arm.rz,torad(0))",
+			"var.sword_right_arm_tx": "if(varb.agressive,right_arm.tx,if(varb.chestplate,4.5,3.8))",			
+			"var.sword_right_arm_ty": "if(varb.agressive,right_arm.ty,2)",
+			"var.sword_right_arm_tz": "if(varb.agressive,right_arm.tz,0)",
+			//Left ok
+			"var.sword_left_arm_rx": "if(varb.agressive,left_arm.rx,torad(35))",
+			"var.sword_left_arm_ry": "if(varb.agressive,left_arm.ry,torad(180))",
+			"var.sword_left_arm_rz": "if(varb.agressive,left_arm.rz,torad(0))",
+			"var.sword_left_arm_tx": "if(varb.agressive,left_arm.tx,if(varb.chestplate,-4.5,-3.8))",
+			"var.sword_left_arm_ty": "if(varb.agressive,left_arm.ty,2)",
+			"var.sword_left_arm_tz": "if(varb.agressive,left_arm.tz,0)",
+			//Axes
+			//Right ok
+			"var.axe_right_arm_rx": "if(varb.agressive,right_arm.rx,torad(-35))",
+			"var.axe_right_arm_ry": "if(varb.agressive,right_arm.ry,torad(0))",
+			"var.axe_right_arm_rz": "if(varb.agressive,right_arm.rz,torad(0))",
+			"var.axe_right_arm_tx": "if(varb.agressive,right_arm.tx,if(varb.chestplate,6.8,6))",
+			"var.axe_right_arm_ty": "if(varb.agressive,right_arm.ty,7)",
+			"var.axe_right_arm_tz": "if(varb.agressive,right_arm.tz,9.5)",
+			//Left ok
+			"var.axe_left_arm_rx": "if(varb.agressive,left_arm.rx,torad(-35))",
+			"var.axe_left_arm_ry": "if(varb.agressive,left_arm.ry,torad(0))",
+			"var.axe_left_arm_rz": "if(varb.agressive,left_arm.rz,torad(0))",
+			"var.axe_left_arm_tx": "if(varb.agressive,left_arm.tx,if(varb.chestplate,-6.8,-6))",
+			"var.axe_left_arm_ty": "if(varb.agressive,left_arm.ty,7)",
+			"var.axe_left_arm_tz": "if(varb.agressive,left_arm.tz,9.5)"
+		},
+		{
+			//Crossbow
+			//Right
+			"var.crossbow_right_arm_rx": "if(varb.agressive,right_arm.rx,torad(-90))",
+			"var.crossbow_right_arm_ry": "if(varb.agressive,right_arm.ry,torad(215))",
+			"var.crossbow_right_arm_rz": "if(varb.agressive,right_arm.rz,torad(90))",
+			"var.crossbow_right_arm_tx": "if(varb.agressive,right_arm.tx,if(varb.chestplate,3.5,2.75))",
+			"var.crossbow_right_arm_ty": "if(varb.agressive,right_arm.ty,2)",
+			"var.crossbow_right_arm_tz": "if(varb.agressive,right_arm.tz,-8)",
+			//Left
+			"var.crossbow_left_arm_rx": "if(varb.agressive,left_arm.rx,torad(90))",
+			"var.crossbow_left_arm_ry": "if(varb.agressive,left_arm.ry,torad(35))",
+			"var.crossbow_left_arm_rz": "if(varb.agressive,left_arm.rz,torad(90))",
+			"var.crossbow_left_arm_tx": "if(varb.agressive,left_arm.tx,if(varb.chestplate,-3.5,-2.75))",
+			"var.crossbow_left_arm_ty": "if(varb.agressive,left_arm.ty,2)",
+			"var.crossbow_left_arm_tz": "if(varb.agressive,left_arm.tz,-8)",
+			//Bow
+			//Right			
+			"var.bow_right_arm_rx": "if(varb.agressive,right_arm.rx,torad(0))",
+			"var.bow_right_arm_ry": "if(varb.agressive,right_arm.ry,torad(100))",
+			"var.bow_right_arm_rz": "if(varb.agressive,right_arm.rz,torad(135))",
+			"var.bow_right_arm_tx": "if(varb.agressive,right_arm.tx,5)",
+			"var.bow_right_arm_ty": "if(varb.agressive,right_arm.ty,10)",
+			"var.bow_right_arm_tz": "if(varb.agressive,right_arm.tz,if(varb.chestplate,3.5,3))",
+			//Left
+			"var.bow_left_arm_rx": "if(varb.agressive,left_arm.rx,torad(0))",
+			"var.bow_left_arm_ry": "if(varb.agressive,left_arm.ry,torad(80))",
+			"var.bow_left_arm_rz": "if(varb.agressive,left_arm.rz,torad(-135))",
+			"var.bow_left_arm_tx": "if(varb.agressive,left_arm.tx,-5)",
+			"var.bow_left_arm_ty": "if(varb.agressive,left_arm.ty,10)",
+			"var.bow_left_arm_tz": "if(varb.agressive,left_arm.tz,if(varb.chestplate,3.5,3))"
+		},
+		{
+			//Evoker attack style
+			"var.magic_right_arm_rx":"right_arm.rx",
+			"var.magic_right_arm_ry":"right_arm.ry",
+			"var.magic_right_arm_rz":"right_arm.rz",
+			
+			"var.magic_left_arm_rx":"left_arm.rx",
+			"var.magic_left_arm_ry":"left_arm.ry",
+			"var.magic_left_arm_rz":"left_arm.rz"			
+		}
+	]
+}

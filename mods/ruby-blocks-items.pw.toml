@@ -1,0 +1,13 @@
+name = "Ruby Blocks & Items!"
+filename = "rubies-1.0.0+1.21.11.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/He5jpUfY/versions/eDJ1awqk/rubies-1.0.0%2B1.21.11.jar"
+hash-format = "sha512"
+hash = "98f161a2a500219cb5e3d1cdbede37169f70dff51bd1049b40170dc921d16471809c84853a76be7644625537b87c45796128bb0ea70b0061fe38dfb0a4824b15"
+
+[update]
+[update.modrinth]
+mod-id = "He5jpUfY"
+version = "eDJ1awqk"

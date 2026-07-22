@@ -1,0 +1,13 @@
+name = "Axiom"
+filename = "Axiom-5.4.2-for-MC1.21.11.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/N6n5dqoA/versions/DLVQrqv2/Axiom-5.4.2-for-MC1.21.11.jar"
+hash-format = "sha512"
+hash = "a74e0714a6a222d9f2c297a38792be88e39d9949698d3e49efd16d6828eb2a0bef4495a29020bd0b0fa341d6eed7e2287eab1186d9143d1594467ab51da4f539"
+
+[update]
+[update.modrinth]
+mod-id = "N6n5dqoA"
+version = "DLVQrqv2"

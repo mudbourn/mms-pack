@@ -1,0 +1,16 @@
+{
+    "credit": "Created by Semos for Freshly Modded",
+    "animations": [
+        {
+			//Worker Status
+				//0b, Work done, 1b: Wondering in area, 2b: Follow player, 3b: Wrking, 4b:Require tool/empty inv in chest/require food, 5b: ??
+            "varb.aim": "false",
+			"varb.working":"nbt(Status,raw:iregex:.*3b.*)",
+			"varb.breaker_workers":"nbt(ProfessionName,raw:iregex:.*(Miner|Lumberjack|Farmer).*)",
+			"var.breaking":"if(varb.breaker_workers&&varb.working&&limb_speed>0.1&&limb_speed<0.35,max((random(id)*10)/2,2),max(0,var.breaking-0.1*frame_time*20))",
+			"varb.breaking":"var.breaking>0.1",
+			"varb.merchant":"nbt(ProfessionName,raw:iregex:.*Merchant.*)",
+			"varb.item":"is_using_item"
+        }
+    ]
+}

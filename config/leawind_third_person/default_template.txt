@@ -1,0 +1,4 @@
+# Leawind Third Person — Default Config
+# normal_rotate_mode: camera_crosshair = player faces crosshair direction
+# This is a CLIENT-SIDE config. Place in .minecraft/config/leawind_third_person/
+normal_rotate_mode = camera_crosshair

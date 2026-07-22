@@ -1,0 +1,13 @@
+name = "Item Restrictions"
+filename = "itemrestrictions-19.1.0-fabric.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/rU60qFq2/versions/466hf0Pj/itemrestrictions-19.1.0-fabric.jar"
+hash-format = "sha512"
+hash = "d72c79ce865003e6b65e0cae9e067bdcfee4e1bce87f064774e42b60d13a2a550f8d89ef9efef6038f136ba8751a1ace3c2531be5493816ded377b6a896cdd2d"
+
+[update]
+[update.modrinth]
+mod-id = "rU60qFq2"
+version = "466hf0Pj"

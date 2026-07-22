@@ -1,0 +1,13 @@
+name = "Faster Copper Golem"
+filename = "faster-copper-golem-1.0.2.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/LVELRHwC/versions/dcsJmuGN/faster-copper-golem-1.0.2.jar"
+hash-format = "sha512"
+hash = "06c452a47c8e2daaff5b1504edcb2099d4d5cc61ee7e9f6eebcb292531787b44e27da138505ac5f786314cc53b16b17cbdf6190c033c575849794425e478ec53"
+
+[update]
+[update.modrinth]
+mod-id = "LVELRHwC"
+version = "dcsJmuGN"

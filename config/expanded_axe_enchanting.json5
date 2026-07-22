@@ -1,0 +1,9 @@
+{
+	"canUseFireAspectOnAxe": true,
+	"canUseKnockbackOnAxe": true,
+	"canUseLootingOnAxe": true,
+	"canUseImpalingOnAxe": true,
+	"canUseDensityOnAxe": true,
+	"canUseBreachOnAxe": true,
+	"canUseWindBurstOnAxe": true
+}

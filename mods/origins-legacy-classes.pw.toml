@@ -1,0 +1,13 @@
+name = "Origins Legacy: Classes"
+filename = "origins-legacy-classes-1.7.2+1.21.11.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/2Cg8rBxf/versions/JQHk76XX/origins-legacy-classes-1.7.2%2B1.21.11.jar"
+hash-format = "sha512"
+hash = "2c14f5eabba09ced8e66b9c04ec289edc8dad898b3335ef10b858eddab61f2d2ac22a41bc15f9e610fce7653db7175f2d9cbacc5dfaf824767540bce9e5b3615"
+
+[update]
+[update.modrinth]
+mod-id = "2Cg8rBxf"
+version = "JQHk76XX"

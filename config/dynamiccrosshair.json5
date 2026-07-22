@@ -1,0 +1,166 @@
+{
+	"dynamicCrosshair": true,
+	"disableDebugCrosshair": false,
+	"thirdPersonCrosshair": false,
+	"hideWithScreen": true,
+	"hideWithMap": true,
+	"fixCenteredCrosshair": false,
+	"crosshairConfig": {
+		"onBlock": true,
+		"onInteractableBlock": true,
+		"onEntity": true,
+		"holdingTool": "Always",
+		"displayCorrectTool": true,
+		"holdingMeleeWeapon": true,
+		"meleeWeaponOnEntity": false,
+		"meleeWeaponOnBreakableBlock": true,
+		"holdingRangedWeapon": "Always",
+		"holdingThrowable": "IfInteractable",
+		"holdingShield": true,
+		"holdingBlock": "Always",
+		"holdingBlockInOffhand": true,
+		"holdingUsableItem": "IfInteractable",
+		"forceHoldingSpyglass": false
+	},
+	"color": {
+		"overrideColor": false,
+		"customColor": -5588020,
+		"enableBlend": true
+	},
+	"dynamicCrosshairStyle": true,
+	"crosshairStyle": {
+		"regular": {
+			"style": "dynamiccrosshair:crosshair/cross-open",
+			"overrideColor": false,
+			"customColor": -5588020,
+			"enableBlend": true,
+			"coalesce": true
+		},
+		"onBlock": {
+			"style": "dynamiccrosshair:crosshair/cross-open",
+			"overrideColor": false,
+			"customColor": -5588020,
+			"enableBlend": true,
+			"coalesce": true
+		},
+		"onEntity": {
+			"style": "dynamiccrosshair:crosshair/cross-open-diagonal",
+			"overrideColor": false,
+			"customColor": -5588020,
+			"enableBlend": true,
+			"coalesce": true
+		},
+		"holdingTool": {
+			"style": "dynamiccrosshair:crosshair/square",
+			"overrideColor": false,
+			"customColor": -5588020,
+			"enableBlend": true,
+			"coalesce": true
+		},
+		"holdingMeleeWeapon": {
+			"style": "dynamiccrosshair:crosshair/cross-open",
+			"overrideColor": false,
+			"customColor": -5588020,
+			"enableBlend": true,
+			"coalesce": true
+		},
+		"holdingRangedWeapon": {
+			"style": "dynamiccrosshair:crosshair/cross-open-diagonal",
+			"overrideColor": false,
+			"customColor": -5588020,
+			"enableBlend": true,
+			"coalesce": false
+		},
+		"holdingThrowable": {
+			"style": "dynamiccrosshair:crosshair/circle-large",
+			"overrideColor": false,
+			"customColor": -5588020,
+			"enableBlend": true,
+			"coalesce": true
+		},
+		"holdingBlock": {
+			"style": "dynamiccrosshair:crosshair/diamond",
+			"overrideColor": false,
+			"customColor": -5588020,
+			"enableBlend": true,
+			"coalesce": false
+		},
+		"interact": {
+			"style": "dynamiccrosshair:crosshair/brackets",
+			"overrideColor": false,
+			"customColor": -5588020,
+			"enableBlend": true,
+			"coalesce": true
+		},
+		"useItem": {
+			"style": "dynamiccrosshair:crosshair/brackets-round",
+			"overrideColor": false,
+			"customColor": -5588020,
+			"enableBlend": true,
+			"coalesce": true
+		},
+		"shield": {
+			"style": "dynamiccrosshair:crosshair/brackets-bottom",
+			"overrideColor": false,
+			"customColor": -5588020,
+			"enableBlend": true,
+			"coalesce": true
+		}
+	},
+	"crosshairModifiers": {
+		"modCorrectTool": {
+			"style": "dynamiccrosshair:crosshair/dot",
+			"overrideColor": true,
+			"customColor": -16711936,
+			"enableBlend": false,
+			"coalesce": true
+		},
+		"modIncorrectTool": {
+			"style": "dynamiccrosshair:crosshair/cross-diagonal-small",
+			"overrideColor": true,
+			"customColor": -65536,
+			"enableBlend": false,
+			"coalesce": true
+		}
+	},
+	"enableTweaks": true,
+	"additionalTools": [],
+	"additionalMeleeWeapons": [],
+	"additionalRangedWeapons": [
+		"jeg:assault_rifle",
+		"jeg:blossom_rifle",
+		"jeg:bolt_action_rifle",
+		"jeg:burst_rifle",
+		"jeg:combat_pistol",
+		"jeg:combat_rifle",
+		"jeg:custom_smg",
+		"jeg:double_barrel_shotgun",
+		"jeg:finger_gun",
+		"jeg:flamethrower",
+		"jeg:flare_gun",
+		"jeg:grenade_launcher",
+		"jeg:hk_g36",
+		"jeg:hollenfire_mk2",
+		"jeg:holy_shotgun",
+		"jeg:hypersonic_cannon",
+		"jeg:infantry_rifle",
+		"jeg:light_machine_gun",
+		"jeg:minigun",
+		"jeg:phantom_smg",
+		"jeg:pump_shotgun",
+		"jeg:repeating_shotgun",
+		"jeg:revolver",
+		"jeg:rocket_launcher",
+		"jeg:semi_auto_pistol",
+		"jeg:semi_auto_rifle",
+		"jeg:service_rifle",
+		"jeg:soulhunter_mk2",
+		"jeg:subsonic_rifle",
+		"jeg:supersonic_shotgun",
+		"jeg:typhoonee",
+		"jeg:waterpipe_shotgun"
+	],
+	"additionalThrowables": [],
+	"additionalUsableItems": [],
+	"additionalInteractableBlocks": []
+}

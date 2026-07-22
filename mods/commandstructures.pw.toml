@@ -1,0 +1,13 @@
+name = "Command Structures"
+filename = "command_structures-4.4.4+1.21.11.jar"
+side = "server"
+
+[download]
+url = "https://cdn.modrinth.com/data/WEfvvlnl/versions/GWseHO5Z/command_structures-4.4.4%2B1.21.11.jar"
+hash-format = "sha512"
+hash = "5958af47d26d829905de3940be1da1d26f945129155cb9a46421417c617bf56f00a33f08e60fba8f2a3047e1e13dc933e1c41109c231f4182b0c7c69f58d91c2"
+
+[update]
+[update.modrinth]
+mod-id = "WEfvvlnl"
+version = "GWseHO5Z"

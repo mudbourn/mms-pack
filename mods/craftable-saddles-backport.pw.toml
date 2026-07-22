@@ -1,0 +1,13 @@
+name = "Saddle Crafting Recipie"
+filename = "craftable-saddles-backport-1.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/V9kirr06/versions/Ig8uhXcT/craftable-saddles-backport-1.0.jar"
+hash-format = "sha512"
+hash = "8b1e2f715172c748a59b1f98a36b0a8985cbf190f28af8f021e40f2411d617732d276e36645951d966b5465371e6a26bb7b5da32ee577287fbfe2098a54c9567"
+
+[update]
+[update.modrinth]
+mod-id = "V9kirr06"
+version = "Ig8uhXcT"

@@ -1,0 +1,13 @@
+name = "EMF Compat: Better Combat"
+filename = "emf_compat_better_combat_1.21.11_1.0.0.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/Smytm33T/versions/a2uxIpE5/emf_compat_better_combat_1.21.11_1.0.0.jar"
+hash-format = "sha512"
+hash = "5cfd2aa00df9e37b3200a53cecf34f1a63c3825ca37b8d76f637fa969ef10a4ab2838a77aba049f4063242f75dc67233e253c2add87f31b5cc07e163ea9da8a9"
+
+[update]
+[update.modrinth]
+mod-id = "Smytm33T"
+version = "a2uxIpE5"

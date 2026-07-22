@@ -1,0 +1,15 @@
+{
+	"enableLooting": true,
+	"enableKnockback": false,
+	"enableFireAspect": false,
+	"enableModded": false,
+	"enableForEnchantingTable": true,
+	"enableDamageInEnchantingTable": true,
+	"fastCobWebBreaking": false,
+	"pickaxesAreWeapons": true,
+	"shovelsAreWeapons": true,
+	"hoesAreWeapons": true,
+	"rangedWeaponsAreWeapons": false,
+	"enableLootingForRangedWeapons": false,
+	"weaponIds": []
+}

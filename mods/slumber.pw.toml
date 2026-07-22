@@ -1,0 +1,13 @@
+name = "Slumber"
+filename = "slumber-1.3.2.jar"
+side = "server"
+
+[download]
+url = "https://cdn.modrinth.com/data/ksm6XRZ9/versions/K7HxDC63/slumber-1.3.2.jar"
+hash-format = "sha512"
+hash = "c0c29c992bff927fa2cd4b42cfcd7fd7e387b93ec06eb0648378938ff073360a4b1fc49438b9c692b19d6991d839683c99a22dc01a219a8c8ae8fdb429a01b9f"
+
+[update]
+[update.modrinth]
+mod-id = "ksm6XRZ9"
+version = "K7HxDC63"

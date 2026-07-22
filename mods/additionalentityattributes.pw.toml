@@ -1,0 +1,13 @@
+name = "Additional Entity Attributes"
+filename = "additionalentityattributes-fabric-2.2.4+1.21.11.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/6oFu5eHi/versions/MMphjoyw/additionalentityattributes-fabric-2.2.4%2B1.21.11.jar"
+hash-format = "sha512"
+hash = "aa43084e45eae5fcc37a4176e27a1302b24f567c7e36b3daf04fc15db4de3c1241eafe7268aef52b0e1ac3b56c854a589a7f221601a95909f2c29780a238e535"
+
+[update]
+[update.modrinth]
+mod-id = "6oFu5eHi"
+version = "MMphjoyw"

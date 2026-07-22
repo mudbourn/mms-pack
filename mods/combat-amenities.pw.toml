@@ -1,0 +1,13 @@
+name = "Combat Amenities"
+filename = "combatamenities-3.1.7-1.21.11.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/6xkq8JXv/versions/6o3FVQZE/combatamenities-3.1.7-1.21.11.jar"
+hash-format = "sha512"
+hash = "6e535cdff0d7f45abd333b47140bae9f5a698bd02fac0af8aa8ee1d880f17e1dbc864ab4372212d26959eed22c9b43ddeb3e961d867c7b7c5f1ceda7e3fd1153"
+
+[update]
+[update.modrinth]
+mod-id = "6xkq8JXv"
+version = "6o3FVQZE"

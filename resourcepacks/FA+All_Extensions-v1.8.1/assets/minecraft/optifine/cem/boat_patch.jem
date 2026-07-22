@@ -1,0 +1,53 @@
+{
+	"credit": "Created by FreshLX for Fresh Animations",
+	"textureSize": [128, 128],
+	"models": [
+		{
+			"part": "water_patch",
+			"id": "water_patch",
+			"invertAxis": "xy",
+			"translate": [0, 8, -1],
+			"rotate": [0, -180, 0],
+			"submodels": [
+				{
+					"id": "Created_by_FreshLX_for_Fresh_Animations",
+					"invertAxis": "xy",
+					"translate": [0, 0, 0]
+				},
+				{
+					"id": "rotation",
+					"invertAxis": "xy",
+					"translate": [0, 2, 1],
+					"submodels": [
+						{
+							"id": "patch",
+							"invertAxis": "xy",
+							"translate": [0, 0, 0],
+							"rotate": [90, 90, 0],
+							"boxes": [
+								{"coordinates": [-13.5, -8, -7, 28, 16, 6], "textureOffset": [0, 0]}
+							]
+						}
+					]
+				}
+			],
+			"animations": [
+				{
+					"water_patch.rx": "0",
+					"water_patch.ry": "0",
+					"water_patch.rz": "0",
+					"water_patch.tx": "-0.5",
+					"water_patch.ty": "4",
+					"water_patch.tz": "15.5",
+					"rotation.tx": "var.base_tx",
+					"rotation.tz": "var.base_tz",
+					"rotation.ty": "var.base_ty",
+					"rotation.rx": "var.base_rz",
+					"rotation.rz": "-var.base_rx",
+					"rotation.ry": "var.base_ry",
+					"patch.ry": "0"
+				}
+			]
+		}
+	]
+}

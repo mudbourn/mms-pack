@@ -1,0 +1,5 @@
+[
+  {"version":1},
+  {"ingredient":{"id":"jobsplustools:diamond_longsword"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:enchanted_book","components":{"minecraft:stored_enchantments":{"mob-ai-tweaks:full_auto_retrofit":1}}},"type":"item_stack","bookmarkType":"INGREDIENT"}
+]

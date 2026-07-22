@@ -1,0 +1,13 @@
+name = "Leash Villager"
+filename = "leash-villager-1.0.0+mc1.21.11.jar"
+side = "server"
+
+[download]
+url = "https://cdn.modrinth.com/data/Nken9kmQ/versions/jI5OQJlK/leash-villager-1.0.0%2Bmc1.21.11.jar"
+hash-format = "sha512"
+hash = "8ea8bad2eb97b926700a7e03b59ec429f6bd631b7d2126efe1ca618b2873f0bcacab7a489a5c1c7ef41abb7e796d896cd4876b10fe5a9b3d2ef079d4e8acaa2f"
+
+[update]
+[update.modrinth]
+mod-id = "Nken9kmQ"
+version = "jI5OQJlK"

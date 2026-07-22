@@ -1,0 +1,11 @@
+name_permission_level: 0
+ready_permission_level: 0
+summon_permission_level: 0
+allow_real_names_permission_level: 3
+mspt_kick_limit: -1
+mspt_kick_type: 1
+max_afk_limit: -1
+max_afk_type: 1
+max_afk_ticks: -1
+max_summon_ticks: 6000
+names:

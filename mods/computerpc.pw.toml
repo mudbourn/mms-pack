@@ -1,0 +1,13 @@
+name = "Computerpc"
+filename = "computerpc-1.1.1-1.21.11-fabric.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/5CM4hrGS/versions/LRPs9rpT/computerpc-1.1.1-1.21.11-fabric.jar"
+hash-format = "sha512"
+hash = "9acf55c3fd5ed3d0308405d1b5631fa00806ffd26ad7c8485136524dbd9d2cef012bb0bb53a6d64eada55147c6925426a9cf22a62b4cda73a99c4b8eff8f4879"
+
+[update]
+[update.modrinth]
+mod-id = "5CM4hrGS"
+version = "LRPs9rpT"

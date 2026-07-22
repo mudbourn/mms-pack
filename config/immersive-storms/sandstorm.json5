@@ -1,0 +1,9 @@
+{
+	enableSandstormParticles: true,
+	// Will disable sandstorm particles and sounds automatically if the mod Particle Rain is detected
+	detectParticleRain: true,
+	// How many blocks away to render sandstorm particles, must be positive
+	sandstormParticleRenderDistance: 20,
+	// Multiplier for how frequently sandstorm particles should appear, must be positive. Bigger values = more common.
+	sandstormParticleDensityMultiplier: 1.0
+}

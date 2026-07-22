@@ -1,0 +1,13 @@
+name = "Custom Player Animations"
+filename = "cpa-5.9.2+1.21.11-fabric.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/EhthJpjM/versions/qT9FS6MA/cpa-5.9.2%2B1.21.11-fabric.jar"
+hash-format = "sha512"
+hash = "70c3d19341cb1f4628d25e6a4d9655f5241cc14366d4c6c45814e59cb6dbaff55e6bf0e98a82033405d989b12a61f61a979ab7593418caa51dd625b787d3739e"
+
+[update]
+[update.modrinth]
+mod-id = "EhthJpjM"
+version = "qT9FS6MA"

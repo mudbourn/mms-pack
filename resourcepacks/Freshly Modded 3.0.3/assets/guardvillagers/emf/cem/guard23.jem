@@ -1,0 +1,313 @@
+{
+	"credit": "Created by Seb_Semos",
+	"textureSize": [128, 128],
+	"models": [
+		{
+			"part": "root",
+			"id": "root"
+		},
+		//	//"LOD" model has all the weapon variable because there is way simplified and less animation math overall. Non "LOD" have different models for different weapons
+		//	//"LOD" refer to the model maths loaded from a distance and/or if semos animation lib is not loaded 
+		{
+			//This part also define body animations if semos-animation-lib is not loaded
+			"part": "model_specific_variables",
+			"id": "model_specific_variables",
+			"model": "semos:entity_animations/non_library_files/humanoids/model_specific/fmrp/guard_villagers_2.jpm"
+		},	
+		{
+			"part": "common_lod_variables",
+			"id": "common_lod_variables",
+			"model": "semos:entity_animations/non_library_files/humanoids/common_lod_variables.jpm"
+		},
+		{
+			"part": "lod_variables",
+			"id": "lod_variables",
+			"model": "semos:entity_animations/non_library_files/humanoids/weapon_detection/inventory_lod.jpm"
+		},
+		{
+			//This part define animations for empty amrs, idle amrs, shield, food, sword, axe, bow and crossbow if semos-animation-lib is not loaded
+			"part": "common_weapons_lod_animations",
+			"id": "common_weapons_lod_animations",
+			"model": "semos:entity_animations/non_library_files/humanoids/arms_animations/common_weapons_lod.jpm"
+		},		
+		{
+			"part": "other_melee_lod_animations",
+			"id": "other_melee_lod_animations",
+			"model": "semos:entity_animations/non_library_files/humanoids/arms_animations/other_melee_lod.jpm"
+		},
+		{
+			"part": "gunpowder_lod_animations",
+			"id": "gunpowder_lod_animations",
+			"model": "semos:entity_animations/non_library_files/humanoids/arms_animations/gunpowder_lod.jpm"
+		},
+		{
+		//	//Same file as non LOD model
+			"part": "arms_attachement_lod_logic",
+			"id": "arms_attachement_lod_logic",
+			"model": "semos:entity_animations/non_library_files/humanoids/attachement_logic/common_lod.jpm"
+		},
+		//	//The following parts require Semos Animation Lib
+		//{
+		//	"part": "common_variables",
+		//	"id": "common_variables",
+		//	"model": "semos:entity_animations/humanoids/common_variables.jpm"
+		//},
+		//{
+		//	"part": "weapon_detection_variables",
+		//	"id": "weapon_detection_variables",
+		//	"model": "semos:entity_animations/humanoids/weapon_detection/inventory.jpm"
+		//},
+		//{
+		//	"part": "body_animations",
+		//	"id": "body_animations",
+		//	"model": "semos:entity_animations/humanoids/body_animations.jpm"
+		//},
+		//{
+		//	//Require an extra jpm part in the head part
+		//	"part": "face_animations",
+		//	"id": "face_animations",
+		//	"model": "semos:entity_animations/humanoids/face_animations/guards_1.jpm"
+		//},
+		//{
+		//	//This part define animations for empty amrs, idle amrs, shield, food, sword, axe, bow and crossbow
+		//	"part": "common_weapons_animations",
+		//	"id": "common_weapons_animations",
+		//	"model": "semos:entity_animations/humanoids/arms_animations/common_weapons.jpm"
+		//},
+		//{
+		//	"part": "gunpowder_animations",
+		//	"id": "gunpowder_animations",
+		//	"model": "semos:entity_animations/humanoids/arms_animations/gunpowder.jpm"
+		//},
+		//
+		//{
+		//	"part": "other_melee_animations",
+		//	"id": "other_melee_animations",
+		//	"model": "semos:entity_animations/humanoids/arms_animations/other_melee.jpm"
+		//},
+		//{
+		//	"part": "arms_attachement_logic",
+		//	"id": "arms_attachement_logic",
+		//	"model": "semos:entity_animations/humanoids/attachement_logic/common.jpm"
+		//},
+		 //The foloowing parts require addon packs, Require a extra jpm parts in the model
+		{
+			"part": "capes_animations",
+			"id": "capes_animations",
+			"model": "semos:entity_animations/humanoids/capes_animations/semos_capes.jpm"
+		},
+		{
+			"part": "cosmetics_animations",
+			"id": "cosmetics_animations",
+			"model": "semos:parts/cosmetics/cosmetics_animations.jpm"
+		},
+		{
+			"part": "hat",
+			"id": "hat",
+			"invertAxis": "xy",
+			"translate": [0, -24, 0],
+			"boxes": [
+				{"coordinates": [-4, 24, -4, 8, 10, 8], "textureOffset": [4, 1], "sizeAdd": 0.2}
+			]
+		},
+		{
+			"part": "head",
+			"id": "head",
+			"invertAxis": "xy",
+			"translate": [0, -23, 0],
+			"boxes": [
+				{"coordinates": [-4, 23, -4, 8, 10, 8], "textureOffset": [49, 99]}
+			],
+			"submodels": [
+				{
+					"id": "head_slot_addons",
+					"model": "semos:parts/cosmetics/head_slot/head_slot_addons.jpm",
+					"translate": [0, -23, 0]
+				},
+				{
+					"id": "facelift",
+					"invertAxis": "xy",
+					"translate": [0, 22, 0],
+					"boxes": [
+						{
+							"coordinates": [-4, 1, -4.05, 8, 10, 8],
+							"uvNorth": [57, 117, 65, 127],
+							"uvEast": [49, 107, 57, 117],
+							"uvSouth": [73, 107, 81, 117],
+							"uvWest": [65, 107, 73, 117],
+							"uvUp": [65, 107, 57, 99],
+							"uvDown": [73, 99, 65, 107],
+							"sizeAdd": 0.01
+						}
+					]
+				},
+				{
+					"id": "guard_villagers_eyes",
+					"model": "semos:parts/body_parts/guard_villagers_face.jpm",
+					"translate": [0, 0, 0]
+				}
+			]
+		},
+		{
+			"part": "nose",
+			"id": "nose",
+			"invertAxis": "xy",
+			"translate": [0, 4, 5]
+		},
+		{
+			"part": "right_arm",
+			"id": "right_arm",
+			"invertAxis": "xy",
+			"translate": [-5, -22, 0],
+			"boxes": [
+				{
+					"coordinates": [4, 12, -2, 4, 12, 4],
+					"uvNorth": [40, 79, 36, 91],
+					"uvEast": [40, 79, 44, 91],
+					"uvSouth": [48, 79, 44, 91],
+					"uvWest": [32, 79, 36, 91],
+					"uvUp": [36, 79, 40, 75],
+					"uvDown": [40, 75, 44, 79]
+				}
+			],
+			"submodels": [
+				{
+					"id": "shoulder_right",
+					"invertAxis": "xy",
+					"translate": [7, 24, 0],
+					"rotate": [0, 0, -22],
+					"boxes": [
+						{"coordinates": [-3, -1.5, -3, 5, 3, 6], "textureOffset": [72, 33]}
+					]
+				},
+				{
+					"id": "right_arm_top_slot_addons",
+					"model": "semos:parts/cosmetics/arms_slot/right_arm_top_slot_addons.jpm",
+					"translate": [-6, -20, 0]
+				},
+				{
+					"id": "right_arm_bottom_slot_addons",
+					"model": "semos:parts/cosmetics/arms_slot/right_arm_bottom_slot_addons.jpm",
+					"translate": [-6, -12, 0]
+				}
+			]
+		},
+		{
+			"part": "left_arm",
+			"id": "left_arm",
+			"invertAxis": "xy",
+			"translate": [5, -22, 0],
+			"boxes": [
+				{"coordinates": [-8, 12, -2, 4, 12, 4], "textureOffset": [33, 48]}
+			],
+			"submodels": [
+				{
+					"id": "shoulder_left",
+					"invertAxis": "xy",
+					"translate": [-7, 24, 0],
+					"rotate": [0, 0, 22],
+					"boxes": [
+						{"coordinates": [-2, -1.5, -3, 5, 3, 6], "textureOffset": [72, 33]}
+					]
+				},
+				{
+					"id": "left_arm_top_slot_addons",
+					"model": "semos:parts/cosmetics/arms_slot/left_arm_top_slot_addons.jpm",
+					"translate": [6, -20, 0]
+				},
+				{
+					"id": "left_arm_bottom_slot_addons",
+					"model": "semos:parts/cosmetics/arms_slot/left_arm_bottom_slot_addons.jpm",
+					"translate": [6, -12, 0]
+				}
+			]
+		},
+		{
+			"part": "body",
+			"id": "body",
+			"invertAxis": "xy",
+			"translate": [0, -24, 0],
+			"boxes": [
+				{"coordinates": [-4, 12, -2, 8, 12, 4], "textureOffset": [52, 50], "sizeAdd": 0.25}
+			],
+			"submodels": [
+				{
+					"id": "attachement_points",
+					"translate": [0, 0, 0],
+					"model": "semos:parts/attachement_points/humanoids_attachement_points.jpm"
+				},
+				{
+					"id": "semos_cape",
+					"model": "semos:parts/semos_cape.jpm",
+					"translate": [0, 0, 0]
+				},
+				{
+					"id": "body_slot_addons",
+					"model": "semos:parts/cosmetics/body_slot/body_slot_addons.jpm",
+					"translate": [0, -12, 0]
+				}
+			]
+		},
+		{
+			"part": "quiver",
+			"id": "quiver",
+			"invertAxis": "xy",
+			"translate": [0.5, -21, -2.3],
+			"boxes": [
+				{"coordinates": [-3, 13, 2.3, 5, 10, 5], "textureOffset": [100, 0]}
+			]
+		},
+		{
+			"part": "shoulderPad_right",
+			"id": "shoulderPad_right",
+			"invertAxis": "xy",
+			"translate": [4.5, -25.5, 0]
+		},
+		{
+			"part": "shoulderPad_left",
+			"id": "shoulderPad_left",
+			"invertAxis": "xy",
+			"translate": [-4.5, -25.5, 0]
+		},
+		{
+			"part": "right_leg",
+			"id": "right_leg",
+			"invertAxis": "xy",
+			"translate": [-1.9, -12, 0],
+			"boxes": [
+				{
+					"coordinates": [-0.1, 0, -2, 4, 12, 4],
+					"uvNorth": [24, 52, 20, 64],
+					"uvEast": [24, 52, 28, 64],
+					"uvSouth": [32, 52, 28, 64],
+					"uvWest": [28, 52, 24, 64],
+					"uvUp": [20, 52, 24, 48],
+					"uvDown": [24, 48, 28, 52]
+				}
+			],
+			"submodels": [
+				{
+					"id": "right_leg_slot_addons",
+					"model": "semos:parts/cosmetics/legs_slot/right_leg_slot_addons.jpm",
+					"translate": [-1.9, 0, 0]
+				}
+			]
+		},
+		{
+			"part": "left_leg",
+			"id": "left_leg",
+			"invertAxis": "xy",
+			"translate": [1.9, -12, 0],
+			"boxes": [
+				{"coordinates": [-3.9, 0, -2, 4, 12, 4], "textureOffset": [16, 28]}
+			],
+			"submodels": [
+				{
+					"id": "left_leg_slot_addons",
+					"model": "semos:parts/cosmetics/legs_slot/left_leg_slot_addons.jpm",
+					"translate": [1.9, 0, 0]
+				}
+			]
+		}
+	]
+}

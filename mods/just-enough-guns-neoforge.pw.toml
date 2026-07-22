@@ -1,0 +1,13 @@
+name = "Just Enough Guns New(unofficial port)"
+filename = "justenoughguns-fabric-1.4.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/dxTydNDF/versions/ZJRWsUUM/justenoughguns-fabric-1.4.0.jar"
+hash-format = "sha512"
+hash = "42a100d7e26d362b893eb7b7e592a0d9d0a6e1290cd454c25d99d863cf40eea102b1189ada5fef0ab7aae3c26b1ceed1292acac271d53439b727d9656bcbc336"
+
+[update]
+[update.modrinth]
+mod-id = "dxTydNDF"
+version = "ZJRWsUUM"

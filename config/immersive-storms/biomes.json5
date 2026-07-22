@@ -1,0 +1,14 @@
+{
+	// Exclude specific biome IDs from custom weather effects
+	excludeBiomes: [],
+	// Add new biome IDs to be affected by sandstorms. Particles and sounds will not work in biomes where it is raining or snowing.
+	sandstormBiomes: [],
+	// Add new biomes IDs to be affected by blizzards.
+	blizzardBiomes: [],
+	// Add new biomes IDs to be affected by dense fog.
+	denseFogBiomes: [],
+	// Add new biomes IDs to be affected by wind particles.
+	windyBiomes: [],
+	// Add new biomes IDs to be affected by black rain.
+	blackRainBiomes: []
+}

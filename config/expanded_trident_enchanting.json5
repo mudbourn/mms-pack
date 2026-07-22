@@ -1,0 +1,10 @@
+{
+	"canUseFireAspectOnTrident": true,
+	"canUseKnockbackOnTrident": true,
+	"canUseLootingOnTrident": true,
+	"canUseDensityOnTrident": true,
+	"canUseBreachOnTrident": true,
+	"canUseWindBurstOnTrident": true,
+	"canUseOtherWeaponEnchantmentTypesOnTrident": true,
+	"impalingAndOtherWeaponEnchantmentTypesCanBeMixed": true
+}

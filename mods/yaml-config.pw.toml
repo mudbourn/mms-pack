@@ -1,0 +1,13 @@
+name = "YAML Config"
+filename = "yamlconfig-19.1.2-fabric.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/L1FFB418/versions/jvDLVxWH/yamlconfig-19.1.2-fabric.jar"
+hash-format = "sha512"
+hash = "ba0d1c4e00e06a06daa421c255847b09e5d5c526d940ce50891d7f7aaa9e667b0f31749125f0e30f52b49a1a0acd69a26c7cdf3ee523b94d6a1240465e1aa9b2"
+
+[update]
+[update.modrinth]
+mod-id = "L1FFB418"
+version = "jvDLVxWH"

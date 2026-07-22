@@ -1,0 +1,8 @@
+{
+	"credit": "Created by Semos for Freshly Modded",
+	"animations": [
+		{
+			"head.sx":"if(is_aggressive,5,1)"
+		}
+	]
+}

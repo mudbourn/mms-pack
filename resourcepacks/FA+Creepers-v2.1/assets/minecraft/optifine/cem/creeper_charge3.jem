@@ -1,0 +1,129 @@
+{
+	"credit": "Created by FreshLX for Fresh Animations",
+	"textureSize": [64, 32],
+	"models": [
+		{
+			"part":"root",
+			"id":"root",
+			"model":"creeper_charge_animations.jpm",
+			"attach":"true"
+		},
+		{
+			"part": "head",
+			"id": "head",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0],
+			"submodels": [
+				{
+					"id": "Created_by_FreshLX_for_Fresh_Animations",
+					"invertAxis": "xy",
+					"translate": [0, 0, 0]
+				}
+			],
+			"animations": [
+				{
+					"body_scale.ty": "body_scale.ty*2 +6",
+					"body.rx": "body.rx/2 +head2.rx/3 +torad( 4*( sin( (var.b+var.ls/3)/3.3 ) +cos( (var.b+var.ls/3)/7.7 ) ) -20*min(1,limb_speed*2)  )",
+					"body.rz": "body.rz/2 +head2.rz/3 +torad( 4*( cos( (var.b+var.ls/3)/3.3 ) +sin( (var.b+var.ls/3)/7.7 ) )  )",
+					"body.ry": "body.ry/2 +head2.ry/3",
+					"body.ty": "body.ty -2",
+					"leg1.tz": " 5",
+					"leg2.tz": " 5",
+					"leg3.tz": "-5",
+					"leg4.tz": "-5",
+					"leg1_foot.tx": "leg1_foot.tx -2.5",
+					"leg2_foot.tx": "leg2_foot.tx +2.5",
+					"leg3_foot.tx": "leg3_foot.tx -2.5",
+					"leg4_foot.tx": "leg4_foot.tx +2.5"
+				}
+			]
+		},
+		{
+			"part": "body",
+			"id": "body",
+			"invertAxis": "xy",
+			"translate": [0, -8, 0],
+			"submodels": [
+				{
+					"id": "body_scale",
+					"invertAxis": "xy",
+					"translate": [0, 8, 0],
+					"boxes": [
+						{"coordinates": [-6, -5, -4, 12, 28, 8], "textureOffset": [0, 0], "sizeAdd": 0.75}
+					]
+				},
+				{
+					"id": "head2",
+					"invertAxis": "xy",
+					"translate": [0, 18, 0]
+				}
+			]
+		},
+		{
+			"part": "leg1",
+			"id": "leg1",
+			"invertAxis": "xy",
+			"translate": [-3, -5, -3],
+			"submodels": [
+				{
+					"id": "leg1_foot",
+					"invertAxis": "xy",
+					"translate": [3, 0, 5],
+					"boxes": [
+						{"coordinates": [-2, 0, -1, 5, 7, 4], "textureOffset": [40, 19], "sizeAdd": 0.75}
+					]
+				}
+			]
+		},
+		{
+			"part": "leg2",
+			"id": "leg2",
+			"invertAxis": "xy",
+			"translate": [3, -5, -3],
+			"submodels": [
+				{
+					"id": "leg2_foot",
+					"invertAxis": "xy",
+					"mirrorTexture": "u",
+					"translate": [-3, 0, 5],
+					"boxes": [
+						{"coordinates": [-3, 0, -1, 5, 7, 4], "textureOffset": [40, 19], "sizeAdd": 0.75}
+					]
+				}
+			]
+		},
+		{
+			"part": "leg3",
+			"id": "leg3",
+			"invertAxis": "xy",
+			"translate": [-3, -5, 3],
+			"submodels": [
+				{
+					"id": "leg3_foot",
+					"invertAxis": "xy",
+					"translate": [3, 0, -7],
+					"boxes": [
+						{"coordinates": [-2, 0, -1, 5, 7, 4], "textureOffset": [40, 19], "sizeAdd": 0.75}
+					]
+				}
+			]
+		},
+		{
+			"part": "leg4",
+			"id": "leg4",
+			"invertAxis": "xy",
+			"translate": [3, -5, 3],
+			"submodels": [
+				{
+					"id": "leg4_foot",
+					"invertAxis": "xy",
+					"mirrorTexture": "u",
+					"translate": [-3, 0, -7],
+					"boxes": [
+						{"coordinates": [-3, 0, -1, 5, 7, 4], "textureOffset": [40, 19], "sizeAdd": 0.75}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,8 @@
+{
+	"piercingAndMultishotCanBeMixed": true,
+	"canUseLootingOnCrossbow": true,
+	"canUseInfinityOnCrossbow": true,
+	"canUseFlameOnCrossbow": true,
+	"canUsePowerOnCrossbow": true,
+	"canUsePunchOnCrossbow": true
+}

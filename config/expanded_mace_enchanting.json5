@@ -1,0 +1,9 @@
+{
+	"canUseKnockbackOnMace": true,
+	"canUseLootingOnMace": true,
+	"canUseSharpnessOnMace": true,
+	"canUseImpalingOnMace": true,
+	"densityAndBreachCanBeMixed": true,
+	"densityAndOtherWeaponEnchantmentTypesCanBeMixed": true,
+	"breachAndOtherWeaponEnchantmentTypesCanBeMixed": true
+}

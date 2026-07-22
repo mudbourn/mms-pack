@@ -1,0 +1,13 @@
+name = "Footprint"
+filename = "footprint-1.0.1-beta+1.21.11.jar"
+side = "server"
+
+[download]
+url = "https://cdn.modrinth.com/data/1dy7kepT/versions/qCBWjGaA/footprint-1.0.1-beta%2B1.21.11.jar"
+hash-format = "sha512"
+hash = "2f44b183cbc5ca00c7b3d0d8bbd228e127244a05afae202130288f7d318e3f56ee55d9547ea75e70fd9ca59ff74fdc6826a0e079f150f22e8b576c5bb03a076d"
+
+[update]
+[update.modrinth]
+mod-id = "1dy7kepT"
+version = "qCBWjGaA"

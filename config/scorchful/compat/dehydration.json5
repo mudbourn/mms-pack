@@ -1,0 +1,4 @@
+{
+	// The minimum number of water points needed to be able to sweat (similar to how much hunger you need to heal)
+	minWaterLevelForSweat: 16
+}

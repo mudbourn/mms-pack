@@ -1,0 +1,7 @@
+{
+  "enableItemFrameRecipeOverlay": true,
+  "enableSmartIngredientHighlighting": true,
+  "smartIngredientHighlightingDelay": 500,
+  "enableCookingPotOverlay": true,
+  "enableSkilletOverlay": true
+}

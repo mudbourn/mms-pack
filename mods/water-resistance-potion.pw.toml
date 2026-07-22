@@ -1,0 +1,13 @@
+name = "Water Resistance Potion"
+filename = "water-resistance-potion-1.6.0+1.21.11.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/oXj4ct3c/versions/50zbRkDt/water-resistance-potion-1.6.0%2B1.21.11.jar"
+hash-format = "sha512"
+hash = "40d69ab9e166b281ca298214117354293ed699ab0b8b501680b37c9ecd70d31c1f3f3cea8f4946bf0e0e537cef07c7dffd09fd441fc811891fadde05642a4e2f"
+
+[update]
+[update.modrinth]
+mod-id = "oXj4ct3c"
+version = "50zbRkDt"

@@ -1,0 +1,12 @@
+{
+  "enabledDefaultLinkParticle": false,
+  "enabledDefaultHeadParticle": true,
+  "enabledLinkLine": true,
+  "enabledNotice": true,
+  "enabledCustomLinkParticle": false,
+  "selectedLinkParticle": "soul_fire_flame",
+  "customLinkParticleCycle": 40,
+  "enabledCustomHeadParticle": false,
+  "selectedHeadParticle": "composter",
+  "customHeadParticleCycle": 40
+}

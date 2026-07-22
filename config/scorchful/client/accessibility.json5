@@ -1,0 +1,12 @@
+{
+	// Toggle the sound effects of temperature, particularly the heart beat
+	enableSoundTemperatureEffects: true,
+	// Toggle the blur and wavey-ness screen effects from the Heat Stroke status effect.
+	enableHeatStrokePostProcessing: true,
+	// Toggle the darkening and desaturation screen effects from the Heat Stroke status effect.
+	enableFearPostProcessing: true,
+	// Toggle the darkening effect of the Sun Hat
+	enableSunHatShading: true,
+	// Controls the strength of how dark the sun hat shading is.
+	sunHatShadeOpacity: 0.2
+}

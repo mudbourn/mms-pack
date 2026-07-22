@@ -1,0 +1,14 @@
+{
+  "trashslot:delete_all": {
+    "modifiers": []
+  },
+  "trashslot:delete": {
+    "modifiers": []
+  },
+  "trashslot:toggle": {
+    "modifiers": []
+  },
+  "trashslot:toggle_lock": {
+    "modifiers": []
+  }
+}

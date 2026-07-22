@@ -1,0 +1,10 @@
+name = "Towerinator"
+filename = "towerinator-1.3.jar"
+side = "both"
+
+[download]
+url = "https://raw.githubusercontent.com/mudbourn/mms-pack/main/mods/towerinator-1.3.jar"
+hash-format = "sha512"
+hash = "f211e00884b6bf8421b415d987f02cd9700d6d4017b48ac1b6c2f80b345c7e0b29a43987cc1b20f038a6e40a5df5b5599dfb23e1f1b6e3f61800467ffb3c0004"
+
+[update]

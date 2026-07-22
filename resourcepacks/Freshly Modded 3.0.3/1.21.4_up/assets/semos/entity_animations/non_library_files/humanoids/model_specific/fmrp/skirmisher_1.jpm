@@ -1,0 +1,41 @@
+{
+	"credit": "By Seb_Semos",
+	"animations": [
+		{
+			//
+			"var.head_ty_fix":"if(is_riding,-2,if(varb.in_water,10,0))",
+			"var.body_ty_fix":"if(is_riding,0,if(varb.in_water,0,0))",
+			"var.leg_ty_fix": "if(is_riding,-1,if(varb.in_water,10,0))",
+			"varb.steve_head":"false"
+		},
+		{
+			//body animations
+			"root.rx":"clamp(if(varb.in_water,torad(limb_speed*150),torad(limb_speed*15)),torad(0),torad(15))",
+			"head.ty":"var.head_ty_fix",
+			"hat.ty":"if(is_riding,head.ty,head.ty)",
+			"body.ty":"head.ty+var.body_ty_fix",
+			"left_leg.rx":"if(varb.in_water,-sin(limb_swing+age/4)/1.5,is_riding,torad(-80),left_leg.rx)",
+			"left_leg.ty":"var.leg_ty_fix+12",
+			"right_leg.rx":"if(varb.in_water,sin(limb_swing+age/4)/1.5,is_riding,torad(-80),right_leg.rx)",
+			"right_leg.ty":"var.leg_ty_fix+12",
+			"right_blink.visible":"(!is_right_handed&&is_aggressive&&varb.aim)||varb.blinking",
+			"left_blink.visible":"(is_right_handed&&is_aggressive&&varb.aim)||varb.blinking",
+			"var.swim_pose_right_rx":"torad(-35)-torad(sin(age/5)*30)",
+			"var.swim_pose_right_rz":"torad(55)",
+			"var.swim_pose_left_rx":"torad(-35)-torad(sin(age/5)*30)",
+			"var.swim_pose_left_rz":"torad(-55)",
+			"semos_cape.rx": "if(varb.back_shield,-torad(5),if(limb_speed>0.6, -torad(45),limb_speed>0.1, -torad(15),-torad(5)))"
+		},
+		{
+			// Layer following animations
+			"varb.following_hat":"true",
+			"hat.rx":"hat.rx",
+			"hat.ry":"hat.ry",
+			"hat.rz":"hat.rz",
+			"hat.tx":"hat.tx",
+			"hat.ty":"if(is_riding,hat.ty+2,if(varb.in_water,hat.ty-10,hat.ty))",
+			"hat.tz":"hat.tz",
+			"coat_bottom.visible": "!is_riding"
+		}
+	]
+}

@@ -1,0 +1,13 @@
+name = "Audio Engine Tweaks"
+filename = "audio_engine_tweaks-1.2.13+MC1.21.11 build 3.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/DZ81JNQ1/versions/FrCzUhaB/audio_engine_tweaks-1.2.13%2BMC1.21.11%20build%203.jar"
+hash-format = "sha512"
+hash = "230de5f7b1f3cbf287eaab5367c3cf75bf57fca0364e571e31ef635e0c7964906d77c9a59ccac0928856f20619009a7e6a2f7c54588583c70eba21b39081bb8c"
+
+[update]
+[update.modrinth]
+mod-id = "DZ81JNQ1"
+version = "FrCzUhaB"

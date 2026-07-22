@@ -1,0 +1,8 @@
+{
+	// Toggle the burning heart temperature display on the health bar
+	enableBurningHeartOverlay: true,
+	// Toggle the soaking display on the health bar
+	enableSoakingOverlay: true,
+	// Toggle the dripping particles when wet. This setting overrides Frostiful if installed.
+	enableWetDripParticles: true
+}

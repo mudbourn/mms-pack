@@ -1,0 +1,70 @@
+{
+	"credit":"By Seb_Semos",
+	"animations":[
+	{	
+			//Food detection
+			"varb.food_offhand":"varb.offhand_item_present&&!varb.shield_offhand&&!varb.sword_offhand&&!varb.axe_offhand&&!varb.mace_offhand&&!varb.trident_offhand&&!varb.hoe_offhand&&!varb.scythe_offhand&&!varb.halbedier_offhand&&!varb.special_sword_offhand&&!varb.ardonis_staff_offhand&&!varb.derp_fish_offhand&&!varb.crossbow_offhand&&!varb.bow_offhand&&!varb.riffle_offhand&&!varb.pistol_offhand",
+			"varb.food":"varb.main_hand_item_present&&!varb.shield&&!varb.sword&&!varb.axe&&!varb.mace&&!varb.trident&&!varb.hoe&&!varb.scythe&&!varb.halbedier&&!varb.special_sword&&!varb.ardonis_staff&&!varb.derp_fish&&!varb.crossbow&&!varb.bow&&!varb.riffle&&!varb.pistol",
+			"varb.eat":"varb.eat_right_handed||varb.eat_left_handed",
+			"varb.inflate_right_hand":"!is_right_handed&&varb.food_offhand&&!varb.eat_left_handed",
+			"varb.inflate_left_hand":"is_right_handed&&varb.food_offhand&&!varb.eat_right_handed",
+			"varb.eat_right_handed":"is_right_handed&&is_swinging_left_arm&&!is_aggressive&&varb.food_offhand",
+			"varb.eat_left_handed":"!is_right_handed&&is_swinging_right_arm&&!is_aggressive&&varb.food_offhand"
+		},
+		{
+			//Shield detection
+			"varb.shield_offhand":"ifb(varb.main_hand_item_present,nbt(Inventory,raw:iregex:.*slot:4b.*shield.*slot:5b.*),nbt(Inventory,raw:iregex:.*slot:4b.*shield.*))",
+			"varb.shield":"nbt(Inventory,raw:iregex:.*slot:5b.*shield.*)",
+			//Melee weapons detection
+			"varb.sword_offhand":"ifb(varb.main_hand_item_present,nbt(Inventory,raw:iregex:.*slot:4b.*sword.*slot:5b.*),nbt(Inventory,raw:iregex:.*slot:4b.*sword.*))",
+			"varb.sword":"nbt(Inventory,raw:iregex:.*slot:5b.*sword.*)",
+			"varb.axe_offhand":"ifb(varb.main_hand_item_present,nbt(Inventory,raw:iregex:.*slot:4b.*axe.*slot:5b.*),nbt(Inventory,raw:iregex:.*slot:4b.*axe.*))",
+			"varb.axe":"nbt(Inventory,raw:iregex:.*slot:5b.*axe.*)",
+			"varb.mace_offhand":"ifb(varb.main_hand_item_present,nbt(Inventory,raw:iregex:.*slot:4b.*mace.*slot:5b.*),nbt(Inventory,raw:iregex:.*slot:4b.*mace.*))",
+			"varb.mace":"nbt(Inventory,raw:iregex:.*slot:5b.*mace.*)",
+			"varb.spear_offhand":"ifb(varb.main_hand_item_present,nbt(Inventory,raw:iregex:.*slot:4b.*spear.*slot:5b.*),nbt(Inventory,raw:iregex:.*slot:4b.*spear.*))",
+			"varb.spear":"nbt(Inventory,raw:iregex:.*slot:5b.*spear.*)",
+			"varb.trident_offhand":"ifb(varb.main_hand_item_present,nbt(Inventory,raw:iregex:.*slot:4b.*trident.*slot:5b.*),nbt(Inventory,raw:iregex:.*slot:4b.*trident.*))",
+			"varb.trident":"nbt(Inventory,raw:iregex:.*slot:5b.*trident.*)",
+			"varb.hoe_offhand":"ifb(varb.main_hand_item_present,nbt(Inventory,raw:iregex:.*slot:4b.*hoe.*slot:5b.*),nbt(Inventory,raw:iregex:.*slot:4b.*hoe.*))",
+			"varb.hoe":"nbt(Inventory,raw:iregex:.*slot:5b.*hoe.*)",
+			"varb.scythe_offhand":"ifb(varb.main_hand_item_present,nbt(Inventory,raw:iregex:.*slot:4b.*(Scythe|Staff\\s3|Staff\\s8).*slot:5b.*),nbt(Inventory,raw:iregex:.*slot:4b.*(Scythe|Staff\\s3|Staff\\s8).*))",
+			"varb.scythe":"nbt(Inventory,raw:iregex:.*slot:5b.*(Scythe|Staff\\s3|Staff\\s8).*)",
+			"varb.halbedier_offhand":"ifb(varb.main_hand_item_present,nbt(Inventory,raw:iregex:.*slot:4b.*(Staff\\s1|Staff\\s6|Staff\\s7|Staff\\s10|Staff\\s11|Staff\\s13).*slot:5b.*),nbt(Inventory,raw:iregex:.*slot:4b.*(Staff\\s1|Staff\\s6|Staff\\s7|Staff\\s10|Staff\\s11|Staff\\s13).*))",
+			"varb.halbedier":"nbt(Inventory,raw:iregex:.*slot:5b.*(Staff\\s1|Staff\\s6|Staff\\s7|Staff\\s10|Staff\\s11|Staff\\s13).*)",
+			"varb.special_sword_offhand":"ifb(varb.main_hand_item_present,nbt(Inventory,raw:iregex:.*slot:4b.*(Deathsinger|Hadion|Niika|Thalleous).*slot:5b.*),nbt(Inventory,raw:iregex:.*slot:4b.*(Deathsinger|Hadion|Niika|Thalleous).*))",
+			"varb.special_sword":"nbt(Inventory,raw:iregex:.*slot:5b.*(Deathsinger|Hadion|Niika|Thalleous).*)",
+			"varb.special_axe_offhand":"ifb(varb.main_hand_item_present,nbt(Inventory,raw:iregex:.*slot:4b.*(Chronos|GreatAxe|Xaria|Zeru|Double\\sHalberd|Halberd).*slot:5b.*),nbt(Inventory,raw:iregex:.*slot:4b.*(Chronos|GreatAxe|Xaria|Zeru|Double\\sHalberd|Halberd).*))",
+			"varb.special_axe":"nbt(Inventory,raw:iregex:.*slot:5b.*(Chronos|GreatAxe|Xaria|Zeru|Double\\sHalberd|Halberd).*)",
+			"varb.ardonis_staff_offhand":"ifb(varb.main_hand_item_present,nbt(Inventory,raw:iregex:.*slot:4b.*(Kaltaris|Mendoris|Nestoris|Sendaris|Tidesinger|Voltaris|Staff\\s2|Staff\\s4|Staff\\s5|Staff\\s9|Staff\\s12).*slot:5b.*),nbt(Inventory,raw:iregex:.*slot:4b.*(Kaltaris|Mendoris|Nestoris|Sendaris|Tidesinger|Voltaris|Staff\\s2|Staff\\s4|Staff\\s5|Staff\\s9|Staff\\s12).*))",
+			"varb.ardonis_staff":"nbt(Inventory,raw:iregex:.*slot:5b.*(Kaltaris|Mendoris|Nestoris|Sendaris|Tidesinger|Voltaris|Staff\\s2|Staff\\s4|Staff\\s5|Staff\\s9|Staff\\s12).*)",
+			"varb.derp_fish_offhand":"ifb(varb.main_hand_item_present,nbt(Inventory,raw:iregex:.*slot:4b.*(Derp).*slot:5b.*),nbt(Inventory,raw:iregex:.*slot:4b.*(Derp).*))",
+			"varb.derp_fish":"nbt(Inventory,raw:iregex:.*slot:5b.*(Derp).*)"
+		},
+		{
+			//Range weapons detection
+			"varb.crossbow_offhand":"ifb(varb.main_hand_item_present,nbt(Inventory,raw:iregex:.*slot:4b.*crossbow.*slot:5b.*),nbt(Inventory,raw:iregex:.*slot:4b.*crossbow.*))",
+			"varb.crossbow":"nbt(Inventory,raw:iregex:.*slot:5b.*crossbow.*)",
+			"varb.bow_offhand":"ifb(varb.main_hand_item_present,nbt(Inventory,raw:iregex:.*slot:4b.*bow.*slot:5b.*),nbt(Inventory,raw:iregex:.*slot:4b.*bow.*))",
+			"varb.bow":"nbt(Inventory,raw:iregex:.*slot:5b.*bow.*)",
+			//Gun mods support:
+			"varb.riffle_offhand":"ifb(varb.main_hand_item_present,nbt(Inventory,raw:iregex:.*slot:4b.*musket.*slot:5b.*),nbt(Inventory,raw:iregex:.*slot:4b.*musket.*))",
+			"varb.riffle":"nbt(Inventory,raw:iregex:.*slot:5b.*musket.*)",
+			"varb.pistol_offhand":"ifb(varb.main_hand_item_present,nbt(Inventory,raw:iregex:.*slot:4b.*pistol.*slot:5b.*),nbt(Inventory,raw:iregex:.*slot:4b.*pistol.*))",
+			"varb.pistol":"nbt(Inventory,raw:iregex:.*slot:5b.*pistol.*)"
+		},
+		{
+			//Misc detection
+			"varb.offhand_item_present":"nbt(Inventory,raw:iregex:.*slot:4b.*)",
+			"varb.main_hand_item_present":"nbt(Inventory,raw:iregex:.*slot:5b.*)",
+			"varb.empty_offhand":"!varb.offhand_item_present",
+			"varb.empty_hand":"!varb.main_hand_item_present",
+			"varb.no_weapons":"varb.empty_hand&&varb.empty_offhand",
+			"varb.range_mainhand":"varb.crossbow||varb.bow||varb.riffle||varb.pistol",
+			"varb.aim":"varb.agressive&&varb.range_mainhand",
+			"varb.aiming":"varb.agressive&&is_swinging_right_arm&&varb.range_mainhand",	
+			"varb.gun_mods":"varb.riffle||varb.pistol",	
+			"varb.back_shield":"!varb.agressive&&(varb.shield_offhand||varb.shield)"
+		}
+	]
+}

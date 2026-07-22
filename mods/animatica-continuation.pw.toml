@@ -1,0 +1,13 @@
+name = "Animatica Continuation"
+filename = "animatica-0.6+1.21.11.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/SEiYzRFv/versions/vkkrxw4c/animatica-0.6%2B1.21.11.jar"
+hash-format = "sha512"
+hash = "4fc434d94470907f39a52671a78e9078d5ee75bf28ce25d283f9f0b113f943a076bdf20408cce03cb854a4c238c6fde9b018470192511323dd96ba8a825654e0"
+
+[update]
+[update.modrinth]
+mod-id = "SEiYzRFv"
+version = "vkkrxw4c"

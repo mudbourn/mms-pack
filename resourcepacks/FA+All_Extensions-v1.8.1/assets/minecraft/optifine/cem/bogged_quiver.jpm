@@ -1,0 +1,83 @@
+{
+	"credit": "Created by FreshLX for Fresh Animations",
+	"textureSize": [64, 32],
+	"texture": "textures/entity/skeleton/bogged_quiver",
+	"id": "bogged_quiver",
+	"invertAxis": "xy",
+	"translate": [0, 0, 0],
+	"submodels": [
+		{
+			"id": "quiver_strap",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0],
+			"boxes": [
+				{"coordinates": [-4, -12, -2, 8, 12, 4], "textureOffset": [16, 16], "sizeAdd": 0.27}
+			],
+			"submodels": [
+				{
+					"id": "quiver",
+					"invertAxis": "xy",
+					"translate": [2, -9.5, 2.275],
+					"rotate": [0, 0, 35],
+					"boxes": [
+						{"coordinates": [-2, -2, 0, 4, 11, 2], "textureOffset": [33, 2]},
+						{
+							"coordinates": [-2.5, 9, 1.5, 5, 4, 0],
+							"uvNorth": [0, 0, 0, 0],
+							"uvEast": [0, 0, 0, 0],
+							"uvSouth": [46, 1, 51, 5],
+							"uvWest": [0, 0, 0, 0],
+							"uvUp": [0, 0, 0, 0],
+							"uvDown": [0, 0, 0, 0]
+						}
+					],
+					"submodels": [
+						{
+							"id": "quiver_rotation",
+							"invertAxis": "xy",
+							"translate": [-0.5, 2, 2.5],
+							"rotate": [0, -180, 0],
+							"boxes": [
+								{"coordinates": [-1.5, -2, -0.5, 3, 4, 1], "textureOffset": [49, 15]}
+							]
+						},
+						{
+							"id": "quiver_rotation2",
+							"invertAxis": "xy",
+							"translate": [1, 9, 1.5],
+							"rotate": [0, -60, 0],
+							"boxes": [
+								{
+									"coordinates": [-1.5, 0, 0, 3, 4, 0],
+									"uvNorth": [0, 0, 0, 0],
+									"uvEast": [0, 0, 0, 0],
+									"uvSouth": [46, 6, 49, 10],
+									"uvWest": [0, 0, 0, 0],
+									"uvUp": [0, 0, 0, 0],
+									"uvDown": [0, 0, 0, 0]
+								}
+							]
+						},
+						{
+							"id": "quiver_rotation3",
+							"invertAxis": "xy",
+							"translate": [-1, 9, 1.5],
+							"rotate": [0, -62.5, 0],
+							"boxes": [
+								{
+									"coordinates": [-1.5, 0, 0, 3, 4, 0],
+									"uvNorth": [0, 0, 0, 0],
+									"uvEast": [0, 0, 0, 0],
+									"uvSouth": [50, 6, 53, 10],
+									"uvWest": [0, 0, 0, 0],
+									"uvUp": [0, 0, 0, 0],
+									"uvDown": [0, 0, 0, 0]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

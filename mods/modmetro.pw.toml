@@ -1,0 +1,10 @@
+name = "Modmetro"
+filename = "modmetro-v1.jar"
+side = "both"
+
+[download]
+url = "https://raw.githubusercontent.com/mudbourn/mms-pack/main/mods/modmetro-v1.jar"
+hash-format = "sha512"
+hash = "e129edf7cce77567e4eccb5b501be1bf9ba067cad2eb519c610805bd3fcbce3ea3ab2de2a12ac0e67cb7406c2dd85b869f14e4abfb3627f0c7c80c2ddfa535d4"
+
+[update]

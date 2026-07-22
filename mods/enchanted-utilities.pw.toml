@@ -1,0 +1,13 @@
+name = "Enchanted Utilities"
+filename = "enchanted-utilities-1.2.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/Tu3w5HjV/versions/jKaeYndB/enchanted-utilities-1.2.0.jar"
+hash-format = "sha512"
+hash = "a7c51df9aa3690ee841e2d36f5ae1340239f88821393c68ba53ef9ee3ae7c661c26926fb1ff1aa6c1b0cfb1f84c1592718f1f494845203275a360f8d3f71a6a0"
+
+[update]
+[update.modrinth]
+mod-id = "Tu3w5HjV"
+version = "jKaeYndB"

@@ -1,0 +1,66 @@
+{
+	"credit": "By Seb_Semos",
+	"animations": [
+		{
+			//Make attachement points to have zero rotations when the entity use weapons
+			//Food when agressive has a slight derive from body
+			"cancel_body_rx.rx":"if(varb.agressive,-body.rx,torad(0))",
+			"cancel_body_ry.ry":"if(varb.agressive,-body.ry,torad(0))",
+			"cancel_body_rz.rz":"if(varb.agressive,-body.rz,torad(0))",
+			
+			//Right hand attachement point maths ||||||||||||| Right arm:
+			"right_handheld_item.rx":"if(is_right_handed,if(varb.crossbow,var.crossbow_right_arm_rx,varb.bow,var.bow_right_arm_rx,varb.sword,var.sword_right_arm_rx,varb.axe,var.axe_right_arm_rx,varb.shield,var.shield_right_arm_rx,var.magic_right_arm_rx),if(varb.shield,var.shield_right_arm_rx,var.magic_right_arm_rx))",
+			"right_handheld_item.ry":"if(is_right_handed,if(varb.crossbow,var.crossbow_right_arm_ry,varb.bow,var.bow_right_arm_ry,varb.sword,var.sword_right_arm_ry,varb.axe,var.axe_right_arm_ry,varb.shield,var.shield_right_arm_ry,var.magic_right_arm_ry),if(varb.shield,var.shield_right_arm_ry,var.magic_right_arm_ry))",
+			"right_handheld_item.rz":"if(is_right_handed,if(varb.crossbow,var.crossbow_right_arm_rz,varb.bow,var.bow_right_arm_rz,varb.sword,var.sword_right_arm_rz,varb.axe,var.axe_right_arm_rz,varb.shield,var.shield_right_arm_rz,var.magic_right_arm_rz),if(varb.shield,var.shield_right_arm_rz,var.magic_right_arm_rz))",
+			"right_handheld_item.tx":"if(is_right_handed,if(varb.crossbow,var.crossbow_right_arm_tx,varb.bow,var.bow_right_arm_tx,varb.sword,var.sword_right_arm_tx,varb.axe,var.axe_right_arm_tx,varb.shield,var.shield_right_arm_tx,var.empty_arm_right_arm_tx),if(varb.shield,var.shield_right_arm_tx,var.empty_arm_right_arm_tx))-5",
+			"right_handheld_item.ty":"if(is_right_handed,if(varb.crossbow,var.crossbow_right_arm_ty,varb.bow,var.bow_right_arm_ty,varb.sword,var.sword_right_arm_ty,varb.axe,var.axe_right_arm_ty,varb.shield,var.shield_right_arm_ty,var.empty_arm_right_arm_ty),if(varb.shield,var.shield_right_arm_ty,var.empty_arm_right_arm_ty))",
+			"right_handheld_item.tz":"if(is_right_handed,if(varb.crossbow,var.crossbow_right_arm_tz,varb.bow,var.bow_right_arm_tz,varb.sword,var.sword_right_arm_tz,varb.axe,var.axe_right_arm_tz,varb.shield,var.shield_right_arm_tz,var.empty_arm_right_arm_tz),if(varb.shield,var.shield_right_arm_tz,var.empty_arm_right_arm_tz))",
+
+			//Left hand attachement point maths ||| Left arm:
+			"left_handheld_item.rx":"if(is_right_handed,if(varb.shield,var.shield_left_arm_rx,var.magic_left_arm_rx),if(varb.crossbow,var.crossbow_left_arm_rx,varb.bow,var.bow_left_arm_rx,varb.sword,var.sword_left_arm_rx,varb.axe,var.axe_left_arm_rx,varb.shield,var.shield_left_arm_rx,var.magic_left_arm_rx))",
+			"left_handheld_item.ry":"if(is_right_handed,if(varb.shield,var.shield_left_arm_ry,var.magic_left_arm_ry),if(varb.crossbow,var.crossbow_left_arm_ry,varb.bow,var.bow_left_arm_ry,varb.sword,var.sword_left_arm_ry,varb.axe,var.axe_left_arm_ry,varb.shield,var.shield_left_arm_ry,var.magic_left_arm_ry))",
+			"left_handheld_item.rz":"if(is_right_handed,if(varb.shield,var.shield_left_arm_rz,var.magic_left_arm_rz),if(varb.crossbow,var.crossbow_left_arm_rz,varb.bow,var.bow_left_arm_rz,varb.sword,var.sword_left_arm_rz,varb.axe,var.axe_left_arm_rz,varb.shield,var.shield_left_arm_rz,var.magic_left_arm_rz))",
+			"left_handheld_item.tx":"if(is_right_handed,if(varb.shield,var.shield_left_arm_tx,var.empty_arm_left_arm_tx),if(varb.crossbow,var.crossbow_left_arm_tx,varb.bow,var.bow_left_arm_tx,varb.sword,var.sword_left_arm_tx,varb.axe,var.axe_left_arm_tx,varb.shield,var.shield_left_arm_tx,var.empty_arm_left_arm_tx))+5",
+			"left_handheld_item.ty":"if(is_right_handed,if(varb.shield,var.shield_left_arm_ty,var.empty_arm_left_arm_ty),if(varb.crossbow,var.crossbow_left_arm_ty,varb.bow,var.bow_left_arm_ty,varb.sword,var.sword_left_arm_ty,varb.axe,var.axe_left_arm_ty,varb.shield,var.shield_left_arm_ty,var.empty_arm_left_arm_ty))",
+			"left_handheld_item.tz":"if(is_right_handed,if(varb.shield,var.shield_left_arm_tz,var.empty_arm_left_arm_tz),if(varb.crossbow,var.crossbow_left_arm_tz,varb.bow,var.bow_left_arm_tz,varb.sword,var.sword_left_arm_tz,varb.axe,var.axe_left_arm_tz,varb.shield,var.shield_left_arm_tz,var.empty_arm_left_arm_tz))",
+
+			//Arms animations
+			//Right
+			"right_arm.visible":"varb.non_changing_arms_mobs||varb.is_doing_magic||varb.in_water",
+			"right_arm.rx":"if(varb.is_doing_magic,right_handheld_item.rx,varb.in_water,var.right_arm_idle_rx,right_arm.rx)",
+			"right_arm.ry":"if(varb.is_doing_magic,right_handheld_item.ry,varb.in_water,var.right_arm_idle_ry,right_arm.ry)",
+			"right_arm.rz":"if(varb.is_doing_magic,right_handheld_item.rz,varb.in_water,var.right_arm_idle_rz,right_arm.rz)",
+			"right_arm.tx":"body.tx-5",
+			"right_arm.ty":"body.ty+2",
+			"right_arm.tz":"body.tz",
+			//Left
+			"left_arm.visible":"varb.non_changing_arms_mobs||varb.is_doing_magic||varb.in_water",
+			"left_arm.rx":"if(varb.is_doing_magic,left_handheld_item.rx,varb.in_water,var.left_arm_idle_rx,left_arm.rx)",
+			"left_arm.ry":"if(varb.is_doing_magic,left_handheld_item.ry,varb.in_water,var.left_arm_idle_ry,left_arm.ry)",
+			"left_arm.rz":"if(varb.is_doing_magic,left_handheld_item.rz,varb.in_water,var.left_arm_idle_rz,left_arm.rz)",
+			"left_arm.tx":"body.tx+5",
+			"left_arm.ty":"body.ty+2",
+			"left_arm.tz":"body.tz"
+		},
+		{
+			"arms.visible":"!right_arm.visible",
+			"closed_arms.visible":"!right_arm.visible",
+			"closed_right_arm.visible":"!right_arm.visible",
+			"closed_left_arm.visible":"!right_arm.visible"
+		},
+		{	
+			"right_sleeve.rx":"right_arm.rx",
+			"right_sleeve.ry":"right_arm.ry",
+			"right_sleeve.rz":"right_arm.rz",
+			"right_sleeve.tx":"right_arm.tx",
+			"right_sleeve.ty":"right_arm.ty",
+			"right_sleeve.tz":"right_arm.tz",
+			"left_sleeve.rx":"left_arm.rx",
+			"left_sleeve.ry":"left_arm.ry",
+			"left_sleeve.rz":"left_arm.rz",
+			"left_sleeve.tx":"left_arm.tx",
+			"left_sleeve.ty":"left_arm.ty",
+			"left_sleeve.tz":"left_arm.tz"
+		}
+	]
+}

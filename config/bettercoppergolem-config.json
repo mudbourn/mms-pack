@@ -1,0 +1,14 @@
+{
+  "_comment": "Download mod menu for better config experience and option explanations with translation",
+  "shulkerAndBundleSorting": true,
+  "ignoreColor": false,
+  "allowIndividualItemsMatchContainerContents": false,
+  "allowInsertingItemsIntoContainers": false,
+  "matchOxidationLevel": false,
+  "maxChestCheckCount": 10,
+  "maxHeldItemStackSize": 16,
+  "cooldownTime": 140,
+  "verticalRange": 2,
+  "horizontalRange": 32,
+  "interactionTime": 60
+}

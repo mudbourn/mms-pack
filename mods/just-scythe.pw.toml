@@ -1,0 +1,13 @@
+name = "Just Scythe"
+filename = "just-scythe-v1.1.0+1.21.5.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/ehM70vpR/versions/wCkY9Nbd/just-scythe-v1.1.0%2B1.21.5.jar"
+hash-format = "sha512"
+hash = "04e4135ed7ba7b14aa3e0fbec9a31e572d11b4a36c561a08c44bae1ac37bd6bbc633eae8ccb59171232e04c187632133e1dee24b6e69e3c8175666dfa8748103"
+
+[update]
+[update.modrinth]
+mod-id = "ehM70vpR"
+version = "wCkY9Nbd"

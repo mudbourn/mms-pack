@@ -1,0 +1,13 @@
+name = "Origins: Legacy"
+filename = "Origins-Legacy-1.12.16+1.21.11.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/mc1uvRn8/versions/loQes5GW/Origins-Legacy-1.12.16%2B1.21.11.jar"
+hash-format = "sha512"
+hash = "0743a8f3c1e1ba5300156465808412aa01ec8782d46c7d45e8111dcee3514f608f13715b3fd22e5fdd83cf72667eb0fa01608ac2b9fce3b23a34fe80a9a7501d"
+
+[update]
+[update.modrinth]
+mod-id = "mc1uvRn8"
+version = "loQes5GW"

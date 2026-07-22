@@ -1,0 +1,9 @@
+{
+  "enabled": false,
+  "sneaking": true,
+  "showMessage": true,
+  "goBack": true,
+  "respectSilkFortune": true,
+  "disabledTools": [],
+  "disabledBlocks": []
+}

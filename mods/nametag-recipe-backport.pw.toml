@@ -1,0 +1,13 @@
+name = "Nametag Recipe Backport"
+filename = "nametagrecipe-1.20-1.21.11.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/aZsz2Ke2/versions/SRsK0syV/nametagrecipe-1.20-1.21.11.jar"
+hash-format = "sha512"
+hash = "d2aa762e8827db06b192ce0412bdc65158606cc3a59b2f48c56ac09b2347c6ea033bcfc4bf7e909e897133b2b1f6d4fe05645ffbf641c5b71e3b2fcd0ed35777"
+
+[update]
+[update.modrinth]
+mod-id = "aZsz2Ke2"
+version = "SRsK0syV"

@@ -1,0 +1,13 @@
+name = "Absolut Revive"
+filename = "absolutrevive-v1.2.1b.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/Hh7C02VI/versions/wb1DqX2D/absolutrevive-v1.2.1b.jar"
+hash-format = "sha512"
+hash = "b36efd9a71975510408c21a91cbc8f856371828425b499faa45523f8cd3d2b7c33996cbfdc8c5770099c9af153faa62405792d03bc471352a8a21a330046c4d6"
+
+[update]
+[update.modrinth]
+mod-id = "Hh7C02VI"
+version = "wb1DqX2D"

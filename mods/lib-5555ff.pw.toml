@@ -1,0 +1,13 @@
+name = "5555ff-lib"
+filename = "lib-5555ff-v1.1.4.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/Lr1LVAwO/versions/1Qt19x6c/lib-5555ff-v1.1.4.jar"
+hash-format = "sha512"
+hash = "d203d5adfd43066f51c251d398397ac82663797dd54c2b3d72e196711dd85ca2a08cb95605e3c4bddc31526735527a0274e6319e094ad679553bc2af17a84d11"
+
+[update]
+[update.modrinth]
+mod-id = "Lr1LVAwO"
+version = "1Qt19x6c"

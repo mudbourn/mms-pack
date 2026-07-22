@@ -1,0 +1,9 @@
+{
+  "pack": {
+    "description": "Bow draws in first person (Third-Person mod compatibility)",
+    "supported_formats": [
+      94,
+      1
+    ]
+  }
+}

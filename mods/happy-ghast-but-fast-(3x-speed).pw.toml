@@ -1,0 +1,13 @@
+name = "Happy Ghast but Fast (3x Speed)"
+filename = "happy-ghast-but-fast-(3x-speed)-3.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/2mQ2CKzC/versions/2LwIQ02A/happy-ghast-but-fast-%283x-speed%29-3.jar"
+hash-format = "sha512"
+hash = "03a09b4efa0a11fdfcfdf69b4f6f4ffd88ec3aef36142d5ba1b14c3ed1345aca2877676f409df8557b970c8e6289910e17cbcd42ba7fcbbd13b3c09dc2027bff"
+
+[update]
+[update.modrinth]
+mod-id = "2mQ2CKzC"
+version = "2LwIQ02A"

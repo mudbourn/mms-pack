@@ -1,0 +1,13 @@
+name = "Fake AFK"
+filename = "fake_afk-1.0.6-1.21.11.jar"
+side = "server"
+
+[download]
+url = "https://cdn.modrinth.com/data/wW2N9HyO/versions/iqlq7n7x/fake_afk-1.0.6-1.21.11.jar"
+hash-format = "sha512"
+hash = "af66659e4169ef9b36f7a45d73f0022f106dc64ba46432d593b66811e71fb03f6b5eccd24baa3326aba19986c6e0738743ba412006ce667ff58f485c13c9d2b8"
+
+[update]
+[update.modrinth]
+mod-id = "wW2N9HyO"
+version = "iqlq7n7x"

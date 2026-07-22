@@ -1,0 +1,13 @@
+name = "Training Dummy"
+filename = "training-dummy-1.1.3.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/BflFQ6iN/versions/4z3l9qHQ/training-dummy-1.1.3.jar"
+hash-format = "sha512"
+hash = "f13219a8c3b89b623d5d255b952044598e64f7382caec645e49b542b9a902b423753102b2288bc45e30df33a6228765b4f90eb1b697fdd284e98a14bedd20ce0"
+
+[update]
+[update.modrinth]
+mod-id = "BflFQ6iN"
+version = "4z3l9qHQ"

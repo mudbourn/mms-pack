@@ -1,0 +1,13 @@
+name = "Furnish"
+filename = "furnish-31.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/5cWCtJmf/versions/MjIJWJSC/furnish-31.jar"
+hash-format = "sha512"
+hash = "e8237cc987423aa4353be95402b139126d833ff1fa10c1b6df0c79cbeef3939f837e59c473dc3c7c3a8691533f6bf8e8a30a06971e8d4c828313ad112214e3cb"
+
+[update]
+[update.modrinth]
+mod-id = "5cWCtJmf"
+version = "MjIJWJSC"
