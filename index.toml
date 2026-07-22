@@ -5,10 +5,6 @@ file = ".packignore"
 hash = "f0038124c0ae425e565ef0299b35f07fce689ee09f22f9886e0282f4ac028857"
 
 [[files]]
-file = "INVENTORY-TASK.md"
-hash = "75ea89c3abaa9e92fb0f62ee3b0d1f46b218d67e7bfcf8326dc5d41e2a7b138a"
-
-[[files]]
 file = "LICENSE"
 hash = "39b1578c36cfd699e9de71dbd69ff5979ef536c85cd1af774079e8fcad3399f2"
 
@@ -1298,7 +1294,7 @@ hash = "4449fb9b3440c4367f861d0f8e75b879caf6c897cb47569f13929ca37d6c864d"
 
 [[files]]
 file = "config/modpack_defaults/config/rrls.toml"
-hash = "3630be880dc7f037238b7e6347201d4f716ffc7e16db0a1498ef2f775cf8f5be"
+hash = "6b44bfd3fc7ee9d8f589425503e2af2748aa274d080f6d270d34cbc1b5604d45"
 
 [[files]]
 file = "config/modpack_defaults/config/sodium-extra-options.json"
@@ -1414,7 +1410,7 @@ hash = "0a491c553999d93a367d866bdda4500ee78065acd5988603f7f994311193318f"
 
 [[files]]
 file = "config/rrls.toml"
-hash = "3630be880dc7f037238b7e6347201d4f716ffc7e16db0a1498ef2f775cf8f5be"
+hash = "6b44bfd3fc7ee9d8f589425503e2af2748aa274d080f6d270d34cbc1b5604d45"
 
 [[files]]
 file = "config/rsls.properties"
@@ -11660,7 +11656,7 @@ hash = "3e44ccdb53882a91e6fa51b33aa2d28a352258c826e1f8b323c58abd688cf578"
 
 [[files]]
 file = "resourcepacks/Better-Leaves-9.5/assets/croptopia/models/block/croptopia_leaves.json"
-hash = "29fe5df5ab5726717af5d3d1901cda109390b128aa310a566c33a0707850bd67"
+hash = "09a40e9c0e26db7e4484e955ae8761df902a51e4cc89f68850f1fd8679b3fe8f"
 
 [[files]]
 file = "resourcepacks/Better-Leaves-9.5/assets/croptopia/textures/block/cinnamon_leaves.png"
@@ -18736,11 +18732,11 @@ hash = "e81ae843001f56a08c52a4dc854f9279c7c48515a76e493c226fab180bf9bccc"
 
 [[files]]
 file = "resourcepacks/Better-Leaves-9.5/assets/projectvibrantjourneys/models/block/dead_fallen_leaves.json"
-hash = "fb73e67815baa9d15d584cd3478558b44304e178a1b5570d88a7b4013a900f88"
+hash = "7adba8415d4a6c0fbb01b6b65064ca07d947d996803bb24617f60a689faa32ce"
 
 [[files]]
 file = "resourcepacks/Better-Leaves-9.5/assets/projectvibrantjourneys/models/block/fallen_leaves.json"
-hash = "3a171f6780cfe219d99d5378c106ba53210c2ac79c5e7d3b3dc436707a319bcc"
+hash = "fe36ad2da8d8dcd83172e7680d75de7e2eaaaca40be28b5a53b20720ed9bf693"
 
 [[files]]
 file = "resourcepacks/Better-Leaves-9.5/assets/quark/blockstates/acacia_leaf_carpet.json"
@@ -19980,7 +19976,7 @@ hash = "eac4708512395f6c29bef2fa16f7fba80a6b4b7acfbc8be7c089dff8e655c545"
 
 [[files]]
 file = "resourcepacks/Better-Leaves-9.5/assets/techreborn/models/item/rubber_leaves.json"
-hash = "d56c39208682df742cf62c7bd79c5914e0ab8db32e49be67e2c34483f9b5fd0d"
+hash = "6a33210a66459ed557dfbc30c127cab6bbfc33a3660d67ec5061c3760d43cd26"
 
 [[files]]
 file = "resourcepacks/Better-Leaves-9.5/assets/techreborn/textures/block/misc/rubber_leaves.png"
@@ -21688,7 +21684,7 @@ hash = "d62a5fab57b896845aeba93e949e537a718d47c2b9fe87c1606254037e7599ba"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/font/default.json"
-hash = "1c19d5b33de69622704a2ee4669bd539c26e0f0c9f20b20c677b3164ea601b55"
+hash = "9ff62a74a982452bf4904baa53d5c93a45901b9409e8eff989a608ccbdc740cb"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/cem/boat.jem"
@@ -22948,7 +22944,7 @@ hash = "fb8501560cf1d904f9ac9c59794039ab4d849b7fe958aba6fe81967b256e4400"
 
 [[files]]
 file = "resourcepacks/FA+Creepers-v2.1/assets/minecraft/font/default.json"
-hash = "1c19d5b33de69622704a2ee4669bd539c26e0f0c9f20b20c677b3164ea601b55"
+hash = "9ff62a74a982452bf4904baa53d5c93a45901b9409e8eff989a608ccbdc740cb"
 
 [[files]]
 file = "resourcepacks/FA+Creepers-v2.1/assets/minecraft/optifine/cem/creeper.jem"
@@ -23104,7 +23100,7 @@ hash = "fb8501560cf1d904f9ac9c59794039ab4d849b7fe958aba6fe81967b256e4400"
 
 [[files]]
 file = "resourcepacks/FA+Details-v2.2.1/assets/minecraft/font/default.json"
-hash = "1c19d5b33de69622704a2ee4669bd539c26e0f0c9f20b20c677b3164ea601b55"
+hash = "9ff62a74a982452bf4904baa53d5c93a45901b9409e8eff989a608ccbdc740cb"
 
 [[files]]
 file = "resourcepacks/FA+Details-v2.2.1/assets/minecraft/optifine/cem/cat_baby.jem"
@@ -24284,7 +24280,7 @@ hash = "fb8501560cf1d904f9ac9c59794039ab4d849b7fe958aba6fe81967b256e4400"
 
 [[files]]
 file = "resourcepacks/FA+Spiders-v2.2/assets/minecraft/font/default.json"
-hash = "1c19d5b33de69622704a2ee4669bd539c26e0f0c9f20b20c677b3164ea601b55"
+hash = "9ff62a74a982452bf4904baa53d5c93a45901b9409e8eff989a608ccbdc740cb"
 
 [[files]]
 file = "resourcepacks/FA+Spiders-v2.2/assets/minecraft/optifine/cem/cave_spider.jem"
@@ -24440,7 +24436,7 @@ hash = "306df07a9ab49208405669a96d4dea050b7078b7aee45e1fa629ded1de8c4f30"
 
 [[files]]
 file = "resourcepacks/Fresh Patch - Variants and Ventures/pack.mcmeta"
-hash = "d644488c3218458e9020cf7b1b2cfdaad0a3e09d2cfd818534510bddcf86844e"
+hash = "1ac3927a6f2c368387ee6b32f62db522b502d567f4876828d8ca7052f516c9ca"
 
 [[files]]
 file = "resourcepacks/Fresh Patch - Variants and Ventures/pack.png"
