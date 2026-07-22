@@ -23,4 +23,17 @@ for f in \
   fi
 done
 
+# Re-apply preserve flags (packwiz refresh strips them)
+for entry in "options.txt" "servers.dat"; do
+  sed -i '' "/file = \"$entry\"/{
+    n
+    /preserve/!a\\
+preserve = true
+  }" "$PACK_DIR/index.toml"
+done
+
+# Update pack.toml index hash
+NEW_HASH=$(sha256sum "$PACK_DIR/index.toml" | cut -d' ' -f1)
+sed -i '' "s/hash = \"[a-f0-9]*\"/hash = \"$NEW_HASH\"/" "$PACK_DIR/pack.toml"
+
 echo "Title updated to: $TITLE"
