@@ -25,11 +25,14 @@ done
 
 # Re-apply preserve flags (packwiz refresh strips them)
 for entry in "options.txt" "servers.dat"; do
-  sed -i '' "/file = \"$entry\"/{
-    n
-    /preserve/!a\\
+  # Only add if not already present
+  if ! grep -A2 "file = \"$entry\"" "$PACK_DIR/index.toml" | grep -q "preserve"; then
+    sed -i '' "/file = \"$entry\"/{
+      n
+      a\\
 preserve = true
-  }" "$PACK_DIR/index.toml"
+    }" "$PACK_DIR/index.toml"
+  fi
 done
 
 # Update pack.toml index hash
