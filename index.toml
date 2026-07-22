@@ -3010,7 +3010,6 @@ metafile = true
 file = "options.txt"
 hash = "3d199cec976c9527d403608298bd6e6c97920b4357e4477364b8f1364cd34f10"
 preserve = true
-preserve = true
 
 [[files]]
 file = "resourcepacks/Better-Leaves-9.5/LICENSE"
@@ -27883,7 +27882,6 @@ hash = "6c9c5b061b154cef1cbd3b6269635e79f6215495be8c138785069cb273d41d90"
 [[files]]
 file = "servers.dat"
 hash = "2396f65caf7f45bde09efa3cc89af7c93079d694714b44a412486ee7650dc05e"
-preserve = true
 preserve = true
 
 [[files]]
