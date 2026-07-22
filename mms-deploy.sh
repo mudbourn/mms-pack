@@ -49,7 +49,18 @@ for toml in mods/*.pw.toml; do
         gh release view "v$ver" >/dev/null 2>&1 \
             || gh release create "v$ver" "$jar" --title "v$ver" --notes "released by mms-deploy"
     )
-    packwiz update "${${toml:t}%.pw.toml}"
+    # the releases API is eventually consistent — a just-created release can
+    # be missing from the list for a few seconds, so retry until the toml
+    # actually points at the new tag
+    for attempt in 1 2 3 4 5; do
+        packwiz update "${${toml:t}%.pw.toml}"
+        grep -q "^tag = \"v$ver\"" "$toml" && break
+        echo "   (release not visible yet, retrying in 5s...)"
+        sleep 5
+    done
+    if ! grep -q "^tag = \"v$ver\"" "$toml"; then
+        echo "!! $slug: pack still points at v$tag after release v$ver — re-run mms-deploy" >&2
+    fi
 done
 
 packwiz update -a
