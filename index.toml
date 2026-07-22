@@ -2430,12 +2430,8 @@ hash = "91c2e8506dbe7341e6fafd9cb730ee47ce491de6d08f5edd01a43429d2334282"
 metafile = true
 
 [[files]]
-file = "mods/ks-support-0.3.0.jar"
-hash = "e2ab5a9d0abc16d37965973962d8003f21c310ccb0a4247112a0b034d8c0b2a0"
-
-[[files]]
 file = "mods/ks-support.pw.toml"
-hash = "073769f475ba213bb24b56f81ad5d350cf988a14574011dd40076a2cab42bf3b"
+hash = "87cbb5bef6052f0b5da0e715dfb9463e677fa76f40d8f98732b883fbe829aac4"
 metafile = true
 
 [[files]]
