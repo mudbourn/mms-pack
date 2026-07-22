@@ -1926,7 +1926,7 @@ metafile = true
 
 [[files]]
 file = "mods/c2me-fabric.pw.toml"
-hash = "3d2fce19d393b65c5585bcb64952d2f07f9a2d63f8e34c79cf718affc452313e"
+hash = "8049628241220dc47909f5d823511b6bf6c8a4cfd7bb212e031ee2acbbd9d7d3"
 metafile = true
 
 [[files]]
@@ -2488,7 +2488,7 @@ metafile = true
 
 [[files]]
 file = "mods/lithostitched.pw.toml"
-hash = "57fb1ac1da006185c0f509d3c4b5a3e0ebba2f3e572559a19a0984f6f23457f6"
+hash = "bbe909e10769a737282de658c904e59f024380cc3a4294927e1acae7f9d3b018"
 metafile = true
 
 [[files]]
@@ -2646,7 +2646,7 @@ metafile = true
 
 [[files]]
 file = "mods/oh-the-trees-youll-grow.pw.toml"
-hash = "c9e7f6ea539e4c18eada7cd97bf445305191379718463afd88215665e4662c70"
+hash = "b186d98f426cbda57a9745030a1fdafb77e3e4956528145a844a859808d15bba"
 metafile = true
 
 [[files]]
@@ -2856,7 +2856,7 @@ metafile = true
 
 [[files]]
 file = "mods/sodium.pw.toml"
-hash = "6747f2e71e6d9ae5b6c4aea899f6af5fbbb612aac8c9bbb45990463826af3398"
+hash = "723a13737a51aa682f385ede7e4bfa925b1dfb435436ab2f69dc25c4be1b2c04"
 metafile = true
 
 [[files]]
