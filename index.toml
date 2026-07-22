@@ -1947,12 +1947,8 @@ hash = "1fdff82937e5c40e0ddeeb33ec5922bb2db00d8f95f94434645e4bbe3f43e551"
 metafile = true
 
 [[files]]
-file = "mods/camera-glue-0.2.0.jar"
-hash = "51a9f2883fdaccf4b73d2538ec47d8d40fa25a13ca314b5a90303bab662966e1"
-
-[[files]]
 file = "mods/camera-glue.pw.toml"
-hash = "00c42d720e39a3266c4e7a1807517a0cfca22f91121446d080ff10e410632127"
+hash = "bf3b309465eca1034d8805757fad10f073e2b769bc68011d8dcc6f36af00b448"
 metafile = true
 
 [[files]]
