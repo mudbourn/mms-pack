@@ -2519,16 +2519,12 @@ hash = "835c556c329a2f55f8f67b36ad5826b63dce0f91073bb28913250c3c80cfab04"
 metafile = true
 
 [[files]]
-file = "mods/mms-mod-compat-support-0.4.3.jar"
-hash = "1dabe25c3a318c61e9e96336b2a402754d07bed25b607702fa5326666814da54"
-
-[[files]]
 file = "mods/mms-mod-compat-support-0.5.0.jar"
-hash = "99630a588114e467a2934811f24670b4f92860f8f11a294343bac3994422f825"
+hash = "231b0aa25afcaf53ae3dd24b83395771090bb585532576425363a9e570a5bc2d"
 
 [[files]]
 file = "mods/mms-mod-compat-support.pw.toml"
-hash = "2b3db369e0e67c5520783048df7989a4964dded94c51f2e6586d2f300aa62733"
+hash = "d0fc9d8e96ba5a8faca4203aa0cefc57211e1384bc3706108eb5720f574a44d1"
 metafile = true
 
 [[files]]
