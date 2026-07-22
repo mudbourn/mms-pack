@@ -1944,7 +1944,7 @@ metafile = true
 
 [[files]]
 file = "mods/camera-glue.pw.toml"
-hash = "bf3b309465eca1034d8805757fad10f073e2b769bc68011d8dcc6f36af00b448"
+hash = "3297cc522132cd41bd2c199a1bb90627f9491a1407e569dc2e5647e6e04a5b2c"
 metafile = true
 
 [[files]]
@@ -2148,7 +2148,7 @@ metafile = true
 
 [[files]]
 file = "mods/e4mc.pw.toml"
-hash = "5be4c02268497d87b2b791423d001bd1e86a5fc3912b6e84b5029130d0996cdc"
+hash = "a4cdd43fc5eb925a0561ff27db844f7f5b127212b75ca17e8734713c6d54f67c"
 metafile = true
 
 [[files]]
