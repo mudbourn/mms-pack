@@ -2,11 +2,19 @@ hash-format = "sha256"
 
 [[files]]
 file = ".packignore"
-hash = "6f696150201db758665905a653ddfb227abb421f9cab87c17e94d0c86aa0e153"
+hash = "f0038124c0ae425e565ef0299b35f07fce689ee09f22f9886e0282f4ac028857"
 
 [[files]]
 file = "INVENTORY-TASK.md"
 hash = "75ea89c3abaa9e92fb0f62ee3b0d1f46b218d67e7bfcf8326dc5d41e2a7b138a"
+
+[[files]]
+file = "LICENSE"
+hash = "39b1578c36cfd699e9de71dbd69ff5979ef536c85cd1af774079e8fcad3399f2"
+
+[[files]]
+file = "README.md"
+hash = "e481f0f34d6f3d5a8f24f699712f050fbabaa232fd073340b15176d5a856ce8d"
 
 [[files]]
 file = "config/.puzzle_cache/mojangstudios.png"
@@ -858,7 +866,7 @@ hash = "7aa15025d8d944148bd848948f7ec3598d47a1a73a96d2169e3230f4c7ec0bed"
 
 [[files]]
 file = "config/fabrishot.properties"
-hash = "f5ff731194f66727bfeb75a28a70104fc4687cbc84b69e60c94fe1b7d901f453"
+hash = "ba5f5ccfd31e25f9feb4730dfc01ef7bee4156b3336453cbe797ffb0c51ab46f"
 
 [[files]]
 file = "config/fake_afk.txt"
@@ -1166,7 +1174,7 @@ hash = "057e9e53790394db8b700616de3c235b0af3dc12fe7731a66ad20026acb9d991"
 
 [[files]]
 file = "config/modpack_defaults/config/crash_assistant/config.toml"
-hash = "5413fb54d784c0d11ce9b91196a2de7391bd05563113baaf3b4b118ab05f457f"
+hash = "3e05f762553856834288ff0cd9300f0fd2fb13ce896f715390d9d12814537f70"
 
 [[files]]
 file = "config/modpack_defaults/config/crash_assistant/crash_assistant_localization_overrides/be_by.json"
@@ -1250,7 +1258,7 @@ hash = "7aa15025d8d944148bd848948f7ec3598d47a1a73a96d2169e3230f4c7ec0bed"
 
 [[files]]
 file = "config/modpack_defaults/config/fabrishot.properties"
-hash = "f5ff731194f66727bfeb75a28a70104fc4687cbc84b69e60c94fe1b7d901f453"
+hash = "ba5f5ccfd31e25f9feb4730dfc01ef7bee4156b3336453cbe797ffb0c51ab46f"
 
 [[files]]
 file = "config/modpack_defaults/config/fastquit.toml"
@@ -1258,7 +1266,7 @@ hash = "17225e085e6759210cec7e829e00c8c90f9c5d38714835cb5da9c98398842f7d"
 
 [[files]]
 file = "config/modpack_defaults/config/iris.properties"
-hash = "3f5878535aacbfea79ae6da2f9142963f5662af3141692f0ba945767c9096ce5"
+hash = "08b789827f7cbfaf5bffd5aedb6dfe9889e216e87be4674299781934658767af"
 
 [[files]]
 file = "config/modpack_defaults/config/isxander-main-menu-credits.json"
@@ -1266,7 +1274,7 @@ hash = "4d9f4d8b7ab8989038f6d3ee17690decb16f686c895c4f73694e761849243a1e"
 
 [[files]]
 file = "config/modpack_defaults/config/lambdynlights.toml"
-hash = "326ec0c840e65aedf5c6048ea6016d551be38cf23f692949e105a4a388ad8be7"
+hash = "c973862727ba35dec1de9ef22f333e1257e5f753f72fbcaf17ddefa62bb61b8c"
 
 [[files]]
 file = "config/modpack_defaults/config/midnightlib.json"
@@ -1310,7 +1318,7 @@ hash = "902b29e5f2044fa0011ac76281c700b52d83f1b5db6b605b8f702c8a99a55a2b"
 
 [[files]]
 file = "config/modpack_defaults/options.txt"
-hash = "aa1c9ddc9e3e7ce376b57fa7f1037c666ebdfd8eb125ecc0dd3f39d7d81706b0"
+hash = "e07848d6fa6f4b3bc95ab9f79c505a859ea6cca57c615870911ff15634e0e4c9"
 
 [[files]]
 file = "config/moreculling.toml"
@@ -21640,7 +21648,7 @@ hash = "616802e095fe0f529eb8fb5f479c4226595a4c6362c8bc90c2c9c4859828e809"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/21-5/assets/minecraft/optifine/cem/villager.properties"
-hash = "925ca39bebcc8c206eeaf7a1cb8c148179ea8ee4ba6df35a354c3bf701419ba3"
+hash = "2457ef3f59e610ae4a9e554bc922c38249895748f0b942f4344070e47f7e8d97"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/21-6/assets/minecraft/textures/entity/ghast/ghast_shooting_e.png"
@@ -21744,7 +21752,7 @@ hash = "c8927ce67f8d3e91a8474ec454b0c34022d9963bf3cd7ab19aeded7381e026f5"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/cem/chicken.properties"
-hash = "85a11d034a4dfee0027c47d8d1711468b0dd56c4de5794d00955dfdc067697cc"
+hash = "06902623328658bab26bbd477a2a6123aaccfba278e7992dc8848a45de383345"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/cem/chicken_baby.jem"
@@ -21788,7 +21796,7 @@ hash = "bc44b87ef66368c4d296b1447827f4c200e3067195909c25dab77e82e18d38e3"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/cem/cow.properties"
-hash = "2405b340d604c4df148763a38e8a854c965af4767e4002147e073dedaee92856"
+hash = "2d4368b6784fed7900f2f8790a3668ed1d8e3273022024d7e3827c051f881543"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/cem/cow_baby.jem"
@@ -21800,7 +21808,7 @@ hash = "7a40659a9ed9e6a068840f0a99ffde8375d376d4a2eb3a4d6dcae1adf11e007b"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/cem/creeper.properties"
-hash = "cc8f09f6cf2ab4e635b0400be0a8aa90ffad9f73e3dd04b97a07f2af07fdcbe0"
+hash = "4daa8f228a202e3286c7ae78abe15df1305f22366b6cfb4f858e19e88a00ab8e"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/cem/creeper2.jem"
@@ -21880,7 +21888,7 @@ hash = "f0fb34ef12bc7f000b6cdacb294aea3f0924114a654c6b9c712027f4bc7148d6"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/cem/mooshroom.properties"
-hash = "1cc6e444fcb7e7e38abc7333b8eeaa726e6c9cd4bd6e6f2d7a3855f63af988de"
+hash = "445a477f43fa8939e514112f28db5f629e2ec9035edae015b1446769ac5af2b6"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/cem/mooshroom_baby.jem"
@@ -21904,7 +21912,7 @@ hash = "65635eb72f1d157f387f31fcff3d94cc00cc2ad4044774b2045c448b848b5387"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/cem/pig.properties"
-hash = "b44defa36ec7e46b0f506b82a400060c233e397e6a94a7d13ced8ddeb4eec745"
+hash = "50aac944c67297a64ca2479aa845b379599b46bfe70d77547f2c21255db278ae"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/cem/pig_baby.jem"
@@ -22004,7 +22012,7 @@ hash = "4816055792d704cd20c42d39b1147b4cd23fe65f5e73bb3bd0aea0346dbe7755"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/cem/villager.properties"
-hash = "54e095b78fae60919805b831fa739dda5e4fd399844e011faf91c4156a95dc65"
+hash = "11366bbae2514117dce52f82b023791f503dc5ab5a2c9a8ea153a9401f1803fb"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/cem/villager2.jem"
@@ -22056,11 +22064,11 @@ hash = "400c2533d1f4d94ee1d1c747e98196b4769eda86c105ef8aef32b0f3eaab722e"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/random/entity/chicken.properties"
-hash = "edb8aed822b0b11b3c99bd611b21b3d110a2892d68f0edf092fadefc638cfc8e"
+hash = "367e0752f37c079036ad5f881ef84353e84550985743f1942d276dc1f4185a3c"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/random/entity/chicken/cold_chicken.properties"
-hash = "edb8aed822b0b11b3c99bd611b21b3d110a2892d68f0edf092fadefc638cfc8e"
+hash = "367e0752f37c079036ad5f881ef84353e84550985743f1942d276dc1f4185a3c"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/random/entity/chicken/cold_chicken2.png"
@@ -22072,7 +22080,7 @@ hash = "047abeb9f22aaf72bc95aa64da36dff085e192b64eff23f37b4ffddf1f0e8b43"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/random/entity/chicken/temperate_chicken.properties"
-hash = "edb8aed822b0b11b3c99bd611b21b3d110a2892d68f0edf092fadefc638cfc8e"
+hash = "367e0752f37c079036ad5f881ef84353e84550985743f1942d276dc1f4185a3c"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/random/entity/chicken/temperate_chicken2.png"
@@ -22084,7 +22092,7 @@ hash = "667a8dda5738dfc021874a59f3764504dadc4740087b0659460e71faefbd7917"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/random/entity/chicken/warm_chicken.properties"
-hash = "edb8aed822b0b11b3c99bd611b21b3d110a2892d68f0edf092fadefc638cfc8e"
+hash = "367e0752f37c079036ad5f881ef84353e84550985743f1942d276dc1f4185a3c"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/random/entity/chicken/warm_chicken2.png"
@@ -22104,7 +22112,7 @@ hash = "667a8dda5738dfc021874a59f3764504dadc4740087b0659460e71faefbd7917"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/random/entity/cow/brown_mooshroom.properties"
-hash = "0e382e5b76667921a548f287636f4ff37ebc6c83520ad826baca2e2e7015fe74"
+hash = "057e62204c3e943ba1a825bdb36842f69aceb7c3396ba14122b2f2b11f6b173e"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/random/entity/cow/brown_mooshroom2.png"
@@ -22112,7 +22120,7 @@ hash = "d7de55e6b021a5ed64f45cfa268bbaeb0f4782acc82bd81ea8c84923ad53e634"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/random/entity/cow/cold_cow.properties"
-hash = "0e382e5b76667921a548f287636f4ff37ebc6c83520ad826baca2e2e7015fe74"
+hash = "057e62204c3e943ba1a825bdb36842f69aceb7c3396ba14122b2f2b11f6b173e"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/random/entity/cow/cold_cow2.png"
@@ -22120,7 +22128,7 @@ hash = "daf1e3ac153051ecd54ca5b8430b149d24cbdad9fce780b00dddec7a9968ff5c"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/random/entity/cow/cow.properties"
-hash = "0e382e5b76667921a548f287636f4ff37ebc6c83520ad826baca2e2e7015fe74"
+hash = "057e62204c3e943ba1a825bdb36842f69aceb7c3396ba14122b2f2b11f6b173e"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/random/entity/cow/cow2.png"
@@ -22128,7 +22136,7 @@ hash = "91eb8204d6dd41162e12d969982d38ee0392f25008090fd4809e99d86d2b482d"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/random/entity/cow/red_mooshroom.properties"
-hash = "0e382e5b76667921a548f287636f4ff37ebc6c83520ad826baca2e2e7015fe74"
+hash = "057e62204c3e943ba1a825bdb36842f69aceb7c3396ba14122b2f2b11f6b173e"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/random/entity/cow/red_mooshroom2.png"
@@ -22136,7 +22144,7 @@ hash = "75739d475d80077041446217cb333a40fd78382ff410e3f3e4edb54f26792cb5"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/random/entity/cow/temperate_cow.properties"
-hash = "0e382e5b76667921a548f287636f4ff37ebc6c83520ad826baca2e2e7015fe74"
+hash = "057e62204c3e943ba1a825bdb36842f69aceb7c3396ba14122b2f2b11f6b173e"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/random/entity/cow/temperate_cow2.png"
@@ -22144,7 +22152,7 @@ hash = "91eb8204d6dd41162e12d969982d38ee0392f25008090fd4809e99d86d2b482d"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/random/entity/cow/warm_cow.properties"
-hash = "0e382e5b76667921a548f287636f4ff37ebc6c83520ad826baca2e2e7015fe74"
+hash = "057e62204c3e943ba1a825bdb36842f69aceb7c3396ba14122b2f2b11f6b173e"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/random/entity/cow/warm_cow2.png"
@@ -22152,7 +22160,7 @@ hash = "d87a95ec92f85fc917fc525ef69b914d66917cd9ca6e7e781e70731199ead2c1"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/random/entity/creeper/creeper.properties"
-hash = "c7044cfb04aabfeaf7df54d0a59ec455f66c1de13bae6f752591211c7f3071d9"
+hash = "762f410ef65a8524601c56f314e41cec2647609ae0b3c6a326cee106e2e81650"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/random/entity/creeper/creeper2.png"
@@ -22176,7 +22184,7 @@ hash = "b34d6c4be2205245265a0ff7314e2591432573d6383484be9d2e52388fa73dd0"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/random/entity/creeper/creeper_mud.properties"
-hash = "8a861a735b34dc4735103020350dc5c6ad38bedd0faa8e4aca3b8bff5a4e3d3d"
+hash = "a797540653acb7929f3b4c926bf65c449950622d0319f6fd1681501b3eedd7ff"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/random/entity/creeper/creeper_mud2.png"
@@ -22188,7 +22196,7 @@ hash = "6fbe476f61a6c3f458d09a8c57571e6be71b30754c9d46f8e1c4ff5d06dcc685"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/random/entity/creeper/creeper_rock.properties"
-hash = "8a861a735b34dc4735103020350dc5c6ad38bedd0faa8e4aca3b8bff5a4e3d3d"
+hash = "a797540653acb7929f3b4c926bf65c449950622d0319f6fd1681501b3eedd7ff"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/random/entity/creeper/creeper_rock2.png"
@@ -22200,7 +22208,7 @@ hash = "d8dd51087f2ba6de9d2a27ff81935ed0c0bc41839fb321c0e5f34c6ca765a45a"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/random/entity/creeper/creeper_skeleton.properties"
-hash = "8a861a735b34dc4735103020350dc5c6ad38bedd0faa8e4aca3b8bff5a4e3d3d"
+hash = "a797540653acb7929f3b4c926bf65c449950622d0319f6fd1681501b3eedd7ff"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/random/entity/creeper/creeper_skeleton2.png"
@@ -22212,7 +22220,7 @@ hash = "9fc8c4cc15edaa2dcf9f9ea519f166fd6759758d352943cebb126268e17e1cf1"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/random/entity/enderman/enderman.properties"
-hash = "1561d36fc4f122d13dfdf29dcec5ddd8a416764ed5d351c5638489951f45dc3e"
+hash = "d1ebcd347b53c07d0fd0fbc1c41e82302fbc37e7c488b963ee4e57ac37dcc3e8"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/random/entity/enderman/enderman2.png"
@@ -22220,7 +22228,7 @@ hash = "b21b13932b164fbd7423a8ab4f1540209b0cd2010ff16bcedb954daa8de876c8"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/random/entity/enderman/enderman_eyes.properties"
-hash = "1561d36fc4f122d13dfdf29dcec5ddd8a416764ed5d351c5638489951f45dc3e"
+hash = "d1ebcd347b53c07d0fd0fbc1c41e82302fbc37e7c488b963ee4e57ac37dcc3e8"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/random/entity/enderman/enderman_eyes2.png"
@@ -22228,7 +22236,7 @@ hash = "ea5940e31cacbdbe72ba76df7b498036c04ede8091684ea161c7fc81dbf89e06"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/random/entity/fish/salmon.properties"
-hash = "3d887655455d60fda30d08d757ecbefdaeb04bad257969d9ed44d0a416482407"
+hash = "2b387e15bcb0c2a2c3cf49d275dcee7c273fa135550522285dc45a5572d4314e"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/random/entity/fish/salmon2.png"
@@ -22244,7 +22252,7 @@ hash = "cef0d943eb7348654598c8c6347d4c7ef97671f506749fe42a6ee86b21b75033"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/random/entity/iron_golem/iron_golem_hat.properties"
-hash = "eba10a74bd63b780a82a836617c26929be89c9d6f7b1c94762746717ee93828e"
+hash = "8c4b10fd7170437bc5f945d7b233e4ba5848bf4818e35cac58637b4f12fd6caf"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/random/entity/iron_golem/iron_golem_hat2.png"
@@ -22252,7 +22260,7 @@ hash = "46897df94bf05f950ef607d55342d188f7e3e2b400fcbf1b5b0326994bd2eafe"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/random/entity/pig/cold_pig.properties"
-hash = "a1da48671c465a77f370d2e0111a72dd7f1942e5eb3464e54d9596167e57b52e"
+hash = "35468281751f7ec5602e415aa54dc84dd239ac3bc17a91ee71b3e4e4dec494bf"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/random/entity/pig/cold_pig2.png"
@@ -22260,7 +22268,7 @@ hash = "0aa8724aa7108eb775282e57efbaba8cb66e417aafc2301a2634e88ca5700ba2"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/random/entity/pig/pig.properties"
-hash = "5ddca1f781c80437263afd64e59564a8cab4c02269863b6c0eb7895117e07ca5"
+hash = "2bdf7b14935f68420f90bd4bf2555ef9165eefba7daa3d05776ea515904f199b"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/random/entity/pig/pig2.png"
@@ -22276,7 +22284,7 @@ hash = "e660a1114cab7bfb7f28ee3ff97fafedfb60f7bb89d76092f814663d362b11b0"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/random/entity/pig/temperate_pig.properties"
-hash = "5ddca1f781c80437263afd64e59564a8cab4c02269863b6c0eb7895117e07ca5"
+hash = "2bdf7b14935f68420f90bd4bf2555ef9165eefba7daa3d05776ea515904f199b"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/random/entity/pig/temperate_pig2.png"
@@ -22292,7 +22300,7 @@ hash = "e660a1114cab7bfb7f28ee3ff97fafedfb60f7bb89d76092f814663d362b11b0"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/random/entity/pig/warm_pig.properties"
-hash = "4539cc22708f5643b3b298cba83a4d8fda4a3df5fd1ea1f7c73468da9cc0f45c"
+hash = "0dffd8f80f75c99b7e32870826ee0a8821a9c6a2ff8e376762aa32a0942ca9ef"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/random/entity/pig/warm_pig2.png"
@@ -22308,7 +22316,7 @@ hash = "1c793adf1a79f76815c5fd5674c6f987f7563d9b4bbad37e1e3e72c0cb9dd83d"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/random/entity/sheep/sheep.properties"
-hash = "fa10840b13b76ab8315bea36c7f4198e934810e3d596b96f9276087affbbf1e4"
+hash = "98b23231ff988e753107f77bdc45058063299fd929d214c661388465d92b895e"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/random/entity/sheep/sheep2.png"
@@ -22320,7 +22328,7 @@ hash = "84a28abb8e1e8908c05c230855e6b72610ac0c544acf67bbb474b424446fbae6"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/random/entity/sheep/sheep_horns.properties"
-hash = "ce92e593d082eb6633944cc87b051778bae04458d53768264d1e885b71402676"
+hash = "51167656955445bb67c637a14d3ccbca932733607b1d978f7c7f2defe8445667"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/random/entity/sheep/sheep_horns2.png"
@@ -22332,7 +22340,7 @@ hash = "e218aa8b1195cff833591190c13aa35190ff4d8f7e6c6fe02c09942fffd41adf"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/random/entity/sheep/sheep_wool.properties"
-hash = "9bdae994ad948302151ca4810085eeb5c91c9517217d1772ca428b839bba428c"
+hash = "8957b84b3fc07644726224c6b30d4ac439b1890c88e6326edee22d9206c268fa"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/random/entity/sheep/sheep_wool10.png"
@@ -22396,7 +22404,7 @@ hash = "44467ef9c8d82737350221f27c8b53a86b55b404ce04c35efee767cb4a11cb31"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/random/entity/sheep/sheep_wool_undercoat.properties"
-hash = "fa10840b13b76ab8315bea36c7f4198e934810e3d596b96f9276087affbbf1e4"
+hash = "98b23231ff988e753107f77bdc45058063299fd929d214c661388465d92b895e"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/random/entity/sheep/sheep_wool_undercoat2.png"
@@ -22408,7 +22416,7 @@ hash = "9b638cd6182a76a11fe53a7dee1852e6065b0d76eef913d7515ba0fa01285c14"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/random/entity/slime/slime.properties"
-hash = "b362cd3f81d937a3486dc70af7d10d0849afbe75d588c620c48127b05ea087d7"
+hash = "d78670f958dcac2c004a87e871a9a17f6be5f9c1500b11269066036a160f4b57"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/random/entity/slime/slime2.png"
@@ -22416,7 +22424,7 @@ hash = "a47dda6350a145c0a22daff18e2272125b8d263d26d0f4092b1d9af881e285f7"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/random/entity/villager/villager.properties"
-hash = "4e442a3ed0841174f081f6453b76d7f7c04ebb29c2a89f95cdb76ffb1eeedbe3"
+hash = "8f5cb0495f324ca2665436ecac418b8229c82b806d6453a1815e5bb5cc3b01c5"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/random/entity/villager/villager2.png"
@@ -22452,7 +22460,7 @@ hash = "686e86888bed4a7a2c44e2fcc69a2a0ecb43b781d169fc41e37e329005541a3a"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/random/entity/zombie/zombie.properties"
-hash = "93d5a391132879758487dd616375a039ca386af4b6bc125c874020127693cf8e"
+hash = "dd0107bb12e05031ef5c4b5aa2fee4e21775f8aaa6f19edfb646987f82c48606"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/random/entity/zombie/zombie2.png"
@@ -22460,7 +22468,7 @@ hash = "84a9944e5f448f33d30fcffe27c61734cb0d43ac7838dbe8c54b603ebaaca44a"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/random/entity/zombie_villager/zombie_villager.properties"
-hash = "16b95935f6ef9ead25c7206d667fb5dfaf9dfe7672999892a76f200954e56f67"
+hash = "efc3f372293b56c3a83381be629653dca701e789b99f749ba61a5eff606d5509"
 
 [[files]]
 file = "resourcepacks/FA+All_Extensions-v1.8.1/assets/minecraft/optifine/random/entity/zombie_villager/zombie_villager2.png"
@@ -22948,7 +22956,7 @@ hash = "7a40659a9ed9e6a068840f0a99ffde8375d376d4a2eb3a4d6dcae1adf11e007b"
 
 [[files]]
 file = "resourcepacks/FA+Creepers-v2.1/assets/minecraft/optifine/cem/creeper.properties"
-hash = "cc8f09f6cf2ab4e635b0400be0a8aa90ffad9f73e3dd04b97a07f2af07fdcbe0"
+hash = "4daa8f228a202e3286c7ae78abe15df1305f22366b6cfb4f858e19e88a00ab8e"
 
 [[files]]
 file = "resourcepacks/FA+Creepers-v2.1/assets/minecraft/optifine/cem/creeper2.jem"
@@ -22984,7 +22992,7 @@ hash = "400c2533d1f4d94ee1d1c747e98196b4769eda86c105ef8aef32b0f3eaab722e"
 
 [[files]]
 file = "resourcepacks/FA+Creepers-v2.1/assets/minecraft/optifine/random/entity/creeper/creeper.properties"
-hash = "c7044cfb04aabfeaf7df54d0a59ec455f66c1de13bae6f752591211c7f3071d9"
+hash = "762f410ef65a8524601c56f314e41cec2647609ae0b3c6a326cee106e2e81650"
 
 [[files]]
 file = "resourcepacks/FA+Creepers-v2.1/assets/minecraft/optifine/random/entity/creeper/creeper2.png"
@@ -23008,7 +23016,7 @@ hash = "b34d6c4be2205245265a0ff7314e2591432573d6383484be9d2e52388fa73dd0"
 
 [[files]]
 file = "resourcepacks/FA+Creepers-v2.1/assets/minecraft/optifine/random/entity/creeper/creeper_mud.properties"
-hash = "8a861a735b34dc4735103020350dc5c6ad38bedd0faa8e4aca3b8bff5a4e3d3d"
+hash = "a797540653acb7929f3b4c926bf65c449950622d0319f6fd1681501b3eedd7ff"
 
 [[files]]
 file = "resourcepacks/FA+Creepers-v2.1/assets/minecraft/optifine/random/entity/creeper/creeper_mud2.png"
@@ -23020,7 +23028,7 @@ hash = "6fbe476f61a6c3f458d09a8c57571e6be71b30754c9d46f8e1c4ff5d06dcc685"
 
 [[files]]
 file = "resourcepacks/FA+Creepers-v2.1/assets/minecraft/optifine/random/entity/creeper/creeper_rock.properties"
-hash = "8a861a735b34dc4735103020350dc5c6ad38bedd0faa8e4aca3b8bff5a4e3d3d"
+hash = "a797540653acb7929f3b4c926bf65c449950622d0319f6fd1681501b3eedd7ff"
 
 [[files]]
 file = "resourcepacks/FA+Creepers-v2.1/assets/minecraft/optifine/random/entity/creeper/creeper_rock2.png"
@@ -23032,7 +23040,7 @@ hash = "d8dd51087f2ba6de9d2a27ff81935ed0c0bc41839fb321c0e5f34c6ca765a45a"
 
 [[files]]
 file = "resourcepacks/FA+Creepers-v2.1/assets/minecraft/optifine/random/entity/creeper/creeper_skeleton.properties"
-hash = "8a861a735b34dc4735103020350dc5c6ad38bedd0faa8e4aca3b8bff5a4e3d3d"
+hash = "a797540653acb7929f3b4c926bf65c449950622d0319f6fd1681501b3eedd7ff"
 
 [[files]]
 file = "resourcepacks/FA+Creepers-v2.1/assets/minecraft/optifine/random/entity/creeper/creeper_skeleton2.png"
@@ -23088,7 +23096,7 @@ hash = "616802e095fe0f529eb8fb5f479c4226595a4c6362c8bc90c2c9c4859828e809"
 
 [[files]]
 file = "resourcepacks/FA+Details-v2.2.1/21-5/assets/minecraft/optifine/cem/villager.properties"
-hash = "925ca39bebcc8c206eeaf7a1cb8c148179ea8ee4ba6df35a354c3bf701419ba3"
+hash = "2457ef3f59e610ae4a9e554bc922c38249895748f0b942f4344070e47f7e8d97"
 
 [[files]]
 file = "resourcepacks/FA+Details-v2.2.1/FAterms&conditions.txt"
@@ -23108,7 +23116,7 @@ hash = "c8927ce67f8d3e91a8474ec454b0c34022d9963bf3cd7ab19aeded7381e026f5"
 
 [[files]]
 file = "resourcepacks/FA+Details-v2.2.1/assets/minecraft/optifine/cem/chicken.properties"
-hash = "85a11d034a4dfee0027c47d8d1711468b0dd56c4de5794d00955dfdc067697cc"
+hash = "06902623328658bab26bbd477a2a6123aaccfba278e7992dc8848a45de383345"
 
 [[files]]
 file = "resourcepacks/FA+Details-v2.2.1/assets/minecraft/optifine/cem/chicken_baby.jem"
@@ -23148,7 +23156,7 @@ hash = "bc44b87ef66368c4d296b1447827f4c200e3067195909c25dab77e82e18d38e3"
 
 [[files]]
 file = "resourcepacks/FA+Details-v2.2.1/assets/minecraft/optifine/cem/cow.properties"
-hash = "2405b340d604c4df148763a38e8a854c965af4767e4002147e073dedaee92856"
+hash = "2d4368b6784fed7900f2f8790a3668ed1d8e3273022024d7e3827c051f881543"
 
 [[files]]
 file = "resourcepacks/FA+Details-v2.2.1/assets/minecraft/optifine/cem/cow_baby.jem"
@@ -23184,7 +23192,7 @@ hash = "f0fb34ef12bc7f000b6cdacb294aea3f0924114a654c6b9c712027f4bc7148d6"
 
 [[files]]
 file = "resourcepacks/FA+Details-v2.2.1/assets/minecraft/optifine/cem/mooshroom.properties"
-hash = "1cc6e444fcb7e7e38abc7333b8eeaa726e6c9cd4bd6e6f2d7a3855f63af988de"
+hash = "445a477f43fa8939e514112f28db5f629e2ec9035edae015b1446769ac5af2b6"
 
 [[files]]
 file = "resourcepacks/FA+Details-v2.2.1/assets/minecraft/optifine/cem/mooshroom_baby.jem"
@@ -23200,7 +23208,7 @@ hash = "65635eb72f1d157f387f31fcff3d94cc00cc2ad4044774b2045c448b848b5387"
 
 [[files]]
 file = "resourcepacks/FA+Details-v2.2.1/assets/minecraft/optifine/cem/pig.properties"
-hash = "b44defa36ec7e46b0f506b82a400060c233e397e6a94a7d13ced8ddeb4eec745"
+hash = "50aac944c67297a64ca2479aa845b379599b46bfe70d77547f2c21255db278ae"
 
 [[files]]
 file = "resourcepacks/FA+Details-v2.2.1/assets/minecraft/optifine/cem/pig_baby.jem"
@@ -23256,7 +23264,7 @@ hash = "4816055792d704cd20c42d39b1147b4cd23fe65f5e73bb3bd0aea0346dbe7755"
 
 [[files]]
 file = "resourcepacks/FA+Details-v2.2.1/assets/minecraft/optifine/cem/villager.properties"
-hash = "54e095b78fae60919805b831fa739dda5e4fd399844e011faf91c4156a95dc65"
+hash = "11366bbae2514117dce52f82b023791f503dc5ab5a2c9a8ea153a9401f1803fb"
 
 [[files]]
 file = "resourcepacks/FA+Details-v2.2.1/assets/minecraft/optifine/cem/villager2.jem"
@@ -23304,11 +23312,11 @@ hash = "b9435842ad051fd56b08dcf03e1bb6506008c96b9f396a03735bbd34d8af103b"
 
 [[files]]
 file = "resourcepacks/FA+Details-v2.2.1/assets/minecraft/optifine/random/entity/chicken.properties"
-hash = "edb8aed822b0b11b3c99bd611b21b3d110a2892d68f0edf092fadefc638cfc8e"
+hash = "367e0752f37c079036ad5f881ef84353e84550985743f1942d276dc1f4185a3c"
 
 [[files]]
 file = "resourcepacks/FA+Details-v2.2.1/assets/minecraft/optifine/random/entity/chicken/cold_chicken.properties"
-hash = "edb8aed822b0b11b3c99bd611b21b3d110a2892d68f0edf092fadefc638cfc8e"
+hash = "367e0752f37c079036ad5f881ef84353e84550985743f1942d276dc1f4185a3c"
 
 [[files]]
 file = "resourcepacks/FA+Details-v2.2.1/assets/minecraft/optifine/random/entity/chicken/cold_chicken2.png"
@@ -23320,7 +23328,7 @@ hash = "047abeb9f22aaf72bc95aa64da36dff085e192b64eff23f37b4ffddf1f0e8b43"
 
 [[files]]
 file = "resourcepacks/FA+Details-v2.2.1/assets/minecraft/optifine/random/entity/chicken/temperate_chicken.properties"
-hash = "edb8aed822b0b11b3c99bd611b21b3d110a2892d68f0edf092fadefc638cfc8e"
+hash = "367e0752f37c079036ad5f881ef84353e84550985743f1942d276dc1f4185a3c"
 
 [[files]]
 file = "resourcepacks/FA+Details-v2.2.1/assets/minecraft/optifine/random/entity/chicken/temperate_chicken2.png"
@@ -23332,7 +23340,7 @@ hash = "667a8dda5738dfc021874a59f3764504dadc4740087b0659460e71faefbd7917"
 
 [[files]]
 file = "resourcepacks/FA+Details-v2.2.1/assets/minecraft/optifine/random/entity/chicken/warm_chicken.properties"
-hash = "edb8aed822b0b11b3c99bd611b21b3d110a2892d68f0edf092fadefc638cfc8e"
+hash = "367e0752f37c079036ad5f881ef84353e84550985743f1942d276dc1f4185a3c"
 
 [[files]]
 file = "resourcepacks/FA+Details-v2.2.1/assets/minecraft/optifine/random/entity/chicken/warm_chicken2.png"
@@ -23352,7 +23360,7 @@ hash = "667a8dda5738dfc021874a59f3764504dadc4740087b0659460e71faefbd7917"
 
 [[files]]
 file = "resourcepacks/FA+Details-v2.2.1/assets/minecraft/optifine/random/entity/cow/brown_mooshroom.properties"
-hash = "0e382e5b76667921a548f287636f4ff37ebc6c83520ad826baca2e2e7015fe74"
+hash = "057e62204c3e943ba1a825bdb36842f69aceb7c3396ba14122b2f2b11f6b173e"
 
 [[files]]
 file = "resourcepacks/FA+Details-v2.2.1/assets/minecraft/optifine/random/entity/cow/brown_mooshroom2.png"
@@ -23360,7 +23368,7 @@ hash = "d7de55e6b021a5ed64f45cfa268bbaeb0f4782acc82bd81ea8c84923ad53e634"
 
 [[files]]
 file = "resourcepacks/FA+Details-v2.2.1/assets/minecraft/optifine/random/entity/cow/cold_cow.properties"
-hash = "0e382e5b76667921a548f287636f4ff37ebc6c83520ad826baca2e2e7015fe74"
+hash = "057e62204c3e943ba1a825bdb36842f69aceb7c3396ba14122b2f2b11f6b173e"
 
 [[files]]
 file = "resourcepacks/FA+Details-v2.2.1/assets/minecraft/optifine/random/entity/cow/cold_cow2.png"
@@ -23368,7 +23376,7 @@ hash = "daf1e3ac153051ecd54ca5b8430b149d24cbdad9fce780b00dddec7a9968ff5c"
 
 [[files]]
 file = "resourcepacks/FA+Details-v2.2.1/assets/minecraft/optifine/random/entity/cow/cow.properties"
-hash = "0e382e5b76667921a548f287636f4ff37ebc6c83520ad826baca2e2e7015fe74"
+hash = "057e62204c3e943ba1a825bdb36842f69aceb7c3396ba14122b2f2b11f6b173e"
 
 [[files]]
 file = "resourcepacks/FA+Details-v2.2.1/assets/minecraft/optifine/random/entity/cow/cow2.png"
@@ -23376,7 +23384,7 @@ hash = "91eb8204d6dd41162e12d969982d38ee0392f25008090fd4809e99d86d2b482d"
 
 [[files]]
 file = "resourcepacks/FA+Details-v2.2.1/assets/minecraft/optifine/random/entity/cow/red_mooshroom.properties"
-hash = "0e382e5b76667921a548f287636f4ff37ebc6c83520ad826baca2e2e7015fe74"
+hash = "057e62204c3e943ba1a825bdb36842f69aceb7c3396ba14122b2f2b11f6b173e"
 
 [[files]]
 file = "resourcepacks/FA+Details-v2.2.1/assets/minecraft/optifine/random/entity/cow/red_mooshroom2.png"
@@ -23384,7 +23392,7 @@ hash = "75739d475d80077041446217cb333a40fd78382ff410e3f3e4edb54f26792cb5"
 
 [[files]]
 file = "resourcepacks/FA+Details-v2.2.1/assets/minecraft/optifine/random/entity/cow/temperate_cow.properties"
-hash = "0e382e5b76667921a548f287636f4ff37ebc6c83520ad826baca2e2e7015fe74"
+hash = "057e62204c3e943ba1a825bdb36842f69aceb7c3396ba14122b2f2b11f6b173e"
 
 [[files]]
 file = "resourcepacks/FA+Details-v2.2.1/assets/minecraft/optifine/random/entity/cow/temperate_cow2.png"
@@ -23392,7 +23400,7 @@ hash = "91eb8204d6dd41162e12d969982d38ee0392f25008090fd4809e99d86d2b482d"
 
 [[files]]
 file = "resourcepacks/FA+Details-v2.2.1/assets/minecraft/optifine/random/entity/cow/warm_cow.properties"
-hash = "0e382e5b76667921a548f287636f4ff37ebc6c83520ad826baca2e2e7015fe74"
+hash = "057e62204c3e943ba1a825bdb36842f69aceb7c3396ba14122b2f2b11f6b173e"
 
 [[files]]
 file = "resourcepacks/FA+Details-v2.2.1/assets/minecraft/optifine/random/entity/cow/warm_cow2.png"
@@ -23400,7 +23408,7 @@ hash = "d87a95ec92f85fc917fc525ef69b914d66917cd9ca6e7e781e70731199ead2c1"
 
 [[files]]
 file = "resourcepacks/FA+Details-v2.2.1/assets/minecraft/optifine/random/entity/enderman/enderman.properties"
-hash = "1561d36fc4f122d13dfdf29dcec5ddd8a416764ed5d351c5638489951f45dc3e"
+hash = "d1ebcd347b53c07d0fd0fbc1c41e82302fbc37e7c488b963ee4e57ac37dcc3e8"
 
 [[files]]
 file = "resourcepacks/FA+Details-v2.2.1/assets/minecraft/optifine/random/entity/enderman/enderman2.png"
@@ -23408,7 +23416,7 @@ hash = "b21b13932b164fbd7423a8ab4f1540209b0cd2010ff16bcedb954daa8de876c8"
 
 [[files]]
 file = "resourcepacks/FA+Details-v2.2.1/assets/minecraft/optifine/random/entity/enderman/enderman_eyes.properties"
-hash = "1561d36fc4f122d13dfdf29dcec5ddd8a416764ed5d351c5638489951f45dc3e"
+hash = "d1ebcd347b53c07d0fd0fbc1c41e82302fbc37e7c488b963ee4e57ac37dcc3e8"
 
 [[files]]
 file = "resourcepacks/FA+Details-v2.2.1/assets/minecraft/optifine/random/entity/enderman/enderman_eyes2.png"
@@ -23416,7 +23424,7 @@ hash = "ea5940e31cacbdbe72ba76df7b498036c04ede8091684ea161c7fc81dbf89e06"
 
 [[files]]
 file = "resourcepacks/FA+Details-v2.2.1/assets/minecraft/optifine/random/entity/fish/salmon.properties"
-hash = "3d887655455d60fda30d08d757ecbefdaeb04bad257969d9ed44d0a416482407"
+hash = "2b387e15bcb0c2a2c3cf49d275dcee7c273fa135550522285dc45a5572d4314e"
 
 [[files]]
 file = "resourcepacks/FA+Details-v2.2.1/assets/minecraft/optifine/random/entity/fish/salmon2.png"
@@ -23432,7 +23440,7 @@ hash = "cef0d943eb7348654598c8c6347d4c7ef97671f506749fe42a6ee86b21b75033"
 
 [[files]]
 file = "resourcepacks/FA+Details-v2.2.1/assets/minecraft/optifine/random/entity/iron_golem/iron_golem_hat.properties"
-hash = "eba10a74bd63b780a82a836617c26929be89c9d6f7b1c94762746717ee93828e"
+hash = "8c4b10fd7170437bc5f945d7b233e4ba5848bf4818e35cac58637b4f12fd6caf"
 
 [[files]]
 file = "resourcepacks/FA+Details-v2.2.1/assets/minecraft/optifine/random/entity/iron_golem/iron_golem_hat2.png"
@@ -23440,7 +23448,7 @@ hash = "46897df94bf05f950ef607d55342d188f7e3e2b400fcbf1b5b0326994bd2eafe"
 
 [[files]]
 file = "resourcepacks/FA+Details-v2.2.1/assets/minecraft/optifine/random/entity/pig/cold_pig.properties"
-hash = "a1da48671c465a77f370d2e0111a72dd7f1942e5eb3464e54d9596167e57b52e"
+hash = "35468281751f7ec5602e415aa54dc84dd239ac3bc17a91ee71b3e4e4dec494bf"
 
 [[files]]
 file = "resourcepacks/FA+Details-v2.2.1/assets/minecraft/optifine/random/entity/pig/cold_pig2.png"
@@ -23448,7 +23456,7 @@ hash = "0aa8724aa7108eb775282e57efbaba8cb66e417aafc2301a2634e88ca5700ba2"
 
 [[files]]
 file = "resourcepacks/FA+Details-v2.2.1/assets/minecraft/optifine/random/entity/pig/pig.properties"
-hash = "5ddca1f781c80437263afd64e59564a8cab4c02269863b6c0eb7895117e07ca5"
+hash = "2bdf7b14935f68420f90bd4bf2555ef9165eefba7daa3d05776ea515904f199b"
 
 [[files]]
 file = "resourcepacks/FA+Details-v2.2.1/assets/minecraft/optifine/random/entity/pig/pig2.png"
@@ -23464,7 +23472,7 @@ hash = "e660a1114cab7bfb7f28ee3ff97fafedfb60f7bb89d76092f814663d362b11b0"
 
 [[files]]
 file = "resourcepacks/FA+Details-v2.2.1/assets/minecraft/optifine/random/entity/pig/temperate_pig.properties"
-hash = "5ddca1f781c80437263afd64e59564a8cab4c02269863b6c0eb7895117e07ca5"
+hash = "2bdf7b14935f68420f90bd4bf2555ef9165eefba7daa3d05776ea515904f199b"
 
 [[files]]
 file = "resourcepacks/FA+Details-v2.2.1/assets/minecraft/optifine/random/entity/pig/temperate_pig2.png"
@@ -23480,7 +23488,7 @@ hash = "e660a1114cab7bfb7f28ee3ff97fafedfb60f7bb89d76092f814663d362b11b0"
 
 [[files]]
 file = "resourcepacks/FA+Details-v2.2.1/assets/minecraft/optifine/random/entity/pig/warm_pig.properties"
-hash = "4539cc22708f5643b3b298cba83a4d8fda4a3df5fd1ea1f7c73468da9cc0f45c"
+hash = "0dffd8f80f75c99b7e32870826ee0a8821a9c6a2ff8e376762aa32a0942ca9ef"
 
 [[files]]
 file = "resourcepacks/FA+Details-v2.2.1/assets/minecraft/optifine/random/entity/pig/warm_pig2.png"
@@ -23496,7 +23504,7 @@ hash = "1c793adf1a79f76815c5fd5674c6f987f7563d9b4bbad37e1e3e72c0cb9dd83d"
 
 [[files]]
 file = "resourcepacks/FA+Details-v2.2.1/assets/minecraft/optifine/random/entity/sheep/sheep.properties"
-hash = "fa10840b13b76ab8315bea36c7f4198e934810e3d596b96f9276087affbbf1e4"
+hash = "98b23231ff988e753107f77bdc45058063299fd929d214c661388465d92b895e"
 
 [[files]]
 file = "resourcepacks/FA+Details-v2.2.1/assets/minecraft/optifine/random/entity/sheep/sheep2.png"
@@ -23508,7 +23516,7 @@ hash = "84a28abb8e1e8908c05c230855e6b72610ac0c544acf67bbb474b424446fbae6"
 
 [[files]]
 file = "resourcepacks/FA+Details-v2.2.1/assets/minecraft/optifine/random/entity/sheep/sheep_horns.properties"
-hash = "ce92e593d082eb6633944cc87b051778bae04458d53768264d1e885b71402676"
+hash = "51167656955445bb67c637a14d3ccbca932733607b1d978f7c7f2defe8445667"
 
 [[files]]
 file = "resourcepacks/FA+Details-v2.2.1/assets/minecraft/optifine/random/entity/sheep/sheep_horns2.png"
@@ -23520,7 +23528,7 @@ hash = "e218aa8b1195cff833591190c13aa35190ff4d8f7e6c6fe02c09942fffd41adf"
 
 [[files]]
 file = "resourcepacks/FA+Details-v2.2.1/assets/minecraft/optifine/random/entity/sheep/sheep_wool.properties"
-hash = "9bdae994ad948302151ca4810085eeb5c91c9517217d1772ca428b839bba428c"
+hash = "8957b84b3fc07644726224c6b30d4ac439b1890c88e6326edee22d9206c268fa"
 
 [[files]]
 file = "resourcepacks/FA+Details-v2.2.1/assets/minecraft/optifine/random/entity/sheep/sheep_wool10.png"
@@ -23584,7 +23592,7 @@ hash = "44467ef9c8d82737350221f27c8b53a86b55b404ce04c35efee767cb4a11cb31"
 
 [[files]]
 file = "resourcepacks/FA+Details-v2.2.1/assets/minecraft/optifine/random/entity/sheep/sheep_wool_undercoat.properties"
-hash = "fa10840b13b76ab8315bea36c7f4198e934810e3d596b96f9276087affbbf1e4"
+hash = "98b23231ff988e753107f77bdc45058063299fd929d214c661388465d92b895e"
 
 [[files]]
 file = "resourcepacks/FA+Details-v2.2.1/assets/minecraft/optifine/random/entity/sheep/sheep_wool_undercoat2.png"
@@ -23596,7 +23604,7 @@ hash = "9b638cd6182a76a11fe53a7dee1852e6065b0d76eef913d7515ba0fa01285c14"
 
 [[files]]
 file = "resourcepacks/FA+Details-v2.2.1/assets/minecraft/optifine/random/entity/slime/slime.properties"
-hash = "b362cd3f81d937a3486dc70af7d10d0849afbe75d588c620c48127b05ea087d7"
+hash = "d78670f958dcac2c004a87e871a9a17f6be5f9c1500b11269066036a160f4b57"
 
 [[files]]
 file = "resourcepacks/FA+Details-v2.2.1/assets/minecraft/optifine/random/entity/slime/slime2.png"
@@ -23604,7 +23612,7 @@ hash = "a47dda6350a145c0a22daff18e2272125b8d263d26d0f4092b1d9af881e285f7"
 
 [[files]]
 file = "resourcepacks/FA+Details-v2.2.1/assets/minecraft/optifine/random/entity/villager/villager.properties"
-hash = "4e442a3ed0841174f081f6453b76d7f7c04ebb29c2a89f95cdb76ffb1eeedbe3"
+hash = "8f5cb0495f324ca2665436ecac418b8229c82b806d6453a1815e5bb5cc3b01c5"
 
 [[files]]
 file = "resourcepacks/FA+Details-v2.2.1/assets/minecraft/optifine/random/entity/villager/villager2.png"
@@ -23640,7 +23648,7 @@ hash = "686e86888bed4a7a2c44e2fcc69a2a0ecb43b781d169fc41e37e329005541a3a"
 
 [[files]]
 file = "resourcepacks/FA+Details-v2.2.1/assets/minecraft/optifine/random/entity/zombie/zombie.properties"
-hash = "93d5a391132879758487dd616375a039ca386af4b6bc125c874020127693cf8e"
+hash = "dd0107bb12e05031ef5c4b5aa2fee4e21775f8aaa6f19edfb646987f82c48606"
 
 [[files]]
 file = "resourcepacks/FA+Details-v2.2.1/assets/minecraft/optifine/random/entity/zombie/zombie2.png"
@@ -23648,7 +23656,7 @@ hash = "84a9944e5f448f33d30fcffe27c61734cb0d43ac7838dbe8c54b603ebaaca44a"
 
 [[files]]
 file = "resourcepacks/FA+Details-v2.2.1/assets/minecraft/optifine/random/entity/zombie_villager/zombie_villager.properties"
-hash = "16b95935f6ef9ead25c7206d667fb5dfaf9dfe7672999892a76f200954e56f67"
+hash = "efc3f372293b56c3a83381be629653dca701e789b99f749ba61a5eff606d5509"
 
 [[files]]
 file = "resourcepacks/FA+Details-v2.2.1/assets/minecraft/optifine/random/entity/zombie_villager/zombie_villager2.png"
@@ -24324,7 +24332,7 @@ hash = "11ed4b46f77a2f88adcbddbb6928e6c9257a9e1b9533be1a9d9af516acfdfe11"
 
 [[files]]
 file = "resourcepacks/Fresh Patch - Variants and Ventures/README.txt"
-hash = "c36354549e87eddc255574178a88ac9a24a6731bed3dce5fa62a0c71aa81e411"
+hash = "2b9f063ea9469d84bc512fd45d10a78f77305750847e9dcf995df594806af5e5"
 
 [[files]]
 file = "resourcepacks/Fresh Patch - Variants and Ventures/assets/variantsandventures/optifine/cem/.bak_hat/gelid.jem"
@@ -24788,11 +24796,11 @@ hash = "8b306a3b080e11165e03766d7d04e4fa51556761dd006a0babe457f7ad86dbb7"
 
 [[files]]
 file = "resourcepacks/FreshAnimations_v1.10.4/21-5/assets/minecraft/optifine/cem/villager.properties"
-hash = "925ca39bebcc8c206eeaf7a1cb8c148179ea8ee4ba6df35a354c3bf701419ba3"
+hash = "2457ef3f59e610ae4a9e554bc922c38249895748f0b942f4344070e47f7e8d97"
 
 [[files]]
 file = "resourcepacks/FreshAnimations_v1.10.4/21-5/assets/minecraft/optifine/cem/villager_baby.properties"
-hash = "925ca39bebcc8c206eeaf7a1cb8c148179ea8ee4ba6df35a354c3bf701419ba3"
+hash = "2457ef3f59e610ae4a9e554bc922c38249895748f0b942f4344070e47f7e8d97"
 
 [[files]]
 file = "resourcepacks/FreshAnimations_v1.10.4/21-5/assets/minecraft/optifine/cem/zombie_horse.jem"
@@ -24856,7 +24864,7 @@ hash = "b347c640a7e26e3b42537b078a75af20ed27844f06d94400424131a4df3fbe9a"
 
 [[files]]
 file = "resourcepacks/FreshAnimations_v1.10.4/assets/minecraft/optifine/cem/bee.properties"
-hash = "c9e5e11b5798b2796200ac9f9fc2a2329811b9cf8c09e9097f2d8adc0e13a5ef"
+hash = "4bc67b287befbbcaa16109dfbd48674865ba19f932b559a8223f9876cff91d5b"
 
 [[files]]
 file = "resourcepacks/FreshAnimations_v1.10.4/assets/minecraft/optifine/cem/bee_animations.jpm"
@@ -24868,7 +24876,7 @@ hash = "b347c640a7e26e3b42537b078a75af20ed27844f06d94400424131a4df3fbe9a"
 
 [[files]]
 file = "resourcepacks/FreshAnimations_v1.10.4/assets/minecraft/optifine/cem/bee_baby.properties"
-hash = "c9e5e11b5798b2796200ac9f9fc2a2329811b9cf8c09e9097f2d8adc0e13a5ef"
+hash = "4bc67b287befbbcaa16109dfbd48674865ba19f932b559a8223f9876cff91d5b"
 
 [[files]]
 file = "resourcepacks/FreshAnimations_v1.10.4/assets/minecraft/optifine/cem/blaze.jem"
@@ -24916,7 +24924,7 @@ hash = "6a8eb974bbae454511af8c5dbc5f95d0aa60cd3d10f72ae3f08fdf3bd0d45a07"
 
 [[files]]
 file = "resourcepacks/FreshAnimations_v1.10.4/assets/minecraft/optifine/cem/chicken.properties"
-hash = "85a11d034a4dfee0027c47d8d1711468b0dd56c4de5794d00955dfdc067697cc"
+hash = "06902623328658bab26bbd477a2a6123aaccfba278e7992dc8848a45de383345"
 
 [[files]]
 file = "resourcepacks/FreshAnimations_v1.10.4/assets/minecraft/optifine/cem/chicken_animations.jpm"
@@ -24928,7 +24936,7 @@ hash = "6a8eb974bbae454511af8c5dbc5f95d0aa60cd3d10f72ae3f08fdf3bd0d45a07"
 
 [[files]]
 file = "resourcepacks/FreshAnimations_v1.10.4/assets/minecraft/optifine/cem/chicken_baby.properties"
-hash = "85a11d034a4dfee0027c47d8d1711468b0dd56c4de5794d00955dfdc067697cc"
+hash = "06902623328658bab26bbd477a2a6123aaccfba278e7992dc8848a45de383345"
 
 [[files]]
 file = "resourcepacks/FreshAnimations_v1.10.4/assets/minecraft/optifine/cem/cod.jem"
@@ -24944,7 +24952,7 @@ hash = "0a569b891b119f56334cabae4cd30763d1f0bc13240351072eeab144ac081765"
 
 [[files]]
 file = "resourcepacks/FreshAnimations_v1.10.4/assets/minecraft/optifine/cem/cold_chicken.properties"
-hash = "85a11d034a4dfee0027c47d8d1711468b0dd56c4de5794d00955dfdc067697cc"
+hash = "06902623328658bab26bbd477a2a6123aaccfba278e7992dc8848a45de383345"
 
 [[files]]
 file = "resourcepacks/FreshAnimations_v1.10.4/assets/minecraft/optifine/cem/cold_chicken_baby.jem"
@@ -24952,7 +24960,7 @@ hash = "0a569b891b119f56334cabae4cd30763d1f0bc13240351072eeab144ac081765"
 
 [[files]]
 file = "resourcepacks/FreshAnimations_v1.10.4/assets/minecraft/optifine/cem/cold_chicken_baby.properties"
-hash = "85a11d034a4dfee0027c47d8d1711468b0dd56c4de5794d00955dfdc067697cc"
+hash = "06902623328658bab26bbd477a2a6123aaccfba278e7992dc8848a45de383345"
 
 [[files]]
 file = "resourcepacks/FreshAnimations_v1.10.4/assets/minecraft/optifine/cem/cold_cow.jem"
@@ -24960,7 +24968,7 @@ hash = "ddff1f54f5dd0ca291906b29402829c2083bf4cb71933c13886b5a5e72b68282"
 
 [[files]]
 file = "resourcepacks/FreshAnimations_v1.10.4/assets/minecraft/optifine/cem/cold_cow.properties"
-hash = "2405b340d604c4df148763a38e8a854c965af4767e4002147e073dedaee92856"
+hash = "2d4368b6784fed7900f2f8790a3668ed1d8e3273022024d7e3827c051f881543"
 
 [[files]]
 file = "resourcepacks/FreshAnimations_v1.10.4/assets/minecraft/optifine/cem/cold_cow_baby.jem"
@@ -24968,7 +24976,7 @@ hash = "ddff1f54f5dd0ca291906b29402829c2083bf4cb71933c13886b5a5e72b68282"
 
 [[files]]
 file = "resourcepacks/FreshAnimations_v1.10.4/assets/minecraft/optifine/cem/cold_cow_baby.properties"
-hash = "2405b340d604c4df148763a38e8a854c965af4767e4002147e073dedaee92856"
+hash = "2d4368b6784fed7900f2f8790a3668ed1d8e3273022024d7e3827c051f881543"
 
 [[files]]
 file = "resourcepacks/FreshAnimations_v1.10.4/assets/minecraft/optifine/cem/cold_pig.jem"
@@ -24976,7 +24984,7 @@ hash = "1d890bfab29c5d185a19902fd885cf0a5187350297c6e36e51b6e2be3f4e8c5c"
 
 [[files]]
 file = "resourcepacks/FreshAnimations_v1.10.4/assets/minecraft/optifine/cem/cold_pig.properties"
-hash = "b44defa36ec7e46b0f506b82a400060c233e397e6a94a7d13ced8ddeb4eec745"
+hash = "50aac944c67297a64ca2479aa845b379599b46bfe70d77547f2c21255db278ae"
 
 [[files]]
 file = "resourcepacks/FreshAnimations_v1.10.4/assets/minecraft/optifine/cem/cold_pig_baby.jem"
@@ -24984,7 +24992,7 @@ hash = "1d890bfab29c5d185a19902fd885cf0a5187350297c6e36e51b6e2be3f4e8c5c"
 
 [[files]]
 file = "resourcepacks/FreshAnimations_v1.10.4/assets/minecraft/optifine/cem/cold_pig_baby.properties"
-hash = "b44defa36ec7e46b0f506b82a400060c233e397e6a94a7d13ced8ddeb4eec745"
+hash = "50aac944c67297a64ca2479aa845b379599b46bfe70d77547f2c21255db278ae"
 
 [[files]]
 file = "resourcepacks/FreshAnimations_v1.10.4/assets/minecraft/optifine/cem/cow.jem"
@@ -24992,7 +25000,7 @@ hash = "7ac76d12d125275b43bd3e8b3196c330c03c944f8e22f7393d849fb4825b81dc"
 
 [[files]]
 file = "resourcepacks/FreshAnimations_v1.10.4/assets/minecraft/optifine/cem/cow.properties"
-hash = "2405b340d604c4df148763a38e8a854c965af4767e4002147e073dedaee92856"
+hash = "2d4368b6784fed7900f2f8790a3668ed1d8e3273022024d7e3827c051f881543"
 
 [[files]]
 file = "resourcepacks/FreshAnimations_v1.10.4/assets/minecraft/optifine/cem/cow_animations.jpm"
@@ -25004,7 +25012,7 @@ hash = "7ac76d12d125275b43bd3e8b3196c330c03c944f8e22f7393d849fb4825b81dc"
 
 [[files]]
 file = "resourcepacks/FreshAnimations_v1.10.4/assets/minecraft/optifine/cem/cow_baby.properties"
-hash = "2405b340d604c4df148763a38e8a854c965af4767e4002147e073dedaee92856"
+hash = "2d4368b6784fed7900f2f8790a3668ed1d8e3273022024d7e3827c051f881543"
 
 [[files]]
 file = "resourcepacks/FreshAnimations_v1.10.4/assets/minecraft/optifine/cem/creeper.jem"
@@ -25132,7 +25140,7 @@ hash = "94f6789c2b8c9f6d8654a36b253c9829599f5f670d618f741fb8e9bc707bae10"
 
 [[files]]
 file = "resourcepacks/FreshAnimations_v1.10.4/assets/minecraft/optifine/cem/goat.properties"
-hash = "2405b340d604c4df148763a38e8a854c965af4767e4002147e073dedaee92856"
+hash = "2d4368b6784fed7900f2f8790a3668ed1d8e3273022024d7e3827c051f881543"
 
 [[files]]
 file = "resourcepacks/FreshAnimations_v1.10.4/assets/minecraft/optifine/cem/goat_animations.jpm"
@@ -25144,7 +25152,7 @@ hash = "94f6789c2b8c9f6d8654a36b253c9829599f5f670d618f741fb8e9bc707bae10"
 
 [[files]]
 file = "resourcepacks/FreshAnimations_v1.10.4/assets/minecraft/optifine/cem/goat_baby.properties"
-hash = "2405b340d604c4df148763a38e8a854c965af4767e4002147e073dedaee92856"
+hash = "2d4368b6784fed7900f2f8790a3668ed1d8e3273022024d7e3827c051f881543"
 
 [[files]]
 file = "resourcepacks/FreshAnimations_v1.10.4/assets/minecraft/optifine/cem/guardian.jem"
@@ -25268,7 +25276,7 @@ hash = "f834eafccf4b129ca322224f9fc084a34eefa9e4675bacfb43f3e6f138800637"
 
 [[files]]
 file = "resourcepacks/FreshAnimations_v1.10.4/assets/minecraft/optifine/cem/mooshroom.properties"
-hash = "1cc6e444fcb7e7e38abc7333b8eeaa726e6c9cd4bd6e6f2d7a3855f63af988de"
+hash = "445a477f43fa8939e514112f28db5f629e2ec9035edae015b1446769ac5af2b6"
 
 [[files]]
 file = "resourcepacks/FreshAnimations_v1.10.4/assets/minecraft/optifine/cem/mooshroom_animations.jpm"
@@ -25280,7 +25288,7 @@ hash = "c8e3de208b0a331f236bfa63bf75ecf5b7e77435a6375f10f55bdd0a6a29254e"
 
 [[files]]
 file = "resourcepacks/FreshAnimations_v1.10.4/assets/minecraft/optifine/cem/mooshroom_baby.properties"
-hash = "1cc6e444fcb7e7e38abc7333b8eeaa726e6c9cd4bd6e6f2d7a3855f63af988de"
+hash = "445a477f43fa8939e514112f28db5f629e2ec9035edae015b1446769ac5af2b6"
 
 [[files]]
 file = "resourcepacks/FreshAnimations_v1.10.4/assets/minecraft/optifine/cem/mule.jem"
@@ -25320,7 +25328,7 @@ hash = "c765c8bb7adc07c38c6e439f7a7079455c54c8fc84b1290551feb14cb0a99387"
 
 [[files]]
 file = "resourcepacks/FreshAnimations_v1.10.4/assets/minecraft/optifine/cem/pig.properties"
-hash = "b44defa36ec7e46b0f506b82a400060c233e397e6a94a7d13ced8ddeb4eec745"
+hash = "50aac944c67297a64ca2479aa845b379599b46bfe70d77547f2c21255db278ae"
 
 [[files]]
 file = "resourcepacks/FreshAnimations_v1.10.4/assets/minecraft/optifine/cem/pig_animations.jpm"
@@ -25332,7 +25340,7 @@ hash = "c765c8bb7adc07c38c6e439f7a7079455c54c8fc84b1290551feb14cb0a99387"
 
 [[files]]
 file = "resourcepacks/FreshAnimations_v1.10.4/assets/minecraft/optifine/cem/pig_baby.properties"
-hash = "b44defa36ec7e46b0f506b82a400060c233e397e6a94a7d13ced8ddeb4eec745"
+hash = "50aac944c67297a64ca2479aa845b379599b46bfe70d77547f2c21255db278ae"
 
 [[files]]
 file = "resourcepacks/FreshAnimations_v1.10.4/assets/minecraft/optifine/cem/pig_baby_saddle.jem"
@@ -25340,7 +25348,7 @@ hash = "a1a414a87116d2b10c53b8fcb27d96d66a481517098f9c92c39452987492e75d"
 
 [[files]]
 file = "resourcepacks/FreshAnimations_v1.10.4/assets/minecraft/optifine/cem/pig_baby_saddle.properties"
-hash = "b44defa36ec7e46b0f506b82a400060c233e397e6a94a7d13ced8ddeb4eec745"
+hash = "50aac944c67297a64ca2479aa845b379599b46bfe70d77547f2c21255db278ae"
 
 [[files]]
 file = "resourcepacks/FreshAnimations_v1.10.4/assets/minecraft/optifine/cem/pig_saddle.jem"
@@ -25348,7 +25356,7 @@ hash = "a1a414a87116d2b10c53b8fcb27d96d66a481517098f9c92c39452987492e75d"
 
 [[files]]
 file = "resourcepacks/FreshAnimations_v1.10.4/assets/minecraft/optifine/cem/pig_saddle.properties"
-hash = "b44defa36ec7e46b0f506b82a400060c233e397e6a94a7d13ced8ddeb4eec745"
+hash = "50aac944c67297a64ca2479aa845b379599b46bfe70d77547f2c21255db278ae"
 
 [[files]]
 file = "resourcepacks/FreshAnimations_v1.10.4/assets/minecraft/optifine/cem/piglin.jem"
@@ -25500,7 +25508,7 @@ hash = "234064f8f7bd1e5e290b642d48523fb755a4732f965ca48cdb0c8cc40b0eca20"
 
 [[files]]
 file = "resourcepacks/FreshAnimations_v1.10.4/assets/minecraft/optifine/cem/snow_golem.properties"
-hash = "b9677be72aaaef83fe9438a7dfb62fcce961e2957081043f5dc0a83c00c39cac"
+hash = "a9ed8cd411dd1d075cdf0848a17b66f8a5bb9e313199fce61cdcf7b6da0ff326"
 
 [[files]]
 file = "resourcepacks/FreshAnimations_v1.10.4/assets/minecraft/optifine/cem/snow_golem_animations.jpm"
@@ -25616,7 +25624,7 @@ hash = "7bb4a7abf1737c9aa0df385668de734e34e9831967d1539f51fafaa803205035"
 
 [[files]]
 file = "resourcepacks/FreshAnimations_v1.10.4/assets/minecraft/optifine/cem/villager.properties"
-hash = "54e095b78fae60919805b831fa739dda5e4fd399844e011faf91c4156a95dc65"
+hash = "11366bbae2514117dce52f82b023791f503dc5ab5a2c9a8ea153a9401f1803fb"
 
 [[files]]
 file = "resourcepacks/FreshAnimations_v1.10.4/assets/minecraft/optifine/cem/villager2.jem"
@@ -25636,7 +25644,7 @@ hash = "7bb4a7abf1737c9aa0df385668de734e34e9831967d1539f51fafaa803205035"
 
 [[files]]
 file = "resourcepacks/FreshAnimations_v1.10.4/assets/minecraft/optifine/cem/villager_baby.properties"
-hash = "54e095b78fae60919805b831fa739dda5e4fd399844e011faf91c4156a95dc65"
+hash = "11366bbae2514117dce52f82b023791f503dc5ab5a2c9a8ea153a9401f1803fb"
 
 [[files]]
 file = "resourcepacks/FreshAnimations_v1.10.4/assets/minecraft/optifine/cem/villager_baby2.jem"
@@ -25664,7 +25672,7 @@ hash = "6a8eb974bbae454511af8c5dbc5f95d0aa60cd3d10f72ae3f08fdf3bd0d45a07"
 
 [[files]]
 file = "resourcepacks/FreshAnimations_v1.10.4/assets/minecraft/optifine/cem/warm_chicken.properties"
-hash = "85a11d034a4dfee0027c47d8d1711468b0dd56c4de5794d00955dfdc067697cc"
+hash = "06902623328658bab26bbd477a2a6123aaccfba278e7992dc8848a45de383345"
 
 [[files]]
 file = "resourcepacks/FreshAnimations_v1.10.4/assets/minecraft/optifine/cem/warm_chicken_baby.jem"
@@ -25672,7 +25680,7 @@ hash = "6a8eb974bbae454511af8c5dbc5f95d0aa60cd3d10f72ae3f08fdf3bd0d45a07"
 
 [[files]]
 file = "resourcepacks/FreshAnimations_v1.10.4/assets/minecraft/optifine/cem/warm_chicken_baby.properties"
-hash = "85a11d034a4dfee0027c47d8d1711468b0dd56c4de5794d00955dfdc067697cc"
+hash = "06902623328658bab26bbd477a2a6123aaccfba278e7992dc8848a45de383345"
 
 [[files]]
 file = "resourcepacks/FreshAnimations_v1.10.4/assets/minecraft/optifine/cem/warm_cow.jem"
@@ -25680,7 +25688,7 @@ hash = "5ebb358d45daadf430338390655b03291fd182cce45e8baf63454a633514f5b4"
 
 [[files]]
 file = "resourcepacks/FreshAnimations_v1.10.4/assets/minecraft/optifine/cem/warm_cow.properties"
-hash = "2405b340d604c4df148763a38e8a854c965af4767e4002147e073dedaee92856"
+hash = "2d4368b6784fed7900f2f8790a3668ed1d8e3273022024d7e3827c051f881543"
 
 [[files]]
 file = "resourcepacks/FreshAnimations_v1.10.4/assets/minecraft/optifine/cem/warm_cow_baby.jem"
@@ -25688,7 +25696,7 @@ hash = "5ebb358d45daadf430338390655b03291fd182cce45e8baf63454a633514f5b4"
 
 [[files]]
 file = "resourcepacks/FreshAnimations_v1.10.4/assets/minecraft/optifine/cem/warm_cow_baby.properties"
-hash = "2405b340d604c4df148763a38e8a854c965af4767e4002147e073dedaee92856"
+hash = "2d4368b6784fed7900f2f8790a3668ed1d8e3273022024d7e3827c051f881543"
 
 [[files]]
 file = "resourcepacks/FreshAnimations_v1.10.4/assets/minecraft/optifine/cem/warm_pig.jem"
@@ -25696,7 +25704,7 @@ hash = "19d9c6a229b4eec940924eab20e47ec573b3c7ea606d2054b96090f2f023f1ce"
 
 [[files]]
 file = "resourcepacks/FreshAnimations_v1.10.4/assets/minecraft/optifine/cem/warm_pig.properties"
-hash = "b44defa36ec7e46b0f506b82a400060c233e397e6a94a7d13ced8ddeb4eec745"
+hash = "50aac944c67297a64ca2479aa845b379599b46bfe70d77547f2c21255db278ae"
 
 [[files]]
 file = "resourcepacks/FreshAnimations_v1.10.4/assets/minecraft/optifine/cem/warm_pig_baby.jem"
@@ -25704,7 +25712,7 @@ hash = "19d9c6a229b4eec940924eab20e47ec573b3c7ea606d2054b96090f2f023f1ce"
 
 [[files]]
 file = "resourcepacks/FreshAnimations_v1.10.4/assets/minecraft/optifine/cem/warm_pig_baby.properties"
-hash = "b44defa36ec7e46b0f506b82a400060c233e397e6a94a7d13ced8ddeb4eec745"
+hash = "50aac944c67297a64ca2479aa845b379599b46bfe70d77547f2c21255db278ae"
 
 [[files]]
 file = "resourcepacks/FreshAnimations_v1.10.4/assets/minecraft/optifine/cem/witch.jem"
@@ -26488,7 +26496,7 @@ hash = "419e172fc136ec1d2c17e2e4e5786034568611bb5e3a335e7d963097a9d63873"
 
 [[files]]
 file = "resourcepacks/FreshAnimations_v1.10.4/changelog1.10.4.txt"
-hash = "dce55f541ba32ab2c2b884234a444750ed723233ef4c7e9310e6a5fb7ebb2c1f"
+hash = "cb93a1c3faf0b4a09e524ad1029e2bc70e4ae1aaebe20bcaaa7adb5755308034"
 
 [[files]]
 file = "resourcepacks/FreshAnimations_v1.10.4/pack.mcmeta"
@@ -26532,11 +26540,11 @@ hash = "39c3bf47c55774e36f0b1a87af21dc15f3ec790abd090fda8f8513347ed4fb07"
 
 [[files]]
 file = "resourcepacks/Freshly Modded 3.0.3/Mob From Mods List.txt"
-hash = "3539106639d5f8b63f6ac2fc20b9da168cc20022a9039b95e5af05754e13ca5c"
+hash = "b93f7dbd43ab4296b4ead92f62580dd78b3f28d76fcac92bf78c1bbaa97321b3"
 
 [[files]]
 file = "resourcepacks/Freshly Modded 3.0.3/assets/friendsandfoes/emf/cem/iceologer.properties"
-hash = "82de1c1d33ab8267efec9154518e3831b06a74485040dd1234c1d2874a43862c"
+hash = "0dff9cb919e7cada386770dcc80d838fb8a231b24f8489423a9f69160dd199e7"
 
 [[files]]
 file = "resourcepacks/Freshly Modded 3.0.3/assets/friendsandfoes/emf/cem/iceologer20.jem"
@@ -26548,7 +26556,7 @@ hash = "077f0b991107e4a06f97705bfa5cbe23c2b65d4c7dbdf6838c24cbb072cf3187"
 
 [[files]]
 file = "resourcepacks/Freshly Modded 3.0.3/assets/friendsandfoes/emf/cem/illusioner.properties"
-hash = "82de1c1d33ab8267efec9154518e3831b06a74485040dd1234c1d2874a43862c"
+hash = "0dff9cb919e7cada386770dcc80d838fb8a231b24f8489423a9f69160dd199e7"
 
 [[files]]
 file = "resourcepacks/Freshly Modded 3.0.3/assets/friendsandfoes/emf/cem/illusioner20.jem"
@@ -26584,7 +26592,7 @@ hash = "086c322665cfe5f8b33445fbd52b6eb1c2206b87583211f4c0c5769f2464a43a"
 
 [[files]]
 file = "resourcepacks/Freshly Modded 3.0.3/assets/frostiful/emf/cem/chillager.properties"
-hash = "82de1c1d33ab8267efec9154518e3831b06a74485040dd1234c1d2874a43862c"
+hash = "0dff9cb919e7cada386770dcc80d838fb8a231b24f8489423a9f69160dd199e7"
 
 [[files]]
 file = "resourcepacks/Freshly Modded 3.0.3/assets/frostiful/emf/cem/chillager20.jem"
@@ -26596,7 +26604,7 @@ hash = "bcfecad4865560b4ff9aac64cc2c11436b4bab428adbc7831678814ca125380b"
 
 [[files]]
 file = "resourcepacks/Freshly Modded 3.0.3/assets/frostiful/emf/cem/frostologer.properties"
-hash = "82de1c1d33ab8267efec9154518e3831b06a74485040dd1234c1d2874a43862c"
+hash = "0dff9cb919e7cada386770dcc80d838fb8a231b24f8489423a9f69160dd199e7"
 
 [[files]]
 file = "resourcepacks/Freshly Modded 3.0.3/assets/frostiful/emf/cem/frostologer20.jem"
@@ -26620,7 +26628,7 @@ hash = "42eea99a79534f2d888565119a1ad16515388e53b1c8a2bfef961917a70cc5ed"
 
 [[files]]
 file = "resourcepacks/Freshly Modded 3.0.3/assets/guardvillagers/emf/cem/guard.properties"
-hash = "617f6e811e07e38ef2a95c77a25083931001ff9cb29c843849dcfcc711594643"
+hash = "06c3914e2067f6c15e731dbab0f7a3610ff1f2029d06806bb8718a63b96f22d1"
 
 [[files]]
 file = "resourcepacks/Freshly Modded 3.0.3/assets/guardvillagers/emf/cem/guard20.jem"
@@ -26640,7 +26648,7 @@ hash = "334c993fbc1ec51d8ee2df695150676f0f51fb35daf32bed8017c9e1cae93a73"
 
 [[files]]
 file = "resourcepacks/Freshly Modded 3.0.3/assets/guardvillagers/emf/cem/guard_steve.properties"
-hash = "32f9e36aa68c3e86ba2a782d03c39e9e8da04f863f0093248792816a7ecbd0ec"
+hash = "12a6c491b24bcfbe999d65ecf3e2b29792911129e0334dcdbab632eda2c6da90"
 
 [[files]]
 file = "resourcepacks/Freshly Modded 3.0.3/assets/guardvillagers/emf/cem/guard_steve20.jem"
@@ -26724,7 +26732,7 @@ hash = "e7b5e1b1bda5fb0c87536a267ee31b0cbfac4ea0677b70733dcd291f585cead1"
 
 [[files]]
 file = "resourcepacks/Freshly Modded 3.0.3/assets/minecraft/optifine/cem/guardvillagersguard.properties"
-hash = "25735bf4be42605d2f08967f04633b6847507ee76e69392fe374a0bab8b079ad"
+hash = "6707686a61ee4eb270f7b22e54f273f8e826b385dc79649bbe0880f2a69b2a14"
 
 [[files]]
 file = "resourcepacks/Freshly Modded 3.0.3/assets/minecraft/optifine/cem/guardvillagersguard20.jem"
@@ -26744,7 +26752,7 @@ hash = "614211b77181093fe7c2aca42d3fbc3c1e1af1730e50b8f3f4c402b7b7ef46ce"
 
 [[files]]
 file = "resourcepacks/Freshly Modded 3.0.3/assets/minecraft/optifine/cem/guardvillagersguard_guard.properties"
-hash = "25735bf4be42605d2f08967f04633b6847507ee76e69392fe374a0bab8b079ad"
+hash = "6707686a61ee4eb270f7b22e54f273f8e826b385dc79649bbe0880f2a69b2a14"
 
 [[files]]
 file = "resourcepacks/Freshly Modded 3.0.3/assets/minecraft/optifine/cem/guardvillagersguard_guard20.jem"
@@ -26764,7 +26772,7 @@ hash = "614211b77181093fe7c2aca42d3fbc3c1e1af1730e50b8f3f4c402b7b7ef46ce"
 
 [[files]]
 file = "resourcepacks/Freshly Modded 3.0.3/assets/minecraft/optifine/cem/guardvillagersguard_steve.properties"
-hash = "25735bf4be42605d2f08967f04633b6847507ee76e69392fe374a0bab8b079ad"
+hash = "6707686a61ee4eb270f7b22e54f273f8e826b385dc79649bbe0880f2a69b2a14"
 
 [[files]]
 file = "resourcepacks/Freshly Modded 3.0.3/assets/minecraft/optifine/cem/guardvillagersguard_steve20.jem"
@@ -26784,7 +26792,7 @@ hash = "d716ce456b2b35420ebc3ac0a209968bdecc2678321026918c16a4d46139a730"
 
 [[files]]
 file = "resourcepacks/Freshly Modded 3.0.3/assets/minecraft/optifine/cem/guardvillagersguard_steve_guard_steve.properties"
-hash = "25735bf4be42605d2f08967f04633b6847507ee76e69392fe374a0bab8b079ad"
+hash = "6707686a61ee4eb270f7b22e54f273f8e826b385dc79649bbe0880f2a69b2a14"
 
 [[files]]
 file = "resourcepacks/Freshly Modded 3.0.3/assets/minecraft/optifine/cem/guardvillagersguard_steve_guard_steve20.jem"
@@ -26804,7 +26812,7 @@ hash = "e2dc499469937efc3969f53ac13028db843521c9cfe8c205a387ce0b54df2f71"
 
 [[files]]
 file = "resourcepacks/Freshly Modded 3.0.3/assets/minecraft/optifine/cem/illusioner.properties"
-hash = "82de1c1d33ab8267efec9154518e3831b06a74485040dd1234c1d2874a43862c"
+hash = "0dff9cb919e7cada386770dcc80d838fb8a231b24f8489423a9f69160dd199e7"
 
 [[files]]
 file = "resourcepacks/Freshly Modded 3.0.3/assets/minecraft/optifine/cem/illusioner20.jem"
@@ -26816,7 +26824,7 @@ hash = "14aa2501319598f2dac230ebe1769eec0da2e360a2a40ffb30074e2e46de4836"
 
 [[files]]
 file = "resourcepacks/Freshly Modded 3.0.3/assets/minecraft/optifine/cem/modded/guardvillagers/guard.properties"
-hash = "32f9e36aa68c3e86ba2a782d03c39e9e8da04f863f0093248792816a7ecbd0ec"
+hash = "12a6c491b24bcfbe999d65ecf3e2b29792911129e0334dcdbab632eda2c6da90"
 
 [[files]]
 file = "resourcepacks/Freshly Modded 3.0.3/assets/minecraft/optifine/cem/modded/guardvillagers/guard20.jem"
@@ -26836,7 +26844,7 @@ hash = "877d9bc01fe0bc8ca156e34ccef5bfe68c7b423ed73ace3079124cde44d360e1"
 
 [[files]]
 file = "resourcepacks/Freshly Modded 3.0.3/assets/minecraft/optifine/cem/modded/guardvillagers/guard_steve.properties"
-hash = "32f9e36aa68c3e86ba2a782d03c39e9e8da04f863f0093248792816a7ecbd0ec"
+hash = "12a6c491b24bcfbe999d65ecf3e2b29792911129e0334dcdbab632eda2c6da90"
 
 [[files]]
 file = "resourcepacks/Freshly Modded 3.0.3/assets/minecraft/optifine/cem/modded/guardvillagers/guard_steve20.jem"
@@ -26856,7 +26864,7 @@ hash = "42f0677f517e1a677912b2d3ee915712ff866689f8bd0d3ada7bda09b504a292"
 
 [[files]]
 file = "resourcepacks/Freshly Modded 3.0.3/assets/minecraft/optifine/cem/player.properties"
-hash = "39ca0a4e8f7956d2c31ea8fa6b79d1600260fa90256e8bcdc9e3094cf1c8de83"
+hash = "da80a92d803cd95652721bc8811e67b066a9af18a3400407a564402492d22b5b"
 
 [[files]]
 file = "resourcepacks/Freshly Modded 3.0.3/assets/minecraft/optifine/cem/player20.jem"
@@ -26884,7 +26892,7 @@ hash = "d7828654348fc3ef6c3594e677e4b3d28910dcf352d458b64190f70f9320e48e"
 
 [[files]]
 file = "resourcepacks/Freshly Modded 3.0.3/assets/minecraft/optifine/cem/recruitsrecruit_recruit.properties"
-hash = "1941c57c6ba5fdcbdcad43a4c5fbe4309479169a7817ef5301e4a62dd327bbf0"
+hash = "2b45f20b5f434f7fae6e804a085f2ca2aebede876df0768993f76b06e248db3f"
 
 [[files]]
 file = "resourcepacks/Freshly Modded 3.0.3/assets/minecraft/optifine/cem/recruitsrecruit_recruit20.jem"
@@ -26904,7 +26912,7 @@ hash = "92a51861c2536c975e5db02dd2a60d97b3d3424888d476f15ce59cb902015319"
 
 [[files]]
 file = "resourcepacks/Freshly Modded 3.0.3/assets/minecraft/optifine/cem/workersworker_worker.properties"
-hash = "3803f5fe348027e082cf8409ccdf422683feb004cdb92c05709cd3ec2772aeb7"
+hash = "7afc9b3e6cb4433d0c469a69d67727b831619512559f3b2a16c47a803294d8f0"
 
 [[files]]
 file = "resourcepacks/Freshly Modded 3.0.3/assets/minecraft/optifine/cem/workersworker_worker20.jem"
@@ -27068,7 +27076,7 @@ hash = "98221b22cd5abfab086370a52d5e0a469c1cabedd0b2d8faa61846034961d058"
 
 [[files]]
 file = "resourcepacks/Freshly Modded 3.0.3/assets/savage_and_ravage/emf/cem/executioner.properties"
-hash = "82de1c1d33ab8267efec9154518e3831b06a74485040dd1234c1d2874a43862c"
+hash = "0dff9cb919e7cada386770dcc80d838fb8a231b24f8489423a9f69160dd199e7"
 
 [[files]]
 file = "resourcepacks/Freshly Modded 3.0.3/assets/savage_and_ravage/emf/cem/executioner20.jem"
@@ -27080,7 +27088,7 @@ hash = "eae555412ca476b76f5044e3b6d8428a236d266113d12c23d65f7a8957965594"
 
 [[files]]
 file = "resourcepacks/Freshly Modded 3.0.3/assets/savage_and_ravage/emf/cem/griefer.properties"
-hash = "ec8617ed3c6fcd0961fe57d570b888a9ebdc7beb36bae43f637a97e36009712c"
+hash = "c8a4717c48e3578a4a57f0840ad99a29608a47ebc04ada747c4ae1d6d3c086d6"
 
 [[files]]
 file = "resourcepacks/Freshly Modded 3.0.3/assets/savage_and_ravage/emf/cem/griefer20.jem"
@@ -27092,7 +27100,7 @@ hash = "bf7ced66d8a03ad77bbd22845c794718f62c914bbdaa882c4d487d222c4f356f"
 
 [[files]]
 file = "resourcepacks/Freshly Modded 3.0.3/assets/savage_and_ravage/emf/cem/iceologer.properties"
-hash = "82de1c1d33ab8267efec9154518e3831b06a74485040dd1234c1d2874a43862c"
+hash = "0dff9cb919e7cada386770dcc80d838fb8a231b24f8489423a9f69160dd199e7"
 
 [[files]]
 file = "resourcepacks/Freshly Modded 3.0.3/assets/savage_and_ravage/emf/cem/iceologer20.jem"
@@ -27104,7 +27112,7 @@ hash = "7bae235184109d5a5632123f9cda4fd7930dbb2195693e43ce8940378750bded"
 
 [[files]]
 file = "resourcepacks/Freshly Modded 3.0.3/assets/savage_and_ravage/emf/cem/skeleton_villager.properties"
-hash = "8a1a1e5624840f18b8c9d3e24a25a91956c7ee86b2635085123c20ed8c13a778"
+hash = "50b859f5def6d399163c23f68cca61d18dbffce898665e3cd610d08f2645c214"
 
 [[files]]
 file = "resourcepacks/Freshly Modded 3.0.3/assets/savage_and_ravage/emf/cem/skeleton_villager20.jem"
@@ -27116,7 +27124,7 @@ hash = "fe7eb4d4ae08acc6bce2c06ce40e48f44fb30d8402d43f7dbe028d7756e03c19"
 
 [[files]]
 file = "resourcepacks/Freshly Modded 3.0.3/assets/savage_and_ravage/emf/cem/trickster.properties"
-hash = "82de1c1d33ab8267efec9154518e3831b06a74485040dd1234c1d2874a43862c"
+hash = "0dff9cb919e7cada386770dcc80d838fb8a231b24f8489423a9f69160dd199e7"
 
 [[files]]
 file = "resourcepacks/Freshly Modded 3.0.3/assets/savage_and_ravage/emf/cem/trickster20.jem"
@@ -27332,7 +27340,7 @@ hash = "87553b6b5164e4a34f22983e7c682ea191f607970181e8751bda8723f50323bb"
 
 [[files]]
 file = "resourcepacks/Freshly Modded 3.0.3/assets/takesapillage/emf/cem/archer.properties"
-hash = "82de1c1d33ab8267efec9154518e3831b06a74485040dd1234c1d2874a43862c"
+hash = "0dff9cb919e7cada386770dcc80d838fb8a231b24f8489423a9f69160dd199e7"
 
 [[files]]
 file = "resourcepacks/Freshly Modded 3.0.3/assets/takesapillage/emf/cem/archer20.jem"
@@ -27344,7 +27352,7 @@ hash = "de52738c9588dde2e5e7c31d9bf9caf85d2cb7f6bae20d6b0484f0f7013cebc6"
 
 [[files]]
 file = "resourcepacks/Freshly Modded 3.0.3/assets/takesapillage/emf/cem/legioner.properties"
-hash = "ec2aa7b3a2822b971f4d53a3cf1bb7b37286652002151e380030f277afd07eba"
+hash = "881d7371a0d198e0f8b894ab53d952aef3dc31ec89ce229ef72e64a83f3bb1d1"
 
 [[files]]
 file = "resourcepacks/Freshly Modded 3.0.3/assets/takesapillage/emf/cem/legioner20.jem"
@@ -27356,7 +27364,7 @@ hash = "1cd28ff4c9817c150b24e70a003d0a8a10402e838726b8fa7cc14a4eb960d3ae"
 
 [[files]]
 file = "resourcepacks/Freshly Modded 3.0.3/assets/takesapillage/emf/cem/skirmisher.properties"
-hash = "ec2aa7b3a2822b971f4d53a3cf1bb7b37286652002151e380030f277afd07eba"
+hash = "881d7371a0d198e0f8b894ab53d952aef3dc31ec89ce229ef72e64a83f3bb1d1"
 
 [[files]]
 file = "resourcepacks/Freshly Modded 3.0.3/assets/takesapillage/emf/cem/skirmisher20.jem"
