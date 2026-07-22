@@ -41,7 +41,7 @@ Download from **https://prismlauncher.org/download/** and sign in with your Micr
   "$INST_JAVA" -jar packwiz-installer-bootstrap.jar https://raw.githubusercontent.com/mudbourn/mms-pack/main/pack.toml
   ```
 
-- Save.
+- Close.
 
 ### 5. Launch
 Hit **Play**. On every launch the installer checks this repo and downloads/updates only what changed,
