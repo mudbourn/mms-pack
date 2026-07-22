@@ -1944,7 +1944,7 @@ metafile = true
 
 [[files]]
 file = "mods/camera-glue.pw.toml"
-hash = "3297cc522132cd41bd2c199a1bb90627f9491a1407e569dc2e5647e6e04a5b2c"
+hash = "d4078657d8e759bbf7da4f2a9b101f86f53027f4664a62738e5898f78f84492d"
 metafile = true
 
 [[files]]
@@ -1974,7 +1974,7 @@ metafile = true
 
 [[files]]
 file = "mods/chat-heads.pw.toml"
-hash = "8b12e6405b7bab8620e8ed16468bff3c1a2f87e76b1c76aed0b9029f2a3572cf"
+hash = "b5f9c98d636f806416bce38fa55db07fe992e614177c8e1682980b538ffd8c6d"
 metafile = true
 
 [[files]]
@@ -2118,13 +2118,9 @@ hash = "2f4334c909013c446b76c2de88ed149b890afc2daa8f9f32226a0579064bf790"
 metafile = true
 
 [[files]]
-file = "mods/disable-mod.pw.toml"
-hash = "e2d1d2a3221b6a074507a8bc42941a29990583696cd9195f0e33737e6c76b47f"
+file = "mods/disable-items.pw.toml"
+hash = "a5d39f2607a1949bac5fd4c20a61c90c4d32d58797eb167197fbc1e1a3e874e7"
 metafile = true
-
-[[files]]
-file = "mods/disablemod-1.0.0-fabric.jar"
-hash = "57156d2f650ecda52362ac33a648be67c0f6b9befb0cab19dbba2bdc0220806a"
 
 [[files]]
 file = "mods/display-delight-fabric.pw.toml"
@@ -2393,7 +2389,7 @@ metafile = true
 
 [[files]]
 file = "mods/jei.pw.toml"
-hash = "245e6eeb8c2572a2d175e5d87789db053c8192ad0400002989c54ad1b4058b97"
+hash = "8ec21478fb7415fcb5214381b35bdf7c121c987501cb584d661346d04259a452"
 metafile = true
 
 [[files]]
@@ -2418,7 +2414,7 @@ metafile = true
 
 [[files]]
 file = "mods/ks-support.pw.toml"
-hash = "87cbb5bef6052f0b5da0e715dfb9463e677fa76f40d8f98732b883fbe829aac4"
+hash = "64ca2412b4a2223b31de4e54c74d3c3fe0593f93d5b64d12736a3c0de810d4ef"
 metafile = true
 
 [[files]]
@@ -2503,7 +2499,7 @@ metafile = true
 
 [[files]]
 file = "mods/mms-mod-compat-support.pw.toml"
-hash = "0555f75816cc4761d5c7d9675c67ca695707194809030d5ac0e5d0c201114e40"
+hash = "546433c4c02c24627fb42752fb0d7f58b4e96f1fbe4f2d842690cdb3300622d0"
 metafile = true
 
 [[files]]
@@ -2537,7 +2533,7 @@ hash = "690d13f203eb43f8ccfd84a73d06585fd0f4ca2a52d6010fda1412d0f65aa5e5"
 
 [[files]]
 file = "mods/modmetro.pw.toml"
-hash = "3926c951f46de998702d27944ed60a6d5e397be008859f424f4cf51a7c1a4bce"
+hash = "3cf883f06188087ae4f66e0cde91ded6d177367672d4702ae4968784bc9c7515"
 metafile = true
 
 [[files]]
@@ -2697,7 +2693,7 @@ metafile = true
 
 [[files]]
 file = "mods/polytone.pw.toml"
-hash = "5e97d82ec775dafa0f4b0f1eea0b9c93c3070982e2a07765e2a56702928b6276"
+hash = "af40ed10d9e45dcb15c9bd0e5dba20e2b1e7cd2c9d07e7ba1ce1ab7cbdacab15"
 metafile = true
 
 [[files]]

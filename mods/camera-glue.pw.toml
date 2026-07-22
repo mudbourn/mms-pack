@@ -9,5 +9,7 @@ hash = "98b79a22fc9a7d283b8004f4efc0c1b3284c88b425774f35eb94ba23076a4c5683fc2ecd
 
 [update]
 [update.github]
-repo = "mudbourn/camera-glue"
-release = true
+slug = "mudbourn/camera-glue"
+tag = "v0.2.0"
+branch = "main"
+regex = '^.+(?<!-api|-dev|-dev-preshadow|-sources)\.jar$'

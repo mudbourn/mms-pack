@@ -1,0 +1,13 @@
+name = "disable items"
+filename = "disablemod-1.0.0-fabric.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "732c6958ac11d0814295898c4c70cb19ba7e58e6"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7580339
+project-id = 1449135
