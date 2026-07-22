@@ -1,0 +1,6 @@
+#
+#waypoint:name:initials:x:y:z:color:disabled:type:set:rotate_on_tp:tp_yaw:visibility_type:destination
+#
+waypoint:Portal Home:P:1:47:2:6:false:0:gui.xaero_default:false:0:1:false
+waypoint:Ship:S:858:208:1174:5:false:0:gui.xaero_default:false:0:1:false
+waypoint:Ship:S:326:78:-739:5:false:0:gui.xaero_default:false:0:1:false
