@@ -1,0 +1,13 @@
+name = "Server Waypoint"
+filename = "server_waypoint-3.0.3-fabric-mc1.21.11.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/UyBaYBa7/versions/8iGACJOz/server_waypoint-3.0.3-fabric-mc1.21.11.jar"
+hash-format = "sha512"
+hash = "7fd47ffc6c47f54ac4907c08d80e863b47e8ae4bccdde65931b1ab78a9b14d260fd69a14435e73229f237d1cb7d6a8038ca79e17b20fc37a9cdbe15156c94f5c"
+
+[update]
+[update.modrinth]
+mod-id = "UyBaYBa7"
+version = "8iGACJOz"
