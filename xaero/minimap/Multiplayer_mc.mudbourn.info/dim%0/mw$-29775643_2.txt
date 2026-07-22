@@ -1,0 +1,24 @@
+#
+#waypoint:name:initials:x:y:z:color:disabled:type:set:rotate_on_tp:tp_yaw:visibility_type:destination
+#
+waypoint:Nate's Isle:N:1774:91:-712:2:false:0:gui.xaero_default:false:0:1:false
+waypoint:Outpost Base:O:551:85:72:6:false:0:gui.xaero_default:false:0:1:false
+waypoint:Caledon:C:-1583:72:5810:6:false:0:gui.xaero_default:false:0:1:false
+waypoint:Old Bark Yard:O:-1010:5:2345:4:false:0:gui.xaero_default:false:0:0:false
+waypoint:Crimson Hill:C:1001:67:1840:5:false:0:gui.xaero_default:false:0:1:false
+waypoint:Slime Farm:S:-1830:20:-2462:0:false:0:gui.xaero_default:false:0:1:false
+waypoint:Beehive Cluster:B:-2193:63:-1247:0:false:0:gui.xaero_default:false:0:1:false
+waypoint:Witch Farm:W:2722:63:3370:0:false:0:gui.xaero_default:false:0:1:false
+waypoint:Bunker:B:-1835:20:-2461:5:false:0:gui.xaero_default:false:0:1:false
+waypoint:Vinewood:V:-2182:63:-1185:5:false:0:gui.xaero_default:false:0:1:false
+waypoint:Remotus:R:-1134:16:-1216:5:false:0:gui.xaero_default:false:0:1:false
+waypoint:End Portal:E:-1162:20:-1216:0:false:0:gui.xaero_default:false:0:1:false
+waypoint:XP Farm:X:1135:160:-4993:0:false:0:gui.xaero_default:false:0:1:false
+waypoint:Strandway:S:1193:64:-5102:11:false:0:gui.xaero_default:false:0:1:false
+waypoint:Mob Farm:M:-1191:63:966:0:false:0:gui.xaero_default:false:0:1:false
+waypoint:Castle Valley:C:-2290:98:2265:11:false:0:gui.xaero_default:false:0:1:false
+waypoint:Iron Farm:I:1144:214:-1469:0:false:0:gui.xaero_default:false:0:1:false
+waypoint:Bessarion:B:-1330:70:957:11:false:0:gui.xaero_default:false:0:1:false
+waypoint:Boom Point:B:1090:64:-3640:6:false:0:gui.xaero_default:false:0:1:false
+waypoint:Fort Kelvin:K:-72:63:125:11:false:0:gui.xaero_default:false:0:1:false
+waypoint:Cherry Park:C:1053:117:-1485:11:false:0:gui.xaero_default:false:0:1:false

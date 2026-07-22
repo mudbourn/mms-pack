@@ -1,0 +1,17 @@
+#
+#waypoint:name:initials:x:y:z:color:disabled:type:set:rotate_on_tp:tp_yaw:visibility_type:destination
+#
+waypoint:gui.xaero_deathpoint:D:0:52:5:0:false:1:gui.xaero_default:false:0:1:true
+waypoint:gui.xaero_deathpoint_old:D:0:52:5:0:false:2:gui.xaero_default:false:0:1:true
+waypoint:gui.xaero_deathpoint_old:D:143:60:-31:0:false:2:gui.xaero_default:false:0:1:true
+waypoint:gui.xaero_deathpoint_old:D:143:60:-31:0:false:2:gui.xaero_default:false:0:1:true
+waypoint:Remotus (Nether):R:-136:129:-150:5:false:0:gui.xaero_default:false:0:1:false
+waypoint:Old Bark Yard (Nether):O:-130:129:306:4:false:0:gui.xaero_default:false:0:1:false
+waypoint:Crimson Hill (Nether):C:129:129:230:5:false:0:gui.xaero_default:false:0:1:false
+waypoint:Bessarion (Nether:B:-168:129:119:11:false:0:gui.xaero_default:false:0:1:false
+waypoint:Bunker (Nether):B:-231:129:-308:5:false:0:gui.xaero_default:false:0:1:false
+waypoint:Vinewood (Nether):V:-284:129:-143:5:false:0:gui.xaero_default:false:0:1:false
+waypoint:Strandway (Nether):S:151:129:-643:11:false:0:gui.xaero_default:false:0:1:false
+waypoint:Castle Valley (Nether):C:-298:129:281:11:false:0:gui.xaero_default:false:0:1:false
+waypoint:Cherry Park (Nether):C:132:129:-197:11:false:0:gui.xaero_default:false:0:1:false
+waypoint:Fort Kelvin (Nether):K:-8:129:14:11:false:0:gui.xaero_default:false:0:1:false
