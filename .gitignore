@@ -1,0 +1,26 @@
+# --- Build artifact (regenerable via `packwiz modrinth export`) ---
+# The .mrpack is a seed/backup only; attach to a GitHub Release rather than tracking a 12MB binary.
+*.mrpack
+
+# --- Per-user / per-OS generated data (mirrors .packignore) ---
+mods/mcef-libraries/
+xaero/world-map/
+.fabric/
+.cache/
+.mixin.out/
+screenshots/
+crash-reports/
+logs/
+saves/
+usercache.json
+*.log
+
+# --- OS cruft ---
+.DS_Store
+Thumbs.db
+
+# NOTE: the 6 bundled jars in mods/*.jar ARE intentionally committed —
+# hosted packwiz distribution needs them reachable at the repo's raw URL.
+
+# Internal build-handoff note — not for the public members repo
+INVENTORY-TASK.md

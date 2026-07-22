@@ -1,0 +1,12 @@
+# Per-user / per-OS generated data — never distribute
+mods/mcef-libraries/
+xaero/world-map/
+.fabric/
+.cache/
+.mixin.out/
+screenshots/
+crash-reports/
+logs/
+saves/
+usercache.json
+*.log
