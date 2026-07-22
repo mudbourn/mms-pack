@@ -24,7 +24,13 @@ for f in \
 done
 
 # Re-apply preserve flags (packwiz refresh strips them)
-for entry in "options.txt" "servers.dat"; do
+PRESERVE_ENTRIES=(
+  "options.txt"
+  "servers.dat"
+  "config/Easy Shop Mod/My Skin/skin.png"
+  "config/xaero/minimap/Multiplayer_mc.mudbourn.info/config.txt"
+)
+for entry in "${PRESERVE_ENTRIES[@]}"; do
   # Only add if not already present
   if ! grep -A2 "file = \"$entry\"" "$PACK_DIR/index.toml" | grep -q "preserve"; then
     sed -i '' "/file = \"$entry\"/{
