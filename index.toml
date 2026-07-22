@@ -4,7 +4,6 @@ hash-format = "sha256"
 file = ".packignore"
 hash = "f0038124c0ae425e565ef0299b35f07fce689ee09f22f9886e0282f4ac028857"
 
-
 [[files]]
 file = "LICENSE"
 hash = "39b1578c36cfd699e9de71dbd69ff5979ef536c85cd1af774079e8fcad3399f2"
