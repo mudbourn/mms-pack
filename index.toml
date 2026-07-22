@@ -957,14 +957,6 @@ file = "config/inspect-animations.json5"
 hash = "b960aad0acf856ff0eeb3a6815348559f0b8e1f0c57e27b8cf22a76e577b36e4"
 
 [[files]]
-file = "config/iris-excluded.json"
-hash = "4d3264b58c502afaeca3f44e8d2db0843c54b8ba957afd21a2d450fe10dafefb"
-
-[[files]]
-file = "config/iris.properties"
-hash = "c4ba380082d208d05a3c625c745634fd6dd8a13174fbe6fadcf7f54ae498b3e4"
-
-[[files]]
 file = "config/isxander-main-menu-credits.json"
 hash = "4d9f4d8b7ab8989038f6d3ee17690decb16f686c895c4f73694e761849243a1e"
 
@@ -1259,10 +1251,6 @@ hash = "ba5f5ccfd31e25f9feb4730dfc01ef7bee4156b3336453cbe797ffb0c51ab46f"
 [[files]]
 file = "config/modpack_defaults/config/fastquit.toml"
 hash = "17225e085e6759210cec7e829e00c8c90f9c5d38714835cb5da9c98398842f7d"
-
-[[files]]
-file = "config/modpack_defaults/config/iris.properties"
-hash = "08b789827f7cbfaf5bffd5aedb6dfe9889e216e87be4674299781934658767af"
 
 [[files]]
 file = "config/modpack_defaults/config/isxander-main-menu-credits.json"
@@ -2390,11 +2378,6 @@ metafile = true
 [[files]]
 file = "mods/invview.pw.toml"
 hash = "80bdecdf7911f4b1b6c57d18717d8f435ae237991efdd4c43c50ba6f42bb2139"
-metafile = true
-
-[[files]]
-file = "mods/iris.pw.toml"
-hash = "5127c58dc92fe8860d29ad2d05e7c2ea7b973390f41aec73dd2017953f2d1a3e"
 metafile = true
 
 [[files]]
