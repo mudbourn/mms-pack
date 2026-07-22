@@ -2979,11 +2979,6 @@ hash = "9ce3767540efbf35e0a0c266040c9879efc9136ec59cd38e06e45b3c3c3e90e0"
 metafile = true
 
 [[files]]
-file = "mods/voxy.pw.toml"
-hash = "1b15aa249e728fe7af88899bfa08ca4a7a629b0f440750138f74a9b36c607292"
-metafile = true
-
-[[files]]
 file = "mods/water-resistance-potion.pw.toml"
 hash = "cb815b947b375451bdf31d406509d263f62902e14445b476a2df0991018e9238"
 metafile = true
