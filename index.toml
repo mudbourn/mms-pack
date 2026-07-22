@@ -21,6 +21,11 @@ file = "config/BBEConfig.json"
 hash = "e5f2ee57e9f9c0bd81af26c1918ceee988b3d726014c411f439406dc0fe60ef1"
 
 [[files]]
+file = "config/Easy Shop Mod/My Skin/skin.png"
+hash = "664ea2023ccb6d3a820ca533b876fc50d457f1727ae87ecfc846fffc61f85e89"
+preserve = true
+
+[[files]]
 file = "config/EssentialCommands.properties"
 hash = "fc01dc3f08884e8fdf7c0796ea7b9e740dc6f2f5d46fd021a73e8e3a30789fdb"
 
@@ -1711,6 +1716,11 @@ hash = "34ae854b17d896d7cb853bdc28c27231a3947e91cb9f0991f372846ee3c2a907"
 [[files]]
 file = "config/xaero/lib/server_profiles/default.cfg"
 hash = "d438aea41ca41e93697e059f523686935c0add482f6abe96b532bbf10c6ed80a"
+
+[[files]]
+file = "config/xaero/minimap/Multiplayer_mc.mudbourn.info/config.txt"
+hash = "fbf169810df43372a1f017b7f686b944d9cda71a1095edfaaedf860cccf8b624"
+preserve = true
 
 [[files]]
 file = "config/xaero/minimap/client.cfg"
