@@ -1,6 +1,6 @@
 # MMS Live — Minecraft Modpack
 
-**Minecraft 1.21.11 · Fabric loader 0.19.3 · Java 21 · pack version 2.4.0**
+**Minecraft 1.21.11 · Fabric loader 0.19.3 · Java 21 · pack version 2.5.2**
 
 This repo *is* the modpack. It's a [packwiz](https://packwiz.infra.link/) pack, which means once
 your launcher is pointed at it, **you get every update automatically just by launching the game** —
