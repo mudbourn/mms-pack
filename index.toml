@@ -4,6 +4,7 @@ hash-format = "sha256"
 file = ".packignore"
 hash = "f0038124c0ae425e565ef0299b35f07fce689ee09f22f9886e0282f4ac028857"
 
+
 [[files]]
 file = "LICENSE"
 hash = "39b1578c36cfd699e9de71dbd69ff5979ef536c85cd1af774079e8fcad3399f2"
@@ -2263,6 +2264,11 @@ hash = "a157d789fe06e07aedb88bef5080dc30e5d0495e2f843750ebc59b7b4e2ebb69"
 metafile = true
 
 [[files]]
+file = "mods/fabric-api.pw.toml"
+hash = "2f5c506d2812eadb4cd6ce2286dc2aafe8a21046d2c1f584a75ca90ea5bd3eeb"
+metafile = true
+
+[[files]]
 file = "mods/fabric-language-kotlin.pw.toml"
 hash = "2a760e528bf27c3eb4ae7c06200d91ee9c2849295addaa2add05495c7dee9528"
 metafile = true
@@ -2851,7 +2857,7 @@ metafile = true
 
 [[files]]
 file = "mods/sodium.pw.toml"
-hash = "723a13737a51aa682f385ede7e4bfa925b1dfb435436ab2f69dc25c4be1b2c04"
+hash = "6747f2e71e6d9ae5b6c4aea899f6af5fbbb612aac8c9bbb45990463826af3398"
 metafile = true
 
 [[files]]
