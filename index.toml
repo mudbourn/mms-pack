@@ -2503,7 +2503,7 @@ metafile = true
 
 [[files]]
 file = "mods/mms-mod-compat-support.pw.toml"
-hash = "0476281ddb77474f9ce87b9a8e0b8f89136eca15261e3c63bc89024a40ebf991"
+hash = "0555f75816cc4761d5c7d9675c67ca695707194809030d5ac0e5d0c201114e40"
 metafile = true
 
 [[files]]
@@ -2533,11 +2533,11 @@ metafile = true
 
 [[files]]
 file = "mods/modmetro-v1.jar"
-hash = "09c64a432292e4d095a3026dc7f6da859948be5d19e89cb5a1c28e7f6a304692"
+hash = "2dc3a7abef548b128a9840c44d6f9c5b54cce49d3792d7eab03ace50c225d40d"
 
 [[files]]
 file = "mods/modmetro.pw.toml"
-hash = "4c083d9d574e9437059a6b3a24c8a7267a095fcd6b475d031b2836df5694d178"
+hash = "e6984edfec0e4e7d53a3319f1adbf5fdc67c070910b584ba1b6162041d109d1f"
 metafile = true
 
 [[files]]
