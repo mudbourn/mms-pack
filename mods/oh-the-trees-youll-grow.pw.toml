@@ -1,6 +1,6 @@
 name = "Oh The Trees You'll Grow"
 filename = "Oh-The-Trees-Youll-Grow-fabric-1.21.11-9.0.0.jar"
-side = "server"
+side = "both"
 
 [download]
 url = "https://cdn.modrinth.com/data/g8NOG5OR/versions/RttF1Lcs/Oh-The-Trees-Youll-Grow-fabric-1.21.11-9.0.0.jar"
