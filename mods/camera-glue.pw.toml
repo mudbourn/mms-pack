@@ -1,6 +1,6 @@
 name = "Camera Glue"
 filename = "camera-glue-0.2.0.jar"
-side = "both"
+side = "client"
 
 [download]
 url = "https://github.com/mudbourn/camera-glue/releases/download/v0.2.0/camera-glue-0.2.0.jar"
