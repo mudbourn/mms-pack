@@ -5,6 +5,6 @@ side = "both"
 [download]
 url = "file:///Users/eli3/Documents/GitHub/NOT REPOS/deploy/client/mms-mod-compat-support-0.5.0.jar"
 hash-format = "sha512"
-hash = "573a7aa4e81baf7a64bdd3afcdd8c12f65ecdbf80b0033667de0e358f1429587f2c50343f6b768b3344630ec29cb68a8c825f941e25f4e853e829cbe402a6c24"
+hash = "36bc02cb2d24404ba4abaee055341afb9e724a7dbe1c6d0c2446584cd91f436fa092fffa7018aa8f3c146323fd654a5d28c156482ca479bb7fa90020036148cc"
 
 [update]
