@@ -37,15 +37,21 @@ import json, os, re, shutil, sys, urllib.parse, urllib.request, zipfile
 server_mods = sys.argv[1]
 changed = False
 
-def mod_id(path):
-    """Fabric mod id from the jar; None if unreadable."""
+def mod_info(path):
+    """(id, version) from the jar's fabric.mod.json; (None, None) if unreadable."""
     try:
         with zipfile.ZipFile(path) as z:
-            return json.loads(z.read('fabric.mod.json'))['id']
+            meta = json.loads(z.read('fabric.mod.json'))
+            return meta['id'], meta.get('version')
     except Exception:
-        return None
+        return None, None
 
-server_jars = {f: mod_id(os.path.join(server_mods, f))
+def ver_key(v):
+    """Sortable key from a version string; None if it has no numeric parts."""
+    nums = re.findall(r'\d+', v or '')
+    return tuple(int(n) for n in nums) if nums else None
+
+server_jars = {f: mod_info(os.path.join(server_mods, f))
                for f in os.listdir(server_mods) if f.endswith('.jar')}
 
 for name in sorted(os.listdir('mods')):
@@ -80,9 +86,25 @@ for name in sorted(os.listdir('mods')):
     else:
         urllib.request.urlretrieve(url, dest)
 
+    new_id, new_ver = mod_info(dest)
+
+    # never downgrade: if the server already runs a NEWER build of this mod
+    # (e.g. a locally built mms-mod-compat-support ahead of its release),
+    # keep the server's jar and skip — cut the release / update the pack
+    # instead of silently rolling the server back.
+    newer = [(j, v) for j, (i, v) in server_jars.items()
+             if i is not None and i == new_id and j != fname
+             and ver_key(v) is not None and ver_key(new_ver) is not None
+             and ver_key(v) > ver_key(new_ver)]
+    if newer:
+        os.remove(dest)
+        for j, v in newer:
+            print(f"!! {name}: server has NEWER {new_id} {v} ({j}) than pack's "
+                  f"{new_ver} — NOT downgrading. Update the pack to {v}.", file=sys.stderr)
+        continue
+
     # remove superseded versions: any other jar carrying the same fabric mod id
-    new_id = mod_id(dest)
-    old = [j for j, i in server_jars.items()
+    old = [j for j, (i, v) in server_jars.items()
            if i is not None and i == new_id and j != fname]
     for j in old:
         os.remove(os.path.join(server_mods, j))
