@@ -1,12 +1,12 @@
 name = "MMS Live"
 author = "eli3"
-version = "2.5.1"
+version = "2.5.2"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "bd541ea20054d1d10e93e0551076d6644000a11a3bd50cfe973febbbee18f237"
+hash = "120cca596a3b36212d84d3985d51dba2175c74dc78ea3e906fadfbfff0b5f7a8"
 
 [versions]
 fabric = "0.19.3"
