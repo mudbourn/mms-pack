@@ -8,3 +8,6 @@ hash-format = "sha512"
 hash = "7f961322d3daa61f5ac9162e99c08d8fbee5c68fdc69e1f3c9131cde69448e6b9a9cea2b855a50fb1faf220d061fe18e7689aeed60c1623eb4105dd9dd7192a0"
 
 [update]
+[update.curseforge]
+file-id = 8100993
+project-id = 1545356
