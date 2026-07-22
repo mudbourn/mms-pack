@@ -14,4 +14,13 @@ for f in \
   fi
 done
 
+# Update fabric_loader_dependencies version check
+for f in \
+  "$PACK_DIR/config/fabric_loader_dependencies.json" \
+  "$PACK_DIR/config/modpack_defaults/config/fabric_loader_dependencies.json"; do
+  if [ -f "$f" ]; then
+    sed -i '' "s/\"MMS Live\":\">[0-9.]*\"/\"MMS Live\":\">$VERSION\"/g" "$f"
+  fi
+done
+
 echo "Title updated to: $TITLE"
