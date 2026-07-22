@@ -2511,11 +2511,11 @@ metafile = true
 
 [[files]]
 file = "mods/mms-mod-compat-support-0.4.3.jar"
-hash = "718caac7e4102ab6cc4ff5e6c47e11e2e8fb908f0966b487f4136c8b5da81979"
+hash = "1dabe25c3a318c61e9e96336b2a402754d07bed25b607702fa5326666814da54"
 
 [[files]]
 file = "mods/mms-mod-compat-support.pw.toml"
-hash = "4e203438a62a4f0193b9cbb795df65316f879572490796aa038cb5a5a9a300ec"
+hash = "78c08a9f87e0f26419f92e1532a4c03939b7d8b8d0d174466544ea5a03d7abd9"
 metafile = true
 
 [[files]]
