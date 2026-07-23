@@ -1484,14 +1484,17 @@ hash = "d291dbeada373e95b36386793bbaae0aeb11597ab610d66ca7f4abf223558caa"
 [[files]]
 file = "config/sodium-extra-options.json"
 hash = "13ed38e2a24a272c14d7d1eb248593f0944dbf630fdcd8bf97c8db039a7f3955"
+preserve = true
 
 [[files]]
 file = "config/sodium-extra.properties"
 hash = "a2f1b47c1eaa119ab34727f1d43c2506cb3d7f17ba8fb4efb49e20c8e0b58e70"
+preserve = true
 
 [[files]]
 file = "config/sodium-fingerprint.json"
 hash = "9d8f0acbe050119fcd816ac9d910fdf97dcff4457940b717197ee094e40931f5"
+preserve = true
 
 [[files]]
 file = "config/sodium-mixins.properties"
@@ -1500,10 +1503,12 @@ hash = "b627c4456e6fa0bc4b5f85e2f1cd949faedae3cb9afdaf2a5f52e6f3b6ae1f01"
 [[files]]
 file = "config/sodium-options.json"
 hash = "c5086f9c76adec2dcf0e738466a6285e93a068c50f3a1c5544333b349236cd76"
+preserve = true
 
 [[files]]
 file = "config/sodium-shadowy-path-blocks-options.json"
 hash = "71c8d050837ca80f08b33231ffaf25907fe88536015fddcfac4099a0467fff63"
+preserve = true
 
 [[files]]
 file = "config/sound_physics_remastered/occlusion.properties"
@@ -2373,6 +2378,11 @@ hash = "80bdecdf7911f4b1b6c57d18717d8f435ae237991efdd4c43c50ba6f42bb2139"
 metafile = true
 
 [[files]]
+file = "mods/iris.pw.toml"
+hash = "5127c58dc92fe8860d29ad2d05e7c2ea7b973390f41aec73dd2017953f2d1a3e"
+metafile = true
+
+[[files]]
 file = "mods/it-takes-a-pillage-continuation.pw.toml"
 hash = "fd939ef6eef8e83c9c669bf7e215db2e6d974ca56f5e7e9d5e78ec06d6cdf06c"
 metafile = true
@@ -2828,7 +2838,7 @@ metafile = true
 
 [[files]]
 file = "mods/sodium.pw.toml"
-hash = "723a13737a51aa682f385ede7e4bfa925b1dfb435436ab2f69dc25c4be1b2c04"
+hash = "74d55f8ffee46b10c6d4c709c298a72e1233cdd393707c223b3e861d7f104a88"
 metafile = true
 
 [[files]]
