@@ -10,7 +10,7 @@ hash = "39b1578c36cfd699e9de71dbd69ff5979ef536c85cd1af774079e8fcad3399f2"
 
 [[files]]
 file = "README.md"
-hash = "9d9672cc38afdca5e8fb15bd4a935e5bbacb4b2f46812e8b258a2776e2a758ea"
+hash = "de3556733ff2a1028ed0d534ed16360c18f529d6d090ab213a6cb2ce67e5b188"
 
 [[files]]
 file = "config/.puzzle_cache/mojangstudios.png"
@@ -1788,6 +1788,26 @@ file = "config/yacl.json5"
 hash = "121b93764159be6fb7dab523b29a844e2bb78400ce8c48f52135a097e9b0006e"
 
 [[files]]
+file = "mms-client-sweep.py"
+hash = "04ca38fe7a33e75e4091113239aca0c0e50cc5efc2e4f80fe7d09bb1d0b69378"
+
+[[files]]
+file = "mms-deploy-test.sh"
+hash = "1dcd853b68f7fd59a9873ecd4d7279b2c0e14540f23baeedca1ec845fbf72a19"
+
+[[files]]
+file = "mms-overlay-apply.sh"
+hash = "a7cf1d5d5e2a62c2067fa8432a480b698c64678173a985222f0848923f380a82"
+
+[[files]]
+file = "mms-promote.sh"
+hash = "64f81500a87015325e8884679671382f5e4e013915097c5c31171fe4c53b8404"
+
+[[files]]
+file = "mms-server-sync.py"
+hash = "32e8adea9f401d80016e91b31e43dbbcccb9831869981c7ab50d8ca37c3a012d"
+
+[[files]]
 file = "mods/absolut-revive.pw.toml"
 hash = "cf778cadc90cec63aaf93fbd7fa1a66c4a59c9b3752217d9606a06f7d687a1c2"
 metafile = true
@@ -2509,7 +2529,7 @@ metafile = true
 
 [[files]]
 file = "mods/mms-mod-compat-support.pw.toml"
-hash = "17aff7c2c16f71463ffabf05d76c00fa84f45e740942aeaa653cc3fbc8e88c4a"
+hash = "e98d75566148d41edea2c7dab5586f805980e21cb558b57217b5d15ee9cfbb64"
 metafile = true
 
 [[files]]
@@ -2999,6 +3019,10 @@ metafile = true
 file = "options.txt"
 hash = "3d199cec976c9527d403608298bd6e6c97920b4357e4477364b8f1364cd34f10"
 preserve = true
+
+[[files]]
+file = "overlay.list"
+hash = "0c4040a67a6eb0ecd199e410d8e09e7ca128aeff5045753bcb2a625f9b6d2283"
 
 [[files]]
 file = "resourcepacks/Better-Leaves-9.5/LICENSE"
