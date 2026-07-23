@@ -1,6 +1,9 @@
 # MMS Live — Minecraft Modpack
 
-**Minecraft 1.21.11 · Fabric loader 0.19.3 · Java 21 · pack version 2.5.2**
+**Minecraft 1.21.11 · Fabric loader 0.19.3 · Java 25 · pack version 2.5.2**
+
+> ⚠️ **Java 25 required.** Prism defaults new 1.21.11 instances to Java 21, which crashes on launch
+> (C2ME's `opts-natives-math` needs Java 25). Set it per the instructions in step 2 below.
 
 This repo *is* the modpack. It's a [packwiz](https://packwiz.infra.link/) pack, which means once
 your launcher is pointed at it, **you get every update automatically just by launching the game** —
@@ -24,6 +27,11 @@ Download from **https://prismlauncher.org/download/** and sign in with your Micr
 - Choose **Minecraft 1.21.11**.
 - Click **Fabric** and select loader version **0.19.3** (or newest 1.21.11-compatible).
 - Create the instance. **Don't add any mods by hand** — the pack installs them for you.
+- Set up Java 25 (Prism downloads it for you — no separate install needed):
+  1. Right-click the instance → **Edit** → **Settings** → **Java** → **Installations**.
+  2. Press **Download**, select the **25** option from **Mojang**, press **Download**, then **OK**.
+
+  Prism's default is Java 21, which **will not launch this pack**.
 
 ### 3. Drop in the packwiz installer
 - Download **`packwiz-installer-bootstrap.jar`** from
@@ -56,6 +64,7 @@ then the game starts. First launch pulls the whole pack (a few minutes); after t
 
 | Problem | Fix |
 |---|---|
+| Crash: "requires version 25 or later of 'OpenJDK'" (C2ME / natives-math) | Instance is on Java 21. Set Java 25 in instance Settings → Java (see step 2). |
 | "Cannot find packwiz-installer-bootstrap.jar" | The jar must be inside `.minecraft/`, not the instance root. Re-check step 3. |
 | Prelaunch window closes instantly / mods missing | Confirm the pre-launch box is the **exact** line above, quotes included. |
 | Want to see what it's doing | Remove nothing — the installer prints progress in a small window each launch. |
