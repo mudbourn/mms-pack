@@ -1793,7 +1793,7 @@ hash = "04ca38fe7a33e75e4091113239aca0c0e50cc5efc2e4f80fe7d09bb1d0b69378"
 
 [[files]]
 file = "mms-deploy-test.sh"
-hash = "1dcd853b68f7fd59a9873ecd4d7279b2c0e14540f23baeedca1ec845fbf72a19"
+hash = "7d51e939eb3813d1d9802cf8fb40190a82bfa58c2c5c4746171af9ff55dfc5ca"
 
 [[files]]
 file = "mms-overlay-apply.sh"
@@ -2529,7 +2529,7 @@ metafile = true
 
 [[files]]
 file = "mods/mms-mod-compat-support.pw.toml"
-hash = "e98d75566148d41edea2c7dab5586f805980e21cb558b57217b5d15ee9cfbb64"
+hash = "2b7314fbf0e2138fd73dea405206b9ad65ada5d210811d962c36556d7bb84796"
 metafile = true
 
 [[files]]
