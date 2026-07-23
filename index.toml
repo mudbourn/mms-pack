@@ -819,7 +819,7 @@ hash = "d8d72a9ac49bbe45921f1ace5a22c30b65802c5e70829343cf7acfd25f79b8dc"
 
 [[files]]
 file = "config/entityculling.json"
-hash = "48527836eabbda32f541d1e44b718a3a384e7aaa4a377b70666bc4f1dabfadde"
+hash = "0d037d644028e536cc34af8c5e3f86e90694ebf1efa6e8efd414e7ac84ce84ce"
 
 [[files]]
 file = "config/essentialcommands/rules.txt"
@@ -2509,7 +2509,7 @@ metafile = true
 
 [[files]]
 file = "mods/mms-mod-compat-support.pw.toml"
-hash = "1996fd05b91f789da51333c67f1c4ce39a70d1c139d38d702013f70e71f469c9"
+hash = "a152a6898760b9bc1cca233bae876b0459e0e4bf90e9b2573c2f7be8dcf52bcc"
 metafile = true
 
 [[files]]
