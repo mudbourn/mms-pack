@@ -19,7 +19,9 @@
 set -e
 cd ~/Documents/GitHub/mms-pack
 
-TEST_SERVER_MODS="$HOME/Documents/GitHub/MMSTesting01/mods"
+# Symlink → /Volumes/AMP-Instances/instances/MMSTesting01/Minecraft/. Renamed
+# from "MMSTesting01" on 2026-07-23; the old name no longer resolves.
+TEST_SERVER_MODS="$HOME/Documents/GitHub/Server Testing/mods"
 TEST_CLIENT_MODS="$HOME/Library/Application Support/PrismLauncher/instances/MMS Live II/minecraft/mods"
 
 branch=$(git rev-parse --abbrev-ref HEAD)
