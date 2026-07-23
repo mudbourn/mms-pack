@@ -28,7 +28,7 @@ Download from **https://prismlauncher.org/download/** and sign in with your Micr
 - Click **Fabric** and select loader version **0.19.3** (or newest 1.21.11-compatible).
 - Create the instance. **Don't add any mods by hand** — the pack installs them for you.
 - Set up Java 25 (Prism downloads it for you — no separate install needed):
-  1. Right-click the instance → **Edit** → **Settings** → **Java** → **Installations**.
+  1. **Settings** → **Java** → **Installations**.
   2. Press **Download**, select the **25** option from **Mojang**, press **Download**, then **OK**.
 
   Prism's default is Java 21, which **will not launch this pack**.
