@@ -5,7 +5,7 @@ side = "both"
 [download]
 url = "https://raw.githubusercontent.com/mudbourn/mms-pack/main/mods/modmetro-v1.jar"
 hash-format = "sha512"
-hash = "7f961322d3daa61f5ac9162e99c08d8fbee5c68fdc69e1f3c9131cde69448e6b9a9cea2b855a50fb1faf220d061fe18e7689aeed60c1623eb4105dd9dd7192a0"
+hash = "960297c0b4fa1058fd480fb49b5880d6f4516454c9c2ba99623bb47baaa08a39bfbbce6338f976f9d21585285270d60f72435676eb9ee7a29e38e7527938059e"
 
 [update]
 [update.curseforge]
