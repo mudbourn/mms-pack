@@ -28,7 +28,7 @@ Download from **https://prismlauncher.org/download/** and sign in with your Micr
 - Choose **Minecraft 1.21.11**.
 - Click **Fabric** and select loader version **0.19.3** (or newest 1.21.11-compatible).
 - Create the instance. **Don't add any mods by hand** — the pack installs them for you.
-![alt text](https://save.mudbourn.info/s/dZxY8LDMdtczFMz/download "Graph")
+![alt text](https://save.mudbourn.info/s/mgFTSBj6qxxxKJM/download "Graph")
 
 - Set up Java 25 (Prism downloads it for you — no separate install needed):
   1. **Settings** → **Java** → **Installations**.
