@@ -2423,11 +2423,6 @@ hash = "91c2e8506dbe7341e6fafd9cb730ee47ce491de6d08f5edd01a43429d2334282"
 metafile = true
 
 [[files]]
-file = "mods/ks-support.pw.toml"
-hash = "64ca2412b4a2223b31de4e54c74d3c3fe0593f93d5b64d12736a3c0de810d4ef"
-metafile = true
-
-[[files]]
 file = "mods/lambdynamiclights.pw.toml"
 hash = "71255e25b05b6529d6a2873e4db079b7b6541f58a78d872bc19478afcb0ffd1c"
 metafile = true
