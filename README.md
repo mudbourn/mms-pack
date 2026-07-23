@@ -41,8 +41,7 @@ Download from **https://prismlauncher.org/download/** and sign in with your Micr
 - Download **`packwiz-installer-bootstrap.jar`** from
   https://github.com/packwiz/packwiz-installer-bootstrap/releases (grab the latest `.jar`).
 ![alt text](https://save.mudbourn.info/s/JLmZypmfEHSbACm/download "Graph")
-- Click the instance → **Folder** → open the **`.minecraft`** subfolder
-  (same place as `options.txt`).
+- Click the instance → **Folder** → open the **`.minecraft`** subfolder.
 - Put `packwiz-installer-bootstrap.jar` in there.
 ![alt text](https://save.mudbourn.info/s/pwG95t3jRXRR9ZZ/download "Graph")
 
