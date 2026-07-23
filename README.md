@@ -20,29 +20,34 @@ please switch to Prism.
 ### 1. Install Prism Launcher
 Download from **https://prismlauncher.org/download/** and sign in with your Microsoft/Minecraft account
 (Prism → *Accounts* → *Add Microsoft account*).
+![alt text](https://save.mudbourn.info/s/sAHdDkxDMdjM5re/download "Graph")
 
 ### 2. Create the instance
 - Click **Add Instance**.
 - Name it `MMS Live`.
 - Choose **Minecraft 1.21.11**.
 - Click **Fabric** and select loader version **0.19.3** (or newest 1.21.11-compatible).
-- Create the instance. **Don't add any mods by hand** — the pack installs them for you.
-- Set up Java 25 (Prism downloads it for you — no separate install needed):
-  1. Right-click the instance → **Edit** → **Settings** → **Java** → **Installations**.
-  2. Press **Download**, select the **25** option from **Mojang**, press **Download**, then **OK**.
+- Create the instance. **Don't add any mods by hand yet** — the pack installs them for you.
+![alt text](https://save.mudbourn.info/s/mgFTSBj6qxxxKJM/download "Graph")
 
-  Prism's default is Java 21, which **will not launch this pack**.
+- Set up Java 25 (Prism downloads it for you — no separate install needed):
+  1. **Settings** → **Java** → **Installations**.
+  2. Press **Download**, select the **25** option from **Mojang**, press **Download**, then **OK**.
+![alt text](https://save.mudbourn.info/s/dZxY8LDMdtczFMz/download "Graph")
+
+  Prism's default is Java 21, which **might not launch this pack**.
 
 ### 3. Drop in the packwiz installer
 - Download **`packwiz-installer-bootstrap.jar`** from
   https://github.com/packwiz/packwiz-installer-bootstrap/releases (grab the latest `.jar`).
-- Right-click the instance → **Folder** → open the **`.minecraft`** subfolder
-  (same place as `options.txt`).
+![alt text](https://save.mudbourn.info/s/JLmZypmfEHSbACm/download "Graph")
+- Click the instance → **Folder** → open the **`.minecraft`** subfolder.
 - Put `packwiz-installer-bootstrap.jar` in there.
+![alt text](https://save.mudbourn.info/s/pwG95t3jRXRR9ZZ/download "Graph")
 
 ### 4. Turn on auto-update
 - Right-click the instance → **Edit** → **Settings** → **Custom commands**.
-- Tick **Custom Commands**.
+- Tick **Ovweeide Global Settings**.
 - In the **Pre-launch command** box, paste **exactly**:
 
   ```
@@ -50,10 +55,13 @@ Download from **https://prismlauncher.org/download/** and sign in with your Micr
   ```
 
 - Close.
+![alt text](https://save.mudbourn.info/s/YDNAdrSyDrALRiz/download "Graph")
 
 ### 5. Launch
-Hit **Play**. On every launch the installer checks this repo and downloads/updates only what changed,
+Hit **Launch**. On every launch the installer checks this repo and downloads/updates only what changed,
 then the game starts. First launch pulls the whole pack (a few minutes); after that updates are tiny.
+![alt text](https://save.mudbourn.info/s/HZqGk7BFcwn58pK/download "Graph")
+
 
 > **Server address:** ( mc.mudbourn.info ). Waypoints and land claims are
 > server-side (Xaero + OpenPAC) — they sync automatically in-game, nothing to install.
