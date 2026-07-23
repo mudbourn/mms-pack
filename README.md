@@ -42,7 +42,7 @@ Download from **https://prismlauncher.org/download/** and sign in with your Micr
 
 ### 4. Turn on auto-update
 - Right-click the instance → **Edit** → **Settings** → **Custom commands**.
-- Tick **Custom Commands**.
+- Tick **Ovweeide Global Settings**.
 - In the **Pre-launch command** box, paste **exactly**:
 
   ```
