@@ -2539,11 +2539,11 @@ metafile = true
 
 [[files]]
 file = "mods/modmetro-v1.jar"
-hash = "690d13f203eb43f8ccfd84a73d06585fd0f4ca2a52d6010fda1412d0f65aa5e5"
+hash = "6bf5e41fbc50c95a00a777139063f31dc5bad9960b7cdb32a6e02a10ec0f5a88"
 
 [[files]]
 file = "mods/modmetro.pw.toml"
-hash = "3cf883f06188087ae4f66e0cde91ded6d177367672d4702ae4968784bc9c7515"
+hash = "f71ad74fc018d68177aaf61620560422d99250ed93c5ac0b4c98774b0654f22d"
 metafile = true
 
 [[files]]
