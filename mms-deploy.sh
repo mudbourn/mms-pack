@@ -90,8 +90,12 @@ else
     echo "pack: pushed — clients update on next launch"
 fi
 
-echo "── server sync (MMSLive01) ──"
-SERVER_MODS="$HOME/Documents/GitHub/MMSLive01/mods"
+echo "── server sync (Server Prod / MMSLive01) ──"
+# Symlink → /Volumes/AMP-Instances/instances/MMSLive01/Minecraft/. Renamed from
+# "MMSLive01" on 2026-07-23; the old name is gone, so this path is the only one
+# that resolves. A dangling link (share unmounted) fails the -d test below just
+# as a missing one does.
+SERVER_MODS="$HOME/Documents/GitHub/Server Prod/mods"
 if [ ! -d "$SERVER_MODS" ]; then
     echo "!! server mods folder not mounted at $SERVER_MODS — skipping server sync." >&2
     echo "!! Mount the AMP share and re-run, or the server will drift out of sync." >&2
