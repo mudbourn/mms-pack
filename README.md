@@ -52,7 +52,7 @@ Download from **https://prismlauncher.org/download/** and sign in with your Micr
 - Close.
 
 ### 5. Launch
-Hit **Play**. On every launch the installer checks this repo and downloads/updates only what changed,
+Hit **Launch**. On every launch the installer checks this repo and downloads/updates only what changed,
 then the game starts. First launch pulls the whole pack (a few minutes); after that updates are tiny.
 
 > **Server address:** ( mc.mudbourn.info ). Waypoints and land claims are
