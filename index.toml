@@ -2379,7 +2379,7 @@ metafile = true
 
 [[files]]
 file = "mods/iris.pw.toml"
-hash = "5127c58dc92fe8860d29ad2d05e7c2ea7b973390f41aec73dd2017953f2d1a3e"
+hash = "18cecd316a19a378830d892dad2b3a38ba3ccd3866b0177e552a71ab9f91cae7"
 metafile = true
 
 [[files]]
@@ -2738,7 +2738,7 @@ metafile = true
 
 [[files]]
 file = "mods/reeses-sodium-options.pw.toml"
-hash = "2785ba5d979ac4f95421a3df7b54ecf2a10e616eb566769388e643a5e91f396b"
+hash = "09bc85fbbde3eab9c3cbf8e543b708eaebdca08d8f7e12492588a1be4db3adee"
 metafile = true
 
 [[files]]
@@ -2828,7 +2828,7 @@ metafile = true
 
 [[files]]
 file = "mods/sodium-extra.pw.toml"
-hash = "5008b709220bcfc7b41402bd7d8fe580edcc4168299f04746d2c596a809ec046"
+hash = "f628fb27a4ac42dc6340d7b496747e4a1a4bbf764e8a00854b8cb79581c1ae59"
 metafile = true
 
 [[files]]
@@ -2838,7 +2838,7 @@ metafile = true
 
 [[files]]
 file = "mods/sodium.pw.toml"
-hash = "6747f2e71e6d9ae5b6c4aea899f6af5fbbb612aac8c9bbb45990463826af3398"
+hash = "9404aa71aa027cac3e354b8d3e8c05f6fa2defe7ced3d99cbdfbb5a35627c15b"
 metafile = true
 
 [[files]]
