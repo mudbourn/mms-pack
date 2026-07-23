@@ -20,6 +20,8 @@ please switch to Prism.
 ### 1. Install Prism Launcher
 Download from **https://prismlauncher.org/download/** and sign in with your Microsoft/Minecraft account
 (Prism → *Accounts* → *Add Microsoft account*).
+![alt text](https://save.mudbourn.info/s/mgFTSBj6qxxxKJM/download "Graph")
+
 
 ### 2. Create the instance
 - Click **Add Instance**.
@@ -30,8 +32,9 @@ Download from **https://prismlauncher.org/download/** and sign in with your Micr
 - Set up Java 25 (Prism downloads it for you — no separate install needed):
   1. **Settings** → **Java** → **Installations**.
   2. Press **Download**, select the **25** option from **Mojang**, press **Download**, then **OK**.
+![alt text](https://save.mudbourn.info/s/dZxY8LDMdtczFMz/download "Graph")
 
-  Prism's default is Java 21, which **will not launch this pack**.
+  Prism's default is Java 21, which **might not launch this pack**.
 
 ### 3. Drop in the packwiz installer
 - Download **`packwiz-installer-bootstrap.jar`** from
@@ -39,6 +42,7 @@ Download from **https://prismlauncher.org/download/** and sign in with your Micr
 - Right-click the instance → **Folder** → open the **`.minecraft`** subfolder
   (same place as `options.txt`).
 - Put `packwiz-installer-bootstrap.jar` in there.
+![alt text](https://save.mudbourn.info/s/JLmZypmfEHSbACm/download "Graph")
 
 ### 4. Turn on auto-update
 - Right-click the instance → **Edit** → **Settings** → **Custom commands**.
@@ -50,10 +54,13 @@ Download from **https://prismlauncher.org/download/** and sign in with your Micr
   ```
 
 - Close.
+![alt text](https://save.mudbourn.info/s/dZxY8LDMdtczFMz/download "Graph")
 
 ### 5. Launch
 Hit **Launch**. On every launch the installer checks this repo and downloads/updates only what changed,
 then the game starts. First launch pulls the whole pack (a few minutes); after that updates are tiny.
+
+![alt text](https://save.mudbourn.info/s/YDNAdrSyDrALRiz/download "Graph")
 
 > **Server address:** ( mc.mudbourn.info ). Waypoints and land claims are
 > server-side (Xaero + OpenPAC) — they sync automatically in-game, nothing to install.
