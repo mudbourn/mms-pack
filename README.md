@@ -102,3 +102,41 @@ That's the whole update loop — no client action required beyond launching.
 - The `.mrpack` is a build artifact (git-ignored). Regenerate a seed/backup with
   `packwiz modrinth export`; attach it to a GitHub Release rather than committing it.
 </content>
+
+## Testing lane (staging → prod)
+
+A `testing` branch of this pack + a `MMSTesting01` server + a second (offline)
+client instance let you validate fixes with two players before they reach prod.
+Unreleased builds ride a filesystem **overlay** (they have no packwiz download
+URL); everything already released flows through the branch normally.
+
+```
+main ──●─────────────●   prod:  MMSLive01 + prod clients  (mms-deploy.sh)
+        \           /
+testing  ●──●──●──●      test:  MMSTesting01 + "MMS Live II"  (mms-deploy-test.sh)
+         drop dev jars, test w/ 2 offline clients, then promote
+```
+
+**Iterate on a fix**
+1. Add the mod's repo slug to `overlay.list` (e.g. `mms-mod-compat-support`).
+2. Build the jar, then on the `testing` branch run `./mms-deploy-test.sh` —
+   pushes the branch (test client pulls it), syncs released mods to
+   MMSTesting01, and overlays the dev jar on both server and test client.
+3. Launch two clients (see below) and test.
+
+**Promote to prod** — `./mms-promote.sh` (warns about active overlays, merges
+`testing → main`, then runs `mms-deploy.sh` which cuts the GitHub release and
+syncs MMSLive01). Afterwards clear the slug from `overlay.list`.
+
+**Scripts**
+- `mms-server-sync.py` — shared server-mod sync (prod + test both use it).
+- `mms-overlay-apply.sh <mods_dir>` — apply `overlay.list` dev jars to a folder.
+- `mms-deploy-test.sh` — staging deploy (testing branch → test server + client).
+- `mms-promote.sh` — merge up + prod deploy.
+
+**Two offline clients on one machine**
+- Server: `MMSTesting01/server.properties` has `online-mode=false` (test box only).
+- Prism → Settings → Minecraft → enable "Allow running multiple instances".
+- Prism → Accounts → Add Offline (e.g. `Tester2`).
+- The test client instance ("MMS Live II") points packwiz-installer at the
+  `testing` branch and runs `mms-overlay-apply.sh` after, via its PreLaunchCommand.

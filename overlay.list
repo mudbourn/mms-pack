@@ -1,0 +1,17 @@
+# mms dev-jar overlay list — repo slugs currently under active testing.
+#
+# One repo slug per line (the folder name under ~/Documents/GitHub/). Its newest
+# build/libs/*.jar is dropped onto the test server + test client on top of the
+# pack, replacing the released version by Fabric mod id. This is the ONLY place
+# an unreleased build lives — it is deliberately not tracked in the pack index.
+#
+# Workflow:
+#   1. Add a slug here while you iterate on that mod.
+#   2. Build the jar, run ./mms-deploy-test.sh, test on MMSTesting01 with two
+#      offline clients.
+#   3. Once validated, PROMOTE: remove the slug from this list, then run the
+#      normal ./mms-deploy.sh (cuts the GitHub release, updates main, syncs
+#      MMSLive01). The mod re-enters the pack at its released version.
+#
+# Example (uncomment while testing the next metro fix):
+# mms-mod-compat-support
