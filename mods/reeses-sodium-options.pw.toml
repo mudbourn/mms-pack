@@ -1,6 +1,7 @@
 name = "Reese's Sodium Options"
 filename = "reeses-sodium-options-fabric-2.2.3+mc1.21.11.jar"
 side = "client"
+pin = true
 
 [download]
 url = "https://cdn.modrinth.com/data/Bh37bMuy/versions/P0MH4cn0/reeses-sodium-options-fabric-2.2.3%2Bmc1.21.11.jar"
