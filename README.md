@@ -55,13 +55,13 @@ Download from **https://prismlauncher.org/download/** and sign in with your Micr
   ```
 
 - Close.
-![alt text](https://save.mudbourn.info/s/dZxY8LDMdtczFMz/download "Graph")
+![alt text](https://save.mudbourn.info/s/YDNAdrSyDrALRiz/download "Graph")
 
 ### 5. Launch
 Hit **Launch**. On every launch the installer checks this repo and downloads/updates only what changed,
 then the game starts. First launch pulls the whole pack (a few minutes); after that updates are tiny.
+![alt text](https://save.mudbourn.info/s/HZqGk7BFcwn58pK/download "Graph")
 
-![alt text](https://save.mudbourn.info/s/YDNAdrSyDrALRiz/download "Graph")
 
 > **Server address:** ( mc.mudbourn.info ). Waypoints and land claims are
 > server-side (Xaero + OpenPAC) — they sync automatically in-game, nothing to install.
