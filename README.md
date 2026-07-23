@@ -27,7 +27,7 @@ Download from **https://prismlauncher.org/download/** and sign in with your Micr
 - Name it `MMS Live`.
 - Choose **Minecraft 1.21.11**.
 - Click **Fabric** and select loader version **0.19.3** (or newest 1.21.11-compatible).
-- Create the instance. **Don't add any mods by hand** — the pack installs them for you.
+- Create the instance. **Don't add any mods by hand yet** — the pack installs them for you.
 ![alt text](https://save.mudbourn.info/s/mgFTSBj6qxxxKJM/download "Graph")
 
 - Set up Java 25 (Prism downloads it for you — no separate install needed):
