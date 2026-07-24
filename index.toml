@@ -2501,7 +2501,7 @@ metafile = true
 
 [[files]]
 file = "mods/mms-mod-compat-support.pw.toml"
-hash = "60e54e6f3367cdb943c7f2468e3a225bbcf69848da53332fae493fbd02f70f58"
+hash = "17778680977159a9dc0e83f8902d9b343ca4add663ef40d55513d2b05add0f8c"
 metafile = true
 
 [[files]]
@@ -2512,11 +2512,6 @@ metafile = true
 [[files]]
 file = "mods/mob-civil-war.pw.toml"
 hash = "9b28b82ce878f95c3f8faf6524fab4e3b46ea12c7d3943e4fc57077fc6c1fe54"
-metafile = true
-
-[[files]]
-file = "mods/modern-decorations-mod.pw.toml"
-hash = "6616527aff260cb7da78cc5b3590d2d72fcb124cfbd41e377684ebf02b24ab66"
 metafile = true
 
 [[files]]
