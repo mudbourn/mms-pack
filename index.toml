@@ -17,10 +17,6 @@ file = "config/.puzzle_cache/mojangstudios.png"
 hash = "27d2a588a33e94aff8cea4ea6090509ab3e10640f980e63dfd317c6b0dcd30df"
 
 [[files]]
-file = "config/BBEConfig.json"
-hash = "e5f2ee57e9f9c0bd81af26c1918ceee988b3d726014c411f439406dc0fe60ef1"
-
-[[files]]
 file = "config/Easy Shop Mod/My Skin/skin.png"
 hash = "664ea2023ccb6d3a820ca533b876fc50d457f1727ae87ecfc846fffc61f85e89"
 preserve = true
@@ -1138,10 +1134,6 @@ file = "config/modmenu.json"
 hash = "50292246b2188014944cbb9cfb0138aec90b904ecd7fd490e1d3985229f1723c"
 
 [[files]]
-file = "config/modpack_defaults/config/BBEConfig.json"
-hash = "e5f2ee57e9f9c0bd81af26c1918ceee988b3d726014c411f439406dc0fe60ef1"
-
-[[files]]
 file = "config/modpack_defaults/config/NoChatReports/NCR-Client.json"
 hash = "616e09c8ff849f4a9a07165a0a3513f468469237377546b64135591fca8a0592"
 
@@ -1907,11 +1899,6 @@ metafile = true
 [[files]]
 file = "mods/basicweapons.pw.toml"
 hash = "85148bbdc56daaea9a67e4ece2f6d6d64cfb1781f5db0b5618c10b45528e4e1e"
-metafile = true
-
-[[files]]
-file = "mods/better-block-entities.pw.toml"
-hash = "b4cd1e372388fadea8346cb3e83ba043bbbb722d139d3ac4e56849c0bb46aade"
 metafile = true
 
 [[files]]
