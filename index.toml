@@ -1334,20 +1334,12 @@ file = "config/origins_server.json"
 hash = "a5505cd0e3503f6f212defe46aebaaf432b1d9a2a04c2b706cf7ec3b691c4b4d"
 
 [[files]]
-file = "config/ouch.json"
-hash = "89e694850d099a1510de2386dd1bce92dd1babb92c45c904bc63be66ea8e06cb"
-
-[[files]]
 file = "config/packetfixer.properties"
 hash = "abd7ab44b310166041bf4ec4f0757f8fe200a4d921965006c2969cae7930516a"
 
 [[files]]
 file = "config/pal.properties"
 hash = "96c7654bfa7370c76aa7aaa7577f16e71e017ac590b25c1e2215a7133b02387d"
-
-[[files]]
-file = "config/paperdoll-client.toml"
-hash = "3e1ab21c7e95b3959873d76e740ed084e7d11f291db1b2d87273e42ffbeba45a"
 
 [[files]]
 file = "config/particle_core_config.toml"
@@ -1953,21 +1945,6 @@ hash = "3d2fce19d393b65c5585bcb64952d2f07f9a2d63f8e34c79cf718affc452313e"
 metafile = true
 
 [[files]]
-file = "mods/call-your-happy-ghast.pw.toml"
-hash = "2fff518abdb954cb443c4cfd744de4399e6c5f62acaee3518cef746b44fefdce"
-metafile = true
-
-[[files]]
-file = "mods/call-your-horse.pw.toml"
-hash = "98409dbb8768b7087b24ff03d44cbd58568a8ca4c78d17baee8c8df9a1960529"
-metafile = true
-
-[[files]]
-file = "mods/call-your-nautilus.pw.toml"
-hash = "1fdff82937e5c40e0ddeeb33ec5922bb2db00d8f95f94434645e4bbe3f43e551"
-metafile = true
-
-[[files]]
 file = "mods/camera-glue.pw.toml"
 hash = "d4078657d8e759bbf7da4f2a9b101f86f53027f4664a62738e5898f78f84492d"
 metafile = true
@@ -2473,11 +2450,6 @@ hash = "88d9245e58d1a339c684fccbf1ae00f1429cf9e51ef5b28e6b58f04d20afdbe8"
 metafile = true
 
 [[files]]
-file = "mods/lib-5555ff.pw.toml"
-hash = "d3aaaec6b11784c2849ffd8df446e79c7c4394cfabc31ba012e6a4113ebadcb4"
-metafile = true
-
-[[files]]
 file = "mods/lithium.pw.toml"
 hash = "8c7aec9e376eb3f10da62109594e1ac6b7bc92da8e9c080f8f8f5a736051f339"
 metafile = true
@@ -2667,11 +2639,6 @@ hash = "737f3161f4d18100bbfbc1fdd0d5b57c4ee74bae42935e47bfb334f2e2bf6976"
 metafile = true
 
 [[files]]
-file = "mods/ouch.pw.toml"
-hash = "36752dde410ff17a1f204818781f978212d809107270d8664b65e2d347e66159"
-metafile = true
-
-[[files]]
 file = "mods/owo-lib.pw.toml"
 hash = "01cce2adecdc5e33fba69ff99c5a87f847733a0238f8e94ad2c9841cb26ec2ba"
 metafile = true
@@ -2684,11 +2651,6 @@ metafile = true
 [[files]]
 file = "mods/paginatedadvancements.pw.toml"
 hash = "f8231b6ff29c1ff27d5acd191929609e98706c498abe61369db53554b0638548"
-metafile = true
-
-[[files]]
-file = "mods/paper-doll.pw.toml"
-hash = "384f28cdaf69832c646776bf5e93effa2e342c4c450872c2bb6ce08a320d9fe1"
 metafile = true
 
 [[files]]
@@ -2714,11 +2676,6 @@ metafile = true
 [[files]]
 file = "mods/player-animation-library.pw.toml"
 hash = "acc6f292116d696b2c6be0c07b0ccacf16f1d5445c5ef1382aa008022113efd9"
-metafile = true
-
-[[files]]
-file = "mods/player-revive.pw.toml"
-hash = "278a54113a38cc2c02fa8106129fe1da6c5096c8587d21499986b3e04399c575"
 metafile = true
 
 [[files]]
