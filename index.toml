@@ -1797,7 +1797,7 @@ hash = "64f81500a87015325e8884679671382f5e4e013915097c5c31171fe4c53b8404"
 
 [[files]]
 file = "mms-server-sync.py"
-hash = "32e8adea9f401d80016e91b31e43dbbcccb9831869981c7ab50d8ca37c3a012d"
+hash = "847e5234bc62cd9c44c80cf7622208750ff586fed248452397dd3a8b2af172f6"
 
 [[files]]
 file = "mods/absolut-revive.pw.toml"
@@ -1932,6 +1932,11 @@ metafile = true
 [[files]]
 file = "mods/bettergrassify.pw.toml"
 hash = "b109bb7aa43e8e942af0a3906004fa7fa4db37eff52fc219446aa0676d8242f6"
+metafile = true
+
+[[files]]
+file = "mods/bobby.pw.toml"
+hash = "f42e7c3e161d7734855264b73af110541eae4f83495f1c63ce31db31f1b6b1f6"
 metafile = true
 
 [[files]]
