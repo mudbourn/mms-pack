@@ -1,0 +1,13 @@
+name = "Random Mob Sizes"
+filename = "RandomMobSizes_fabric_mod.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/aKeMRgHX/versions/d4WvW3IR/RandomMobSizes_fabric_mod.jar"
+hash-format = "sha512"
+hash = "06e4cfd61d8ecb733a8830363acaeb72cc3e675da8d7b683ce1bd7c5cd6d9fb3b2b13100c0f8b1e0f0912095ddc5c0af1bad29501378831692318ab7737c7f6f"
+
+[update]
+[update.modrinth]
+mod-id = "aKeMRgHX"
+version = "d4WvW3IR"
