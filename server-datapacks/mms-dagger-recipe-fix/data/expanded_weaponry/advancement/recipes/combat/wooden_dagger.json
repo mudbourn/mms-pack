@@ -1,0 +1,31 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_wooden": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:oak_planks"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "expanded_weaponry:wooden_dagger"
+      }
+    }
+  },
+  "requirements": [
+    ["has_wooden", "has_the_recipe"]
+  ],
+  "rewards": {
+    "recipes": [
+      "expanded_weaponry:wooden_dagger"
+    ]
+  }
+}
