@@ -107,3 +107,21 @@ fi
 # the two servers. This was an inline copy that had already drifted from
 # mms-server-sync.py by the time it was noticed.
 python3 ./mms-server-sync.py "$SERVER_MODS"
+
+# Gate the deploy on network-path drift, after the sync so it checks the state
+# the server will actually run. A mod that patches packet framing on only one
+# side, or two mods patching the same framing class, desyncs the byte stream —
+# the client lands mid-packet and drops with a DecoderException. That failure
+# looks like a network problem and cost a long investigation on 2026-07-26.
+# Accepted overlaps live in netdrift-allow.txt; NOTE-level drift never blocks.
+#
+# Captured rather than piped: this script has no pipefail, so a pipeline would
+# report grep's status and the gate would never fire.
+NETDRIFT_OUT="$(python3 ./mms-netdrift-check.py "$SERVER_MODS" .)" && NETDRIFT_RC=0 || NETDRIFT_RC=$?
+# NOTE lines are baggage-level drift and are intentionally not shown here.
+echo "$NETDRIFT_OUT" | grep -vE '^NOTE' || true
+if [ "$NETDRIFT_RC" -ne 0 ]; then
+    echo "!! network drift check failed — see the OVERLAP/HIGH lines above." >&2
+    echo "!! Resolve the conflict, or record a reviewed overlap in netdrift-allow.txt." >&2
+    exit 1
+fi

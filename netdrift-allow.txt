@@ -1,0 +1,18 @@
+# Overlapping network-path mixins that have been reviewed and accepted.
+#
+# Format:  <choke marker>: <mod id>, <mod id>, ...
+#
+# The mod set must match exactly. If another mod starts patching the same class
+# the overlap is raised again rather than silently absorbed — that is the point
+# of listing the ids instead of just the marker.
+#
+# Only add an entry once you have actually looked. The check exists because
+# PacketFixer and XXLPackets both patched CompressionDecoder and were the prime
+# suspect for four client->server stream desyncs on 2026-07-24/25/26.
+
+# modernfix and owo both touch the byte-buf class, and packetfixer raises its
+# size limits. All three are pack mods at side="both", so they apply on the
+# server and on every client alike, and they patch different methods on the
+# class rather than competing for the same one. This pairing is extremely
+# widely deployed with no known framing issue. Reviewed 2026-07-26.
+FriendlyByteBuf: modernfix, owo, packetfixer

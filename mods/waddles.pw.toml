@@ -1,0 +1,13 @@
+name = "Waddles"
+filename = "Waddles-fabric-1.21.11-0.12.2.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/LlRoNRWC/versions/lzf2dMMp/Waddles-fabric-1.21.11-0.12.2.jar"
+hash-format = "sha512"
+hash = "2dbcd0c4c409c10ba98b183ce29cd98e79fa9be844058be30f3a0411e36a21f1250c8a5a32651902bf6e92b807a768d295f681573a49ed1d8ea253d301561a09"
+
+[update]
+[update.modrinth]
+mod-id = "LlRoNRWC"
+version = "lzf2dMMp"
