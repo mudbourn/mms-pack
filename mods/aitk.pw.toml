@@ -1,0 +1,13 @@
+name = "Arrow In The Knee"
+filename = "aitk-1.2.0-fabric+1.21.11.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/A0W9tMly/versions/WLbhXwRT/aitk-1.2.0-fabric%2B1.21.11.jar"
+hash-format = "sha512"
+hash = "a1a98f645d19449b81abae1baa7ee4fe89a89318d6a2b4ae4bfef5c604a3f515cddcb1a7e72cdec093e7786d44f7e69e2dd28a06de306a686082e8ddffba49ca"
+
+[update]
+[update.modrinth]
+mod-id = "A0W9tMly"
+version = "WLbhXwRT"
