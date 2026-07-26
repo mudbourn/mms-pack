@@ -27876,6 +27876,58 @@ file = "resourcepacks/third_person_bow_fix/pack.mcmeta"
 hash = "6c9c5b061b154cef1cbd3b6269635e79f6215495be8c138785069cb273d41d90"
 
 [[files]]
+file = "server-datapacks/mms-dagger-recipe-fix/data/expanded_weaponry/advancement/recipes/combat/copper_dagger.json"
+hash = "7e989a13a18eafecc27a96f209a2c05eb63d0c3fc7cf6edf87417cd3d127f5eb"
+
+[[files]]
+file = "server-datapacks/mms-dagger-recipe-fix/data/expanded_weaponry/advancement/recipes/combat/diamond_dagger.json"
+hash = "4f8fa0cd1f642d5ea24005357c72687ab6e4cc88f69ca488a0d239591e83e368"
+
+[[files]]
+file = "server-datapacks/mms-dagger-recipe-fix/data/expanded_weaponry/advancement/recipes/combat/golden_dagger.json"
+hash = "56f74b0762bf2a078b316b350a99cf5ac73218f37dc148d5a692e419709a8c55"
+
+[[files]]
+file = "server-datapacks/mms-dagger-recipe-fix/data/expanded_weaponry/advancement/recipes/combat/iron_dagger.json"
+hash = "51868dcdf461aa82fb7a2a6b6f011fad81a2e11aae965805f905d4c83ca4d513"
+
+[[files]]
+file = "server-datapacks/mms-dagger-recipe-fix/data/expanded_weaponry/advancement/recipes/combat/stone_dagger.json"
+hash = "a2b17055a8b4a987e7a3a74d48eefa68eda57d00c983c8e90f73220dc68d6e38"
+
+[[files]]
+file = "server-datapacks/mms-dagger-recipe-fix/data/expanded_weaponry/advancement/recipes/combat/wooden_dagger.json"
+hash = "fb28459da12bba806294829d05a354aee7e54d7a748be3f9043d91a2c8a10d5d"
+
+[[files]]
+file = "server-datapacks/mms-dagger-recipe-fix/data/expanded_weaponry/recipe/copper_dagger.json"
+hash = "9d4a61ea49853b01da29e4aa338f24c83ce11aae97eb42632e0cd0d98b8fb1e6"
+
+[[files]]
+file = "server-datapacks/mms-dagger-recipe-fix/data/expanded_weaponry/recipe/diamond_dagger.json"
+hash = "8b7738d8cb5fb92c4795cee91365e4daa4336a484a7c05b1177e22d1f80db998"
+
+[[files]]
+file = "server-datapacks/mms-dagger-recipe-fix/data/expanded_weaponry/recipe/golden_dagger.json"
+hash = "8877fb32a297056698555ebe5856f7de2183be76446dae0dfe81ba6816e6eaf1"
+
+[[files]]
+file = "server-datapacks/mms-dagger-recipe-fix/data/expanded_weaponry/recipe/iron_dagger.json"
+hash = "51822a705adb266b1759d4a6c99ce9cc26c4ec321ee3ce9bb55e335f8b56ab0e"
+
+[[files]]
+file = "server-datapacks/mms-dagger-recipe-fix/data/expanded_weaponry/recipe/stone_dagger.json"
+hash = "73fcf5c9ab4d6d4d19dfe88a8c25af92dc34b085882c1318d030707ff5325258"
+
+[[files]]
+file = "server-datapacks/mms-dagger-recipe-fix/data/expanded_weaponry/recipe/wooden_dagger.json"
+hash = "a9d618e8e894babae7bbfe471de5d3937236c502b88adf9d8278edf359f3e99b"
+
+[[files]]
+file = "server-datapacks/mms-dagger-recipe-fix/pack.mcmeta"
+hash = "b12899aee6a2d636e219929d4496ceca9613746bf79d11f1f426104de1a4dd9e"
+
+[[files]]
 file = "server-datapacks/mms-ddd-no-natural-gen/README.md"
 hash = "975e86e5ad60ca1e77fe8db7601a884f6541f4ef9037e7ba6ea65f1823e83953"
 
@@ -27902,6 +27954,50 @@ hash = "bef4d172fc1bfb34d342e79090726c4a0c272dd404783c3ea022b992e0e0415e"
 [[files]]
 file = "server-datapacks/mms-ddd-no-natural-gen/pack.mcmeta"
 hash = "e5ae66a88a386964d4c4cc83a6192c40e099c720ddb530e5dca09d1a6fb1a2e6"
+
+[[files]]
+file = "server-datapacks/recipe_fixes/data/crafting/recipe/saddle.json"
+hash = "3832bc04b00462f5513d1f2c61599bb6fd3ba7aac4c09c6e055ef6d3ac7b7cf6"
+
+[[files]]
+file = "server-datapacks/recipe_fixes/data/expanded_weaponry/recipe/copper_dagger.json"
+hash = "9d4a61ea49853b01da29e4aa338f24c83ce11aae97eb42632e0cd0d98b8fb1e6"
+
+[[files]]
+file = "server-datapacks/recipe_fixes/data/expanded_weaponry/recipe/diamond_dagger.json"
+hash = "8b7738d8cb5fb92c4795cee91365e4daa4336a484a7c05b1177e22d1f80db998"
+
+[[files]]
+file = "server-datapacks/recipe_fixes/data/expanded_weaponry/recipe/golden_dagger.json"
+hash = "8877fb32a297056698555ebe5856f7de2183be76446dae0dfe81ba6816e6eaf1"
+
+[[files]]
+file = "server-datapacks/recipe_fixes/data/expanded_weaponry/recipe/iron_dagger.json"
+hash = "51822a705adb266b1759d4a6c99ce9cc26c4ec321ee3ce9bb55e335f8b56ab0e"
+
+[[files]]
+file = "server-datapacks/recipe_fixes/data/expanded_weaponry/recipe/stone_dagger.json"
+hash = "73fcf5c9ab4d6d4d19dfe88a8c25af92dc34b085882c1318d030707ff5325258"
+
+[[files]]
+file = "server-datapacks/recipe_fixes/data/expanded_weaponry/recipe/wooden_dagger.json"
+hash = "a9d618e8e894babae7bbfe471de5d3937236c502b88adf9d8278edf359f3e99b"
+
+[[files]]
+file = "server-datapacks/recipe_fixes/data/minecraft/recipe/end_stone_bricks.json"
+hash = "ead26333e727988995362f09e5c0bb97602461eb3440c4c4eb63847da1ab3dbc"
+
+[[files]]
+file = "server-datapacks/recipe_fixes/data/superior_stonecutter/recipe/vanilla/metal/iron/chain_1.json"
+hash = "15036033795f1e27f0dfab17a361561a7eee60dac99233b7e72f8f582f47f69d"
+
+[[files]]
+file = "server-datapacks/recipe_fixes/data/superior_stonecutter/recipe/vanilla/metal/iron/chain_9.json"
+hash = "97fbf6e46fafc5d2b95e8046eeec1f582c753593f0b5c58001bd5af5536885e5"
+
+[[files]]
+file = "server-datapacks/recipe_fixes/pack.mcmeta"
+hash = "790b4b245afb2a2726653ac14cfbbafcb78e701bb65eabfb31c9267d23c98345"
 
 [[files]]
 file = "servers.dat"
