@@ -2691,6 +2691,11 @@ hash = "cf00cfc5c89b290aff5e82589244b192dcc1419761d9f8f14adad54c3b18710b"
 metafile = true
 
 [[files]]
+file = "mods/polymorph_plus.pw.toml"
+hash = "6a06069b15bf4e84d2b74d82b4311a11cfc3c5fb6793610fb8230fe5f5f27ff0"
+metafile = true
+
+[[files]]
 file = "mods/polytone.pw.toml"
 hash = "65b38a3366a25a8cd306a56bcbf0c2eb3798123babd8f066b968695c9d8a5ccb"
 metafile = true
