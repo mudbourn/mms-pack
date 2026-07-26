@@ -1,0 +1,9 @@
+{
+  "pack": {
+    "pack_format": 81,
+    "description": "MMS: suppress Deadly Deadly Dungeon natural generation",
+    "supported_formats": [81, 99],
+    "min_format": 81,
+    "max_format": 99
+  }
+}
