@@ -27869,6 +27869,18 @@ file = "resourcepacks/jobsplus_renames/pack.mcmeta"
 hash = "4cef069c99588a294a043036ef441a2c43eacd7a73d38a77425b695e8c654f76"
 
 [[files]]
+file = "resourcepacks/rubide-retexture/assets/rubies/lang/en_us.json"
+hash = "1ff68e4142174560e038224d476af97c65d668d19adba087733630cb45a2cfc5"
+
+[[files]]
+file = "resourcepacks/rubide-retexture/assets/rubies/textures/item/ruby.png"
+hash = "01a01c6f28d83cb970cef6b5e8b86c837875b9929a2109a0d8a5694122fc3205"
+
+[[files]]
+file = "resourcepacks/rubide-retexture/pack.mcmeta"
+hash = "32c97bb10f7c66d0eadb8413dbf1db1474869bd0c67c956bdf4e6fb0b650ce51"
+
+[[files]]
 file = "resourcepacks/third_person_bow_fix/assets/minecraft/item_patterns/use_to_aim/vanilla.json"
 hash = "0829f7bfeb4292dd91742b7a3f3b2d6c07e9e10239ad1b4d0d4564852bf5a130"
 
