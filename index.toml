@@ -28028,15 +28028,19 @@ hash = "2c175d74a5ed0a96bd448592e38a8b96d22f0bea53de85a2edcea0b0d4dc19ec"
 [[files]]
 file = "xaero/minimap/Multiplayer_mc.mudbourn.info/dim%-1/mw$-29775643_1.txt"
 hash = "c48642e0ac283716b828a8662f5472f1c3883b0f9f65beb72abb4f9e22326177"
+preserve = true
 
 [[files]]
 file = "xaero/minimap/Multiplayer_mc.mudbourn.info/dim%0/mw$-29775643_2.txt"
 hash = "dc8df312aac0572b56c51c5a3b46bfefe1c936d683ba8cc6a2177a844d6b34dc"
+preserve = true
 
 [[files]]
 file = "xaero/minimap/Multiplayer_mc.mudbourn.info/dim%0/mw-1,1,0_1.txt"
 hash = "dc9beec6e11c4ae881577c4af0100fed0307b04fb3ad85ba1d3600ce48abddc4"
+preserve = true
 
 [[files]]
 file = "xaero/minimap/Multiplayer_mc.mudbourn.info/dim%1/mw$-29775643_1.txt"
 hash = "9364c678d0a5ffda57c275da1f300252e67abdc1b9d0f5dfb5e47a45af4c6e2f"
+preserve = true
