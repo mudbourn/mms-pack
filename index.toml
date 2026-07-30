@@ -3005,7 +3005,7 @@ hash = "944f75feb78961494b253915d1e66c6572ae717c891d7e5d0f3bb50c56d16cab"
 
 [[files]]
 file = "options.txt"
-hash = "25de948a6ff2b8c7803c12b74f4095bc20cc7c6a33fe3e59efb6ab4d694f8bdc"
+hash = "4f60a2e60f523bf84a5f69cd57041883e6aae735edd29235a7c0b95afaae07d3"
 preserve = true
 
 [[files]]
@@ -21542,7 +21542,7 @@ hash = "6c0b4839f5f0562665a2bd26b2ab8e2a89a975a89918626a164c82cd4ec5fd02"
 
 [[files]]
 file = "resourcepacks/DetailedAnimationsV0.19/assets/minecraft/emf/cem/player.jem"
-hash = "994973a6571bd6a3ca54d0fe86a595191437311a3fcd6ba6879330a967c56cf1"
+hash = "d8f1be3bb012664d405978368e57b900e19861cd0bd4caeb56cc9de93c2c5073"
 
 [[files]]
 file = "resourcepacks/DetailedAnimationsV0.19/assets/minecraft/emf/cem/player_cape.jem"
@@ -21562,7 +21562,7 @@ hash = "788c106356b9ce708da17a7f6b403e5f5d0c601bbfa35e3b24045dba51f8cee5"
 
 [[files]]
 file = "resourcepacks/DetailedAnimationsV0.19/assets/minecraft/emf/cem/player_slim.jem"
-hash = "f90f27c64d0331da045b4fd0ad4f7aa82696431ec09a57c848f4f0a05016a31a"
+hash = "d66c8c639e35fd7209a910f5957ed4f72c5dfa3ebb684862c0942497117f0d40"
 
 [[files]]
 file = "resourcepacks/DetailedAnimationsV0.19/assets/minecraft/emf/cem/player_slim_inner_armor.jem"
@@ -27861,6 +27861,38 @@ file = "resourcepacks/SodiumTranslations/pack.png"
 hash = "d50415986dcc6b9f390e817aec1b723fc9e35b380d7e9cc3c2f5d0907efd2687"
 
 [[files]]
+file = "resourcepacks/aerialhell-trident-3d/assets/aerialhell/items/forgotten_battle_trident.json"
+hash = "1922c1061a1b06f9246e4927ac4ce46c587504125cb662801f3a736e65fa7a68"
+
+[[files]]
+file = "resourcepacks/aerialhell-trident-3d/assets/aerialhell/models/item/forgotten_battle_trident_3d.json"
+hash = "ee0fa2ebd7d358c341e553d045846a846c51473134c707f1c48499236c47a473"
+
+[[files]]
+file = "resourcepacks/aerialhell-trident-3d/assets/aerialhell/textures/item/forgotten_battle_trident_3d.png"
+hash = "637758b2a333711bbe789a30c351f8d6e09865cec6e0b4af4e35e665cd2a22f1"
+
+[[files]]
+file = "resourcepacks/aerialhell-trident-3d/pack.mcmeta"
+hash = "80fc6de8df7e4f16d695fdbaa636c2de44ea30c3458cec17f1f625cc134cc61e"
+
+[[files]]
+file = "resourcepacks/bountifulfish-anchor-3d/assets/bountiful-fish/items/anchor.json"
+hash = "f57c80c65fd7a03651490fe81bb69b705d4a9fa2d497ea61bf45c57246efbe2b"
+
+[[files]]
+file = "resourcepacks/bountifulfish-anchor-3d/assets/bountiful-fish/models/item/anchor_3d.json"
+hash = "36a1b31605a11ea1c3cfd713aaf8e882a6f567de63daed31823066cf4c6092a8"
+
+[[files]]
+file = "resourcepacks/bountifulfish-anchor-3d/assets/bountiful-fish/textures/item/anchor_3d.png"
+hash = "82848be8a294d8f6e73cc8f6817105591536c805cd851d3e78fde6359803256f"
+
+[[files]]
+file = "resourcepacks/bountifulfish-anchor-3d/pack.mcmeta"
+hash = "62722bff0cc1142392bc8fdcdcc7db36276f6e0ac788617c5ad7d5f438c41870"
+
+[[files]]
 file = "resourcepacks/jobsplus_renames/assets/jobsplus/lang/en_us.json"
 hash = "e76116d282f056436916a6bf43f3b2551600f0471c8e847ca4eda53aaef5fc78"
 
@@ -28037,8 +28069,12 @@ preserve = true
 
 [[files]]
 file = "xaero/minimap/Multiplayer_mc.mudbourn.info/dim%0/mw-1,1,0_1.txt"
-hash = "dc9beec6e11c4ae881577c4af0100fed0307b04fb3ad85ba1d3600ce48abddc4"
+hash = "663972001ceb7568c1432d87778a2f23c4dacf455917563631ab2671035b1b8e"
 preserve = true
+
+[[files]]
+file = "xaero/minimap/Multiplayer_mc.mudbourn.info/dim%0/mw-1,1,0_1.txt.bak"
+hash = "dc9beec6e11c4ae881577c4af0100fed0307b04fb3ad85ba1d3600ce48abddc4"
 
 [[files]]
 file = "xaero/minimap/Multiplayer_mc.mudbourn.info/dim%1/mw$-29775643_1.txt"
