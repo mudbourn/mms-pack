@@ -63,7 +63,7 @@ damageTiltStrength:1.0
 highContrast:false
 highContrastBlockOutline:false
 narratorHotkey:true
-resourcePacks:["vanilla","file/FreshAnimations_v1.10.4","file/FA+Spiders-v2.2","file/FA+Objects-v2.1.2","file/FA+Emissive-v1.6","file/FA+Details-v2.2.1","file/Better-Leaves-9.5","file/FA+Creepers-v2.1","file/FA+All_Extensions-v1.8.1","controlify:legacy_console","continuity:default","alcocraftplus:3d_models","file/DetailedAnimationsV0.19","file/Freshly Modded 3.0.3","file/third_person_bow_fix","file/Fresh Patch - Variants and Ventures"]
+resourcePacks:["vanilla","file/FreshAnimations_v1.10.4","file/FA+Spiders-v2.2","file/FA+Objects-v2.1.2","file/FA+Emissive-v1.6","file/FA+Details-v2.2.1","file/Better-Leaves-9.5","file/FA+Creepers-v2.1","file/FA+All_Extensions-v1.8.1","controlify:legacy_console","continuity:default","alcocraftplus:3d_models","file/DetailedAnimationsV0.19","file/Freshly Modded 3.0.3","file/third_person_bow_fix","file/Fresh Patch - Variants and Ventures","file/bountifulfish-anchor-3d","file/lowlands-vanity"]
 incompatibleResourcePacks:["file/third_person_bow_fix","file/Fresh Patch - Variants and Ventures"]
 lastServer:
 lang:en_us

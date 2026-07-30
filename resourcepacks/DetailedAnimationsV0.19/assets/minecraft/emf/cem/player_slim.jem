@@ -530,12 +530,12 @@
 				},
 				{
 					"var.ITEM_SPECIFIC_ANIMATIONS_INFO": "0",
-					"var.BlockingRight": "if(is_right_handed, if(nbt(SelectedItem.id, raw:iregex:(minecraft:shield|basicweapons:.*_quarterstaff)), 1, 0), if(nbt(equipment.offhand.id, raw:iregex:(minecraft:shield|basicweapons:.*_quarterstaff)), 1, 0))",
+					"var.BlockingRight": "if(is_right_handed, if(nbt(SelectedItem.id, raw:iregex:(minecraft:shield|basicweapons:.*_quarterstaff|basicweapons:.*_glaive|enderscape:.*_rubble_shield|bountiful-fish:large_tuna)), 1, 0), if(nbt(equipment.offhand.id, raw:iregex:(minecraft:shield|basicweapons:.*_quarterstaff|basicweapons:.*_glaive|enderscape:.*_rubble_shield|bountiful-fish:large_tuna)), 1, 0))",
 					"var.BowShootingRight": "if(is_right_handed, if(nbt(SelectedItem.id, raw:iregex:(minecraft:bow|minecraft:crossbow|expanded_weaponry:longbow|expanded_weaponry:slingshot|weaponsexpanded:longbow|weaponsexpanded:chain_crossbow|jobsplustools:.*_compound_bow|jeg:compound_bow|jeg:primitive_bow)), 1, 0), if(nbt(equipment.offhand.id, raw:iregex:(minecraft:bow|minecraft:crossbow|expanded_weaponry:longbow|expanded_weaponry:slingshot|weaponsexpanded:longbow|weaponsexpanded:chain_crossbow|jobsplustools:.*_compound_bow|jeg:compound_bow|jeg:primitive_bow)), 1, 0))",
 					"var.ItemRight": "clamp(var.BlockingRight + var.BowShootingRight, 0, 1)"
 				},
 				{
-					"var.BlockingLeft": "if(!is_right_handed, if(nbt(SelectedItem.id, raw:iregex:(minecraft:shield|basicweapons:.*_quarterstaff)), 1, 0), if(nbt(equipment.offhand.id, raw:iregex:(minecraft:shield|basicweapons:.*_quarterstaff)), 1, 0)) * (1 - var.ItemRight)",
+					"var.BlockingLeft": "if(!is_right_handed, if(nbt(SelectedItem.id, raw:iregex:(minecraft:shield|basicweapons:.*_quarterstaff|basicweapons:.*_glaive|enderscape:.*_rubble_shield|bountiful-fish:large_tuna)), 1, 0), if(nbt(equipment.offhand.id, raw:iregex:(minecraft:shield|basicweapons:.*_quarterstaff|basicweapons:.*_glaive|enderscape:.*_rubble_shield|bountiful-fish:large_tuna)), 1, 0)) * (1 - var.ItemRight)",
 					"var.BowShootingLeft": "if(!is_right_handed, if(nbt(SelectedItem.id, raw:iregex:(minecraft:bow|minecraft:crossbow|expanded_weaponry:longbow|expanded_weaponry:slingshot|weaponsexpanded:longbow|weaponsexpanded:chain_crossbow|jobsplustools:.*_compound_bow|jeg:compound_bow|jeg:primitive_bow)), 1, 0), if(nbt(equipment.offhand.id, raw:iregex:(minecraft:bow|minecraft:crossbow|expanded_weaponry:longbow|expanded_weaponry:slingshot|weaponsexpanded:longbow|weaponsexpanded:chain_crossbow|jobsplustools:.*_compound_bow|jeg:compound_bow|jeg:primitive_bow)), 1, 0)) * (1 - var.ItemRight)"
 				},
 				{

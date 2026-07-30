@@ -5,3 +5,9 @@
 /mms-deploy.sh
 /update-title.sh
 /disabled-mods/**
+# Clothing of the Lowlands is All Rights Reserved. Redistribution permission is
+# pending from the author; until it is granted these textures must not enter the
+# index, because indexing them ships them to players. Delete this rule once the
+# author has approved. The mms_compat Java side embeds no Lowlands assets (it only
+# sets equippable.asset_id / item_model identifiers), so only this pack is gated.
+/resourcepacks/lowlands-vanity/**

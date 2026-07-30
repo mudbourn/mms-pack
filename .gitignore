@@ -24,3 +24,10 @@ Thumbs.db
 
 # Internal build-handoff note — not for the public members repo
 INVENTORY-TASK.md
+
+# --- Pending redistribution approval ---
+# Clothing of the Lowlands is All Rights Reserved; the author's permission is still
+# pending. This repo is publicly reachable (raw URLs serve the pack), so committing
+# these textures redistributes them. Also excluded in .packwizignore — that file only
+# gates packwiz, not git, so both rules are needed. Remove both once approved.
+resourcepacks/lowlands-vanity/
