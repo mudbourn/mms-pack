@@ -1,0 +1,14 @@
+name = "(Sodium) Chloride"
+filename = "chloride-FABRIC-mc1.21.11-v1.8.1.jar"
+side = "client"
+pin = true
+
+[download]
+url = "https://cdn.modrinth.com/data/yD9qW65f/versions/rViW2Ciw/chloride-FABRIC-mc1.21.11-v1.8.1.jar"
+hash-format = "sha512"
+hash = "4618a61a20510dd1f5c7f37b79866bc503063576834e0a89dc944d76fa7c0081cf5f1d22d0a89fd37ac51747d33a1f82fe7055fe499c994315bfee17d2390e90"
+
+[update]
+[update.modrinth]
+mod-id = "yD9qW65f"
+version = "rViW2Ciw"
