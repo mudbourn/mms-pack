@@ -265,7 +265,7 @@ key_key.voice_chat_settings:key.keyboard.unknown
 key_key.voice_chat_group:key.keyboard.unknown
 key_key.voice_chat_toggle_recording:key.keyboard.unknown
 key_key.voice_chat_adjust_volumes:key.keyboard.unknown
-key_key.weaponsexpanded.toggle_bastard_sword_mode:key.keyboard.z
+key_key.weaponsexpanded.toggle_bastard_sword_mode:key.keyboard.unknown
 key_gui.xaero_zoom_in:key.keyboard.unknown
 key_gui.xaero_zoom_out:key.keyboard.unknown
 key_gui.xaero_new_waypoint:key.keyboard.unknown
@@ -302,6 +302,8 @@ key_iris.keybind.toggleShaders:key.keyboard.unknown
 key_iris.keybind.shaderPackSelection:key.keyboard.unknown
 key_iris.keybind.wireframe:key.keyboard.unknown
 key_lambdynlights.key.toggle_fps_dynamic_lighting:key.keyboard.unknown
+key_key.inspectanimations.config:key.keyboard.unknown
+key_key.uselessreptile.freeLookKey:key.keyboard.unknown
 soundCategory_master:1.0
 soundCategory_music:0.0
 soundCategory_record:0.6258802816901409

@@ -1086,6 +1086,10 @@ file = "config/minecart-trains-fork.json"
 hash = "62e27d531ebb30645777bbd7804645b6c27255c6959df1a9458b9f80364282a1"
 
 [[files]]
+file = "config/mms_compat_lean.json"
+hash = "73bb2137cff797a371ec44762aa73e923dc60b5d7412a53fef93e137359e7e31"
+
+[[files]]
 file = "config/mob-ai-tweaks/blacklists/allay_weapons.txt"
 hash = "e71996ef3c593654785e734fa84904dff68caf20d20b7441e7e996d711f43a04"
 
@@ -3066,7 +3070,7 @@ hash = "944f75feb78961494b253915d1e66c6572ae717c891d7e5d0f3bb50c56d16cab"
 
 [[files]]
 file = "options.txt"
-hash = "4f60a2e60f523bf84a5f69cd57041883e6aae735edd29235a7c0b95afaae07d3"
+hash = "26311657eb85079e05b37532b14393a19f8bd6d8e828131aeddf72780906603b"
 preserve = true
 
 [[files]]
