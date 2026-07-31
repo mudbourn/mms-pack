@@ -1,0 +1,15 @@
+name = "Vertigo-ScalableLux-Compat-Backports"
+filename = "Vertigo-1.2.4+mms.2-MC1.21.11.jar"
+side = "both"
+
+[download]
+url = "https://github.com/mudbourn/Vertigo-ScalableLux-Compat-Backports/releases/download/v1.2.4%2Bmms.2/Vertigo-1.2.4%2Bmms.2-MC1.21.11.jar"
+hash-format = "sha256"
+hash = "2a478dc1c152be20c3104fd788098b3d9961c6968046e9fe9a6267e37cabd55f"
+
+[update]
+[update.github]
+branch = "main"
+regex = "^.+(?<!-api|-dev|-dev-preshadow|-sources)\\.jar$"
+slug = "mudbourn/Vertigo-ScalableLux-Compat-Backports"
+tag = "v1.2.4+mms.2"

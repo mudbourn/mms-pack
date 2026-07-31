@@ -2133,6 +2133,11 @@ hash = "a5d39f2607a1949bac5fd4c20a61c90c4d32d58797eb167197fbc1e1a3e874e7"
 metafile = true
 
 [[files]]
+file = "mods/disconnect-packet-fix.pw.toml"
+hash = "5c9f7094a4327e0730966e4a58617456695fbcbaedae3f79903ea6a1d939fc6e"
+metafile = true
+
+[[files]]
 file = "mods/display-delight-fabric.pw.toml"
 hash = "636904b6508b012550ddb63a124be8b100c77a11536c8697fa39ef8cab90dfc1"
 metafile = true
@@ -2375,6 +2380,11 @@ metafile = true
 [[files]]
 file = "mods/happy-ghast-but-fast-(3x-speed).pw.toml"
 hash = "b5327c626db4817df8be112937731aa03216dce69cce5240ff4ea16caebd4fdb"
+metafile = true
+
+[[files]]
+file = "mods/helpful-commands.pw.toml"
+hash = "d376d1728e7a3fc8a462bc34539f3ef8054cb1b0d62b65503b87b53d6f7038fc"
 metafile = true
 
 [[files]]
@@ -2988,6 +2998,11 @@ metafile = true
 [[files]]
 file = "mods/variants-and-ventures.pw.toml"
 hash = "42e014513bbed85cc7c13839c02b51932cdab3cbb849cb8024cacc01422f1a9f"
+metafile = true
+
+[[files]]
+file = "mods/vertigo-scalablelux-compat-backports.pw.toml"
+hash = "b42879ef08298768c2161d405a4c386ab276b26b4f9ef2a27d710df17b7e2fc3"
 metafile = true
 
 [[files]]
