@@ -1,0 +1,13 @@
+name = "Helpful Commands"
+filename = "helpful_commands-fabric-4.0.0-1.21.11.jar"
+side = "server"
+
+[download]
+url = "https://cdn.modrinth.com/data/lIRUH8gT/versions/y0qnTQY9/helpful_commands-fabric-4.0.0-1.21.11.jar"
+hash-format = "sha512"
+hash = "345c316c9d95a7400846fa984120c56f37de337938c1945ab335f0d19472e84f03a21b25e28d68970c16e2668803010c1b63aec0c0af7002c9d7fe4908d96be1"
+
+[update]
+[update.modrinth]
+mod-id = "lIRUH8gT"
+version = "y0qnTQY9"
