@@ -2503,8 +2503,23 @@ hash = "ac09ec56f998ec83c08ffd7a38b60c3f0b64442228427024b725ac1e964c7e33"
 metafile = true
 
 [[files]]
+file = "mods/lukis-ancient-cities.pw.toml"
+hash = "ac34910b0e0549485d26cd305bdc2f65344be377d210c9b06eb7cb8c4b99918c"
+metafile = true
+
+[[files]]
+file = "mods/lukis-crazy-chambers.pw.toml"
+hash = "d9259ff846ac2b9755893a29fa1e6bf120cce7a4c90836011e65c22fe1e4ddb3"
+metafile = true
+
+[[files]]
 file = "mods/lukis-grand-capitals.pw.toml"
 hash = "2fe01d8046db2246c6df01eedd1fbc7837c08cc6d3b2a9017107ade989e86a28"
+metafile = true
+
+[[files]]
+file = "mods/lukis-strongholds.pw.toml"
+hash = "f42787dc74c0b3ef026a7a797671318a0bc62d52aa1d1d636003243f838ceaf1"
 metafile = true
 
 [[files]]
@@ -2879,6 +2894,11 @@ metafile = true
 [[files]]
 file = "mods/stackable127.pw.toml"
 hash = "07d351c93cad626fc8f79d7403b21d4e8655e9c538a3e6701c56678643022902"
+metafile = true
+
+[[files]]
+file = "mods/stonecutter-damage.pw.toml"
+hash = "d4e76cb59810c96161553d9d0d63bbff3dd51bc13d630b579631e6581bfbdc87"
 metafile = true
 
 [[files]]
