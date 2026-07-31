@@ -1,0 +1,17 @@
+{
+  "enabled": true,
+  "smoothing": 0.2,
+  "forward_degrees_per_speed": 25.0,
+  "side_degrees_per_speed": 25.0,
+  "max_forward_degrees": 8.0,
+  "max_side_degrees": 10.0,
+  "pitch_lean_enabled": true,
+  "pitch_lean_ratio": 0.2,
+  "max_pitch_lean_degrees": 6.0,
+  "yaw_lean_enabled": false,
+  "yaw_lean_ratio": 0.2,
+  "max_yaw_lean_degrees": 6.0,
+  "invert_forward": true,
+  "invert_side": false,
+  "pivot_height": 0.0
+}
