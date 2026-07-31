@@ -754,10 +754,6 @@ file = "config/cristellib/unwrecked_ships_plus/structure_toggle_config.json5"
 hash = "e2060b994ab80c0994e5ad828cce9e2c4e566fa7f3cfb278fef16b0a812b9059"
 
 [[files]]
-file = "config/cubes-without-borders.json"
-hash = "ada6ff6a3cbaf0c6417f97429c76eddda1d625ef66b6c1c3bdad1af88f56c134"
-
-[[files]]
 file = "config/debugify.json"
 hash = "0f225ab8423940db883938663ef73097674164e1f41aefc79b0179df0893d554"
 
@@ -851,7 +847,7 @@ hash = "51bb6c11751819892e0c0e5c26903e57ac49b0d44933e97a879e7a9e73c4ae3f"
 
 [[files]]
 file = "config/fabric_loader_dependencies.json"
-hash = "1140834d932fe2c55e53e6b574c34554da75e5dd41ded5e9d5cb3b5afb0d0201"
+hash = "78ab026965f418a9558b12ad2cb63f94919cd526f16bd23863d87ea883237812"
 
 [[files]]
 file = "config/fabrishot.properties"
@@ -1235,7 +1231,7 @@ hash = "6a3760d2b7828efc524976294cc6fd17f16bdda9d9827bd55f8fcd58ce724355"
 
 [[files]]
 file = "config/modpack_defaults/config/fabric_loader_dependencies.json"
-hash = "1140834d932fe2c55e53e6b574c34554da75e5dd41ded5e9d5cb3b5afb0d0201"
+hash = "78ab026965f418a9558b12ad2cb63f94919cd526f16bd23863d87ea883237812"
 
 [[files]]
 file = "config/modpack_defaults/config/fabrishot.properties"
@@ -2114,11 +2110,6 @@ metafile = true
 [[files]]
 file = "mods/crops-love-rain.pw.toml"
 hash = "2508772ea8138b52d62f0d0a47298efe882cc9eb0dc5cf0d46a54ab6ddcf9287"
-metafile = true
-
-[[files]]
-file = "mods/cubes-without-borders.pw.toml"
-hash = "982801b4473e11e6f8c5899f18a260515239dfce397c650c6920fc6ae03f6abb"
 metafile = true
 
 [[files]]
