@@ -1789,7 +1789,7 @@ hash = "64f81500a87015325e8884679671382f5e4e013915097c5c31171fe4c53b8404"
 
 [[files]]
 file = "mms-server-sync.py"
-hash = "847e5234bc62cd9c44c80cf7622208750ff586fed248452397dd3a8b2af172f6"
+hash = "007367eac92ef0e41ef22fa362d972779bfc16c06f817d4c887065a8b2361d3b"
 
 [[files]]
 file = "mods/absolut-revive.pw.toml"
@@ -2568,7 +2568,7 @@ metafile = true
 
 [[files]]
 file = "mods/mms-mod-compat-support.pw.toml"
-hash = "f4a203ff88949982ae624e2435f6f7773c2915f9d9227d648d1cef7dc7286a36"
+hash = "825a6499279893787f7d54dd757056ae03a0d894419e4e15a412ce2d41c275c4"
 metafile = true
 
 [[files]]
@@ -28241,6 +28241,10 @@ hash = "790b4b245afb2a2726653ac14cfbbafcb78e701bb65eabfb31c9267d23c98345"
 file = "servers.dat"
 hash = "2396f65caf7f45bde09efa3cc89af7c93079d694714b44a412486ee7650dc05e"
 preserve = true
+
+[[files]]
+file = "testing-hold.txt"
+hash = "0469efcb67d3aba3c20ee3f034df416932474938f0dd3ee083106b173bb4f784"
 
 [[files]]
 file = "xaero/minimap/Multiplayer_mc.mudbourn.info/config.txt"
