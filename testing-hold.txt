@@ -1,0 +1,23 @@
+# Fabric mod ids that Server Testing owns.
+#
+# mms-deploy.sh now syncs the testing server as well as prod, so that released
+# mod updates reach the test lane instead of it drifting further behind every
+# deploy. Anything listed here is exempt from that sync: the pack will not add
+# it, will not replace the jar already there, and will not prune it.
+#
+# Use this for a mod you are deliberately running a different build of on
+# Testing. mms-server-sync's never-downgrade guard already protects a build
+# NEWER than the pack's, and overlay.list already protects unreleased dev jars,
+# so this file is for the cases neither covers — an intentionally older build,
+# a side-branch build with an unrelated version string, or a hand-edited jar.
+#
+# One Fabric mod id per line (the `id` field in fabric.mod.json, not the
+# filename and not the slug). `#` comments and blank lines are ignored.
+#
+# Remove an entry once Testing should track the pack again.
+
+# Hand-edited jar: Training Dummy silenced via a Silent:1b NBT edit inside the
+# jar. A pack sync would restore the released jar and the ambient slime sound
+# with it. See the training-dummy-silenced-by-jar-edit note.
+# (uncomment if this mod is present on Testing)
+#trainingdummy
