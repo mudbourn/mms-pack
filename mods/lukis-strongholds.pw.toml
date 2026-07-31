@@ -1,0 +1,13 @@
+name = "Luki's Strongholds"
+filename = "lukis-strongholds-v1.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/reQ63xx3/versions/VBQK2owL/lukis-strongholds-v1.0.jar"
+hash-format = "sha512"
+hash = "d15e107994e65c53cc7dea1c668eeb4b9245f939ec250aa4ff241b5b66937678ef3c87367783316837a428eec9db47d9c35c017197ae4a1b13f18be19421f0a0"
+
+[update]
+[update.modrinth]
+mod-id = "reQ63xx3"
+version = "VBQK2owL"
