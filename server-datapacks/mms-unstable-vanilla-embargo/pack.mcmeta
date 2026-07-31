@@ -1,0 +1,9 @@
+{
+  "pack": {
+    "pack_format": 81,
+    "description": "MMS: keep unstable mods out of the overworld, nether and end",
+    "supported_formats": [81, 99],
+    "min_format": 81,
+    "max_format": 99
+  }
+}
