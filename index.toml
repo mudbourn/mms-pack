@@ -546,10 +546,6 @@ file = "config/corgilib/announcement_config.json5"
 hash = "37f3bbf0adb04001cfb813938d4ace3c4d8f62021dbffecc562f2c1ebcfae56c"
 
 [[files]]
-file = "config/cpa/cpa.json5"
-hash = "2aacb1e2cae316fd3d6a1e4b2569e067a0d708efb6a8ee97a28c1742311ded9c"
-
-[[files]]
 file = "config/crash_assistant/config.toml"
 hash = "e0f191c264b930ea7a3ca57cc1243bae88c3e7fd2985a46368f2f94e5f127db1"
 
@@ -2094,11 +2090,6 @@ metafile = true
 [[files]]
 file = "mods/cosmetic-armor-updated.pw.toml"
 hash = "bb1ad4206932c7207d8b42716060b7d7a6baa2679ddf8ba40f4983599e67c498"
-metafile = true
-
-[[files]]
-file = "mods/cpa.pw.toml"
-hash = "2aab0ea01acec4fe7fdbc36297ada782d578c83d164d8bd816b8ee844e2caec3"
 metafile = true
 
 [[files]]
@@ -28114,6 +28105,54 @@ hash = "bef4d172fc1bfb34d342e79090726c4a0c272dd404783c3ea022b992e0e0415e"
 [[files]]
 file = "server-datapacks/mms-ddd-no-natural-gen/pack.mcmeta"
 hash = "e5ae66a88a386964d4c4cc83a6192c40e099c720ddb530e5dca09d1a6fb1a2e6"
+
+[[files]]
+file = "server-datapacks/mms-unstable-vanilla-embargo/README.md"
+hash = "117dddfbf10fe61bc2eeba7b1b911ece8138451f12cf4c3993745a0a0fc9363f"
+
+[[files]]
+file = "server-datapacks/mms-unstable-vanilla-embargo/data/aerialhell/tags/worldgen/biome/has_structure/overworld_abandonned_portal.json"
+hash = "bef4d172fc1bfb34d342e79090726c4a0c272dd404783c3ea022b992e0e0415e"
+
+[[files]]
+file = "server-datapacks/mms-unstable-vanilla-embargo/data/mutantmonsters/tags/worldgen/biome/without_mutant_creeper_spawns.json"
+hash = "54a94af7857d1951c94ae53f1ed1b3f8d5f369668900f6a3e004257fc15b1735"
+
+[[files]]
+file = "server-datapacks/mms-unstable-vanilla-embargo/data/mutantmonsters/tags/worldgen/biome/without_mutant_enderman_spawns.json"
+hash = "54a94af7857d1951c94ae53f1ed1b3f8d5f369668900f6a3e004257fc15b1735"
+
+[[files]]
+file = "server-datapacks/mms-unstable-vanilla-embargo/data/mutantmonsters/tags/worldgen/biome/without_mutant_skeleton_spawns.json"
+hash = "54a94af7857d1951c94ae53f1ed1b3f8d5f369668900f6a3e004257fc15b1735"
+
+[[files]]
+file = "server-datapacks/mms-unstable-vanilla-embargo/data/mutantmonsters/tags/worldgen/biome/without_mutant_zombie_spawns.json"
+hash = "54a94af7857d1951c94ae53f1ed1b3f8d5f369668900f6a3e004257fc15b1735"
+
+[[files]]
+file = "server-datapacks/mms-unstable-vanilla-embargo/data/uselessreptile/tags/worldgen/biome/lightning_chaser_spawn_blacklist.json"
+hash = "54a94af7857d1951c94ae53f1ed1b3f8d5f369668900f6a3e004257fc15b1735"
+
+[[files]]
+file = "server-datapacks/mms-unstable-vanilla-embargo/data/uselessreptile/tags/worldgen/biome/magmamuncher_spawn_blacklist.json"
+hash = "54a94af7857d1951c94ae53f1ed1b3f8d5f369668900f6a3e004257fc15b1735"
+
+[[files]]
+file = "server-datapacks/mms-unstable-vanilla-embargo/data/uselessreptile/tags/worldgen/biome/moleclaw_spawn_blacklist.json"
+hash = "54a94af7857d1951c94ae53f1ed1b3f8d5f369668900f6a3e004257fc15b1735"
+
+[[files]]
+file = "server-datapacks/mms-unstable-vanilla-embargo/data/uselessreptile/tags/worldgen/biome/river_pikehorn_spawn_blacklist.json"
+hash = "54a94af7857d1951c94ae53f1ed1b3f8d5f369668900f6a3e004257fc15b1735"
+
+[[files]]
+file = "server-datapacks/mms-unstable-vanilla-embargo/data/uselessreptile/tags/worldgen/biome/wyvern_spawn_blacklist.json"
+hash = "54a94af7857d1951c94ae53f1ed1b3f8d5f369668900f6a3e004257fc15b1735"
+
+[[files]]
+file = "server-datapacks/mms-unstable-vanilla-embargo/pack.mcmeta"
+hash = "76771acf67b9439c880d8035d74e2fd9f284f22af9446fa0a4de41038fec107b"
 
 [[files]]
 file = "server-datapacks/recipe_fixes/data/crafting/recipe/saddle.json"
