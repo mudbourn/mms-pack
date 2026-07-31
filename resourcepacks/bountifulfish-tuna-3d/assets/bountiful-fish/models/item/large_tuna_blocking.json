@@ -1,0 +1,73 @@
+{
+  "parent": "bountiful-fish:item/large_tuna",
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [
+        0,
+        0,
+        45
+      ],
+      "translation": [
+        -4.5,
+        -2,
+        -0.5
+      ],
+      "scale": [
+        2.4933,
+        2.4933,
+        0.85
+      ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [
+        0,
+        180,
+        -45
+      ],
+      "translation": [
+        -4.5,
+        -2,
+        -0.5
+      ],
+      "scale": [
+        2.4933,
+        2.4933,
+        0.85
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        0,
+        0,
+        45
+      ],
+      "translation": [
+        -4.75,
+        -4,
+        -3.25
+      ],
+      "scale": [
+        2.4933,
+        2.4933,
+        0.85
+      ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [
+        0,
+        180,
+        -45
+      ],
+      "translation": [
+        -4.25,
+        -4,
+        -3.25
+      ],
+      "scale": [
+        2.4933,
+        2.4933,
+        0.85
+      ]
+    }
+  }
+}

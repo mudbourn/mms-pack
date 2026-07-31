@@ -1,0 +1,13 @@
+name = "Bountiful Fish"
+filename = "bountiful-fish-1.1.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/U29AR77Z/versions/FnQeky9G/bountiful-fish-1.1.1.jar"
+hash-format = "sha512"
+hash = "2023b57f903de074ef63889535bf319b238b0dc162e7629fa36bd1861f963edfb650470b34552506162923f5595b4d2af324f692f0ca79abbb1101fc01171109"
+
+[update]
+[update.modrinth]
+mod-id = "U29AR77Z"
+version = "FnQeky9G"

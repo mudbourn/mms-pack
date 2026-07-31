@@ -1892,6 +1892,11 @@ hash = "c2411710d5a3ed705cc19f0442b5ecceba146910968c2b02af7080ea3ddfe33e"
 metafile = true
 
 [[files]]
+file = "mods/badoptimizations.pw.toml"
+hash = "b72d00d529ec694ae354b73f6b36d4ec2b830c60c05cc31f46d00ac7ddf8a26b"
+metafile = true
+
+[[files]]
 file = "mods/badpackets.pw.toml"
 hash = "a12e6ec8be7bfbdd2e8c1713d3094fed8474ca18b8cbfae0b6e4f1bc00921db5"
 metafile = true
@@ -1904,6 +1909,11 @@ metafile = true
 [[files]]
 file = "mods/basicweapons.pw.toml"
 hash = "85148bbdc56daaea9a67e4ece2f6d6d64cfb1781f5db0b5618c10b45528e4e1e"
+metafile = true
+
+[[files]]
+file = "mods/better-clouds.pw.toml"
+hash = "854493f35cc0b257cc25fe69d41b4b08f1adb534282a13b04d6f44d35ada6869"
 metafile = true
 
 [[files]]
@@ -1929,6 +1939,11 @@ metafile = true
 [[files]]
 file = "mods/bobby.pw.toml"
 hash = "f42e7c3e161d7734855264b73af110541eae4f83495f1c63ce31db31f1b6b1f6"
+metafile = true
+
+[[files]]
+file = "mods/bountiful-fish.pw.toml"
+hash = "a288d7bb11898b5439b3b47d3ef7d433a777be5edb4a3f497d494dc2696cd8ad"
 metafile = true
 
 [[files]]
@@ -1989,6 +2004,11 @@ metafile = true
 [[files]]
 file = "mods/chefs-delight.pw.toml"
 hash = "d3caba947887f26d04bfd96474140e3e8e5457c82ef8c5661d79c39c285c0ab3"
+metafile = true
+
+[[files]]
+file = "mods/chloride.pw.toml"
+hash = "f75f068f9802413d269316dddc59745b63e76124712074e5261e46e07d385150"
 metafile = true
 
 [[files]]
@@ -2297,6 +2317,11 @@ hash = "816b735b2ad505476201800a99f527e61b392b712b9d20ca9edcce05f412fe87"
 metafile = true
 
 [[files]]
+file = "mods/first-person-model.pw.toml"
+hash = "e274cd8e37cab2c375c3f3acd0d4b1c89790007ebc3318cbede4f420e410bf1a"
+metafile = true
+
+[[files]]
 file = "mods/fish-of-thieves.pw.toml"
 hash = "8350702ce6096152c7a24168d3aee896e824957069fdb701afd3b729eb931b1a"
 metafile = true
@@ -2347,6 +2372,11 @@ hash = "9aa3cdec1892fe39d5c9bc5050bd22d95317219ee6ce215af3f9dc95275dfbb9"
 metafile = true
 
 [[files]]
+file = "mods/gnetum.pw.toml"
+hash = "2fcdcd7f9bf25f00e42926608e00eb4c6e8c955b1cb924707b83fec348b3b98c"
+metafile = true
+
+[[files]]
 file = "mods/guard-villagers-(fabricquilt).pw.toml"
 hash = "4aa84ea9680c4ac1d7aa40bafea6e81901ab57de50adad4c23ac8a95beeca651"
 metafile = true
@@ -2372,6 +2402,11 @@ hash = "8ae0dcae96c5871ca2cd31236108bc6045f341ee6fc2dcacb40e2d96f26f5444"
 metafile = true
 
 [[files]]
+file = "mods/inspect-animations.pw.toml"
+hash = "7c9f0f51c0a953d02df1aac2f074111b8564f851ec8a5559d967cbe8ebb26439"
+metafile = true
+
+[[files]]
 file = "mods/invisible-armor-recipe.pw.toml"
 hash = "6523682529b36bb50b933badac32378f66fe7d1582e71c006377d43f8daec486"
 metafile = true
@@ -2379,11 +2414,6 @@ metafile = true
 [[files]]
 file = "mods/invview.pw.toml"
 hash = "80bdecdf7911f4b1b6c57d18717d8f435ae237991efdd4c43c50ba6f42bb2139"
-metafile = true
-
-[[files]]
-file = "mods/iris.pw.toml"
-hash = "18cecd316a19a378830d892dad2b3a38ba3ccd3866b0177e552a71ab9f91cae7"
 metafile = true
 
 [[files]]
@@ -2832,7 +2862,7 @@ metafile = true
 
 [[files]]
 file = "mods/sodium.pw.toml"
-hash = "9404aa71aa027cac3e354b8d3e8c05f6fa2defe7ced3d99cbdfbb5a35627c15b"
+hash = "3fcd35690ccd5f8f04ed3fddefd5328720314f92839d75768ca5e09c4fdf013c"
 metafile = true
 
 [[files]]
@@ -2888,6 +2918,11 @@ metafile = true
 [[files]]
 file = "mods/thermoo.pw.toml"
 hash = "10b718b20129dfabab36a28233cc489e21a48b44d7b682b7a0c92ab29741d63e"
+metafile = true
+
+[[files]]
+file = "mods/to-crawl.pw.toml"
+hash = "c9782019c8fae4befc51c29dabd7fa505c376ef11ce2ba245fad394be45ae2e4"
 metafile = true
 
 [[files]]
@@ -21541,6 +21576,42 @@ file = "resourcepacks/DetailedAnimationsV0.19/.da-backup/player_slim.jem"
 hash = "6c0b4839f5f0562665a2bd26b2ab8e2a89a975a89918626a164c82cd4ec5fd02"
 
 [[files]]
+file = "resourcepacks/DetailedAnimationsV0.19/.mms-armor-jem-backup/player_inner_armor.jem"
+hash = "8a501d6acc2b3644009d5a3e9ab32049fc3e6033f6d4a9ce13280ed01cfe1934"
+
+[[files]]
+file = "resourcepacks/DetailedAnimationsV0.19/.mms-armor-jem-backup/player_outer_armor.jem"
+hash = "788c106356b9ce708da17a7f6b403e5f5d0c601bbfa35e3b24045dba51f8cee5"
+
+[[files]]
+file = "resourcepacks/DetailedAnimationsV0.19/.mms-armor-jem-backup/player_slim_inner_armor.jem"
+hash = "16c0243aa2de11b20270f01b357f736ad081ed911194688f19de239d99e34b67"
+
+[[files]]
+file = "resourcepacks/DetailedAnimationsV0.19/.mms-armor-jem-backup/player_slim_outer_armor.jem"
+hash = "788c106356b9ce708da17a7f6b403e5f5d0c601bbfa35e3b24045dba51f8cee5"
+
+[[files]]
+file = "resourcepacks/DetailedAnimationsV0.19/.mms-riding-backup/player.jem"
+hash = "80ac044713ad2a0b04310193ff7574f4e608a6f58d4e5e33680eb091778c711b"
+
+[[files]]
+file = "resourcepacks/DetailedAnimationsV0.19/.mms-riding-backup/player_cape.jem"
+hash = "23d76b0f34e67c15dba601cb1ea795dd41e73f09f31d7b188093b121039d3f98"
+
+[[files]]
+file = "resourcepacks/DetailedAnimationsV0.19/.mms-riding-backup/player_slim.jem"
+hash = "06b8989fc668ee5bff4b88fe0eb0af395bb1b3194adb16f151f30efcac64c077"
+
+[[files]]
+file = "resourcepacks/DetailedAnimationsV0.19/.mms-walkphase-backup/player.jem"
+hash = "d8f1be3bb012664d405978368e57b900e19861cd0bd4caeb56cc9de93c2c5073"
+
+[[files]]
+file = "resourcepacks/DetailedAnimationsV0.19/.mms-walkphase-backup/player_slim.jem"
+hash = "d66c8c639e35fd7209a910f5957ed4f72c5dfa3ebb684862c0942497117f0d40"
+
+[[files]]
 file = "resourcepacks/DetailedAnimationsV0.19/assets/minecraft/emf/cem/player.jem"
 hash = "d8f1be3bb012664d405978368e57b900e19861cd0bd4caeb56cc9de93c2c5073"
 
@@ -27861,6 +27932,10 @@ file = "resourcepacks/SodiumTranslations/pack.png"
 hash = "d50415986dcc6b9f390e817aec1b723fc9e35b380d7e9cc3c2f5d0907efd2687"
 
 [[files]]
+file = "resourcepacks/aerialhell-trident-3d/.mms-align-backup/forgotten_battle_trident_3d.json"
+hash = "ee0fa2ebd7d358c341e553d045846a846c51473134c707f1c48499236c47a473"
+
+[[files]]
 file = "resourcepacks/aerialhell-trident-3d/assets/aerialhell/items/forgotten_battle_trident.json"
 hash = "1922c1061a1b06f9246e4927ac4ce46c587504125cb662801f3a736e65fa7a68"
 
@@ -27877,6 +27952,26 @@ file = "resourcepacks/aerialhell-trident-3d/pack.mcmeta"
 hash = "80fc6de8df7e4f16d695fdbaa636c2de44ea30c3458cec17f1f625cc134cc61e"
 
 [[files]]
+file = "resourcepacks/bountifulfish-anchor-3d/.mms-anchor-backup/anchor_3d.json"
+hash = "32dd262e588de60e556bab3b1b265db00062d225061f834bf496793018515d1e"
+
+[[files]]
+file = "resourcepacks/bountifulfish-anchor-3d/.mms-anchor-backup/anchor_3d.png"
+hash = "63db1342acb3d09caa54c77529c88fd73893319f3abd4fb197de90817fea5fa3"
+
+[[files]]
+file = "resourcepacks/bountifulfish-anchor-3d/.mms-anchor-backup/oldpirate-trimmed-anchor_3d.json"
+hash = "72bdcd8cdad9edfebd69c676226cc0f22ecea07d9829a5daeb67ae4a3a3b25ae"
+
+[[files]]
+file = "resourcepacks/bountifulfish-anchor-3d/.mms-anchor-backup/oldpirate-trimmed-anchor_3d.png"
+hash = "f874db421a1cd2b84c922f94c0d1ffe715362fb8c1bfb438c0a37203ff2816aa"
+
+[[files]]
+file = "resourcepacks/bountifulfish-anchor-3d/.mms-anchor-backup/user-edit-2151-anchor_3d.json"
+hash = "9d84f4ea9023dcd5007c5f439267df5f6c4acc0dc1ed9f0cd7f866ed2138e5d4"
+
+[[files]]
 file = "resourcepacks/bountifulfish-anchor-3d/assets/bountiful-fish/items/anchor.json"
 hash = "f57c80c65fd7a03651490fe81bb69b705d4a9fa2d497ea61bf45c57246efbe2b"
 
@@ -27891,6 +27986,22 @@ hash = "82848be8a294d8f6e73cc8f6817105591536c805cd851d3e78fde6359803256f"
 [[files]]
 file = "resourcepacks/bountifulfish-anchor-3d/pack.mcmeta"
 hash = "62722bff0cc1142392bc8fdcdcc7db36276f6e0ac788617c5ad7d5f438c41870"
+
+[[files]]
+file = "resourcepacks/bountifulfish-tuna-3d/assets/bountiful-fish/models/item/large_tuna.json"
+hash = "29e314f005fc71adbb4f3c0ed061f7272f333cf0e44d3b2e40841365c7fff87b"
+
+[[files]]
+file = "resourcepacks/bountifulfish-tuna-3d/assets/bountiful-fish/models/item/large_tuna_blocking.json"
+hash = "83cd219d3eea9717ca6bd66315832a9c80079c687e2f463548b88a85cc535c58"
+
+[[files]]
+file = "resourcepacks/bountifulfish-tuna-3d/assets/bountiful-fish/textures/item/large_tuna.png"
+hash = "1112f2d547c0113f60db0fe12f7bcb2a37491264c2e9debaa723638d9a54dba6"
+
+[[files]]
+file = "resourcepacks/bountifulfish-tuna-3d/pack.mcmeta"
+hash = "b0d6acbf35fba8a1ceaa2686edb939133a7e833806fd21a9ba4eacbe35124572"
 
 [[files]]
 file = "resourcepacks/jobsplus_renames/assets/jobsplus/lang/en_us.json"

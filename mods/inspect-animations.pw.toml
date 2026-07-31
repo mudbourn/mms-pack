@@ -1,0 +1,13 @@
+name = "Inspect Animations"
+filename = "inspectanimations-0.2.1-fabric+1.21.11.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/fRpkaLG9/versions/bOv1C4mg/inspectanimations-0.2.1-fabric%2B1.21.11.jar"
+hash-format = "sha512"
+hash = "44152ff8b62ccd1efa39189eceb61661fc71a1b3ff85fcbbcc7a26fe88b548ce4f423ea5ca69f42d7f944ce02aa93831a365682666b77bbdb556fbcb99e16a0e"
+
+[update]
+[update.modrinth]
+mod-id = "fRpkaLG9"
+version = "bOv1C4mg"
