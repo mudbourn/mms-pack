@@ -1,13 +1,21 @@
 #!/usr/bin/env python3
 """Sync a pack's side=both/server mods into a server's mods folder.
 
-    mms-server-sync.py <server_mods_dir> [pack_dir] [--prune]
+    mms-server-sync.py <server_mods_dir> [pack_dir] [--prune] [--hold FILE]
 
 Extracted verbatim from mms-deploy.sh so the prod flow (→ MMSLive01) and the
 test flow (→ MMSTesting01) share one implementation. pack_dir defaults to the
 directory this script lives in. Adds new released jars, removes superseded
 same-id jars, and refuses to downgrade a mod the server already runs a newer
 build of — all as extracted.
+
+`--hold FILE` reads a list of Fabric mod ids that this target owns and the pack
+must not touch: they are never added, never replaced by the pack's version, and
+never pruned. This exists for the testing lane, where a deliberately different
+build of a mod is the whole point and a prod deploy silently rolling it back to
+the released version destroys the thing under test. The never-downgrade guard
+below only catches the case where testing is running something NEWER; a hold is
+what protects an intentionally OLDER or side-branch build.
 
 It also reports jars the pack no longer lists at all (a mod deleted from the
 pack leaves no .pw.toml for the add loop to notice, so its jar used to live on
@@ -16,14 +24,44 @@ since a hand-installed server-only mod is indistinguishable from an orphan here.
 """
 import json, os, re, shutil, sys, urllib.parse, urllib.request, zipfile
 
-args = [a for a in sys.argv[1:] if not a.startswith('--')]
-prune = '--prune' in sys.argv[1:]
+raw_args = sys.argv[1:]
+prune = '--prune' in raw_args
+
+hold_file = None
+if '--hold' in raw_args:
+    i = raw_args.index('--hold')
+    if i + 1 >= len(raw_args):
+        sys.exit('--hold needs a file path')
+    hold_file = raw_args[i + 1]
+    raw_args = raw_args[:i] + raw_args[i + 2:]
+
+args = [a for a in raw_args if not a.startswith('--')]
 
 server_mods = args[0]
 pack_dir = args[1] if len(args) > 1 else os.path.dirname(os.path.abspath(__file__))
 mods_dir = os.path.join(pack_dir, 'mods')
 changed = False
 expected = set()   # filenames the pack expects this server to hold
+
+
+def read_hold(path):
+    """Fabric mod ids this target owns; the pack must not touch them."""
+    if not path:
+        return set()
+    if not os.path.exists(path):
+        print(f"!! hold file {path} not found — no mods held", file=sys.stderr)
+        return set()
+    ids = set()
+    for raw in open(path):
+        mid = raw.split('#', 1)[0].strip()
+        if mid:
+            ids.add(mid)
+    return ids
+
+
+held = read_hold(hold_file)
+if held:
+    print(f"hold: {len(held)} mod id(s) owned by this target — pack will not touch them")
 
 
 def mod_info(path):
@@ -84,6 +122,14 @@ for name in sorted(os.listdir(mods_dir)):
         urllib.request.urlretrieve(url, dest)
 
     new_id, new_ver = mod_info(dest)
+
+    # held: this target owns the mod. Drop the jar we just fetched and leave
+    # whatever the server is running completely alone — including not removing
+    # any same-id jar below, which is what would have reverted it.
+    if new_id in held:
+        os.remove(dest)
+        print(f"held  {new_id} — leaving this target's own build in place ({name})")
+        continue
 
     # never downgrade: if the server already runs a NEWER build of this mod
     # (e.g. a locally built mms-mod-compat-support ahead of its release),
@@ -173,6 +219,8 @@ for f in sorted(os.listdir(server_mods)):
     mid, _ = mod_info(os.path.join(server_mods, f))
     if mid is not None and mid in protected:
         continue  # dev build under test
+    if mid is not None and mid in held:
+        continue  # this target owns it
     orphans.append((f, mid))
 
 if orphans:

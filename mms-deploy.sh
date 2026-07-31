@@ -12,8 +12,11 @@
 # 5. ./update-title.sh         re-apply preserve flags
 # 6. commit + push             the packwiz changes; clients pick both up on
 #                              next Prism launch
-# 7. server sync               diff side=both/server mods against MMSLive01/mods,
+# 7. server sync (prod)        diff side=both/server mods against MMSLive01/mods,
 #                              copy new jars in, remove superseded versions
+# 8. server sync (testing)     same, against MMSTesting01/mods, but read-only
+#                              about anything the test lane owns — see
+#                              testing-hold.txt. Never prunes, never fatal.
 #
 # 0. client sweep (preflight)  remove hand-dropped jars in the live instance that
 #                              duplicate a packwiz-managed mod id. Runs FIRST, so
@@ -107,6 +110,32 @@ fi
 # the two servers. This was an inline copy that had already drifted from
 # mms-server-sync.py by the time it was noticed.
 python3 ./mms-server-sync.py "$SERVER_MODS"
+
+echo "── server sync (Server Testing / MMSTesting01) ──"
+# Testing used to be synced only by mms-deploy-test.sh, on the `testing` branch.
+# In practice that lane is paused, so every prod deploy left the test server a
+# little further behind until it was no longer a useful rehearsal of prod. This
+# brings it along with released mod updates.
+#
+# It is deliberately weaker than the prod sync:
+#   • --hold testing-hold.txt   mods the test lane owns are never touched
+#   • no --prune                a jar that is not in the pack is REPORTED, never
+#                               removed. The unstable quarantine (Aerial Hell,
+#                               DDD, Mutant Monsters, Useless Reptile) lives on
+#                               Testing and not in prod's pack, so a prune here
+#                               would wipe the entire quarantine.
+#   • non-fatal                 prod has already been synced by this point.
+#                               Testing being unmounted must not fail the deploy
+#                               or leave prod half-deployed.
+TEST_SERVER_MODS="$HOME/Documents/GitHub/Server Testing/mods"
+if [ ! -d "$TEST_SERVER_MODS" ]; then
+    echo "?? test server mods not mounted at $TEST_SERVER_MODS — skipped." >&2
+    echo "   (prod is already synced; re-run when the share is up to catch Testing up.)" >&2
+else
+    python3 ./mms-server-sync.py "$TEST_SERVER_MODS" . --hold testing-hold.txt || {
+        echo "?? testing sync reported problems — prod is unaffected." >&2
+    }
+fi
 
 # Gate the deploy on network-path drift, after the sync so it checks the state
 # the server will actually run. A mod that patches packet framing on only one
