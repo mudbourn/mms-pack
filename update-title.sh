@@ -31,9 +31,19 @@ PRESERVE_ENTRIES=(
   "config/xaero/minimap/Multiplayer_mc.mudbourn.info/config.txt"
 )
 for entry in "${PRESERVE_ENTRIES[@]}"; do
+  # An entry can legitimately leave the index — Easy Shop Mod renamed skin.png to
+  # a per-UUID filename, for one. Skip it rather than falling through to the sed:
+  # the address below is unescaped, so a path with slashes aborts the script under
+  # `set -e` and the pack.toml hash update at the bottom never runs.
+  if ! grep -q "file = \"$entry\"" "$PACK_DIR/index.toml"; then
+    echo "note: '$entry' is not in the index — preserve flag skipped."
+    continue
+  fi
   # Only add if not already present
   if ! grep -A2 "file = \"$entry\"" "$PACK_DIR/index.toml" | grep -q "preserve"; then
-    sed -i '' "/file = \"$entry\"/{
+    # escape / and & so a path with slashes is a valid sed address
+    esc=$(printf '%s' "$entry" | sed 's/[\/&]/\\&/g')
+    sed -i '' "/file = \"$esc\"/{
       n
       a\\
 preserve = true
