@@ -15,7 +15,7 @@ glintSpeed:0.5
 glintStrength:0.75
 graphicsPreset:"custom"
 prioritizeChunkUpdates:1
-fullscreen:true
+fullscreen:false
 gamma:0.0
 guiScale:2
 maxAnisotropyBit:1
@@ -63,8 +63,8 @@ damageTiltStrength:1.0
 highContrast:false
 highContrastBlockOutline:false
 narratorHotkey:true
-resourcePacks:["vanilla","file/FreshAnimations_v1.10.4","file/FA+Spiders-v2.2","file/FA+Emissive-v1.6","file/FA+Details-v2.2.1","file/FA+Creepers-v2.1","file/FA+All_Extensions-v1.8.1","controlify:legacy_console","alcocraftplus:3d_models","file/Mod Menu Helper","file/Chat Reporting Helper","continuity:glass_pane_culling_fix","file/FA+Objects-v2.1.2","file/Better-Leaves-9.5","file/Freshly Modded 3.0.3","file/Semos Animations Lib 2.0.3","file/Fresh Patch - Variants and Ventures","file/DetailedAnimationsV0.19","file/jobsplus_renames","file/rubide-retexture","file/aerialhell-trident-3d","file/lowlands-vanity","chloride:solid_chests","chloride:solid_beds","file/bountifulfish-anchor-3d","file/bountifulfish-tuna-3d","file/OriginsTweaks-resourcepack","file/toheee1234\u0027s Better Combat Animations"]
-incompatibleResourcePacks:["file/third_person_bow_fix","file/Fresh Patch - Variants and Ventures"]
+resourcePacks:["vanilla","file/FreshAnimations_v1.10.4","file/FA+Spiders-v2.2","file/FA+Emissive-v1.6","file/FA+Details-v2.2.1","file/FA+Creepers-v2.1","file/FA+All_Extensions-v1.8.1","controlify:legacy_console","alcocraftplus:3d_models","file/Mod Menu Helper","file/Chat Reporting Helper","continuity:glass_pane_culling_fix","file/FA+Objects-v2.1.2","file/Better-Leaves-9.5","file/Freshly Modded 3.0.3","file/Semos Animations Lib 2.0.3","file/Fresh Patch - Variants and Ventures","file/DetailedAnimationsV0.19","file/jobsplus_renames","file/lowlands-vanity","chloride:solid_chests","chloride:solid_beds","file/OriginsTweaks-resourcepack","file/aerialhell-trident-3d","file/bountifulfish-anchor-3d","file/bountifulfish-tuna-3d","file/rubide-retexture","file/toheee1234\u0027s Better Combat Animations"]
+incompatibleResourcePacks:["file/Fresh Patch - Variants and Ventures","file/OriginsTweaks-resourcepack","file/aerialhell-trident-3d","file/bountifulfish-anchor-3d","file/bountifulfish-tuna-3d","file/rubide-retexture"]
 lastServer:
 lang:en_us
 chatVisibility:0
@@ -193,12 +193,22 @@ key_net.clayborn.accurateblockplacement.togglefastbreaking:key.keyboard.unknown
 key_keybinds.bettercombat.feint:key.keyboard.unknown
 key_keybinds.bettercombat.toggle_mine_with_weapons:key.keyboard.unknown
 key_key.carry.desc:key.keyboard.c
+key_chloride.zoom:key.keyboard.unknown
 key_key.cinematic_respawn.skip_cinematic:key.keyboard.space
 key_keybinds.combat_roll.roll:key.keyboard.e
 key_key.combatamenities.backslot:key.keyboard.q
 key_key.combatamenities.beltslot:key.keyboard.v
 key_key.entityculling.toggle:key.keyboard.unknown
 key_key.entityculling.toggleBoxes:key.keyboard.unknown
+key_key.firstperson.toggle:key.keyboard.f6
+key_key.inspectanimations.inspect:key.keyboard.x
+key_key.inspectanimations.mod:key.keyboard.unknown
+key_key.inspectanimations.config:key.keyboard.unknown
+key_key.inspectanimations.play_turn:key.keyboard.unknown
+key_key.inspectanimations.play_toss:key.keyboard.unknown
+key_key.inspectanimations.play_flip:key.keyboard.unknown
+key_key.inspectanimations.play_flourish:key.keyboard.unknown
+key_key.inspectanimations.play_random:key.keyboard.unknown
 key_key.jeg.reload:key.keyboard.r
 key_key.jei.toggleOverlay:key.keyboard.unknown
 key_key.jei.focusSearch:key.keyboard.unknown
@@ -212,6 +222,7 @@ key_key.jei.showUses:key.keyboard.u
 key_key.jei.showUses2:key.mouse.right
 key_key.jei.transferRecipeBookmark:key.keyboard.unknown
 key_key.jei.maxTransferRecipeBookmark:key.keyboard.unknown
+key_key.jei.showBookmarkTooltipFeatures:key.keyboard.left.win
 key_key.jei.quickMove:key.keyboard.unknown
 key_key.jei.shareToChat:key.keyboard.unknown
 key_key.jei.clearSearchBar:key.mouse.right
@@ -229,6 +240,7 @@ key_key.jei.toggleWildcardHideIngredient:key.keyboard.unknown
 key_key.jei.recipeBack:key.keyboard.backspace
 key_key.jei.previousRecipePage:key.keyboard.page.up
 key_key.jei.nextRecipePage:key.keyboard.page.down
+key_key.jei.pauseRecipeCycling:key.keyboard.left.shift
 key_key.jei.previousCategory:key.keyboard.unknown
 key_key.jei.nextCategory:key.keyboard.unknown
 key_key.jei.closeRecipeGui:key.keyboard.escape
@@ -255,6 +267,10 @@ key_key.trashslot.toggle:key.keyboard.unknown
 key_key.trashslot.toggle_lock:key.keyboard.unknown
 key_key.trashslot.delete:key.keyboard.unknown
 key_key.trashslot.delete_all:key.keyboard.unknown
+key_key.uselessreptile.flyDownKey:key.keyboard.left.control
+key_key.uselessreptile.primaryAttackKey:key.keyboard.g
+key_key.uselessreptile.secondaryAttackKey:key.keyboard.v
+key_key.uselessreptile.freeLookKey:key.keyboard.unknown
 key_key.push_to_talk:key.keyboard.t
 key_key.whisper:key.keyboard.unknown
 key_key.mute_microphone:key.keyboard.y
@@ -297,13 +313,7 @@ key_gui.xaero_map_zoom_out:key.keyboard.unknown
 key_gui.xaero_quick_confirm:key.keyboard.unknown
 key_gui.xaero_toggle_dimension:key.keyboard.unknown
 key_key.yamlconfig.configs:key.keyboard.unknown
-key_iris.keybind.reload:key.keyboard.unknown
-key_iris.keybind.toggleShaders:key.keyboard.unknown
-key_iris.keybind.shaderPackSelection:key.keyboard.unknown
-key_iris.keybind.wireframe:key.keyboard.unknown
 key_lambdynlights.key.toggle_fps_dynamic_lighting:key.keyboard.unknown
-key_key.inspectanimations.config:key.keyboard.unknown
-key_key.uselessreptile.freeLookKey:key.keyboard.unknown
 soundCategory_master:1.0
 soundCategory_music:0.0
 soundCategory_record:0.6258802816901409

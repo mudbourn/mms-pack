@@ -17,9 +17,20 @@ file = "config/.puzzle_cache/mojangstudios.png"
 hash = "27d2a588a33e94aff8cea4ea6090509ab3e10640f980e63dfd317c6b0dcd30df"
 
 [[files]]
-file = "config/Easy Shop Mod/My Skin/skin.png"
+file = "config/Easy Shop Mod/AllPlayerSkins/49cad3d9-0ece-4536-b469-16b1c2c0fdd4.png"
 hash = "664ea2023ccb6d3a820ca533b876fc50d457f1727ae87ecfc846fffc61f85e89"
-preserve = true
+
+[[files]]
+file = "config/Easy Shop Mod/AllPlayerSkins/9f60298a-8245-404e-a0e3-b2041204abd6.png"
+hash = "664ea2023ccb6d3a820ca533b876fc50d457f1727ae87ecfc846fffc61f85e89"
+
+[[files]]
+file = "config/Easy Shop Mod/AllPlayerSkins/af6b013f-1910-41c6-b4a7-a35fe3c85972.png"
+hash = "664ea2023ccb6d3a820ca533b876fc50d457f1727ae87ecfc846fffc61f85e89"
+
+[[files]]
+file = "config/Easy Shop Mod/My Skin/49cad3d9-0ece-4536-b469-16b1c2c0fdd4.png"
+hash = "664ea2023ccb6d3a820ca533b876fc50d457f1727ae87ecfc846fffc61f85e89"
 
 [[files]]
 file = "config/EssentialCommands.properties"
@@ -52,6 +63,10 @@ hash = "2bf10a7e87b6da97b84c5051d8ad7d164881f949ab5c5aae672efdd9502a24d9"
 [[files]]
 file = "config/accurateblockplacement.properties"
 hash = "f7a77e760ea6b5c96e1c9b69078a1cec210d5ab4f669e50d4334364d960bf518"
+
+[[files]]
+file = "config/aerialhell/config.json"
+hash = "a98fc074af3e1b8a4ef3363c048b41068f4d8ed535b1a65225f77f4a4ee8f4ba"
 
 [[files]]
 file = "config/almanac-nbtFix.json5"
@@ -378,6 +393,38 @@ file = "config/attributefix/thermoo/min_temperature.json"
 hash = "dc27871d3f61f83edbdb3e87394066362747c34d2cd5807126836003422d812d"
 
 [[files]]
+file = "config/attributefix/uselessreptile/dragon.acceleration_duration.json"
+hash = "43aa2701d17e26c045533a5b0500fa8c0639d4e62adcccd389ba3426378a80c0"
+
+[[files]]
+file = "config/attributefix/uselessreptile/dragon.flying_rotation_speed.json"
+hash = "be435c39c71bce5c538212502623154c5b8c2b29591a88713cf414978973eaf2"
+
+[[files]]
+file = "config/attributefix/uselessreptile/dragon.ground_rotation_speed.json"
+hash = "be435c39c71bce5c538212502623154c5b8c2b29591a88713cf414978973eaf2"
+
+[[files]]
+file = "config/attributefix/uselessreptile/dragon.primary_attack_cooldown.json"
+hash = "43aa2701d17e26c045533a5b0500fa8c0639d4e62adcccd389ba3426378a80c0"
+
+[[files]]
+file = "config/attributefix/uselessreptile/dragon.secondary_attack_cooldown.json"
+hash = "43aa2701d17e26c045533a5b0500fa8c0639d4e62adcccd389ba3426378a80c0"
+
+[[files]]
+file = "config/attributefix/uselessreptile/dragon.special_attack_cooldown.json"
+hash = "43aa2701d17e26c045533a5b0500fa8c0639d4e62adcccd389ba3426378a80c0"
+
+[[files]]
+file = "config/attributefix/uselessreptile/dragon.vertical_speed.json"
+hash = "6b9b3d0281e3d07f12580d39983e2ac2eac90f30c739d743b84d55024c3651ed"
+
+[[files]]
+file = "config/attributefix/uselessreptile/moleclaw.mining_level.json"
+hash = "6b9b3d0281e3d07f12580d39983e2ac2eac90f30c739d743b84d55024c3651ed"
+
+[[files]]
 file = "config/audio_engine.json"
 hash = "67cdba9bb7997b14cdea56d990cfb2419357615f2d7c2122e94ebb093ada01a9"
 
@@ -447,7 +494,7 @@ hash = "0b05a8814f09fead55b1901b7efab7d3ab87227ea3fc6b5e65a6197261832710"
 
 [[files]]
 file = "config/biomeswevegone/world_generation.json"
-hash = "6fb6ff3e2cb4d1c47431b2e9fb48090fd985e0b43777949ec0c346cda85e532d"
+hash = "4e644f8324221022aed71d39b3d56a6cd189d5bd3f67c4aa72b889fb208421da"
 
 [[files]]
 file = "config/bobby.conf"
@@ -503,7 +550,7 @@ hash = "c7384a22595488f79f3125b22cc175eb729267267807a084479419349797abc8"
 
 [[files]]
 file = "config/cinematic_respawn.properties"
-hash = "f5ecfac92f84b432407be5cd4f8927cbbe4059b3631517b0e4e5a78679146c3e"
+hash = "87916243df3292a8da5a97b346411d78fbd9a06ee6d876526882dd3e85477b09"
 
 [[files]]
 file = "config/citresewn.json"
@@ -650,6 +697,14 @@ file = "config/creativecore.json"
 hash = "5f08d0878d7f89c6b4c947a49dce368d7738255d44fecf9aad59ec6ae8a4fcef"
 
 [[files]]
+file = "config/cristellib/aerialhell/structure_placement_config.json5"
+hash = "3ee7ea7a91c3f54894a60fd60c7ed481c743073f0f50b6bd50c49322339798d9"
+
+[[files]]
+file = "config/cristellib/aerialhell/structure_toggle_config.json5"
+hash = "e0a9594e8a0fe3a7f013208a21bd3377a0a5104a87a57e14b1ff5135fe593afc"
+
+[[files]]
 file = "config/cristellib/auto_config_settings.json5"
 hash = "de7b2c20171712fb50a7cce9481430d68a847bf669566ac8ac8957d32010e003"
 
@@ -712,6 +767,14 @@ hash = "b720892efb835f62afdc0572a751fce7cfb00a0d8bbcc6311e028d15ffb3b3d6"
 [[files]]
 file = "config/cristellib/jeg/structure_toggle_config.json5"
 hash = "705dede828f7579d2dae0de2d35a89f8e036efeec90c5ba180c83cb170e886ea"
+
+[[files]]
+file = "config/cristellib/mr_deadly_deadlydungeon/structure_placement_config.json5"
+hash = "52638592388dd510c024b67081406924b2a869cbc6a20070c7e90d78b6f907d1"
+
+[[files]]
+file = "config/cristellib/mr_deadly_deadlydungeon/structure_toggle_config.json5"
+hash = "1c391ac0be0fb9a55f696fbcbf05e20e839a82f5bd66beae9b3023bea60235e7"
 
 [[files]]
 file = "config/cristellib/mr_dungeons_andtaverns/structure_placement_config.json5"
@@ -867,7 +930,7 @@ hash = "89fe72875ce58b622de37198ec78e12131f5d413532ca93eeccd4fdf8561207b"
 
 [[files]]
 file = "config/fabric/indigo-renderer.properties"
-hash = "e97ceae31d7dd7fa026986ac1d925e5c761683038bca46a799472e761addc7b8"
+hash = "2ab5b878714ff39a8b152d29f87599690c3902c08778a287599673fd15719a11"
 
 [[files]]
 file = "config/fabric_loader_dependencies.json"
@@ -1059,7 +1122,7 @@ hash = "085914b91c46d0b29b5abd2660eb130bbebacaa5a6c2bccf28f7843e955dd6be"
 
 [[files]]
 file = "config/jei/world/server/mudbourn_s_MC_Server__MMS__30c7fcbc/lookupHistory.json"
-hash = "1696af57d923603603e384e287ee4f1a149175e3abf3a27e6c142ab6710515b7"
+hash = "a1a12ff8b7cd2e7c00a8f2e246cc8b5ab1488c10d158567da8ee33bc19fe6594"
 
 [[files]]
 file = "config/jobsplus/jobsplus-client.yaml"
@@ -1083,7 +1146,7 @@ hash = "682a46ed63e3265a9dd957de41b9e0242173d827201a278c24f8c718f5be7120"
 
 [[files]]
 file = "config/lazy-ai.json"
-hash = "c01a3013164e55a5b04c87ff33e72684cde7ec1a55cc0ce5b3381de687256ed7"
+hash = "cc27264b73619f297602993804291e7c7656b880e3b225138f6415a1ea1d664e"
 
 [[files]]
 file = "config/leavesbegone-server.toml"
@@ -1136,6 +1199,10 @@ hash = "73bb2137cff797a371ec44762aa73e923dc60b5d7412a53fef93e137359e7e31"
 [[files]]
 file = "config/mms_compat_metro.json"
 hash = "7d15e6e49d073d4ae71cf2f5f4aabc69284460767fb40d7486012b476c64249e"
+
+[[files]]
+file = "config/mms_compat_pose.json"
+hash = "43175e9dce5083c0e0489a58655e9a5f78050c5db08f2f016d6c4b33b3c3b2b8"
 
 [[files]]
 file = "config/mob-ai-tweaks/blacklists/allay_weapons.txt"
@@ -1347,7 +1414,11 @@ hash = "a3fd1a8094c822b4f890772c80d0281d7783658a629523a187a676c635c739f8"
 
 [[files]]
 file = "config/moreculling.toml"
-hash = "20f68961868f3146c0aa82814bfaacee7b365b64e86f3e19fc977bfe809b09f3"
+hash = "72c385dfd11eff3aa3d0ade26934e3e0aa2893927bb354a197b89a847b28a870"
+
+[[files]]
+file = "config/mutantmonsters-common.toml"
+hash = "0a0cb641efaf57d4f868dbae201c51d91041246233aa472fef1aaef500572211"
 
 [[files]]
 file = "config/noisium.json"
@@ -1371,7 +1442,7 @@ hash = "a5505cd0e3503f6f212defe46aebaaf432b1d9a2a04c2b706cf7ec3b691c4b4d"
 
 [[files]]
 file = "config/packetfixer.properties"
-hash = "fa72968da64ccc84b8154678385c51512d5b87f05782a4e772798e896eb55760"
+hash = "7b7cb1bc266177fe31165e3c56ce773e319158f7bc848c89f3dc6a3e9f0c3bd3"
 
 [[files]]
 file = "config/pal.properties"
@@ -1443,7 +1514,7 @@ hash = "6b44bfd3fc7ee9d8f589425503e2af2748aa274d080f6d270d34cbc1b5604d45"
 
 [[files]]
 file = "config/rsls.properties"
-hash = "f34da20efc57c7a7ea9e4282d13469479503936f107185ebfbb42b5c50149db6"
+hash = "885e137c7e92862b309f107492075e373e4a6bdcd4d05748bd9f816409e7faa9"
 
 [[files]]
 file = "config/rusticdelight.json"
@@ -1659,6 +1730,18 @@ file = "config/tweaksdelight.json"
 hash = "ca69162ca0a257fdcf01c52a8cb9b8770b6b1796f858f55f896b52dd7999e1b8"
 
 [[files]]
+file = "config/uselessreptile.json5"
+hash = "6baeaa82a358480ae3fc7c76122a262046e16100d286ad5f62ceaa580fb3cbed"
+
+[[files]]
+file = "config/uselessreptile_client.json5"
+hash = "2de1709abaa5b543cecf2b0d04721349abaf7741fc082513f6afbd58a2ccc454"
+
+[[files]]
+file = "config/uselessreptile_mob_attributes.json5"
+hash = "b622260958cf648d8c4b146cdaf26f7f0aff6666de3b8cde7ed7ce3e3c8e2352"
+
+[[files]]
 file = "config/vanilla_structures/placement_structure_config-had-error.json5"
 hash = "1f069468e438ae66f65ee41732603c895741b063add626a9e56ef7d0040ac4e6"
 
@@ -1680,7 +1763,7 @@ hash = "3722e961204446525a1057da429c14898cf9f2244870aec769d8784585b6656c"
 
 [[files]]
 file = "config/vmp.properties"
-hash = "bde1e12a5233fbb4af33da5d51a655d62889c956ad9f0e4585b10109d89e6a2d"
+hash = "97df10ab6cf17631d580d2e8a5227e6eea20fe71c2c22b967527cf471c27f5d7"
 
 [[files]]
 file = "config/voicechat/category-volumes.properties"
@@ -1693,6 +1776,10 @@ hash = "cd385ca1eeda4df612631e2713cc6d503793157ef8bd5518d736429e6c1ae474"
 [[files]]
 file = "config/voicechat/translations.properties"
 hash = "b258a94a5ed60fbf93b66c452c3d6e36b044f630741f90e5b13852a4805b235e"
+
+[[files]]
+file = "config/voicechat/username-cache.json"
+hash = "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
 
 [[files]]
 file = "config/voicechat/voicechat-client.properties"
@@ -1741,6 +1828,10 @@ hash = "6a1e96f817a80ee722c51e0d452c647b419f5daa7bfa9f68f0dfceba8d1da9c2"
 [[files]]
 file = "config/waila/waila_plugins.json5"
 hash = "de3bbe7d98aae38b97f41f47beb1b7b4893b9372f8c88c891d82958b23068155"
+
+[[files]]
+file = "config/waterconfig.toml"
+hash = "e5806ca350b26f9c299c7b75728f3f9c0664c286470daa027e4ce547097b90a5"
 
 [[files]]
 file = "config/weaponsexpanded.json"
@@ -3129,7 +3220,7 @@ hash = "944f75feb78961494b253915d1e66c6572ae717c891d7e5d0f3bb50c56d16cab"
 
 [[files]]
 file = "options.txt"
-hash = "c1fa8ba1c0ef13f73c6a36b6b4d1927d6fefca587fc884ffaae34cb81c45a419"
+hash = "e63de5b3388ac7111948b1bfffb6d340a5cb6ea9f6322d49d1b8a0a51a164808"
 preserve = true
 
 [[files]]
@@ -28258,7 +28349,7 @@ hash = "f57c80c65fd7a03651490fe81bb69b705d4a9fa2d497ea61bf45c57246efbe2b"
 
 [[files]]
 file = "resourcepacks/bountifulfish-anchor-3d/assets/bountiful-fish/models/item/anchor_3d.json"
-hash = "36a1b31605a11ea1c3cfd713aaf8e882a6f567de63daed31823066cf4c6092a8"
+hash = "58fd9ae281aef888cb9d355bd6883ac02ed65bdc390cb63dbc7a6471eb63913d"
 
 [[files]]
 file = "resourcepacks/bountifulfish-anchor-3d/assets/bountiful-fish/textures/item/anchor_3d.png"
