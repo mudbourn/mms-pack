@@ -2,7 +2,7 @@
 version = 1
 disableParticles = false
 byTypeReductions = {  }
-maxParticlesPerSheet = 16384
+maxParticlesPerSheet = 12000
 particleRenderDistanceMultiplier = 1.0
 asynchronousTicking = true
 cullingBlacklist = [  ]

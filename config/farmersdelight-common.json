@@ -1,11 +1,6 @@
 {
   "#README": "This config file does not support comments. To see them configure it in-game using YACL or Cloth Config (or just use Forge)",
   "settings": {
-    "enableVanillaCropCrates": true,
-    "farmersBuyFDCrops": true,
-    "wanderingTraderSellsFDItems": true,
-    "richSoilBoostChance": 0.2,
-    "cuttingBoardFortuneBonus": 0.1,
     "enableRopeReeling": true,
     "canvasSignDarkBackgroundList": [
       "gray",
@@ -18,16 +13,22 @@
     ]
   },
   "farming": {
-    "defaultTomatoVineRope": "farmersdelight:rope",
-    "enableTomatoVineClimbingTaggedRopes": true
+    "richSoilBoostChance": 0.2,
+    "enableTomatoVineClimbingTaggedRopes": true,
+    "defaultTomatoVineRope": "farmersdelight:rope"
   },
-  "recipe_book": {
-    "enableRecipeBookCookingPot": true
+  "crafting": {
+    "enableCookingPotRecipeBook": true,
+    "enableVanillaCropCrates": true,
+    "cuttingBoardFortuneBonus": 0.1,
+    "farmersBuyFDCrops": true,
+    "wanderingTraderSellsFDItems": true
   },
   "overrides": {
-    "vanillaSoupExtraEffects": true,
-    "rabbitStewBuff": true,
-    "dispenserUsesToolsOnCuttingBoard": true,
+    "enableVanillaSoupExtraEffects": true,
+    "enableRabbitStewBuff": true,
+    "enablePumpkinPieSneakToPlace": false,
+    "enableCuttingBoardDispenserBehavior": true,
     "stack_size": {
       "enableStackableSoupItems": true,
       "soupItemList": [
@@ -39,36 +40,10 @@
   },
   "world": {
     "generateFDChestLoot": true,
-    "genVillageCompostHeaps": true,
-    "genFDCropsOnVillageFarms": true,
-    "wild_cabbages": {
-      "chance": 30
-    },
-    "wild_beetroots": {
-      "chance": 30
-    },
-    "wild_potatoes": {
-      "chance": 100
-    },
-    "wild_carrots": {
-      "chance": 120
-    },
-    "wild_onions": {
-      "chance": 120
-    },
-    "wild_tomatoes": {
-      "chance": 100
-    },
-    "wild_rice": {
-      "chance": 20
-    },
-    "brown_mushroom_colonies": {
-      "genBrownMushroomColony": true,
-      "chance": 15
-    },
-    "red_mushroom_colonies": {
-      "genRedMushroomColony": true,
-      "chance": 15
-    }
+    "generateVillageCompostHeaps": true,
+    "generateFDCropsOnVillageFarms": true
+  },
+  "debug": {
+    "enableTomatoRopePermanence": true
   }
 }

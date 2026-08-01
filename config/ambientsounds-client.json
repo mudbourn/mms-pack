@@ -2,7 +2,7 @@
   "general": {
     "engines": 0,
     "volume": 0.3486590087413788,
-    "useSoundMasterSource": false,
+    "useSoundMasterSource": true,
     "scanStepAmount": 100,
     "playSoundWithOffset": true
   },
@@ -204,11 +204,11 @@
   },
   "categories": {
     "animal": {
-      "animal": 1,
+      "animal": 0,
       "bird": {
-        "bird": 1,
-        "bird_day": 1,
-        "bird_night": 1
+        "bird": 0,
+        "bird_day": 0,
+        "bird_night": 0
       },
       "cicadas": 1,
       "cricket": {
