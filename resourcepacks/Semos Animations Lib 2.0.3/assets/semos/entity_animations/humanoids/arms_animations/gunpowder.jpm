@@ -1,0 +1,35 @@
+{
+	"credit": "Created by Semos for Freshly Modded",
+	"animations": [
+		{
+			"var.riffle_right_arm_rx": "if(varb.attack,var.axe_right_arm_rx,varb.agressive,torad(head_pitch+280-sin(age/100)*1),torad(-40))",
+			"var.riffle_right_arm_ry": "if(varb.attack,var.axe_right_arm_ry,varb.agressive,torad(head_yaw-15+sin(age/100)*1),torad(-90))",
+			"var.riffle_right_arm_rz": "if(varb.attack,var.axe_right_arm_rz,varb.agressive,torad(0),torad(0))",
+			"var.riffle_right_arm_tx": "if(varb.attack,var.axe_right_arm_tx,varb.agressive,-5,-7)",
+			"var.riffle_right_arm_ty": "if(varb.attack,var.axe_right_arm_ty,varb.agressive,2,-2)",
+			"var.riffle_right_arm_tz": "if(varb.attack,var.axe_right_arm_tz,varb.agressive,0,if(varb.chestplate,4.5,3.5))",
+			
+			"var.riffle_left_arm_rx": "if(varb.attack,var.axe_left_arm_rx,varb.agressive,torad(head_pitch+280-sin(age/100)*1),torad(-40))",
+			"var.riffle_left_arm_ry": "if(varb.attack,var.axe_left_arm_ry,varb.agressive,torad(head_yaw+15+sin(age/100)*1),torad(90))",
+			"var.riffle_left_arm_rz": "if(varb.attack,var.axe_left_arm_rz,varb.agressive,torad(0),torad(0))",
+			"var.riffle_left_arm_tx": "if(varb.attack,var.axe_left_arm_tx,varb.agressive,5,7)",
+			"var.riffle_left_arm_ty": "if(varb.attack,var.axe_left_arm_ty,varb.agressive,2,-2)",
+			"var.riffle_left_arm_tz": "if(varb.attack,var.axe_left_arm_tz,varb.agressive,0,if(varb.chestplate,4.5,3.5))",
+			
+			
+			"var.pistol_right_arm_rx": "if(varb.attack,var.axe_right_arm_rx,varb.agressive,torad(head_pitch+280-sin(age/100)*1),torad(-25))",
+			"var.pistol_right_arm_ry": "if(varb.attack,var.axe_right_arm_ry,varb.agressive,torad(head_yaw-15+sin(age/100)*1),torad(0))",
+			"var.pistol_right_arm_rz": "if(varb.attack,var.axe_right_arm_rz,varb.agressive,torad(0),torad(0))",
+			"var.pistol_right_arm_tx": "if(varb.attack,var.axe_right_arm_tx,varb.agressive,-5,if(varb.chestplate,-4.2,-3.5))",
+			"var.pistol_right_arm_ty": "if(varb.attack,var.axe_right_arm_ty,varb.agressive,2,2)",
+			"var.pistol_right_arm_tz": "if(varb.attack,var.axe_right_arm_tz,varb.agressive,0,6)",
+			
+			"var.pistol_left_arm_rx": "if(varb.attack,var.axe_left_arm_rx,varb.agressive,torad(head_pitch+280-sin(age/100)*1),torad(-25))",
+			"var.pistol_left_arm_ry": "if(varb.attack,var.axe_left_arm_ry,varb.agressive,torad(head_yaw+15+sin(age/100)*1),torad(0))",
+			"var.pistol_left_arm_rz": "if(varb.attack,var.axe_left_arm_rz,varb.agressive,torad(0),torad(0))",
+			"var.pistol_left_arm_tx": "if(varb.attack,var.axe_left_arm_tx,varb.agressive,5,if(varb.chestplate,4.2,3.5))",
+			"var.pistol_left_arm_ty": "if(varb.attack,var.axe_left_arm_ty,varb.agressive,2,2)",
+			"var.pistol_left_arm_tz": "if(varb.attack,var.axe_left_arm_tz,varb.agressive,0,6)"
+		}
+	]
+}

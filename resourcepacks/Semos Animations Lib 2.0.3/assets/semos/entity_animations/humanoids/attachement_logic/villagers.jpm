@@ -1,0 +1,30 @@
+{
+	"credit": "By Seb_Semos",
+	"animations": [
+		{
+			//Arms animations
+			//Right
+			"right_arm.rx":"var.right_arm_idle_rx",
+			"right_arm.ry":"var.right_arm_idle_ry",
+			"right_arm.rz":"var.right_arm_idle_rz",
+			//Left
+			"left_arm.rx":"var.left_arm_idle_rx",
+			"left_arm.ry":"var.left_arm_idle_ry",
+			"left_arm.rz":"var.left_arm_idle_rz"
+		},
+		{	
+			"right_sleeve.rx":"right_arm.rx",
+			"right_sleeve.ry":"right_arm.ry",
+			"right_sleeve.rz":"right_arm.rz",
+			"right_sleeve.tx":"right_arm.tx",
+			"right_sleeve.ty":"right_arm.ty",
+			"right_sleeve.tz":"right_arm.tz",
+			"left_sleeve.rx":"left_arm.rx",
+			"left_sleeve.ry":"left_arm.ry",
+			"left_sleeve.rz":"left_arm.rz",
+			"left_sleeve.tx":"left_arm.tx",
+			"left_sleeve.ty":"left_arm.ty",
+			"left_sleeve.tz":"left_arm.tz"
+		}
+	]
+}

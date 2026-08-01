@@ -1,0 +1,63 @@
+{
+	"credit": "By Seb_Semos",
+	"animations": [
+		{
+			//Make attachement points to have zero rotations when the entity use weapons
+			"cancel_body_ry.ry":"if(varb.working||varb.merchant,-body.ry,torad(0))",
+			"cancel_body_rx.rx":"if(varb.working||varb.merchant,-body.rx,torad(0))",
+			"cancel_body_rz.rz":"if(varb.working||varb.merchant,-body.rz,torad(0))",
+			
+			//Right hand attachement point maths |
+			"right_handheld_item.rx":"if(varb.merchant,var.arm_right_arm_rx,varb.fisherman,var.fishing_rod_right_arm_rx,varb.shepherd,var.shears_right_arm_rx,var.tool_right_arm_rx)",
+			"right_handheld_item.ry":"if(varb.merchant,var.arm_right_arm_ry,varb.fisherman,var.fishing_rod_right_arm_ry,varb.shepherd,var.shears_right_arm_ry,var.tool_right_arm_ry)",
+			"right_handheld_item.rz":"if(varb.merchant,var.arm_right_arm_rz,varb.fisherman,var.fishing_rod_right_arm_rz,varb.shepherd,var.shears_right_arm_rz,var.tool_right_arm_rz)",
+			"right_handheld_item.tx":"if(varb.merchant,var.arm_right_arm_tx,varb.fisherman,var.fishing_rod_right_arm_tx,varb.shepherd,var.shears_right_arm_tx,var.tool_right_arm_tx)",
+			"right_handheld_item.ty":"if(varb.merchant,var.arm_right_arm_ty,varb.fisherman,var.fishing_rod_right_arm_ty,varb.shepherd,var.shears_right_arm_ty,var.tool_right_arm_ty)",
+			"right_handheld_item.tz":"if(varb.merchant,var.arm_right_arm_tz,varb.fisherman,var.fishing_rod_right_arm_tz,varb.shepherd,var.shears_right_arm_tz,var.tool_right_arm_tz)",
+			"right_handheld_item.sx":"if(varb.inflate_right_hand,0.6,1)",
+			"right_handheld_item.sy":"if(varb.inflate_right_hand,0.6,1)",
+			"right_handheld_item.sz":"if(varb.inflate_right_hand,0.6,1)",
+			
+			//Left hand attachement point maths |
+			"left_handheld_item.rx":"if(varb.merchant,var.arm_left_arm_rx,varb.fisherman,var.fishing_rod_left_arm_rx,varb.shepherd,var.shears_left_arm_rx,var.tool_left_arm_rx)",
+			"left_handheld_item.ry":"if(varb.merchant,var.arm_left_arm_ry,varb.fisherman,var.fishing_rod_left_arm_ry,varb.shepherd,var.shears_left_arm_ry,var.tool_left_arm_ry)",
+			"left_handheld_item.rz":"if(varb.merchant,var.arm_left_arm_rz,varb.fisherman,var.fishing_rod_left_arm_rz,varb.shepherd,var.shears_left_arm_rz,var.tool_left_arm_rz)",
+			"left_handheld_item.tx":"if(varb.merchant,var.arm_left_arm_tx,varb.fisherman,var.fishing_rod_left_arm_tx,varb.shepherd,var.shears_left_arm_tx,var.tool_left_arm_tx)",
+			"left_handheld_item.ty":"if(varb.merchant,var.arm_left_arm_ty,varb.fisherman,var.fishing_rod_left_arm_ty,varb.shepherd,var.shears_left_arm_ty,var.tool_left_arm_ty)",
+			"left_handheld_item.tz":"if(varb.merchant,var.arm_left_arm_tz,varb.fisherman,var.fishing_rod_left_arm_tz,varb.shepherd,var.shears_left_arm_tz,var.tool_left_arm_tz)",
+			"left_handheld_item.sx":"if(varb.inflate_left_hand,0.6,1)",
+			"left_handheld_item.sy":"if(varb.inflate_left_hand,0.6,1)",
+			"left_handheld_item.sz":"if(varb.inflate_left_hand,0.6,1)",			
+			
+			//Arms animations
+			//Right
+			"right_arm.rx":"if(is_right_handed,if(varb.working,right_handheld_item.rx,var.right_arm_idle_rx),var.right_arm_idle_rx)",
+			"right_arm.ry":"if(is_right_handed,if(varb.working,right_handheld_item.ry,var.right_arm_idle_ry),var.right_arm_idle_ry)",
+			"right_arm.rz":"if(is_right_handed,if(varb.working,right_handheld_item.rz,var.right_arm_idle_rz),var.right_arm_idle_rz)",
+			"right_arm.tx":"body.tx-5",
+			"right_arm.ty":"body.ty+2",
+			"right_arm.tz":"body.tz",
+			//Left
+			"left_arm.rx":"if(!is_right_handed,if(varb.working,left_handheld_item.rx,var.left_arm_idle_rx),var.left_arm_idle_rx)",
+			"left_arm.ry":"if(!is_right_handed,if(varb.working,left_handheld_item.ry,var.left_arm_idle_ry),var.left_arm_idle_ry)",
+			"left_arm.rz":"if(!is_right_handed,if(varb.working,left_handheld_item.rz,var.left_arm_idle_rz),var.left_arm_idle_rz)",
+			"left_arm.tx":"body.tx+5",
+			"left_arm.ty":"body.ty+2",
+			"left_arm.tz":"body.tz"
+		},
+		{	
+			"right_sleeve.rx":"right_arm.rx",
+			"right_sleeve.ry":"right_arm.ry",
+			"right_sleeve.rz":"right_arm.rz",
+			"right_sleeve.tx":"right_arm.tx",
+			"right_sleeve.ty":"right_arm.ty",
+			"right_sleeve.tz":"right_arm.tz",
+			"left_sleeve.rx":"left_arm.rx",
+			"left_sleeve.ry":"left_arm.ry",
+			"left_sleeve.rz":"left_arm.rz",
+			"left_sleeve.tx":"left_arm.tx",
+			"left_sleeve.ty":"left_arm.ty",
+			"left_sleeve.tz":"left_arm.tz"
+		}
+	]
+}

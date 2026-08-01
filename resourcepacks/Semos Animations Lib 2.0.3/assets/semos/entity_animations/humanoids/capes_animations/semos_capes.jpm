@@ -1,0 +1,8 @@
+{
+	"credit": "Created by Semos for Freshly Modded",
+	"animations": [
+		{
+			"semos_cape.rx": "-if(varb.back_shield,torad(5),if(var.fall==1,torad(135)+sin(age/2)/5,if(var.jump==1,-torad(45)+sin(age/10)/5,if(limb_speed>0.1,torad(45*limb_speed)+(sin(age/10)/10),(torad(10)+(sin(age/10)/30)))))) "
+		}
+	]
+}

@@ -1,0 +1,94 @@
+{
+	"credit":"By Seb_Semos",
+	"animations":[
+		{
+			//Idle variables		
+			//Swiming
+			"var.right_arm_idle_swim_rx":"torad(-50)-cos(var.swim)/4*clamp(1-limb_speed*8,0,1)+(cos(var.swim+sin(var.swim))+torad(30))*clamp(limb_speed*8,0,1)",
+            "var.right_arm_idle_swim_ry":"torad(30)-sin(var.swim+cos(var.swim)/4)*clamp(1-limb_speed*8,0,1)+(torad(5)+cos(pi/8+var.swim+sin(var.swim)/2)/2+clamp(-sin(var.swim),-pi/2,0))*clamp(limb_speed*8,0,1)",
+            "var.right_arm_idle_swim_rz":"-cos(var.swim)/2+(torad(20)+cos(var.swim)/2)*clamp(limb_speed*8,0,1)",
+            "var.left_arm_idle_swim_rx":"torad(-50)-cos(var.swim)/4*clamp(1-limb_speed*8,0,1)+(cos(var.swim+sin(var.swim))+torad(30))*clamp(limb_speed*8,0,1)",
+            "var.left_arm_idle_swim_ry":"torad(-30)+sin(var.swim+cos(var.swim)/4)*clamp(1-limb_speed*8,0,1)+(torad(-5)-cos(pi/8+var.swim+sin(var.swim)/2)/2+clamp(sin(var.swim),0,pi/2))*clamp(limb_speed*8,0,1)",
+            "var.left_arm_idle_swim_rz":"cos(var.swim)/2+(torad(-20)-cos(var.swim)/2)*clamp(limb_speed*8,0,1)",
+			//Idle state
+			"var.right_arm_rx":"((-sin(var.ls)*limb_speed)+torad(head_yaw)/8)+torad(5)*var.pose+(-sin(-pi/3+var.r+var.b+sin(var.r+var.b))/6)+(sin(limb_swing/2)-pi/4)/2*if(is_hurt,-sin(hurt_time*pi/5)/6*hurt_time,0)",
+			"var.right_arm_ry":"(-torad(15)*clamp(limb_speed*4,0,1)+cos(var.r+var.b)/30)-torad(20)*var.pose",
+			"var.right_arm_rz":"-torad(head_pitch)/14+torad(8+0.5*var.pose)",
+			"var.left_arm_rx":"((sin(var.ls)*limb_speed)-torad(head_yaw)/8)+torad(5)*var.pose+(-sin(-pi/3+var.r+var.b+sin(var.r+var.b))/6)+(sin(limb_swing/2)-pi/4)/2*if(is_hurt,-sin(hurt_time*pi/5)/6*hurt_time,0)",
+			"var.left_arm_ry":"(+torad(15)*clamp(limb_speed*4,0,1)-cos(var.r+var.b)/30)+torad(20)*var.pose",
+			"var.left_arm_rz":"+torad(head_pitch)/14+torad(-8+0.5*var.pose)",
+			//Door opening
+			"var.right_arm_idle_door_rx":"torad(-90+swing_progress)",
+            "var.left_arm_idle_door_rx":"torad(-90+swing_progress)",
+
+			//Right
+			"var.right_arm_idle_rx":"if(varb.in_water,var.right_arm_idle_swim_rx,varb.open_door_right_hand,var.right_arm_idle_door_rx,is_riding,torad(-45),var.right_arm_rx)",
+			"var.right_arm_idle_ry":"if(varb.in_water,var.right_arm_idle_swim_ry,is_riding,torad(20),var.right_arm_ry)",
+			"var.right_arm_idle_rz":"if(varb.in_water,var.right_arm_idle_swim_rz,var.right_arm_rz)",
+			//Left
+			"var.left_arm_idle_rx":"if(varb.in_water,var.left_arm_idle_swim_rx,varb.open_door_left_hand,var.left_arm_idle_door_rx,is_riding,torad(-45),var.left_arm_rx)",
+			"var.left_arm_idle_ry":"if(varb.in_water,var.left_arm_idle_swim_ry,is_riding,torad(-20),var.left_arm_ry)",
+			"var.left_arm_idle_rz":"if(varb.in_water,var.left_arm_idle_swim_rz,var.left_arm_rz)",
+			//Tools
+			//Right
+			"var.tool_right_arm_rx": "if(varb.working,if(varb.breaking,clamp(head_pitch,torad(-10),torad(10))+torad(-45+(sin(age)*25)),right_arm.rx),torad(35))",
+			"var.tool_right_arm_ry": "if(varb.working,if(varb.breaking,torad(10),right_arm.ry),torad(180))",
+			"var.tool_right_arm_rz": "if(varb.working,if(varb.breaking,torad(-15),right_arm.rz),torad(0))",
+			"var.tool_right_arm_tx": "if(varb.working,right_arm.tx,if(varb.leggings,4,3.5))",
+			"var.tool_right_arm_ty": "if(varb.working,right_arm.ty,2)",
+			"var.tool_right_arm_tz": "if(varb.working,right_arm.tz,0)",
+			//Left
+			"var.tool_left_arm_rx": "if(varb.working,if(varb.breaking,torad(-45+(sin(age)*25)),left_arm.rx),torad(35))",
+			"var.tool_left_arm_ry": "if(varb.working,if(varb.breaking,torad(0),left_arm.ry),torad(180))",
+			"var.tool_left_arm_rz": "if(varb.working,if(varb.breaking,torad(45),left_arm.rz),torad(0))",
+			"var.tool_left_arm_tx": "if(varb.working,left_arm.tx,if(varb.leggings,-4,-3.5))",
+			"var.tool_left_arm_ty": "if(varb.working,left_arm.ty,2)",
+			"var.tool_left_arm_tz": "if(varb.working,left_arm.tz,0)",
+			//Sheperd
+			//Right
+			"var.shears_right_arm_rx": "if(varb.working,right_arm.rx,torad(90))",
+			"var.shears_right_arm_ry": "if(varb.working,right_arm.ry,torad(0))",
+			"var.shears_right_arm_rz": "if(varb.working,right_arm.rz,torad(0))",
+			"var.shears_right_arm_tx": "if(varb.working,right_arm.tx,1.5)",
+			"var.shears_right_arm_ty": "if(varb.working,right_arm.ty,4)",
+			"var.shears_right_arm_tz": "if(varb.working,right_arm.tz,if(varb.chestplate,-12.2,-11.2)",
+			//Left
+			"var.shears_left_arm_rx": "if(varb.working,left_arm.rx,torad(90))",
+			"var.shears_left_arm_ry": "if(varb.working,left_arm.ry,torad(0))",
+			"var.shears_left_arm_rz": "if(varb.working,left_arm.rz,torad(-90))",
+			"var.shears_left_arm_tx": "if(varb.working,left_arm.tx,-5.5)",
+			"var.shears_left_arm_ty": "if(varb.working,left_arm.ty,10)",
+			"var.shears_left_arm_tz": "if(varb.working,left_arm.tz,if(varb.chestplate,-12.2,-11.2))",
+			//Fisherman
+			//Right
+			"var.fishing_rod_right_arm_rx": "if(varb.working,right_arm.rx,torad(-35))",
+			"var.fishing_rod_right_arm_ry": "if(varb.working,right_arm.ry,torad(90))",
+			"var.fishing_rod_right_arm_rz": "if(varb.working,right_arm.rz,torad(0))",
+			"var.fishing_rod_right_arm_tx": "if(varb.working,right_arm.tx,9)",
+			"var.fishing_rod_right_arm_ty": "if(varb.working,right_arm.ty,2)",
+			"var.fishing_rod_right_arm_tz": "if(varb.working,right_arm.tz,if(varb.chestplate,2.5,1.5))",
+			//Left
+			"var.fishing_rod_left_arm_rx": "if(varb.working,left_arm.rx,torad(-35))",
+			"var.fishing_rod_left_arm_ry": "if(varb.working,left_arm.ry,torad(-90))",
+			"var.fishing_rod_left_arm_rz": "if(varb.working,left_arm.rz,torad(0))",
+			"var.fishing_rod_left_arm_tx": "if(varb.working,left_arm.tx,-9)",
+			"var.fishing_rod_left_arm_ty": "if(varb.working,left_arm.ty,2)",
+			"var.fishing_rod_left_arm_tz": "if(varb.working,left_arm.tz,if(varb.chestplate,2.5,1.5))",
+			//No special held location
+			//Right
+			"var.arm_right_arm_rx": "var.right_arm_idle_rx",
+			"var.arm_right_arm_ry": "var.right_arm_idle_ry",
+			"var.arm_right_arm_rz": "var.right_arm_idle_rz",
+			"var.arm_right_arm_tx": "right_arm.tx",
+			"var.arm_right_arm_ty": "right_arm.ty",
+			"var.arm_right_arm_tz": "right_arm.tz",
+			//Left
+			"var.arm_left_arm_rx": "var.left_arm_idle_rx",
+			"var.arm_left_arm_ry": "var.left_arm_idle_ry",
+			"var.arm_left_arm_rz": "var.left_arm_idle_rz",
+			"var.arm_left_arm_tx": "left_arm.tx",
+			"var.arm_left_arm_ty": "left_arm.ty",
+			"var.arm_left_arm_tz": "left_arm.tz"
+		}
+	]
+}

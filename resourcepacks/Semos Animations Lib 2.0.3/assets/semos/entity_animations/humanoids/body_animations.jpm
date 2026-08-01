@@ -1,0 +1,84 @@
+{
+	"credit": "Created by Semos for Freshly Modded",
+	"animations": [
+		//var.head_ty_fix, var.body_ty_fix & var.leg_ty_fix are model dependant to fix various height accros different mods and version (ex:"model": "semos:entity_animations/non_lib_animations/fmrp/fmrp_guard_villagers.jpm")
+		{ 	
+			"head.rx":"if(varb.is_magic_mob&&varb.is_doing_magic,torad(-25),if(varb.eat,head.rx,sin(torad(90)+var.ls*2)/8*limb_speed+torad(10)+clamp(-torad(10)*(limb_speed*3),torad(-10),0)+sin(torad(-90)+var.b)/40+torad(head_pitch-15)/1.4-(sin(swing_progress*pi*2)/3)))",
+			"head.ry":"torad(head_yaw)/1.2",
+			"head.rz":"sin(torad(180)+var.ls)/15*limb_speed+torad(head_yaw)/4",
+			"head.tx":"-sin(var.ls)*limb_speed",
+			"head.ty":"var.head_ty_fix+0.5+(sin(var.b)/4-sin(torad(if(limb_speed>=0.6,-45,45))+var.ls*2+if(limb_speed>=0.6,0,-cos(var.ls*2)/3))*1.5*limb_speed)/1+(sin(pi*swing_progress)*2)+if(is_riding,0,0)",
+			"head.tz":"-sin(var.b)/4+(sin(-pi*swing_progress)*2)",
+			"body.rx":"((sin(limb_swing+age/11)/40)*(1-limb_speed))+torad(5)*limb_speed",
+			"body.ry":"-sin(limb_swing/1.2)/5*limb_speed/1.3",
+			"body.rz":"sin(torad(45)+limb_swing/1.2)/15*limb_speed/1.3",
+			"body.tx":"head.tx",
+			"body.ty":"head.ty+var.body_ty_fix",
+			"body.tz":"head.tz"	
+		},
+		{
+			"left_leg.rx":"if(is_riding,torad(-80),varb.in_water,-sin(limb_swing+age/4)/1.5,((sin(limb_swing+age/13)/40)*(1-limb_speed))-sin(limb_swing/1.2)*limb_speed/1.3+torad(10)*limb_speed)+torad(head_yaw)/30",
+			"left_leg.ry":"clamp(torad(-5)+limb_speed,torad(-5),0)+if(is_riding,torad(-20),0)",
+			"left_leg.rz":"if(varb.in_water,clamp((-sin(limb_swing/10)),torad(-7.5),torad(7.5)),clamp(torad(-1)+limb_speed,torad(-1),0))",
+			"left_leg.tx":"2",
+			"left_leg.ty":"var.leg_ty_fix+clamp(12+(sin(torad(-90)+limb_swing/1.2)*3)*limb_speed+(1*limb_speed),0,12.2)",
+			"left_leg.tz":"sin(limb_swing/1.2)*1.2*limb_speed+if(is_riding,0,-sin(limb_swing+age/13)/3)-torad(head_yaw)/2",
+			"right_leg.rx":"if(is_riding,torad(-80),varb.in_water,sin(limb_swing+age/4)/1.5,((sin(limb_swing+age/13)/40)*(1-limb_speed))+sin(limb_swing/1.2)*limb_speed/1.3+torad(10)*limb_speed)-torad(head_yaw)/30",
+			"right_leg.ry":"clamp(torad(2)-limb_speed,0,torad(2))+if(is_riding,torad(20),0)",
+			"right_leg.rz":"if(varb.in_water,clamp((sin(limb_swing/10)),torad(-7.5),torad(7.5)),clamp(torad(1)-limb_speed,0,torad(1)))",
+			"right_leg.tx":"-2",
+			"right_leg.ty":"var.leg_ty_fix+clamp(12+(sin(torad(90)+limb_swing/1.2)*3)*limb_speed+(1*limb_speed),0,12.2)",
+			"right_leg.tz":"-sin(limb_swing/1.2)*1.2*limb_speed+if(is_riding,0,-sin(limb_swing+age/13)/3)+torad(head_yaw)/2"
+		},
+		{
+			//Extra parts to match their correspondings
+			//Sleeves are matched in arms attachement logic part
+			"hat.rx":"if(varb.following_hat,hat.rx,head.rx)",
+			"hat.ry":"if(varb.following_hat,hat.ry,head.ry)",
+			"hat.rz":"if(varb.following_hat,hat.rz,head.rz)",
+			"hat.tx":"if(varb.following_hat,hat.tx,head.tx)",
+			"hat.ty":"if(varb.following_hat,hat.ty,head.ty)",
+			"hat.tz":"if(varb.following_hat,hat.tz,head.tz)",
+			"headwear.rx":"if(varb.following_headwear,headwear.rx,head.rx)",
+			"headwear.ry":"if(varb.following_headwear,headwear.ry,head.ry)",
+			"headwear.rz":"if(varb.following_headwear,headwear.rz,head.rz)",
+			"headwear.tx":"if(varb.following_headwear,headwear.tx,head.tx)",
+			"headwear.ty":"if(varb.following_headwear,headwear.ty,head.ty)",
+			"headwear.tz":"if(varb.following_headwear,headwear.tz,head.tz)",
+			"jacket.rx":"body.rx",
+			"jacket.ry":"body.ry",
+			"jacket.rz":"body.rz",
+			"jacket.tx":"body.tx",
+			"jacket.ty":"body.ty",
+			"jacket.tz":"body.tz",
+			"right_pants.rx":"right_leg.rx",
+			"right_pants.ry":"right_leg.ry",
+			"right_pants.rz":"right_leg.rz",
+			"right_pants.tx":"right_leg.tx",
+			"right_pants.ty":"right_leg.ty",
+			"right_pants.tz":"right_leg.tz",
+			"left_pants.rx":"left_leg.rx",
+			"left_pants.ry":"left_leg.ry",
+			"left_pants.rz":"left_leg.rz",
+			"left_pants.tx":"left_leg.tx",
+			"left_pants.ty":"left_leg.ty",
+			"left_pants.tz":"left_leg.tz"			
+		},
+		//Cloak is assumed to be a cape (Frostologer from Frostiful mod)
+		{
+			"cloak.rx":"semos_cape.rx",
+			"cloak.tx":"-body.tx",
+			"cloak.ty":"body.ty",
+			"cloak.tz":"-body.tz"			
+		},
+		//"Folded arms mobs animations"
+		{
+			"arms.tx":"body.tx",
+			"arms.ty":"body.ty+2.5",
+			"arms.tz":"body.tz-1",
+			"middle_closed_arm.tx":"head.tx",
+			"middle_closed_arm.ty":"head.ty+2.5",
+			"middle_closed_arm.tz":"head.tz-1"
+		}
+	]
+}

@@ -1,0 +1,10 @@
+{
+	"credit": "Created by Semos for Freshly Modded",
+	"animations": [
+		{
+			"cape.tx":"body.tx",
+			"cape.ty":"body.ty",
+			"cape.tz":"4+body.tz"
+		}
+	]
+}

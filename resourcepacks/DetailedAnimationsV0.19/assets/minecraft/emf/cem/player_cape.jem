@@ -36,9 +36,9 @@
 					"var.cbtxd": "(var.lcbtx - var.cbtx) / var.CDT * var.NewFrame",
 					"var.cbtyd": "(var.lcbty - var.cbty) / var.CDT * var.NewFrame",
 					"var.cbtzd": "(var.lcbtz - var.cbtz) / var.CDT * var.NewFrame",
-					"var.VerticalVelocity": "var.VerticalVelocity + (limb_speed* 0.005 * abs(var.move_forward) - var.cbtyd * 0.005 - var.cbtzd * 0.01 + var.cbrxd * 0.05) * var.CDT + ((0 - var.VerticalVelocity / 0.25) - var.Vertical) / 128 * var.PDT",
+					"var.VerticalVelocity": "var.VerticalVelocity + (limb_speed * (1 - var.is_riding) * 0.005 * abs(var.move_forward) - var.cbtyd * 0.005 - var.cbtzd * 0.01 + var.cbrxd * 0.05) * var.CDT + ((0 - var.VerticalVelocity / 0.25) - var.Vertical) / 128 * var.PDT",
 					"var.Vertical": "var.Vertical * if(abs(var.Vertical) > torad(90), 0.9, 1) + (var.cbtyd * 0.005 + var.cbtzd * 0.01 - var.VelocityY * 0.2) * var.CDT + var.VerticalVelocity * var.PDT",
-					"var.HorizontalVelocity": "var.HorizontalVelocity + (var.AvgSpeed * 0.05 * -var.move_strafing + var.cbtxd * 0.01 + var.cbryd * 0.05 + var.cbrzd * 0.05) * var.CDT + ((0 - var.HorizontalVelocity / 0.25) - var.Horizontal) / 64 * var.PDT",
+					"var.HorizontalVelocity": "var.HorizontalVelocity + (var.AvgSpeed * (1 - var.is_riding) * 0.05 * -var.move_strafing + var.cbtxd * 0.01 + var.cbryd * 0.05 + var.cbrzd * 0.05) * var.CDT + ((0 - var.HorizontalVelocity / 0.25) - var.Horizontal) / 64 * var.PDT",
 					"var.Horizontal": "var.Horizontal + (var.HorizontalVelocity) * var.CDT"
 				},
 				{
