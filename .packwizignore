@@ -3,6 +3,7 @@
 *.mrpack
 /mms-add.sh
 /mms-remove.sh
+/mms-release.sh
 /mms-deploy.sh
 /update-title.sh
 /disabled-mods/**
