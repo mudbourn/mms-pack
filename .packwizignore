@@ -2,6 +2,7 @@
 /xaero/world-map/**
 *.mrpack
 /mms-add.sh
+/mms-remove.sh
 /mms-deploy.sh
 /update-title.sh
 /disabled-mods/**

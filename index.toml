@@ -1343,7 +1343,7 @@ hash = "902b29e5f2044fa0011ac76281c700b52d83f1b5db6b605b8f702c8a99a55a2b"
 
 [[files]]
 file = "config/modpack_defaults/options.txt"
-hash = "e07848d6fa6f4b3bc95ab9f79c505a859ea6cca57c615870911ff15634e0e4c9"
+hash = "a3fd1a8094c822b4f890772c80d0281d7783658a629523a187a676c635c739f8"
 
 [[files]]
 file = "config/moreculling.toml"
@@ -1850,10 +1850,6 @@ hash = "a7cf1d5d5e2a62c2067fa8432a480b698c64678173a985222f0848923f380a82"
 [[files]]
 file = "mms-promote.sh"
 hash = "64f81500a87015325e8884679671382f5e4e013915097c5c31171fe4c53b8404"
-
-[[files]]
-file = "mms-remove.sh"
-hash = "ec3d7dfc8dfad8da28ff6f62bcf1c1960734bc74aa643d1ef24e38410be1b9dd"
 
 [[files]]
 file = "mms-server-sync.py"
@@ -3133,7 +3129,7 @@ hash = "944f75feb78961494b253915d1e66c6572ae717c891d7e5d0f3bb50c56d16cab"
 
 [[files]]
 file = "options.txt"
-hash = "26311657eb85079e05b37532b14393a19f8bd6d8e828131aeddf72780906603b"
+hash = "c1fa8ba1c0ef13f73c6a36b6b4d1927d6fefca587fc884ffaae34cb81c45a419"
 preserve = true
 
 [[files]]
@@ -21685,6 +21681,38 @@ file = "resourcepacks/DetailedAnimationsV0.19/.mms-armor-jem-backup/player_slim_
 hash = "788c106356b9ce708da17a7f6b403e5f5d0c601bbfa35e3b24045dba51f8cee5"
 
 [[files]]
+file = "resourcepacks/DetailedAnimationsV0.19/.mms-crossbow-backup/player.jem"
+hash = "32c7d8a2174c41daf6e34b46c29df6238644b4afffe98abfe1a104b5cda5e3c1"
+
+[[files]]
+file = "resourcepacks/DetailedAnimationsV0.19/.mms-crossbow-backup/player_slim.jem"
+hash = "6595f3fb75603363450bdc40b7869c41c7c60070590e5844cc530c4e4e694093"
+
+[[files]]
+file = "resourcepacks/DetailedAnimationsV0.19/.mms-preteststate-backup/player.jem"
+hash = "d8f1be3bb012664d405978368e57b900e19861cd0bd4caeb56cc9de93c2c5073"
+
+[[files]]
+file = "resourcepacks/DetailedAnimationsV0.19/.mms-preteststate-backup/player_inner_armor.jem"
+hash = "8a501d6acc2b3644009d5a3e9ab32049fc3e6033f6d4a9ce13280ed01cfe1934"
+
+[[files]]
+file = "resourcepacks/DetailedAnimationsV0.19/.mms-preteststate-backup/player_outer_armor.jem"
+hash = "788c106356b9ce708da17a7f6b403e5f5d0c601bbfa35e3b24045dba51f8cee5"
+
+[[files]]
+file = "resourcepacks/DetailedAnimationsV0.19/.mms-preteststate-backup/player_slim.jem"
+hash = "d66c8c639e35fd7209a910f5957ed4f72c5dfa3ebb684862c0942497117f0d40"
+
+[[files]]
+file = "resourcepacks/DetailedAnimationsV0.19/.mms-preteststate-backup/player_slim_inner_armor.jem"
+hash = "16c0243aa2de11b20270f01b357f736ad081ed911194688f19de239d99e34b67"
+
+[[files]]
+file = "resourcepacks/DetailedAnimationsV0.19/.mms-preteststate-backup/player_slim_outer_armor.jem"
+hash = "788c106356b9ce708da17a7f6b403e5f5d0c601bbfa35e3b24045dba51f8cee5"
+
+[[files]]
 file = "resourcepacks/DetailedAnimationsV0.19/.mms-riding-backup/player.jem"
 hash = "80ac044713ad2a0b04310193ff7574f4e608a6f58d4e5e33680eb091778c711b"
 
@@ -21710,7 +21738,7 @@ hash = "d8f1be3bb012664d405978368e57b900e19861cd0bd4caeb56cc9de93c2c5073"
 
 [[files]]
 file = "resourcepacks/DetailedAnimationsV0.19/assets/minecraft/emf/cem/player_cape.jem"
-hash = "8b4f3e5338c8e6c381a30f8b079fc1c388b79cf47339bb9d277809f07d961111"
+hash = "23d76b0f34e67c15dba601cb1ea795dd41e73f09f31d7b188093b121039d3f98"
 
 [[files]]
 file = "resourcepacks/DetailedAnimationsV0.19/assets/minecraft/emf/cem/player_ears.jem"
@@ -21718,11 +21746,11 @@ hash = "9340361d36821bf921a787218ac1965c706dd1d412b47e24b930ec7fe61c5325"
 
 [[files]]
 file = "resourcepacks/DetailedAnimationsV0.19/assets/minecraft/emf/cem/player_inner_armor.jem"
-hash = "8a501d6acc2b3644009d5a3e9ab32049fc3e6033f6d4a9ce13280ed01cfe1934"
+hash = "8b4d693906fc09bfb46d6a61ad6527ccac52865ea6a1de69f5f9449d2cb38a26"
 
 [[files]]
 file = "resourcepacks/DetailedAnimationsV0.19/assets/minecraft/emf/cem/player_outer_armor.jem"
-hash = "788c106356b9ce708da17a7f6b403e5f5d0c601bbfa35e3b24045dba51f8cee5"
+hash = "54df3e6c585f3063b9507e318cf025c2f21ba5e1fc18aa8afa75f9c15196c162"
 
 [[files]]
 file = "resourcepacks/DetailedAnimationsV0.19/assets/minecraft/emf/cem/player_slim.jem"
@@ -21730,11 +21758,11 @@ hash = "d66c8c639e35fd7209a910f5957ed4f72c5dfa3ebb684862c0942497117f0d40"
 
 [[files]]
 file = "resourcepacks/DetailedAnimationsV0.19/assets/minecraft/emf/cem/player_slim_inner_armor.jem"
-hash = "16c0243aa2de11b20270f01b357f736ad081ed911194688f19de239d99e34b67"
+hash = "b51350c00ae72c89448d804c5ceee02e442d239a0ced52f2e6a6a349a3c7c0ea"
 
 [[files]]
 file = "resourcepacks/DetailedAnimationsV0.19/assets/minecraft/emf/cem/player_slim_outer_armor.jem"
-hash = "788c106356b9ce708da17a7f6b403e5f5d0c601bbfa35e3b24045dba51f8cee5"
+hash = "54df3e6c585f3063b9507e318cf025c2f21ba5e1fc18aa8afa75f9c15196c162"
 
 [[files]]
 file = "resourcepacks/DetailedAnimationsV0.19/pack.mcmeta"
@@ -27813,6 +27841,166 @@ file = "resourcepacks/Mod Menu Helper/pack.png"
 hash = "2cc1f8c9bd888865ba3789e226092cc7ef9d095e5d930390db74dfb62023949f"
 
 [[files]]
+file = "resourcepacks/OriginsTweaks-resourcepack/LICENSE_originstweaks"
+hash = "cb625d60af98f5f0533de7a651d54a522b8ce919b0184e90873fff286bb914cd"
+
+[[files]]
+file = "resourcepacks/OriginsTweaks-resourcepack/assets/origins/lang/de_de.json"
+hash = "36393d15cf918629a66b9bd7366b3b358ef2cce9c0d3b617384c63afae8a53f7"
+
+[[files]]
+file = "resourcepacks/OriginsTweaks-resourcepack/assets/originstweaks/icon.png"
+hash = "fba3b102468c72f3711b3717122ff2f76eb436bd5a6814a1369688cfa2d2ac85"
+
+[[files]]
+file = "resourcepacks/OriginsTweaks-resourcepack/assets/originstweaks/lang/de_de.json"
+hash = "f2ce6393d8dd812a352761d042f10adcadcafed045a924bd774bd8ace6cbe6fa"
+
+[[files]]
+file = "resourcepacks/OriginsTweaks-resourcepack/assets/originstweaks/lang/en_gb.json"
+hash = "eb98ff79720c49cb0330dee1a294a87b7813b1a69933343bb8510c7bd4612a5c"
+
+[[files]]
+file = "resourcepacks/OriginsTweaks-resourcepack/assets/originstweaks/lang/en_us.json"
+hash = "1d76004f75badc6131fb5946bbf8f34fa6fe05b07544252b50db2b8e1ac4cb32"
+
+[[files]]
+file = "resourcepacks/OriginsTweaks-resourcepack/assets/originstweaks/lang/ru_ru.json"
+hash = "52102a6eb8484f406bc8e7275637bb3225c969da6e8e98b2dfec83b64d85721b"
+
+[[files]]
+file = "resourcepacks/OriginsTweaks-resourcepack/assets/originstweaks/textures/entity/wings.png"
+hash = "1f6388d0ff4d871329aa6d0b713cdbfb48781c55da1e055d156f6681d63018f2"
+
+[[files]]
+file = "resourcepacks/OriginsTweaks-resourcepack/pack.mcmeta"
+hash = "b395ae466a4a4789d2f0817eb4efa390805260073e0b4988a38f505bd77eb33a"
+
+[[files]]
+file = "resourcepacks/Semos Animations Lib 2.0.3/assets/semos/entity_animations/classic_player/classic_player_animations.jpm"
+hash = "c370880784297c18f3cdac557b265c6963d6666ac7df3899c548dc6183705192"
+
+[[files]]
+file = "resourcepacks/Semos Animations Lib 2.0.3/assets/semos/entity_animations/humanoids/arms_animations/common_weapons.jpm"
+hash = "6f7e972ea4df2e8f86f7cfb170198b5996dc351f9fda181f1965fd66b7a3932a"
+
+[[files]]
+file = "resourcepacks/Semos Animations Lib 2.0.3/assets/semos/entity_animations/humanoids/arms_animations/common_weapons_with_cross.jpm"
+hash = "b3840413909eff1423d82e8ba70da9e6cc58dfcc3cf3fb2d12f93186adaf87db"
+
+[[files]]
+file = "resourcepacks/Semos Animations Lib 2.0.3/assets/semos/entity_animations/humanoids/arms_animations/gunpowder.jpm"
+hash = "e9eb1b84c71d922ce08bae024da151cc8392b33b33a4ba82f89921de40e23f86"
+
+[[files]]
+file = "resourcepacks/Semos Animations Lib 2.0.3/assets/semos/entity_animations/humanoids/arms_animations/other_melee.jpm"
+hash = "6a1b454c1d0ed0709e350e285ffa3c1c2d2982e2518c38f998f4aa2d2e8cef39"
+
+[[files]]
+file = "resourcepacks/Semos Animations Lib 2.0.3/assets/semos/entity_animations/humanoids/arms_animations/villagers.jpm"
+hash = "b068ad797daf9eea1a11406d5f3c55ada9391ea2b0c662ef660f44a9e19c6700"
+
+[[files]]
+file = "resourcepacks/Semos Animations Lib 2.0.3/assets/semos/entity_animations/humanoids/arms_animations/workers.jpm"
+hash = "e768ade9e69c1be57a975a14430f29d75f4dcf320ec741425dccc07bbca5ee14"
+
+[[files]]
+file = "resourcepacks/Semos Animations Lib 2.0.3/assets/semos/entity_animations/humanoids/attachement_logic/common.jpm"
+hash = "659d4c5c80c01858519820bf5c4914a1d06e0477b4922ac79e76e40e90ac6129"
+
+[[files]]
+file = "resourcepacks/Semos Animations Lib 2.0.3/assets/semos/entity_animations/humanoids/attachement_logic/crossed_arms.jpm"
+hash = "3f8c303dae7cb05dc49d0d430f2b057f490e5cb777e557cafd45bd1fb37a4bb9"
+
+[[files]]
+file = "resourcepacks/Semos Animations Lib 2.0.3/assets/semos/entity_animations/humanoids/attachement_logic/handitems.jpm"
+hash = "4fee1f44f73789b92c82a7a8020612d6fb1379e03370bc26ae5721b6cbaf0754"
+
+[[files]]
+file = "resourcepacks/Semos Animations Lib 2.0.3/assets/semos/entity_animations/humanoids/attachement_logic/no_aggro.jpm"
+hash = "9953cf1ef092c0a494c79fbc09b420bb8b9a198af1bc4dfd0dfe62fbb69c4be0"
+
+[[files]]
+file = "resourcepacks/Semos Animations Lib 2.0.3/assets/semos/entity_animations/humanoids/attachement_logic/villagers.jpm"
+hash = "69804cdb92e77fcf1337aa7e3e39ef9bf03edcf6e0a1260a7e47281cfccc7776"
+
+[[files]]
+file = "resourcepacks/Semos Animations Lib 2.0.3/assets/semos/entity_animations/humanoids/attachement_logic/workers.jpm"
+hash = "bb1724d0d2e6a05646e0cfab89373c63eb6047c69d9990d46c6db26c95d45e1e"
+
+[[files]]
+file = "resourcepacks/Semos Animations Lib 2.0.3/assets/semos/entity_animations/humanoids/body_animations.jpm"
+hash = "6e23f96550925d6981aa09f87ed44c45e5fb3b2b70fe9aa515ea1ef3ba2be3c0"
+
+[[files]]
+file = "resourcepacks/Semos Animations Lib 2.0.3/assets/semos/entity_animations/humanoids/capes_animations/frosty_capes.jpm"
+hash = "64108afb8ecf54863189a66ae5d4ae5c7885c35aeabcfd213596f47c2628e323"
+
+[[files]]
+file = "resourcepacks/Semos Animations Lib 2.0.3/assets/semos/entity_animations/humanoids/capes_animations/iceologer_capes.jpm"
+hash = "835971c8586f2efbe0a1a003d71eb5ae646b50c62bf14f9b87e9f36c09c2fda4"
+
+[[files]]
+file = "resourcepacks/Semos Animations Lib 2.0.3/assets/semos/entity_animations/humanoids/capes_animations/semos_capes.jpm"
+hash = "1f285084b9dc68bcb8f078d58fd1a74a650843777668921afa4a76a142920ffd"
+
+[[files]]
+file = "resourcepacks/Semos Animations Lib 2.0.3/assets/semos/entity_animations/humanoids/common_variables.jpm"
+hash = "64fe68fc07cf8b63172291b45c70fc738fbb6568465969aabd6186046eadb80a"
+
+[[files]]
+file = "resourcepacks/Semos Animations Lib 2.0.3/assets/semos/entity_animations/humanoids/face_animations/eyes_magic.jpm"
+hash = "918f34f30a6e673eef22c68d1c1363c130482bfb9017d45f170de546cba1656b"
+
+[[files]]
+file = "resourcepacks/Semos Animations Lib 2.0.3/assets/semos/entity_animations/humanoids/face_animations/eyes_universal.jpm"
+hash = "7484104582fa3f92675e0b07f24dbd0e3f49e286c3b52aec71dcd3a4ed5979d0"
+
+[[files]]
+file = "resourcepacks/Semos Animations Lib 2.0.3/assets/semos/entity_animations/humanoids/face_animations/guards_1.jpm"
+hash = "aa6d81eb3de313a97c92a8b61e57531ec4a188dd67045d66d0d240add4b9b61f"
+
+[[files]]
+file = "resourcepacks/Semos Animations Lib 2.0.3/assets/semos/entity_animations/humanoids/face_animations/steve_1.jpm"
+hash = "ed4e8f7964c62fd4af2cf8f6bb60767724e5194671993c7f457816ab885a645d"
+
+[[files]]
+file = "resourcepacks/Semos Animations Lib 2.0.3/assets/semos/entity_animations/humanoids/face_animations/villagers_1.jpm"
+hash = "ef44cb3cde91d80d41fe7f620a510273d65ded863d90ce36fdfee63ff3a2a603"
+
+[[files]]
+file = "resourcepacks/Semos Animations Lib 2.0.3/assets/semos/entity_animations/humanoids/weapon_detection/handitems.jpm"
+hash = "331235c398a07124f87deeacedf6d9ba881db63162f0d7f50b6d1dc0234876e8"
+
+[[files]]
+file = "resourcepacks/Semos Animations Lib 2.0.3/assets/semos/entity_animations/humanoids/weapon_detection/inventory.jpm"
+hash = "23671ae6775c24f6b96c4090d4ba07828724f785994a275b8c26dc72a4cf2a6e"
+
+[[files]]
+file = "resourcepacks/Semos Animations Lib 2.0.3/assets/semos/entity_animations/humanoids/weapon_detection/items.jpm"
+hash = "d412c06211e7160b8274ccc013e90bebfd6963b68143b5d40f0f0a194307e189"
+
+[[files]]
+file = "resourcepacks/Semos Animations Lib 2.0.3/assets/semos/entity_animations/humanoids/workers_variables.jpm"
+hash = "b6ea3f2a5dd7f6d5a2caa787f53ac974abd7a5563442280527da73d3888fd9a9"
+
+[[files]]
+file = "resourcepacks/Semos Animations Lib 2.0.3/assets/semos/entity_animations/test.jpm"
+hash = "82dc2c8a83fcae4ce9a29268fe57447a4c60407433d44046cf9c27309fa3d7be"
+
+[[files]]
+file = "resourcepacks/Semos Animations Lib 2.0.3/assets/semos/parts/attachement_points/humanoids_attachement_points.jpm"
+hash = "8c7824adc0ce3c99b5a56ab44189329f5155a70240ba30fd99d2f20c727218dc"
+
+[[files]]
+file = "resourcepacks/Semos Animations Lib 2.0.3/pack.mcmeta"
+hash = "79aa8bcdc2420ece9c3acecfa06f6faa94e49b1738a8508573a05305d60b6b65"
+
+[[files]]
+file = "resourcepacks/Semos Animations Lib 2.0.3/pack.png"
+hash = "0fd38d514acc949b9b31ffd140b45cf4599e4d2b365b8131df20bc7e5a138508"
+
+[[files]]
 file = "resourcepacks/SodiumTranslations/assets/sodium/lang/ar_sa.json"
 hash = "dfa94acd66d301a9998854f5fb664c0305d3cc11bb790b7cfe01b84aef446936"
 
@@ -28129,6 +28317,142 @@ file = "resourcepacks/third_person_bow_fix/pack.mcmeta"
 hash = "6c9c5b061b154cef1cbd3b6269635e79f6215495be8c138785069cb273d41d90"
 
 [[files]]
+file = "resourcepacks/toheee1234's Better Combat Animations/assets/bettercombat/player_animations/.mms-swingfix-backup/one_handed_slash_horizontal_left.json.was-two-handed"
+hash = "d56e8db21df703dd34db745898c2ebda810438c64365c1acf0c5d4839da48bc0"
+
+[[files]]
+file = "resourcepacks/toheee1234's Better Combat Animations/assets/bettercombat/player_animations/dual_handed_slash_cross.json"
+hash = "2f577b2f6855d8dcef934a38aa8343e33a6162edd7510544339f200d4c9a0ad1"
+
+[[files]]
+file = "resourcepacks/toheee1234's Better Combat Animations/assets/bettercombat/player_animations/dual_handed_slash_uncross.json"
+hash = "ab504ad204604bb100b5f120f7d5fe39e902c771fc141e9734758fa5a40c3494"
+
+[[files]]
+file = "resourcepacks/toheee1234's Better Combat Animations/assets/bettercombat/player_animations/dual_handed_stab.json"
+hash = "a53ad75b2ae9895b8a6a8bd1b87b2cd5ec0f9c8340c389ff8b62001dd383f0ec"
+
+[[files]]
+file = "resourcepacks/toheee1234's Better Combat Animations/assets/bettercombat/player_animations/one_handed_punch.json"
+hash = "8f679079c31408e0b393a54d557ef2ea4c6378ff2cd48a72ffe96ac2525026e1"
+
+[[files]]
+file = "resourcepacks/toheee1234's Better Combat Animations/assets/bettercombat/player_animations/one_handed_slam.json"
+hash = "7fc90fd1a98c09fb8725c818a547b49e1c4cea3cd4b20355e6092ae6b6d229f9"
+
+[[files]]
+file = "resourcepacks/toheee1234's Better Combat Animations/assets/bettercombat/player_animations/one_handed_slash_horizontal_left.json"
+hash = "4899fec86002f74363c3b8f48a5fa48ff02e23ddbc7b34f5fc4abae3cbfc7723"
+
+[[files]]
+file = "resourcepacks/toheee1234's Better Combat Animations/assets/bettercombat/player_animations/one_handed_slash_horizontal_right.json"
+hash = "ad384af80040f61b541e47bcca395070a8aea7d7e274fd1dbc985f7044f1fad8"
+
+[[files]]
+file = "resourcepacks/toheee1234's Better Combat Animations/assets/bettercombat/player_animations/one_handed_slash_switch_blade_left.json"
+hash = "090fe905844382c4d4938aaeed3d78f569f59bc6e3285f99c228aa5ca1c78bf4"
+
+[[files]]
+file = "resourcepacks/toheee1234's Better Combat Animations/assets/bettercombat/player_animations/one_handed_slash_switch_blade_right.json"
+hash = "c2f02d56bc45ea6402ef20ebf5f7578eef4fb25ec16f8c42d6afd1ff78f04700"
+
+[[files]]
+file = "resourcepacks/toheee1234's Better Combat Animations/assets/bettercombat/player_animations/one_handed_stab.json"
+hash = "1eca2f62e9d8dccc211e5a7ad13506a0496bd14c3fe7b3ef812d79e2baa847a5"
+
+[[files]]
+file = "resourcepacks/toheee1234's Better Combat Animations/assets/bettercombat/player_animations/one_handed_stab_mounted.json"
+hash = "9a147f71ed05927d37674d86da7c92065535cd33065b1bddcdb329d55845cc1b"
+
+[[files]]
+file = "resourcepacks/toheee1234's Better Combat Animations/assets/bettercombat/player_animations/one_handed_swipe_horizontal_right.json"
+hash = "c51287b85e07c93ad05706dde2d3dc5c387aa6b1923952f92ec1ffe0622f7d8f"
+
+[[files]]
+file = "resourcepacks/toheee1234's Better Combat Animations/assets/bettercombat/player_animations/one_handed_uppercut_right.json"
+hash = "1beac6c7a4bb785db373dbdff9bdd3b2edea9af9ab0686182650384e9d706120"
+
+[[files]]
+file = "resourcepacks/toheee1234's Better Combat Animations/assets/bettercombat/player_animations/pose_one_handed_backwards.json"
+hash = "ee059612a734bac88844ab1072fa12e48c9d75950cf34fe2e9a95634fcad79fa"
+
+[[files]]
+file = "resourcepacks/toheee1234's Better Combat Animations/assets/bettercombat/player_animations/pose_two_handed_bow.json"
+hash = "bc3df05df99c50b20a25319df8789081bf273fda089eb2595c00479bb9ca1169"
+
+[[files]]
+file = "resourcepacks/toheee1234's Better Combat Animations/assets/bettercombat/player_animations/pose_two_handed_crossbow.json"
+hash = "19318fd3e345a29fc21cd5f2eee006501db1b5b933a46b9f56ba398d9fb4f16f"
+
+[[files]]
+file = "resourcepacks/toheee1234's Better Combat Animations/assets/bettercombat/player_animations/pose_two_handed_heavy.json"
+hash = "7021b903de735d6b842231df74e38d73bba72c5039ab54bb46417d594d7ef5ee"
+
+[[files]]
+file = "resourcepacks/toheee1234's Better Combat Animations/assets/bettercombat/player_animations/pose_two_handed_katana.json"
+hash = "ff20fe6fb0af33f68825b8220f87cb704cb1958f35d3c54a47ebadad820cb513"
+
+[[files]]
+file = "resourcepacks/toheee1234's Better Combat Animations/assets/bettercombat/player_animations/pose_two_handed_polearm.json"
+hash = "a5f1c5dd78a948500ab69ec8fe965154d2b1fc058a5a0b2fe7561e6bf0032362"
+
+[[files]]
+file = "resourcepacks/toheee1234's Better Combat Animations/assets/bettercombat/player_animations/pose_two_handed_scythe.json"
+hash = "510ca8e2c3a6a73d5b052e3b63d7e18bd6e12a9e7c4fca5dca1076277a2ed6e3"
+
+[[files]]
+file = "resourcepacks/toheee1234's Better Combat Animations/assets/bettercombat/player_animations/pose_two_handed_sword.json"
+hash = "88d0438d869a1d95fae4d63273efec4827ba50ec81ca3528296c31f686c73c39"
+
+[[files]]
+file = "resourcepacks/toheee1234's Better Combat Animations/assets/bettercombat/player_animations/two_handed_slam.json"
+hash = "f33fb74a8113fc80a734f42dc12f0b729ae6a98258cbb46d771638cf3695ad7a"
+
+[[files]]
+file = "resourcepacks/toheee1234's Better Combat Animations/assets/bettercombat/player_animations/two_handed_slam_heavy.json"
+hash = "cc4ed4b8c9c7121f56328e5dcf2767e9413f5c902678efe7318d596965564039"
+
+[[files]]
+file = "resourcepacks/toheee1234's Better Combat Animations/assets/bettercombat/player_animations/two_handed_slash_horizontal_left.json"
+hash = "d56e8db21df703dd34db745898c2ebda810438c64365c1acf0c5d4839da48bc0"
+
+[[files]]
+file = "resourcepacks/toheee1234's Better Combat Animations/assets/bettercombat/player_animations/two_handed_slash_horizontal_right.json"
+hash = "61c7db867c8c4b989c1cd3626a91cdb67b977ff27626d0914600db7f300ec7c2"
+
+[[files]]
+file = "resourcepacks/toheee1234's Better Combat Animations/assets/bettercombat/player_animations/two_handed_slash_vertical_left.json"
+hash = "f663e8ffc98c4d9d548dd0e80dac8c734ff7ab7cbe8499b65e0ef6ad66340b62"
+
+[[files]]
+file = "resourcepacks/toheee1234's Better Combat Animations/assets/bettercombat/player_animations/two_handed_slash_vertical_right.json"
+hash = "1af7b207c46ba61d452d21005b5ea7280ef5287194adf523fdfc3fb43984e871"
+
+[[files]]
+file = "resourcepacks/toheee1234's Better Combat Animations/assets/bettercombat/player_animations/two_handed_spin.json"
+hash = "05ed0aa0b8bff6f79410ffaf057ebf4fdab1ee86ea88ca72e9993507cef18a19"
+
+[[files]]
+file = "resourcepacks/toheee1234's Better Combat Animations/assets/bettercombat/player_animations/two_handed_stab_left.json"
+hash = "518c87b458c59ed7f76a588c2332097238a8b357da2b5e81356cd28357f6066b"
+
+[[files]]
+file = "resourcepacks/toheee1234's Better Combat Animations/assets/bettercombat/player_animations/two_handed_stab_right.json"
+hash = "dc8612f9ad8e6f14976952bc3bdb26f1d2be841ac293d3342a2e65bf40bd00df"
+
+[[files]]
+file = "resourcepacks/toheee1234's Better Combat Animations/assets/bettercombat/sounds.json"
+hash = "74cf74d2f65d81170bbbd50787381e662eae7921df181a2f7426ab0a22fb0939"
+
+[[files]]
+file = "resourcepacks/toheee1234's Better Combat Animations/pack.mcmeta"
+hash = "d190679c101028a90b280c96f41acf3fb20b8f2e85daebbdd3b0de560d1287f6"
+
+[[files]]
+file = "resourcepacks/toheee1234's Better Combat Animations/pack.png"
+hash = "7ccefda3287089a9f30f749fd86ec923dac9af3324ed04f5dd1939c0a2c7db00"
+
+[[files]]
 file = "server-datapacks/mms-dagger-recipe-fix/data/expanded_weaponry/advancement/recipes/combat/copper_dagger.json"
 hash = "7e989a13a18eafecc27a96f209a2c05eb63d0c3fc7cf6edf87417cd3d127f5eb"
 
@@ -28311,16 +28635,16 @@ hash = "0469efcb67d3aba3c20ee3f034df416932474938f0dd3ee083106b173bb4f784"
 
 [[files]]
 file = "xaero/minimap/Multiplayer_mc.mudbourn.info/config.txt"
-hash = "2c175d74a5ed0a96bd448592e38a8b96d22f0bea53de85a2edcea0b0d4dc19ec"
+hash = "f832c1e18dd908f494fee54ab82fefcc78ff881f114b35ab31320a91ba07b3b8"
 
 [[files]]
 file = "xaero/minimap/Multiplayer_mc.mudbourn.info/dim%-1/mw$-29775643_1.txt"
-hash = "c48642e0ac283716b828a8662f5472f1c3883b0f9f65beb72abb4f9e22326177"
+hash = "050cedcdf039a16f841c843091877d8457c744da8611b9b87adddbfc9a8cfe79"
 preserve = true
 
 [[files]]
 file = "xaero/minimap/Multiplayer_mc.mudbourn.info/dim%0/mw$-29775643_2.txt"
-hash = "dc8df312aac0572b56c51c5a3b46bfefe1c936d683ba8cc6a2177a844d6b34dc"
+hash = "fa3ac41238727b5a758e4ed9fc734596825882ecdc7f40a9570c7ea7ddb70045"
 preserve = true
 
 [[files]]
@@ -28334,5 +28658,5 @@ hash = "dc9beec6e11c4ae881577c4af0100fed0307b04fb3ad85ba1d3600ce48abddc4"
 
 [[files]]
 file = "xaero/minimap/Multiplayer_mc.mudbourn.info/dim%1/mw$-29775643_1.txt"
-hash = "9364c678d0a5ffda57c275da1f300252e67abdc1b9d0f5dfb5e47a45af4c6e2f"
+hash = "d0e2425ae49d8b9074cf96e36d22e806a586f4930af8d57e0413a31701a0bc71"
 preserve = true
