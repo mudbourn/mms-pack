@@ -33,6 +33,11 @@ file = "config/Easy Shop Mod/My Skin/49cad3d9-0ece-4536-b469-16b1c2c0fdd4.png"
 hash = "664ea2023ccb6d3a820ca533b876fc50d457f1727ae87ecfc846fffc61f85e89"
 
 [[files]]
+file = "config/Easy Shop Mod/My Skin/skin.png"
+hash = "664ea2023ccb6d3a820ca533b876fc50d457f1727ae87ecfc846fffc61f85e89"
+preserve = true
+
+[[files]]
 file = "config/EssentialCommands.properties"
 hash = "fc01dc3f08884e8fdf7c0796ea7b9e740dc6f2f5d46fd021a73e8e3a30789fdb"
 
@@ -28349,11 +28354,11 @@ hash = "f57c80c65fd7a03651490fe81bb69b705d4a9fa2d497ea61bf45c57246efbe2b"
 
 [[files]]
 file = "resourcepacks/bountifulfish-anchor-3d/assets/bountiful-fish/models/item/anchor_3d.json"
-hash = "58fd9ae281aef888cb9d355bd6883ac02ed65bdc390cb63dbc7a6471eb63913d"
+hash = "943f1ed1c8e194a4c4aa227b9569c96cf4042355070b04bccaf3c017d5752317"
 
 [[files]]
 file = "resourcepacks/bountifulfish-anchor-3d/assets/bountiful-fish/textures/item/anchor_3d.png"
-hash = "82848be8a294d8f6e73cc8f6817105591536c805cd851d3e78fde6359803256f"
+hash = "dc4cdfe1cc84ccc9983511f8a5304d7c253f9299bb511ea57dee774a65a80c85"
 
 [[files]]
 file = "resourcepacks/bountifulfish-anchor-3d/pack.mcmeta"
