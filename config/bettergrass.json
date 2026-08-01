@@ -1,7 +1,7 @@
 {
   "general": {
     "betterGrassMode": "OFF",
-    "resourcePackCompatibilityMode": true,
+    "resourcePackCompatibilityMode": false,
     "blocks": {
       "grassBlocks": true,
       "snowy": true,

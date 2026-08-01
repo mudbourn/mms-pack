@@ -214,7 +214,22 @@
       "particlerain:mist": true,
       "particlerain:ripple": true,
       "particlerain:shrub": true,
-      "particlerain:streak": true
+      "particlerain:streak": true,
+      "aerialhell:aerial_hell_portal": true,
+      "aerialhell:copper_pine_leaves": true,
+      "aerialhell:falling_crystallized_leaves": true,
+      "aerialhell:fat_phantom_smoke": true,
+      "aerialhell:god_flame": true,
+      "aerialhell:lunatic_particle": true,
+      "aerialhell:oscillator": true,
+      "aerialhell:shadow_light": true,
+      "aerialhell:shadow_particle": true,
+      "aerialhell:shadow_troll_bat": true,
+      "aerialhell:snowflake": true,
+      "farmersdelight:sparkle": true,
+      "mutantmonsters:endersoul": true,
+      "mutantmonsters:skull_spirit": true,
+      "bountiful-fish:anchor_sweep": true
     }
   },
   "detail_settings": {
@@ -229,39 +244,39 @@
   "render_settings": {
     "fog_settings": {
       "advanced": true,
-      "multi_dimension_fog_control": false,
+      "multi_dimension_fog_control": true,
       "atmospheric": {
         "distance_chunks": 8,
-        "start_percent": 10,
-        "shape_mode": "PLANAR",
+        "start_percent": 80,
+        "shape_mode": "RADIAL",
         "affect_sky_fog": true,
         "affect_cloud_fog": true
       },
       "dimension_overrides": {
         "minecraft:overworld": {
           "distance_chunks": 0,
-          "start_percent": 10,
-          "shape_mode": "PLANAR",
+          "start_percent": 80,
+          "shape_mode": "RADIAL",
           "affect_sky_fog": true,
           "affect_cloud_fog": true
         },
         "minecraft:the_end": {
           "distance_chunks": 0,
-          "start_percent": 10,
-          "shape_mode": "PLANAR",
+          "start_percent": 80,
+          "shape_mode": "RADIAL",
           "affect_sky_fog": true,
           "affect_cloud_fog": true
         },
         "minecraft:the_nether": {
           "distance_chunks": 0,
-          "start_percent": 10,
-          "shape_mode": "PLANAR",
+          "start_percent": 80,
+          "shape_mode": "RADIAL",
           "affect_sky_fog": true,
           "affect_cloud_fog": true
         }
       },
       "protected_gameplay": {
-        "enabled_when_allowed": false,
+        "enabled_when_allowed": true,
         "blindness_distance_blocks": 0,
         "darkness_distance_blocks": 0,
         "lava_distance_blocks": 0,
@@ -300,6 +315,6 @@
     "instant_sneak": true,
     "prevent_shaders": false,
     "steady_debug_hud": true,
-    "steady_debug_hud_refresh_interval": 1
+    "steady_debug_hud_refresh_interval": 20
   }
 }

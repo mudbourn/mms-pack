@@ -7,6 +7,10 @@
 	"handleSystemMessages": true,
 	"drawShadow": true,
 	"nameAliases": {
-		"<mudbourn>": "he"
+		"<mudbourn>": "he",
+		"mudbourn": "down!",
+		"oohvee3": "down!",
+		"b00bfan123": "down!",
+		"Tester1": "down!"
 	}
 }

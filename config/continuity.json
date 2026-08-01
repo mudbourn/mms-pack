@@ -1,5 +1,5 @@
 {
-  "connected_textures": true,
-  "emissive_textures": true,
-  "custom_block_layers": true
+  "connected_textures": false,
+  "emissive_textures": false,
+  "custom_block_layers": false
 }

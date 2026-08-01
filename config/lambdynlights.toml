@@ -189,11 +189,42 @@ chunk_rebuild_scheduler = "culling"
 			[light_sources.settings.entities.farmersdelight]
 				rotten_tomato = true
 
+			[light_sources.settings.entities.uselessreptile]
+				lightning_chaser = true
+				magmamuncher = true
+				lightning_breath = true
+				moleclaw = true
+				river_pikehorn = true
+				shockwave_sphere = true
+				wyvern = true
+				acid_blast = true
+
 			[light_sources.settings.entities.jobsplustools]
 				fishing_hook = true
 
 			[light_sources.settings.entities.guardvillagers]
 				guard = true
+
+			[light_sources.settings.entities.mutantmonsters]
+				mutant_enderman = true
+				mutant_creeper = true
+				creeper_minion = true
+				creeper_minion_egg = true
+				mutant_zombie = true
+				skull_spirit = true
+				endersoul_clone = true
+				throwable_block = true
+				spider_pig = true
+				mutant_snow_golem = true
+				endersoul_fragment = true
+				mutant_skeleton = true
+				body_part = true
+				mutant_arrow = true
+
+			[light_sources.settings.entities.bountiful-fish]
+				bottle = true
+				clam = true
+				elder = true
 
 			[light_sources.settings.entities.enderscape]
 				rustle = true
@@ -207,11 +238,29 @@ chunk_rebuild_scheduler = "culling"
 				skirmisher = true
 				clay_golem = true
 
+			[light_sources.settings.entities.waddles]
+				adelie_penguin = true
+
 			[light_sources.settings.entities.variantsandventures]
 				gelid = true
 				murk = true
 				verdant = true
 				thicket = true
+
+			[light_sources.settings.entities.fishofthieves]
+				shoal = true
+				splashtail = true
+				battlegill = true
+				wildsplash = true
+				islehopper = true
+				coconut_boat = true
+				devilfish = true
+				stormfish = true
+				coconut_chest_boat = true
+				ancientscale = true
+				wrecker = true
+				plentifin = true
+				pondie = true
 
 			[light_sources.settings.entities.jeg]
 				terror_phantom = true
@@ -295,6 +344,78 @@ chunk_rebuild_scheduler = "culling"
 				cushion_entity = true
 				chair_entity = true
 
+			[light_sources.settings.entities.aerialhell]
+				crystal_spider = true
+				volucite_shard = true
+				torn_spirit = true
+				volucite_golem_head = true
+				thrown_stellar_egg = true
+				mummy = true
+				crystal_slime = true
+				ghost_slime_ninja_pirate = true
+				fire_spirit = true
+				volucite_golem = true
+				verdigris_zombie = true
+				ruby_shard = true
+				obsidian_shuriken = true
+				stellar_boar = true
+				stellar_ent = true
+				mud_golem = true
+				evil_cow = true
+				worm = true
+				aerial_tree_mimic = true
+				fat_phantom = true
+				mud_spectral_golem = true
+				gliding_turtle = true
+				netherite_shuriken = true
+				shadow_automaton = true
+				shadow_pine_mimic = true
+				crystal_golem = true
+				azurite_shuriken = true
+				lunatic_priest = true
+				slime_ninja_pirate = true
+				shadow_troll = true
+				copper_pine_mimic = true
+				forest_caterpillar = true
+				poisonball = true
+				ruby_shuriken = true
+				arsonist_shuriken = true
+				electro_spirit = true
+				mud_cycle_mage = true
+				mud_spectral_soldier = true
+				dimension_shatterer_projectile = true
+				shadow_projectile = true
+				stellar_chicken = true
+				flying_jellyfish = true
+				mud_soldier = true
+				stellar_stone_automaton = true
+				cortinarius_cow = true
+				iron_shuriken = true
+				ice_spirit = true
+				kodama = true
+				mud_spectral_cycle_mage = true
+				lunatic_projectile = true
+				chained_god = true
+				shadow_spider = true
+				slime_pirate = true
+				golden_beech_mimic = true
+				magmatic_gel_shuriken = true
+				gold_shuriken = true
+				aerial_hell_painting = true
+				shroomboom = true
+				venomous_snake = true
+				lightning_shuriken = true
+				lilith = true
+				volucite_shuriken = true
+				hell_spider = true
+				ghost_slime_pirate = true
+				sandy_sheep = true
+				diamond_shuriken = true
+				sky_cactus_fiber_mimic = true
+				crystal_caterpillar = true
+				lunatic_crystal_shuriken = true
+				shadow_flying_skull = true
+
 			[light_sources.settings.entities.hurl]
 				mace = true
 
@@ -340,4 +461,4 @@ chunk_rebuild_scheduler = "culling"
 	# How far away (in chunks) until light sources get ticked less often.
 	slow = 4
 	# How far away (in chunks) until light sources get ticked even less often.
-	slower = 5
+	slower = 4

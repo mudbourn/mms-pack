@@ -37,26 +37,83 @@
     "jobsplustools:wooden_longsword",
     "weaponsexpanded:copper_greatsword",
     "weaponsexpanded:copper_hammer",
-    "weaponsexpanded:copper_longsword",
+    "weaponsexpanded:copper_hatchet",
     "weaponsexpanded:diamond_greatsword",
     "weaponsexpanded:diamond_hammer",
-    "weaponsexpanded:diamond_longsword",
+    "weaponsexpanded:diamond_hatchet",
     "weaponsexpanded:golden_greatsword",
     "weaponsexpanded:golden_hammer",
-    "weaponsexpanded:golden_longsword",
+    "weaponsexpanded:golden_hatchet",
     "weaponsexpanded:iron_greatsword",
     "weaponsexpanded:iron_hammer",
-    "weaponsexpanded:iron_longsword",
+    "weaponsexpanded:iron_hatchet",
     "weaponsexpanded:longbow",
     "weaponsexpanded:netherite_greatsword",
     "weaponsexpanded:netherite_hammer",
-    "weaponsexpanded:netherite_longsword",
+    "weaponsexpanded:netherite_hatchet",
     "weaponsexpanded:stone_greatsword",
     "weaponsexpanded:stone_hammer",
-    "weaponsexpanded:stone_longsword",
+    "weaponsexpanded:stone_hatchet",
     "weaponsexpanded:wooden_greatsword",
     "weaponsexpanded:wooden_hammer",
-    "weaponsexpanded:wooden_longsword"
+    "weaponsexpanded:wooden_hatchet"
   ],
-  "refunds": {}
+  "refunds": {
+    "weaponsexpanded:copper_greatsword": {
+      "refund": "expanded_weaponry:copper_greatsword",
+      "count": 1
+    },
+    "weaponsexpanded:copper_hatchet": {
+      "refund": "jobsplustools:copper_hatchet",
+      "count": 1
+    },
+    "weaponsexpanded:diamond_greatsword": {
+      "refund": "expanded_weaponry:diamond_greatsword",
+      "count": 1
+    },
+    "weaponsexpanded:diamond_hatchet": {
+      "refund": "jobsplustools:diamond_hatchet",
+      "count": 1
+    },
+    "weaponsexpanded:golden_greatsword": {
+      "refund": "expanded_weaponry:golden_greatsword",
+      "count": 1
+    },
+    "weaponsexpanded:golden_hatchet": {
+      "refund": "jobsplustools:golden_hatchet",
+      "count": 1
+    },
+    "weaponsexpanded:iron_greatsword": {
+      "refund": "expanded_weaponry:iron_greatsword",
+      "count": 1
+    },
+    "weaponsexpanded:iron_hatchet": {
+      "refund": "jobsplustools:iron_hatchet",
+      "count": 1
+    },
+    "weaponsexpanded:netherite_greatsword": {
+      "refund": "expanded_weaponry:netherite_greatsword",
+      "count": 1
+    },
+    "weaponsexpanded:netherite_hatchet": {
+      "refund": "jobsplustools:netherite_hatchet",
+      "count": 1
+    },
+    "weaponsexpanded:stone_greatsword": {
+      "refund": "expanded_weaponry:stone_greatsword",
+      "count": 1
+    },
+    "weaponsexpanded:stone_hatchet": {
+      "refund": "jobsplustools:stone_hatchet",
+      "count": 1
+    },
+    "weaponsexpanded:wooden_greatsword": {
+      "refund": "expanded_weaponry:wooden_greatsword",
+      "count": 1
+    },
+    "weaponsexpanded:wooden_hatchet": {
+      "refund": "jobsplustools:wooden_hatchet",
+      "count": 1
+    }
+  }
 }
