@@ -2257,6 +2257,11 @@ hash = "bb1ad4206932c7207d8b42716060b7d7a6baa2679ddf8ba40f4983599e67c498"
 metafile = true
 
 [[files]]
+file = "mods/cosy-critters.pw.toml"
+hash = "3434867ea9539550f69aa750b3560340482dd035774dc73de58499632d4239e9"
+metafile = true
+
+[[files]]
 file = "mods/craftable-saddles-backport.pw.toml"
 hash = "3a9019fa2908ffad3d476e1cf2d52d49916352ab87ae265a027449d583b5d8a4"
 metafile = true
