@@ -1463,7 +1463,7 @@ hash = "3d731115173b34dd0fe9de6f52fa14dc271c848495a52f66c0016e24150f59d6"
 
 [[files]]
 file = "config/particlerain/config.json"
-hash = "1c8a6a692833d0dfc9ed04b5a826104c3a6ce68a70d8dc88eb98a7f322c2e100"
+hash = "2fa8097ee99b3774976243fc50f4499f200c5b2460ea6f79b6f6cd5762a493c4"
 
 [[files]]
 file = "config/particlerain/particles.json"
@@ -2728,7 +2728,7 @@ metafile = true
 
 [[files]]
 file = "mods/mms-mod-compat-support.pw.toml"
-hash = "39e7b8527b7905098eb4c368958554e1274d7daed9956e1d0280dba0ad202612"
+hash = "441e4d7544f61bd40697d7bbf56c0bd017172819c0eb2eced8551b7c0fa464b1"
 metafile = true
 
 [[files]]
