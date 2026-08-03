@@ -29,16 +29,16 @@
 						0,
 						0
 					],
-					"sizeAdd": 0.5
+					"sizeAdd": 1
 				}
 			],
 			"animations": [
 				{
-					"root.rx": "if(is_first_person_hand || is_in_gui, 0, var.prrx)",
-					"root.ry": "if(is_first_person_hand || is_in_gui, 0, var.prry)",
-					"root.tx": "if(is_first_person_hand || is_in_gui, 0, var.prtx)",
-					"root.ty": "if(is_first_person_hand || is_in_gui, 0, var.prty)",
-					"root.tz": "if(is_first_person_hand || is_in_gui, 0, var.prtz)"
+					"root.rx": "var.prrx",
+					"root.ry": "var.prry",
+					"root.tx": "var.prtx",
+					"root.ty": "var.prty",
+					"root.tz": "var.prtz"
 				}
 			]
 		},
@@ -66,7 +66,7 @@
 						32,
 						0
 					],
-					"sizeAdd": 1
+					"sizeAdd": 1.5
 				}
 			]
 		},
@@ -94,7 +94,7 @@
 						16,
 						16
 					],
-					"sizeAdd": 0.5
+					"sizeAdd": 1
 				}
 			]
 		},
@@ -122,7 +122,7 @@
 						0,
 						16
 					],
-					"sizeAdd": 0.4
+					"sizeAdd": 0.9
 				}
 			]
 		},
@@ -150,7 +150,7 @@
 						0,
 						16
 					],
-					"sizeAdd": 0.4
+					"sizeAdd": 0.9
 				}
 			]
 		},
@@ -178,7 +178,7 @@
 						40,
 						16
 					],
-					"sizeAdd": 0.5
+					"sizeAdd": 1
 				}
 			]
 		},
@@ -206,7 +206,7 @@
 						40,
 						16
 					],
-					"sizeAdd": 0.5
+					"sizeAdd": 1
 				}
 			]
 		}

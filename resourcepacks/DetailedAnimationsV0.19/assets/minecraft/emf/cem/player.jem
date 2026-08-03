@@ -1110,11 +1110,11 @@
 				    "var.prtx": "var.rtx",
 				    "var.prty": "var.rty - if(is_sneaking, 2, 0) - 0.1",
 				    "var.prtz": "var.rtz + if(is_crawling, 2, 0)",
-					"root.rx": "if(var.NewFrame > 0, var.prrx, 0)",
-					"root.ry": "if(var.NewFrame > 0, var.prry, 0)",
-					"root.tx": "if(var.NewFrame > 0, var.prtx, 0)",
-					"root.ty": "if(var.NewFrame > 0, var.prty, 0)",
-					"root.tz": "if(var.NewFrame > 0, var.prtz, 0)"
+					"root.rx": "if(is_first_person_hand || is_in_gui, 0, var.prrx)",
+					"root.ry": "if(is_first_person_hand || is_in_gui, 0, var.prry)",
+					"root.tx": "if(is_first_person_hand || is_in_gui, 0, var.prtx)",
+					"root.ty": "if(is_first_person_hand || is_in_gui, 0, var.prty)",
+					"root.tz": "if(is_first_person_hand || is_in_gui, 0, var.prtz)"
 				},
 				{
 					"var.cbrx": "body.rx",
