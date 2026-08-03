@@ -34,11 +34,11 @@
 			],
 			"animations": [
 				{
-					"root.rx": "var.prrx",
-					"root.ry": "var.prry",
-					"root.tx": "var.prtx",
-					"root.ty": "var.prty",
-					"root.tz": "var.prtz"
+					"root.rx": "if(is_first_person_hand || is_in_gui, 0, var.prrx)",
+					"root.ry": "if(is_first_person_hand || is_in_gui, 0, var.prry)",
+					"root.tx": "if(is_first_person_hand || is_in_gui, 0, var.prtx)",
+					"root.ty": "if(is_first_person_hand || is_in_gui, 0, var.prty)",
+					"root.tz": "if(is_first_person_hand || is_in_gui, 0, var.prtz)"
 				}
 			]
 		},
