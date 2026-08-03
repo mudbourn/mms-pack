@@ -1,10 +1,10 @@
 {
   "configVersion": 5,
   "perf": {
-    "maxParticleAmount": 700,
-    "particleDensity": 80,
-    "particleStormDensity": 145,
-    "particleDistance": 16,
+    "maxParticleAmount": 265,
+    "particleDensity": 160,
+    "particleStormDensity": 220,
+    "particleDistance": 20,
     "surfaceRange": 100
   },
   "sound": {
