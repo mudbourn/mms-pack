@@ -1929,11 +1929,23 @@ hash = "9662f1b3b93e09c023de08253f7b13fbc76bdb71c45ebce196ce80dff7cec1ec"
 
 [[files]]
 file = "mms-client-sweep.py"
-hash = "04ca38fe7a33e75e4091113239aca0c0e50cc5efc2e4f80fe7d09bb1d0b69378"
+hash = "f0ed4fadac0105655f55d0233a9ff2ac435ee824b4a097f1d674a28f7cbc0ecc"
 
 [[files]]
 file = "mms-deploy-test.sh"
-hash = "7d51e939eb3813d1d9802cf8fb40190a82bfa58c2c5c4746171af9ff55dfc5ca"
+hash = "75e934e005b249822c730d49798a6f07eb8f3c33849cd8b45e867bb563bcb5a1"
+
+[[files]]
+file = "mms-dev-serve.sh"
+hash = "fa7f97f1c8fd422a817f86f212f9ce6161ef523dcb3b7873b862596332c444ea"
+
+[[files]]
+file = "mms-dev-setup.sh"
+hash = "902a723b330a31807c59675a0abb86bd84c83975a486e00eabc4fdf8f8128be8"
+
+[[files]]
+file = "mms-hotswap-watch.sh"
+hash = "6de6790f06d72367182d49b83ff80922fe746fba74974bcc64615b41aea6653e"
 
 [[files]]
 file = "mms-netdrift-check.py"
@@ -1949,7 +1961,7 @@ hash = "64f81500a87015325e8884679671382f5e4e013915097c5c31171fe4c53b8404"
 
 [[files]]
 file = "mms-server-sync.py"
-hash = "007367eac92ef0e41ef22fa362d972779bfc16c06f817d4c887065a8b2361d3b"
+hash = "da75b54a41436e61a0d7422111f21b6fa7a41e26629dfbf1d505c254ea46a102"
 
 [[files]]
 file = "mods/absolut-revive.pw.toml"
