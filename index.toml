@@ -1135,7 +1135,7 @@ hash = "612a051933f8d867ff14bd0e4f966c4a41ec153bd59d101d7452d011c76dff60"
 
 [[files]]
 file = "config/jobsplus/jobsplus-common.yaml"
-hash = "7aaea33ef9a9c40ceff80e410b4b0953487905568814f72cf7c3492ce4a0559f"
+hash = "2649086373e9eac0f6b8137281188606b9f79c25f5136a90be078de8cffee2db"
 
 [[files]]
 file = "config/kuma.json"
