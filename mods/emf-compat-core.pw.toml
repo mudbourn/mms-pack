@@ -1,13 +1,13 @@
 name = "EMF Compat: Core"
-filename = "emf_compat_core_1.21.11_1.0.0.jar"
+filename = "emf_compat_core_1.21.11_1.1.1.jar"
 side = "client"
 
 [download]
-url = "https://cdn.modrinth.com/data/hbGct5uU/versions/s38Gq6j6/emf_compat_core_1.21.11_1.0.0.jar"
+url = "https://cdn.modrinth.com/data/hbGct5uU/versions/pVTy6Mmu/emf_compat_core_1.21.11_1.1.1.jar"
 hash-format = "sha512"
-hash = "17a8ece0454670f2fead86a376e0042809955567651d3a26b8eae171756854c150714508daf081a4354476e2684761a279cf571ebf56cfeff0ed5527a911396b"
+hash = "80233e50cdac2374edadbe097bbed2425712c8cfb8aad8128d60fed37819ce3a645e83ddfd9deaff627a46e383cee6f6852cd789c24e2c725d803460bc367610"
 
 [update]
 [update.modrinth]
 mod-id = "hbGct5uU"
-version = "s38Gq6j6"
+version = "pVTy6Mmu"
