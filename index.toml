@@ -1936,8 +1936,12 @@ file = "mms-client-sweep.py"
 hash = "f0ed4fadac0105655f55d0233a9ff2ac435ee824b4a097f1d674a28f7cbc0ecc"
 
 [[files]]
+file = "mms-deploy-prod.sh"
+hash = "9712dfc339d2ed01422fc58a92d689bed40ed5fe48733ac57467a87dfb641c3d"
+
+[[files]]
 file = "mms-deploy-test.sh"
-hash = "75e934e005b249822c730d49798a6f07eb8f3c33849cd8b45e867bb563bcb5a1"
+hash = "99683061ef990cd8a2a28bc5a92fcbe7232742ddb7425e5ca9b7da1bb0814b21"
 
 [[files]]
 file = "mms-dev-serve.sh"
@@ -1961,7 +1965,7 @@ hash = "a7cf1d5d5e2a62c2067fa8432a480b698c64678173a985222f0848923f380a82"
 
 [[files]]
 file = "mms-promote.sh"
-hash = "5c1fbc2372716cbd206cf3355d71aa4bd92acf905c2666ce460b6085f8dbdeb4"
+hash = "136976d216f9230df662eb767f913d094f986f37ffd5470754c617ea15db2840"
 
 [[files]]
 file = "mms-server-sync.py"
