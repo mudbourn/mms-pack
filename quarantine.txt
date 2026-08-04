@@ -1,25 +1,45 @@
-# Mods that live in the TESTING pack only and must never reach prod.
+# Mods stripped from the prod pack on the main side of every promote.
 #
-# The quarantine rule is "nothing in vanilla dimensions" — these mods are
-# unstable, or generate worldgen we do not want in the live world. Keeping them
-# out of the pack entirely used to be the enforcement, but that also kept them
-# off the DEV CLIENT, which made them impossible to work on: Server Testing runs
-# them, so a client without them is kicked at login with
+# The strip is a REMOVAL, not a restriction: mms-promote.sh `git rm`s each
+# metafile listed here, so the mod never enters main's index and packwiz never
+# installs it on a prod client.
+#
+# That is a blunt instrument, and on 2026-08-04 it proved to be the wrong one.
+# The strip only ever removed the mod from the CLIENT pack — nothing takes the
+# jar off the server, because mms-deploy.sh runs mms-server-sync.py without
+# --prune (an unlisted jar is reported, never deleted). So a mod that reached
+# MMSLive01 by any route and was then stripped from main left the two sides
+# disagreeing, and prod became un-joinable:
 #
 #   Received N registry entries that are unknown to this client.
 #
-# So they now live in the `testing` branch's index (side=both, so the dev client
-# installs them) and mms-promote.sh strips them back out on the `main` side of
-# every promote. This file is that strip list.
+# That is the same failure this file's previous design was written to avoid on
+# the dev client, reproduced on prod. Removing a mod from one side only cannot
+# be the way an unstable mod is held back.
+#
+# ── the current posture: declaw in place, do not remove ──
+#
+# Aerial Hell, Mutant Monsters, Useless Reptile and Deadly Deadly Dungeon now
+# ship to prod like any other mod (side=both, so client and server agree and
+# logins work), and are neutered by server-side datapacks instead:
+#
+#   mms-unstable-recipe-embargo    aerialhell, uselessreptile, mms_embargo
+#   mms-unstable-vanilla-embargo   aerialhell, mutantmonsters, uselessreptile
+#   mms-ddd-no-natural-gen         mr_deadly_deadlydungeon
+#
+# The embargo is what holds them back, and it is revocable per-mod without ever
+# desyncing the registries. Loosen a datapack when a mod has earned it; see the
+# quarantine notes in the State of Things report.
+#
+# ── when to add a line here ──
+#
+# Only for a mod that must not exist on prod AT ALL, client and server both —
+# and adding it is only half the job. The jar must also come off the server, or
+# you recreate the 2026-08-04 desync. There is no automation for that half yet:
+# run mms-server-sync.py with --prune, or remove the jar by hand, and confirm
+# it is gone before the next restart.
 #
 # One packwiz metafile slug per line — the .pw.toml basename without the
 # extension, i.e. `mods/<slug>.pw.toml`. `#` comments and blanks are ignored.
 #
-# Removing a line here PROMOTES that mod to prod on the next promote. Do that
-# only once it has actually earned it; see the quarantine notes in the State of
-# Things report.
-
-aerial-hell
-mutant-monsters
-useless-reptile
-deadly-deadly-dungeon
+# An empty list is the intended steady state. Prefer a datapack embargo.
