@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Sync a pack's side=both/server mods into a server's mods folder.
 
-    mms-server-sync.py <server_mods_dir> [pack_dir] [--prune] [--hold FILE]
+    mms-server-sync.py <server_mods_dir> [pack_dir] [--prune] [--hold FILE] [--dry-run]
 
 Extracted verbatim from mms-deploy.sh so the prod flow (→ MMSLive01) and the
 test flow (→ MMSTesting01) share one implementation. pack_dir defaults to the
@@ -21,11 +21,19 @@ It also reports jars the pack no longer lists at all (a mod deleted from the
 pack leaves no .pw.toml for the add loop to notice, so its jar used to live on
 the server forever). `--prune` removes them; without it they are only reported,
 since a hand-installed server-only mod is indistinguishable from an orphan here.
+
+`--dry-run` reports every add, replace and prune without writing to the server
+folder. Jars are still downloaded, to a scratch path — the mod id and version
+that every decision here turns on are only readable from inside the jar, so a
+dry run that skipped the fetch could not tell you what it would actually do.
+Used by `mms-deploy.sh --dev`.
 """
-import json, os, re, shutil, sys, urllib.parse, urllib.request, zipfile
+import json, os, re, shutil, sys, tempfile, urllib.parse, urllib.request, zipfile
 
 raw_args = sys.argv[1:]
 prune = '--prune' in raw_args
+dry_run = '--dry-run' in raw_args
+TAG = '[dry-run] ' if dry_run else ''
 
 hold_file = None
 if '--hold' in raw_args:
@@ -113,8 +121,10 @@ for name in sorted(os.listdir(mods_dir)):
     if fname in server_jars:
         continue  # already in sync
 
-    # fetch the new jar (prefer bundled local copy)
-    dest = os.path.join(server_mods, fname)
+    # fetch the new jar (prefer bundled local copy). Under --dry-run this lands
+    # in a scratch dir instead of the server, and is deleted before we move on.
+    dest = (os.path.join(tempfile.gettempdir(), 'mms-dryrun-' + fname) if dry_run
+            else os.path.join(server_mods, fname))
     local = os.path.join(mods_dir, fname)
     if os.path.exists(local):
         shutil.copy(local, dest)
@@ -149,9 +159,12 @@ for name in sorted(os.listdir(mods_dir)):
     # remove superseded versions: any other jar carrying the same fabric mod id
     old = [j for j, (i, v) in server_jars.items()
            if i is not None and i == new_id and j != fname]
-    for j in old:
-        os.remove(os.path.join(server_mods, j))
-    print(f"synced {fname}" + (f"  (replaced {', '.join(old)})" if old else "  (new)"))
+    if dry_run:
+        os.remove(dest)          # drop the scratch copy; nothing reaches the server
+    else:
+        for j in old:
+            os.remove(os.path.join(server_mods, j))
+    print(f"{TAG}synced {fname}" + (f"  (replaced {', '.join(old)})" if old else "  (new)"))
     changed = True
 
 
@@ -226,14 +239,18 @@ for f in sorted(os.listdir(server_mods)):
 if orphans:
     for f, mid in orphans:
         if prune:
-            os.remove(os.path.join(server_mods, f))
-            print(f"pruned {f}  ({mid or 'unreadable jar'} — not in pack)")
+            if not dry_run:
+                os.remove(os.path.join(server_mods, f))
+            print(f"{TAG}pruned {f}  ({mid or 'unreadable jar'} — not in pack)")
             changed = True
         else:
             print(f"?? {f}  ({mid or 'unreadable jar'}) is on the server but not "
                   f"in the pack — re-run with --prune to remove", file=sys.stderr)
 
 if changed:
-    print("\nserver: jars updated — RESTART to apply (clients desync until then).")
+    if dry_run:
+        print("\n[dry-run] server WOULD change — nothing was written.")
+    else:
+        print("\nserver: jars updated — RESTART to apply (clients desync until then).")
 else:
-    print("server: already in sync")
+    print(f"{TAG}server: already in sync")
