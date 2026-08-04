@@ -82,10 +82,16 @@ else
     echo "jbr: installed — $("$DEV/jbr/Contents/Home/bin/java" -version 2>&1 | head -1)"
 fi
 
-# verify the JVM actually accepts the enhanced-redefinition flag; a plain JDK
-# accidentally landing here would fail silently at swap time instead
-if ! "$DEV/jbr/Contents/Home/bin/java" -XX:+AllowEnhancedClassRedefinition -version >/dev/null 2>&1; then
-    echo "!! this JVM rejects -XX:+AllowEnhancedClassRedefinition — not a DCEVM-capable JBR." >&2
+# Verify the JVM really has enhanced class redefinition.
+#
+# Do NOT test this by passing the flag and checking the exit code: JBR runs with
+# IgnoreUnrecognizedVMOptions, so `java -XX:+TotalNonsense -version` exits 0.
+# That check passed on everything and proved nothing. PrintFlagsFinal only lists
+# flags the VM actually implements — a stock Temurin 21 lists it zero times.
+if ! "$DEV/jbr/Contents/Home/bin/java" -XX:+PrintFlagsFinal -version 2>/dev/null \
+        | grep -q 'AllowEnhancedClassRedefinition'; then
+    echo "!! this JVM has no AllowEnhancedClassRedefinition flag — not DCEVM-capable." >&2
+    echo "   Enhanced redefinition would silently do nothing. Get a JBR build." >&2
     exit 1
 fi
 echo "jbr: enhanced class redefinition supported ✓"

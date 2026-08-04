@@ -1,0 +1,46 @@
+MMS Dev — Prism JVM arguments
+=============================
+
+Paste the block below into Prism: Edit Instance -> Settings -> Java -> tick
+"JVM arguments". Kept here because Prism rewrites instance.cfg on save and
+wipes the `notes` field, so there is nowhere inside the launcher to record it.
+
+Two hard-won constraints:
+
+  * NO SPACES IN ANY PATH. Prism tokenises this field on whitespace, so a
+    -javaagent: pointing into "Application Support" is truncated at the space
+    and the JVM dies with "Error opening zip file or JAR manifest missing".
+    That is why sponge-mixin is a copy under ~/.mms-dev rather than referenced
+    in place under PrismLauncher/libraries.
+
+  * disablePlugin is NOT optional. HotswapAgent enables all ~50 framework
+    plugins by default; its Log4j2 plugin rewrites log4j's LoggerContext to
+    call org.hotswap.agent.config.PluginManager, which Fabric's Knot
+    classloader will not expose to game classes. The client then dies with
+    NoClassDefFoundError before Minecraft starts.
+
+Note the option syntax: HotswapAgent takes its settings as javaagent ARGUMENTS
+(-javaagent:jar=key=value,key=value) and as -Dhotswapagent.disablePlugin.
+There is no -Dhotswapagent.configurationFile property -- passing one looks
+like it works, because the JVM ignores unknown -D properties silently, but the
+config file is simply never read.
+
+--- copy from the next line ---
+-XX:+AllowEnhancedClassRedefinition -javaagent:/Users/eli3/.mms-dev/hotswap-agent.jar=autoHotswap=true,propertiesFilePath=/Users/eli3/.mms-dev/hotswap-agent.properties -javaagent:/Users/eli3/.mms-dev/sponge-mixin.jar -Dmixin.hotSwap=true -Dhotswapagent.disablePlugin=Hibernate,HibernateJakarta,Hibernate3,Hibernate3JPA,Spring,SpringBoot,Jersey1,Jersey2,Jetty,Tomcat,ZK,Logback,Log4j2,MyFaces,Mojarra,Omnifaces,ELResolver,WildFlyELResolver,OsgiEquinox,Owb,OwbJakarta,Proxy,WebObjects,Weld,WeldJakarta,JBossModules,ResteasyRegistry,Deltaspike,DeltaspikeJakarta,GlassFish,Weblogic,Vaadin,Wicket,CxfJAXRS,FreeMarker,Undertow,MyBatis,MyBatisPlus,IBatis,JacksonPlugin,Idea,Thymeleaf,Velocity,Sponge
+--- end ---
+
+Optional, only if you want to attach a debugger (nothing in the hotswap loop
+needs it):
+  -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=127.0.0.1:5005
+
+If a future launch dies with NoClassDefFoundError naming some other
+org.hotswap.agent.* class, a still-enabled plugin is instrumenting a game
+class: add its name to the disablePlugin list. Only ClassInitPlugin,
+AnonymousClassPatch, JdkPlugin, Hotswapper and WatchResources are left on, and
+class redefinition itself is core behaviour rather than a plugin, so dropping
+any of them costs little.
+
+sponge-mixin.jar is pinned at 0.17.3+mixin.0.8.7. If Fabric Loader bumps its
+mixin version, re-copy it from
+  ~/Library/Application Support/PrismLauncher/libraries/net/fabricmc/sponge-mixin/
+or mixin hotswap will quietly stop applying.

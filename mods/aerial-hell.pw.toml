@@ -1,0 +1,13 @@
+name = "Aerial Hell"
+filename = "aerialhell-0.7.7.7_fabric1.21.11.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/hvaVU41U/versions/jMyqQbSd/aerialhell-0.7.7.7_fabric1.21.11.jar"
+hash-format = "sha512"
+hash = "89e9ae1969b914506255d2d5f62a3c6777791b118df850e3fc84806ff2cdc2059f85dd794601ef3691b7834195f9624522293b9fd0ae9c3b2df9290ee04954a6"
+
+[update]
+[update.modrinth]
+mod-id = "hvaVU41U"
+version = "jMyqQbSd"

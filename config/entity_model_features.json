@@ -11,7 +11,16 @@
   "entityRenderModeOverrides": {},
   "entityPhysicsModPatchOverrides": {},
   "entityVanillaHologramOverrides": {},
-  "modelsNamesDisabled": [],
+  "modelsNamesDisabled": [
+    "chest",
+    "chest_large",
+    "chest_left",
+    "chest_right",
+    "trapped_chest",
+    "trapped_chest_large",
+    "trapped_chest_left",
+    "trapped_chest_right"
+  ],
   "allowEBEModConfigModify": true,
   "animationLODDistance": 4,
   "retainDetailOnLowFps": false,

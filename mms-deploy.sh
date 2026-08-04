@@ -37,7 +37,73 @@ set -e
 cd ~/Documents/GitHub/mms-pack
 
 DEV=0
-[ "$1" = "--dev" ] && DEV=1
+# Only --dev is understood. Anything else is a mistake, so say so rather than
+# ignoring it: `mms-deploy main` used to run a completely normal prod deploy
+# with the argument silently dropped, which reads as "deploy to main" and is
+# not what happens. An unrecognised argument means the caller expected
+# behaviour this script does not have — refuse instead of guessing which.
+for arg in "$@"; do
+    case "$arg" in
+        --dev) DEV=1 ;;
+        -h|--help)
+            echo "usage: mms-deploy [--dev]"
+            echo "  --dev   rehearse the full pipeline; no push, no release, no server writes"
+            echo
+            echo "Runs from 'main' only. To ship work from 'testing', use ./mms-promote.sh —"
+            echo "it merges, strips quarantine.txt, and then calls this script for you."
+            exit 0 ;;
+        *)
+            echo "!! mms-deploy: unknown argument '$arg'" >&2
+            echo "   usage: mms-deploy [--dev]" >&2
+            echo "   This script takes no branch or target argument: it always deploys the" >&2
+            echo "   current working tree, and only ever from 'main'." >&2
+            exit 2 ;;
+    esac
+done
+
+# ── branch guard ──
+# The prod server sync reads the WORKING TREE (mms-server-sync.py defaults
+# pack_dir to "."), not the `main` branch. Nothing downstream re-checks which
+# branch that tree is on, and quarantine.txt is only ever consulted by
+# mms-promote.sh on the main side of a promote. So running this script from
+# `testing` installs the testing index — quarantine and all — straight onto
+# prod, with no prune to take it back off afterwards.
+#
+# That is exactly what happened on 2026-08-04: Aerial Hell, DDD, Mutant
+# Monsters and Useless Reptile all landed on MMSLive01, which both broke client
+# logins (registry mismatch against the `main` pack) and put unstable worldgen
+# into the live world.
+#
+# Cheap to check, so check it. --dev is read-only about the server, but it also
+# rehearses this path, and a rehearsal from the wrong branch tells you nothing
+# useful about what a real deploy would do.
+BRANCH=$(git rev-parse --abbrev-ref HEAD)
+if [ "$BRANCH" != "main" ]; then
+    echo "!! mms-deploy must run from 'main' — currently on '$BRANCH'." >&2
+    echo "   The prod sync installs the working tree's index, so deploying from" >&2
+    echo "   '$BRANCH' would ship that branch's mods to the live server." >&2
+    echo "   Use mms-promote.sh to move '$BRANCH' into main first; it strips" >&2
+    echo "   quarantine.txt on the way through." >&2
+    echo >&2
+    echo "   Run this instead — it merges, strips, and then deploys for you:" >&2
+    echo >&2
+    echo "       cd ~/Documents/GitHub/mms-pack && ./mms-promote.sh" >&2
+    echo >&2
+    echo "   Do not run mms-deploy afterwards; mms-promote.sh calls it itself." >&2
+    exit 1
+fi
+
+# Belt and braces: the branch check above is the real guard, but a quarantined
+# mod reaching the prod index by any other route (a bad merge, a hand edit)
+# must not reach the server either. mms-promote.sh already proves this after
+# its strip; prove it again here, at the last point before prod is touched.
+for slug in $(grep -vE '^\s*#|^\s*$' quarantine.txt); do
+    if grep -q "mods/$slug.pw.toml" index.toml; then
+        echo "!! quarantined mod '$slug' is in the prod pack index — aborting." >&2
+        echo "   See quarantine.txt. Nothing has been pushed or synced." >&2
+        exit 1
+    fi
+done
 
 # run a mutating command, or announce it, depending on the mode
 run() {

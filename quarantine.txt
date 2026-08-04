@@ -1,0 +1,25 @@
+# Mods that live in the TESTING pack only and must never reach prod.
+#
+# The quarantine rule is "nothing in vanilla dimensions" — these mods are
+# unstable, or generate worldgen we do not want in the live world. Keeping them
+# out of the pack entirely used to be the enforcement, but that also kept them
+# off the DEV CLIENT, which made them impossible to work on: Server Testing runs
+# them, so a client without them is kicked at login with
+#
+#   Received N registry entries that are unknown to this client.
+#
+# So they now live in the `testing` branch's index (side=both, so the dev client
+# installs them) and mms-promote.sh strips them back out on the `main` side of
+# every promote. This file is that strip list.
+#
+# One packwiz metafile slug per line — the .pw.toml basename without the
+# extension, i.e. `mods/<slug>.pw.toml`. `#` comments and blanks are ignored.
+#
+# Removing a line here PROMOTES that mod to prod on the next promote. Do that
+# only once it has actually earned it; see the quarantine notes in the State of
+# Things report.
+
+aerial-hell
+mutant-monsters
+useless-reptile
+deadly-deadly-dungeon
