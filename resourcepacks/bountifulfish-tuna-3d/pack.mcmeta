@@ -1,6 +1,8 @@
 {
   "pack": {
-    "pack_format": 34,
-    "description": "3D model for Bountiful Fish's large tuna, extruded from the mod's own sprite with thickness driven by body depth."
+    "pack_format": 75,
+    "min_format": 75,
+    "max_format": 75,
+    "description": "3D model for Bountiful Fish's fossilized tuna, extruded from the mod's own sprite with thickness driven by body depth."
   }
 }
