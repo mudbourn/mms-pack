@@ -3299,7 +3299,7 @@ preserve = true
 
 [[files]]
 file = "overlay.list"
-hash = "0c4040a67a6eb0ecd199e410d8e09e7ca128aeff5045753bcb2a625f9b6d2283"
+hash = "b9066168f0bf4b93167ed1311f0e5b2671b8019e74fc1de7ff9b21f66182360c"
 
 [[files]]
 file = "quarantine.txt"
