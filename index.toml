@@ -2072,11 +2072,6 @@ hash = "85148bbdc56daaea9a67e4ece2f6d6d64cfb1781f5db0b5618c10b45528e4e1e"
 metafile = true
 
 [[files]]
-file = "mods/better-clouds.pw.toml"
-hash = "854493f35cc0b257cc25fe69d41b4b08f1adb534282a13b04d6f44d35ada6869"
-metafile = true
-
-[[files]]
 file = "mods/better-combat.pw.toml"
 hash = "6049c6f1f148c9bde5cfd2f79931b63d27f30ce305ebbbb58891a5211b31ad47"
 metafile = true
