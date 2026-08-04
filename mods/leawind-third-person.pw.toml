@@ -1,13 +1,13 @@
 name = "Leawind's Third Person"
-filename = "leawind_third_person-2.5.0-mc1.21.11-fabric.jar"
+filename = "leawind_third_person-3.0.0-beta.2+fabric-1.21.11.jar"
 side = "client"
 
 [download]
-url = "https://cdn.modrinth.com/data/S3D3QF0M/versions/NtmimEYY/leawind_third_person-2.5.0-mc1.21.11-fabric.jar"
+url = "https://cdn.modrinth.com/data/S3D3QF0M/versions/wyHiy5Yc/leawind_third_person-3.0.0-beta.2%2Bfabric-1.21.11.jar"
 hash-format = "sha512"
-hash = "61ec53a507c56a145a36114efe42df40cdf43c0d6b18584c7daf55eb9b4b14536d131896cde4d18c050b1a012bf5973c29ed38a9f8896e6be78b052a896e67b2"
+hash = "a8ff31041e1dda7cf7461ebf6b02f84e24a69bac2c702d33930491534f963cdad26d849a4a4bbea58aa74ca52626af25a5447dc28f72d0f3d21e78081c707fe3"
 
 [update]
 [update.modrinth]
 mod-id = "S3D3QF0M"
-version = "NtmimEYY"
+version = "wyHiy5Yc"

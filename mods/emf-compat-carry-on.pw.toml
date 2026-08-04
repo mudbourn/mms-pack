@@ -1,13 +1,13 @@
 name = "EMF Compat: Carry On"
-filename = "emf_compat_carry_on_1.21.11_1.0.0.jar"
+filename = "emf_compat_carry_on_1.21.11_1.1.0.jar"
 side = "client"
 
 [download]
-url = "https://cdn.modrinth.com/data/BPD5ZhBo/versions/q66ueJFF/emf_compat_carry_on_1.21.11_1.0.0.jar"
+url = "https://cdn.modrinth.com/data/BPD5ZhBo/versions/wwIQRuLb/emf_compat_carry_on_1.21.11_1.1.0.jar"
 hash-format = "sha512"
-hash = "0aedb536cde3ed39e3b97e306fee61959a8eec7733c8f31d2ed8bcf4acfd340f602b158df36018d6b9dab891657a3bef728f9dec189aec1040e7e76516ea54fc"
+hash = "27967814063f74c282140124f6d0347b9f3e7a574e35088954c9ff7edbe4d17c90b66a293d7f4d167d06c304baa1594c4cbd9104ae7da50de5ea7aa6ceee9b1a"
 
 [update]
 [update.modrinth]
 mod-id = "BPD5ZhBo"
-version = "q66ueJFF"
+version = "wwIQRuLb"

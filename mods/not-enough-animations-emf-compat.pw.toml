@@ -1,13 +1,13 @@
 name = "EMF Compat: Not Enough Animations"
-filename = "emf_compat_not_enough_animations_1.21.11_1.1.0.jar"
+filename = "emf_compat_not_enough_animations_1.21.11_1.2.0.jar"
 side = "client"
 
 [download]
-url = "https://cdn.modrinth.com/data/IGCrWfL7/versions/FFOKyz3y/emf_compat_not_enough_animations_1.21.11_1.1.0.jar"
+url = "https://cdn.modrinth.com/data/IGCrWfL7/versions/eyxLxOTw/emf_compat_not_enough_animations_1.21.11_1.2.0.jar"
 hash-format = "sha512"
-hash = "58bdf061d4190d12ab7c16da6295cc5b03cf49cd714457049c6ae7bca04e286ca53c0ec91035f180005648d00ce5b3eddade3ebeccf53eede2b32eafe4e87137"
+hash = "948c5ac2f6e641b5fc52fd7495fe206bf248a00dd55a887283d32929cd1bcae5665718b43a2aa4d8015ee52a66cbb4c92a145f00e3679e27b3fafc6a8b6743c3"
 
 [update]
 [update.modrinth]
 mod-id = "IGCrWfL7"
-version = "FFOKyz3y"
+version = "eyxLxOTw"
