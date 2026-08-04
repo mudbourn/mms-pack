@@ -37,7 +37,29 @@ set -e
 cd ~/Documents/GitHub/mms-pack
 
 DEV=0
-[ "$1" = "--dev" ] && DEV=1
+# Only --dev is understood. Anything else is a mistake, so say so rather than
+# ignoring it: `mms-deploy main` used to run a completely normal prod deploy
+# with the argument silently dropped, which reads as "deploy to main" and is
+# not what happens. An unrecognised argument means the caller expected
+# behaviour this script does not have — refuse instead of guessing which.
+for arg in "$@"; do
+    case "$arg" in
+        --dev) DEV=1 ;;
+        -h|--help)
+            echo "usage: mms-deploy [--dev]"
+            echo "  --dev   rehearse the full pipeline; no push, no release, no server writes"
+            echo
+            echo "Runs from 'main' only. To ship work from 'testing', use ./mms-promote.sh —"
+            echo "it merges, strips quarantine.txt, and then calls this script for you."
+            exit 0 ;;
+        *)
+            echo "!! mms-deploy: unknown argument '$arg'" >&2
+            echo "   usage: mms-deploy [--dev]" >&2
+            echo "   This script takes no branch or target argument: it always deploys the" >&2
+            echo "   current working tree, and only ever from 'main'." >&2
+            exit 2 ;;
+    esac
+done
 
 # ── branch guard ──
 # The prod server sync reads the WORKING TREE (mms-server-sync.py defaults
@@ -62,6 +84,12 @@ if [ "$BRANCH" != "main" ]; then
     echo "   '$BRANCH' would ship that branch's mods to the live server." >&2
     echo "   Use mms-promote.sh to move '$BRANCH' into main first; it strips" >&2
     echo "   quarantine.txt on the way through." >&2
+    echo >&2
+    echo "   Run this instead — it merges, strips, and then deploys for you:" >&2
+    echo >&2
+    echo "       cd ~/Documents/GitHub/mms-pack && ./mms-promote.sh" >&2
+    echo >&2
+    echo "   Do not run mms-deploy afterwards; mms-promote.sh calls it itself." >&2
     exit 1
 fi
 
