@@ -1,0 +1,13 @@
+name = "Useless Reptile"
+filename = "useless-reptile-0.12.3-1.21.11.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/YE4QRt8F/versions/jGGPMBUS/useless-reptile-0.12.3-1.21.11.jar"
+hash-format = "sha512"
+hash = "8260e19570e8ad0b8cfb37bc9b5b23737178f757d4420601f336cd30fa5d043bc5959955a92c784cd1ffb5978c99a69baf14a7d64b6f654e9c72017268095956"
+
+[update]
+[update.modrinth]
+mod-id = "YE4QRt8F"
+version = "jGGPMBUS"
