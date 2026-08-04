@@ -2652,6 +2652,11 @@ hash = "91c2e8506dbe7341e6fafd9cb730ee47ce491de6d08f5edd01a43429d2334282"
 metafile = true
 
 [[files]]
+file = "mods/krypton.pw.toml"
+hash = "2fb4ce2695c9f6da2087a5e350f2e85ea419de153e18bc20bf38f0b540c7caba"
+metafile = true
+
+[[files]]
 file = "mods/lambdynamiclights.pw.toml"
 hash = "71255e25b05b6529d6a2873e4db079b7b6541f58a78d872bc19478afcb0ffd1c"
 metafile = true
@@ -3123,6 +3128,11 @@ metafile = true
 [[files]]
 file = "mods/styledplayerlist.pw.toml"
 hash = "39472a622a8583b847fe981f4c7608ee0768c2f30d0a11bb47fda6c0ad2a4add"
+metafile = true
+
+[[files]]
+file = "mods/superflat-world-no-slimes.pw.toml"
+hash = "7713a8c83f7b0ae96e79d5459a732fdc4f432922b8fd4d5b05cc67cd8d240766"
 metafile = true
 
 [[files]]
