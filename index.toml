@@ -28700,7 +28700,99 @@ hash = "bef4d172fc1bfb34d342e79090726c4a0c272dd404783c3ea022b992e0e0415e"
 
 [[files]]
 file = "server-datapacks/mms-ddd-no-natural-gen/pack.mcmeta"
-hash = "e5ae66a88a386964d4c4cc83a6192c40e099c720ddb530e5dca09d1a6fb1a2e6"
+hash = "b03928dbb72bc65d64ab09e045543fbb54520a8d6a22704f3c85b505347e4e3d"
+
+[[files]]
+file = "server-datapacks/mms-unstable-recipe-embargo/README.md"
+hash = "81b1bdeaa07a2685d8958dc1698399fa971c4c22e9966a84e74e65e08f98a37f"
+
+[[files]]
+file = "server-datapacks/mms-unstable-recipe-embargo/data/aerialhell/recipe/crystal_from_ruby_bucket_freezing.json"
+hash = "e3a2148d269d1b6dce57f85bb6112ace130f425e1eae6120ef80c4c78dd72d99"
+
+[[files]]
+file = "server-datapacks/mms-unstable-recipe-embargo/data/aerialhell/recipe/diamond_shuriken.json"
+hash = "e3a2148d269d1b6dce57f85bb6112ace130f425e1eae6120ef80c4c78dd72d99"
+
+[[files]]
+file = "server-datapacks/mms-unstable-recipe-embargo/data/aerialhell/recipe/frozen_chicken_freezing.json"
+hash = "e3a2148d269d1b6dce57f85bb6112ace130f425e1eae6120ef80c4c78dd72d99"
+
+[[files]]
+file = "server-datapacks/mms-unstable-recipe-embargo/data/aerialhell/recipe/frozen_mutton_freezing.json"
+hash = "e3a2148d269d1b6dce57f85bb6112ace130f425e1eae6120ef80c4c78dd72d99"
+
+[[files]]
+file = "server-datapacks/mms-unstable-recipe-embargo/data/aerialhell/recipe/gold_shuriken.json"
+hash = "e3a2148d269d1b6dce57f85bb6112ace130f425e1eae6120ef80c4c78dd72d99"
+
+[[files]]
+file = "server-datapacks/mms-unstable-recipe-embargo/data/aerialhell/recipe/iron_shuriken.json"
+hash = "e3a2148d269d1b6dce57f85bb6112ace130f425e1eae6120ef80c4c78dd72d99"
+
+[[files]]
+file = "server-datapacks/mms-unstable-recipe-embargo/data/aerialhell/recipe/netherite_shuriken.json"
+hash = "e3a2148d269d1b6dce57f85bb6112ace130f425e1eae6120ef80c4c78dd72d99"
+
+[[files]]
+file = "server-datapacks/mms-unstable-recipe-embargo/data/aerialhell/recipe/stellar_clay_vibration.json"
+hash = "e3a2148d269d1b6dce57f85bb6112ace130f425e1eae6120ef80c4c78dd72d99"
+
+[[files]]
+file = "server-datapacks/mms-unstable-recipe-embargo/data/aerialhell/recipe/vibrant_chicken_vibration.json"
+hash = "e3a2148d269d1b6dce57f85bb6112ace130f425e1eae6120ef80c4c78dd72d99"
+
+[[files]]
+file = "server-datapacks/mms-unstable-recipe-embargo/data/mms_embargo/tags/item/never.json"
+hash = "079b89f1b95b95b5e065eb3cd0dd9024f07cfb7dff103fc1f136f29812692a47"
+
+[[files]]
+file = "server-datapacks/mms-unstable-recipe-embargo/data/uselessreptile/recipe/dragon_chestplate_diamond.json"
+hash = "e3a2148d269d1b6dce57f85bb6112ace130f425e1eae6120ef80c4c78dd72d99"
+
+[[files]]
+file = "server-datapacks/mms-unstable-recipe-embargo/data/uselessreptile/recipe/dragon_chestplate_gold.json"
+hash = "e3a2148d269d1b6dce57f85bb6112ace130f425e1eae6120ef80c4c78dd72d99"
+
+[[files]]
+file = "server-datapacks/mms-unstable-recipe-embargo/data/uselessreptile/recipe/dragon_chestplate_iron.json"
+hash = "e3a2148d269d1b6dce57f85bb6112ace130f425e1eae6120ef80c4c78dd72d99"
+
+[[files]]
+file = "server-datapacks/mms-unstable-recipe-embargo/data/uselessreptile/recipe/dragon_helmet_diamond.json"
+hash = "e3a2148d269d1b6dce57f85bb6112ace130f425e1eae6120ef80c4c78dd72d99"
+
+[[files]]
+file = "server-datapacks/mms-unstable-recipe-embargo/data/uselessreptile/recipe/dragon_helmet_gold.json"
+hash = "e3a2148d269d1b6dce57f85bb6112ace130f425e1eae6120ef80c4c78dd72d99"
+
+[[files]]
+file = "server-datapacks/mms-unstable-recipe-embargo/data/uselessreptile/recipe/dragon_helmet_iron.json"
+hash = "e3a2148d269d1b6dce57f85bb6112ace130f425e1eae6120ef80c4c78dd72d99"
+
+[[files]]
+file = "server-datapacks/mms-unstable-recipe-embargo/data/uselessreptile/recipe/dragon_tail_armor_diamond.json"
+hash = "e3a2148d269d1b6dce57f85bb6112ace130f425e1eae6120ef80c4c78dd72d99"
+
+[[files]]
+file = "server-datapacks/mms-unstable-recipe-embargo/data/uselessreptile/recipe/dragon_tail_armor_gold.json"
+hash = "e3a2148d269d1b6dce57f85bb6112ace130f425e1eae6120ef80c4c78dd72d99"
+
+[[files]]
+file = "server-datapacks/mms-unstable-recipe-embargo/data/uselessreptile/recipe/dragon_tail_armor_iron.json"
+hash = "e3a2148d269d1b6dce57f85bb6112ace130f425e1eae6120ef80c4c78dd72d99"
+
+[[files]]
+file = "server-datapacks/mms-unstable-recipe-embargo/data/uselessreptile/recipe/flute.json"
+hash = "e3a2148d269d1b6dce57f85bb6112ace130f425e1eae6120ef80c4c78dd72d99"
+
+[[files]]
+file = "server-datapacks/mms-unstable-recipe-embargo/data/uselessreptile/recipe/vortex_horn.json"
+hash = "e3a2148d269d1b6dce57f85bb6112ace130f425e1eae6120ef80c4c78dd72d99"
+
+[[files]]
+file = "server-datapacks/mms-unstable-recipe-embargo/pack.mcmeta"
+hash = "2868c221cb40dbddc3075ccc9d8bedba06553d378f10d6a41eda8c702b647c06"
 
 [[files]]
 file = "server-datapacks/mms-unstable-vanilla-embargo/README.md"
