@@ -1928,6 +1928,10 @@ file = "config/zfastnoise.mixin.toml"
 hash = "9662f1b3b93e09c023de08253f7b13fbc76bdb71c45ebce196ce80dff7cec1ec"
 
 [[files]]
+file = "dev-client-jvm-args.txt"
+hash = "f3e6cb13cc578c14bd02f19a811f6bb54de49c32d57cdf9cc059910116c2304c"
+
+[[files]]
 file = "mms-client-sweep.py"
 hash = "f0ed4fadac0105655f55d0233a9ff2ac435ee824b4a097f1d674a28f7cbc0ecc"
 
