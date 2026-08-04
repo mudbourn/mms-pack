@@ -1945,7 +1945,7 @@ hash = "6e2343e72e080e2b6410e5c419b2dd2c3d34fdee77dc51681d7b1a089a972afe"
 
 [[files]]
 file = "mms-hotswap-watch.sh"
-hash = "6de6790f06d72367182d49b83ff80922fe746fba74974bcc64615b41aea6653e"
+hash = "b18c9ba08862f09bf35120437630fb843992b8b1e4ec8ee503a8a14af6db3a2a"
 
 [[files]]
 file = "mms-netdrift-check.py"
