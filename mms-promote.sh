@@ -5,10 +5,13 @@
 #      not merged — they are not tracked in the pack)
 #   2. merge `testing` → `main`
 #   3. strip quarantined mods back out on the main side (see quarantine.txt)
-#   4. hand off to mms-deploy.sh, which cuts GitHub releases for any local mod
-#      builds ahead of their release, updates main, and syncs MMSLive01
+#   4. stop, on main, with the merge result for you to inspect
 #
-# Run from a clean tree.
+# MERGE ONLY — this does not deploy. It used to call mms-deploy.sh itself, which
+# meant a merge you wanted to eyeball first went straight to the live server.
+# Ship it yourself with `mms-deploy` once the merged pack looks right.
+#
+# Not the entry point: `mms-deploy --m` calls this. Run from a clean tree.
 set -e
 cd ~/Documents/GitHub/mms-pack
 
@@ -70,7 +73,12 @@ for slug in $(grep -vE '^\s*#|^\s*$' quarantine.txt); do
     fi
 done
 
-echo "── handing off to mms-deploy.sh (release + prod sync) ──"
-./mms-deploy.sh
-
-echo "── promoted. Return to staging with: git checkout testing && git merge main ──"
+echo "── merged. NOTHING HAS BEEN DEPLOYED. ──"
+echo
+echo "   You are now on 'main' with testing merged and the quarantine stripped."
+echo "   Inspect the merged pack, then ship it when you are happy:"
+echo
+echo "       mms-deploy            # deploys main → MMSLive01"
+echo "       mms-deploy --d        # rehearse it first"
+echo
+echo "   Return to staging with: git checkout testing && git merge main"

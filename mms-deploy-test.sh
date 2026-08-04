@@ -22,8 +22,30 @@
 #
 # Promote a validated fix with ./mms-promote.sh (or by hand: remove its slug
 # from overlay.list, git checkout main && git merge testing, ./mms-deploy.sh).
+#
+# ── NOT THE ENTRY POINT ──
+# This is the testing LANE, invoked by mms-deploy.sh. Run `mms-deploy` from the
+# `testing` branch instead — it parses flags, picks the lane, and calls this.
 set -e
 cd ~/Documents/GitHub/mms-pack
+
+# --dev: rehearse without writing. The prod lane has always had this; the test
+# lane did not, which meant the only way to find out what a staging deploy would
+# do was to do it. Same contract as prod: no commits, no server or client writes.
+DEV=0
+[ "$1" = "--dev" ] && DEV=1
+DRYFLAG=""
+[ "$DEV" = "1" ] && DRYFLAG="--dry-run"
+
+run() {
+    if [ "$DEV" = "1" ]; then
+        echo "[dry-run] would: $*"
+    else
+        "$@"
+    fi
+}
+
+[ "$DEV" = "1" ] && echo "══ DRY RUN — no commits, no server or client writes ══"
 
 # Symlink → /Volumes/AMP-Instances/instances/MMSTesting01/Minecraft/. Renamed
 # from "MMSTesting01" on 2026-07-23; the old name no longer resolves.
@@ -37,15 +59,28 @@ if [ "$branch" != "testing" ]; then
 fi
 
 # ship pending branch edits, then refresh the index and ship that too
-git add -A
-if git diff --cached --quiet; then
-    echo "pack: no local changes to commit"
+if [ "$DEV" = "1" ]; then
+    # Deliberately does not stage, commit, or refresh. Unlike the prod lane
+    # there is no hard-restore trap here, so the rehearsal must not touch the
+    # tree at all — nothing to undo means nothing that can eat your edits.
+    if [ -n "$(git status --porcelain)" ]; then
+        echo "[dry-run] would commit these pack edits to 'testing':"
+        git status --short | sed 's/^/     /'
+    else
+        echo "[dry-run] no pack edits to commit"
+    fi
+    echo "[dry-run] would: packwiz refresh (index left untouched)"
 else
-    git commit -m "testing pack changes"
+    git add -A
+    if git diff --cached --quiet; then
+        echo "pack: no local changes to commit"
+    else
+        git commit -m "testing pack changes"
+    fi
+    packwiz refresh
+    git add -A
+    git diff --cached --quiet || git commit -m "refresh index"
 fi
-packwiz refresh
-git add -A
-git diff --cached --quiet || git commit -m "refresh index"
 echo "pack: testing branch updated — served to MMS Dev by ./mms-dev-serve.sh"
 
 if ! curl -fsS --max-time 2 http://127.0.0.1:8080/pack.toml >/dev/null 2>&1; then
@@ -58,12 +93,12 @@ if [ ! -d "$TEST_SERVER_MODS" ]; then
     echo "!! test server mods not found at $TEST_SERVER_MODS — skipping server sync." >&2
     exit 1
 fi
-python3 ./mms-server-sync.py "$TEST_SERVER_MODS"
+python3 ./mms-server-sync.py "$TEST_SERVER_MODS" $DRYFLAG
 
 echo "── dev-jar overlay ──"
-./mms-overlay-apply.sh "$TEST_SERVER_MODS"
+run ./mms-overlay-apply.sh "$TEST_SERVER_MODS"
 if [ -d "$TEST_CLIENT_MODS" ]; then
-    ./mms-overlay-apply.sh "$TEST_CLIENT_MODS"
+    run ./mms-overlay-apply.sh "$TEST_CLIENT_MODS"
 else
     echo "overlay: dev client mods dir not found yet ($TEST_CLIENT_MODS)"
     echo "         (launch 'MMS Dev' once so packwiz creates it, then re-run.)"
