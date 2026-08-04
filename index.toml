@@ -503,7 +503,7 @@ hash = "4e644f8324221022aed71d39b3d56a6cd189d5bd3f67c4aa72b889fb208421da"
 
 [[files]]
 file = "config/bobby.conf"
-hash = "a2fecb4b7d86bee09574ab9fb9f714524b46926177f1e50b19f13ca7f06f1e18"
+hash = "2b537201fc80ff324413829904450720706869fb5e4d753e14f4bff1525f5438"
 
 [[files]]
 file = "config/c2me.toml"
