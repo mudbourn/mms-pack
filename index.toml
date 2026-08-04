@@ -1788,7 +1788,7 @@ hash = "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
 
 [[files]]
 file = "config/voicechat/voicechat-client.properties"
-hash = "a3494205620c39ce9b87fb9c10f846c6f5189fd52d6228b1e519047ac9e5519f"
+hash = "d32c9778994652773ed350bb0fb4b0e3c01b11ad0151c9e33cee978a04c9ec81"
 
 [[files]]
 file = "config/voicechat/voicechat-server.properties"
@@ -2919,6 +2919,11 @@ metafile = true
 [[files]]
 file = "mods/peekmod.pw.toml"
 hash = "433a1df6ee212fa21ff615566d8113ce60183de3eb00d00ffde9f0a495f0184f"
+metafile = true
+
+[[files]]
+file = "mods/perspective-api.pw.toml"
+hash = "4f6798918797488e88ad4d4b6bc6b1e38e9b267d0f095b87295877aeceb7258c"
 metafile = true
 
 [[files]]
