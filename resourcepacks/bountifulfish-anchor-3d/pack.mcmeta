@@ -1,6 +1,8 @@
 {
   "pack": {
-    "pack_format": 34,
+    "pack_format": 75,
+    "min_format": 75,
+    "max_format": 75,
     "description": "3D model for Bountiful Fish's anchor. Geometry from the Old Pirate Anchor model, recoloured to the mod's palette."
   }
 }

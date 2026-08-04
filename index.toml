@@ -1415,7 +1415,7 @@ hash = "902b29e5f2044fa0011ac76281c700b52d83f1b5db6b605b8f702c8a99a55a2b"
 
 [[files]]
 file = "config/modpack_defaults/options.txt"
-hash = "a3fd1a8094c822b4f890772c80d0281d7783658a629523a187a676c635c739f8"
+hash = "0dc1689e7306eaae3725827d240f2a962c65aac2d73d4be0799aa4925349df10"
 
 [[files]]
 file = "config/moreculling.toml"
@@ -1934,6 +1934,10 @@ hash = "f3e6cb13cc578c14bd02f19a811f6bb54de49c32d57cdf9cc059910116c2304c"
 [[files]]
 file = "mms-client-sweep.py"
 hash = "f0ed4fadac0105655f55d0233a9ff2ac435ee824b4a097f1d674a28f7cbc0ecc"
+
+[[files]]
+file = "mms-config-reconcile.py"
+hash = "7161bccb87baadfcf5ca7528f6fdd0b61754a66cdfd16d789cc1d657cdaad620"
 
 [[files]]
 file = "mms-deploy-prod.sh"
@@ -2991,6 +2995,11 @@ hash = "09bc85fbbde3eab9c3cbf8e543b708eaebdca08d8f7e12492588a1be4db3adee"
 metafile = true
 
 [[files]]
+file = "mods/renderscale.pw.toml"
+hash = "b4c4f1163795d12bb392a2645b886b6afc6e7b3e4d28af4968a6ca0c74fcb606"
+metafile = true
+
+[[files]]
 file = "mods/resourceful-lib.pw.toml"
 hash = "14749602c5e4e4fb3ea0eaeedc380a959e9378fb9ebcb5c2dd284f6b0cf87f87"
 metafile = true
@@ -3285,7 +3294,7 @@ hash = "944f75feb78961494b253915d1e66c6572ae717c891d7e5d0f3bb50c56d16cab"
 
 [[files]]
 file = "options.txt"
-hash = "e63de5b3388ac7111948b1bfffb6d340a5cb6ea9f6322d49d1b8a0a51a164808"
+hash = "7774bac392678c856f55885036f5f7f7ad3eb9d3d5592b8c63abbf0d89b5b420"
 preserve = true
 
 [[files]]
@@ -24806,7 +24815,7 @@ hash = "306df07a9ab49208405669a96d4dea050b7078b7aee45e1fa629ded1de8c4f30"
 
 [[files]]
 file = "resourcepacks/Fresh Patch - Variants and Ventures/pack.mcmeta"
-hash = "1ac3927a6f2c368387ee6b32f62db522b502d567f4876828d8ca7052f516c9ca"
+hash = "ce30093c7c05d40997229499efca0f7fa9fbb1c441c6f26fb254a908c110eb5d"
 
 [[files]]
 file = "resourcepacks/Fresh Patch - Variants and Ventures/pack.png"
@@ -28025,42 +28034,6 @@ file = "resourcepacks/Mod Menu Helper/pack.png"
 hash = "2cc1f8c9bd888865ba3789e226092cc7ef9d095e5d930390db74dfb62023949f"
 
 [[files]]
-file = "resourcepacks/OriginsTweaks-resourcepack/LICENSE_originstweaks"
-hash = "df871330ff7e2778210f4205ff32dfed271eb05debde36a2b5d582d60efca4b4"
-
-[[files]]
-file = "resourcepacks/OriginsTweaks-resourcepack/assets/origins/lang/de_de.json"
-hash = "ad18c5a4cc8fc711b773b36b15870dca79a62cadc22ad3579408675239d1bae4"
-
-[[files]]
-file = "resourcepacks/OriginsTweaks-resourcepack/assets/originstweaks/icon.png"
-hash = "fba3b102468c72f3711b3717122ff2f76eb436bd5a6814a1369688cfa2d2ac85"
-
-[[files]]
-file = "resourcepacks/OriginsTweaks-resourcepack/assets/originstweaks/lang/de_de.json"
-hash = "8f2624f30349a4e48e82a838754e8fbe7646e9162b3c496faf65d4ed9a380192"
-
-[[files]]
-file = "resourcepacks/OriginsTweaks-resourcepack/assets/originstweaks/lang/en_gb.json"
-hash = "e24bd580d905344b1d8fe75fc32bd46d91a27413c25138545e058fa048dae41c"
-
-[[files]]
-file = "resourcepacks/OriginsTweaks-resourcepack/assets/originstweaks/lang/en_us.json"
-hash = "667dcd4bbd9b5356f29048550783482e9f35de16ca9ae7bcf12bc82304d2ee07"
-
-[[files]]
-file = "resourcepacks/OriginsTweaks-resourcepack/assets/originstweaks/lang/ru_ru.json"
-hash = "16053411ee3380fdfb018048e6c2f194dc4da622161f928ba3f50378d653bf1f"
-
-[[files]]
-file = "resourcepacks/OriginsTweaks-resourcepack/assets/originstweaks/textures/entity/wings.png"
-hash = "1f6388d0ff4d871329aa6d0b713cdbfb48781c55da1e055d156f6681d63018f2"
-
-[[files]]
-file = "resourcepacks/OriginsTweaks-resourcepack/pack.mcmeta"
-hash = "b395ae466a4a4789d2f0817eb4efa390805260073e0b4988a38f505bd77eb33a"
-
-[[files]]
 file = "resourcepacks/Semos Animations Lib 2.0.3/assets/semos/entity_animations/classic_player/classic_player_animations.jpm"
 hash = "c370880784297c18f3cdac557b265c6963d6666ac7df3899c548dc6183705192"
 
@@ -28414,7 +28387,11 @@ hash = "637758b2a333711bbe789a30c351f8d6e09865cec6e0b4af4e35e665cd2a22f1"
 
 [[files]]
 file = "resourcepacks/aerialhell-trident-3d/pack.mcmeta"
-hash = "80fc6de8df7e4f16d695fdbaa636c2de44ea30c3458cec17f1f625cc134cc61e"
+hash = "d064557006220f299803ea77c3367b3efec029a11ac1c6532b4e61fd3b549011"
+
+[[files]]
+file = "resourcepacks/aerialhell-trident-3d/pack.png"
+hash = "9b5f27360cfa947cfead03ae45a7ca3250e588dbc17ef315fd5017a5d0cfc2e2"
 
 [[files]]
 file = "resourcepacks/bountifulfish-anchor-3d/.mms-anchor-backup/anchor_3d.json"
@@ -28450,7 +28427,11 @@ hash = "dc4cdfe1cc84ccc9983511f8a5304d7c253f9299bb511ea57dee774a65a80c85"
 
 [[files]]
 file = "resourcepacks/bountifulfish-anchor-3d/pack.mcmeta"
-hash = "62722bff0cc1142392bc8fdcdcc7db36276f6e0ac788617c5ad7d5f438c41870"
+hash = "d7925bbd7cc3cb09d067e571bd0906d743a9b67373605e4e5ef984af595813cc"
+
+[[files]]
+file = "resourcepacks/bountifulfish-anchor-3d/pack.png"
+hash = "77ebe7214aed1e05667d1ee900dd62abdbc1a3f1ad48e80a472bee5e9aa79b3a"
 
 [[files]]
 file = "resourcepacks/bountifulfish-tuna-3d/assets/bountiful-fish/models/item/large_tuna.json"
@@ -28466,7 +28447,11 @@ hash = "1112f2d547c0113f60db0fe12f7bcb2a37491264c2e9debaa723638d9a54dba6"
 
 [[files]]
 file = "resourcepacks/bountifulfish-tuna-3d/pack.mcmeta"
-hash = "b0d6acbf35fba8a1ceaa2686edb939133a7e833806fd21a9ba4eacbe35124572"
+hash = "16adf4e99a1386e26463eff01b86f96a4d42973eed5b4947f02afc4a55c403f4"
+
+[[files]]
+file = "resourcepacks/bountifulfish-tuna-3d/pack.png"
+hash = "28755e1ae65e99c817604b855b50bba8edd680aa802d5ab06fb48f53ef34023c"
 
 [[files]]
 file = "resourcepacks/jobsplus_renames/assets/jobsplus/lang/en_us.json"
@@ -28474,7 +28459,11 @@ hash = "e76116d282f056436916a6bf43f3b2551600f0471c8e847ca4eda53aaef5fc78"
 
 [[files]]
 file = "resourcepacks/jobsplus_renames/pack.mcmeta"
-hash = "4cef069c99588a294a043036ef441a2c43eacd7a73d38a77425b695e8c654f76"
+hash = "af2ee80e87df66006f6b5a856ac48a2adad3e414062789367765c638d1f16cba"
+
+[[files]]
+file = "resourcepacks/jobsplus_renames/pack.png"
+hash = "47d6a8e5d7e790e5493dd706c84ff4e4eb4794d1608b75375106d377a0be0f9d"
 
 [[files]]
 file = "resourcepacks/rubide-retexture/assets/rubies/lang/en_us.json"
@@ -28486,19 +28475,11 @@ hash = "a17768caf3548c3550001e31c9d21ce3fc298be2722a21b2bc79a03c44f3f453"
 
 [[files]]
 file = "resourcepacks/rubide-retexture/pack.mcmeta"
-hash = "32c97bb10f7c66d0eadb8413dbf1db1474869bd0c67c956bdf4e6fb0b650ce51"
+hash = "e78ab2e13c300316dfefddd23e104d218fb7e603aafc94e64798c6a46ef5c2f7"
 
 [[files]]
-file = "resourcepacks/third_person_bow_fix/assets/minecraft/item_patterns/use_to_aim/vanilla.json"
-hash = "0829f7bfeb4292dd91742b7a3f3b2d6c07e9e10239ad1b4d0d4564852bf5a130"
-
-[[files]]
-file = "resourcepacks/third_person_bow_fix/assets/minecraft/item_patterns/use_to_first_person/vanilla.json"
-hash = "6be29eda5d542326d35dcd73d38fda5ac2934952695c0956dc40e7bf9373fb26"
-
-[[files]]
-file = "resourcepacks/third_person_bow_fix/pack.mcmeta"
-hash = "6c9c5b061b154cef1cbd3b6269635e79f6215495be8c138785069cb273d41d90"
+file = "resourcepacks/rubide-retexture/pack.png"
+hash = "25c4f28b81c8b7af48eb3de6a2930ade6f887657ac4f9059bd761c8dacafc46c"
 
 [[files]]
 file = "resourcepacks/toheee1234's Better Combat Animations/assets/bettercombat/player_animations/.mms-swingfix-backup/one_handed_slash_horizontal_left.json.was-two-handed"
