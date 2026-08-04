@@ -1941,7 +1941,7 @@ hash = "fa7f97f1c8fd422a817f86f212f9ce6161ef523dcb3b7873b862596332c444ea"
 
 [[files]]
 file = "mms-dev-setup.sh"
-hash = "902a723b330a31807c59675a0abb86bd84c83975a486e00eabc4fdf8f8128be8"
+hash = "6e2343e72e080e2b6410e5c419b2dd2c3d34fdee77dc51681d7b1a089a972afe"
 
 [[files]]
 file = "mms-hotswap-watch.sh"
