@@ -15,3 +15,10 @@
 #
 # Example (uncomment while testing the next metro fix):
 # mms-mod-compat-support
+
+# Lowlands vanity sets ported to custom armour geometry — 23 models, never yet
+# rendered. The lowlands-vanity resource pack is .packwizignore'd pending the
+# author's redistribution approval, so it does NOT arrive over packwiz serve; it
+# is hand-dropped in the MMS Dev instance and stays there because untracked
+# assets survive a pack refresh.
+mms-mod-compat-support
