@@ -2134,7 +2134,7 @@ metafile = true
 
 [[files]]
 file = "mods/camera-glue.pw.toml"
-hash = "d4078657d8e759bbf7da4f2a9b101f86f53027f4664a62738e5898f78f84492d"
+hash = "306e9c0e312a967f041da9119767c9cb9120472b767629c3590002982a70e66d"
 metafile = true
 
 [[files]]
