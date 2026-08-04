@@ -28,17 +28,35 @@ if [ -x "$DEV/jbr/Contents/Home/bin/java" ]; then
 else
     url="$1"
     if [ -z "$url" ]; then
-        echo "jbr: resolving latest osx-aarch64 build from GitHub…"
-        url=$(curl -fsSL "https://api.github.com/repos/JetBrains/JetBrainsRuntime/releases?per_page=15" \
-            | grep -oE '"browser_download_url": *"[^"]*"' \
-            | sed 's/.*"browser_download_url": *"//; s/"$//' \
-            | grep -E 'jbr-21.*osx-aarch64.*\.tar\.gz$' \
-            | head -1)
+        # The GitHub releases carry NO binary assets — they are source tags only.
+        # Builds live on JetBrains' CDN under a name derived from the tag:
+        #   tag  jbr-release-21.0.11b1163.116
+        #   file jbr-21.0.11-osx-aarch64-b1163.116.tar.gz
+        # Latest overall is 25.x, so pin the scan to 21 (what MC 1.21.11 wants).
+        echo "jbr: resolving latest 21.x build…"
+        for page in 1 2 3 4 5 6 7 8; do
+            tag=$(curl -fsSL "https://api.github.com/repos/JetBrains/JetBrainsRuntime/releases?per_page=100&page=$page" \
+                | grep -oE '"tag_name": *"jbr-release-21[^"]*"' \
+                | sed 's/.*"jbr-release-//; s/"$//' | head -1)
+            [ -n "$tag" ] && break
+        done
+        if [ -n "$tag" ]; then
+            ver="${tag%b*}"      # 21.0.11
+            build="${tag##*b}"   # 1163.116
+            url="https://cache-redirector.jetbrains.com/intellij-jbr/jbr-${ver}-osx-aarch64-b${build}.tar.gz"
+            # the name is derived, not published — confirm it exists before committing
+            if ! curl -sIL -o /dev/null -f "$url"; then
+                echo "jbr: derived URL 404s ($url)" >&2
+                url=""
+            fi
+        fi
     fi
     if [ -z "$url" ]; then
         echo "!! could not resolve a JBR 21 osx-aarch64 tarball." >&2
-        echo "   Grab one from https://github.com/JetBrains/JetBrainsRuntime/releases" >&2
-        echo "   and re-run:  ./mms-dev-setup.sh <url>" >&2
+        echo "   Pick a jbr-release-21.* tag from" >&2
+        echo "     https://github.com/JetBrains/JetBrainsRuntime/releases" >&2
+        echo "   and re-run with the matching CDN URL, e.g. for tag 21.0.11b1163.116:" >&2
+        echo "     ./mms-dev-setup.sh https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.11-osx-aarch64-b1163.116.tar.gz" >&2
         exit 1
     fi
     echo "jbr: downloading $url"
