@@ -40,8 +40,14 @@ import subprocess
 import sys
 import zipfile
 
-instance = sys.argv[1]
-pack_dir = sys.argv[2] if len(sys.argv) > 2 else os.path.dirname(os.path.abspath(__file__))
+# Flags are stripped before the positional read: pack_dir is optional, so a
+# trailing --dry-run would otherwise be taken as the pack directory.
+_argv = [a for a in sys.argv[1:] if not a.startswith('--')]
+dry_run = '--dry-run' in sys.argv[1:]
+TAG = '[dry-run] ' if dry_run else ''
+
+instance = _argv[0]
+pack_dir = _argv[1] if len(_argv) > 1 else os.path.dirname(os.path.abspath(__file__))
 mods_dir = os.path.join(instance, 'mods')
 packwiz_json = os.path.join(instance, 'packwiz.json')
 
@@ -133,8 +139,9 @@ for mid, jars in sorted(by_id.items()):
     for j in jars:
         if j == tracked[0]:
             continue
-        os.remove(os.path.join(mods_dir, j))
-        print(f"client sweep: removed orphan {j} "
+        if not dry_run:
+            os.remove(os.path.join(mods_dir, j))
+        print(f"{TAG}client sweep: removed orphan {j} "
               f"(duplicate id '{mid}', packwiz manages {tracked[0]})")
         removed += 1
 

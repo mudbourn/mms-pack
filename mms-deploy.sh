@@ -22,25 +22,68 @@
 #                              duplicate a packwiz-managed mod id. Runs FIRST, so
 #                              a client that cannot boot is caught before a
 #                              release is cut rather than after.
+#
+# --dev  rehearsal. Runs every step above and reports what a real deploy would
+#        do, but pushes nothing, cuts no release, and writes to no server. This
+#        is not the test lane (that is mms-deploy-test.sh) — it is prod's own
+#        pipeline with the irreversible half disarmed, so a bad release or a
+#        netdrift failure is caught before it is permanent rather than after.
+#
+#        packwiz still rewrites the working tree (update -a, refresh,
+#        update-title), so --dev requires a clean tree and restores it at the
+#        end. That is why it refuses to start on a dirty one: the restore is a
+#        hard reset and it must not be able to eat uncommitted work.
 set -e
 cd ~/Documents/GitHub/mms-pack
 
+DEV=0
+[ "$1" = "--dev" ] && DEV=1
+
+# run a mutating command, or announce it, depending on the mode
+run() {
+    if [ "$DEV" = "1" ]; then
+        echo "[dry-run] would: $*"
+    else
+        "$@"
+    fi
+}
+
+if [ "$DEV" = "1" ]; then
+    if [ -n "$(git status --porcelain)" ]; then
+        echo "!! --dev needs a clean tree: it lets packwiz rewrite the working" >&2
+        echo "   tree and then hard-restores it, which would destroy these edits:" >&2
+        git status --short >&2
+        exit 1
+    fi
+    START_REF=$(git rev-parse HEAD)
+    # restore on ANY exit path — a netdrift failure or a ctrl-C must not leave
+    # the tree holding a half-applied packwiz update that a later real deploy
+    # would then commit blind
+    trap 'echo "── [dry-run] restoring working tree to $START_REF ──"; \
+          git reset --hard "$START_REF" >/dev/null; git clean -fd >/dev/null; \
+          echo "   tree restored; nothing was pushed, released, or synced."' EXIT
+    echo "══ DRY RUN — no push, no release, no server writes ══"
+fi
+
 LIVE_CLIENT="$HOME/Library/Application Support/PrismLauncher/instances/MMS Live/minecraft"
+DRYFLAG=""
+[ "$DEV" = "1" ] && DRYFLAG="--dry-run"
 
 # ── client sweep (preflight) ──
 # packwiz-installer only manages files listed in packwiz.json, so a jar copied
 # in by hand is never cleaned up — and two jars sharing a Fabric mod id stop the
 # client booting at all. The server side has always deduped by mod id; this is
 # the missing client-side half. Overlay dev jars are exempt (see the script).
-python3 ./mms-client-sweep.py "$LIVE_CLIENT"
+python3 ./mms-client-sweep.py "$LIVE_CLIENT" $DRYFLAG
 
-# ship pending local edits before packwiz mixes its changes in with them
+# ship pending local edits before packwiz mixes its changes in with them.
+# --dev guarantees a clean tree, so this branch has nothing to do there.
 git add -A
 if git diff --cached --quiet; then
     echo "pack: no local changes to commit"
 else
-    git commit -m "local pack changes"
-    git push
+    run git commit -m "local pack changes"
+    run git push
     echo "pack: local changes pushed"
 fi
 
@@ -58,6 +101,13 @@ for toml in mods/*.pw.toml; do
     # act only when the local build is strictly newer than the released tag
     [ "$(printf '%s\n%s\n' "$tag" "$ver" | sort -V | tail -1)" = "$ver" ] || continue
     echo "→ $slug: local build $ver ahead of released $tag — releasing v$ver"
+    if [ "$DEV" = "1" ]; then
+        echo "  [dry-run] would commit+push $slug and cut release v$ver with $(basename "$jar")"
+        # The retry loop below waits on a release that will never exist here,
+        # so skip it rather than burn 25s of sleeps and print a false warning.
+        echo "  [dry-run] would then point $toml at v$ver"
+        continue
+    fi
     (
         cd "$repo"
         git add -A
@@ -88,9 +138,14 @@ git add -A
 if git diff --cached --quiet; then
     echo "pack: no mod updates to commit"
 else
-    git commit -m "update mods"
-    git push
-    echo "pack: pushed — clients update on next launch"
+    if [ "$DEV" = "1" ]; then
+        echo "[dry-run] would commit + push these pack changes:"
+        git diff --cached --stat
+    else
+        git commit -m "update mods"
+        git push
+        echo "pack: pushed — clients update on next launch"
+    fi
 fi
 
 echo "── server sync (Server Prod / MMSLive01) ──"
@@ -101,15 +156,24 @@ echo "── server sync (Server Prod / MMSLive01) ──"
 SERVER_MODS="$HOME/Documents/GitHub/Server Prod/mods"
 if [ ! -d "$SERVER_MODS" ]; then
     echo "!! server mods folder not mounted at $SERVER_MODS — skipping server sync." >&2
-    echo "!! Mount the AMP share and re-run, or the server will drift out of sync." >&2
-    exit 1
+    if [ "$DEV" = "1" ]; then
+        # A rehearsal that aborts here has still told you about the release and
+        # pack half, which is most of what it is for. Do not fail it — but do
+        # not let it read as a clean pass either.
+        echo "?? [dry-run] server sync NOT rehearsed — mount the share to check it." >&2
+    else
+        echo "!! Mount the AMP share and re-run, or the server will drift out of sync." >&2
+        exit 1
+    fi
 fi
-
 # Shared with the test lane (mms-deploy-test.sh) — one implementation, so a
 # fix to the never-downgrade or supersede rules cannot land on only one of
 # the two servers. This was an inline copy that had already drifted from
 # mms-server-sync.py by the time it was noticed.
-python3 ./mms-server-sync.py "$SERVER_MODS"
+# Guarded because --dev tolerates an unmounted share; a real deploy exited above.
+if [ -d "$SERVER_MODS" ]; then
+    python3 ./mms-server-sync.py "$SERVER_MODS" $DRYFLAG
+fi
 
 echo "── server sync (Server Testing / MMSTesting01) ──"
 # Testing used to be synced only by mms-deploy-test.sh, on the `testing` branch.
@@ -132,7 +196,7 @@ if [ ! -d "$TEST_SERVER_MODS" ]; then
     echo "?? test server mods not mounted at $TEST_SERVER_MODS — skipped." >&2
     echo "   (prod is already synced; re-run when the share is up to catch Testing up.)" >&2
 else
-    python3 ./mms-server-sync.py "$TEST_SERVER_MODS" . --hold testing-hold.txt || {
+    python3 ./mms-server-sync.py "$TEST_SERVER_MODS" . --hold testing-hold.txt $DRYFLAG || {
         echo "?? testing sync reported problems — prod is unaffected." >&2
     }
 fi
@@ -146,11 +210,24 @@ fi
 #
 # Captured rather than piped: this script has no pipefail, so a pipeline would
 # report grep's status and the gate would never fire.
-NETDRIFT_OUT="$(python3 ./mms-netdrift-check.py "$SERVER_MODS" .)" && NETDRIFT_RC=0 || NETDRIFT_RC=$?
-# NOTE lines are baggage-level drift and are intentionally not shown here.
-echo "$NETDRIFT_OUT" | grep -vE '^NOTE' || true
-if [ "$NETDRIFT_RC" -ne 0 ]; then
-    echo "!! network drift check failed — see the OVERLAP/HIGH lines above." >&2
-    echo "!! Resolve the conflict, or record a reviewed overlap in netdrift-allow.txt." >&2
-    exit 1
+#
+# Read-only, so it runs unchanged under --dev — and it is the single most
+# valuable thing to rehearse, since a desync here is what a dry run exists to
+# catch before the jars are on the server rather than after.
+if [ ! -d "$SERVER_MODS" ]; then
+    echo "?? netdrift check skipped — $SERVER_MODS not mounted." >&2
+else
+    NETDRIFT_OUT="$(python3 ./mms-netdrift-check.py "$SERVER_MODS" .)" && NETDRIFT_RC=0 || NETDRIFT_RC=$?
+    # NOTE lines are baggage-level drift and are intentionally not shown here.
+    echo "$NETDRIFT_OUT" | grep -vE '^NOTE' || true
+    if [ "$NETDRIFT_RC" -ne 0 ]; then
+        echo "!! network drift check failed — see the OVERLAP/HIGH lines above." >&2
+        echo "!! Resolve the conflict, or record a reviewed overlap in netdrift-allow.txt." >&2
+        exit 1
+    fi
+fi
+
+if [ "$DEV" = "1" ]; then
+    echo
+    echo "══ dry run complete — rerun without --dev to deploy for real ══"
 fi
