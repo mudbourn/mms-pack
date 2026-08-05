@@ -28418,7 +28418,7 @@ hash = "1bc2f93c99f1eb4d0be05df16ac705d0745539e5205df76ba967d5a14ea2e863"
 
 [[files]]
 file = "resourcepacks/basicweapons-pike-3d/assets/basicweapons/models/item/pike_3d.json"
-hash = "3fab069e36800377d1460eb93f87b38b6710ed0cbf928ae1eec696d5cf977f03"
+hash = "d9672c5ec737d299d06c63941204e7b7e808758e7c32f74b81625751a21405ea"
 
 [[files]]
 file = "resourcepacks/basicweapons-pike-3d/assets/basicweapons/models/item/stone_pike_held.json"
