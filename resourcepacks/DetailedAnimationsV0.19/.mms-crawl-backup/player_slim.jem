@@ -1,15 +1,15 @@
 {
-	"credit": "",
+	"credit": "by Cymock & MapleTape",
 	"textureSize": [64, 64],
 	"models": [
 		{
 			"part": "cloak",
 			"id": "cloak",
 			"invertAxis": "xy",
-			"translate": [0, -24, 0],
+			"translate": [0, -24, -1],
 			"boxes": [
 				{
-					"coordinates": [-5, 8, -1, 10, 16, 1],
+					"coordinates": [-5, 8, 1, 10, 16, 1],
 					"uvNorth": [1, 2, 11, 34],
 					"uvEast": [0, 2, 1, 34],
 					"uvSouth": [12, 2, 22, 34],
@@ -25,7 +25,7 @@
 					"var.AD": "(var.Age - var.LastAge)",
 					"var.TD": "frame_time * 60 * var.NewFrame",
 					"var.Counter": "var.Counter + var.NewFrame",
-					"var.DT": "clamp(var.TD * if(var.TD > 4, 0, 1),0.00000000001,10)",
+					"var.DT": "clamp(var.TD * if(var.TD > 4, 0.00000000001, 1),0,10)",
 					"var.PDT": "var.DT",
 					"var.PosY": "if(var.NewFrame > 0, pos_y, var.PosY)",
 					"var.PosZ": "if(var.NewFrame > 0, pos_z, var.PosZ)",
@@ -34,7 +34,6 @@
 					"var.RotX": "if(var.NewFrame > 0, rot_x, var.RotX)",
 					"var.HeightAboveGround": "if(var.NewFrame > 0, height_above_ground, var.HeightAboveGround)",
 					"var.is_on_ground": "if(is_on_ground, 1, 0)",
-					"var.is_riding": "if(is_riding, 1, 0)",
 					"var.Speed": "if(var.NewFrame > 0, sqrt((var.LastPosX - var.PosX) * (var.LastPosX - var.PosX) + (var.LastPosZ - var.PosZ) * (var.LastPosZ - var.PosZ)) / var.DT, var.Speed)",
 					"var.DistanceMoved": "if(var.NewFrame > 0, var.DistanceMoved + var.Speed * var.DT, var.DistanceMoved)",
 					"var.AvgSpeed": "var.AvgSpeed + (var.Speed - var.AvgSpeed) / 2 * var.DT",
@@ -93,7 +92,7 @@
 					"var.IdleRX": "var.IdleRX + (head_pitch * if(var.is_on_ground > 0, 1, 0) - var.IdleRX) / 8 * var.DT * var.NewFrame",
 					"var.AirPose": "if(var.is_on_ground < 1, 1, 0)",
 					"var.AirPoseStrength": "var.AirPoseStrength + (var.AirPose - var.AirPoseStrength) / 7 * var.DT",
-					"var.SneakingPose": "if(is_sneaking && !is_crawling, 1, 0)",
+					"var.SneakingPose": "if(is_sneaking, 1, 0)",
 					"var.SneakingPoseStrength": "var.SneakingPoseStrength + ((var.SneakingPose * (0.25 + var.OnGroundPoseStrength * 0.75)) - var.SneakingPoseStrength) / 2 * var.DT",
 					"var.SneakingLegPoseStrength": "var.SneakingLegPoseStrength + (var.SneakingPoseStrength * (1 - clamp(abs(move_forward) + abs(move_strafing), 0, 1)) - var.SneakingLegPoseStrength) / 4 * var.DT",
 					"var.SneakingTimer": "if(var.SneakingPoseStrength > 0.1, var.SneakingTimer + var.DT * 3, 0)",
@@ -121,28 +120,28 @@
 					"var.TurnPoseTimer": "if(var.TurnPoseStrength > 0.01, var.TurnPoseTimer + var.DT * 3 * abs(var.AvgVelocityRotY) * var.TurnDirection, 0)"
 				},
 				{
-					"var.brx": "clamp(var.WalkingStrength, 0, 1) * 0.15 * var.move_forward * (1 - var.SneakingPoseStrength * 0.1) + cos(var.WalkingTimer * 2 - 0.5) * clamp(var.WalkingStrength, 0, 1 - var.SneakPoseStrength * 0.1) * 0.025 * (1 + var.SprintPoseStrength * 0.35) + var.SprintPoseStrength * 0.2 + var.SneakingPoseStrength * 0.7 - var.SneakingLegPoseStrength * 0.1 * (1 + var.WalkingStrength * 0.1) + var.VerticalTotalForce * 1 + sin(var.IdleTimer * 0.1) * var.IdlePoseStrength * 0.025 - var.IdlePoseStrength * 0.01 + var.IdleRX / 240 * var.IdlePoseStrength + var.IdleWatchingRX * 0.5 + sin(var.InsideWaterTimer) * var.InsideWaterPoseStrength * 0.1 - var.InsideWaterPoseStrength * 0.05 - clamp(var.WalkingStrength, 0, 1) * 2 * var.move_forward * var.MovingInsideWaterPoseStrength * 0.2 + abs(var.RightLegTurnStep * 0.05 + var.LeftLegTurnStep * 0.05) * var.LegTurnPoseStrength + var.BoatRidePoseStrength * -0.05 - clamp(var.AvgSpeed, 0, 0.25) * var.BoatRidePoseStrength * 1.75 * var.move_forward + sin(var.TurnPoseTimer * 2) * var.TurnPoseStrength * 0.01 + var.TurnPoseStrength * 0.01",
+					"var.brx": "clamp(var.WalkingStrength, 0, 1) * 0.15 * var.move_forward * (1 - var.SneakingPoseStrength * 0.1) + cos(var.WalkingTimer * 2 - 0.5) * clamp(var.WalkingStrength, 0, 1 - var.SneakPoseStrength * 0.1) * 0.025 * (1 + var.SprintPoseStrength * 0.35) + var.SprintPoseStrength * 0.2 + var.SneakingPoseStrength * 0.7 - var.SneakingLegPoseStrength * 0.1 * (1 + var.WalkingStrength * 0.1) + var.VerticalTotalForce * 1 + sin(var.IdleTimer * 0.1) * var.IdlePoseStrength * 0.025 - var.IdlePoseStrength * 0.01 + var.IdleRX / 240 * var.IdlePoseStrength + var.IdleWatchingRX * 0.5 + sin(var.InsideWaterTimer) * var.InsideWaterPoseStrength * 0.1 - var.InsideWaterPoseStrength * 0.05 - clamp(var.WalkingStrength, 0, 1) * 2 * var.move_forward * var.MovingInsideWaterPoseStrength * 0.2 + abs(var.RightLegTurnStep * 0.05 + var.LeftLegTurnStep * 0.05) * var.LegTurnPoseStrength + var.GenericRidePoseStrength * -0.05 - clamp(var.AvgSpeed, 0, 0.25) * var.GenericRidePoseStrength * 1.75 * var.move_forward + sin(var.TurnPoseTimer * 2) * var.TurnPoseStrength * 0.01 + var.TurnPoseStrength * 0.01",
 					"var.bry": "clamp(var.WalkingStrength, 0, 1) * -0.15  * var.move_strafing * (1 - var.SneakingPoseStrength * 0.25) + sin(var.WalkingTimer + sin(var.WalkingTimer * 2) * 0.1) * clamp(var.WalkingStrength, 0, 1 - var.SneakPoseStrength) * 0.2 + sin(var.WalkingTimerAbsolute + cos(var.WalkingTimerAbsolute * 2)) * var.SneakingLegPoseStrength * -0.2 + sin(var.WalkingTimer + cos(var.WalkingTimer * 2) * 0.1) * (var.SneakingPoseStrength - var.SneakingLegPoseStrength) * -0.3 - cos(var.WalkingTimerAbsolute) * var.IdlePoseStrength * 0.05 + var.IdleRY / 240 * var.IdlePoseStrength +  + cos(var.WalkingTimerAbsolute) * clamp(var.IdlePoseTimer * 0.1 - 0.5, 0, 1) * -0.1 * if(var.IdlePose < 1, var.IdlePoseStrength, 1) - sin(var.WalkingLeftTimer - 0.6) * var.MovingInsideWaterPoseStrength * 0.1 + cos(var.TurnPoseTimer + cos(var.TurnPoseTimer * 2) * 0.25) * var.TurnPoseStrength * 0.1",
-					"var.brz": "clamp(var.WalkingStrength, 0, 1) * -0.15 * var.move_strafing * (1 - var.SneakingPoseStrength * 0.25) + sin(var.WalkingTimer + sin(var.WalkingTimer) * 0.1) * clamp(var.WalkingStrength, 0, 1 - var.SneakPoseStrength) * -0.02 - var.IdleWatchingRY * 0.2 + var.RightLegTurnStep * 0.01 - var.LeftLegTurnStep * 0.01 + clamp(var.AvgSpeed, 0, 0.1) * var.BoatRidePoseStrength * 1.75 * var.move_strafing",
+					"var.brz": "clamp(var.WalkingStrength, 0, 1) * -0.15 * var.move_strafing * (1 - var.SneakingPoseStrength * 0.25) + sin(var.WalkingTimer + sin(var.WalkingTimer) * 0.1) * clamp(var.WalkingStrength, 0, 1 - var.SneakPoseStrength) * -0.02 - var.IdleWatchingRY * 0.2 + var.RightLegTurnStep * 0.01 - var.LeftLegTurnStep * 0.01 + clamp(var.AvgSpeed, 0, 0.1) * var.GenericRidePoseStrength * 1.75 * var.move_strafing",
 					"var.btx": "sin(var.IdleTimer * 0.05) * var.IdlePoseStrength * 0.25",
-					"var.bty": "abs(sin(var.WalkingTimer + sin(var.WalkingTimer * 2) * 0.1)) * (1 - var.MovingInsideWaterPoseStrength) * clamp(var.WalkingStrength, 0, 1 - var.SneakPoseStrength) * -1.5 + var.WalkingStrength * 0.5 + var.SneakingPoseStrength * 2 + var.SneakingLegPoseStrength * 0.5 + var.SprintPoseStrength * 0.25 + cos(var.IdleTimer * 0.1) * var.IdlePoseStrength * 0.1 + var.BoatRidePoseStrength - cos(var.TurnPoseTimer * 2) * var.TurnPoseStrength * 0.25",
+					"var.bty": "abs(sin(var.WalkingTimer + sin(var.WalkingTimer * 2) * 0.1)) * (1 - var.MovingInsideWaterPoseStrength) * clamp(var.WalkingStrength, 0, 1 - var.SneakPoseStrength) * -1.5 + var.WalkingStrength * 0.5 + var.SneakingPoseStrength * 2 + var.SneakingLegPoseStrength * 0.5 + var.SprintPoseStrength * 0.25 + cos(var.IdleTimer * 0.1) * var.IdlePoseStrength * 0.1 + var.GenericRidePoseStrength - cos(var.TurnPoseTimer * 2) * var.TurnPoseStrength * 0.25",
 					"var.btz": "var.SneakingPoseStrength * 4 + (var.SneakingPoseStrength - var.SneakingLegPoseStrength) * -0.1 - cos(var.IdleTimer * 0.1) * var.IdlePoseStrength * 0.25 + cos(var.WalkingTimer * 2 - 1) * (var.SneakingPoseStrength * var.WalkingStrength * 0.5)  + (1 - var.SneakingLegPoseStrength) * 1 * var.SneakingPoseStrength + var.IdleRX / 48 * var.IdlePoseStrength"
 				},
 				{
-					"var.llrx": "sin(var.WalkingRightTimer - 0.2) * clamp(var.WalkingStrength, 0, 1 - var.SneakPoseStrength) * 0.85 + clamp(var.WalkingStrength, 0, 1 - var.SneakPoseStrength) * 0.15 + var.SneakingLegPoseStrength * 0.3 * cos(var.WalkingTimerAbsolute) + var.SneakingPoseStrength * 0.2 + var.SprintPoseStrength * var.WalkingStrength * 0.1 + abs(clamp(cos(var.WalkingTimerAbsolute), 0, 1)) * var.IdlePoseStrength * 0.05 + cos(var.IdleTimer * 0.1) * var.IdlePoseStrength * 0.025 + (var.SneakingPoseStrength * 0.2) + (1 - var.SneakingLegPoseStrength) * 0.1 * var.SneakingPoseStrength + abs(clamp(cos(var.WalkingTimerAbsolute), 0, 1)) * clamp(var.IdlePoseTimer * 0.1 - 0.5, 0, 1) * 0.1 * if(var.IdlePose < 1, var.IdlePoseStrength, 1) + sin(var.InsideWaterTimer * 4) * var.InsideWaterPoseStrength * 0.1 + var.InsideWaterPoseStrength * 0.05 + clamp(var.WalkingStrength, 0, 1) * 2 * var.move_forward * var.MovingInsideWaterPoseStrength * 0.2 - var.BoatRidePoseStrength * torad(90) + cos(var.TurnPoseTimer) * var.TurnPoseStrength * 0.1 * abs(clamp(var.TurnDirection, -1, 0))",
-					"var.llry": "var.SneakingLegPoseStrength * -0.1 - var.IdlePoseStrength * 0.1 - var.BoatRidePoseStrength * 0.1 - cos(var.TurnPoseTimer) * var.TurnPoseStrength * 0.4",
-					"var.llrz": "var.IdlePoseStrength * -0.02 - abs(clamp(cos(var.WalkingTimerAbsolute), -1, 0)) * (var.BoatRidePoseStrength - var.IdleWatchingRX) * -0.2 * (1 / (clamp(var.AvgSpeed * 20, 0, 10) + 1))",
-					"var.llty": "cos(var.WalkingRightTimer + cos(var.WalkingRightTimer * 2) * 0.1) * clamp(var.WalkingStrength, 0, 1 - var.SneakPoseStrength) * 3 * (1 - var.HopRunPoseStrength * 0.5) - var.HopRunPoseStrength - sin(clamp(var.IdlePoseTimer * 0.2 - 0.5, 0, torad(180))) * 0.5 * abs(clamp(cos(var.WalkingTimerAbsolute), 0, 1)) * if(var.IdlePose < 1, var.IdlePoseStrength, 1) - sin(clamp(var.SneakingTimer * 0.1 + torad(90), 0, torad(180))) * 2 * abs(clamp(cos(var.WalkingTimerAbsolute), 0, 1)) * if(var.SneakingPose < 1, var.SneakingPoseStrength, 1) + cos(var.InsideWaterTimer * 4) * var.InsideWaterPoseStrength * 0.5 - var.BoatRidePoseStrength * 0.75 - abs(clamp(cos(var.WalkingTimerAbsolute), -1, 0)) * (var.BoatRidePoseStrength - var.IdleWatchingRX * 0.25) * 3 * (1 / (clamp(var.AvgSpeed * 20, 0, 10) + 1)) + clamp(var.AvgSpeed, 0, 0.1) * var.BoatRidePoseStrength * 10 * var.move_strafing + clamp(sin(var.TurnPoseTimer) * var.TurnPoseStrength, -10, 0)",
+					"var.llrx": "sin(var.WalkingRightTimer - 0.2) * clamp(var.WalkingStrength, 0, 1 - var.SneakPoseStrength) * 0.85 + clamp(var.WalkingStrength, 0, 1 - var.SneakPoseStrength) * 0.15 + var.SneakingLegPoseStrength * 0.3 * cos(var.WalkingTimerAbsolute) + var.SneakingPoseStrength * 0.2 + var.SprintPoseStrength * var.WalkingStrength * 0.1 + abs(clamp(cos(var.WalkingTimerAbsolute), 0, 1)) * var.IdlePoseStrength * 0.05 + cos(var.IdleTimer * 0.1) * var.IdlePoseStrength * 0.025 + (var.SneakingPoseStrength * 0.2) + (1 - var.SneakingLegPoseStrength) * 0.1 * var.SneakingPoseStrength + abs(clamp(cos(var.WalkingTimerAbsolute), 0, 1)) * clamp(var.IdlePoseTimer * 0.1 - 0.5, 0, 1) * 0.1 * if(var.IdlePose < 1, var.IdlePoseStrength, 1) + sin(var.InsideWaterTimer * 4) * var.InsideWaterPoseStrength * 0.1 + var.InsideWaterPoseStrength * 0.05 + clamp(var.WalkingStrength, 0, 1) * 2 * var.move_forward * var.MovingInsideWaterPoseStrength * 0.2 - var.GenericRidePoseStrength * torad(90) + cos(var.TurnPoseTimer) * var.TurnPoseStrength * 0.1 * abs(clamp(var.TurnDirection, -1, 0))",
+					"var.llry": "var.SneakingLegPoseStrength * -0.1 - var.IdlePoseStrength * 0.1 - var.GenericRidePoseStrength * 0.1 - cos(var.TurnPoseTimer) * var.TurnPoseStrength * 0.4",
+					"var.llrz": "var.IdlePoseStrength * -0.02 - abs(clamp(cos(var.WalkingTimerAbsolute), -1, 0)) * (var.GenericRidePoseStrength - var.IdleWatchingRX) * -0.2 * (1 / (clamp(var.AvgSpeed * 20, 0, 10) + 1))",
+					"var.llty": "cos(var.WalkingRightTimer + cos(var.WalkingRightTimer * 2) * 0.1) * clamp(var.WalkingStrength, 0, 1 - var.SneakPoseStrength) * 3 * (1 - var.HopRunPoseStrength * 0.5) - var.HopRunPoseStrength - sin(clamp(var.IdlePoseTimer * 0.2 - 0.5, 0, torad(180))) * 0.5 * abs(clamp(cos(var.WalkingTimerAbsolute), 0, 1)) * if(var.IdlePose < 1, var.IdlePoseStrength, 1) - sin(clamp(var.SneakingTimer * 0.1 + torad(90), 0, torad(180))) * 2 * abs(clamp(cos(var.WalkingTimerAbsolute), 0, 1)) * if(var.SneakingPose < 1, var.SneakingPoseStrength, 1) + cos(var.InsideWaterTimer * 4) * var.InsideWaterPoseStrength * 0.5 - var.GenericRidePoseStrength * 0.75 - abs(clamp(cos(var.WalkingTimerAbsolute), -1, 0)) * (var.GenericRidePoseStrength - var.IdleWatchingRX * 0.25) * 3 * (1 / (clamp(var.AvgSpeed * 20, 0, 10) + 1)) + clamp(var.AvgSpeed, 0, 0.1) * var.GenericRidePoseStrength * 10 * var.move_strafing + clamp(sin(var.TurnPoseTimer) * var.TurnPoseStrength, -10, 0)",
 					"var.lltx": "var.SneakingLegPoseStrength * 0.25",
-					"var.lltz": "cos(var.WalkingRightTimer + 0.1 + cos(var.WalkingRightTimer * 2) * 0.1) * var.WalkingStrength - var.SneakingPoseStrength * 3 - abs(clamp(cos(var.WalkingTimerAbsolute), -1, 0)) * var.IdlePoseStrength * 0.15 - cos(var.IdleTimer * 0.1) * var.IdlePoseStrength * 0.25 + (var.BoatRidePoseStrength - var.IdleWatchingRX * 0.25) * 1 * (1 / (clamp(var.AvgSpeed * 20, 0, 10) + 1)) + var.BoatRidePoseStrength + abs(clamp(cos(var.WalkingTimerAbsolute), 0, 1)) * var.BoatRidePoseStrength * -4 * (1 / (clamp(var.AvgSpeed * 20, 0, 10) + 1))"
+					"var.lltz": "cos(var.WalkingRightTimer + 0.1 + cos(var.WalkingRightTimer * 2) * 0.1) * var.WalkingStrength - var.SneakingPoseStrength * 3 - abs(clamp(cos(var.WalkingTimerAbsolute), -1, 0)) * var.IdlePoseStrength * 0.15 - cos(var.IdleTimer * 0.1) * var.IdlePoseStrength * 0.25 + (var.GenericRidePoseStrength - var.IdleWatchingRX * 0.25) * 1 * (1 / (clamp(var.AvgSpeed * 20, 0, 10) + 1)) + var.GenericRidePoseStrength + abs(clamp(cos(var.WalkingTimerAbsolute), 0, 1)) * var.GenericRidePoseStrength * -4 * (1 / (clamp(var.AvgSpeed * 20, 0, 10) + 1))"
 				},
 				{
-					"var.rlrx": "sin(var.WalkingLeftTimer - 0.2) * clamp(var.WalkingStrength, 0, 1 - var.SneakPoseStrength) * 0.85 + clamp(var.WalkingStrength, 0, 1 - var.SneakPoseStrength) * 0.15 - var.SneakingLegPoseStrength * 0.3 * cos(var.WalkingTimerAbsolute) + var.SneakingPoseStrength * 0.2 + var.SprintPoseStrength * var.WalkingStrength * 0.1 + abs(clamp(cos(var.WalkingTimerAbsolute), -1, 0)) * var.IdlePoseStrength * 0.05 + cos(var.IdleTimer * 0.1) * var.IdlePoseStrength * 0.025 + (var.SneakingPoseStrength * 0.2) + (1 - var.SneakingLegPoseStrength) * 0.1 * var.SneakingPoseStrength + abs(clamp(cos(var.WalkingTimerAbsolute), -1, 0)) * clamp(var.IdlePoseTimer * 0.1 - 0.5, 0, 1) * 0.1 * if(var.IdlePose < 1, var.IdlePoseStrength, 1) - sin(var.InsideWaterTimer * 4) * var.InsideWaterPoseStrength * 0.1 + var.InsideWaterPoseStrength * 0.05 + clamp(var.WalkingStrength, 0, 1) * 2 * var.move_forward * var.MovingInsideWaterPoseStrength * 0.2 - var.BoatRidePoseStrength * torad(90) + cos(var.TurnPoseTimer) * var.TurnPoseStrength * 0.1 * abs(clamp(var.TurnDirection, 0, 1))",
-					"var.rlry": "var.SneakingLegPoseStrength * 0.1 + var.IdlePoseStrength * 0.1 + var.BoatRidePoseStrength * 0.1 + cos(var.TurnPoseTimer) * var.TurnPoseStrength * 0.4",
-					"var.rlrz": "var.IdlePoseStrength * 0.02 + abs(clamp(cos(var.WalkingTimerAbsolute), 0, 1)) * (var.BoatRidePoseStrength - var.IdleWatchingRX) * -0.2 * (1 / (clamp(var.AvgSpeed * 20, 0, 10) + 1))",
-					"var.rlty": "cos(var.WalkingLeftTimer + cos(var.WalkingLeftTimer * 2) * 0.1) * clamp(var.WalkingStrength, 0, 1 - var.SneakPoseStrength) * 3 * (1 - var.HopRunPoseStrength * 0.5) - var.HopRunPoseStrength - sin(clamp(var.IdlePoseTimer * 0.2 - 0.5, 0, torad(180))) * 0.5 * abs(clamp(cos(var.WalkingTimerAbsolute), -1, 0)) * if(var.IdlePose < 1, var.IdlePoseStrength, 1) - sin(clamp(var.SneakingTimer * 0.1 + torad(90), 0, torad(180))) * 2 * abs(clamp(cos(var.WalkingTimerAbsolute), -1, 0)) * if(var.SneakingPose < 1, var.SneakingPoseStrength, 1) - cos(var.InsideWaterTimer * 4) * var.InsideWaterPoseStrength * 0.5 - var.BoatRidePoseStrength * 0.75 - abs(clamp(cos(var.WalkingTimerAbsolute), 0, 1)) * (var.BoatRidePoseStrength - var.IdleWatchingRX * 0.25) * 3 * (1 / (clamp(var.AvgSpeed * 20, 0, 10) + 1)) - clamp(var.AvgSpeed, 0, 0.1) * var.BoatRidePoseStrength * 10 * var.move_strafing - clamp(sin(var.TurnPoseTimer) * var.TurnPoseStrength, 0, 10)",
+					"var.rlrx": "sin(var.WalkingLeftTimer - 0.2) * clamp(var.WalkingStrength, 0, 1 - var.SneakPoseStrength) * 0.85 + clamp(var.WalkingStrength, 0, 1 - var.SneakPoseStrength) * 0.15 - var.SneakingLegPoseStrength * 0.3 * cos(var.WalkingTimerAbsolute) + var.SneakingPoseStrength * 0.2 + var.SprintPoseStrength * var.WalkingStrength * 0.1 + abs(clamp(cos(var.WalkingTimerAbsolute), -1, 0)) * var.IdlePoseStrength * 0.05 + cos(var.IdleTimer * 0.1) * var.IdlePoseStrength * 0.025 + (var.SneakingPoseStrength * 0.2) + (1 - var.SneakingLegPoseStrength) * 0.1 * var.SneakingPoseStrength + abs(clamp(cos(var.WalkingTimerAbsolute), -1, 0)) * clamp(var.IdlePoseTimer * 0.1 - 0.5, 0, 1) * 0.1 * if(var.IdlePose < 1, var.IdlePoseStrength, 1) - sin(var.InsideWaterTimer * 4) * var.InsideWaterPoseStrength * 0.1 + var.InsideWaterPoseStrength * 0.05 + clamp(var.WalkingStrength, 0, 1) * 2 * var.move_forward * var.MovingInsideWaterPoseStrength * 0.2 - var.GenericRidePoseStrength * torad(90) + cos(var.TurnPoseTimer) * var.TurnPoseStrength * 0.1 * abs(clamp(var.TurnDirection, 0, 1))",
+					"var.rlry": "var.SneakingLegPoseStrength * 0.1 + var.IdlePoseStrength * 0.1 + var.GenericRidePoseStrength * 0.1 + cos(var.TurnPoseTimer) * var.TurnPoseStrength * 0.4",
+					"var.rlrz": "var.IdlePoseStrength * 0.02 + abs(clamp(cos(var.WalkingTimerAbsolute), 0, 1)) * (var.GenericRidePoseStrength - var.IdleWatchingRX) * -0.2 * (1 / (clamp(var.AvgSpeed * 20, 0, 10) + 1))",
+					"var.rlty": "cos(var.WalkingLeftTimer + cos(var.WalkingLeftTimer * 2) * 0.1) * clamp(var.WalkingStrength, 0, 1 - var.SneakPoseStrength) * 3 * (1 - var.HopRunPoseStrength * 0.5) - var.HopRunPoseStrength - sin(clamp(var.IdlePoseTimer * 0.2 - 0.5, 0, torad(180))) * 0.5 * abs(clamp(cos(var.WalkingTimerAbsolute), -1, 0)) * if(var.IdlePose < 1, var.IdlePoseStrength, 1) - sin(clamp(var.SneakingTimer * 0.1 + torad(90), 0, torad(180))) * 2 * abs(clamp(cos(var.WalkingTimerAbsolute), -1, 0)) * if(var.SneakingPose < 1, var.SneakingPoseStrength, 1) - cos(var.InsideWaterTimer * 4) * var.InsideWaterPoseStrength * 0.5 - var.GenericRidePoseStrength * 0.75 - abs(clamp(cos(var.WalkingTimerAbsolute), 0, 1)) * (var.GenericRidePoseStrength - var.IdleWatchingRX * 0.25) * 3 * (1 / (clamp(var.AvgSpeed * 20, 0, 10) + 1)) - clamp(var.AvgSpeed, 0, 0.1) * var.GenericRidePoseStrength * 10 * var.move_strafing - clamp(sin(var.TurnPoseTimer) * var.TurnPoseStrength, 0, 10)",
 					"var.rltx": "var.SneakingLegPoseStrength * -0.25",
-					"var.rltz": "cos(var.WalkingLeftTimer + 0.1 + cos(var.WalkingLeftTimer * 2) * 0.1) * var.WalkingStrength - var.SneakingPoseStrength * 3 - abs(clamp(cos(var.WalkingTimerAbsolute), 0, 1)) * var.IdlePoseStrength * 0.15 - cos(var.IdleTimer * 0.1) * var.IdlePoseStrength * 0.25 + (var.BoatRidePoseStrength - var.IdleWatchingRX * 0.25) * 1 * (1 / (clamp(var.AvgSpeed * 20, 0, 10) + 1)) + var.BoatRidePoseStrength + abs(clamp(cos(var.WalkingTimerAbsolute), -1, 0)) * var.BoatRidePoseStrength * -4 * (1 / (clamp(var.AvgSpeed * 20, 0, 10) + 1))"
+					"var.rltz": "cos(var.WalkingLeftTimer + 0.1 + cos(var.WalkingLeftTimer * 2) * 0.1) * var.WalkingStrength - var.SneakingPoseStrength * 3 - abs(clamp(cos(var.WalkingTimerAbsolute), 0, 1)) * var.IdlePoseStrength * 0.15 - cos(var.IdleTimer * 0.1) * var.IdlePoseStrength * 0.25 + (var.GenericRidePoseStrength - var.IdleWatchingRX * 0.25) * 1 * (1 / (clamp(var.AvgSpeed * 20, 0, 10) + 1)) + var.GenericRidePoseStrength + abs(clamp(cos(var.WalkingTimerAbsolute), -1, 0)) * var.GenericRidePoseStrength * -4 * (1 / (clamp(var.AvgSpeed * 20, 0, 10) + 1))"
 				},
 				{
 					"var.hrx": "head_pitch / 60 * (1 - var.SwimPoseStrength * 0.75) * (1 - var.ClimbPoseStrength * 0.1) - cos(var.IdleTimer * 0.1 - 1) * var.IdlePoseStrength * 0.01 - abs(sin((var.WalkingTimer - 0.5) + sin((var.WalkingTimer - 0.5) * 2) * 0.1)) * (1 - var.MovingInsideWaterPoseStrength) * clamp(var.WalkingStrength, 0, 1 - var.SneakPoseStrength) * 0.15 + var.IdleWatchingRX - sin(var.InsideWaterTimer * 3 - 1) * var.InsideWaterPoseStrength * 0.01",
@@ -153,17 +152,17 @@
 					"var.htz": "0"
 				},
 				{
-					"var.rarx": "sin(var.WalkingRightTimer - 0.4 + sin(var.WalkingRightTimer * 2) * 0.2) * var.WalkingArmStrength * 0.7 * (1 + var.SprintPoseStrength * 0.35) + var.WalkingArmStrength * 0.05 - sin(var.WalkingTimer + sin(var.WalkingTimer * 2) * 0.1) * var.WalkingStrength * 0.1 + var.SneakingPoseStrength * 0.25 + var.SprintPoseStrength * 0.1 - sin(var.InsideWaterTimer * 1.5) * var.InsideWaterPoseStrength * 0.2 + clamp(var.WalkingStrength, 0, 1) * 2 * var.move_forward * var.MovingInsideWaterPoseStrength * 0.4 - var.BoatRidePoseStrength * 0.2 - var.IdleWatchingRY * 0.02 + var.IdleWatchingRX * 0.5 - clamp(var.AvgSpeed, 0, 0.25) * var.BoatRidePoseStrength * 1.75 * var.move_forward",
+					"var.rarx": "sin(var.WalkingRightTimer - 0.4 + sin(var.WalkingRightTimer * 2) * 0.2) * var.WalkingArmStrength * 0.7 * (1 + var.SprintPoseStrength * 0.35) + var.WalkingArmStrength * 0.05 - sin(var.WalkingTimer + sin(var.WalkingTimer * 2) * 0.1) * var.WalkingStrength * 0.1 + var.SneakingPoseStrength * 0.25 + var.SprintPoseStrength * 0.1 - sin(var.InsideWaterTimer * 1.5) * var.InsideWaterPoseStrength * 0.2 + clamp(var.WalkingStrength, 0, 1) * 2 * var.move_forward * var.MovingInsideWaterPoseStrength * 0.4 - var.GenericRidePoseStrength * 0.2 - var.IdleWatchingRY * 0.02 + var.IdleWatchingRX * 0.5 - clamp(var.AvgSpeed, 0, 0.25) * var.GenericRidePoseStrength * 1.75 * var.move_forward",
 					"var.rary": "sin(var.WalkingRightTimer - 0.6 + sin(var.WalkingRightTimer * 2) * 0.1) * var.WalkingArmStrength * 0.15 * (1 - var.HopRunPoseStrength * 0.5) * (1 + var.SprintPoseStrength * 1) + var.IdlePoseStrength * 0.1 + var.IdleRY / 180 * var.IdlePoseStrength - sin(var.InsideWaterTimer * 1.5 - 1) * var.InsideWaterPoseStrength * 0.1",
-					"var.rarz": "var.SneakingPoseStrength * 0.1 + var.IdlePoseStrength * 0.01 + cos(var.IdleTimer * 0.1 - 0.5 * 2) * var.IdlePoseStrength * 0.02 + var.IdlePoseStrength * 0.02 + var.InWaterPoseStrength + var.InsideWaterPoseStrength * 0.3 + sin(var.InsideWaterTimer * 3) * var.InsideWaterPoseStrength * 0.1 + clamp(var.WalkingStrength, 0, 1) * 2 * var.MovingInsideWaterPoseStrength * 0.4 + cos(var.WalkingRightTimer) * var.WalkingArmStrength * var.MovingInsideWaterPoseStrength * 0.4 - var.IdleWatchingRY * 0.1 + var.IdleWatchingRY * -0.1 + var.BoatRidePoseStrength * 0.4 + clamp(var.AvgSpeed, 0, 0.1) * var.BoatRidePoseStrength * 1.75 * var.move_strafing",
+					"var.rarz": "var.SneakingPoseStrength * 0.1 + var.IdlePoseStrength * 0.01 + cos(var.IdleTimer * 0.1 - 0.5 * 2) * var.IdlePoseStrength * 0.02 + var.IdlePoseStrength * 0.02 + var.InWaterPoseStrength + var.InsideWaterPoseStrength * 0.3 + sin(var.InsideWaterTimer * 3) * var.InsideWaterPoseStrength * 0.1 + clamp(var.WalkingStrength, 0, 1) * 2 * var.MovingInsideWaterPoseStrength * 0.4 + cos(var.WalkingRightTimer) * var.WalkingArmStrength * var.MovingInsideWaterPoseStrength * 0.4 - var.IdleWatchingRY * 0.1 + var.IdleWatchingRY * -0.1 + var.GenericRidePoseStrength * 0.4 + clamp(var.AvgSpeed, 0, 0.1) * var.GenericRidePoseStrength * 1.75 * var.move_strafing",
 					"var.ratx": "0",
 					"var.raty": "var.IdlePoseStrength * 0.1 + sin(var.WalkingRightTimer + sin(var.WalkingRightTimer * 2) * 0.1) * var.WalkingArmStrength * 0.4 + cos(var.IdleTimer * 0.1 - 0.5) * var.IdlePoseStrength * 0.2 - var.InWaterPoseStrength * 0.5",
 					"var.ratz": "sin(var.WalkingRightTimer + var.SprintPoseStrength * 0.25 - 0.2 + sin(var.WalkingRightTimer * 2) * 0.1) * var.WalkingArmStrength * 1.4 + var.SneakingPoseStrength + sin(var.IdleTimer * 0.1) * var.IdlePoseStrength * 0.2 + var.IdlePoseStrength * 0.1"
 				},
 				{
-					"var.larx": "sin(var.WalkingLeftTimer - 0.4 + sin(var.WalkingLeftTimer * 2) * 0.2) * var.WalkingArmStrength * 0.7 * (1 + var.SprintPoseStrength * 0.35) + var.WalkingArmStrength * 0.05 + sin(var.WalkingTimer + sin(var.WalkingTimer * 2) * 0.1) * var.WalkingStrength * 0.1 + var.SneakingPoseStrength * 0.25 + var.SprintPoseStrength * 0.1 + sin(var.InsideWaterTimer * 1.5) * var.InsideWaterPoseStrength * 0.2 + clamp(var.WalkingStrength, 0, 1) * 2 * var.move_forward * var.MovingInsideWaterPoseStrength * 0.4 - var.BoatRidePoseStrength * 0.2 + var.IdleWatchingRY * 0.02 + var.IdleWatchingRX * 0.5 - clamp(var.AvgSpeed, 0, 0.25) * var.BoatRidePoseStrength * 1.75 * var.move_forward",
+					"var.larx": "sin(var.WalkingLeftTimer - 0.4 + sin(var.WalkingLeftTimer * 2) * 0.2) * var.WalkingArmStrength * 0.7 * (1 + var.SprintPoseStrength * 0.35) + var.WalkingArmStrength * 0.05 + sin(var.WalkingTimer + sin(var.WalkingTimer * 2) * 0.1) * var.WalkingStrength * 0.1 + var.SneakingPoseStrength * 0.25 + var.SprintPoseStrength * 0.1 + sin(var.InsideWaterTimer * 1.5) * var.InsideWaterPoseStrength * 0.2 + clamp(var.WalkingStrength, 0, 1) * 2 * var.move_forward * var.MovingInsideWaterPoseStrength * 0.4 - var.GenericRidePoseStrength * 0.2 + var.IdleWatchingRY * 0.02 + var.IdleWatchingRX * 0.5 - clamp(var.AvgSpeed, 0, 0.25) * var.GenericRidePoseStrength * 1.75 * var.move_forward",
 					"var.lary": "sin(var.WalkingLeftTimer - 0.6 + sin(var.WalkingLeftTimer * 2) * 0.2) * var.WalkingArmStrength * -0.15 * (1 - var.HopRunPoseStrength * 0.5) * (1 + var.SprintPoseStrength * 1) - var.IdlePoseStrength * 0.1 + var.IdleRY / 180 * var.IdlePoseStrength - sin(var.InsideWaterTimer * 1.5 - 1) * var.InsideWaterPoseStrength * 0.1",
-					"var.larz": "var.SneakingPoseStrength * -0.1 - var.IdlePoseStrength * 0.01 - cos(var.IdleTimer * 0.1 - 0.5 * 2) * var.IdlePoseStrength * 0.02 - var.IdlePoseStrength * 0.02 - var.InWaterPoseStrength - var.InsideWaterPoseStrength * 0.3 - sin(var.InsideWaterTimer * 3) * var.InsideWaterPoseStrength * 0.1 - clamp(var.WalkingStrength, 0, 1) * 2 * var.MovingInsideWaterPoseStrength * 0.4 + cos(var.WalkingRightTimer) * var.WalkingArmStrength * var.MovingInsideWaterPoseStrength * 0.4 - var.IdleWatchingRY * 0.1 + var.IdleWatchingRY * -0.1 - var.BoatRidePoseStrength * 0.4 + clamp(var.AvgSpeed, 0, 0.1) * var.BoatRidePoseStrength * 1.75 * var.move_strafing",
+					"var.larz": "var.SneakingPoseStrength * -0.1 - var.IdlePoseStrength * 0.01 - cos(var.IdleTimer * 0.1 - 0.5 * 2) * var.IdlePoseStrength * 0.02 - var.IdlePoseStrength * 0.02 - var.InWaterPoseStrength - var.InsideWaterPoseStrength * 0.3 - sin(var.InsideWaterTimer * 3) * var.InsideWaterPoseStrength * 0.1 - clamp(var.WalkingStrength, 0, 1) * 2 * var.MovingInsideWaterPoseStrength * 0.4 + cos(var.WalkingRightTimer) * var.WalkingArmStrength * var.MovingInsideWaterPoseStrength * 0.4 - var.IdleWatchingRY * 0.1 + var.IdleWatchingRY * -0.1 - var.GenericRidePoseStrength * 0.4 + clamp(var.AvgSpeed, 0, 0.1) * var.GenericRidePoseStrength * 1.75 * var.move_strafing",
 					"var.latx": "0",
 					"var.laty": "var.IdlePoseStrength * 0.1 + sin(var.WalkingLeftTimer + sin(var.WalkingLeftTimer * 2) * 0.1) * var.WalkingArmStrength * 0.4 + cos(var.IdleTimer * 0.1 - 0.5) * var.IdlePoseStrength * 0.2 - var.InWaterPoseStrength * 0.5",
 					"var.latz": "sin(var.WalkingLeftTimer + var.SprintPoseStrength * 0.25 - 0.2 + sin(var.WalkingLeftTimer * 2) * 0.1) * var.WalkingArmStrength * 1.4 + var.SneakingPoseStrength + sin(var.IdleTimer * 0.1) * var.IdlePoseStrength * 0.2 + var.IdlePoseStrength * 0.1"
@@ -172,7 +171,7 @@
 					"var.rrx": "sin(var.InsideWaterTimer - 1) * var.InsideWaterPoseStrength * 0.05 - var.InsideWaterPoseStrength * 0.05 + clamp(var.WalkingStrength, 0, 1) * 2 * var.move_forward * var.MovingInsideWaterPoseStrength * 0.2 + var.AvgVelocityY * 10 * var.SwimPoseStrength * abs(cos(head_pitch / 60))",
 					"var.rry": "head_yaw * -0.01 * var.SwimPoseStrength",
 					"var.rtx": "0",
-					"var.rty": "sin(var.InsideWaterTimer) * var.InsideWaterPoseStrength + sin(var.MovingInsideWaterPoseTimer * 2) * var.MovingInsideWaterPoseStrength * 0.5 - var.BoatRidePoseStrength",
+					"var.rty": "sin(var.InsideWaterTimer) * var.InsideWaterPoseStrength + sin(var.MovingInsideWaterPoseTimer * 2) * var.MovingInsideWaterPoseStrength * 0.5 - var.GenericRidePoseStrength",
 					"var.rtz": "0"
 				}
 			]
@@ -255,7 +254,7 @@
 				{
 					"var.CRAWLING": "0",
 					"var.CrawlPose": "if(is_crawling, 1, 0)",
-					"var.CrawlPoseStrength": "var.CrawlPose",
+					"var.CrawlPoseStrength": "var.CrawlPoseStrength + (var.CrawlPose - var.CrawlPoseStrength) / 7* var.DT",
 					"var.CrawlingPose": "if(var.CrawlPose > 0 && limb_speed > 0.1, 1, 0)",
 					"var.CrawlingPoseStrength": "var.CrawlingPoseStrength + (var.CrawlingPose - var.CrawlingPoseStrength) / 7 * var.DT",
 					"var.CrawlPoseTurn": "var.CrawlPoseTurn + (head_yaw * (1 - abs(var.move_strafing)) * abs(var.move_forward + 0.1) / (var.move_forward + 0.1) - var.CrawlPoseTurn) / 2 * var.DT * clamp(limb_speed * 4, 0, 1)",
@@ -1093,22 +1092,22 @@
 					"left_arm.tx": "if(is_first_person_hand && !is_in_gui, left_arm.tx, var.DisableParentedLimbs * 5 + (body.tx + 5 * cos(var.bry)) * (1 - var.DisableParentedLimbs) + var.latx - abs(body.rz) * (1 - var.DisableParentedLimbs))",
 					"left_arm.ty": "if(is_first_person_hand && !is_in_gui, left_arm.ty, body.ty * (1 - var.DisableParentedLimbs) + 2.5 + var.laty)",
 					"left_arm.tz": "if(is_first_person_hand && !is_in_gui, left_arm.tz, (body.tz - sin(var.bry) * 5) * (1 - var.DisableParentedLimbs) + var.latz)",
-					"right_leg.rx": "if(var.is_riding > 0, torad(-81), var.rlrx + (-sin(var.bry) * 0.5 - var.btz * 0.08 - clamp(var.rlty * 1, -5, 0) * 0.1) * (1 - var.DisableParentedLimbs))",
-					"right_leg.ry": "if(var.is_riding > 0, torad(18), var.rlry - var.rltry)",
-					"right_leg.rz": "if(var.is_riding > 0, torad(4.5), var.rlrz + var.btx * 0.08 * (1 - var.DisableParentedLimbs))",
-					"right_leg.tx": "if(var.is_riding > 0, -2, -2 + var.rltx + var.btx * (1 - var.DisableParentedLimbs))",
-					"right_leg.ty": "if(var.is_riding > 0, 12, 12 + if(var.is_on_ground > 0, clamp(var.rlty, -100, 0), var.rlty))",
-					"right_leg.tz": "if(var.is_riding > 0, 0, var.rltz + (clamp(var.rlty * 1, -5, 0) + sin(var.bry) * 5 + var.btz) * (1 - var.DisableParentedLimbs))",
-					"left_leg.rx": "if(var.is_riding > 0, torad(-81), var.llrx + (sin(var.bry) * 0.5 - var.btz * 0.08 - clamp(var.llty * 1, -5, 0) * 0.1) * (1 - var.DisableParentedLimbs))",
-					"left_leg.ry": "if(var.is_riding > 0, torad(-18), var.llry - var.lltry)",
-					"left_leg.rz": "if(var.is_riding > 0, torad(-4.5), var.llrz + var.btx * 0.08 * (1 - var.DisableParentedLimbs))",
-					"left_leg.tx": "if(var.is_riding > 0, 2, 2 + var.lltx + var.btx * (1 - var.DisableParentedLimbs))",
-					"left_leg.ty": "if(var.is_riding > 0, 12, 12 + if(var.is_on_ground > 0, clamp(var.llty, -100, 0), var.llty))",
-					"left_leg.tz": "if(var.is_riding > 0, 0, var.lltz + (clamp(var.llty * 1, -5, 0) - sin(var.bry) * 5 + var.btz) * (1 - var.DisableParentedLimbs))",
+					"right_leg.rx": "var.rlrx + (-sin(var.bry) * 0.5 - var.btz * 0.08 - clamp(var.rlty * 1, -5, 0) * 0.1) * (1 - var.DisableParentedLimbs)",
+					"right_leg.ry": "var.rlry - var.rltry",
+					"right_leg.rz": "var.rlrz + var.btx * 0.08 * (1 - var.DisableParentedLimbs)",
+					"right_leg.tx": "-2 + var.rltx + var.btx * (1 - var.DisableParentedLimbs)",
+					"right_leg.ty": "12 + if(var.is_on_ground > 0, clamp(var.rlty, -100, 0), var.rlty)",
+					"right_leg.tz": "var.rltz + (clamp(var.rlty * 1, -5, 0) + sin(var.bry) * 5 + var.btz) * (1 - var.DisableParentedLimbs)",
+					"left_leg.rx": "var.llrx + (sin(var.bry) * 0.5 - var.btz * 0.08 - clamp(var.llty * 1, -5, 0) * 0.1) * (1 - var.DisableParentedLimbs)",
+					"left_leg.ry": "var.llry - var.lltry",
+					"left_leg.rz": "var.llrz + var.btx * 0.08 * (1 - var.DisableParentedLimbs)",
+					"left_leg.tx": "2 + var.lltx + var.btx * (1 - var.DisableParentedLimbs)",
+					"left_leg.ty": "12 + if(var.is_on_ground > 0, clamp(var.llty, -100, 0), var.llty)",
+					"left_leg.tz": "var.lltz + (clamp(var.llty * 1, -5, 0) - sin(var.bry) * 5 + var.btz) * (1 - var.DisableParentedLimbs)",
 					"var.prrx": "var.rrx",
 				    "var.prry": "var.rry * (1 - var.DisableParentedLimbs)",
 				    "var.prtx": "var.rtx",
-				    "var.prty": "var.rty - if(is_sneaking && !is_crawling, 2, 0) - 0.1",
+				    "var.prty": "var.rty - if(is_sneaking, 2, 0) - 0.1",
 				    "var.prtz": "var.rtz + if(is_crawling, 2, 0)",
 					"root.rx": "if(is_first_person_hand || is_in_gui, 0, var.prrx)",
 					"root.ry": "if(is_first_person_hand || is_in_gui, 0, var.prry)",
@@ -1170,40 +1169,40 @@
 			"part": "right_arm",
 			"id": "right_arm",
 			"invertAxis": "xy",
-			"translate": [-5, -22, 0],
+			"translate": [-5, -21.5, 0],
 			"scale": 1,
 			"boxes": [
-				{"coordinates": [4, 12, -2, 4, 12, 4], "textureOffset": [40, 16]}
+				{"coordinates": [4, 11.5, -2, 3, 12, 4], "textureOffset": [40, 16]}
 			]
 		},
 		{
 			"part": "right_sleeve",
 			"id": "right_sleeve",
 			"invertAxis": "xy",
-			"translate": [-5, -22, 0],
+			"translate": [-5, -21.5, 0],
 			"scale": 1,
 			"boxes": [
-				{"coordinates": [4, 12, -2, 4, 12, 4], "textureOffset": [40, 32], "sizeAdd": 0.25}
+				{"coordinates": [4, 11.5, -2, 3, 12, 4], "textureOffset": [40, 32], "sizeAdd": 0.25}
 			]
 		},
 		{
 			"part": "left_arm",
 			"id": "left_arm",
 			"invertAxis": "xy",
-			"translate": [5, -22, 0],
+			"translate": [5, -21.5, 0],
 			"scale": 1,
 			"boxes": [
-				{"coordinates": [-8, 12, -2, 4, 12, 4], "textureOffset": [32, 48]}
+				{"coordinates": [-7, 11.5, -2, 3, 12, 4], "textureOffset": [32, 48]}
 			]
 		},
 		{
 			"part": "left_sleeve",
 			"id": "left_sleeve",
 			"invertAxis": "xy",
-			"translate": [5, -22, 0],
+			"translate": [5, -21.5, 0],
 			"scale": 1,
 			"boxes": [
-				{"coordinates": [-8, 12, -2, 4, 12, 4], "textureOffset": [48, 48], "sizeAdd": 0.25}
+				{"coordinates": [-7, 11.5, -2, 3, 12, 4], "textureOffset": [48, 48], "sizeAdd": 0.25}
 			]
 		},
 		{
