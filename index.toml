@@ -1956,6 +1956,10 @@ file = "mms-dev-setup.sh"
 hash = "6e2343e72e080e2b6410e5c419b2dd2c3d34fdee77dc51681d7b1a089a972afe"
 
 [[files]]
+file = "mms-entity-sweep.py"
+hash = "8e19596c18a276d38b2c72dec7cf12bbed8ec438b6c0368e4646afc9f1465e86"
+
+[[files]]
 file = "mms-hotswap-watch.sh"
 hash = "b18c9ba08862f09bf35120437630fb843992b8b1e4ec8ee503a8a14af6db3a2a"
 
