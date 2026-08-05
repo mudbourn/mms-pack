@@ -2176,7 +2176,7 @@ metafile = true
 
 [[files]]
 file = "mods/chat-heads.pw.toml"
-hash = "b5f9c98d636f806416bce38fa55db07fe992e614177c8e1682980b538ffd8c6d"
+hash = "a5f8014bfd0ddfde5586a12419922af013d7785d3d43e4e38e1d49c31c45f923"
 metafile = true
 
 [[files]]
@@ -2696,7 +2696,7 @@ metafile = true
 
 [[files]]
 file = "mods/leawind-third-person.pw.toml"
-hash = "750f650e247b19fd18479433d406adb3844f05698a1dc4f66f9077e5cb5f0e2b"
+hash = "156d77681d09c97fe31418b145daa0d616ad5a75de8f7edd9cfcef852c5ed302"
 metafile = true
 
 [[files]]
@@ -2940,7 +2940,7 @@ metafile = true
 
 [[files]]
 file = "mods/perspective-api.pw.toml"
-hash = "4f6798918797488e88ad4d4b6bc6b1e38e9b267d0f095b87295877aeceb7258c"
+hash = "d87c6d95a99ecb3bd3e0c4b2832f76ed86faf700fe1a84a51f26716045e7b7bb"
 metafile = true
 
 [[files]]
@@ -3000,7 +3000,7 @@ metafile = true
 
 [[files]]
 file = "mods/renderscale.pw.toml"
-hash = "b4c4f1163795d12bb392a2645b886b6afc6e7b3e4d28af4968a6ca0c74fcb606"
+hash = "85fd951cd42fd7b545c096058bf36127718ef9ec45ab3997c3baef5d65a903f8"
 metafile = true
 
 [[files]]
@@ -3229,7 +3229,7 @@ metafile = true
 
 [[files]]
 file = "mods/vertigo-scalablelux-compat-backports.pw.toml"
-hash = "b42879ef08298768c2161d405a4c386ab276b26b4f9ef2a27d710df17b7e2fc3"
+hash = "4c1fb5a590c2fb6626f7c31d8cb291cb55ce6172768567b08cb11bd4393f1fb1"
 metafile = true
 
 [[files]]
@@ -3254,7 +3254,7 @@ metafile = true
 
 [[files]]
 file = "mods/weaponsexpanded.pw.toml"
-hash = "a87f943bad178342778682ac00835b429b69c0e317551879a64a91645669a1cc"
+hash = "473740b7143b6e93ba7d88681b067bbe75a8cd92675daa0efc88413e8a9569aa"
 metafile = true
 
 [[files]]
