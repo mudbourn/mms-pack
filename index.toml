@@ -21,6 +21,14 @@ file = "config/Easy Shop Mod/AllPlayerSkins/49cad3d9-0ece-4536-b469-16b1c2c0fdd4
 hash = "664ea2023ccb6d3a820ca533b876fc50d457f1727ae87ecfc846fffc61f85e89"
 
 [[files]]
+file = "config/Easy Shop Mod/AllPlayerSkins/5b30590c-7361-31a2-a5a0-ee3cb0717365.png"
+hash = "664ea2023ccb6d3a820ca533b876fc50d457f1727ae87ecfc846fffc61f85e89"
+
+[[files]]
+file = "config/Easy Shop Mod/AllPlayerSkins/7cd994e4-ef3a-3355-87ce-5fc9ce66c4ea.png"
+hash = "664ea2023ccb6d3a820ca533b876fc50d457f1727ae87ecfc846fffc61f85e89"
+
+[[files]]
 file = "config/Easy Shop Mod/AllPlayerSkins/9f60298a-8245-404e-a0e3-b2041204abd6.png"
 hash = "664ea2023ccb6d3a820ca533b876fc50d457f1727ae87ecfc846fffc61f85e89"
 
@@ -439,15 +447,15 @@ hash = "80aff5d9a9da2280845645cfeba76415acc85deead3b684940ac235bdc45036e"
 
 [[files]]
 file = "config/axiom/.axiom.json.backup"
-hash = "0a8190c7c2419893c395e24bf0a79e1f84de011f660fd043c7aa2143146fc36b"
+hash = "6cf8d7f12d92f4cb99f7f858987deec32e1ec5358eec65a5e0b3c43b94e30ce7"
 
 [[files]]
 file = "config/axiom/axiom.json"
-hash = "0a8190c7c2419893c395e24bf0a79e1f84de011f660fd043c7aa2143146fc36b"
+hash = "f0059f515347989226a918e2ab9cd617582bab298501c929fc372b092e05c7b7"
 
 [[files]]
 file = "config/axiom/imgui.ini"
-hash = "e99dc50ed9ee2493f47327239e410290bf78e088ed302c32c48ff00204b0a8e1"
+hash = "72823e4680332bf0ce334390d9ab7395c101fbd07cb9041de324cf006b2d47fc"
 
 [[files]]
 file = "config/badoptimizations.txt"
@@ -499,7 +507,7 @@ hash = "0b05a8814f09fead55b1901b7efab7d3ab87227ea3fc6b5e65a6197261832710"
 
 [[files]]
 file = "config/biomeswevegone/world_generation.json"
-hash = "4e644f8324221022aed71d39b3d56a6cd189d5bd3f67c4aa72b889fb208421da"
+hash = "6fb6ff3e2cb4d1c47431b2e9fb48090fd985e0b43777949ec0c346cda85e532d"
 
 [[files]]
 file = "config/bobby.conf"
@@ -547,7 +555,15 @@ hash = "19e27780d2b9b6b6f66c9866aa5f3ab96787b9730e7609a644dc97e9a3cd54c9"
 
 [[files]]
 file = "config/chloride-client.toml"
-hash = "58700cf32b8b3a9679be4b11479f33c0272b9bfce79fbdebe15c659a4609590b"
+hash = "8a80ca913e5a63a972bfccfd0daa422984cda19e20f85ce50ce9b5bbdf2d5257"
+
+[[files]]
+file = "config/chloride-client.toml_backup1"
+hash = "5038d8bbb9248d0998def18f1a1793df3b05387cd2b44599943eb840437b17ff"
+
+[[files]]
+file = "config/chloride-client.toml_backup2"
+hash = "fe717085eefe084fcef210b527126449a28abcaced3de3d3d406eed520d4819d"
 
 [[files]]
 file = "config/chunky/config.json"
@@ -555,7 +571,7 @@ hash = "c7384a22595488f79f3125b22cc175eb729267267807a084479419349797abc8"
 
 [[files]]
 file = "config/cinematic_respawn.properties"
-hash = "87916243df3292a8da5a97b346411d78fbd9a06ee6d876526882dd3e85477b09"
+hash = "7737d59360567450217729951237d7a747cc41c57199995de26eaae01e594a2b"
 
 [[files]]
 file = "config/citresewn.json"
@@ -612,6 +628,10 @@ hash = "57234a4642bb571a882178a33d206cd166fdbe727193c351abb41d5d0213578a"
 [[files]]
 file = "config/corgilib/announcement_config.json5"
 hash = "37f3bbf0adb04001cfb813938d4ace3c4d8f62021dbffecc562f2c1ebcfae56c"
+
+[[files]]
+file = "config/cosycritters.json"
+hash = "4c07da73288d561aa56a170528dc1766c1578645f149b9bf876e81d4415deaf8"
 
 [[files]]
 file = "config/crash_assistant/config.toml"
@@ -692,6 +712,10 @@ hash = "adde7e5e42b9d716f14a9bc49797999a21a0ee05cc67e71410a232f830115b3b"
 [[files]]
 file = "config/crash_assistant/scripts/startup/example.jexl"
 hash = "346378f04a9e7319cdcb405fad82d6e7f1b36b39e0e4129c00a226b49f41cf37"
+
+[[files]]
+file = "config/crawlondemand.json"
+hash = "ae14b04faa2aa08ffd67a1c1693257d3fb172d31b5651a0df2d9a3c7f757fe9f"
 
 [[files]]
 file = "config/creativecore-client.json"
@@ -870,6 +894,10 @@ file = "config/eastersdelight.json"
 hash = "8b4f52db359a91c325e11995ca04bfe229b4d3e39797a29dad6dbb98488c2fb7"
 
 [[files]]
+file = "config/emf_compat.json"
+hash = "6cf273cc8acf37b68944b938c66b5dea4be72efb77d1ec8a1269ea4a3a3cf5f0"
+
+[[files]]
 file = "config/enderscape.json5"
 hash = "56cb0584eea03bcb04a50aafad67188f02c631fcdad7eeaa8a82c0f9dff0815f"
 
@@ -935,7 +963,7 @@ hash = "89fe72875ce58b622de37198ec78e12131f5d413532ca93eeccd4fdf8561207b"
 
 [[files]]
 file = "config/fabric/indigo-renderer.properties"
-hash = "2ab5b878714ff39a8b152d29f87599690c3902c08778a287599673fd15719a11"
+hash = "dcbab43436ab929ed7109ce21ea1c6d3178589a1e4135477f43dda3984ae20df"
 
 [[files]]
 file = "config/fabric_loader_dependencies.json"
@@ -975,7 +1003,7 @@ hash = "fddb9f45485b7ae24191e3d94aa6e94a31016a8d4938d970d7f9877c79235732"
 
 [[files]]
 file = "config/firstperson.json"
-hash = "25f85f86d12ff7bea74dd6f778ae0c797575999ff4e2291730eda55b54503ccd"
+hash = "8bd10f2b778ddcdd5f6422f85031c0ed801c7fb26e58bd600fd8f801234143ae"
 
 [[files]]
 file = "config/fishofthieves.json"
@@ -1063,7 +1091,7 @@ hash = "1b8cb9fd27c25e2027e974d7ca04159cfb9619e858a8985ec55abc78fabf95a6"
 
 [[files]]
 file = "config/ixeris.toml"
-hash = "04cfe52d0e86c9c5cbaf08c31a9ed874edc3884c9c7459b3dfde63041ba3ed4f"
+hash = "fb01aa8a788bec8b6d54aeb36290dbdf4f627cc64dbb8db76e3021a5d803791b"
 
 [[files]]
 file = "config/jeg-client.toml"
@@ -1083,7 +1111,7 @@ hash = "b4174dc6e985aa90be5002c14e94b956d8d586683c44b7b6710c44d08fb13648"
 
 [[files]]
 file = "config/jei/ingredient-list-mod-sort-order.ini"
-hash = "d2c2a7256891bd57f99ec9955296d054e614f4342752619d700c232ae077d9d1"
+hash = "bc132f3ebbfcc3d6cd6ae76cd1598b2d86c4230ab67fe60ea5153073e65e585a"
 
 [[files]]
 file = "config/jei/ingredient-list-type-sort-order.ini"
@@ -1115,7 +1143,7 @@ hash = "781b3abf6673fc901efb26547610554bbfba8be7d807ede9a3ac792e15b4eba9"
 
 [[files]]
 file = "config/jei/world/server/MMS Testing (mct_mudbourn_info)/lookupHistory.json"
-hash = "af7a18d63e1447e70cd0eac409567e806ddb7df2a3aa730508a131de2d362fbc"
+hash = "0014f3b8d008022d0ab753c68a8efdcedbbd1ea1ea9290807c873165f37f96cb"
 
 [[files]]
 file = "config/jei/world/server/MMS_Testing_1aa9f7ce/lookupHistory.json"
@@ -1123,11 +1151,11 @@ hash = "55794e89908d527fc516987a2c1bb3d8f26415b69a4bef930013c38fa3ff599b"
 
 [[files]]
 file = "config/jei/world/server/mudbourn_s_MC_Server__MMS__30c7fcbc/bookmarks.json"
-hash = "085914b91c46d0b29b5abd2660eb130bbebacaa5a6c2bccf28f7843e955dd6be"
+hash = "622c54c858ff61d6ac1bed7a3a4f62486a8939a1b5585e721fd877f45ddc7b36"
 
 [[files]]
 file = "config/jei/world/server/mudbourn_s_MC_Server__MMS__30c7fcbc/lookupHistory.json"
-hash = "a1a12ff8b7cd2e7c00a8f2e246cc8b5ab1488c10d158567da8ee33bc19fe6594"
+hash = "e751ab65d897e94d4a436480e8e9080461aa476f4c5ffc0906f0a23d6ac9ad07"
 
 [[files]]
 file = "config/jobsplus/jobsplus-client.yaml"
@@ -1159,7 +1187,7 @@ hash = "a9fed9f65d7c8216c478dd471c01c17c1af78c5c77caf17d1f48e5899b960ec8"
 
 [[files]]
 file = "config/leawind_third_person.json"
-hash = "36c3a57ecd8ee282624604815f3ffe80e4c0929984cb1563a177d30f336aa0ed"
+hash = "09d493ef6fc48a372f688b368afc2eda8d4ce0eb2dc65fdab0e59a39f9c0ba82"
 
 [[files]]
 file = "config/leawind_third_person/default_template.txt"
@@ -1179,7 +1207,7 @@ hash = "bbe29db82792ac50c289c0c36387cae817470caeacb30a5836caca2c428c7ad6"
 
 [[files]]
 file = "config/mcef/mcef.properties"
-hash = "bf40f4c9c4074188d1fd813dcf30bf9f584f3118e0168b3572320c49d79c38aa"
+hash = "5ffae5bb00cd666c377b1ed841cf4d286b212ad787354837093fb2f5d9d492a1"
 
 [[files]]
 file = "config/metro_config.json"
@@ -1206,8 +1234,12 @@ file = "config/mms_compat_metro.json"
 hash = "7d15e6e49d073d4ae71cf2f5f4aabc69284460767fb40d7486012b476c64249e"
 
 [[files]]
+file = "config/mms_compat_nbt.json"
+hash = "5c5146432fdaeaffbe298f4913c96c8936e1bcb44080f42f5fcc201b9db6e664"
+
+[[files]]
 file = "config/mms_compat_pose.json"
-hash = "43175e9dce5083c0e0489a58655e9a5f78050c5db08f2f016d6c4b33b3c3b2b8"
+hash = "9e6649efecd680e6c00a8d5fc31d2d0e19f5c5e7b57691b88c88a8349c14db51"
 
 [[files]]
 file = "config/mob-ai-tweaks/blacklists/allay_weapons.txt"
@@ -1447,7 +1479,7 @@ hash = "a5505cd0e3503f6f212defe46aebaaf432b1d9a2a04c2b706cf7ec3b691c4b4d"
 
 [[files]]
 file = "config/packetfixer.properties"
-hash = "7b7cb1bc266177fe31165e3c56ce773e319158f7bc848c89f3dc6a3e9f0c3bd3"
+hash = "40d118e8537cee9122339b01eb2ef360bebdccee1e008c642f6ef08077c437aa"
 
 [[files]]
 file = "config/pal.properties"
@@ -1470,6 +1502,10 @@ file = "config/particlerain/particles.json"
 hash = "e23ab0a08260e91394d9d8232343156197e8f915e6dbc49da50a73c3038c68ea"
 
 [[files]]
+file = "config/perspective_api.json"
+hash = "7132631f29f35fd4cc12485c070961a11798e1f4f92fc13306f2fff5df8cfe09"
+
+[[files]]
 file = "config/polymer/common.json"
 hash = "310dee45deffb1f13169492bf25cee00503e91403daa8cffa653939feb76cc03"
 
@@ -1488,6 +1524,10 @@ hash = "124f41f08b0b4a6e4d049c4d680134794f832bcc079e1d28b2a45b4f6c6dcf8f"
 [[files]]
 file = "config/puzzle.json"
 hash = "27e676212839591bd7c889ca4b6d9b86c4ce264d3c49a290a23e1ac53173c6cf"
+
+[[files]]
+file = "config/renderscale.json5"
+hash = "f5101beef129ea119e726f90af1ba9efe5fff73f58877a3ad31acd3c55dfb2d0"
 
 [[files]]
 file = "config/roughlyenoughitems/collapsible.json5"
@@ -1519,11 +1559,11 @@ hash = "6b44bfd3fc7ee9d8f589425503e2af2748aa274d080f6d270d34cbc1b5604d45"
 
 [[files]]
 file = "config/rsls.properties"
-hash = "885e137c7e92862b309f107492075e373e4a6bdcd4d05748bd9f816409e7faa9"
+hash = "a0934bdfbf06eba6e0be9e533866fab47ff7b919c52316c5d870e3107ed18dbc"
 
 [[files]]
 file = "config/rusticdelight.json"
-hash = "a3cafae38648bb0180d5511c96b917945adead9c6f2b9600f5292823e2e5a2fb"
+hash = "68c8512e5749cc4848c4cd304c1959d312a7fec9c75dec3addc3cc158b09e4dd"
 
 [[files]]
 file = "config/scalablelux.properties"
@@ -1659,6 +1699,10 @@ file = "config/sounds/world.json"
 hash = "a8c858631c353b73eac069ff6d811cb36e33a56c0226b934068795313530da6d"
 
 [[files]]
+file = "config/spark/activity.json"
+hash = "9b334a2f23abe004fa5b37d9d7ff9dba6ca4132dfecdccb68b963d772cd17c1b"
+
+[[files]]
 file = "config/spark/config.json"
 hash = "992ba9f3a4a7ce3de112eb95575328956fdc3ce6781c455ebce7b23db7e7da42"
 
@@ -1768,7 +1812,7 @@ hash = "3722e961204446525a1057da429c14898cf9f2244870aec769d8784585b6656c"
 
 [[files]]
 file = "config/vmp.properties"
-hash = "97df10ab6cf17631d580d2e8a5227e6eea20fe71c2c22b967527cf471c27f5d7"
+hash = "ddc611d160e6801ab433770e1088f7aa107850000d52b20a9c8bb428c5004e83"
 
 [[files]]
 file = "config/voicechat/category-volumes.properties"
@@ -1801,6 +1845,10 @@ hash = "fd2ccf3263795a76d79e453caeb321eb98a270c76fc8c6d35c335314ce1d878a"
 [[files]]
 file = "config/waila/blacklist.json5"
 hash = "201c132595425b9817f8ea2efe6d5772f96b7059a7cda9f6d2d81f8ea6a8b85b"
+
+[[files]]
+file = "config/waila/category_entries.json5"
+hash = "4d241c0ab0e7c92f673c98f92270bfbb57cc403e1693b9a4e5fc62958b6b096f"
 
 [[files]]
 file = "config/waila/debug.json5"
@@ -2960,7 +3008,7 @@ metafile = true
 
 [[files]]
 file = "mods/polytone.pw.toml"
-hash = "28ae2a9c577c751baedf02ff6fd23282d652aea982ce8974da789e912b3a26d6"
+hash = "109c74f0b91c9228bdaef11cbc807dc4e18a81a0437a973c648ee2fee5aa4546"
 metafile = true
 
 [[files]]
@@ -3293,7 +3341,7 @@ hash = "944f75feb78961494b253915d1e66c6572ae717c891d7e5d0f3bb50c56d16cab"
 
 [[files]]
 file = "options.txt"
-hash = "253b2afd70883a6a9b24be26a08213ffe478ca57a57beb977d21df5418122f4d"
+hash = "d51389f3aac0529f3ea480bf5622516dd8999b356d37030c3d63baa77e8950f5"
 preserve = true
 
 [[files]]
