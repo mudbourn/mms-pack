@@ -1,3 +1,4 @@
 {
-  "additive_arms": false
+  "additive_arms": false,
+  "transition_ease_ms": 0
 }

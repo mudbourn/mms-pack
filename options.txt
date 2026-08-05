@@ -8,7 +8,7 @@ entityDistanceScaling:0.5
 entityShadows:true
 forceUnicodeFont:false
 japaneseGlyphVariants:false
-fov:0.25
+fov:0.375
 fovEffectScale:1.0
 darknessEffectScale:1.0
 glintSpeed:0.5
@@ -20,7 +20,7 @@ gamma:0.0
 guiScale:2
 maxAnisotropyBit:1
 textureFiltering:2
-maxFps:90
+maxFps:260
 improvedTransparency:true
 inactivityFpsLimit:"afk"
 mipmapLevels:1
@@ -28,9 +28,9 @@ narrator:0
 particles:1
 reducedDebugInfo:false
 renderClouds:"fast"
-cloudRange:128
-renderDistance:16
-simulationDistance:8
+cloudRange:64
+renderDistance:20
+simulationDistance:10
 screenEffectScale:1.0
 soundDevice:""
 vignette:true
@@ -46,7 +46,7 @@ discrete_mouse_scroll:false
 invertXMouse:false
 invertYMouse:false
 realmsNotifications:true
-showSubtitles:false
+showSubtitles:true
 directionalAudio:false
 touchscreen:false
 bobView:true
@@ -63,8 +63,8 @@ damageTiltStrength:1.0
 highContrast:false
 highContrastBlockOutline:false
 narratorHotkey:true
-resourcePacks:["vanilla","file/FreshAnimations_v1.10.4","file/FA+Spiders-v2.2","file/FA+Emissive-v1.6","file/FA+Details-v2.2.1","file/FA+Creepers-v2.1","file/FA+All_Extensions-v1.8.1","controlify:legacy_console","alcocraftplus:3d_models","file/Mod Menu Helper","file/Chat Reporting Helper","continuity:glass_pane_culling_fix","file/FA+Objects-v2.1.2","file/Better-Leaves-9.5","file/Freshly Modded 3.0.3","file/Semos Animations Lib 2.0.3","file/Fresh Patch - Variants and Ventures","file/DetailedAnimationsV0.19","file/jobsplus_renames","file/lowlands-vanity","chloride:solid_chests","chloride:solid_beds","file/aerialhell-trident-3d","file/bountifulfish-anchor-3d","file/bountifulfish-tuna-3d","file/basicweapons-pike-3d","file/rubide-retexture","file/toheee1234\u0027s Better Combat Animations"]
-incompatibleResourcePacks:[]
+resourcePacks:["vanilla","file/FreshAnimations_v1.10.4","file/FA+Spiders-v2.2","file/FA+Emissive-v1.6","file/FA+Details-v2.2.1","file/FA+Creepers-v2.1","file/FA+All_Extensions-v1.8.1","controlify:legacy_console","alcocraftplus:3d_models","file/Mod Menu Helper","file/Chat Reporting Helper","continuity:glass_pane_culling_fix","file/FA+Objects-v2.1.2","file/Better-Leaves-9.5","file/Freshly Modded 3.0.3","file/Semos Animations Lib 2.0.3","file/Fresh Patch - Variants and Ventures","file/jobsplus_renames","file/rubide-retexture","file/bountifulfish-tuna-3d","file/bountifulfish-anchor-3d","file/aerialhell-trident-3d","file/lowlands-vanity","file/basicweapons-pike-3d","file/DetailedAnimationsV0.19","file/toheee1234\u0027s Better Combat Animations","file/Medieval Spears"]
+incompatibleResourcePacks:["file/Fresh Patch - Variants and Ventures"]
 lastServer:
 lang:en_us
 chatVisibility:0
@@ -73,7 +73,7 @@ chatLineSpacing:0.0
 textBackgroundOpacity:0.5
 backgroundForChatOnly:true
 hideServerAddress:false
-advancedItemTooltips:true
+advancedItemTooltips:false
 pauseOnLostFocus:true
 overrideWidth:0
 overrideHeight:0
@@ -191,13 +191,15 @@ key_keybinds.give_up:key.keyboard.e
 key_net.clayborn.accurateblockplacement.togglevanillaplacement:key.keyboard.unknown
 key_net.clayborn.accurateblockplacement.togglefastbreaking:key.keyboard.unknown
 key_keybinds.bettercombat.feint:key.keyboard.unknown
-key_keybinds.bettercombat.toggle_mine_with_weapons:key.keyboard.semicolon
+key_keybinds.bettercombat.toggle_mine_with_weapons:key.keyboard.unknown
 key_key.carry.desc:key.keyboard.c
 key_chloride.zoom:key.keyboard.unknown
 key_key.cinematic_respawn.skip_cinematic:key.keyboard.space
 key_keybinds.combat_roll.roll:key.keyboard.e
 key_key.combatamenities.backslot:key.keyboard.q
 key_key.combatamenities.beltslot:key.keyboard.v
+key_key.crawlondemand.toggle_crawl:key.keyboard.left.control
+key_key.crawlondemand.crawl:key.keyboard.unknown
 key_key.entityculling.toggle:key.keyboard.unknown
 key_key.entityculling.toggleBoxes:key.keyboard.unknown
 key_key.firstperson.toggle:key.keyboard.f6
@@ -248,7 +250,7 @@ key_key.jei.copy.recipe.id:key.keyboard.unknown
 key_key.jobsplus.open_menu:key.keyboard.k
 key_key.debug.reloadLanguages:key.keyboard.j
 key_key.leawind_third_person.adjust_camera:key.keyboard.j
-key_key.leawind_third_person.switch_shoulder:key.keyboard.unknown
+key_key.leawind_third_person.switch_shoulder:key.keyboard.z
 key_key.leawind_third_person.aim:key.mouse.right
 key_key.modmenu.open_menu:key.keyboard.unknown
 key_gui.xaero_pac_key_open_menu:key.keyboard.apostrophe
@@ -259,15 +261,15 @@ key_key.origins.view_origin:key.keyboard.minus
 key_key.presencefootsteps.settings:key.keyboard.f10
 key_key.presencefootsteps.toggle:key.keyboard.unknown
 key_key.presencefootsteps.debug_toggle:key.keyboard.unknown
-key_key.renderscale.options:key.keyboard.o
+key_key.renderscale.options:key.keyboard.unknown
 key_key.trashslot.toggle:key.keyboard.unknown
 key_key.trashslot.toggle_lock:key.keyboard.unknown
 key_key.trashslot.delete:key.keyboard.unknown
 key_key.trashslot.delete_all:key.keyboard.unknown
-key_key.uselessreptile.flyDownKey:key.keyboard.left.control
+key_key.uselessreptile.flyDownKey:key.keyboard.left.shift
 key_key.uselessreptile.primaryAttackKey:key.keyboard.g
-key_key.uselessreptile.secondaryAttackKey:key.keyboard.v
-key_key.uselessreptile.freeLookKey:key.keyboard.unknown
+key_key.uselessreptile.secondaryAttackKey:key.keyboard.x
+key_key.uselessreptile.freeLookKey:key.keyboard.z
 key_key.push_to_talk:key.keyboard.t
 key_key.whisper:key.keyboard.unknown
 key_key.mute_microphone:key.keyboard.y
@@ -329,4 +331,3 @@ modelPart_right_sleeve:true
 modelPart_left_pants_leg:true
 modelPart_right_pants_leg:true
 modelPart_hat:true
-fullscreenResolution:2048x1280@60:24

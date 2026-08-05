@@ -1,9 +1,9 @@
 {
   "configVersion": 2,
   "enabledByDefault": true,
-  "xOffset": 20,
-  "sneakXOffset": 0,
-  "sitXOffset": 0,
+  "xOffset": 40,
+  "sneakXOffset": 40,
+  "sitXOffset": 40,
   "renderStuckFeatures": true,
   "vanillaHandsMode": "OFF",
   "dynamicMode": true,
@@ -19,12 +19,7 @@
     "create:extendo_grip"
   ],
   "autoToggleModItems": [
-    "exposure:camera",
-    "expanded_weaponry:longbow",
-    "minecraft:crossbow",
-    "weaponsexpanded:chain_crossbow",
-    "minecraft:bow",
-    "expanded_weaponry:slingshot"
+    "exposure:camera"
   ],
   "hiddenLayers": []
 }
