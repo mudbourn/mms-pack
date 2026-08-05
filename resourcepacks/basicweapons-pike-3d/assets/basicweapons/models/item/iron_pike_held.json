@@ -1,0 +1,6 @@
+{
+  "parent": "basicweapons:item/pike_3d",
+  "textures": {
+    "pike": "basicweapons:item/pike_3d/iron_pike"
+  }
+}
