@@ -3165,11 +3165,6 @@ hash = "10b718b20129dfabab36a28233cc489e21a48b44d7b682b7a0c92ab29741d63e"
 metafile = true
 
 [[files]]
-file = "mods/to-crawl.pw.toml"
-hash = "c9782019c8fae4befc51c29dabd7fa505c376ef11ce2ba245fad394be45ae2e4"
-metafile = true
-
-[[files]]
 file = "mods/towerinator-1.3.jar"
 hash = "15f718904254c6c4e74b74181c5e94e4630dbf758faf73901cd6fb6e87fb129f"
 
@@ -3294,11 +3289,7 @@ hash = "944f75feb78961494b253915d1e66c6572ae717c891d7e5d0f3bb50c56d16cab"
 
 [[files]]
 file = "options.txt"
-<<<<<<< HEAD
-hash = "8373cf191ea7a57bd023ec931b838536e21c71487f23e49233b57fb2ed758106"
-=======
-hash = "c028a441b6a08ff59373fba5f4a10189539c3c66135dce222de2d2af3e163931"
->>>>>>> testing
+hash = "253b2afd70883a6a9b24be26a08213ffe478ca57a57beb977d21df5418122f4d"
 preserve = true
 
 [[files]]
