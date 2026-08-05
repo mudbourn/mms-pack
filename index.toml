@@ -3294,7 +3294,11 @@ hash = "944f75feb78961494b253915d1e66c6572ae717c891d7e5d0f3bb50c56d16cab"
 
 [[files]]
 file = "options.txt"
+<<<<<<< HEAD
 hash = "8373cf191ea7a57bd023ec931b838536e21c71487f23e49233b57fb2ed758106"
+=======
+hash = "c028a441b6a08ff59373fba5f4a10189539c3c66135dce222de2d2af3e163931"
+>>>>>>> testing
 preserve = true
 
 [[files]]
@@ -28392,6 +28396,90 @@ hash = "d064557006220f299803ea77c3367b3efec029a11ac1c6532b4e61fd3b549011"
 [[files]]
 file = "resourcepacks/aerialhell-trident-3d/pack.png"
 hash = "9b5f27360cfa947cfead03ae45a7ca3250e588dbc17ef315fd5017a5d0cfc2e2"
+
+[[files]]
+file = "resourcepacks/basicweapons-pike-3d/assets/basicweapons/models/item/bronze_pike_held.json"
+hash = "99dee48dc9093514df9ade49587a7d88603d7b3cfd65b6323be071837719e4a0"
+
+[[files]]
+file = "resourcepacks/basicweapons-pike-3d/assets/basicweapons/models/item/copper_pike_held.json"
+hash = "c04d5fd0ad6d0a1bc83b0ca4179afd64b07fa8d9c4bf660a5f8113349b73eea2"
+
+[[files]]
+file = "resourcepacks/basicweapons-pike-3d/assets/basicweapons/models/item/diamond_pike_held.json"
+hash = "9843a558959b6c799db821a69932711c5cb7a4938502650b937b786a32c99a6e"
+
+[[files]]
+file = "resourcepacks/basicweapons-pike-3d/assets/basicweapons/models/item/golden_pike_held.json"
+hash = "ef862a7a0cad1864ac07123dc9bfba4eb6cced5a36fd0699fe6cf8288b8068d1"
+
+[[files]]
+file = "resourcepacks/basicweapons-pike-3d/assets/basicweapons/models/item/iron_pike_held.json"
+hash = "da9a4502fd272789d7b185f5fd3ab9eb75cb810355c18f8e563b8f7be9b9bb23"
+
+[[files]]
+file = "resourcepacks/basicweapons-pike-3d/assets/basicweapons/models/item/netherite_pike_held.json"
+hash = "1bc2f93c99f1eb4d0be05df16ac705d0745539e5205df76ba967d5a14ea2e863"
+
+[[files]]
+file = "resourcepacks/basicweapons-pike-3d/assets/basicweapons/models/item/pike_3d.json"
+hash = "3fab069e36800377d1460eb93f87b38b6710ed0cbf928ae1eec696d5cf977f03"
+
+[[files]]
+file = "resourcepacks/basicweapons-pike-3d/assets/basicweapons/models/item/stone_pike_held.json"
+hash = "dd7de188caa8f4874e210d831f477ca4118ba92a12a0e0856fd36317e30225c9"
+
+[[files]]
+file = "resourcepacks/basicweapons-pike-3d/assets/basicweapons/models/item/tin_pike_held.json"
+hash = "08270dc690bab791559dc0135336aebddf52b80735f1666250431743391f6dfa"
+
+[[files]]
+file = "resourcepacks/basicweapons-pike-3d/assets/basicweapons/models/item/wooden_pike_held.json"
+hash = "6db136812f02536adf03f19bcc7580a80fc63aab6296680957558ddfe99ab22d"
+
+[[files]]
+file = "resourcepacks/basicweapons-pike-3d/assets/basicweapons/textures/item/pike_3d/bronze_pike.png"
+hash = "b8db3a526458601999363d4047bd4f0c6b1aa15a753649219e004a3098835167"
+
+[[files]]
+file = "resourcepacks/basicweapons-pike-3d/assets/basicweapons/textures/item/pike_3d/copper_pike.png"
+hash = "73168aa4e8f77854f79129deed637a1f140beb77628580464734b73013363462"
+
+[[files]]
+file = "resourcepacks/basicweapons-pike-3d/assets/basicweapons/textures/item/pike_3d/diamond_pike.png"
+hash = "ed23c5130d45d91402e106fbbf8d3c92ebe5574dd1ab55438d231384ca92a472"
+
+[[files]]
+file = "resourcepacks/basicweapons-pike-3d/assets/basicweapons/textures/item/pike_3d/golden_pike.png"
+hash = "0df13803f1a227be67a62bac4e8fb071ab2361321c7ea17d7ada9b5717316ad3"
+
+[[files]]
+file = "resourcepacks/basicweapons-pike-3d/assets/basicweapons/textures/item/pike_3d/iron_pike.png"
+hash = "15f76baf32b25307567b2fec46ced735905a9a8ba7ceb02a01e75384a46d4caf"
+
+[[files]]
+file = "resourcepacks/basicweapons-pike-3d/assets/basicweapons/textures/item/pike_3d/netherite_pike.png"
+hash = "a0d4604a4f8e96880a5a5d3ad03eaaebdd42a49d34f430ea7cb38db3659f6f9e"
+
+[[files]]
+file = "resourcepacks/basicweapons-pike-3d/assets/basicweapons/textures/item/pike_3d/stone_pike.png"
+hash = "3135451e063b8edb5a11bdc59068175394fbc6a9ebb705245834bd03be165a79"
+
+[[files]]
+file = "resourcepacks/basicweapons-pike-3d/assets/basicweapons/textures/item/pike_3d/tin_pike.png"
+hash = "cf311dade573b795c2f772c3600622bf4795c451d90edf7721f4354ca0564338"
+
+[[files]]
+file = "resourcepacks/basicweapons-pike-3d/assets/basicweapons/textures/item/pike_3d/wooden_pike.png"
+hash = "7bbd7921618d17c11c197bbc799c55d9c6524abefde161fb67812c5de40dbea9"
+
+[[files]]
+file = "resourcepacks/basicweapons-pike-3d/pack.mcmeta"
+hash = "0c07949eebdf361022c1d69f617b45c33ab486f5d25c567ee762ec733531adf1"
+
+[[files]]
+file = "resourcepacks/basicweapons-pike-3d/pack.png"
+hash = "bad275f9d51c99b795bada8a64c2fde5c91d7df8826483f5f7d469c1c75788ee"
 
 [[files]]
 file = "resourcepacks/bountifulfish-anchor-3d/.mms-anchor-backup/anchor_3d.json"
