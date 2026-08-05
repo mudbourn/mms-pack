@@ -63,7 +63,11 @@ damageTiltStrength:1.0
 highContrast:false
 highContrastBlockOutline:false
 narratorHotkey:true
+<<<<<<< HEAD
 resourcePacks:["vanilla","file/FreshAnimations_v1.10.4","file/FA+Spiders-v2.2","file/FA+Emissive-v1.6","file/FA+Details-v2.2.1","file/FA+Creepers-v2.1","file/FA+All_Extensions-v1.8.1","controlify:legacy_console","alcocraftplus:3d_models","file/Mod Menu Helper","file/Chat Reporting Helper","continuity:glass_pane_culling_fix","file/FA+Objects-v2.1.2","file/Better-Leaves-9.5","file/Freshly Modded 3.0.3","file/Semos Animations Lib 2.0.3","file/DetailedAnimationsV0.19","file/jobsplus_renames","file/lowlands-vanity","chloride:solid_chests","chloride:solid_beds","file/aerialhell-trident-3d","file/bountifulfish-anchor-3d","file/bountifulfish-tuna-3d","file/rubide-retexture","file/toheee1234\u0027s Better Combat Animations"]
+=======
+resourcePacks:["vanilla","file/FreshAnimations_v1.10.4","file/FA+Spiders-v2.2","file/FA+Emissive-v1.6","file/FA+Details-v2.2.1","file/FA+Creepers-v2.1","file/FA+All_Extensions-v1.8.1","controlify:legacy_console","alcocraftplus:3d_models","file/Mod Menu Helper","file/Chat Reporting Helper","continuity:glass_pane_culling_fix","file/FA+Objects-v2.1.2","file/Better-Leaves-9.5","file/Freshly Modded 3.0.3","file/Semos Animations Lib 2.0.3","file/Fresh Patch - Variants and Ventures","file/DetailedAnimationsV0.19","file/jobsplus_renames","file/lowlands-vanity","chloride:solid_chests","chloride:solid_beds","file/aerialhell-trident-3d","file/bountifulfish-anchor-3d","file/bountifulfish-tuna-3d","file/basicweapons-pike-3d","file/rubide-retexture","file/toheee1234\u0027s Better Combat Animations"]
+>>>>>>> testing
 incompatibleResourcePacks:[]
 lastServer:
 lang:en_us
