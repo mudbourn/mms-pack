@@ -1051,7 +1051,7 @@ hash = "72c171bed9d554dfa0a3d7af64c39194b95feaf3f787c1219603181c1316e58f"
 
 [[files]]
 file = "config/inspect-animations.json5"
-hash = "90ed47eb93e39ec7d847c049a801add153616a57410df2781db6adedc7ec36c9"
+hash = "5217f12a5fb5ac1cb58ca8b2468475f5eff08f03f87f9f51f7b130769ecad86e"
 
 [[files]]
 file = "config/isxander-main-menu-credits.json"
@@ -2771,7 +2771,7 @@ metafile = true
 
 [[files]]
 file = "mods/mms-mod-compat-support.pw.toml"
-hash = "6915c37f7befa1a11c462b7e3e32a06032c0b687967377f5fce56123f7c1c178"
+hash = "74654cd91789800e1344cd5f9b02c2f7286088aae9b5d5240d4267d8ee5a7989"
 metafile = true
 
 [[files]]
