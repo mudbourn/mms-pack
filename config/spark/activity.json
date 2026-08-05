@@ -1,0 +1,80 @@
+[
+  {
+    "user": {
+      "type": "player",
+      "name": "mudbourn",
+      "uniqueId": "49cad3d9-0ece-4536-b469-16b1c2c0fdd4"
+    },
+    "time": 1785938805658,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/HCPHQ9LzZ6"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "mudbourn",
+      "uniqueId": "7cd994e4-ef3a-3355-87ce-5fc9ce66c4ea"
+    },
+    "time": 1785936619480,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/qwx7lXKrGk"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "mudbourn",
+      "uniqueId": "7cd994e4-ef3a-3355-87ce-5fc9ce66c4ea"
+    },
+    "time": 1785934441872,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/7mpyRifTdT"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "mudbourn",
+      "uniqueId": "7cd994e4-ef3a-3355-87ce-5fc9ce66c4ea"
+    },
+    "time": 1785930518004,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/N2c3jSGHyX"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "mudbourn",
+      "uniqueId": "7cd994e4-ef3a-3355-87ce-5fc9ce66c4ea"
+    },
+    "time": 1785811075411,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/OpzV23rdlV"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "mudbourn",
+      "uniqueId": "7cd994e4-ef3a-3355-87ce-5fc9ce66c4ea"
+    },
+    "time": 1785811010794,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/lgbtc9QqtC"
+    }
+  }
+]
