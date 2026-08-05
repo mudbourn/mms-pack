@@ -1,13 +1,13 @@
 name = "Perspective API"
-filename = "perspective_api-1.3.2-beta+fabric-1.21.11.jar"
+filename = "perspective_api-1.4.0-beta+fabric-1.21.11.jar"
 side = "client"
 
 [download]
-url = "https://cdn.modrinth.com/data/LIqveQm1/versions/9OZkQujw/perspective_api-1.3.2-beta%2Bfabric-1.21.11.jar"
+url = "https://cdn.modrinth.com/data/LIqveQm1/versions/YzZMM8Pn/perspective_api-1.4.0-beta%2Bfabric-1.21.11.jar"
 hash-format = "sha512"
-hash = "ba61613ecfe1526f93e2061a63432703e9f782a4830543780ee1f0435842697265f80e67631ce29fb7ba580f8260fa5c7372074dd751637d4ab6e96f8a4fcc0e"
+hash = "20d8961a3bd3223f28721e9ee60aeacf835ed0a3b20001ceb6ccf7a7b5fa154a22c538526efb16b83012c84a2d154d5732105931fd8896aeb25fd21625ecaaf6"
 
 [update]
 [update.modrinth]
 mod-id = "LIqveQm1"
-version = "9OZkQujw"
+version = "YzZMM8Pn"
