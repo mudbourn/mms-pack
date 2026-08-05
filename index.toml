@@ -21849,6 +21849,14 @@ file = "resourcepacks/DetailedAnimationsV0.19/.mms-armor-jem-backup/player_slim_
 hash = "788c106356b9ce708da17a7f6b403e5f5d0c601bbfa35e3b24045dba51f8cee5"
 
 [[files]]
+file = "resourcepacks/DetailedAnimationsV0.19/.mms-crawl-backup/player.jem"
+hash = "82595b981c66ba2024befbf0972f235624d53785cab26881d8748d53ca7bca6d"
+
+[[files]]
+file = "resourcepacks/DetailedAnimationsV0.19/.mms-crawl-backup/player_slim.jem"
+hash = "6049fab10886be1dab480559af4095c784fb48b863f5ac9ce9193e4a31939987"
+
+[[files]]
 file = "resourcepacks/DetailedAnimationsV0.19/.mms-crossbow-backup/player.jem"
 hash = "32c7d8a2174c41daf6e34b46c29df6238644b4afffe98abfe1a104b5cda5e3c1"
 
@@ -21926,7 +21934,7 @@ hash = "d66c8c639e35fd7209a910f5957ed4f72c5dfa3ebb684862c0942497117f0d40"
 
 [[files]]
 file = "resourcepacks/DetailedAnimationsV0.19/assets/minecraft/emf/cem/player.jem"
-hash = "82595b981c66ba2024befbf0972f235624d53785cab26881d8748d53ca7bca6d"
+hash = "301cf6160efd8582b066b94816a7c2dca7fa93f9dafc658900502f522ac11df8"
 
 [[files]]
 file = "resourcepacks/DetailedAnimationsV0.19/assets/minecraft/emf/cem/player_cape.jem"
@@ -21946,7 +21954,7 @@ hash = "872c92a0951790e7614de881c725178e61f5f78ecc52a23249dfc448d73ca698"
 
 [[files]]
 file = "resourcepacks/DetailedAnimationsV0.19/assets/minecraft/emf/cem/player_slim.jem"
-hash = "6049fab10886be1dab480559af4095c784fb48b863f5ac9ce9193e4a31939987"
+hash = "fedb6ae5af1120b4b0abf4089189b0960b8a759880d57facd9958a3f69e19375"
 
 [[files]]
 file = "resourcepacks/DetailedAnimationsV0.19/assets/minecraft/emf/cem/player_slim_inner_armor.jem"
