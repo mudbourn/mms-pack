@@ -2188,6 +2188,11 @@ hash = "633dc65aa8f1020a14ab247f9360eb8923197b85a72e8aee2d41adf04429bed3"
 metafile = true
 
 [[files]]
+file = "mods/bura.pw.toml"
+hash = "7eb3e583e63ffa2dae88edae34822ca782ce9e7a57fab93ab7ee33590a420b3d"
+metafile = true
+
+[[files]]
 file = "mods/c2me-fabric.pw.toml"
 hash = "3d2fce19d393b65c5585bcb64952d2f07f9a2d63f8e34c79cf718affc452313e"
 metafile = true
@@ -2709,7 +2714,7 @@ metafile = true
 
 [[files]]
 file = "mods/krypton.pw.toml"
-hash = "2fb4ce2695c9f6da2087a5e350f2e85ea419de153e18bc20bf38f0b540c7caba"
+hash = "8f6e0157b42ba668c0ba9aa7eff94b3b91a8f58bcd357e574d70a7b160d4337c"
 metafile = true
 
 [[files]]

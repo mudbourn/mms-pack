@@ -1,0 +1,13 @@
+name = "Bura"
+filename = "bura-0.2.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/XxO7e7xt/versions/ppbomHs3/bura-0.2.0.jar"
+hash-format = "sha512"
+hash = "f7ca38543231c57d7abc2840648c11fa95736c8842f4b466b96773bd06bb05c4daea66767af6c9ab720de0f4f11e6e2b48acae6c23cc04c82ac882d25e806cfb"
+
+[update]
+[update.modrinth]
+mod-id = "XxO7e7xt"
+version = "ppbomHs3"
