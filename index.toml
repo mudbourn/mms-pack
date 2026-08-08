@@ -2348,6 +2348,11 @@ hash = "3a9019fa2908ffad3d476e1cf2d52d49916352ab87ae265a027449d583b5d8a4"
 metafile = true
 
 [[files]]
+file = "mods/crawl-on-demand.pw.toml"
+hash = "31d1e3c9e5f1ae81b13fb206bb89bfa4ca84cab8fc41393ba4eeb6c0977cda13"
+metafile = true
+
+[[files]]
 file = "mods/creativecore.pw.toml"
 hash = "dc2222f80d2bffd28cecbebecb3b024e6d52ac49375f0407422e5249491a2ac6"
 metafile = true
