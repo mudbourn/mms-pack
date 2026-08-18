@@ -24,10 +24,10 @@ Download from **https://prismlauncher.org/download/** and sign in with your Micr
 - Name it `MMS Live`.
 - Choose **Minecraft 1.21.11**.
 - Click **Fabric** and select loader version **0.19.3** (or newest 1.21.11-compatible).
-- Create the instance. **Don't add any mods by hand yet** — the pack installs them for you.
+- Create the instance. **Don't add any mods by hand yet**, the pack installs them for you.
 ![alt text](https://save.mudbourn.info/s/mgFTSBj6qxxxKJM/download "Graph")
 
-- Set up Java 25 (Prism downloads it for you — no separate install needed):
+- Set up Java 25 (Prism downloads it for you. No separate install needed):
   1. **Settings** → **Java** → **Installations**.
   2. Press **Download**, select the **25** option from **Mojang**, press **Download**, then **OK**.
 ![alt text](https://save.mudbourn.info/s/dZxY8LDMdtczFMz/download "Graph")
@@ -61,7 +61,7 @@ then the game starts. First launch pulls the whole pack (a few minutes); after t
 
 
 > **Server address:** ( mc.mudbourn.info ). Waypoints and land claims are
-> server-side (Xaero + OpenPAC) — they sync automatically in-game, nothing to install.
+> server-side (Xaero + OpenPAC). They sync automatically in-game, nothing to install.
 
 ---
 
@@ -72,7 +72,7 @@ then the game starts. First launch pulls the whole pack (a few minutes); after t
 | Crash: "requires version 25 or later of 'OpenJDK'" (C2ME / natives-math) | Instance is on Java 21. Set Java 25 in instance Settings → Java (see step 2). |
 | "Cannot find packwiz-installer-bootstrap.jar" | The jar must be inside `.minecraft/`, not the instance root. Re-check step 3. |
 | Prelaunch window closes instantly / mods missing | Confirm the pre-launch box is the **exact** line above, quotes included. |
-| Want to see what it's doing | Remove nothing — the installer prints progress in a small window each launch. |
+| Want to see what it's doing | Remove nothing. The installer prints progress in a small window each launch. |
 | A mod update broke something | Tell an admin the mod + symptom; the pack is rolled forward centrally, then just relaunch. |
 
 ---
@@ -95,7 +95,7 @@ packwiz refresh
 git add -A && git commit -m "pack: <what changed>" && git push
 ```
 
-That's the whole update loop — no client action required beyond launching.
+That's the whole update loop. No client action required beyond launching.
 
 ### Notes for maintainers
 - **6 bundled jars** are hosted from this repo's `mods/*.jar` at `raw.githubusercontent.com/.../mods/<jar>`:
@@ -124,20 +124,20 @@ testing  ●──●──●──●      test:  MMSTesting01 + "MMS Live II"
 
 **Iterate on a fix**
 1. Add the mod's repo slug to `overlay.list` (e.g. `mms-mod-compat-support`).
-2. Build the jar, then on the `testing` branch run `./mms-deploy-test.sh` —
+2. Build the jar, then on the `testing` branch run `./mms-deploy-test.sh`
    pushes the branch (test client pulls it), syncs released mods to
    MMSTesting01, and overlays the dev jar on both server and test client.
 3. Launch two clients (see below) and test.
 
-**Promote to prod** — `./mms-promote.sh` (warns about active overlays, merges
+**Promote to prod** `./mms-promote.sh` (warns about active overlays, merges
 `testing → main`, then runs `mms-deploy.sh` which cuts the GitHub release and
 syncs MMSLive01). Afterwards clear the slug from `overlay.list`.
 
 **Scripts**
-- `mms-server-sync.py` — shared server-mod sync (prod + test both use it).
-- `mms-overlay-apply.sh <mods_dir>` — apply `overlay.list` dev jars to a folder.
-- `mms-deploy-test.sh` — staging deploy (testing branch → test server + client).
-- `mms-promote.sh` — merge up + prod deploy.
+- `mms-server-sync.py` shared server-mod sync (prod + test both use it).
+- `mms-overlay-apply.sh <mods_dir>` apply `overlay.list` dev jars to a folder.
+- `mms-deploy-test.sh` staging deploy (testing branch → test server + client).
+- `mms-promote.sh` merge up + prod deploy.
 
 **Two offline clients on one machine**
 - Server: `MMSTesting01/server.properties` has `online-mode=false` (test box only).
