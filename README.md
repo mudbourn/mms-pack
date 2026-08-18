@@ -1,14 +1,14 @@
-# MMS Live — Minecraft Modpack
+# MMS Live -- Minecraft Modpack
 
 **Minecraft 1.21.11 · Fabric loader 0.19.3 · Java 21/25 · pack version 2.5.2**
 
 This repo *is* the modpack. It's a [packwiz](https://packwiz.infra.link/) pack, which means once
-your launcher is pointed at it, **you get every update automatically just by launching the game** —
-no re-downloading, no re-importing, no reinstalling for a single config change.
+your launcher is pointed at it, **you get every update automatically just by launching the game**.
+No re-downloading, no re-importing, no reinstalling for a single config change.
 
 To make that work you need a **packwiz-aware launcher**. We use **[Prism Launcher](https://prismlauncher.org/)**
-(free, open-source). ATLauncher and the CurseForge/Modrinth apps do **not** auto-update packwiz packs —
-please switch to Prism.
+(free, open-source). ATLauncher and the CurseForge/Modrinth apps do **not** auto-update packwiz packs.
+Please switch to Prism.
 
 ---
 
