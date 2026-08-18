@@ -1,4 +1,4 @@
-# MMS Live -- Minecraft Modpack
+# MMS Live - Minecraft Modpack
 
 **Minecraft 1.21.11 · Fabric loader 0.19.3 · Java 21/25 · pack version 2.5.2**
 
