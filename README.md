@@ -2,9 +2,6 @@
 
 **Minecraft 1.21.11 · Fabric loader 0.19.3 · Java 25 · pack version 2.5.2**
 
-> ⚠️ **Java 25 required.** Prism defaults new 1.21.11 instances to Java 21, which crashes on launch
-> (C2ME's `opts-natives-math` needs Java 25). Set it per the instructions in step 2 below.
-
 This repo *is* the modpack. It's a [packwiz](https://packwiz.infra.link/) pack, which means once
 your launcher is pointed at it, **you get every update automatically just by launching the game** —
 no re-downloading, no re-importing, no reinstalling for a single config change.
