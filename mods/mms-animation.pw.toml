@@ -1,0 +1,15 @@
+name = "mms-animation"
+filename = "mms-animation-0.1.0.jar"
+side = "client"
+
+[download]
+url = "https://github.com/mudbourn/mms-animation/releases/download/v0.1.0/mms-animation-0.1.0.jar"
+hash-format = "sha256"
+hash = "afc072e82ad0b3f7084be3fafbb861fa23c0f0fdce85b6252c2005852c67debf"
+
+[update]
+[update.github]
+branch = "main"
+regex = "^.+(?<!-api|-dev|-dev-preshadow|-sources)\\.jar$"
+slug = "mudbourn/mms-animation"
+tag = "v0.1.0"
