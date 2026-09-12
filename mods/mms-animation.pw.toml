@@ -1,6 +1,6 @@
 name = "mms-animation"
 filename = "mms-animation-0.1.0.jar"
-side = "client"
+side = "both"
 
 [download]
 url = "https://github.com/mudbourn/mms-animation/releases/download/v0.1.0/mms-animation-0.1.0.jar"

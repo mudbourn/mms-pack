@@ -2824,7 +2824,7 @@ metafile = true
 
 [[files]]
 file = "mods/mms-animation.pw.toml"
-hash = "66a7353daf5379c1cc9e0ac7c1456e434b2d84cb8daa17dcbf48c15115aaaa8f"
+hash = "97151da39fede4370372174698fd9494f014bc0963b352a67abda37d2a3841c5"
 metafile = true
 
 [[files]]
