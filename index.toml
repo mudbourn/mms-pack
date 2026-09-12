@@ -2428,21 +2428,6 @@ hash = "3ff5c3482eba5756f461870aa10e40f48e89b604c3b356b1a07aa5bf7655b23b"
 metafile = true
 
 [[files]]
-file = "mods/emf-compat-better-combat.pw.toml"
-hash = "8ec9a37c89621a0141e0e114aee42454050a84be8f70582498ba05ee66a480f7"
-metafile = true
-
-[[files]]
-file = "mods/emf-compat-carry-on.pw.toml"
-hash = "3a62dd9a8bb5c1f467907609bafdbccf3e1ffc3d018633de4d5ea5318a759a9d"
-metafile = true
-
-[[files]]
-file = "mods/emf-compat-core.pw.toml"
-hash = "0f7b37fe0b05990d2ead0edbdd912eaa138557e36331a9d317f2581a2e14de21"
-metafile = true
-
-[[files]]
 file = "mods/enchanted-utilities.pw.toml"
 hash = "ab47199a98582e64c0d9c14e3dfcac407fb278b2b1ab7f7f42ce54af3bfd57e1"
 metafile = true
@@ -2453,11 +2438,6 @@ hash = "f58d78ea67afa3f1a7e24608e22b59edbb0011e22d806430ae9fe743f9b0347a"
 metafile = true
 
 [[files]]
-file = "mods/entity-model-features.pw.toml"
-hash = "72b9dcb36b5cf07f1cdbd970ae4f2dc04d86c973d790e7c76de26a6ce8cd6b58"
-metafile = true
-
-[[files]]
 file = "mods/entity-view-distance.pw.toml"
 hash = "66150a9b4ea9a4316641b9f0a6ba0b71f8e6268dfe632b5c1951e7cad8a7effa"
 metafile = true
@@ -2465,11 +2445,6 @@ metafile = true
 [[files]]
 file = "mods/entityculling.pw.toml"
 hash = "a4c2d3de068fd3c2c9da27791bab8390ca00a3db6fd31f79eb89c1e79dc7e7b8"
-metafile = true
-
-[[files]]
-file = "mods/entitytexturefeatures.pw.toml"
-hash = "c1fb6ffc539fda1aa49474e642125595b10de61d6ba0951e32718ae93909eee5"
 metafile = true
 
 [[files]]
@@ -2568,11 +2543,6 @@ hash = "816b735b2ad505476201800a99f527e61b392b712b9d20ca9edcce05f412fe87"
 metafile = true
 
 [[files]]
-file = "mods/first-person-model.pw.toml"
-hash = "e274cd8e37cab2c375c3f3acd0d4b1c89790007ebc3318cbede4f420e410bf1a"
-metafile = true
-
-[[files]]
 file = "mods/fish-of-thieves.pw.toml"
 hash = "801c907c2470640b9ef66abb126c7fe3b6d4709dd82d72409d7700bf0011c8ed"
 metafile = true
@@ -2655,11 +2625,6 @@ metafile = true
 [[files]]
 file = "mods/immersive-optimization.pw.toml"
 hash = "8ae0dcae96c5871ca2cd31236108bc6045f341ee6fc2dcacb40e2d96f26f5444"
-metafile = true
-
-[[files]]
-file = "mods/inspect-animations.pw.toml"
-hash = "81c8a0b2cebae8fe484455e261589ba32075cf4decf4e7d0434a6d056608ff3b"
 metafile = true
 
 [[files]]
@@ -2823,11 +2788,6 @@ hash = "835c556c329a2f55f8f67b36ad5826b63dce0f91073bb28913250c3c80cfab04"
 metafile = true
 
 [[files]]
-file = "mods/mms-animation.pw.toml"
-hash = "98b2a455a9fed1adac696020b15f38e9934ef81eec3d3a51f83192eeb838577f"
-metafile = true
-
-[[files]]
 file = "mods/mms-metro.pw.toml"
 hash = "cc771e4e365f2b5d185ea5fb4d2b4f7dfb0b80dcc62a2cda19d6899db068c3a2"
 metafile = true
@@ -2930,16 +2890,6 @@ metafile = true
 [[files]]
 file = "mods/noisiumforked.pw.toml"
 hash = "e2690ce7e51e74527ead933b1aef4566c84d2a4d0d482edd9e329c8a2a06963b"
-metafile = true
-
-[[files]]
-file = "mods/not-enough-animations-emf-compat.pw.toml"
-hash = "a6709bf6b22a523bee779dac4812e66ff326f275cf6c6ce29a6cdb7b8bc152b5"
-metafile = true
-
-[[files]]
-file = "mods/not-enough-animations.pw.toml"
-hash = "3793ef9ef9c29f99bb7a870461db8d4e74525ed6ffd5dad8b5a1f1918ccb8c54"
 metafile = true
 
 [[files]]
