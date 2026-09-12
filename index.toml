@@ -10,7 +10,7 @@ hash = "39b1578c36cfd699e9de71dbd69ff5979ef536c85cd1af774079e8fcad3399f2"
 
 [[files]]
 file = "README.md"
-hash = "de3556733ff2a1028ed0d534ed16360c18f529d6d090ab213a6cb2ce67e5b188"
+hash = "4f3dcd7ce70d48a0728f9f5f428ba61be45dfc158792f9b8ddd6cad2a59a3c36"
 
 [[files]]
 file = "config/.puzzle_cache/mojangstudios.png"
@@ -2828,8 +2828,33 @@ hash = "835c556c329a2f55f8f67b36ad5826b63dce0f91073bb28913250c3c80cfab04"
 metafile = true
 
 [[files]]
+file = "mods/mms-animation.pw.toml"
+hash = "66a7353daf5379c1cc9e0ac7c1456e434b2d84cb8daa17dcbf48c15115aaaa8f"
+metafile = true
+
+[[files]]
+file = "mods/mms-metro.pw.toml"
+hash = "cc771e4e365f2b5d185ea5fb4d2b4f7dfb0b80dcc62a2cda19d6899db068c3a2"
+metafile = true
+
+[[files]]
 file = "mods/mms-mod-compat-support.pw.toml"
-hash = "45ad64b906ef32060d4efc570bb3b40fed4884a486d70b893b22ff4119df58d5"
+hash = "1bb44bf52f5599a0fa56e73936d7b192b84d5fb24ab2cfa36deea076899587e0"
+metafile = true
+
+[[files]]
+file = "mods/mms-origins.pw.toml"
+hash = "dee3f3e56908ec28d45d4b853520c7e3e4ff6ec0d9f075c0e67e73415bc018e7"
+metafile = true
+
+[[files]]
+file = "mods/mms-render-common.pw.toml"
+hash = "99294c0c707b643cffa34845e86458648000f23c3478b7f36cb500f0e6611274"
+metafile = true
+
+[[files]]
+file = "mods/mms-vanity.pw.toml"
+hash = "a51d4d723925e3f89bc4bce1717fa9bec47c99764e49c9d0b15c95734697797f"
 metafile = true
 
 [[files]]
