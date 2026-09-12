@@ -1,13 +1,13 @@
 name = "Mob AI Tweaks"
-filename = "mob-ai-tweaks-1.11.2-1.21.11.jar"
+filename = "mob-ai-tweaks-1.11.3-1.21.11.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/egIM2bKK/versions/DeB67UKt/mob-ai-tweaks-1.11.2-1.21.11.jar"
+url = "https://cdn.modrinth.com/data/egIM2bKK/versions/bFb56Zw2/mob-ai-tweaks-1.11.3-1.21.11.jar"
 hash-format = "sha512"
-hash = "667b05b1fb6ce058d67a2c9c3dce7963fc266aef9b143a9d6a9ad635d28f3be308da171820138e01a568983b0bfc96e093eaee7ab6627400ec2595f0423e90c5"
+hash = "0030724b8ef8757e2778980d84ab2bfdc29296ee660133a348d9574ccbf555ef2272a5762b665dfc3d8caa8c2eab1d6c08fc9bc4ed00eba836c61a0f6ecebc28"
 
 [update]
 [update.modrinth]
 mod-id = "egIM2bKK"
-version = "DeB67UKt"
+version = "bFb56Zw2"

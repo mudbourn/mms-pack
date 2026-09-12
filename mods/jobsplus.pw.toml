@@ -1,13 +1,13 @@
 name = "Jobs+"
-filename = "jobsplus-19.1.0-fabric.jar"
+filename = "jobsplus-19.1.2-fabric.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/hxGLlCnq/versions/MokluOVA/jobsplus-19.1.0-fabric.jar"
+url = "https://cdn.modrinth.com/data/hxGLlCnq/versions/OwdOmog1/jobsplus-19.1.2-fabric.jar"
 hash-format = "sha512"
-hash = "bc3740480dfc1ef0f6acfbea262cfb7256ec17d76ecbf0338d55b930467bb7ec2b73e925f4d9a2606848a20d5d281008186f65fdb91d651c2d47dbcb27b62f84"
+hash = "95255da88e4db36b0614537d8ced266024bc8a8670edf611f61f14d374c1dce06e42550afba26b7782ca6b8c177135c9cd41dbb1fcb182bbd7a96a08bcfca4eb"
 
 [update]
 [update.modrinth]
 mod-id = "hxGLlCnq"
-version = "MokluOVA"
+version = "OwdOmog1"
