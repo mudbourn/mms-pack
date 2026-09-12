@@ -2084,7 +2084,7 @@ metafile = true
 
 [[files]]
 file = "mods/arc.pw.toml"
-hash = "b5e958cbdfccd4b0f9b2a6f9b04e309f93ae9be0e0bd2a68271ac495bb957cde"
+hash = "8fc98786c8297ddfcbc904bbca62c341bc300aa2e9672c2aac7d798017aacf82"
 metafile = true
 
 [[files]]

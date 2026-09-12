@@ -1,13 +1,15 @@
+# PINNED to 19.1.1 — do not re-add [update.modrinth].
+# Arc's 19.1.2 release for 1.21.11 shipped ONLY a dev jar (arc-19.1.2-dev.jar),
+# which is not remapped for production and crashes the launcher on boot:
+#   Error parsing or using Mixin config arc-common.mixins.json for mod arc
+# `packwiz update -a` (mms-deploy-prod.sh) kept pulling that dev jar as "latest",
+# so update metadata is removed to hold Arc at the last good release, 19.1.1.
+# Re-add [update.modrinth] (mod-id H3eKhxi7) once a real 19.1.2-fabric jar exists.
 name = "Arc Lib"
-filename = "arc-19.1.2-dev.jar"
+filename = "arc-19.1.1-fabric.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/H3eKhxi7/versions/eVb15P28/arc-19.1.2-dev.jar"
+url = "https://cdn.modrinth.com/data/H3eKhxi7/versions/4xFAUSvG/arc-19.1.1-fabric.jar"
 hash-format = "sha512"
-hash = "29f57f084d7a389b7b5830d26e44a79b149d1fee6ef02e58e641658ece408f9693e416099d092800317e7dee921fead07e9a404acbe507533478af5107e50dd9"
-
-[update]
-[update.modrinth]
-mod-id = "H3eKhxi7"
-version = "eVb15P28"
+hash = "72f51370d2a3c524fc325109ee8992a62edf5b4765ec11f113eb3587affe05f040a47802c5a9fe1995003877f46e93fc520db06b67dd86b49c495e72c7685dbc"
