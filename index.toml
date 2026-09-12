@@ -2053,11 +2053,6 @@ hash = "72cfc33e2d90a818b466ea9b02cc08c925a9e2fb46b8f3e71540c5ea96a5b79f"
 metafile = true
 
 [[files]]
-file = "mods/aitk.pw.toml"
-hash = "8785c78f672c2ed36d67eb735299934d8725154cf8395a96a43485f1e1f2f689"
-metafile = true
-
-[[files]]
 file = "mods/alcocraft.pw.toml"
 hash = "d66361511146730b6dab698911a454c47041d3213da764d9d0c933a5241071b3"
 metafile = true
@@ -2839,7 +2834,7 @@ metafile = true
 
 [[files]]
 file = "mods/mms-mod-compat-support.pw.toml"
-hash = "1bb44bf52f5599a0fa56e73936d7b192b84d5fb24ab2cfa36deea076899587e0"
+hash = "a4aaaba66045364e4cb49f93e588e66fe04f12e7370b45c60d89de0d80c77344"
 metafile = true
 
 [[files]]
@@ -2875,15 +2870,6 @@ metafile = true
 [[files]]
 file = "mods/modmenu.pw.toml"
 hash = "04161fe0dcb23469df8b66dba353592f0e5c4ea4f64b2f7a1636033ccdb9e351"
-metafile = true
-
-[[files]]
-file = "mods/modmetro-v1.jar"
-hash = "6bf5e41fbc50c95a00a777139063f31dc5bad9960b7cdb32a6e02a10ec0f5a88"
-
-[[files]]
-file = "mods/modmetro.pw.toml"
-hash = "f71ad74fc018d68177aaf61620560422d99250ed93c5ac0b4c98774b0654f22d"
 metafile = true
 
 [[files]]
