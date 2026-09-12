@@ -2781,6 +2781,11 @@ hash = "1bb44bf52f5599a0fa56e73936d7b192b84d5fb24ab2cfa36deea076899587e0"
 metafile = true
 
 [[files]]
+file = "mods/mms-origins.pw.toml"
+hash = "dee3f3e56908ec28d45d4b853520c7e3e4ff6ec0d9f075c0e67e73415bc018e7"
+metafile = true
+
+[[files]]
 file = "mods/mms-render-common.pw.toml"
 hash = "99294c0c707b643cffa34845e86458648000f23c3478b7f36cb500f0e6611274"
 metafile = true
