@@ -20,8 +20,8 @@ beaconBeamCulling = true
 useOnModdedBlocksByDefault = true
 
 [modCompatibility]
-rusticdelight = true
 enderscape = true
+rusticdelight = true
 computerpc = true
 mdm = true
 farmersdelight = true

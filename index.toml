@@ -507,7 +507,7 @@ hash = "0b05a8814f09fead55b1901b7efab7d3ab87227ea3fc6b5e65a6197261832710"
 
 [[files]]
 file = "config/biomeswevegone/world_generation.json"
-hash = "6fb6ff3e2cb4d1c47431b2e9fb48090fd985e0b43777949ec0c346cda85e532d"
+hash = "4e644f8324221022aed71d39b3d56a6cd189d5bd3f67c4aa72b889fb208421da"
 
 [[files]]
 file = "config/bobby.conf"
@@ -515,7 +515,7 @@ hash = "2b537201fc80ff324413829904450720706869fb5e4d753e14f4bff1525f5438"
 
 [[files]]
 file = "config/c2me.toml"
-hash = "fead2013e647f4bf157e8fbc3a0c061024825f64545fac364216e4d26b2a1e7b"
+hash = "03101cc76a7c2d048a912c4e3a69692fc87f8172c13b4452f808b318dd2e845c"
 
 [[files]]
 file = "config/cape-provider/config.json"
@@ -1043,7 +1043,7 @@ hash = "4c7635099e27953f03e0257106284ffa36aa91294bd89ba75a387242ece84cff"
 
 [[files]]
 file = "config/gnetum.json"
-hash = "e75e2f5b6acd195b80d9f39ee207c3f51ca150e1735bbc6f0a7abef6db8a8c9c"
+hash = "0d9a97b8bee9ff36624a7e76737097c57b3dfc42a8aceb845315a5c7ba10885d"
 
 [[files]]
 file = "config/guardvillagers.json"
@@ -1255,7 +1255,7 @@ hash = "8705451f296379d75eaf8639d41441be4bbeb1e09b9801617e77fa1b4c072770"
 
 [[files]]
 file = "config/mob-ai-tweaks/general_config.txt"
-hash = "2374b19eb5d7b81fd757f54bd0d101bf7ddd3648c20862b1d5ae882b4a8659e2"
+hash = "fae5bc20f629ef0143c039869d920ac16f6c4539cabf01d3c3227bf90efc5d41"
 
 [[files]]
 file = "config/mob-ai-tweaks/ranged_mobs/mob_secondary_weapons.txt"
@@ -1275,7 +1275,7 @@ hash = "abe82f381dc5ca7f5ed946301bc35748a421c69c105d3726a30a055cd4ffd30b"
 
 [[files]]
 file = "config/modernfix-mixins.properties"
-hash = "f6c383020f37b3d8c64c0961011eecb9e6458c0724c101e5b1fc209b5247eb92"
+hash = "86c0cf16ca221cb0de8b46da9a0c81d558ca84d2b515a6ab7f85f2b801333e22"
 
 [[files]]
 file = "config/modmenu.json"
@@ -1451,7 +1451,7 @@ hash = "0dc1689e7306eaae3725827d240f2a962c65aac2d73d4be0799aa4925349df10"
 
 [[files]]
 file = "config/moreculling.toml"
-hash = "72c385dfd11eff3aa3d0ade26934e3e0aa2893927bb354a197b89a847b28a870"
+hash = "20f68961868f3146c0aa82814bfaacee7b365b64e86f3e19fc977bfe809b09f3"
 
 [[files]]
 file = "config/mutantmonsters-common.toml"
@@ -1471,7 +1471,7 @@ hash = "e604a3705ca2adf9499a412afefc61fb589448de43e4652db6232f94699e3950"
 
 [[files]]
 file = "config/openpartiesandclaims-server.toml"
-hash = "7dfaddb9248949ad39682715e8af263d00c56df41059947fad821aca41ffbab9"
+hash = "6ee37871a5d75d3fed8e491e172cd2fe6fb07d97511ce0827cea4a1376a0800d"
 
 [[files]]
 file = "config/origins_server.json"
@@ -1619,7 +1619,7 @@ hash = "3765c332a3a1f2697b4ec88dc206f5c93c063ca86663faeef3181fe5e01d44df"
 
 [[files]]
 file = "config/skyboxify.json"
-hash = "d4c6de561c28dc812c76b6d1cfffda61436ca05faf4cebbd5f38f6f916fec83b"
+hash = "e2b79eaa90ce869352d461a779d2014aad3f954c8ed3dc8b8d921a2d3932afbf"
 
 [[files]]
 file = "config/sleepsooner.json5"
@@ -1672,7 +1672,7 @@ hash = "bc029afc200ba2fba522a27245d65c8e5db0f20cd0eddd5873a316054d962923"
 
 [[files]]
 file = "config/sound_physics_remastered/sound_rates.properties"
-hash = "bef4fb297d5f7a28ae4c3e0b84f8d45723661c34a8bcff0ed1d67165dd003e1a"
+hash = "123727d7bc63219bd122e27d219611ecbf173364847fdfe0f1702976d448d43f"
 
 [[files]]
 file = "config/sound_physics_remastered/soundphysics.properties"

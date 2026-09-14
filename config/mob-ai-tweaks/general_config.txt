@@ -117,6 +117,7 @@ skeletons_swing_off_hand_on_draw=true
 skeletons_use_modded_bows=true
 slime_merge_chance=1
 slimes_can_be_made_of_honey=true
+slimes_death_animation=true
 slimes_turn_into_magma_cubes_in_lava=true
 slimes_with_dispenser_chance=20
 slimes_with_dispenser_local_difficulty=150
