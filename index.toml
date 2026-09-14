@@ -883,7 +883,7 @@ hash = "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
 
 [[files]]
 file = "config/dynamiccrosshair.json5"
-hash = "f6d2f9f4d09055cb5bc34705a0d7973eb9d00bc0c28f03135af4a3c43ce8397f"
+hash = "acca12d95f38a18d216145dfbf3fa3757b2d4812b75029efd9bb99963bed3555"
 
 [[files]]
 file = "config/e4mc/e4mc.toml"
@@ -2789,7 +2789,7 @@ metafile = true
 
 [[files]]
 file = "mods/mms-metro.pw.toml"
-hash = "859719d961c43622a2f6043007039a6b44a197589f818d57b2f72412cffe446e"
+hash = "a55446ecff0ace3c22814da853fa632b9e9ba69d2315530a55b0cdfe2dc5b1a2"
 metafile = true
 
 [[files]]
