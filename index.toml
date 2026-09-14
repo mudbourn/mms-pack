@@ -2788,6 +2788,11 @@ hash = "835c556c329a2f55f8f67b36ad5826b63dce0f91073bb28913250c3c80cfab04"
 metafile = true
 
 [[files]]
+file = "mods/mms-jobs.pw.toml"
+hash = "6a2af30729c6c162a8c6b60e0f73cbea994d0fe928ce8f5ee4243b418f4bb125"
+metafile = true
+
+[[files]]
 file = "mods/mms-metro.pw.toml"
 hash = "7902c71b7127b69b68b79f6d95f26078cc4d3332d36fc061b9e4f7e8ba690c55"
 metafile = true
