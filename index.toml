@@ -1535,7 +1535,7 @@ hash = "a59667baa54738c1b294393a9b3652bcf7d392cdb8cba1c08a8006885b18e919"
 
 [[files]]
 file = "config/roughlyenoughitems/config.json5"
-hash = "3471e47ec763da9d35809ac85e501880a11410e50abeb6ffd0d94699d34dd3ec"
+hash = "e32b1b2109af37ae0f8f250a7a956dacab6a26af8c44d0cfad6feb6da004f33a"
 
 [[files]]
 file = "config/roughlyenoughitems/favorites.json5"
@@ -2789,7 +2789,7 @@ metafile = true
 
 [[files]]
 file = "mods/mms-metro.pw.toml"
-hash = "f6069b68ff94d48f5269d01d750bec818b11abc6a32415c63eb507b4145cab69"
+hash = "90c8fafcd23a2c30c881d4d5f0772ed6b23cf85e410bea5ef4a8607391731ee3"
 metafile = true
 
 [[files]]
