@@ -3,10 +3,11 @@
 #
 # 1. commit + push             any pending local changes ship first, untangled
 #                              from whatever packwiz is about to touch
-# 2. release reconcile         for our own mods (mudbourn/* slugs): if the local
-#                              repo has a build newer than the released version,
-#                              commit+push that repo, cut the GitHub release with
-#                              the jar, and point the pack at it
+# 2. release reconcile         for our own mods (mudbourn/* slugs). ADOPT-FIRST:
+#                              if GitHub already has a release the pack is behind
+#                              (you pushed + released it yourself), just point the
+#                              pack at it. Only if a LOCAL build is newer than any
+#                              release does it commit+push the repo and cut one.
 # 3. packwiz update -a         bump every mod to latest
 # 4. packwiz refresh           rebuild index
 # 5. ./update-title.sh         re-apply preserve flags
@@ -126,9 +127,52 @@ else
 fi
 
 echo "── release reconcile (local mods) ──"
+# Two ways one of our mods gets a new version, and this handles both:
+#
+#   A. You released it yourself — pushed the repo to main and let its release.yml
+#      (or `gh release create`) cut the tag. CI bumps gradle.properties and
+#      commits on origin, so your LOCAL clone is now behind. We must not try to
+#      re-release or push from here. Instead: if GitHub already has a release the
+#      pack is behind, just `packwiz update` to ADOPT it. This needs nothing
+#      local — the repo need not even be checked out.
+#
+#   B. You built locally and want the deploy to publish it. Only when the local
+#      build is strictly ahead of BOTH the pack pin AND the newest GitHub release
+#      do we commit+push the repo and cut the release. That upper bound is what
+#      keeps case A from ever colliding with a release you already made.
+#
+# So: adopt-first, release-only-if-genuinely-unreleased. `packwiz update -a`
+# below would eventually adopt too, but doing it here gives clear per-mod
+# messaging and absorbs the releases-API lag with a retry.
 for toml in mods/*.pw.toml; do
     slug=$(grep -m1 '^slug = "mudbourn/' "$toml" | sed 's|.*mudbourn/||; s|"||')
     [ -z "$slug" ] && continue
+    base="${${toml:t}%.pw.toml}"
+    tag=$(grep -m1 '^tag = ' "$toml" | sed 's/tag = "v\{0,1\}//; s/"//')
+
+    # ── case A: adopt a release that already exists on GitHub ──
+    # Read-only, so it runs under --dev too. Empty when there is no release or gh
+    # is offline — in which case we simply fall through to the local path.
+    latest=$(gh release view --repo "mudbourn/$slug" --json tagName -q .tagName 2>/dev/null | sed 's/^v//')
+    if [ -n "$latest" ] && [ -n "$tag" ] && [ "$latest" != "$tag" ] \
+       && [ "$(printf '%s\n%s\n' "$tag" "$latest" | sort -V | tail -1)" = "$latest" ]; then
+        echo "→ $slug: released v$latest is ahead of pack v$tag — adopting (you released it)"
+        if [ "$DEV" = "1" ]; then
+            echo "  [dry-run] would packwiz update $base to v$latest"
+        else
+            for attempt in 1 2 3 4 5; do
+                packwiz update "$base"
+                grep -q "^tag = \"v$latest\"" "$toml" && break
+                echo "   (release not visible yet, retrying in 5s...)"
+                sleep 5
+            done
+            grep -q "^tag = \"v$latest\"" "$toml" \
+                || echo "!! $slug: pack still at v$tag after adopting v$latest — check branch = \"main\" in $toml and re-run." >&2
+        fi
+        continue
+    fi
+
+    # ── case B: cut a release for genuinely-unreleased local work ──
     repo="$HOME/Documents/GitHub/$slug"
     [ -d "$repo/.git" ] || continue
     # (N) is the NULL_GLOB qualifier: expand to nothing when the repo has never
@@ -148,11 +192,14 @@ for toml in mods/*.pw.toml; do
     jar=$(ls -t "${jars[@]}" | grep -v -- -sources | head -1)
     [ -z "$jar" ] && continue
     ver=$(python3 -c "import json,zipfile,sys; print(json.loads(zipfile.ZipFile(sys.argv[1]).read('fabric.mod.json'))['version'])" "$jar" 2>/dev/null)
-    tag=$(grep -m1 '^tag = ' "$toml" | sed 's/tag = "v\{0,1\}//; s/"//')
+    # `tag` is the pack pin from the top of the loop. Case A already adopted (and
+    # skipped) anything where a GitHub release outran it, so here the newest
+    # release is at or behind `tag` — meaning "ahead of the pin" also means ahead
+    # of every existing release, and cutting v$ver can never duplicate one.
     { [ -z "$ver" ] || [ -z "$tag" ] || [ "$ver" = "$tag" ]; } && continue
     # act only when the local build is strictly newer than the released tag
     [ "$(printf '%s\n%s\n' "$tag" "$ver" | sort -V | tail -1)" = "$ver" ] || continue
-    echo "→ $slug: local build $ver ahead of released $tag — releasing v$ver"
+    echo "→ $slug: local build $ver ahead of released ${latest:-none}/pack v$tag — releasing v$ver"
     if [ "$DEV" = "1" ]; then
         echo "  [dry-run] would commit+push $slug and cut release v$ver with $(basename "$jar")"
         # The retry loop below waits on a release that will never exist here,
