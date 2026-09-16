@@ -1,6 +1,14 @@
 hash-format = "sha256"
 
 [[files]]
+file = ".github/workflows/_caller-template.yml"
+hash = "106719850045430ae58f41848b5a54e9ed5c08c35d921005d3372d2c4f231ae9"
+
+[[files]]
+file = ".github/workflows/mod-release.yml"
+hash = "60310426cc17ae121c51569fa3a89a8b9a2226c32de5abde1ba8cd1227bdc89a"
+
+[[files]]
 file = ".packignore"
 hash = "cff20a6727ee8d581a83affb36913f39504e4efcc835a07cbfa0df632bb9d057"
 
@@ -10,7 +18,7 @@ hash = "39b1578c36cfd699e9de71dbd69ff5979ef536c85cd1af774079e8fcad3399f2"
 
 [[files]]
 file = "README.md"
-hash = "4f3dcd7ce70d48a0728f9f5f428ba61be45dfc158792f9b8ddd6cad2a59a3c36"
+hash = "ab4639bf1a7b3d0dd1ce54a09c87b241de958d42443fcf3079267760bf3f62d3"
 
 [[files]]
 file = "config/.puzzle_cache/mojangstudios.png"
@@ -2024,6 +2032,14 @@ file = "mms-promote.sh"
 hash = "136976d216f9230df662eb767f913d094f986f37ffd5470754c617ea15db2840"
 
 [[files]]
+file = "mms-repos.py"
+hash = "f0971dfcd4a38ff3dcc8b17e847a3ef31bd44435b3c62c93eb48abf8dbab02ef"
+
+[[files]]
+file = "mms-repos.toml"
+hash = "75af05cc6d1d5957aff0ec538c9b14d2649b05ddee920d0d2a84176223ed3dd4"
+
+[[files]]
 file = "mms-server-sync.py"
 hash = "da75b54a41436e61a0d7422111f21b6fa7a41e26629dfbf1d505c254ea46a102"
 
@@ -2190,11 +2206,6 @@ metafile = true
 [[files]]
 file = "mods/c2me-fabric.pw.toml"
 hash = "cedb68c291b8e2f5b3a641f01e87d60096e3c0eccbe0203f6aa6eb89788eead3"
-metafile = true
-
-[[files]]
-file = "mods/camera-glue.pw.toml"
-hash = "306e9c0e312a967f041da9119767c9cb9120472b767629c3590002982a70e66d"
 metafile = true
 
 [[files]]
