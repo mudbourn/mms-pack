@@ -2037,7 +2037,7 @@ hash = "f0971dfcd4a38ff3dcc8b17e847a3ef31bd44435b3c62c93eb48abf8dbab02ef"
 
 [[files]]
 file = "mms-repos.toml"
-hash = "75af05cc6d1d5957aff0ec538c9b14d2649b05ddee920d0d2a84176223ed3dd4"
+hash = "68cae5b2232caa0496142814efdd5c891b6fd57b0f4dcb45021a2e6669419f61"
 
 [[files]]
 file = "mms-server-sync.py"
@@ -2810,7 +2810,7 @@ metafile = true
 
 [[files]]
 file = "mods/mms-mod-compat-support.pw.toml"
-hash = "f33628629065c6699412f17824fd8ac88c73798f3c611d2373c306b16c20a236"
+hash = "04fe5e8e18eeca8b52a13c2c7014228c0c55cc16777873b254942283d64c8d45"
 metafile = true
 
 [[files]]
