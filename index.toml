@@ -1997,7 +1997,7 @@ hash = "7161bccb87baadfcf5ca7528f6fdd0b61754a66cdfd16d789cc1d657cdaad620"
 
 [[files]]
 file = "mms-deploy-prod.sh"
-hash = "9712dfc339d2ed01422fc58a92d689bed40ed5fe48733ac57467a87dfb641c3d"
+hash = "7dc7730d2bb52654f32d9272c5692e43651719d1a33f939bf6917a7e7b049cd6"
 
 [[files]]
 file = "mms-deploy-test.sh"
@@ -2815,7 +2815,7 @@ metafile = true
 
 [[files]]
 file = "mods/mms-origins.pw.toml"
-hash = "dee3f3e56908ec28d45d4b853520c7e3e4ff6ec0d9f075c0e67e73415bc018e7"
+hash = "ffd2fa84780c7e942980db597d23a5ee30e0a0251a11533198800955bdd67046"
 metafile = true
 
 [[files]]
