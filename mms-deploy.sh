@@ -110,6 +110,20 @@ BRANCH=$(git rev-parse --abbrev-ref HEAD)
 DEVFLAG=""
 [ "$DEV" = "1" ] && DEVFLAG="--dev"
 
+# ── drift pre-flight (informational, never blocks) ──
+# Surface any repo whose source, pack pin, and latest release disagree before we
+# ship. This does NOT reconcile anything — it is the heads-up so you notice, say,
+# a mod you bumped locally but never released, or a release the pack hasn't
+# picked up. Reconcile deliberately with `mms-release <repo>` (or --all).
+if [ -x ./mms-repos.py ]; then
+    if ! ./mms-repos.py drift --no-online >/dev/null 2>&1; then
+        echo "── heads-up: version drift detected (pack pin vs source) ──"
+        ./mms-repos.py drift --no-online 2>/dev/null | sed 's/^/   /' || true
+        echo "   (informational only — deploying anyway; run ./mms-repos.py drift for the online view)"
+        echo
+    fi
+fi
+
 case "$BRANCH" in
     main)
         echo "── branch 'main' → PROD lane (MMSLive01) ──"

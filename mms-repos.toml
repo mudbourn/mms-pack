@@ -1,0 +1,38 @@
+# mms-repos.toml — the authoritative list of MMS-owned code repos.
+#
+# This file is deliberately THIN. The only facts it records are the ones that
+# cannot be derived from any single repo's tree:
+#   • that the repo exists and is one we build+release (the list itself), and
+#   • its role: "library" (consumed only as a composite build by other repos) or
+#     "mod" (a jar the pack ships).
+#
+# Everything else is discovered at runtime by mms-repos.py from the actual trees:
+#   • version            → <repo>/gradle.properties  mod_version
+#   • compile-only libs  → <repo>/build.gradle       files("libs/…")
+#   • sibling deps       → <repo>/settings.gradle    includeBuild (transitive)
+#   • pack membership     → mms-pack/mods|disabled-mods/*.pw.toml  slug = mudbourn/<repo>
+#
+# So adding a mod is: create the repo with the standard tree, drop in the
+# release.yml caller stub, add one line here. Removing one is deleting its line.
+#
+# owner defaults to "mudbourn"; set per-repo only if it ever differs.
+owner = "mudbourn"
+
+# Local checkout root (siblings live flat next to mms-pack). Used by the driver
+# to locate each repo on disk. "~" and "$HOME" are expanded.
+checkout_root = "~/Documents/GitHub"
+
+[repos]
+# ── shared library (not a pack jar; released so composite consumers can pin it) ──
+mms-render-common            = { role = "library" }
+
+# ── our mods ──
+mms-animation                = { role = "mod" }
+mms-vanity                   = { role = "mod" }
+mms-origins                  = { role = "mod" }
+mms-jobs                     = { role = "mod" }
+mms-metro                    = { role = "mod" }
+mms-mod-compat-support       = { role = "mod" }
+camera-glue                  = { role = "mod" }
+ks-support                   = { role = "mod" }
+Vertigo-ScalableLux-Compat-Backports = { role = "mod" }

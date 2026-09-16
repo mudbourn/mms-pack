@@ -1,0 +1,38 @@
+# TEMPLATE — not a live workflow (leading underscore keeps GitHub from listing
+# it). This is the entire release.yml that every MMS-owned mod repo ships. Copy
+# it to <repo>/.github/workflows/release.yml verbatim; nothing in it is
+# repo-specific. All the real logic — libs, sibling composite builds, version
+# stamping, publishing — lives in the reusable engine it calls, which derives
+# everything from the repo's own tree. Adding a new mod repo is: drop this file
+# in, add one line to mms-pack/mms-repos.toml.
+#
+# mms-repos.py --check-callers verifies every manifested repo's release.yml
+# still matches this template, so a hand-edit here is caught instead of drifting.
+name: Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Release version (e.g. 0.1.0) — authoritative; gradle.properties is bumped to match"
+        required: true
+        type: string
+      prerelease:
+        description: "Mark the GitHub release as a pre-release"
+        required: false
+        type: boolean
+        default: false
+      dry_run:
+        description: "Build and validate only — do not commit, tag, or publish"
+        required: false
+        type: boolean
+        default: false
+
+jobs:
+  release:
+    uses: mudbourn/mms-pack/.github/workflows/mod-release.yml@main
+    secrets: inherit
+    with:
+      version: ${{ inputs.version }}
+      prerelease: ${{ inputs.prerelease }}
+      dry_run: ${{ inputs.dry_run }}

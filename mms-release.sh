@@ -5,6 +5,9 @@
 # Usage:
 #   mms-release                  Release the repo in the current directory
 #   mms-release <repo-name>      Release ~/Documents/GitHub/<repo-name>
+#   mms-release --all            Release every manifest repo whose source is
+#                                ahead of the tag the pack pins (see mms-repos.py
+#                                releasable). Iterates in bottom-up build order.
 #   mms-release -n ...           Dry run: show what would happen
 #   mms-release -y ...           Skip the confirmation prompt
 #   mms-release --no-pack ...    Cut the release only; leave the pack alone
@@ -21,16 +24,52 @@ GITHUB_DIR="$HOME/Documents/GitHub"
 DRY=0
 YES=0
 UPDATE_PACK=1
+ALL=0
 
 while [[ "${1:-}" == -* ]]; do
     case "$1" in
         -n) DRY=1 ;;
         -y) YES=1 ;;
         --no-pack) UPDATE_PACK=0 ;;
+        --all) ALL=1 ;;
         *) echo "Unknown flag: $1" >&2; exit 1 ;;
     esac
     shift
 done
+
+# ── --all: fan out over the manifest ──
+# The set of repos to release is not hardcoded here; it comes from mms-repos.py,
+# which reads mms-repos.toml and compares each repo's source version to the tag
+# the pack pins. We re-invoke this same script per repo (in bottom-up build
+# order, so a library releases before the mods that pin it) and forward the
+# other flags. Each sub-run does its own version/jar validation, so a stale repo
+# in the list simply fails its own guard without poisoning the rest.
+if [[ "$ALL" -eq 1 ]]; then
+    [[ -n "${1:-}" ]] && { echo "ERROR: --all takes no repo argument." >&2; exit 1; }
+    PY="$PACK_DIR/mms-repos.py"
+    [[ -x "$PY" ]] || { echo "ERROR: $PY not found." >&2; exit 1; }
+    TARGETS=()
+    while IFS= read -r line; do
+        [[ -n "$line" ]] && TARGETS+=("$line")
+    done < <("$PY" releasable)
+    if [[ ${#TARGETS[@]} -eq 0 ]]; then
+        echo "Nothing to release — every repo's source matches its pack pin."
+        exit 0
+    fi
+    echo "Releasable (source ahead of pack pin): ${TARGETS[*]}"
+    echo
+    FLAGS=()
+    [[ $DRY -eq 1 ]] && FLAGS+=(-n)
+    [[ $YES -eq 1 ]] && FLAGS+=(-y)
+    [[ $UPDATE_PACK -eq 0 ]] && FLAGS+=(--no-pack)
+    rc=0
+    for repo in "${TARGETS[@]}"; do
+        echo "──────── $repo ────────"
+        "$0" "${FLAGS[@]}" "$repo" || { rc=1; echo "!! $repo failed; continuing." >&2; }
+        echo
+    done
+    exit $rc
+fi
 
 # ── resolve the repo ──
 if [[ -n "${1:-}" ]]; then

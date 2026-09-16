@@ -1,0 +1,376 @@
+name: MMS mod release (reusable)
+
+# The one release engine for every MMS-owned mod repo.
+#
+# There used to be a copy of this logic in each repo's release.yml, and they
+# drifted into three incompatible flavors while three repos had none at all.
+# Now each repo ships a ~20-line caller stub (see mms-pack's
+# .github/workflows/_caller-template.yml) that does:
+#
+#     jobs:
+#       release:
+#         uses: mudbourn/mms-pack/.github/workflows/mod-release.yml@main
+#         secrets: inherit
+#         with: { version: ..., prerelease: ..., dry_run: ... }
+#
+# Everything below is DERIVED FROM THE CALLER'S TREE, not from a per-repo
+# config, so a new repo needs no changes here:
+#   • whether it needs the private mms-libs jars  → grep build.gradle for
+#     files("libs/…")
+#   • which sibling composite builds it needs      → grep settings.gradle for
+#     includeBuild, transitively
+#   • its version                                  → gradle.properties mod_version
+#
+# The invariant this protects is "the jar's internal version equals its tag."
+# A jar whose version does not match its tag is the "mms-deploy ships nothing"
+# failure mode: the pack pins an exact tag and gets a jar that lies about itself.
+
+on:
+  workflow_call:
+    inputs:
+      version:
+        description: "Release version (e.g. 0.1.0) — authoritative; gradle.properties is bumped to match"
+        required: true
+        type: string
+      prerelease:
+        description: "Mark the GitHub release as a pre-release"
+        required: false
+        type: boolean
+        default: false
+      dry_run:
+        description: "Build and validate only — do not commit, tag, or publish"
+        required: false
+        type: boolean
+        default: false
+      java_version:
+        description: "Temurin JDK to build with"
+        required: false
+        type: string
+        default: "21"
+    secrets:
+      MMS_LIBS_SSH_KEY:
+        description: "Read-only deploy key for the private mudbourn/mms-libs jar pool. Only required for repos that reference libs/*.jar."
+        required: false
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    env:
+      # The caller repo, as owner/name. All sibling repos are assumed to live
+      # under the same owner, which is true for the whole mudbourn/mms-* set.
+      OWNER: ${{ github.repository_owner }}
+      REPO_NAME: ${{ github.event.repository.name }}
+    steps:
+      - uses: actions/checkout@v5
+
+      # ── discover what this repo needs, from its own tree ──
+      # needs_libs: does build.gradle pull any compile-only jar from libs/?
+      # siblings:   transitive closure of includeBuild sibling repos.
+      - name: Inspect repo tree
+        id: inspect
+        run: |
+          set -euo pipefail
+
+          needs_libs=false
+          if grep -qE 'files\("libs/[^"]+\.jar"\)' build.gradle 2>/dev/null; then
+            needs_libs=true
+          fi
+          echo "needs_libs=$needs_libs" >> "$GITHUB_OUTPUT"
+          echo "This repo needs mms-libs: $needs_libs"
+
+          # Transitive sibling discovery. Start from this repo's settings.gradle
+          # includeBuild lines; each name is a sibling repo whose settings.gradle
+          # may name more. Iterate to a fixpoint. We only extract the trailing
+          # path segment, so both '../mms-render-common' and
+          # "$siblingRoot/mms-render-common" yield 'mms-render-common'.
+          # Strip Groovy line comments first: the word "includeBuild" also
+          # appears in settings.gradle prose, and a match there would capture a
+          # quoted string from later on the line.
+          extract() {
+            [ -f "$1" ] || return 0
+            grep -vE '^\s*(//|\*|/\*)' "$1" 2>/dev/null \
+              | grep -oE 'includeBuild[^"'"'"']*["'"'"'][^"'"'"']*["'"'"']' \
+              | grep -oE '[A-Za-z0-9._-]+["'"'"']\s*$' \
+              | sed -E 's/["'"'"']\s*$//' || true
+          }
+
+          declare -A seen
+          queue=$(extract settings.gradle | sort -u)
+          all=""
+          while [ -n "${queue//[[:space:]]/}" ]; do
+            next=""
+            for s in $queue; do
+              [ -n "$s" ] || continue
+              [ -n "${seen[$s]:-}" ] && continue
+              seen[$s]=1
+              all="$all $s"
+              # We cannot read the sibling's settings.gradle until it is cloned;
+              # clone shallowly just to read it, into .siblings so a later step
+              # reuses it. Default branch is fine for discovery.
+              if [ ! -d ".siblings/$s" ]; then
+                mkdir -p .siblings
+                git clone --depth 1 \
+                  "https://x-access-token:${{ github.token }}@github.com/${OWNER}/${s}.git" \
+                  ".siblings/$s" >/dev/null 2>&1 || {
+                    echo "ERROR: could not clone sibling ${OWNER}/${s} referenced by an includeBuild."
+                    exit 1
+                  }
+              fi
+              more=$(extract ".siblings/$s/settings.gradle")
+              next="$next $more"
+            done
+            queue=$(echo "$next" | tr ' ' '\n' | sort -u)
+          done
+
+          # Emit the sibling list newline-free for GITHUB_OUTPUT; consumers split
+          # on spaces. Order does not matter here — the build step sorts a proper
+          # bottom-up order itself.
+          siblings=$(echo "$all" | tr ' ' '\n' | sed '/^$/d' | sort -u | tr '\n' ' ')
+          echo "siblings=$siblings" >> "$GITHUB_OUTPUT"
+          echo "Sibling composite builds (transitive):${siblings:+ $siblings}"
+          echo "${siblings:-(none)}"
+
+      # ── preflight: everything that can fail without touching the repo ──
+      # A run that dies later must never leave main declaring a version that was
+      # never released.
+      - name: Preflight
+        id: preflight
+        env:
+          GH_TOKEN: ${{ github.token }}
+          LIBS_KEY: ${{ secrets.MMS_LIBS_SSH_KEY }}
+          NEEDS_LIBS: ${{ steps.inspect.outputs.needs_libs }}
+        run: |
+          set -euo pipefail
+          INPUT="${{ inputs.version }}"
+          if [[ ! "$INPUT" =~ ^[0-9]+\.[0-9]+\.[0-9]+ ]]; then
+            echo "ERROR: invalid version '$INPUT'. Expected X.Y.Z (optionally with +suffix)."
+            exit 1
+          fi
+
+          if [ "$NEEDS_LIBS" = "true" ] && [ -z "${LIBS_KEY:-}" ]; then
+            echo "ERROR: this repo references libs/*.jar but secret MMS_LIBS_SSH_KEY is not set."
+            echo
+            echo "libs/ is gitignored on purpose — those jars are other projects'"
+            echo "redistributables, several ARR. CI reads them from the private"
+            echo "mudbourn/mms-libs repo via a read-only deploy key exposed as"
+            echo "MMS_LIBS_SSH_KEY. Add it as an org/repo secret (see mms-libs)."
+            exit 1
+          fi
+
+          if gh release view "v${INPUT}" >/dev/null 2>&1; then
+            echo "ERROR: release v${INPUT} already exists."
+            echo "Pick a new version, or use dry_run to rebuild without publishing."
+            exit 1
+          fi
+          echo "Preflight passed for v${INPUT}."
+
+      # The requested version is authoritative: if gradle.properties disagrees,
+      # it is bumped here so the built jar is stamped correctly. The bump is only
+      # *committed* after the build succeeds — see "Commit version bump".
+      - name: Resolve version
+        id: version
+        run: |
+          set -euo pipefail
+          INPUT="${{ inputs.version }}"
+          DECLARED=$(grep -E '^mod_version=' gradle.properties | cut -d= -f2- | tr -d '[:space:]')
+          if [[ "$INPUT" == "$DECLARED" ]]; then
+            echo "gradle.properties already at $INPUT."
+            echo "bumped=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          # Refuse to go backwards. Re-releasing an older number under a newer
+          # tag is how the pack ends up pinning a version that does not mean what
+          # it says. sort -V puts the newer one last.
+          NEWEST=$(printf '%s\n%s\n' "$INPUT" "$DECLARED" | sort -V | tail -1)
+          if [[ "$NEWEST" != "$INPUT" ]]; then
+            echo "ERROR: $INPUT is older than gradle.properties ($DECLARED)."
+            exit 1
+          fi
+          echo "Bumping mod_version: $DECLARED -> $INPUT"
+          sed -i -E "s|^mod_version=.*|mod_version=${INPUT}|" gradle.properties
+          grep -E '^mod_version=' gradle.properties
+          echo "bumped=true" >> "$GITHUB_OUTPUT"
+
+      # libs/ is gitignored on purpose (see Preflight). Pull the private pool
+      # only when this repo actually needs it.
+      - name: Check out compile-only libraries
+        if: ${{ steps.inspect.outputs.needs_libs == 'true' }}
+        uses: actions/checkout@v5
+        with:
+          repository: ${{ github.repository_owner }}/mms-libs
+          ssh-key: ${{ secrets.MMS_LIBS_SSH_KEY }}
+          path: .mms-libs
+
+      # Stage this repo's own libs/, then verify every jar build.gradle names is
+      # present. Version skew in libs/ surfaces as confusing mixin failures at
+      # runtime rather than build errors, so fail loudly and early instead.
+      - name: Stage and verify libs/
+        if: ${{ steps.inspect.outputs.needs_libs == 'true' }}
+        run: |
+          set -euo pipefail
+          mkdir -p libs
+          if [ -d ".mms-libs/${REPO_NAME}" ]; then
+            cp .mms-libs/${REPO_NAME}/*.jar libs/ 2>/dev/null || true
+          fi
+          echo "Staged $(ls libs 2>/dev/null | wc -l) jars for ${REPO_NAME}."
+          MISSING=0
+          while read -r jar; do
+            [ -n "$jar" ] || continue
+            if [ ! -f "libs/$jar" ]; then
+              echo "MISSING: libs/$jar"
+              MISSING=1
+            fi
+          done < <(grep -oE 'files\("libs/[^"]+\.jar"\)' build.gradle \
+                   | sed -E 's|files\("libs/||; s|"\)||')
+          if [ "$MISSING" -ne 0 ]; then
+            echo
+            echo "build.gradle references jars that mms-libs/${REPO_NAME} does not provide."
+            echo "Update the private mms-libs repo to match, versions exactly."
+            exit 1
+          fi
+          echo "All referenced jars present."
+
+      # A sibling that declares its own compile-only libs/ jars needs them staged
+      # into its own tree: Loom computes their checksum at configuration time, so
+      # a missing jar kills the sibling build before any task runs. Drive the
+      # copy off each sibling's build.gradle, pulling from the pool already
+      # staged for this repo, with the per-sibling mms-libs folder as fallback.
+      - name: Stage sibling libs/
+        if: ${{ steps.inspect.outputs.siblings != '' && steps.inspect.outputs.needs_libs == 'true' }}
+        run: |
+          set -euo pipefail
+          for m in ${{ steps.inspect.outputs.siblings }}; do
+            gradle_file=".siblings/$m/build.gradle"
+            [ -f "$gradle_file" ] || continue
+            refs=$(grep -oE 'files\("libs/[^"]+\.jar"\)' "$gradle_file" \
+                   | sed -E 's|files\("libs/||; s|"\)||' || true)
+            [ -n "$refs" ] || continue
+            mkdir -p ".siblings/$m/libs"
+            while read -r jar; do
+              [ -n "$jar" ] || continue
+              if [ -f "libs/$jar" ]; then
+                cp "libs/$jar" ".siblings/$m/libs/"
+              elif [ -f ".mms-libs/$m/$jar" ]; then
+                cp ".mms-libs/$m/$jar" ".siblings/$m/libs/"
+              else
+                echo "MISSING sibling lib: $m -> $jar"
+                echo "mms-libs provides neither libs/$jar nor .mms-libs/$m/$jar."
+                exit 1
+              fi
+            done <<< "$refs"
+            echo "Staged $(ls ".siblings/$m/libs" | wc -l) jars for $m."
+          done
+
+      - uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: ${{ inputs.java_version }}
+
+      - uses: gradle/actions/setup-gradle@v4
+
+      # Fabric Loom reads a mod dependency's remapped jar at *configuration*
+      # time, before any task runs. With the siblings wired in as composite
+      # builds that jar does not exist yet on a clean checkout, so configuring
+      # this project fails before it can build its own dependency. Build the
+      # siblings bottom-up first so each jar is present when the next configures.
+      #
+      # Bottom-up order = a sibling with no further sibling deps first. We derive
+      # it from each sibling's own settings.gradle: a sibling that includeBuilds
+      # nothing among our set has depth 0, one that depends only on depth-0 has
+      # depth 1, etc. Each sibling builds standalone in its own dir, where its
+      # default mmsSiblingRoot='..' correctly points at .siblings/.
+      - name: Build sibling jars (bottom-up)
+        if: ${{ steps.inspect.outputs.siblings != '' }}
+        run: |
+          set -euo pipefail
+          siblings="${{ steps.inspect.outputs.siblings }}"
+
+          depth() {
+            local s="$1"
+            local sf=".siblings/$s/settings.gradle"
+            local d=0
+            local deps
+            deps=$(grep -vE '^\s*(//|\*|/\*)' "$sf" 2>/dev/null \
+                   | grep -oE 'includeBuild[^"'"'"']*["'"'"'][^"'"'"']*["'"'"']' \
+                   | grep -oE '[A-Za-z0-9._-]+["'"'"']\s*$' | sed -E 's/["'"'"']\s*$//' || true)
+            for dep in $deps; do
+              local dd; dd=$(depth "$dep")
+              [ "$dd" -ge "$d" ] && d=$((dd + 1))
+            done
+            echo "$d"
+          }
+
+          order=$(for s in $siblings; do echo "$(depth "$s") $s"; done | sort -n | awk '{print $2}')
+          echo "Bottom-up build order: $(echo $order | tr '\n' ' ')"
+          for m in $order; do
+            echo "::group::build $m"
+            (cd ".siblings/$m" && ./gradlew build --no-daemon --stacktrace)
+            echo "::endgroup::"
+          done
+
+      - name: Build
+        run: |
+          set -euo pipefail
+          if [ -n "${{ steps.inspect.outputs.siblings }}" ]; then
+            ./gradlew build --no-daemon --stacktrace -PmmsSiblingRoot=.siblings
+          else
+            ./gradlew build --no-daemon --stacktrace
+          fi
+
+      - name: Collect artifacts
+        run: |
+          set -euo pipefail
+          mkdir -p dist
+          # Loom leaves the unremapped and dev jars alongside the real one.
+          find build/libs -maxdepth 1 -name '*.jar' \
+            ! -name '*-dev.jar' \
+            ! -name '*-dev-shadow.jar' \
+            ! -name '*-sources.jar' \
+            -exec cp {} dist/ \;
+          ls -la dist
+          test -n "$(ls -A dist)" || { echo "ERROR: no jars produced"; exit 1; }
+
+      # Deliberately after the build. Committing the bump up front means a failed
+      # build leaves main claiming a version that has no release.
+      - name: Commit version bump
+        id: bumpcommit
+        if: ${{ steps.version.outputs.bumped == 'true' && !inputs.dry_run }}
+        run: |
+          set -euo pipefail
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add gradle.properties
+          git commit -m "Bump version to ${{ inputs.version }}"
+          git push origin HEAD:${{ github.ref_name }}
+          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+      # A dry run still builds and still stamps the version, so it can be re-run
+      # without burning a number. Artifacts land on the run.
+      - name: Upload artifacts (dry run)
+        if: ${{ inputs.dry_run }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ env.REPO_NAME }}-${{ inputs.version }}
+          path: dist/*.jar
+
+      - name: Publish release
+        if: ${{ !inputs.dry_run }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          VERSION="${{ inputs.version }}"
+          FLAGS=(--generate-notes --title "${REPO_NAME} v${VERSION}")
+          if [ "${{ inputs.prerelease }}" = "true" ]; then
+            FLAGS+=(--prerelease)
+          fi
+          # Tag the bump commit when there was one — github.sha still points at
+          # the pre-bump tree, and tagging that would ship a jar whose version
+          # the tagged source does not declare.
+          TARGET="${{ steps.bumpcommit.outputs.sha || github.sha }}"
+          gh release create "v${VERSION}" dist/*.jar \
+            --target "$TARGET" \
+            "${FLAGS[@]}"

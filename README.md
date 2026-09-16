@@ -145,3 +145,53 @@ syncs MMSLive01). Afterwards clear the slug from `overlay.list`.
 - Prism → Accounts → Add Offline (e.g. `Tester2`).
 - The test client instance ("MMS Live II") points packwiz-installer at the
   `testing` branch and runs `mms-overlay-apply.sh` after, via its PreLaunchCommand.
+
+---
+
+## Our own mods: the release engine
+
+We build ~10 first-party Fabric mods (mms-animation, mms-vanity, mms-origins,
+mms-jobs, mms-metro, mms-mod-compat-support, mms-render-common, camera-glue,
+ks-support, Vertigo-ScalableLux-Compat-Backports). They all ship through **one
+centralised, tree-driven release path** instead of a per-repo copy that drifts.
+
+**One reusable CI engine.** `.github/workflows/mod-release.yml` in *this* repo is
+a `workflow_call` engine every mod repo invokes. Each mod repo carries only a
+~20-line caller stub (`.github/workflows/release.yml`, identical to
+[`_caller-template.yml`](.github/workflows/_caller-template.yml)). The engine
+**derives everything from the calling repo's own tree** — so a new repo needs no
+change to the engine:
+- needs the private `mms-libs` jars? → it greps `build.gradle` for `files("libs/…")`
+- which sibling composite builds? → it reads `settings.gradle` `includeBuild`
+  lines, transitively, and builds them bottom-up
+- what version? → `gradle.properties` `mod_version` (the requested version is
+  authoritative and is stamped into the jar; releases never walk backwards)
+
+Sibling wiring is standardised: every repo with an `includeBuild` uses
+`providers.gradleProperty('mmsSiblingRoot').getOrElse('..')` with a **quoted**
+path ending in the repo name, so both the engine and `mms-repos.py` can discover
+the graph by reading exactly that line.
+
+**One manifest.** [`mms-repos.toml`](mms-repos.toml) is the authoritative *list*
+of repos and each one's role (`library` vs `mod`) — nothing else, because
+everything else is discovered. [`mms-repos.py`](mms-repos.py) is the lens over it:
+
+```bash
+./mms-repos.py list            # role, version, libs, pack pin, siblings
+./mms-repos.py graph           # dependency edges + bottom-up build order
+./mms-repos.py drift           # every place source / pack pin / release disagree
+./mms-repos.py releasable      # repos whose source is ahead of the pack pin
+./mms-repos.py check-callers   # every repo's release.yml still matches the template
+```
+
+`drift` and `check-callers` exit non-zero on problems, so they double as guards.
+
+**Releasing.** `mms-release <repo>` cuts a tagged GitHub release for one mod and
+repoints the pack at it (see the script header). `mms-release --all` fans out
+over `mms-repos.py releasable` in build order. `mms-deploy` prints a
+(non-blocking) drift heads-up before it ships, so you notice a local bump you
+never released, or a release the pack hasn't picked up.
+
+**Adding a mod:** create the repo with the standard tree, drop in the caller stub
+(`cp .github/workflows/_caller-template.yml <repo>/.github/workflows/release.yml`),
+add one line to `mms-repos.toml`. That's it.
