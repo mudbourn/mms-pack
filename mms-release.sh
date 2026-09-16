@@ -163,7 +163,7 @@ if [[ ! -f "$JAR" ]] || [[ "$(jar_version "$JAR")" != "$VERSION" ]]; then
     if [[ $DRY -eq 1 ]]; then
         echo "note: $BASE-$VERSION.jar is missing or stale — a real run would rebuild."
     else
-        echo "Building $NAME $VERSION…"
+        echo "Building $NAME ${VERSION}…"
         (cd "$REPO" && ./gradlew build -q)
     fi
 fi
