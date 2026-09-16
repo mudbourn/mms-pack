@@ -145,7 +145,12 @@ def pack_entry(manifest: dict, name: str) -> dict | None:
             tm = re.search(r'^tag = "([^"]*)"', text, re.MULTILINE)
             if tm:
                 tag = tm.group(1)
-            return {"file": path.name, "tag": tag, "disabled": disabled}
+            branch = None
+            bm = re.search(r'^branch = "([^"]*)"', text, re.MULTILINE)
+            if bm:
+                branch = bm.group(1)
+            return {"file": path.name, "tag": tag, "disabled": disabled,
+                    "branch": branch}
     return None
 
 
@@ -183,6 +188,7 @@ def collect(manifest: dict, online: bool) -> list[dict]:
             "pack_file": pe["file"] if pe else None,
             "pack_tag": pe["tag"] if pe else None,
             "pack_disabled": pe["disabled"] if pe else None,
+            "pack_branch": pe["branch"] if pe else None,
             "latest_release": latest_release(manifest, name) if online else None,
         })
     return rows
@@ -241,6 +247,16 @@ def cmd_drift(manifest, args):
         if r["pack_file"] is None and r["role"] == "mod":
             problems.append((name, "no pack metafile — mod is built but the pack "
                                    "tracks no version of it"))
+        # 0. metafile pinned to a commit SHA instead of a branch. packwiz's
+        #    GitHub updater matches a release only when its target_commitish
+        #    equals `branch`; a SHA there never matches a release cut on main, so
+        #    the pin silently stops advancing (packwiz says "already up to date"
+        #    while a newer release exists). This one bites at release time, not
+        #    now, so surface it early.
+        if r["pack_branch"] and re.fullmatch(r"[0-9a-f]{40}", r["pack_branch"]):
+            problems.append((name, f"{r['pack_file']} pins branch to a commit SHA "
+                                   f"({r['pack_branch'][:10]}…) — packwiz will never "
+                                   f"see new releases; set branch = \"main\""))
         # 2. pack tag vs local source version.
         pack = norm(r["pack_tag"])
         if pack and ver and pack != ver:
