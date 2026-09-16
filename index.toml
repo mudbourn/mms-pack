@@ -2639,6 +2639,11 @@ hash = "8ae0dcae96c5871ca2cd31236108bc6045f341ee6fc2dcacb40e2d96f26f5444"
 metafile = true
 
 [[files]]
+file = "mods/inspect-animations.pw.toml"
+hash = "81c8a0b2cebae8fe484455e261589ba32075cf4decf4e7d0434a6d056608ff3b"
+metafile = true
+
+[[files]]
 file = "mods/invisible-armor-recipe.pw.toml"
 hash = "6523682529b36bb50b933badac32378f66fe7d1582e71c006377d43f8daec486"
 metafile = true
