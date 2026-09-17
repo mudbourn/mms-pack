@@ -158,17 +158,34 @@ jar_version() {
     python3 -c "import json,zipfile,sys; print(json.loads(zipfile.ZipFile(sys.argv[1]).read('fabric.mod.json'))['version'])" "$1" 2>/dev/null
 }
 
-JAR="$REPO/build/libs/$BASE-$VERSION.jar"
-if [[ ! -f "$JAR" ]] || [[ "$(jar_version "$JAR")" != "$VERSION" ]]; then
+# The built jar name can carry a repo-specific suffix (e.g. -MC1.21.11), so
+# match by content (fabric.mod.json version) rather than a hardcoded filename —
+# the same way the CI release engine globs build/libs for the main jar.
+find_jar() {
+    local f
+    for f in "$REPO"/build/libs/*.jar; do
+        [[ -e "$f" ]] || continue
+        case "$f" in *-sources.jar|*-dev.jar|*-dev-shadow.jar) continue;; esac
+        if [[ "$(jar_version "$f")" == "$VERSION" ]]; then
+            printf '%s\n' "$f"
+            return 0
+        fi
+    done
+    return 1
+}
+
+JAR="$(find_jar || true)"
+if [[ -z "$JAR" ]]; then
     if [[ $DRY -eq 1 ]]; then
-        echo "note: $BASE-$VERSION.jar is missing or stale — a real run would rebuild."
+        echo "note: no build/libs jar matches $VERSION — a real run would rebuild."
     else
         echo "Building $NAME ${VERSION}…"
         (cd "$REPO" && ./gradlew build -q)
+        JAR="$(find_jar || true)"
     fi
 fi
 if [[ $DRY -eq 0 ]]; then
-    [[ -f "$JAR" ]] || { echo "ERROR: build produced no $JAR" >&2; exit 1; }
+    [[ -n "$JAR" && -f "$JAR" ]] || { echo "ERROR: build produced no jar for $VERSION in $REPO/build/libs" >&2; exit 1; }
     BUILT="$(jar_version "$JAR")"
     [[ "$BUILT" == "$VERSION" ]] || {
         echo "ERROR: $JAR reports version '$BUILT', expected '$VERSION'." >&2

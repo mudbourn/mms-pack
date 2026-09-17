@@ -3269,7 +3269,7 @@ metafile = true
 
 [[files]]
 file = "mods/vertigo-scalablelux-compat-backports.pw.toml"
-hash = "4c1fb5a590c2fb6626f7c31d8cb291cb55ce6172768567b08cb11bd4393f1fb1"
+hash = "ec0d3b436ce7f67d162b98ed8af20482460480f8e610f2d2410dd02765660dd8"
 metafile = true
 
 [[files]]
