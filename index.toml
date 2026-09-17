@@ -28597,22 +28597,6 @@ file = "resourcepacks/jobsplus_renames/pack.png"
 hash = "47d6a8e5d7e790e5493dd706c84ff4e4eb4794d1608b75375106d377a0be0f9d"
 
 [[files]]
-file = "resourcepacks/rubide-retexture/assets/rubies/lang/en_us.json"
-hash = "1ff68e4142174560e038224d476af97c65d668d19adba087733630cb45a2cfc5"
-
-[[files]]
-file = "resourcepacks/rubide-retexture/assets/rubies/textures/item/ruby.png"
-hash = "a17768caf3548c3550001e31c9d21ce3fc298be2722a21b2bc79a03c44f3f453"
-
-[[files]]
-file = "resourcepacks/rubide-retexture/pack.mcmeta"
-hash = "e78ab2e13c300316dfefddd23e104d218fb7e603aafc94e64798c6a46ef5c2f7"
-
-[[files]]
-file = "resourcepacks/rubide-retexture/pack.png"
-hash = "25c4f28b81c8b7af48eb3de6a2930ade6f887657ac4f9059bd761c8dacafc46c"
-
-[[files]]
 file = "resourcepacks/toheee1234's Better Combat Animations/assets/bettercombat/player_animations/.mms-swingfix-backup/one_handed_slash_horizontal_left.json.was-two-handed"
 hash = "785e6fbeb76a9d64c5aad07dbc356b29e869ac3a8f622bb78f11c982dabca01f"
 
