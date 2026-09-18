@@ -954,7 +954,7 @@ hash = "dcbab43436ab929ed7109ce21ea1c6d3178589a1e4135477f43dda3984ae20df"
 
 [[files]]
 file = "config/fabric_loader_dependencies.json"
-hash = "78ab026965f418a9558b12ad2cb63f94919cd526f16bd23863d87ea883237812"
+hash = "4ab71565094c73805e8af65a063ca70d4193e03e39aa672f2bd404b40cd5e4ce"
 
 [[files]]
 file = "config/fabrishot.properties"
@@ -1070,7 +1070,7 @@ hash = "6dae578567cb904bf4d26d500e03cb282ac8a385b63b7150190ef83bc35c025d"
 
 [[files]]
 file = "config/isxander-main-menu-credits.json"
-hash = "249cfc1eda5490a8bf8782452cb37b54b88b751771d6acb2fb459c71f103f41d"
+hash = "b03844cdc566017ecdb87b567556bc08154533332097ec99824ca702cd702e10"
 
 [[files]]
 file = "config/itemrestrictions/item-restrictions-common.yaml"
@@ -1374,7 +1374,7 @@ hash = "6a3760d2b7828efc524976294cc6fd17f16bdda9d9827bd55f8fcd58ce724355"
 
 [[files]]
 file = "config/modpack_defaults/config/fabric_loader_dependencies.json"
-hash = "78ab026965f418a9558b12ad2cb63f94919cd526f16bd23863d87ea883237812"
+hash = "4ab71565094c73805e8af65a063ca70d4193e03e39aa672f2bd404b40cd5e4ce"
 
 [[files]]
 file = "config/modpack_defaults/config/fabrishot.properties"
@@ -1386,7 +1386,7 @@ hash = "17225e085e6759210cec7e829e00c8c90f9c5d38714835cb5da9c98398842f7d"
 
 [[files]]
 file = "config/modpack_defaults/config/isxander-main-menu-credits.json"
-hash = "249cfc1eda5490a8bf8782452cb37b54b88b751771d6acb2fb459c71f103f41d"
+hash = "b03844cdc566017ecdb87b567556bc08154533332097ec99824ca702cd702e10"
 
 [[files]]
 file = "config/modpack_defaults/config/lambdynlights.toml"
