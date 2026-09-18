@@ -2223,7 +2223,7 @@ metafile = true
 
 [[files]]
 file = "mods/chatanimation.pw.toml"
-hash = "57083f9c31ecbe07b8f77efcd8bff17811e43f450e65da162cc6f8349c9a7527"
+hash = "e7c76e9b495749d9a729a94d540950286598f1b9da35c8d38dc8552e3461f091"
 metafile = true
 
 [[files]]
@@ -2513,7 +2513,7 @@ metafile = true
 
 [[files]]
 file = "mods/fast-ip-ping.pw.toml"
-hash = "6669f33967bd24895a21476c1701d4932ae14a8516d318d9266e0d42eb38ee60"
+hash = "35a7b74529dd255459a037a0b7dfa164b66bc2cd0f886f9b0fc98c345074e1fc"
 metafile = true
 
 [[files]]
@@ -2618,7 +2618,7 @@ metafile = true
 
 [[files]]
 file = "mods/inspect-animations.pw.toml"
-hash = "81c8a0b2cebae8fe484455e261589ba32075cf4decf4e7d0434a6d056608ff3b"
+hash = "53b35d1fdd23f9916fabc5b91f7644803a039831616519bbcb92ce8f1fdc04be"
 metafile = true
 
 [[files]]
@@ -2643,7 +2643,7 @@ metafile = true
 
 [[files]]
 file = "mods/ixeris.pw.toml"
-hash = "9a39076f0910ee6e4e13c8f6b128d34c78088b638e6294f525e3be01cc6b9a58"
+hash = "6b533a19c826928d2cd78272e8819723a4319f2ce27517c00b8cdde4d5d0ac46"
 metafile = true
 
 [[files]]
@@ -3098,7 +3098,7 @@ metafile = true
 
 [[files]]
 file = "mods/skyboxify.pw.toml"
-hash = "432c7f30d6e2ef3d6cb687bdbd13b266c235d1d12efd77ea1cc5f8e6718b5bd4"
+hash = "e143ce9213f46bd81f46b903e2eeb4d006eca59cf50eabe8f51785eef405c30f"
 metafile = true
 
 [[files]]
