@@ -197,7 +197,7 @@ syncs MMSLive01). Afterwards clear the slug from `overlay.list`.
 
 We build ~10 first-party Fabric mods (mms-animation, mms-vanity, mms-origins,
 mms-jobs, mms-metro, mms-mod-compat-support, mms-render-common, camera-glue,
-ks-support, Vertigo-ScalableLux-Compat-Backports). They all ship through **one
+ks-support). They all ship through **one
 centralised, tree-driven release path** instead of a per-repo copy that drifts.
 
 **One reusable CI engine.** `.github/workflows/mod-release.yml` in *this* repo is

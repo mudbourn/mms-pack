@@ -2384,6 +2384,11 @@ hash = "636904b6508b012550ddb63a124be8b100c77a11536c8697fa39ef8cab90dfc1"
 metafile = true
 
 [[files]]
+file = "mods/distanthorizons.pw.toml"
+hash = "245b687861d9741e10c9dd08ac0ad06ead2bb9e4a66d0a7d4ae152534e7a3032"
+metafile = true
+
+[[files]]
 file = "mods/dungeons-and-taverns.pw.toml"
 hash = "8be1928de42bd2fc1a20a6735d36358145d8b1304649679854d9cb2021010e8d"
 metafile = true
@@ -3240,11 +3245,6 @@ metafile = true
 [[files]]
 file = "mods/variants-and-ventures.pw.toml"
 hash = "42e014513bbed85cc7c13839c02b51932cdab3cbb849cb8024cacc01422f1a9f"
-metafile = true
-
-[[files]]
-file = "mods/vertigo-scalablelux-compat-backports.pw.toml"
-hash = "ec0d3b436ce7f67d162b98ed8af20482460480f8e610f2d2410dd02765660dd8"
 metafile = true
 
 [[files]]
