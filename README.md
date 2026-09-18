@@ -79,31 +79,55 @@ then the game starts. First launch pulls the whole pack (a few minutes); after t
 
 ## Admins: publishing an update
 
-The pack is edited with the `packwiz` CLI, then pushed here. Clients pick it up on their next launch.
+You no longer drive `packwiz` by hand. Wrapper scripts edit the pack, and **one command
+ships it**: `mms-deploy`, where the **branch you're on picks the lane** (`main` → prod,
+`testing` → staging). Clients pick everything up on their next Prism launch.
 
 ```bash
 export PATH="$HOME/go/bin:$PATH"
-cd path/to/mms-pack        # your local clone of this repo
+cd ~/Documents/GitHub/mms-pack
 
-# add / change mods
-packwiz modrinth add <slug-or-version-url>     # CDN mod (preferred)
-packwiz update --all                           # bump everything to latest compatible
-# bundled (unhosted) jars live in mods/*.jar and are served from this repo's raw URLs
+# --- edit the pack -------------------------------------------------------
+./mms-add.sh <modrinth-slug-or-url>     # add a CDN mod
+./mms-add.sh /path/to/mod.jar           # bundle a local/unhosted jar (served from this repo)
+./mms-add.sh -u /path/to/mod.jar        # update a previously bundled local jar
+./mms-remove.sh <slug-or-name-or-jar>   # remove a mod + its config leftovers (-n dry run)
 
-# bump the pack version in pack.toml (version = "2.4.1", etc.), then:
-packwiz refresh
-git add -A && git commit -m "pack: <what changed>" && git push
+# --- ship it -------------------------------------------------------------
+./mms-deploy.sh --d                     # DRY RUN — rehearse whichever lane the branch selects
+./mms-deploy.sh                         # deploy the current branch's lane
 ```
+
+`mms-deploy` is the single entry point. In one pass it: sweeps orphaned client jars,
+reconciles/cuts releases for our own mods, runs `packwiz update -a` + `refresh`, commits
+and pushes, then syncs `side=both`/`server` mods into the live server's mods folder. You
+rarely need raw `packwiz` — reach for it only when debugging.
+
+**Deploy flags** (case matters — read carefully):
+- `mms-deploy --m` — switch to **main** and deploy it → **touches the LIVE server**.
+- `mms-deploy --t` — switch to **testing** and deploy the staging lane.
+- `mms-deploy --M` — **merge** testing → main (strips quarantine), then **stop** (ships nothing).
+- `mms-deploy --d` — dry run.
+
+> ⚠ `--m` (deploy prod) and `--M` (merge only) differ **only in case** and are opposites in
+> blast radius. When in doubt use the long forms `--main` / `--merge`, or run `--d` first.
 
 That's the whole update loop. No client action required beyond launching.
 
 ### Notes for maintainers
 - **6 bundled jars** are hosted from this repo's `mods/*.jar` at `raw.githubusercontent.com/.../mods/<jar>`:
   `ks-support`, `mms-mod-compat-support`, `camera-glue` (ours), `modmetro` (patched fork),
-  `disablemod` (CurseForge-only), `towerinator` (not on any platform). Update these by replacing the jar
-  **and** its `mods/<name>.pw.toml` (`filename`, `url`, `hash`), then `packwiz refresh`.
+  `disablemod` (CurseForge-only), `towerinator` (not on any platform). Update one with
+  `./mms-add.sh -u /path/to/<new>.jar` (it rewrites `filename`/`url`/`hash` and refreshes for you).
 - Everything else (**236 mods**) is a weightless Modrinth/CurseForge CDN reference.
 - `fabric-api`, `sodium`, and `voxy` are provided by the base instance and intentionally **not** re-added here.
+- **Client-only mods must be `side = "client"` in their `mods/*.pw.toml`.** A cosmetic/render
+  mod left at `side = "both"` gets installed on the server, where its client mixins target
+  client-only classes (e.g. `class_759` ItemInHandRenderer) and crash the server during mixin
+  PREPARE. If you see a startup crash ending in a `*.mixins.json:client.*` `InvalidMixinException`,
+  find that mod and set it to `client`, then `packwiz refresh`. (Inspect Animations was the
+  culprit here.) **packwiz won't delete a jar it already dropped on the server** — after the fix,
+  manually `rm mods/<mod>-*.jar` in the server's mods folder or the crash repeats on next boot.
 - The `.mrpack` is a build artifact (git-ignored). Regenerate a seed/backup with
   `packwiz modrinth export`; attach it to a GitHub Release rather than committing it.
 </content>
@@ -133,11 +157,32 @@ testing  ●──●──●──●      test:  MMSTesting01 + "MMS Live II"
 `testing → main`, then runs `mms-deploy.sh` which cuts the GitHub release and
 syncs MMSLive01). Afterwards clear the slug from `overlay.list`.
 
-**Scripts**
-- `mms-server-sync.py` shared server-mod sync (prod + test both use it).
-- `mms-overlay-apply.sh <mods_dir>` apply `overlay.list` dev jars to a folder.
-- `mms-deploy-test.sh` staging deploy (testing branch → test server + client).
-- `mms-promote.sh` merge up + prod deploy.
+**Scripts** (all live at the repo root; `mms-deploy` orchestrates most of them)
+
+*Edit the pack*
+- `mms-add.sh` add a mod (Modrinth slug/url, or bundle a local jar; `-u` updates a bundled jar).
+- `mms-remove.sh` remove a mod + its config leftovers (`-n` dry run, `-y` no prompt).
+
+*Ship*
+- `mms-deploy.sh` the single ship entry point; branch picks the lane (see flags above).
+- `mms-deploy-prod.sh` / `mms-deploy-test.sh` the prod and staging lanes (called by `mms-deploy`).
+- `mms-promote.sh` merge validated `testing` → `main` (strips quarantine), then prod deploy.
+- `mms-ship.py` the "release half" — brings every MMS mod's GitHub release up to date, in build order.
+- `mms-release.sh` cut one mod's release and repoint the pack (`--all` for every releasable repo).
+- `mms-server-sync.py` sync `side=both`/`server` mods into a server's mods folder (prod + test).
+
+*Guards / housekeeping*
+- `mms-client-sweep.py` remove orphaned duplicate-mod-id jars from a client instance.
+- `mms-config-reconcile.py` pull `config/` changes from a client instance back into the repo.
+- `mms-netdrift-check.py` flag network-path mods that overlap or sit on only one side.
+- `mms-entity-sweep.py` find orphaned marker entities in saved world data.
+- `mms-repos.py` / `mms-repos.toml` the repo manifest and its lens (`list`/`graph`/`drift`/…).
+
+*Dev / hotswap client*
+- `mms-dev-setup.sh` one-time setup for the "MMS Dev" hotswap client.
+- `mms-dev-serve.sh` serve the local `testing` checkout to the MMS Dev client.
+- `mms-hotswap-watch.sh` recompile a mod on save and push classes into the running game.
+- `mms-overlay-apply.sh <mods_dir>` drop locally-built dev jars from `overlay.list` into a folder.
 
 **Two offline clients on one machine**
 - Server: `MMSTesting01/server.properties` has `online-mode=false` (test box only).
