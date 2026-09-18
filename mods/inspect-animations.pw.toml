@@ -1,6 +1,6 @@
 name = "Inspect Animations"
 filename = "inspectanimations-0.2.3-fabric+1.21.11.jar"
-side = "both"
+side = "client"
 
 [download]
 url = "https://cdn.modrinth.com/data/fRpkaLG9/versions/CXzYdtE1/inspectanimations-0.2.3-fabric%2B1.21.11.jar"
