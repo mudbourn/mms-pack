@@ -1,6 +1,6 @@
 # MMS Live - Minecraft Modpack
 
-**Minecraft 1.21.11 · Fabric loader 0.19.3 · Java 21/25 · pack version 2.5.2**
+**Minecraft 1.21.11 | Fabric loader 0.19.3 | Java 21/25 | pack version 2.5.2**
 
 This repo *is* the modpack. It's a [packwiz](https://packwiz.infra.link/) pack, which means once
 your launcher is pointed at it, **you get every update automatically just by launching the game**.
@@ -16,7 +16,7 @@ Please switch to Prism.
 
 ### 1. Install Prism Launcher
 Download from **https://prismlauncher.org/download/** and sign in with your Microsoft/Minecraft account
-(Prism → *Accounts* → *Add Microsoft account*).
+(Prism -> *Accounts* -> *Add Microsoft account*).
 ![alt text](https://save.mudbourn.info/s/sAHdDkxDMdjM5re/download "Graph")
 
 ### 2. Create the instance
@@ -28,7 +28,7 @@ Download from **https://prismlauncher.org/download/** and sign in with your Micr
 ![alt text](https://save.mudbourn.info/s/mgFTSBj6qxxxKJM/download "Graph")
 
 - Set up Java 25 (Prism downloads it for you. No separate install needed):
-  1. **Settings** → **Java** → **Installations**.
+  1. **Settings** -> **Java** -> **Installations**.
   2. Press **Download**, select the **25** option from **Mojang**, press **Download**, then **OK**.
 ![alt text](https://save.mudbourn.info/s/dZxY8LDMdtczFMz/download "Graph")
 
@@ -38,12 +38,12 @@ Download from **https://prismlauncher.org/download/** and sign in with your Micr
 - Download **`packwiz-installer-bootstrap.jar`** from
   https://github.com/packwiz/packwiz-installer-bootstrap/releases (grab the latest `.jar`).
 ![alt text](https://save.mudbourn.info/s/JLmZypmfEHSbACm/download "Graph")
-- Click the instance → **Folder** → open the **`.minecraft`** subfolder.
+- Click the instance -> **Folder** -> open the **`.minecraft`** subfolder.
 - Put `packwiz-installer-bootstrap.jar` in there.
 ![alt text](https://save.mudbourn.info/s/pwG95t3jRXRR9ZZ/download "Graph")
 
 ### 4. Turn on auto-update
-- Right-click the instance → **Edit** → **Settings** → **Custom commands**.
+- Right-click the instance -> **Edit** -> **Settings** -> **Custom commands**.
 - Tick **Ovweeide Global Settings**.
 - In the **Pre-launch command** box, paste **exactly**:
 
@@ -69,7 +69,7 @@ then the game starts. First launch pulls the whole pack (a few minutes); after t
 
 | Problem | Fix |
 |---|---|
-| Crash: "requires version 25 or later of 'OpenJDK'" (C2ME / natives-math) | Instance is on Java 21. Set Java 25 in instance Settings → Java (see step 2). |
+| Crash: "requires version 25 or later of 'OpenJDK'" (C2ME / natives-math) | Instance is on Java 21. Set Java 25 in instance Settings -> Java (see step 2). |
 | "Cannot find packwiz-installer-bootstrap.jar" | The jar must be inside `.minecraft/`, not the instance root. Re-check step 3. |
 | Prelaunch window closes instantly / mods missing | Confirm the pre-launch box is the **exact** line above, quotes included. |
 | Want to see what it's doing | Remove nothing. The installer prints progress in a small window each launch. |
@@ -80,8 +80,8 @@ then the game starts. First launch pulls the whole pack (a few minutes); after t
 ## Admins: publishing an update
 
 You no longer drive `packwiz` by hand. Wrapper scripts edit the pack, and **one command
-ships it**: `mms-deploy`, where the **branch you're on picks the lane** (`main` → prod,
-`testing` → staging). Clients pick everything up on their next Prism launch.
+ships it**: `mms-deploy`, where the **branch you're on picks the lane** (`main` -> prod,
+`testing` -> staging). Clients pick everything up on their next Prism launch.
 
 ```bash
 export PATH="$HOME/go/bin:$PATH"
@@ -94,22 +94,22 @@ cd ~/Documents/GitHub/mms-pack
 ./mms-remove.sh <slug-or-name-or-jar>   # remove a mod + its config leftovers (-n dry run)
 
 # --- ship it -------------------------------------------------------------
-./mms-deploy.sh --d                     # DRY RUN — rehearse whichever lane the branch selects
+./mms-deploy.sh --d                     # DRY RUN - rehearse whichever lane the branch selects
 ./mms-deploy.sh                         # deploy the current branch's lane
 ```
 
 `mms-deploy` is the single entry point. In one pass it: sweeps orphaned client jars,
 reconciles/cuts releases for our own mods, runs `packwiz update -a` + `refresh`, commits
 and pushes, then syncs `side=both`/`server` mods into the live server's mods folder. You
-rarely need raw `packwiz` — reach for it only when debugging.
+rarely need raw `packwiz` - reach for it only when debugging.
 
-**Deploy flags** (case matters — read carefully):
-- `mms-deploy --m` — switch to **main** and deploy it → **touches the LIVE server**.
-- `mms-deploy --t` — switch to **testing** and deploy the staging lane.
-- `mms-deploy --M` — **merge** testing → main (strips quarantine), then **stop** (ships nothing).
-- `mms-deploy --d` — dry run.
+**Deploy flags** (case matters - read carefully):
+- `mms-deploy --m` - switch to **main** and deploy it -> **touches the LIVE server**.
+- `mms-deploy --t` - switch to **testing** and deploy the staging lane.
+- `mms-deploy --M` - **merge** testing -> main (strips quarantine), then **stop** (ships nothing).
+- `mms-deploy --d` - dry run.
 
-> ⚠ `--m` (deploy prod) and `--M` (merge only) differ **only in case** and are opposites in
+> WARNING: `--m` (deploy prod) and `--M` (merge only) differ **only in case** and are opposites in
 > blast radius. When in doubt use the long forms `--main` / `--merge`, or run `--d` first.
 
 That's the whole update loop. No client action required beyond launching.
@@ -126,13 +126,13 @@ That's the whole update loop. No client action required beyond launching.
   client-only classes (e.g. `class_759` ItemInHandRenderer) and crash the server during mixin
   PREPARE. If you see a startup crash ending in a `*.mixins.json:client.*` `InvalidMixinException`,
   find that mod and set it to `client`, then `packwiz refresh`. (Inspect Animations was the
-  culprit here.) **packwiz won't delete a jar it already dropped on the server** — after the fix,
+  culprit here.) **packwiz won't delete a jar it already dropped on the server** - after the fix,
   manually `rm mods/<mod>-*.jar` in the server's mods folder or the crash repeats on next boot.
 - The `.mrpack` is a build artifact (git-ignored). Regenerate a seed/backup with
   `packwiz modrinth export`; attach it to a GitHub Release rather than committing it.
 </content>
 
-## Testing lane (staging → prod)
+## Testing lane (staging -> prod)
 
 A `testing` branch of this pack + a `MMSTesting01` server + a second (offline)
 client instance let you validate fixes with two players before they reach prod.
@@ -140,10 +140,10 @@ Unreleased builds ride a filesystem **overlay** (they have no packwiz download
 URL); everything already released flows through the branch normally.
 
 ```
-main ──●─────────────●   prod:  MMSLive01 + prod clients  (mms-deploy.sh)
-        \           /
-testing  ●──●──●──●      test:  MMSTesting01 + "MMS Live II"  (mms-deploy-test.sh)
-         drop dev jars, test w/ 2 offline clients, then promote
+main -----o-------------o   prod:  MMSLive01 + prod clients  (mms-deploy.sh)
+          \           /
+testing    o--o--o--o       test:  MMSTesting01 + "MMS Live II"  (mms-deploy-test.sh)
+           drop dev jars, test w/ 2 offline clients, then promote
 ```
 
 **Iterate on a fix**
@@ -154,7 +154,7 @@ testing  ●──●──●──●      test:  MMSTesting01 + "MMS Live II"
 3. Launch two clients (see below) and test.
 
 **Promote to prod** `./mms-promote.sh` (warns about active overlays, merges
-`testing → main`, then runs `mms-deploy.sh` which cuts the GitHub release and
+`testing -> main`, then runs `mms-deploy.sh` which cuts the GitHub release and
 syncs MMSLive01). Afterwards clear the slug from `overlay.list`.
 
 **Scripts** (all live at the repo root; `mms-deploy` orchestrates most of them)
@@ -166,8 +166,8 @@ syncs MMSLive01). Afterwards clear the slug from `overlay.list`.
 *Ship*
 - `mms-deploy.sh` the single ship entry point; branch picks the lane (see flags above).
 - `mms-deploy-prod.sh` / `mms-deploy-test.sh` the prod and staging lanes (called by `mms-deploy`).
-- `mms-promote.sh` merge validated `testing` → `main` (strips quarantine), then prod deploy.
-- `mms-ship.py` the "release half" — brings every MMS mod's GitHub release up to date, in build order.
+- `mms-promote.sh` merge validated `testing` -> `main` (strips quarantine), then prod deploy.
+- `mms-ship.py` the "release half" - brings every MMS mod's GitHub release up to date, in build order.
 - `mms-release.sh` cut one mod's release and repoint the pack (`--all` for every releasable repo).
 - `mms-server-sync.py` sync `side=both`/`server` mods into a server's mods folder (prod + test).
 
@@ -176,7 +176,7 @@ syncs MMSLive01). Afterwards clear the slug from `overlay.list`.
 - `mms-config-reconcile.py` pull `config/` changes from a client instance back into the repo.
 - `mms-netdrift-check.py` flag network-path mods that overlap or sit on only one side.
 - `mms-entity-sweep.py` find orphaned marker entities in saved world data.
-- `mms-repos.py` / `mms-repos.toml` the repo manifest and its lens (`list`/`graph`/`drift`/…).
+- `mms-repos.py` / `mms-repos.toml` the repo manifest and its lens (`list`/`graph`/`drift`/...).
 
 *Dev / hotswap client*
 - `mms-dev-setup.sh` one-time setup for the "MMS Dev" hotswap client.
@@ -186,8 +186,8 @@ syncs MMSLive01). Afterwards clear the slug from `overlay.list`.
 
 **Two offline clients on one machine**
 - Server: `MMSTesting01/server.properties` has `online-mode=false` (test box only).
-- Prism → Settings → Minecraft → enable "Allow running multiple instances".
-- Prism → Accounts → Add Offline (e.g. `Tester2`).
+- Prism -> Settings -> Minecraft -> enable "Allow running multiple instances".
+- Prism -> Accounts -> Add Offline (e.g. `Tester2`).
 - The test client instance ("MMS Live II") points packwiz-installer at the
   `testing` branch and runs `mms-overlay-apply.sh` after, via its PreLaunchCommand.
 
@@ -204,12 +204,12 @@ centralised, tree-driven release path** instead of a per-repo copy that drifts.
 a `workflow_call` engine every mod repo invokes. Each mod repo carries only a
 ~20-line caller stub (`.github/workflows/release.yml`, identical to
 [`_caller-template.yml`](.github/workflows/_caller-template.yml)). The engine
-**derives everything from the calling repo's own tree** — so a new repo needs no
+**derives everything from the calling repo's own tree** - so a new repo needs no
 change to the engine:
-- needs the private `mms-libs` jars? → it greps `build.gradle` for `files("libs/…")`
-- which sibling composite builds? → it reads `settings.gradle` `includeBuild`
+- needs the private `mms-libs` jars? -> it greps `build.gradle` for `files("libs/...")`
+- which sibling composite builds? -> it reads `settings.gradle` `includeBuild`
   lines, transitively, and builds them bottom-up
-- what version? → `gradle.properties` `mod_version` (the requested version is
+- what version? -> `gradle.properties` `mod_version` (the requested version is
   authoritative and is stamped into the jar; releases never walk backwards)
 
 Sibling wiring is standardised: every repo with an `includeBuild` uses
@@ -218,7 +218,7 @@ path ending in the repo name, so both the engine and `mms-repos.py` can discover
 the graph by reading exactly that line.
 
 **One manifest.** [`mms-repos.toml`](mms-repos.toml) is the authoritative *list*
-of repos and each one's role (`library` vs `mod`) — nothing else, because
+of repos and each one's role (`library` vs `mod`) - nothing else, because
 everything else is discovered. [`mms-repos.py`](mms-repos.py) is the lens over it:
 
 ```bash
