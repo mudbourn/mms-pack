@@ -21,6 +21,10 @@ file = "README.md"
 hash = "ab4639bf1a7b3d0dd1ce54a09c87b241de958d42443fcf3079267760bf3f62d3"
 
 [[files]]
+file = "__pycache__/mms-repos.cpython-314.pyc"
+hash = "b7587f6a79795a0bae3309d55ed6a335d7f3eed11ad0665fc8e0a9f8f6ddb485"
+
+[[files]]
 file = "config/.puzzle_cache/mojangstudios.png"
 hash = "27d2a588a33e94aff8cea4ea6090509ab3e10640f980e63dfd317c6b0dcd30df"
 
@@ -2037,11 +2041,15 @@ hash = "1293a0fa32ee0ea2838937b85bbc9070175bbafff01205336d9bb24570ef9a39"
 
 [[files]]
 file = "mms-repos.toml"
-hash = "68cae5b2232caa0496142814efdd5c891b6fd57b0f4dcb45021a2e6669419f61"
+hash = "b4750b43c67c7e4b06e062e889952f89adf1a3af35b90773bea3d2fc814f5c18"
 
 [[files]]
 file = "mms-server-sync.py"
 hash = "da75b54a41436e61a0d7422111f21b6fa7a41e26629dfbf1d505c254ea46a102"
+
+[[files]]
+file = "mms-ship.py"
+hash = "315b0e804b53233470c02cc2f8cf48121b3a36b30eef21e94fe0a6d026f5364e"
 
 [[files]]
 file = "mods/absolut-revive.pw.toml"
@@ -2804,6 +2812,11 @@ hash = "835c556c329a2f55f8f67b36ad5826b63dce0f91073bb28913250c3c80cfab04"
 metafile = true
 
 [[files]]
+file = "mods/mms-economy.pw.toml"
+hash = "56661f52804df462bf99ea8a9978641da35f0da88d8e6028bbb18dbcb27ab8fd"
+metafile = true
+
+[[files]]
 file = "mods/mms-jobs.pw.toml"
 hash = "568e82c76cb65831382f05e51df7e4d51978117e0722209089e2768f9fc31885"
 metafile = true
@@ -2831,6 +2844,11 @@ metafile = true
 [[files]]
 file = "mods/mms-vanity.pw.toml"
 hash = "a51d4d723925e3f89bc4bce1717fa9bec47c99764e49c9d0b15c95734697797f"
+metafile = true
+
+[[files]]
+file = "mods/mms-weapons.pw.toml"
+hash = "62d59aaf7a126ad81c2df3b46a2b6ad5df7107cb634ea4ad70468316f9a73213"
 metafile = true
 
 [[files]]

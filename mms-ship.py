@@ -195,6 +195,12 @@ def plan_repo(manifest, name, prodmap, named, bump_specs, default_bump):
     if not rd.is_dir():
         row["action"], row["note"] = "SKIP", "not checked out"
         return row
+    if not (rd / ".git").exists():
+        # A dir that exists but has no .git is a repo mid-scaffold (added to the
+        # manifest, tree stubbed out, but never git-init'd / released). mms-release
+        # would fail on it; skip cleanly so a half-set-up repo can't break the suite.
+        row["action"], row["note"] = "SKIP", "no .git — repo not initialized yet"
+        return row
     if src is None:
         row["action"], row["note"] = "SKIP", "no mod_version"
         return row
