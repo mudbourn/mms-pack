@@ -28,7 +28,7 @@ switched off. They are left alone deliberately — see *Scope* below.
 
 **20 recipes**, being the 22 vanilla-reachable ones minus the two whose result
 is a vanilla item (see below). Each is overridden with the house embargo stub
-already used by `server_embargo` for jeg, rubies and modmetro:
+already used by `server_embargo` for jeg and modmetro:
 
 ```json
 {

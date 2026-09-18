@@ -27,12 +27,11 @@ done
 PRESERVE_ENTRIES=(
   "options.txt"
   "servers.dat"
-  "config/Easy Shop Mod/My Skin/skin.png"
   "config/xaero/minimap/Multiplayer_mc.mudbourn.info/config.txt"
 )
 for entry in "${PRESERVE_ENTRIES[@]}"; do
-  # An entry can legitimately leave the index — Easy Shop Mod renamed skin.png to
-  # a per-UUID filename, for one. Skip it rather than falling through to the sed:
+  # An entry can legitimately leave the index — a mod may rename a config file, or
+  # be removed from the pack entirely. Skip it rather than falling through to the sed:
   # the address below is unescaped, so a path with slashes aborts the script under
   # `set -e` and the pack.toml hash update at the bottom never runs.
   if ! grep -q "file = \"$entry\"" "$PACK_DIR/index.toml"; then

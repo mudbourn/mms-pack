@@ -66,8 +66,6 @@ SKIP = [
     'spark/activity.json',   # profiler session log
     '*_backup[0-9]',         # chloride and friends keep numbered copies
     '*.bak',
-    'Easy Shop Mod/My Skin/*.png',        # cached skin, uuid-named
-    'Easy Shop Mod/AllPlayerSkins/',      # skins cached per player seen in-game
 ]
 
 _argv = [a for a in sys.argv[1:] if not a.startswith('--')]

@@ -25,37 +25,12 @@ file = "__pycache__/mms-repos.cpython-314.pyc"
 hash = "b7587f6a79795a0bae3309d55ed6a335d7f3eed11ad0665fc8e0a9f8f6ddb485"
 
 [[files]]
+file = "__pycache__/mms-ship.cpython-314.pyc"
+hash = "9c3d535944fdcbd79978448de8e3cf7ee935a2583b34c2605c615b414785e260"
+
+[[files]]
 file = "config/.puzzle_cache/mojangstudios.png"
 hash = "27d2a588a33e94aff8cea4ea6090509ab3e10640f980e63dfd317c6b0dcd30df"
-
-[[files]]
-file = "config/Easy Shop Mod/AllPlayerSkins/49cad3d9-0ece-4536-b469-16b1c2c0fdd4.png"
-hash = "664ea2023ccb6d3a820ca533b876fc50d457f1727ae87ecfc846fffc61f85e89"
-
-[[files]]
-file = "config/Easy Shop Mod/AllPlayerSkins/5b30590c-7361-31a2-a5a0-ee3cb0717365.png"
-hash = "664ea2023ccb6d3a820ca533b876fc50d457f1727ae87ecfc846fffc61f85e89"
-
-[[files]]
-file = "config/Easy Shop Mod/AllPlayerSkins/7cd994e4-ef3a-3355-87ce-5fc9ce66c4ea.png"
-hash = "664ea2023ccb6d3a820ca533b876fc50d457f1727ae87ecfc846fffc61f85e89"
-
-[[files]]
-file = "config/Easy Shop Mod/AllPlayerSkins/9f60298a-8245-404e-a0e3-b2041204abd6.png"
-hash = "664ea2023ccb6d3a820ca533b876fc50d457f1727ae87ecfc846fffc61f85e89"
-
-[[files]]
-file = "config/Easy Shop Mod/AllPlayerSkins/af6b013f-1910-41c6-b4a7-a35fe3c85972.png"
-hash = "664ea2023ccb6d3a820ca533b876fc50d457f1727ae87ecfc846fffc61f85e89"
-
-[[files]]
-file = "config/Easy Shop Mod/My Skin/49cad3d9-0ece-4536-b469-16b1c2c0fdd4.png"
-hash = "664ea2023ccb6d3a820ca533b876fc50d457f1727ae87ecfc846fffc61f85e89"
-
-[[files]]
-file = "config/Easy Shop Mod/My Skin/skin.png"
-hash = "664ea2023ccb6d3a820ca533b876fc50d457f1727ae87ecfc846fffc61f85e89"
-preserve = true
 
 [[files]]
 file = "config/EssentialCommands.properties"
@@ -1459,11 +1434,11 @@ hash = "902b29e5f2044fa0011ac76281c700b52d83f1b5db6b605b8f702c8a99a55a2b"
 
 [[files]]
 file = "config/modpack_defaults/options.txt"
-hash = "0dc1689e7306eaae3725827d240f2a962c65aac2d73d4be0799aa4925349df10"
+hash = "e72451931cdd78d78d9ad71d7e29c2b46297bdb7dd242c23ae642c563e3cce80"
 
 [[files]]
 file = "config/moreculling.toml"
-hash = "20f68961868f3146c0aa82814bfaacee7b365b64e86f3e19fc977bfe809b09f3"
+hash = "8ace18f0f149bff690f06cdbccb6e2387cb8ad2969f00d2d7c4b2e633ea3d4fb"
 
 [[files]]
 file = "config/mutantmonsters-common.toml"
@@ -1997,7 +1972,7 @@ hash = "f0ed4fadac0105655f55d0233a9ff2ac435ee824b4a097f1d674a28f7cbc0ecc"
 
 [[files]]
 file = "mms-config-reconcile.py"
-hash = "7161bccb87baadfcf5ca7528f6fdd0b61754a66cdfd16d789cc1d657cdaad620"
+hash = "4bb3de74a3f94e92c3813492c35e82f2c29c431acaa36ea6ece1dd030f0cb2fa"
 
 [[files]]
 file = "mms-deploy-prod.sh"
@@ -2049,7 +2024,7 @@ hash = "da75b54a41436e61a0d7422111f21b6fa7a41e26629dfbf1d505c254ea46a102"
 
 [[files]]
 file = "mms-ship.py"
-hash = "315b0e804b53233470c02cc2f8cf48121b3a36b30eef21e94fe0a6d026f5364e"
+hash = "7fc1658d9b10f180c4f7ab2ce6e960ba073b8f2733a12be34b30dad3dad0932c"
 
 [[files]]
 file = "mods/absolut-revive.pw.toml"
@@ -2439,11 +2414,6 @@ metafile = true
 [[files]]
 file = "mods/easy-craft-chainmail-armor.pw.toml"
 hash = "7cd9637c5324674d6b7995310236cd102a40cf6413754134eaf7a12220839641"
-metafile = true
-
-[[files]]
-file = "mods/easy-shop-mod.pw.toml"
-hash = "3ff5c3482eba5756f461870aa10e40f48e89b604c3b356b1a07aa5bf7655b23b"
 metafile = true
 
 [[files]]
@@ -3077,11 +3047,6 @@ hash = "ab2e57c3a1d78bbe81cfbf6709b9ca1c532ac4fb920924ed233ca88e84ef2960"
 metafile = true
 
 [[files]]
-file = "mods/ruby-blocks-items.pw.toml"
-hash = "0fc1e6bfc4c5c4e3b0c66bbf71079d5cc70160f97754dd495cbbfec023907a4f"
-metafile = true
-
-[[files]]
 file = "mods/rustic-delight.pw.toml"
 hash = "8ad68ae8c4c8d59b4046b758b9bdcd87bea0f5231d558fc469eec77d93df224d"
 metafile = true
@@ -3351,7 +3316,7 @@ hash = "944f75feb78961494b253915d1e66c6572ae717c891d7e5d0f3bb50c56d16cab"
 
 [[files]]
 file = "options.txt"
-hash = "d51389f3aac0529f3ea480bf5622516dd8999b356d37030c3d63baa77e8950f5"
+hash = "07099ef2f3c39a2d4b29d40ff45a900b64c1ff157e4f8efe9d2735f824234350"
 preserve = true
 
 [[files]]
@@ -28832,7 +28797,7 @@ hash = "b03928dbb72bc65d64ab09e045543fbb54520a8d6a22704f3c85b505347e4e3d"
 
 [[files]]
 file = "server-datapacks/mms-unstable-recipe-embargo/README.md"
-hash = "81b1bdeaa07a2685d8958dc1698399fa971c4c22e9966a84e74e65e08f98a37f"
+hash = "6c32fa75f9857ba6cd6404ebf1cb6f0f96e7b2b45bc351e3cb791a1233cd1060"
 
 [[files]]
 file = "server-datapacks/mms-unstable-recipe-embargo/data/aerialhell/recipe/crystal_from_ruby_bucket_freezing.json"

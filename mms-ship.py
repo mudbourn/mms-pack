@@ -69,6 +69,7 @@ import importlib.util
 import json
 import os
 import re
+import shutil
 import subprocess
 import sys
 import zipfile
@@ -275,6 +276,41 @@ def parse_targets(argv_repos):
     return named, specs
 
 
+# ── mirror bundled resource packs from their source repos into this pack ──────
+def sync_resourcepacks(manifest, dry: bool) -> list[str]:
+    """Copy any resourcepacks/<pack>/ a mod repo carries into this pack's own
+    resourcepacks/, so the mod repo stays the single source of its pack and the
+    deploy's later `packwiz refresh` always indexes the current files.
+
+    A mod's pack is authored in that mod's repo (mms-vanity owns lowlands-vanity),
+    but packwiz refreshes from PACK_DIR, so the two drift by hand unless something
+    copies. Discovery, not a hardcoded list, so a future port that adds its own
+    resourcepacks/<pack>/ is picked up with no change here.
+
+    The whole subtree is mirrored, including files git-ignored in both repos (the
+    All-Rights-Reserved Lowlands textures): those are exactly what has to reach the
+    client, and are in neither repo's history to sync any other way. Returns the
+    pack names synced."""
+    dest_root = PACK_DIR / "resourcepacks"
+    synced: list[str] = []
+    for name in manifest["repos"]:
+        rd = R.repo_dir(manifest, name)
+        src_root = rd / "resourcepacks"
+        if not src_root.is_dir():
+            continue
+        for src in sorted(p for p in src_root.iterdir() if p.is_dir()):
+            dst = dest_root / src.name
+            if dst.resolve() == src.resolve():
+                continue
+            synced.append(src.name)
+            if dry:
+                continue
+            if dst.exists():
+                shutil.rmtree(dst)
+            shutil.copytree(src, dst)
+    return synced
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(prog="mms-ship", description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -326,6 +362,11 @@ def main(argv=None):
             dec = f'{dec}  ({r["note"]})'
         print(f'{r["name"]:<38}{str(r["prod"] or "—"):<10}'
               f'{str(r["src"] or "—"):<10}{str(r["release"] or "—"):<10}{dec}')
+
+    synced = sync_resourcepacks(manifest, args.dry_run)
+    if synced:
+        verb = "would sync" if args.dry_run else "synced"
+        print(f"\nResource packs {verb} into the pack: {', '.join(sorted(set(synced)))}")
 
     todo = [r for r in rows if r["action"] in ("BUMP", "RELEASE")]
     if not todo:

@@ -13,8 +13,3 @@
 # author has approved. The mms_compat Java side embeds no Lowlands assets (it only
 # sets equippable.asset_id / item_model identifiers), so only this pack is gated.
 /resourcepacks/lowlands-vanity/**
-# The rubide-retexture pack only retextured the third-party rubies mod, which has
-# been removed from the modpack and from mms_compat. With no rubies namespace to
-# skin, this pack is dead weight, so keep it out of the index. Its black-gem art
-# lives on as the mms-economy currency (Pice/Colt) source instead.
-/resourcepacks/rubide-retexture/**
