@@ -18,7 +18,7 @@ hash = "39b1578c36cfd699e9de71dbd69ff5979ef536c85cd1af774079e8fcad3399f2"
 
 [[files]]
 file = "README.md"
-hash = "87af6268259603d9815ffbd5e36ce41380e4a5b51d24ade61db8c81f58ebac75"
+hash = "3d4111cfcfb1c3e934e2201ec84344f773b0322eb1687604ecd6f55b9f0deea5"
 
 [[files]]
 file = "config/.puzzle_cache/mojangstudios.png"
@@ -2008,7 +2008,7 @@ hash = "1293a0fa32ee0ea2838937b85bbc9070175bbafff01205336d9bb24570ef9a39"
 
 [[files]]
 file = "mms-repos.toml"
-hash = "b4750b43c67c7e4b06e062e889952f89adf1a3af35b90773bea3d2fc814f5c18"
+hash = "7a4c4fc56eae94c80636f3d094c95dedbdfa1c8b942ff6454d2d99509785862e"
 
 [[files]]
 file = "mms-server-sync.py"
