@@ -1,4 +1,6 @@
 .git/**
+/__pycache__/**
+*.pyc
 /xaero/world-map/**
 *.mrpack
 /mms-add.sh

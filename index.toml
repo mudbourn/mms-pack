@@ -18,15 +18,7 @@ hash = "39b1578c36cfd699e9de71dbd69ff5979ef536c85cd1af774079e8fcad3399f2"
 
 [[files]]
 file = "README.md"
-hash = "ab4639bf1a7b3d0dd1ce54a09c87b241de958d42443fcf3079267760bf3f62d3"
-
-[[files]]
-file = "__pycache__/mms-repos.cpython-314.pyc"
-hash = "b7587f6a79795a0bae3309d55ed6a335d7f3eed11ad0665fc8e0a9f8f6ddb485"
-
-[[files]]
-file = "__pycache__/mms-ship.cpython-314.pyc"
-hash = "9c3d535944fdcbd79978448de8e3cf7ee935a2583b34c2605c615b414785e260"
+hash = "87af6268259603d9815ffbd5e36ce41380e4a5b51d24ade61db8c81f58ebac75"
 
 [[files]]
 file = "config/.puzzle_cache/mojangstudios.png"
