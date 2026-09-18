@@ -31,3 +31,7 @@ INVENTORY-TASK.md
 # these textures redistributes them. Also excluded in .packwizignore — that file only
 # gates packwiz, not git, so both rules are needed. Remove both once approved.
 resourcepacks/lowlands-vanity/
+
+# Python bytecode (mms-ship.py imports mms-repos.py)
+__pycache__/
+*.pyc

@@ -110,6 +110,33 @@ BRANCH=$(git rev-parse --abbrev-ref HEAD)
 DEVFLAG=""
 [ "$DEV" = "1" ] && DEVFLAG="--dev"
 
+# ── release suite (mms-ship) ──
+# Bring every MMS mod's GitHub release up to date with the work in its local
+# repo BEFORE the pack update + server sync: diff each mod against what the
+# lane's server runs, auto-bump repos with unreleased local work, build, and cut
+# the releases. This is what makes `mms-deploy` the one-stop shop for shipping a
+# whole suite of mod updates at once. mms-ship only cuts releases + repoints pack
+# pins; the packwiz update -a and the server sync stay in the lane below (which
+# then adopts what ship just released). It reuses mms-release.sh per repo, so the
+# jar==version / never-walk-backward / pack-pin guards all still apply, and it
+# prompts before cutting anything (we do not pass -y here).
+#
+# Under --d it runs `mms-ship -n` — a full rehearsal that shows the prod diff and
+# the per-repo release plan without cutting anything. A non-zero exit (a failed
+# or declined release) stops the deploy under `set -e`, before a half-released
+# suite can reach the server.
+SHIP_SERVER=""
+case "$BRANCH" in
+    main)    SHIP_SERVER="$HOME/Documents/GitHub/Server Prod/mods" ;;
+    testing) SHIP_SERVER="$HOME/Documents/GitHub/Server Testing/mods" ;;
+esac
+if [ -n "$SHIP_SERVER" ] && [ -x ./mms-ship.py ]; then
+    echo "── release suite (mms-ship, diff vs ${BRANCH} server) ──"
+    SHIPFLAG=""
+    [ "$DEV" = "1" ] && SHIPFLAG="-n"
+    ./mms-ship.py --server "$SHIP_SERVER" $SHIPFLAG
+fi
+
 # ── drift pre-flight (informational, never blocks) ──
 # Surface any repo whose source, pack pin, and latest release disagree before we
 # ship. This does NOT reconcile anything — it is the heads-up so you notice, say,
