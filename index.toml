@@ -2785,7 +2785,7 @@ metafile = true
 
 [[files]]
 file = "mods/mms-jobs.pw.toml"
-hash = "735598a97b24978a33539057e657cfcfb0e8a95de8acce7016a2ff4b04cbee78"
+hash = "af6083c4e47a9b4bf065a1bd6df18b736d64a566438c503cb518904ef14d6d47"
 metafile = true
 
 [[files]]
