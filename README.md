@@ -1,4 +1,4 @@
-# MMS Live - Minecraft Modpack
+# MMS Live: Minecraft Modpack
 
 **Minecraft 1.21.11 | Fabric loader 0.19.3 | Java 21/25 | pack version 2.5.2**
 
@@ -94,20 +94,20 @@ cd ~/Documents/GitHub/mms-pack
 ./mms-remove.sh <slug-or-name-or-jar>   # remove a mod + its config leftovers (-n dry run)
 
 # --- ship it -------------------------------------------------------------
-./mms-deploy.sh --d                     # DRY RUN - rehearse whichever lane the branch selects
+./mms-deploy.sh --d                     # DRY RUN: rehearse whichever lane the branch selects
 ./mms-deploy.sh                         # deploy the current branch's lane
 ```
 
 `mms-deploy` is the single entry point. In one pass it: sweeps orphaned client jars,
 reconciles/cuts releases for our own mods, runs `packwiz update -a` + `refresh`, commits
 and pushes, then syncs `side=both`/`server` mods into the live server's mods folder. You
-rarely need raw `packwiz` - reach for it only when debugging.
+rarely need raw `packwiz`; reach for it only when debugging.
 
-**Deploy flags** (case matters - read carefully):
-- `mms-deploy --m` - switch to **main** and deploy it -> **touches the LIVE server**.
-- `mms-deploy --t` - switch to **testing** and deploy the staging lane.
-- `mms-deploy --M` - **merge** testing -> main (strips quarantine), then **stop** (ships nothing).
-- `mms-deploy --d` - dry run.
+**Deploy flags** (case matters; read carefully):
+- `mms-deploy --m`: switch to **main** and deploy it, which **touches the LIVE server**.
+- `mms-deploy --t`: switch to **testing** and deploy the staging lane.
+- `mms-deploy --M`: **merge** testing into main (strips quarantine), then **stop** (ships nothing).
+- `mms-deploy --d`: dry run.
 
 > WARNING: `--m` (deploy prod) and `--M` (merge only) differ **only in case** and are opposites in
 > blast radius. When in doubt use the long forms `--main` / `--merge`, or run `--d` first.
@@ -126,7 +126,7 @@ That's the whole update loop. No client action required beyond launching.
   client-only classes (e.g. `class_759` ItemInHandRenderer) and crash the server during mixin
   PREPARE. If you see a startup crash ending in a `*.mixins.json:client.*` `InvalidMixinException`,
   find that mod and set it to `client`, then `packwiz refresh`. (Inspect Animations was the
-  culprit here.) **packwiz won't delete a jar it already dropped on the server** - after the fix,
+  culprit here.) **packwiz won't delete a jar it already dropped on the server**; after the fix,
   manually `rm mods/<mod>-*.jar` in the server's mods folder or the crash repeats on next boot.
 - The `.mrpack` is a build artifact (git-ignored). Regenerate a seed/backup with
   `packwiz modrinth export`; attach it to a GitHub Release rather than committing it.
@@ -167,7 +167,7 @@ syncs MMSLive01). Afterwards clear the slug from `overlay.list`.
 - `mms-deploy.sh` the single ship entry point; branch picks the lane (see flags above).
 - `mms-deploy-prod.sh` / `mms-deploy-test.sh` the prod and staging lanes (called by `mms-deploy`).
 - `mms-promote.sh` merge validated `testing` -> `main` (strips quarantine), then prod deploy.
-- `mms-ship.py` the "release half" - brings every MMS mod's GitHub release up to date, in build order.
+- `mms-ship.py` the "release half"; brings every MMS mod's GitHub release up to date, in build order.
 - `mms-release.sh` cut one mod's release and repoint the pack (`--all` for every releasable repo).
 - `mms-server-sync.py` sync `side=both`/`server` mods into a server's mods folder (prod + test).
 
@@ -204,7 +204,7 @@ centralised, tree-driven release path** instead of a per-repo copy that drifts.
 a `workflow_call` engine every mod repo invokes. Each mod repo carries only a
 ~20-line caller stub (`.github/workflows/release.yml`, identical to
 [`_caller-template.yml`](.github/workflows/_caller-template.yml)). The engine
-**derives everything from the calling repo's own tree** - so a new repo needs no
+**derives everything from the calling repo's own tree**, so a new repo needs no
 change to the engine:
 - needs the private `mms-libs` jars? -> it greps `build.gradle` for `files("libs/...")`
 - which sibling composite builds? -> it reads `settings.gradle` `includeBuild`
@@ -218,7 +218,7 @@ path ending in the repo name, so both the engine and `mms-repos.py` can discover
 the graph by reading exactly that line.
 
 **One manifest.** [`mms-repos.toml`](mms-repos.toml) is the authoritative *list*
-of repos and each one's role (`library` vs `mod`) - nothing else, because
+of repos and each one's role (`library` vs `mod`), and nothing else, because
 everything else is discovered. [`mms-repos.py`](mms-repos.py) is the lens over it:
 
 ```bash
