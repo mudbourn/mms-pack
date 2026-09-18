@@ -1,0 +1,15 @@
+name = "mms-weapons"
+filename = "mms-weapons-0.1.0.jar"
+side = "both"
+
+[download]
+url = "https://github.com/mudbourn/mms-weapons/releases/download/v0.1.0/mms-weapons-0.1.0.jar"
+hash-format = "sha256"
+hash = "be41d0bb96f1a68fa96be4f8062ebb31a12125b6acf00b4e19707c880b491a15"
+
+[update]
+[update.github]
+branch = "main"
+regex = "^.+(?<!-api|-dev|-dev-preshadow|-sources)\\.jar$"
+slug = "mudbourn/mms-weapons"
+tag = "v0.1.0"
