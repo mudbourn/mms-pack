@@ -1,6 +1,6 @@
 # MMS Live: Minecraft Modpack
 
-**Minecraft 1.21.11 | Fabric loader 0.19.3 | Java 21/25 | pack version 2.5.2**
+**Minecraft 1.21.11 | Fabric loader 0.19.3 | Java 25 | pack version 2.5.2**
 
 This repo *is* the modpack. It's a [packwiz](https://packwiz.infra.link/) pack, which means once
 your launcher is pointed at it, **you get every update automatically just by launching the game**.
@@ -27,23 +27,10 @@ Download from **https://prismlauncher.org/download/** and sign in with your Micr
 - Create the instance. **Don't add any mods by hand yet**, the pack installs them for you.
 ![alt text](https://save.mudbourn.info/s/mgFTSBj6qxxxKJM/download "Graph")
 
-- Set up Java 25 (Prism downloads it for you. No separate install needed):
+- Set up **Java 25** (this pack requires it; Prism downloads it for you, no separate install):
   1. **Settings** -> **Java** -> **Installations**.
-  2. Press **Download**, select the **25** option from **Mojang**, press **Download**, then **OK**.
+  2. Press **Download**, select the **25** option, press **Download**, then **OK**.
 ![alt text](https://save.mudbourn.info/s/dZxY8LDMdtczFMz/download "Graph")
-
-  Prism's default is Java 21, which **might not launch this pack**.
-
-> **macOS 26 "Tahoe" users:** the standard HotSpot Java builds (Mojang's bundled runtime,
-> Adoptium/Temurin, Oracle) can crash on Tahoe — either random `SIGSEGV` crashes minutes into
-> play, or a `SIGBUS` in `CodeHeap::allocate` that stops Java from starting at all. This is a
-> HotSpot ↔ macOS 26 incompatibility, not a pack bug. Fix: use **IBM Semeru 25 (OpenJ9)** —
-> download the arm64 `.pkg` from https://developer.ibm.com/languages/java/semeru-runtimes/downloads/
-> (Open Edition, Version 25) — then in **Settings -> Java** untick automatic detection and point the
-> instance at `/Library/Java/JavaVirtualMachines/ibm-semeru-open-25.jdk/Contents/Home/bin/java`.
-> It runs on Tahoe, is Java 25, and its default `gencon` collector is concurrent, so Distant
-> Horizons stops warning about the garbage collector too. (On Windows/Linux, or older macOS,
-> a current HotSpot Java 25 is fine — this only affects macOS 26.)
 
 ### 3. Drop in the packwiz installer
 - Download **`packwiz-installer-bootstrap.jar`** from
@@ -81,7 +68,6 @@ then the game starts. First launch pulls the whole pack (a few minutes); after t
 | Problem | Fix |
 |---|---|
 | Crash: "requires version 25 or later of 'OpenJDK'" (C2ME / natives-math) | Instance is on Java 21. Set Java 25 in instance Settings -> Java (see step 2). |
-| macOS 26 "Tahoe": random `SIGSEGV`, or `SIGBUS` in `CodeHeap::allocate` at startup | HotSpot Java is broken on Tahoe. Switch to IBM Semeru 25 (OpenJ9) — see the macOS note in step 2. |
 | "Cannot find packwiz-installer-bootstrap.jar" | The jar must be inside `.minecraft/`, not the instance root. Re-check step 3. |
 | Prelaunch window closes instantly / mods missing | Confirm the pre-launch box is the **exact** line above, quotes included. |
 | Want to see what it's doing | Remove nothing. The installer prints progress in a small window each launch. |

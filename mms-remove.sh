@@ -100,7 +100,7 @@ done
 
 echo "Removing: $SLUG${JAR:+  ($JAR)}"
 for t in "${TARGETS[@]}"; do echo "  delete  ${t#$PACK_DIR/}"; done
-for f in "${FLD_FILES[@]}"; do echo "  edit    $f  (drop \"$SLUG\" override)"; done
+for f in ${FLD_FILES[@]+"${FLD_FILES[@]}"}; do echo "  edit    $f  (drop \"$SLUG\" override)"; done
 
 if [[ $DRY -eq 1 ]]; then
     echo "Dry run — nothing changed."
@@ -114,7 +114,7 @@ fi
 
 rm -rf "${TARGETS[@]}"
 
-for fld in "${FLD_FILES[@]}"; do
+for fld in ${FLD_FILES[@]+"${FLD_FILES[@]}"}; do
     python3 - "$fld" "$SLUG" <<'EOF'
 import json, sys
 path, slug = sys.argv[1], sys.argv[2]

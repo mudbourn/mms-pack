@@ -18,7 +18,7 @@ hash = "39b1578c36cfd699e9de71dbd69ff5979ef536c85cd1af774079e8fcad3399f2"
 
 [[files]]
 file = "README.md"
-hash = "3d4111cfcfb1c3e934e2201ec84344f773b0322eb1687604ecd6f55b9f0deea5"
+hash = "82224b015c4eab71b5ac6d195055717c61c7d1085c0a552b5f66292bc4e3608c"
 
 [[files]]
 file = "config/.puzzle_cache/mojangstudios.png"
@@ -1959,6 +1959,54 @@ file = "dev-client-jvm-args.txt"
 hash = "f3e6cb13cc578c14bd02f19a811f6bb54de49c32d57cdf9cc059910116c2304c"
 
 [[files]]
+file = "hs_err_pid49774.log"
+hash = "22ee7e637c89bc28fa26c5de3d1adc5b925e752f0def2b05121a2efbb52ba88f"
+
+[[files]]
+file = "hs_err_pid49776.log"
+hash = "2f35d084a640b28680a8ed7223941115eaf1a46117122c1739250ac40fd348b7"
+
+[[files]]
+file = "hs_err_pid49799.log"
+hash = "677f8d63cefc9ebff282ba864906268d4b8209de0745e4c327bc28224c0eb053"
+
+[[files]]
+file = "hs_err_pid49804.log"
+hash = "5b033a759e550b9d639c11fcc35f8c107507dab5e1265ae0b3afcc8547232a0d"
+
+[[files]]
+file = "hs_err_pid49813.log"
+hash = "d03cc06bdc409cb7575a6ccdc269648bcae4f9ca5a025b59b4fdb7e03ad6f326"
+
+[[files]]
+file = "hs_err_pid49835.log"
+hash = "6a32b142e454d9757155eb9e9ddafbd26b34bc863b46225760a662ebbb8118c2"
+
+[[files]]
+file = "hs_err_pid49844.log"
+hash = "6539eff9535bac74ccbf7051cf1b0fa697f44a797101ef8d354378338048b8b6"
+
+[[files]]
+file = "hs_err_pid49873.log"
+hash = "6931f43aa475705ef1d2b84b3fb11502f0a5eb2fef3efad6b941f67f7b92f4af"
+
+[[files]]
+file = "hs_err_pid49878.log"
+hash = "934fce4dc83c723f4949db2d83a4fa58dac683250c9235b565c1f1a5071b5105"
+
+[[files]]
+file = "hs_err_pid49892.log"
+hash = "28ddf0f9836e2203bbe81dc118be131230470714d3424643bf86419a320224b6"
+
+[[files]]
+file = "hs_err_pid49897.log"
+hash = "08898ac03a289e5526bdca43c0da9aee08ff45ff9fd9801df8fb484e652292b7"
+
+[[files]]
+file = "hs_err_pid49918.log"
+hash = "8344aad5c4ef9a6b448f544a151ea33d0902b28837c26ae263fd00abd1781016"
+
+[[files]]
 file = "mms-client-sweep.py"
 hash = "f0ed4fadac0105655f55d0233a9ff2ac435ee824b4a097f1d674a28f7cbc0ecc"
 
@@ -2381,11 +2429,6 @@ metafile = true
 [[files]]
 file = "mods/display-delight-fabric.pw.toml"
 hash = "636904b6508b012550ddb63a124be8b100c77a11536c8697fa39ef8cab90dfc1"
-metafile = true
-
-[[files]]
-file = "mods/distanthorizons.pw.toml"
-hash = "245b687861d9741e10c9dd08ac0ad06ead2bb9e4a66d0a7d4ae152534e7a3032"
 metafile = true
 
 [[files]]
