@@ -2861,7 +2861,7 @@ metafile = true
 
 [[files]]
 file = "mods/mms-vanity.pw.toml"
-hash = "a51d4d723925e3f89bc4bce1717fa9bec47c99764e49c9d0b15c95734697797f"
+hash = "319d604c92f944cadb2e124141988fcf8be720e8e80e32d4a73949a0672372f0"
 metafile = true
 
 [[files]]
