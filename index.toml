@@ -2780,7 +2780,7 @@ metafile = true
 
 [[files]]
 file = "mods/mms-economy.pw.toml"
-hash = "a48e5db7b50638b350c3a0ebbc53091f0b7e7c43cc6d5b15d950b8a5112fba55"
+hash = "c83b6f35ec7eeef41101411abec0a6a4e6bf3e7a3f3190398a1e970268434897"
 metafile = true
 
 [[files]]
@@ -2800,7 +2800,7 @@ metafile = true
 
 [[files]]
 file = "mods/mms-origins.pw.toml"
-hash = "b3b61bcf0b587f74fb5cd30c182b244277cc9ada606447d0d39916b4cf07c4ba"
+hash = "f7a0071000ab47501471bad4f1461c2f04b1f748688aa855db57038dad5b5870"
 metafile = true
 
 [[files]]
