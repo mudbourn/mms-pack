@@ -18,7 +18,7 @@ hash = "39b1578c36cfd699e9de71dbd69ff5979ef536c85cd1af774079e8fcad3399f2"
 
 [[files]]
 file = "README.md"
-hash = "82224b015c4eab71b5ac6d195055717c61c7d1085c0a552b5f66292bc4e3608c"
+hash = "83a9b2df5dbbe39e762f1317cbe58b52bc5714d23fd9c77c56a8ac057f7e0fbf"
 
 [[files]]
 file = "config/.puzzle_cache/mojangstudios.png"
@@ -2688,7 +2688,7 @@ metafile = true
 
 [[files]]
 file = "mods/jei.pw.toml"
-hash = "38c1789a55c48deed381533dfe8ff11443d3edece7b5eed1fead50869ec0d3d4"
+hash = "4abdef9f583c5812f6c2c1a50625092ce59d1a2ffa72789a67e19da9bfcbbbbf"
 metafile = true
 
 [[files]]
