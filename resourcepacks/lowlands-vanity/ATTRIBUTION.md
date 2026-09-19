@@ -43,9 +43,8 @@ terms:
   not be monetized.
 - No third-party redistribution. The author's condition: any use of the assets
   that can be tracked down to redistributed assets from the server "will not be
-  tolerated." These assets travel only inside this project's own modpack. They are
-  shipped through this modpack's packwiz index so the pack reaches the server's
-  players (the mms-vanity mod supplies the matching geometry but embeds no
-  textures, so the pack is the only way the sets render), and must not be
-  repackaged, published as a standalone download, indexed on Modrinth/CurseForge/
-  any other index, or redistributed by third parties for use in other projects.
+  tolerated." These assets travel only inside this project's own modpack: they are
+  git-ignored (see the repo `.gitignore`), are not published to packwiz, Modrinth
+  or any other index, and must not be repackaged or redistributed by third
+  parties. Publishing them as a standalone download is a distribution form the
+  grant does not cover.

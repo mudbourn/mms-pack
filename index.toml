@@ -2831,7 +2831,7 @@ metafile = true
 
 [[files]]
 file = "mods/mms-economy.pw.toml"
-hash = "c83b6f35ec7eeef41101411abec0a6a4e6bf3e7a3f3190398a1e970268434897"
+hash = "0c145341628f9e0c4a72253cc448f3ce016eee10999c5ea30ea52ce0ce79a6c8"
 metafile = true
 
 [[files]]
@@ -2851,7 +2851,7 @@ metafile = true
 
 [[files]]
 file = "mods/mms-origins.pw.toml"
-hash = "238edcfafebf09067d4c3b1bbfda2396b056226a64853edb3db7116a2aee3f18"
+hash = "24878dc529e863d2447bee09ef2e755e329e132997d0cbf0e8bf1119b6ac6776"
 metafile = true
 
 [[files]]
@@ -2861,7 +2861,7 @@ metafile = true
 
 [[files]]
 file = "mods/mms-vanity.pw.toml"
-hash = "319d604c92f944cadb2e124141988fcf8be720e8e80e32d4a73949a0672372f0"
+hash = "676f39578a34aee19f359c6c82284403b4b038354914515ae0601bab5ac15e00"
 metafile = true
 
 [[files]]
@@ -28624,7 +28624,7 @@ hash = "47d6a8e5d7e790e5493dd706c84ff4e4eb4794d1608b75375106d377a0be0f9d"
 
 [[files]]
 file = "resourcepacks/lowlands-vanity/ATTRIBUTION.md"
-hash = "f8656e1cef0c58c16243c9811ac8fe36754ae543de0b9ca5e4291749f4928e31"
+hash = "824dd2070ced9fbb2cbe3ac78102872fc6037b7610bfdd41732e6ecb667f136c"
 
 [[files]]
 file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/equipment/axolotl_knight.json"
