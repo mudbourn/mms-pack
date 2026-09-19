@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "lowlands_clothing:gatekeeperarmorb"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "lowlands_clothing:gatekeeperarmorb"
+      }
+    ]
+  }
+}

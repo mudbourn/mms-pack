@@ -25,12 +25,11 @@ Thumbs.db
 # Internal build-handoff note — not for the public members repo
 INVENTORY-TASK.md
 
-# --- Pending redistribution approval ---
-# Clothing of the Lowlands is All Rights Reserved; the author's permission is still
-# pending. This repo is publicly reachable (raw URLs serve the pack), so committing
-# these textures redistributes them. Also excluded in .packwizignore — that file only
-# gates packwiz, not git, so both rules are needed. Remove both once approved.
-resourcepacks/lowlands-vanity/
+# NOTE: resourcepacks/lowlands-vanity/ was formerly git-ignored while Clothing of
+# the Lowlands' redistribution permission was pending. Permission was granted by
+# Anton_Vaedak on 2026-08-16 to ship these assets inside this modpack (packwiz),
+# non-commercial, with in-game CurseForge attribution and no third-party reuse, so
+# the pack is now committed and indexed. See resourcepacks/lowlands-vanity/ATTRIBUTION.md.
 
 # Python bytecode (mms-ship.py imports mms-repos.py)
 __pycache__/

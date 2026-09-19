@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "lowlands_clothing:norse_ravager_armor"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "lowlands_clothing:norse_ravager_armor"
+      }
+    ]
+  }
+}

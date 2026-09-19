@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "lowlands_clothing:highlands_suitb"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "lowlands_clothing:highlands_suitb"
+      }
+    ]
+  }
+}

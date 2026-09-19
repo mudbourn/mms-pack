@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "lowlands_clothing:mercenary_swordman"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "lowlands_clothing:mercenary_swordman"
+      }
+    ]
+  }
+}

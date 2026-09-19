@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "lowlands_clothing:ratcatcherc01"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "lowlands_clothing:ratcatcherc01"
+      }
+    ]
+  }
+}

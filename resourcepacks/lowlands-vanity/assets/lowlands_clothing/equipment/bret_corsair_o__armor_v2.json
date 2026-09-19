@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "lowlands_clothing:bret_corsair_o__armor_v2"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "lowlands_clothing:bret_corsair_o__armor_v2"
+      }
+    ]
+  }
+}
