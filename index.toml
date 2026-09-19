@@ -25,10 +25,6 @@ file = "config/.puzzle_cache/mojangstudios.png"
 hash = "27d2a588a33e94aff8cea4ea6090509ab3e10640f980e63dfd317c6b0dcd30df"
 
 [[files]]
-file = "config/DistantHorizons.toml"
-hash = "9a409e6569963f8936486b6606fe562c25337c6bd38ff778fe60ae368dbe8147"
-
-[[files]]
 file = "config/Easy Shop Mod/PlayerSkins/49cad3d9-0ece-4536-b469-16b1c2c0fdd4.png"
 hash = "664ea2023ccb6d3a820ca533b876fc50d457f1727ae87ecfc846fffc61f85e89"
 
@@ -547,14 +543,6 @@ hash = "19e27780d2b9b6b6f66c9866aa5f3ab96787b9730e7609a644dc97e9a3cd54c9"
 [[files]]
 file = "config/chloride-client.toml"
 hash = "8a80ca913e5a63a972bfccfd0daa422984cda19e20f85ce50ce9b5bbdf2d5257"
-
-[[files]]
-file = "config/chloride-client.toml_backup1"
-hash = "5038d8bbb9248d0998def18f1a1793df3b05387cd2b44599943eb840437b17ff"
-
-[[files]]
-file = "config/chloride-client.toml_backup2"
-hash = "fe717085eefe084fcef210b527126449a28abcaced3de3d3d406eed520d4819d"
 
 [[files]]
 file = "config/chunky/config.json"
@@ -1529,14 +1517,6 @@ file = "config/notenoughcrashes.json"
 hash = "e604a3705ca2adf9499a412afefc61fb589448de43e4652db6232f94699e3950"
 
 [[files]]
-file = "config/openpartiesandclaims-server-1.toml.bak"
-hash = "6ee37871a5d75d3fed8e491e172cd2fe6fb07d97511ce0827cea4a1376a0800d"
-
-[[files]]
-file = "config/openpartiesandclaims-server-2.toml.bak"
-hash = "7dfaddb9248949ad39682715e8af263d00c56df41059947fad821aca41ffbab9"
-
-[[files]]
 file = "config/openpartiesandclaims-server.toml"
 hash = "a3ead57c066de1e168bbbfc57fadf05451058b755e85512025c23fde05b8f712"
 
@@ -1766,28 +1746,8 @@ file = "config/sounds/world.json"
 hash = "a8c858631c353b73eac069ff6d811cb36e33a56c0226b934068795313530da6d"
 
 [[files]]
-file = "config/spark/activity.json"
-hash = "9b334a2f23abe004fa5b37d9d7ff9dba6ca4132dfecdccb68b963d772cd17c1b"
-
-[[files]]
 file = "config/spark/config.json"
 hash = "992ba9f3a4a7ce3de112eb95575328956fdc3ce6781c455ebce7b23db7e7da42"
-
-[[files]]
-file = "config/spark/tmp-client/about.txt"
-hash = "8057ccf4540ea269b0fc332225859f44d8f3a55d891fa2e7a3447b6202658d2a"
-
-[[files]]
-file = "config/spark/tmp/about.txt"
-hash = "8057ccf4540ea269b0fc332225859f44d8f3a55d891fa2e7a3447b6202658d2a"
-
-[[files]]
-file = "config/spark/tmp/spark-1e5e0060a7ac6-libasyncProfiler.so.tmp"
-hash = "136240aabac0ec9fa55a8168aa5f1018c1a840f4388308a64d5f4e250a9b6362"
-
-[[files]]
-file = "config/spark/tmp/spark-1e5e0d221d2c2-profile-data.jfr.tmp"
-hash = "e6c74fb3332b6d3e136a5f0a36af477cbfb99a8bf7bdb62ca52a619460888bf8"
 
 [[files]]
 file = "config/styledplayerlist/config.json"
@@ -29089,10 +29049,6 @@ preserve = true
 file = "xaero/minimap/Multiplayer_mc.mudbourn.info/dim%0/mw-1,1,0_1.txt"
 hash = "663972001ceb7568c1432d87778a2f23c4dacf455917563631ab2671035b1b8e"
 preserve = true
-
-[[files]]
-file = "xaero/minimap/Multiplayer_mc.mudbourn.info/dim%0/mw-1,1,0_1.txt.bak"
-hash = "dc9beec6e11c4ae881577c4af0100fed0307b04fb3ad85ba1d3600ce48abddc4"
 
 [[files]]
 file = "xaero/minimap/Multiplayer_mc.mudbourn.info/dim%1/mw$-29775643_1.txt"

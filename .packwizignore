@@ -6,6 +6,13 @@
 hs_err_pid*.log
 replay_pid*.log
 /*.log
+# Session state / backups that build up in an instance's config/ and must not
+# ship to clients (a full config/ copy from a live instance drags these in).
+*_backup*
+*.bak
+/config/spark/tmp/**
+/config/spark/tmp-client/**
+/config/spark/activity.json
 /xaero/world-map/**
 *.mrpack
 /mms-add.sh
