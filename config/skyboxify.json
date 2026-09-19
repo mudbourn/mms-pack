@@ -4,5 +4,6 @@
 	"renderSunMoon": true,
 	"renderStars": false,
 	"showOverworldForUnknownDimension": true,
+	"filteringMode": "NEAREST",
 	"debug": false
 }

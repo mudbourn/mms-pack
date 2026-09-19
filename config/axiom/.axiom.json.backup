@@ -1,5 +1,6 @@
 {
   "keybinds": {
+    "useVanillaMovement": true,
     "regularKeybinds": {
       "rotateCamera": "none",
       "pickBlock": "mousemiddle",
@@ -124,7 +125,7 @@
     "fastPlace": false,
     "angelPlacement": false,
     "noClip": true,
-    "phantom": false
+    "phantom": true
   },
   "blockAttributes": {
     "showCollisionMesh": false,
@@ -172,7 +173,7 @@
     "defaultTags": "small,medium,large,massive,organic,structure,terrain,interior,house,tower,bridge,castle,statue,temple,monument,barn,stable,windmill,store,watermill,ship,airship,balloon,palace,watchtower,mansion,grave,marketplace,mine,obelisk,warehouse,silo,shipwreck,mausoleum,cemetery,bunker,airplane,helicopter,car,truck,vehicle,blacksmith,crypt,factory,mountain,cliff,rock,iceberg,spike,stone,wood,brick,natural,sand,metal,winter,spring,summer,autumn,tree,bush,mushroom,spruce,oak,birch,coniferous,deciduous,acacia,mangrove,cherryblossom,darkoak,jungle,baobab,azalea,cypress,coral,sapling,grass,seagrass,bamboo,flowers,animal,creature,dead,lamp,streetlight,brazier,bed,bookshelf,closet,table,chair,fireplace,carpet,fountain,clock,banner,flag,bell,modern,medieval,steampunk,gothic,oriental,victorian,fantasy,sci-fi,elven,dwarven,futuristic,retro,classic,rustic,baroque,rococo,industrial,artnouveau,artdeco,cyberpunk,space,arabic,indian,egyptian,greek,roman,norse,mesoamerican,japanese,western,spanish,tudor,spooky,pirate,dungeons,rubble,crates,redstone,wall,window,roof,stairs,pillar,arch,stairs,chimney,well"
   },
   "internal": {
-    "nextUpdateNag": 1786103845709,
+    "nextUpdateNag": 1790021422723,
     "shownIntroduction": true,
     "showOpenConfigTip": false,
     "showOpenContextMenuTip": false,
@@ -216,7 +217,8 @@
     "useVanillaMovementForEditor": true,
     "tallGrassIsActuallyNotTall": false,
     "disableChunkRenderOverrider": false,
-    "hadEditorUIOpen": true,
-    "blueprintBrowserDirSize": 175
+    "hadEditorUIOpen": false,
+    "blueprintBrowserDirSize": 175,
+    "usedBuilderToolFill": false
   }
 }

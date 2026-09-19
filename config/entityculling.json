@@ -7,7 +7,9 @@
     "minecraft:trapped_chest",
     "minecraft:ender_chest"
   ],
-  "entityWhitelist": [],
+  "entityWhitelist": [
+    "mms_metro:metro_car"
+  ],
   "tracingDistance": 128,
   "debugMode": false,
   "sleepDelay": 10,
@@ -15,6 +17,7 @@
   "captureRate": 5,
   "tickCulling": true,
   "tickCullingWhitelist": [
+    "mms_metro:metro_car",
     "minecraft:block_display",
     "minecraft:item_display",
     "minecraft:text_display",

@@ -1,0 +1,25 @@
+{
+  "general": {
+    "enabled": true,
+    "showVersionBadge": true,
+    "statusLabel": "Alpha",
+    "lastLoadedVersion": "0.2.0",
+    "infoMessage": "Experimental client-side optimization"
+  },
+  "performance": {
+    "chunkUploadBudgetMs": 5,
+    "chunkRebuildBudgetMs": 8,
+    "entityBudgetMs": 10,
+    "aiCullDistance": 64.0,
+    "clampFrametimes": true,
+    "lodCacheMaxEntries": 8192,
+    "lodCacheMaxAgeFrames": 600,
+    "visibilityCacheMaxEntries": 20000,
+    "visibilityCacheMaxAgeFrames": 400
+  },
+  "visuals": {
+    "showProfilerOverlay": false,
+    "enableDebugMarkers": false,
+    "renderHud": false
+  }
+}

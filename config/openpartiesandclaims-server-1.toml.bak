@@ -32,19 +32,9 @@
 	# Default: 256
 	# Range: 0 ~ 1024
 	playerGroupSpace = 256
-	#The permission that should override the default "maxPlayerGroups" value.
-	#Set it to an empty string to never check permissions.
-	#Checking permissions requires the player to be online. If you change a permission value for an offline player,
-	#it will only take effect when the player logs in.
-	#This might not work well with party-owned claims. The party owner would have to log in for any changes.
-	#The used permission system can be configured with "permissionSystem".
+	#The permission that should override the default "maxPlayerGroups" value. Set it to an empty string to never check permissions. The used permission system can be configured with "permissionSystem".
 	maxPlayerGroupsPermission = "xaero.pac_max_player_groups"
-	#The permission that should override the default "playerGroupSpace" value.
-	#Set it to an empty string to never check permissions.
-	#Checking permissions requires the player to be online. If you change a permission value for an offline player,
-	#it will only take effect when the player logs in.
-	#This might not work well with party-owned claims. The party owner would have to log in for any changes.
-	#The used permission system can be configured with "permissionSystem".
+	#The permission that should override the default "playerGroupSpace" value. Set it to an empty string to never check permissions. The used permission system can be configured with "permissionSystem".
 	playerGroupSpacePermission = "xaero.pac_player_group_space"
 
 	[serverConfig.parties]
@@ -74,8 +64,6 @@
 		partyChatLogging = true
 		#The permission that gives non-OP players the ability to enable party admin mode. The used permission system can be configured with "permissionSystem".
 		adminModePermission = "xaero.pac_parties_admin_mode"
-		#The permission that gives non-OP players the ability to impersonate other players in regards to built-in party commands. The used permission system can be configured with "permissionSystem".
-		impersonationPermission = "xaero.pac_parties_impersonation"
 
 	[serverConfig.claims]
 		#Whether the claims part of this mod is enabled.
@@ -101,20 +89,19 @@
 		# Range: > 0
 		maxPlayerClaimForceloads = 10
 		#The permission that should override the default "maxPlayerClaims" value. Set it to an empty string to never check permissions.
-		#Checking permissions requires the player to be online. If you change a permission value for an offline player,
-		#it will only take effect when the player logs in.
-		#This might not work well with party-owned claims. The party owner would have to log in for any changes.
+		#The value of this permission is ignored for primary party owners when partyOwnedClaims are enabled because checking permissions requires
+		#the player to be online, which doesn't work well with party-owned claims.
 		#The used permission system can be configured with "permissionSystem".
 		maxPlayerClaimsPermission = "xaero.pac_max_claims"
 		#The permission that should override the default "maxPlayerClaimForceloads" value. Set it to an empty string to never check permissions.
-		#Checking permissions requires the player to be online. If you change a permission value for an offline player,
-		#it will only take effect when the player logs in.
-		#This might not work well with party-owned claims. The party owner would have to log in for any changes.
+		#The value of this permission is ignored for primary party owners when partyOwnedClaims are enabled because checking permissions requires
+		#the player to be online, which doesn't work well with party-owned claims.
+		#The permission override only takes effect after the player logs in at least once after a server (re)launch, so it is recommended to keep all permission-based forceload limits equal to or greater than "maxPlayerClaimForceloads".
 		#The used permission system can be configured with "permissionSystem".
 		maxPlayerClaimForceloadsPermission = "xaero.pac_max_forceloads"
 		#The permission that gives non-OP players the ability to make server claims and enable server claim mode. The used permission system can be configured with "permissionSystem".
 		serverClaimPermission = "xaero.pac_server_claims"
-		#The permission that gives non-OP players the ability to enable claim admin mode and claim moderator mode. The used permission system can be configured with "permissionSystem".
+		#The permission that gives non-OP players the ability to enable claim admin mode. The used permission system can be configured with "permissionSystem".
 		adminModePermission = "xaero.pac_admin_mode"
 		#The maximum distance on the X or Z axis (forming a square) that a chunk can be claimed at by a player.
 		# Default: 5
@@ -177,23 +164,6 @@
 		# Default: 5
 		# Range: > 0
 		overLimitClaimAccessCooldown = 5
-		#Whether players should be able to claim chunks that are directly next to claimed chunks owned by another player/party.
-		#Disallowing it can prevent players from doing so without realizing that chunks next to claims can also be partially protected,
-		#e.g. from item use and mob griefing, making them not ideal for some purposes.
-		#Only affects claiming wilderness, so reclaimable claims can still work.
-		allowTouchingClaims = true
-		#The maximum size (in chunks) of a single claim action, whether it's claiming, unclaiming or forceloading.
-		#The size limit can be circumvented using the claims admin mode.
-		#Very big claim actions should not affect your server's performance much, this is mostly a balancing option.
-		# Default: 121
-		# Range: > 0
-		maxSingleClaimActionSize = 121
-		#The permission that gives non-OP players the ability to enable claim moderator mode. The used permission system can be configured with "permissionSystem".
-		moderatorModePermission = "xaero.pac_claims_moderator_mode"
-		#The permission that gives non-OP players the ability to impersonate other players in regards to claims. The used permission system can be configured with "permissionSystem".
-		impersonationPermission = "xaero.pac_claims_impersonation"
-		#The permission that gives non-OP players the ability to teleport to any player's claims. The used permission system can be configured with "permissionSystem".
-		teleportationPermission = "xaero.pac_claims_teleport"
 
 		[serverConfig.claims.protection]
 			#The type of the list defined in "friendlyChunkProtectedEntityList". ONLY - include only the listed entities. ALL_BUT - include all but the listed entities.

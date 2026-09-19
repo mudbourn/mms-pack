@@ -159,6 +159,268 @@
       "origins-classes:sneaky": true,
       "origins-classes:stealth": true,
       "origins-classes:stealth_descriptor": true
+    },
+    "originstweaks:beastfolk_collar": {
+      "enabled": true
+    },
+    "mms_origins:monarch_butterfly": {
+      "enabled": true
+    },
+    "mms_origins:cirno_wings": {
+      "enabled": true
+    },
+    "originstweaks:astraea_wings": {
+      "enabled": true
+    },
+    "originstweaks:golden_wings": {
+      "enabled": true
+    },
+    "originstweaks:chaos_wings": {
+      "enabled": true
+    },
+    "mms_origins:fairy": {
+      "enabled": true,
+      "mms_origins:diminutive": true,
+      "mms_origins:light_step": true,
+      "mms_origins:fragile_frame": true,
+      "mms_origins:wall_scramble": true,
+      "mms_origins:keen_forager": true,
+      "mms_origins:fairy_charm": true,
+      "mms_origins:fairy_allure": true,
+      "mms_origins:fairy_flight": true,
+      "mms_origins:anxious_heart": true,
+      "mms_origins:fairy_sounds": true
+    },
+    "originstweaks:melan_wings": {
+      "enabled": true
+    },
+    "origins:fishman": {
+      "enabled": true,
+      "origins:water_breathing": true,
+      "origins:like_water": true,
+      "mms_origins:like_water": true,
+      "originstweaks:aquatic": true,
+      "origins:conduit_power_on_land": true,
+      "origins:air_from_potions": true,
+      "originstweaks:fishman_sounds": true,
+      "originstweaks:fishman_advancements": true,
+      "mms_origins:language_barrier": true,
+      "mms_origins:cold_blooded": true,
+      "mms_origins:guardian_kinship": true,
+      "mms_origins:wetness": true,
+      "mms_origins:seaborn": true,
+      "mms_origins:water_power": true,
+      "mms_origins:water_matchup": true
+    },
+    "originstweaks:feathered_wings": {
+      "enabled": true
+    },
+    "originstweaks:blazeborn": {
+      "enabled": true,
+      "originstweaks:fire_power": true,
+      "originstweaks:fire_power_regen": true,
+      "originstweaks:burning_wrath": true,
+      "originstweaks:blaze_flight": true,
+      "originstweaks:molten_core": true,
+      "originstweaks:feed_the_flame": true,
+      "originstweaks:drink_lava": true,
+      "originstweaks:fuel_diet": true,
+      "originstweaks:fiery_metabolism": true,
+      "originstweaks:firecharged_projectile": true,
+      "originstweaks:fire_immunity": true,
+      "originstweaks:blaze_kinship": true,
+      "origins:nether_spawn": true,
+      "origins:hotblooded": true,
+      "originstweaks:blazeborn_water_vulnerability": true,
+      "mms_origins:fire_matchup": true,
+      "origins:damage_from_snowballs": true,
+      "origins:damage_from_potions": true,
+      "origins:flame_particles": true,
+      "originstweaks:blazeborn_sounds": true,
+      "originstweaks:blazeborn_advancements": true
+    },
+    "originstweaks:paper_wings": {
+      "enabled": true
+    },
+    "originstweaks:magic_wings": {
+      "enabled": true
+    },
+    "originstweaks:shulk": {
+      "enabled": true,
+      "origins:shulker_inventory": true,
+      "originstweaks:natural_armor": true,
+      "originstweaks:shell_dodge": true,
+      "origins:strong_arms": true,
+      "origins:strong_arms_break_speed": true,
+      "origins:no_shield": true,
+      "origins:more_exhaustion": true,
+      "originstweaks:shulk_sounds": true,
+      "originstweaks:shulk_advancements": true
+    },
+    "originstweaks:arachnid": {
+      "enabled": true,
+      "originstweaks:master_of_webs": true,
+      "origins:master_of_webs_no_slowdown": true,
+      "originstweaks:venom": true,
+      "originstweaks:climbing": true,
+      "originstweaks:arthropod": true,
+      "origins:fragile": true,
+      "origins:carnivore": true,
+      "originstweaks:arachnid_sounds": true,
+      "originstweaks:arachnid_advancements": true
+    },
+    "originstweaks:beastfolk_no_collar": {
+      "enabled": true
+    },
+    "mms_origins:blue_butterfly": {
+      "enabled": true
+    },
+    "originstweaks:phantom": {
+      "enabled": true,
+      "originstweaks:soulbound": true,
+      "originstweaks:phantom_kinship": true,
+      "originstweaks:phantomize": true,
+      "originstweaks:phasing": true,
+      "originstweaks:spectral_wail": true,
+      "originstweaks:aurophobia": true,
+      "originstweaks:cold_resistance": true,
+      "originstweaks:heat_sensitivity": true,
+      "origins:burn_in_daylight": true,
+      "origins:translucent": true,
+      "originstweaks:phantomize_overlay": true,
+      "originstweaks:invisibility": true,
+      "originstweaks:phantom_sounds": true,
+      "originstweaks:phantom_advancements": true
+    },
+    "mms_origins:floran": {
+      "enabled": true,
+      "mms_origins:bark_skin": true,
+      "mms_origins:photosynthesis": true,
+      "mms_origins:heat_adaptation": true,
+      "mms_origins:cold_sensitivity": true,
+      "mms_origins:quick_metabolism": true,
+      "mms_origins:verdant_diet": true,
+      "mms_origins:grass_matchup": true,
+      "mms_origins:sunlit_vigor": true,
+      "mms_origins:verdant_growth": true,
+      "mms_origins:sun_power": true,
+      "mms_origins:sun_metabolism": true,
+      "mms_origins:sunlit_fury": true,
+      "mms_origins:summon_henchmen": true,
+      "mms_origins:nature_reclaim": true,
+      "mms_origins:floran_sounds": true
+    },
+    "originstweaks:nymph_wings": {
+      "enabled": true
+    },
+    "originstweaks:enderian": {
+      "enabled": true,
+      "originstweaks:throw_ender_pearl": true,
+      "originstweaks:slender_body": true,
+      "originstweaks:ender_kinship": true,
+      "originstweaks:water_vulnerability": true,
+      "originstweaks:cold_resistance": true,
+      "originstweaks:enderian_heat_sensitivity": true,
+      "origins:pumpkin_hate": true,
+      "origins:ender_particles": true,
+      "origins:damage_from_potions": true,
+      "originstweaks:enderian_sounds": true,
+      "originstweaks:enderian_advancements": true
+    },
+    "originstweaks:beastfolk": {
+      "enabled": true,
+      "originstweaks:claw_mode": true,
+      "originstweaks:natural_hunter": true,
+      "originstweaks:dexterity": true,
+      "originstweaks:weak_arms": true,
+      "originstweaks:claw_sprint_jump": true,
+      "origins:velvet_paws": true,
+      "origins:nine_lives": true,
+      "origins:scare_creepers": true,
+      "originstweaks:cat_vision": true,
+      "originstweaks:predators_vigor": true,
+      "originstweaks:beastfolk_sounds": true,
+      "originstweaks:beastfolk_advancements": true,
+      "mms_origins:beast_tongue": true,
+      "mms_origins:carnivore_diet": true
+    },
+    "originstweaks:hiyori_wings": {
+      "enabled": true
+    },
+    "mms_origins:slime_wings": {
+      "enabled": true
+    },
+    "originstweaks:colored_wings": {
+      "enabled": true
+    },
+    "mms_origins:pixie_wings": {
+      "enabled": true
+    },
+    "originstweaks:avian": {
+      "enabled": true,
+      "originstweaks:slow_falling": true,
+      "originstweaks:bird_bones": true,
+      "originstweaks:slow_healing": true,
+      "originstweaks:animal_friendship": true,
+      "originstweaks:avian_peace": true,
+      "originstweaks:green_thumb": true,
+      "origins:tailwind": true,
+      "origins:like_air": true,
+      "origins:vegetarian": true,
+      "origins:fresh_air": true,
+      "origins:lay_eggs": true,
+      "originstweaks:avian_sounds": true,
+      "originstweaks:avian_advancements": true
+    },
+    "mms_origins:piglin": {
+      "enabled": true,
+      "mms_origins:nether_born": true,
+      "mms_origins:fire_resilience": true,
+      "mms_origins:nether_heat_immunity": true,
+      "mms_origins:nether_forage": true,
+      "mms_origins:shroomlight_snack": true,
+      "mms_origins:sun_shy": true,
+      "mms_origins:gilded_bearing": true,
+      "mms_origins:kinsmen": true,
+      "mms_origins:arms_dealing": true,
+      "mms_origins:zombie_meter": true,
+      "mms_origins:zombify_sounded": true,
+      "mms_origins:zombification": true,
+      "mms_origins:zombified": true,
+      "mms_origins:quarantine_exile": true,
+      "mms_origins:beastly": true,
+      "mms_origins:piglin_sounds": true
+    },
+    "originstweaks:elytrian": {
+      "enabled": true,
+      "originstweaks:gift_of_the_skies": true,
+      "originstweaks:companion_mounting": true,
+      "originstweaks:aerial_combatant": true,
+      "origins:claustrophobia": true,
+      "origins:more_kinetic_damage": true,
+      "originstweaks:elytrian_sounds": true,
+      "originstweaks:elytrian_advancements": true
+    },
+    "originstweaks:ikaros_wings": {
+      "enabled": true
+    },
+    "originstweaks:vanilla_elytra": {
+      "enabled": true
+    },
+    "originstweaks:no_render": {
+      "enabled": true
+    },
+    "originstweaks:flandre_wings": {
+      "enabled": true
+    },
+    "mms_origins:truffle": {
+      "enabled": true,
+      "mms_origins:spore_shift": true,
+      "mms_origins:combat_spores": true,
+      "mms_origins:drift_spores": true,
+      "mms_origins:fungal_constitution": true,
+      "mms_origins:saprophyte_diet": true,
+      "mms_origins:truffle_sounds": true
     }
   }
 }

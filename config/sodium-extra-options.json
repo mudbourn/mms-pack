@@ -229,7 +229,11 @@
       "farmersdelight:sparkle": true,
       "mutantmonsters:endersoul": true,
       "mutantmonsters:skull_spirit": true,
-      "bountiful-fish:anchor_sweep": true
+      "bountiful-fish:anchor_sweep": true,
+      "cosycritters:bird": true,
+      "cosycritters:hat_man": true,
+      "cosycritters:moth": true,
+      "cosycritters:spider": true
     }
   },
   "detail_settings": {

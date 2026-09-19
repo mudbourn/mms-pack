@@ -1,5 +1,7 @@
 [
   {"version":1},
+  {"ingredient":{"id":"basicweapons:diamond_pike"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"expanded_weaponry:diamond_greatsword"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"bountiful-fish:anchor"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"minecraft:bow"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"bountiful-fish:large_tuna"},"type":"item_stack","bookmarkType":"INGREDIENT"},
@@ -88,7 +90,6 @@
   {"ingredient":{"id":"aerialhell:fluorite"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"aerialhell:stellar_lighter"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"basicweapons:diamond_glaive"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"expanded_weaponry:diamond_greatsword"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"jeg:bulletproof_vest_vi"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"expanded_weaponry:diamond_hammer"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"minecraft:saddle"},"type":"item_stack","bookmarkType":"INGREDIENT"},
