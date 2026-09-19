@@ -23,8 +23,10 @@ Thumbs.db
 # hosted packwiz distribution needs them reachable at the repo's raw URL.
 
 # Internal build-handoff note — not for the public members repo
-INVENTORY-TASK.md
-
+*.md
+!README.md
+!docs/*.md
+!resourcepacks/lowlands-vanity/ATTRIBUTION.md
 # NOTE: resourcepacks/lowlands-vanity/ was formerly git-ignored while Clothing of
 # the Lowlands' redistribution permission was pending. Permission was granted by
 # Anton_Vaedak on 2026-08-16 to ship these assets inside this modpack (packwiz),
