@@ -28623,6 +28623,1822 @@ file = "resourcepacks/jobsplus_renames/pack.png"
 hash = "47d6a8e5d7e790e5493dd706c84ff4e4eb4794d1608b75375106d377a0be0f9d"
 
 [[files]]
+file = "resourcepacks/lowlands-vanity/ATTRIBUTION.md"
+hash = "824dd2070ced9fbb2cbe3ac78102872fc6037b7610bfdd41732e6ecb667f136c"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/equipment/axolotl_knight.json"
+hash = "e72c848c688bfb67ddcea87c47ab42aa931a1c82ae13303003ca59cce66015ea"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/equipment/bret_corsair_o__armor_v2.json"
+hash = "fa08ee541cdb4c7a6c707819603c7afb4e95fdb69c76e73c06f719b4df83b9c6"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/equipment/bret_fight_armor.json"
+hash = "1d42b64b54aaaeaae6579c38a0c331ad9e67eb610f8c9d8055dc18e0cf3880ff"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/equipment/executioner_armor.json"
+hash = "f2298abea23021972cae2570189f98c32c0b924da03ccddc49d03f742273ba49"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/equipment/furnace_master_armor.json"
+hash = "237448f9dfc08dd7cb2e7d386530484a7b8e1083ebf29d89f8a8812d4975e7b5"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/equipment/gamemaster_outfit.json"
+hash = "8eeaa8f7ca0b0d389f167fa918423792d02afb1e54f262793cdbbed95a1fefef"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/equipment/gatekeeperarmorb.json"
+hash = "285b4432cf53d4ee7c89a81625c875f86308df68477cae19d965f4a45f41c9cf"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/equipment/guard_captain_uniform_r.json"
+hash = "c7c33839df3c0f28fbc64d4161b74fb7aee85c3216f05ba697a954968e0f3d65"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/equipment/highlands_suitb.json"
+hash = "0369a87bba56fd8c93de5fe1c7929bb637e4d1cb4a6e5f267649166ca8c403e5"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/equipment/maskerade_armor.json"
+hash = "58856fb79ff5c684aeeff73c1f91a61d10e671186d448f0d93db85dc5084c6d2"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/equipment/mercenary_swordman.json"
+hash = "163f7775c225250746f5cf557bf99aa26c8ae13c977ddb71b5112ce2dce25a50"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/equipment/mountainmen__clothes.json"
+hash = "8806f522013e64d54b3e6000d608644573f36ab460661244c18c0b8ff0ec468d"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/equipment/netherborn_pirate.json"
+hash = "f2666e0c4a2e87abfcbf7c6ed47be0e8e17fabf1c3e0da6bac306ad37261fdfb"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/equipment/norse_ravager_armor.json"
+hash = "67628843e7f99ece9f0513e3813cbee795abcee1a89e11f203304f4b087e269d"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/equipment/penitant.json"
+hash = "960abd73686e8b08fea9e33049ffa6a66e9003cca61d2cfc9f4dc6399eeb738a"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/equipment/plaguedoctor.json"
+hash = "3462fbdbf5016451c41a8e4d2a102667cc89c482c239593c609f0b36ada279a4"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/equipment/ratcatcherc01.json"
+hash = "a915b7d714c5eb2b32a57e9544625c430f4daa18efe2429b6cbe40c355af4223"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/equipment/scaphander.json"
+hash = "3566a9a04b7798eeb345d8c1b7152648570a38309ba1e0932c3825b56b8c3c71"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/equipment/siege_armor.json"
+hash = "b8926525a5fb036863559b6884adcdf320cdb4426137704fff0fef1693076751"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/equipment/snowtigerarmor.json"
+hash = "44cb2bdbada034ff458382b9de72122c95532c01459e9f82e2cec694113a03f7"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/equipment/swampfolk_outfit.json"
+hash = "9b5793613c6699bb51711165239f98b4bfe87c9b82a132e44c721a3e968283fb"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/equipment/waldknightarmor.json"
+hash = "ace9a0be6540a3135873c6375481571bac08fd124c67e0f368224d98293b1bb1"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/equipment/wingedcavaleryarmor.json"
+hash = "fdd9b4e849a08c97887ad346e5a0fef19d2e8217949ccc84ca77401e4d90ce2d"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/axolotl_armor_boots.json"
+hash = "d0235ebb098553daa8727d0fbf3b25213c58620f9711f8644948caa226ec2dc8"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/axolotl_armor_chestplate.json"
+hash = "2ad710a30a88dbfe931bc72cfb9363942d4a6a103a2083b4d6029fc8b3efe454"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/axolotl_armor_helmet.json"
+hash = "c284a120ae70b2a57bff1a9d210fdd6d24d4fc7860348af33b5ba2385a6b4394"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/axolotl_armor_leggings.json"
+hash = "5fa98ac12325bb1a973d17880f7db20ed28f7ebf0482c0ad46087ca62be6457e"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/bret_clothes_boots.json"
+hash = "fedc1420a20dc524560eb841ce5c8b68683d8025af49728f9f7df6dcd4e182a0"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/bret_clothes_chestplate.json"
+hash = "77cc83aedd69789e50b737fe75d6bccb597bcb1cd93df9e4c5db58acf7e23e0e"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/bret_clothes_helmet.json"
+hash = "1d1b431e66a78bef3240fb35caa2fbf70fecc208def0fb742b0df05859e8fa9e"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/bret_clothes_leggings.json"
+hash = "479652ba7eb288ef514a15366ca49d964b274b9aaa9074eadf2800ef9a8ea440"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/bret_corsair_armor_boots.json"
+hash = "0fa59e34db386d54687a7b4350a1bed4169b4806971f6174fb58a3410d21501f"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/bret_corsair_armor_chestplate.json"
+hash = "b3c47943aea5f6ca0901ab8a2611e1ac5ecfad1dd3e8d8114d6eb0a320a70cb8"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/bret_corsair_armor_helmet.json"
+hash = "6a6b2244f80105df67fe556bf0d80eef1dd7a1e160023bda3d2a352bc618583a"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/bret_corsair_armor_leggings.json"
+hash = "ccca66c14619b381c390b87d09374dc4e3985ec8dd4eeeebbc6c9a69f34b0f50"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/depth_scaphander_boots.json"
+hash = "1396a6ee3df51596e87d2a9504a1964143fd20067aea7dca931161c77020394e"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/depth_scaphander_chestplate.json"
+hash = "867855274658ad3f9bed286a96ef367dfa8ed4c2793119d6704a48c8bdce0b95"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/depth_scaphander_helmet.json"
+hash = "954aa27379217e906a050b6ffdb537670c6189cebf8439f774e30ca906309c15"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/depth_scaphander_leggings.json"
+hash = "0936240bae9d88fdb5359dca16e58253ccbb0700cf4fa3dda6e3efd6189f2e7b"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/executorarmor_boots.json"
+hash = "7d8036589a14b96a85c05ceaf53185e0605a98ffaa7ea529b76f93c3653d7d59"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/executorarmor_chestplate.json"
+hash = "fcec590130af4a5cd68fc477badf6ffe4c036c3552aebca07db00452f1671755"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/executorarmor_helmet.json"
+hash = "7f5828820c731fa32f28d772b88c0845744541c81e03e34021f0fd1c5514741f"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/executorarmor_leggings.json"
+hash = "3c8c36306c62d208a6966a308bc6d22157c0faa7fd56a87b9516a24d037cb295"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/furnacemasteramor_boots.json"
+hash = "5c7623b8ea7c3987a8dd235c044facd3abc7101f789f8135820b635f802638f1"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/furnacemasteramor_chestplate.json"
+hash = "35c91ee14fb13139e311ccbb8b983a0e27fc1d61e0bfe5064e4d0158ffe2852b"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/furnacemasteramor_helmet.json"
+hash = "ea31529ba8c08f604f6ba71220839204a34f38164c648eab7d81ba0e1ace65b1"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/furnacemasteramor_leggings.json"
+hash = "e3ff393e89ddaf0bf2a14ac00a610a41972a9f0ce12e2466905a0311df810e86"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/gamekeeper_attires_boots.json"
+hash = "ef430fe708a5e50c42ab72a8e699dcbd3c2af5d0d89cf8fb9a7b095d32d798b6"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/gamekeeper_attires_chestplate.json"
+hash = "08593c232eabe943a61df444f113f3eaa68d85d13725d622dee5cdc200a137d4"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/gamekeeper_attires_helmet.json"
+hash = "b11b173023d33e17538f4add27757a56355c08b347f11ec2e53fda120476f405"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/gamekeeper_attires_leggings.json"
+hash = "07cc7331d9b29bfd158a57ead94386b7d1e6ce0083d3aa0081fe4a97d880fb30"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/gatesentry_armor_boots.json"
+hash = "b8e7582259820b507015a77b91c441329216aa2d7ab7f0cb5d73fc59ed199b09"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/gatesentry_armor_chestplate.json"
+hash = "e4746adae5bd7fe27ff22a26fd13b624480b1a2afbdc26b970fa829b32f48625"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/gatesentry_armor_helmet.json"
+hash = "9557b8d55d18cd4923570646e02a281431ed8bda471342303d8b94e8506471de"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/gatesentry_armor_leggings.json"
+hash = "cc223e9cde0fbb005db8f8848300737e2887588c50bd1062701531582a513f76"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/guard_captain_armor_boots.json"
+hash = "42514c86115d51f46dd10dceaa3f5a8dc388f7a08b29845c287abd52b663688d"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/guard_captain_armor_chestplate.json"
+hash = "3ebecbbba7bb8855888f016c0d6160647ed76d67ea221e88ce255b79b1128f07"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/guard_captain_armor_helmet.json"
+hash = "4f18ebb1e5c828b7d14f34725b350b035adcd70f1737fa213df6681adae2e3b8"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/guard_captain_armor_leggings.json"
+hash = "81cb127a264ff2b7eaad0be0fe17dc38aa845a761e3aa5d527d2cd2db0de8686"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/highlandslongkilt_boots.json"
+hash = "76f5ee484224c6a387034c84379c1364fd500e6a12d138a6cfcc5349f17f94d1"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/highlandslongkilt_chestplate.json"
+hash = "15f61a7599825761450bdfbe01d45bad9b94cb8c6fbda170aaf3fd3ca33dce49"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/highlandslongkilt_helmet.json"
+hash = "cda7edadb0a6ab8893fa49988dc478ec2501cf7d148f2ae09b372e5d0f2e22a2"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/maskerade_armor_boots.json"
+hash = "33926cc9466dfc32e3217d1e6823850ca73973be157aec7aaf9de3f809e754ce"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/maskerade_armor_chestplate.json"
+hash = "1855b818a9a313698e1524ef9abca455037a26891d25f215badec4121c02e05e"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/maskerade_armor_helmet.json"
+hash = "066481099b797c4d4a9633e03f780cf00198a11067a6682d4e5bc737cb3e4d81"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/maskerade_armor_leggings.json"
+hash = "5d2d4908811da6c4bc5bd3b5092ba97275cb7af7c007be48ffc0d9167404f859"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/mercenary_swordman_boots.json"
+hash = "46dcf4b3fb05a2a8a1d71372dac07e59b24a45ee856790a67078ce01f30454c6"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/mercenary_swordman_chestplate.json"
+hash = "d4e8d439dc9e1c01fb7c0f6fd7f5565004cd8dc3df2c418d178df8872c2c8795"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/mercenary_swordman_helmet.json"
+hash = "faa8b3d3be76a2110bab9720d00dc768aec374ccef331b2481fa0f35869c1ca9"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/mercenary_swordman_leggings.json"
+hash = "d76b709a6395c7e3d13cf8b1a937ad823b0c42fb88c24485263057a97386ede6"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/mountainmenclothes_boots.json"
+hash = "59e427214f37801e38961dccb5e30766c398ce3b26be1efd96f0be791bba6d13"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/mountainmenclothes_chestplate.json"
+hash = "cedaf6a01d1682cc1de15aabd063ae12172b49b1329053b2afe25f311c9000e7"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/mountainmenclothes_helmet.json"
+hash = "eca32558384c837f2d1a2e5f1d11c6af7908052eca6787a8c2764a9e3d8a53b1"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/mountainmenclothes_leggings.json"
+hash = "f8a543ca0045199b8092c9df03380f7927accb1ea7a42e8ac7e112abf8ef874b"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/netherborn_pirate_boots.json"
+hash = "cf7c3b209cfa235a6e9608009add5f5e9c9d5fde0474b2c692dc467419ece8fb"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/netherborn_pirate_chestplate.json"
+hash = "ff86e20884f4fefe9f5a74336315e47c532cad0e8047d0b7e131077d1126077a"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/netherborn_pirate_helmet.json"
+hash = "d9b3891041a5a25d6e519b98106a573303c0f148155015c570ec7ff39fd1445a"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/netherborn_pirate_leggings.json"
+hash = "0d59e8879424864fb5b6507395ea8f0a5eb75e99fd60938fa463e08c24551586"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/norsian_armor_boots.json"
+hash = "9ea83e4510ecf265df79aad245cd70014a0ac192891bb5a2fc5e114cd328eed7"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/norsian_armor_chestplate.json"
+hash = "e5d1913381b869050c58e14416bf71677002f0e0981bc1430e0407f8f6b9aa75"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/norsian_armor_helmet.json"
+hash = "ab2123e6a63849a5af50ade78fd9eefeb290cc5db6d0a262755ac172adbb3900"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/norsian_armor_leggings.json"
+hash = "76404bd4d7ba91dbef98f8581d3abde1379d26e948b4c8dbf39cd40698dffe67"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/penitent_rags_boots.json"
+hash = "41f62e6f775105a72fdbdbef8471643d4f79bc781e4b5b3affedf7a5c85830eb"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/penitent_rags_chestplate.json"
+hash = "1ff6394eae1f81c450aa58b35ecef928202f23e8da9f7c07eb8c4dccb92275f8"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/penitent_rags_helmet.json"
+hash = "cf31ea5d40c893f4e0054258ae6f19a5273e0e2202aaf4ab095c7d9e7da09f24"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/penitent_rags_leggings.json"
+hash = "46b1768b2827cc3152ec3657a52daeeb2d903983d19e6598b279c7f69788cc22"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/plague_doctor_suit_boots.json"
+hash = "56b7e0f370d6737792cb47e4e489806f65bbc69c43612ebe7863962fd0b0a744"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/plague_doctor_suit_chestplate.json"
+hash = "6b5a679716aaefad91c220210078ed8d4875925231920796cbfcc1c4b1b440c3"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/plague_doctor_suit_helmet.json"
+hash = "bfbd34312e20a298d23c599afbcb701200d4dc842d55eb2de618445e8306e235"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/plague_doctor_suit_leggings.json"
+hash = "67809fd25e6300ebeaf653b3950476e84176403dd48320acf70339777ae265f6"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/ratcatcherrobes_boots.json"
+hash = "fb985aeaa2f04f2c47f9588d325ef9d7ffa2d274d0e29e6fc6cc021fbd1b2083"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/ratcatcherrobes_chestplate.json"
+hash = "90d0ee6c17163899b8e1ce32d3f101fd548aaf9b48d538889ec1ec7ea6728595"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/ratcatcherrobes_helmet.json"
+hash = "a4b36a946476f15c6e0038fb19bfd955661b58e3e9b03f7cb61c1c43f3b133a9"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/ratcatcherrobes_leggings.json"
+hash = "fc97e1307187f7527f1b8e74636ecb1fd3c06ffdaf438ff36a1d7b206ab47b81"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/siege_armor_boots.json"
+hash = "0c63e19997a329cfb3b7169a81f66704d8ecc7682f8c1447a50e5d5c8d0db058"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/siege_armor_chestplate.json"
+hash = "8be8efb04f35ae665e45e9aab08a21dd4733c0b0ff75e00170d1a55af422cf78"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/siege_armor_helmet.json"
+hash = "b144fa77764f371d719a400ebba5eb7361f0f48df5f763fd4bb99be71cf10398"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/siege_armor_leggings.json"
+hash = "73b1921dcd9a3bbd4e0bc3de3a5c1cf5951cbdd54d52f48dbba1cc6c6248bbdf"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/snowtigerarmor_boots.json"
+hash = "917c2afe5784d97205c2fc33777a7728c804a8ec96f2e94624b48cdaff609014"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/snowtigerarmor_chestplate.json"
+hash = "7371ac10241341c3f3c33f40d5ec47d19550753debe149731826cc3af4c31d84"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/snowtigerarmor_helmet.json"
+hash = "729c6bca13daf35239b3769fef0b9815634b8e0e491a74cf13dbd319c013678f"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/snowtigerarmor_leggings.json"
+hash = "1a28c1fa44e1746b73d17be98ef9555891323fe914e19f026913950dccba5cde"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/swampland_folks_attires_chestplate.json"
+hash = "74f72d6ffd336222ee2ff5f5545165f9c2e29029df130a01b9e75e8a11ec41ac"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/swampland_folks_attires_helmet.json"
+hash = "d9623f41cc9dc5e8ffd04f97ffbd0d4b9a936dcd36459deec8e88434f32169e6"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/swampland_folks_attires_leggings.json"
+hash = "d77ee056f5c320ce900d8d419b40a744de2c7ebd442b493ad778a4cc33ff83cf"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/wald_knight_armor_boots.json"
+hash = "e0ea0fb539d851a665d4742ef299b1059482b127caa76c753aa0f48b9f0f61dd"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/wald_knight_armor_chestplate.json"
+hash = "d5a7f541f8ba7241f633c69339b602305b8b86eb1f33e6a17672675801d6b3ec"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/wald_knight_armor_helmet.json"
+hash = "ef7fb44e1637665e39d6572a1729d2246d6e013afd944afbb0e8c61562dfac96"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/wald_knight_armor_leggings.json"
+hash = "91d08dc174fd377086b2c6748dfb20055dfad612889936ac9b771e38446352a1"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/wingedcavaleryarmor_boots.json"
+hash = "2cf2e560463b5304fe557b147d80c8d017937dc01555a6fe9c6b626491c159a7"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/wingedcavaleryarmor_chestplate.json"
+hash = "be32373b01586535d1ba3bfd23cbbdd32401c56a6d1d08546e6a0bbcf12c7ae8"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/wingedcavaleryarmor_helmet.json"
+hash = "20193c327c19f111635741c9279515e5ded01c4906c5c98cffd92afad54244c7"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/items/wingedcavaleryarmor_leggings.json"
+hash = "29cbac81dad2232fe2a53cbb86f4e4fcdb8c07cb27c687b9200fbb1ce10f5cbf"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/lang/en_us.json"
+hash = "d55464bb2f95f0f483e7971bfb519a998e7c94bc9d6aabc567b088686e05dab3"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/axolotl_armor_boots.json"
+hash = "4b290138a258e6b2ae26a308ecdba3be748fd262fb5306bf128f8523315e02b9"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/axolotl_armor_chestplate.json"
+hash = "1b742e6e64544f5b73f8543b6e0d1201033d2d9334bfa6d1452d788a7e49f8de"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/axolotl_armor_helmet.json"
+hash = "1249d0e1b06b71896589b38e6de43e53abe158b268f19efcb97d06253afd2c1a"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/axolotl_armor_leggings.json"
+hash = "22d50b3dd45d8c4db127fa2b537ef9341d22df04594d43c844e75230b7ca5e8e"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/bret_clothes_boots.json"
+hash = "66e43a8c30ebda05368a1a442227fda350b5ac56e0748d8d6b70f963c16cd2a5"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/bret_clothes_chestplate.json"
+hash = "c8cf0c91f8801ec38ed6a476ef9a5f9f5e61620a73628cf82b0fc6cd0a12f467"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/bret_clothes_helmet.json"
+hash = "1bc980813dfea09c63499a525916e298cf53b7c89d8ac101a87e80394d674cd4"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/bret_clothes_leggings.json"
+hash = "aa3b899b2e76fcfc7e48c2d74a3f426a60d3b2df0747892a57a7e3c21b63564d"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/bret_corsair_armor_boots.json"
+hash = "38375933a5366c18eb4a86ce1b1032bba6514d6beb587fa47cc5aaf385adad07"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/bret_corsair_armor_chestplate.json"
+hash = "fc102d49d6afaf25414631825424a0ae84b049fd9136e6241bb661f666953863"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/bret_corsair_armor_helmet.json"
+hash = "c453540c9e1629af506ff0813a3f12293beeb64cc55e462ec6cc56cede4f52bf"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/bret_corsair_armor_leggings.json"
+hash = "e6a9dc1f35c22e45cba7bc424f0a4dd1ee5edda0ebb177cb4ac02d6c8a17b4c5"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/depth_scaphander_boots.json"
+hash = "81a1f01f502f35e7b2cc00053966f8d68180bee57a4296d43c1a6e38f7425bcc"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/depth_scaphander_chestplate.json"
+hash = "58f78d853608a7bb119492ed38fe412b042ae2db8ac20b0e848fa1d3e9ea1747"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/depth_scaphander_helmet.json"
+hash = "41ea110fa5b74d076f585d51ca2820bfb69ffd2dab599b05d89dcd0ec4769029"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/depth_scaphander_leggings.json"
+hash = "13ae00416cfab94eaa2f61701deb8bcd46d30984da2d47a3ffcbed6e79a0043e"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/executorarmor_boots.json"
+hash = "d1404b9d7499f9a6d58d2d02565be14bc02c439adf67b86877169203abcfc29c"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/executorarmor_chestplate.json"
+hash = "c06d5f8716fbe2cba55cb2d950463e6048262fe7fb4d6be905da47b52a342ce7"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/executorarmor_helmet.json"
+hash = "e7a7917b9db21567b733e916f61734055a6dae30fb4e264b16301a5c832dd2e4"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/executorarmor_leggings.json"
+hash = "a2f15d7c9df497491022bb9d2e73d4767eb5b593f489ce382c27612c79459e25"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/furnacemasteramor_boots.json"
+hash = "92ff5d4bf2f452d30c4a9097b78bb692fcc684b116090ef5c552c3fa7b7fad94"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/furnacemasteramor_chestplate.json"
+hash = "2f725a924c244cb75436a3dbe981eff74a3a0dc8a85de7eeb4d94f57839e5eb3"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/furnacemasteramor_helmet.json"
+hash = "8649a0336b3c629bcfee326c60b38f41d6701b4da466eff5a86b4d04cfd209eb"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/furnacemasteramor_leggings.json"
+hash = "70e719225e0385c25a00afe023bb121008368810aa952bf940fdad6b74bde0f7"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/gamekeeper_attires_boots.json"
+hash = "be8ae7e388667ad996b8a10132b2d4c1f4c08992ae98fb33c8891218ed0dec3a"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/gamekeeper_attires_chestplate.json"
+hash = "75a669f8726206c0d1d068a5e593d99c9e112cc2769fd3912c172d7e339a99c2"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/gamekeeper_attires_helmet.json"
+hash = "ae39783262f5d80bf1af190f1231e8b1eed13e334e8ed99ad689bc4b81a52fb4"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/gamekeeper_attires_leggings.json"
+hash = "91cee57c6e633d725f1e5c35af6a5678db804f1b4186be9741f739ca1f9824d0"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/gatesentry_armor_boots.json"
+hash = "f99d69dfffaa503da0abbdf6a6e93958a1b629a7c37abede9f74ea9f9c1e6b67"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/gatesentry_armor_chestplate.json"
+hash = "a87072bb52ffc39c90444893e9d15539f331d58e7bd6ff85e7a92bd146a784c8"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/gatesentry_armor_helmet.json"
+hash = "6b79ad15e5ec1414d32a20e2c2f1b2941f3df02184dd9e4b3c3aee06b2808f0f"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/gatesentry_armor_leggings.json"
+hash = "2ea14c42857c7a96ecbffd6d9676d81348f98c8089dc82e819e3f9fb35fd0ddd"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/guard_captain_armor_boots.json"
+hash = "17b38416a81f65b57f4cb3060a16e9ad3ad5b16a3706ce8f32a670a51242ff4a"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/guard_captain_armor_chestplate.json"
+hash = "f874849618c5f8ddad3ad068bb37be46fda63ed689db3fac6dd69c86849a84db"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/guard_captain_armor_helmet.json"
+hash = "3e9c546cdd9980e5ff172914d8a24a95505963b9dfcee525479e4b7e6f967c1f"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/guard_captain_armor_leggings.json"
+hash = "2bcd490ad9bdb5b6d0a28242ee0f9398ce6d627a7fd5c73454d8987dfbb87789"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/highlandslongkilt_boots.json"
+hash = "cd36c027b2c31e0c46621f8d0a69f89ec3cd94a138760222da56cbabe91e7439"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/highlandslongkilt_chestplate.json"
+hash = "ccef9f4a0e78bef6bc6a33a44dd2eb8fe7bb7d63d112726591517430c0e8f918"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/highlandslongkilt_helmet.json"
+hash = "b63aa77fbc118a9a318085cb38e93765817ccd632c98d6362074c64282b7e0cf"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/maskerade_armor_boots.json"
+hash = "03307abf7e1c91465ada0459ed60dcd6fcacaf88ffaededa37e8044787a90274"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/maskerade_armor_chestplate.json"
+hash = "2b9fd76ebc13412a277b29b05b5780318e6a92827c1ee258112ba21ce8b4fdc0"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/maskerade_armor_helmet.json"
+hash = "666145ff81989588cbaefa3ac28cce6c6ad84693327a56f5ce03f9c5d7cc4b24"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/maskerade_armor_leggings.json"
+hash = "f90c4fc6fc72e84da41da825f3835e2fa433936d268e5c6495bc077325d663cf"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/mercenary_swordman_boots.json"
+hash = "a3f0caf165c7000defbb5e1b6056e5de56e28616fe660adcb005195788970cde"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/mercenary_swordman_chestplate.json"
+hash = "014faa970434dc8d10a9765d489757ac665337047cb7f275751575d86738c73f"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/mercenary_swordman_helmet.json"
+hash = "0d71ff59a69441cd897399a49af6f1ea1122f2ae5b076e9bbd65fcc6b21ba908"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/mercenary_swordman_leggings.json"
+hash = "4ca645508c2461c7e8e37af2f2e4a0504824101529b56ef7ae3c55a2bfacafda"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/mountainmenclothes_boots.json"
+hash = "b83b16c37cec27a983170653a9846f19738fa7cd6fc14bdda3ace6652d20c573"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/mountainmenclothes_chestplate.json"
+hash = "6a6caf4cd069fa6878cfddcf545e881fa4282851ebe6a12dd3c1e79168a553b6"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/mountainmenclothes_helmet.json"
+hash = "9587f0d98db0cf22b34f30906ca14e58bfc4c92237fb129cf201147d16fca720"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/mountainmenclothes_leggings.json"
+hash = "c012ca5f731072f00558ea31f504283029ce664841b6de98b6dc07db2f452940"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/netherborn_pirate_boots.json"
+hash = "61e3f0d23f67cf5cfd560ef745ebcf20285e5bd530115f500d5f3c172b13201d"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/netherborn_pirate_chestplate.json"
+hash = "39998436434bf3b3f551f7e92eb8d0ebaac6a710e4771a026a827f6c12523b02"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/netherborn_pirate_helmet.json"
+hash = "b3f6c5a544e0092d70ed0a476ba10bfcc0f7d734fca660a174da680d62d6ba5e"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/netherborn_pirate_leggings.json"
+hash = "71b9839771ed600b92503c4a2ac76242576e6eb0b0c48eda962f16a262869121"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/norsian_armor_boots.json"
+hash = "21d7cb70601cdf8bffc99e9448a1619b9e7ab0e0d288144dc7183dec848cc7c2"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/norsian_armor_chestplate.json"
+hash = "d81067df0785d2ad3c6f71ebbf65388cb107a87959072bda6f961dff9b99b2e0"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/norsian_armor_helmet.json"
+hash = "48653bb6a38c15cc1831a7351adc6e83d1bdee011ff2545df9388a77aad484c2"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/norsian_armor_leggings.json"
+hash = "1dab8d60252255d34c05b4a950a0d9b7915a9289ac2f05cc41248a444c560346"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/penitent_rags_boots.json"
+hash = "0502ef20df3d748abc7b15c7778e01cabb86a26a66d1f428b311413e3f86d02b"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/penitent_rags_chestplate.json"
+hash = "aa958ce870420d3eb35ba0b97f44c8e3c8cfb98579375141f28eb25127689d46"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/penitent_rags_helmet.json"
+hash = "158342ff795b18008523a6d94503cff9e70081bb8090a38f065523fa37591b13"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/penitent_rags_leggings.json"
+hash = "ace8fbef1738d96e0868068d9b093040325649ca62c170a5716922d27ebd7d72"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/plague_doctor_suit_boots.json"
+hash = "f808c52d39bb3cbc38e2dfd66e73a816605b363fdc73fcb8c0bf815376cd639e"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/plague_doctor_suit_chestplate.json"
+hash = "dd0ac1688ddfeb5794e4a14d213159dcba282b4320c9abab68c9c22a47230c9b"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/plague_doctor_suit_helmet.json"
+hash = "b9242c36076f551350bc6b98ead9ae74bddf7f74bbb88e0ea87cf1de79308c5d"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/plague_doctor_suit_leggings.json"
+hash = "a5e0e0c85bba378ce8b3be5527d10cc9c807ce9c80cb840d2ea32d165af3f1bf"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/ratcatcherrobes_boots.json"
+hash = "7191437535f55864ae4fd2cee940e7f000966cc92ee2e9107ffc799a7418bb8e"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/ratcatcherrobes_chestplate.json"
+hash = "40555a68dc4e43dc95c93db5c48568d1e8c29b21695fd753ed28004a21ce25df"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/ratcatcherrobes_helmet.json"
+hash = "73c4bdde3754ea99eb756e4dbfec85efe1c523b51b0a8942d7cdeca009273404"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/ratcatcherrobes_leggings.json"
+hash = "d4699c5bc2f3c056a56c6b3c989e0761de601249f009faa5a10b54eb06b5c455"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/siege_armor_boots.json"
+hash = "2466acf8b39dc9468a4df55d2a28ecf6014fb1c5bc1a2768f30ac6a285df5b47"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/siege_armor_chestplate.json"
+hash = "a72be166f4da2309838aaaa61d81ccaf182b4484040c3839903c1e8a7f01d0a2"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/siege_armor_helmet.json"
+hash = "1b0a076c73d545a0c34a839eee00ff853fce62ffb6e82082bc4e2552f1bf65d8"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/siege_armor_leggings.json"
+hash = "1281262369b98db4e4d28fe0679ed01397859eea48fe4463705e28233be3ded3"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/snowtigerarmor_boots.json"
+hash = "27dcb866aeea1c210f2e5b0fae4da48da2ba31eb6f9840aa46f4bce369a7cf7b"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/snowtigerarmor_chestplate.json"
+hash = "24b9ebdbe874e3e4442ee06d2269b8308ef234973ec3f22e76ed1e4b5c708ed2"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/snowtigerarmor_helmet.json"
+hash = "e5aef6558876772f74214ce7fe081306f7e28217c01c80f1bd15824939c2a5c1"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/snowtigerarmor_leggings.json"
+hash = "f06eb1c979c82304ea5bcef3a97e83e993a42f398b9ae3ad4b92f736889ff5b5"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/swampland_folks_attires_chestplate.json"
+hash = "73e759b94accfb76fc3767137cd6ffef29c5f86ce3288facd63bd9c2f2332835"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/swampland_folks_attires_helmet.json"
+hash = "5d8f9a2e9c420271b1e9dc7295b2420e8f97c668863250732a7a9ac8211a35e5"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/swampland_folks_attires_leggings.json"
+hash = "72c26d69143bb33f940d569cfbcf602e71a57a97369f0215761b4e4f1abfcb12"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/wald_knight_armor_boots.json"
+hash = "d3f83c72d4a925941ba5fc8db4c6018ef0da168b38f7a343efd5c2d7f69224fb"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/wald_knight_armor_chestplate.json"
+hash = "bec96f3883a5a72eec39aa4d9227c358755183fcba5d955c3ba70feab8f23286"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/wald_knight_armor_helmet.json"
+hash = "b9f277217e72b0feaa125146844fa0812a9c21ba2a14e60114f460781f771a9d"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/wald_knight_armor_leggings.json"
+hash = "650b1929b10967b62826cc626521a17193d2a9f9ae8191c0ad09698242358005"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/wingedcavaleryarmor_boots.json"
+hash = "b8068f7cbeffc66a040be9d68810dbfaa8eab11a5414f580c72e819f1163b6ca"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/wingedcavaleryarmor_chestplate.json"
+hash = "de557399f4787ea9dcc62daba1c58851ca9ea716b1ce45a874fdde4dd0b5faf2"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/wingedcavaleryarmor_helmet.json"
+hash = "2594dd025cedaf0c9598b208b7dc2d0c52a71ef62be58af1e0d51dda258ffba7"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/models/item/wingedcavaleryarmor_leggings.json"
+hash = "417eb65e26c8d7888f557223792d453e21a6d7fd9420f5eaf8361e2817776485"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/entity/equipment/humanoid/axolotl_knight.png"
+hash = "7a9f2107183c24a4f9059a43c0ded5d628741365708334bbe0d7c4c8d39de0e8"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/entity/equipment/humanoid/bret_corsair_o__armor_v2.png"
+hash = "42d9f2df64be13fdde7822f5ccc3061feceb67700414037b372926833c7d49d6"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/entity/equipment/humanoid/bret_fight_armor.png"
+hash = "603441a708a21911aa96d6abe2097c6053da34f5dab4dcfaab4df7ae8c968444"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/entity/equipment/humanoid/executioner_armor.png"
+hash = "09d8d9b77a6f1bd7e15672f96d11d238b5ea9a6245e4437150d17210c2f77dce"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/entity/equipment/humanoid/furnace_master_armor.png"
+hash = "d7822f2347a6175d5606a310906b1917f31694aa21ea4d3a51b1df700fb7e530"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/entity/equipment/humanoid/gamemaster_outfit.png"
+hash = "63a22e8a889dc161af099d2ed31fec1e6e2a7c2534c655e55640abadd6c7cd3d"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/entity/equipment/humanoid/gatekeeperarmorb.png"
+hash = "31d432d9e251bfdcadacd16e6b92ee6f94b4c2bbff38c6eaeead79ae84d3282b"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/entity/equipment/humanoid/guard_captain_uniform_r.png"
+hash = "3199d5eec0c6781db0f8a08dbd108468482f0ce660ee34c95f46a34933092410"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/entity/equipment/humanoid/highlands_suitb.png"
+hash = "082ce82aa5fdaedf5e1bb517ec3102d295f8dac6dead6ce2b5e328a8b4b5ba8c"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/entity/equipment/humanoid/maskerade_armor.png"
+hash = "f6d9fe76fb61cd27e691d118e6159f7abee2396b0e6d8a63032f1ea8152ea93c"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/entity/equipment/humanoid/mercenary_swordman.png"
+hash = "eff4e8f7762202a9314b17365a4ccf13fb72ce3a3c55378a2d23a65854dac4b6"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/entity/equipment/humanoid/mountainmen__clothes.png"
+hash = "420947946cecda9474e70e84d0bcbf9634d39240aa608b63051a179ac88f131e"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/entity/equipment/humanoid/netherborn_pirate.png"
+hash = "fafd117c31667dada37c89e46f6d6c7f116fd837d37ea674060bbe70d3893328"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/entity/equipment/humanoid/norse_ravager_armor.png"
+hash = "0d25959ebb41efca9c2182bd6c08adf608448dc2d59525ddf29796458f99b5b1"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/entity/equipment/humanoid/penitant.png"
+hash = "1810013e41383da57acfbb980a0a38eeeffab13680d0a7c26da0b2069acecf22"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/entity/equipment/humanoid/plaguedoctor.png"
+hash = "bfb8b47f79e75741f8ab9dd8dfb1cbcc24e19d73aa3b72bf4b97dde0bdc22967"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/entity/equipment/humanoid/ratcatcherc01.png"
+hash = "843a0e66f45fb107a7b3b4a89b1f08d34ef9aa85d14fc8ae310e2ef93f17d851"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/entity/equipment/humanoid/scaphander.png"
+hash = "ade2fe7393255d6e87c05de3f05000731286e5e65b3e73ae49c2e79eb52a7571"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/entity/equipment/humanoid/siege_armor.png"
+hash = "0c7a12c8cb7730023c19fe8b5a31df6f1e0595a8dde1f690ed3e02239f7dd2c5"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/entity/equipment/humanoid/snowtigerarmor.png"
+hash = "586e0896022def2a6b9973f900e72aaca2660e3dbfe794ba483d6ed337cc23cb"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/entity/equipment/humanoid/swampfolk_outfit.png"
+hash = "a232a3a3287bc51985429b709318bd031435a5db17626e50a06c1a6e24753d58"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/entity/equipment/humanoid/waldknightarmor.png"
+hash = "5295ff119db5548dc2e249687f299b16c747270adadffa42f2f381d550b71dda"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/entity/equipment/humanoid/wingedcavaleryarmor.png"
+hash = "44f16e9a6fd560e827effd0d9079751d36308d2f2d0486d72c41926608c3375f"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/entity/equipment/humanoid_leggings/axolotl_knight.png"
+hash = "e966b2719228c493abf2fc40897d2779b54a92f6a797c839289b72eba249be0e"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/entity/equipment/humanoid_leggings/bret_corsair_o__armor_v2.png"
+hash = "b4fa02008b98b68abbd295880fd505b442c91703d2bc7a21e1b3a29ea6b6122e"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/entity/equipment/humanoid_leggings/bret_fight_armor.png"
+hash = "c203f6212601e181f9584c0d454af17c0cc7bc4d513e148baf9ff90d1118f2d0"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/entity/equipment/humanoid_leggings/executioner_armor.png"
+hash = "5999b3d64369dcf19dfa6e8613eb29c089a288f75c6af5438571a5e8b034e825"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/entity/equipment/humanoid_leggings/furnace_master_armor.png"
+hash = "78b7bfdcbdcb9e0f189987e547c83a4ad81d91e9ffd22c4291a4754f57cf5a21"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/entity/equipment/humanoid_leggings/gamemaster_outfit.png"
+hash = "19b0185e1675e396855e75ccae1d1fb8fd5ade0e83ebdffe26568cb66ebd8385"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/entity/equipment/humanoid_leggings/gatekeeperarmorb.png"
+hash = "7b3f1c0449e040ab4f15fad6a56124a7ee4223e4195520fa4b24407d6443963d"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/entity/equipment/humanoid_leggings/guard_captain_uniform_r.png"
+hash = "2446e778ecb0f7003313891c84a264d20f8df892ea0277520fbabce462a287b8"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/entity/equipment/humanoid_leggings/highlands_suitb.png"
+hash = "11e6f647329a3b03cfb418608d380c09d360dfc67f169cf35f7d3c6a9313dd2a"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/entity/equipment/humanoid_leggings/maskerade_armor.png"
+hash = "33a8dde50a5ea5af726b8ea901b1701e95846b29ff44e7f8fe3c12b607d7909e"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/entity/equipment/humanoid_leggings/mercenary_swordman.png"
+hash = "d7570dfae2e9059fa098d751a4b47f32102d630b97ca2b64db102a01da696dde"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/entity/equipment/humanoid_leggings/mountainmen__clothes.png"
+hash = "fad6b85a63d141209b680f1ac55e9529c542d3968b2ff3ff365d4f92a51a37a6"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/entity/equipment/humanoid_leggings/netherborn_pirate.png"
+hash = "7f5242f031f2579fe1079ff3b1cb46a56e4a50c53a5b6d8b945ae373b122941a"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/entity/equipment/humanoid_leggings/norse_ravager_armor.png"
+hash = "d98a18dbaad976c567d5578e481db15c3c1375084979ab1c3a63d98ad3f48144"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/entity/equipment/humanoid_leggings/penitant.png"
+hash = "6f5c4865bc4b3cee332a6e9a447449300ebed52f515c5cff9044301b610c61fa"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/entity/equipment/humanoid_leggings/plaguedoctor.png"
+hash = "1de2bd5b5a669871095ff0b0c9181c0fb396927849a685e038c02a3461356214"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/entity/equipment/humanoid_leggings/ratcatcherc01.png"
+hash = "5977575c73251faac7a75263db03b6ea6562376103dec29621a7a6a30142dcfe"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/entity/equipment/humanoid_leggings/scaphander.png"
+hash = "4c2b531174f9c9bbfbd8d8fbf919b6be44fc0fb75eedcb27359b851cd2c9d7c5"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/entity/equipment/humanoid_leggings/siege_armor.png"
+hash = "ddf6f4b3c9ffe69612f397fdd50e678496e6dd33055a2d555f6f9a8696aa4509"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/entity/equipment/humanoid_leggings/snowtigerarmor.png"
+hash = "a1dce3c828284cbb8666948d8d3a0acabacbd55c0fb978bd6d03ed7a0c08d199"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/entity/equipment/humanoid_leggings/swampfolk_outfit.png"
+hash = "6ad3cecb7a93bef3ab5e5a8456eded815ebbbbbd7ad22608e5cc44c85b008574"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/entity/equipment/humanoid_leggings/waldknightarmor.png"
+hash = "d918cf149fd70830984ef4f746c73de38af3f1285a95cd2038a2fff058aac730"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/entity/equipment/humanoid_leggings/wingedcavaleryarmor.png"
+hash = "554dd836759aa8f7f2d276a4edc45e872b5fbc244c86cfb54a28763f87abfa73"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/axolotl_boots.png"
+hash = "825b11d46cbf169598b1ba0a42fd158d8570e501696bc453c7e01bf6345b4ad0"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/axolotl_chestplate.png"
+hash = "cf6d9857e7744fa9c57d768a2eab9e3aeceb820c2c8810c547e87454ed47f858"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/axolotl_helmet.png"
+hash = "fb75d9ff810980c1d447d4aa2840c70c939d4cc8a722aec2a76b633898567b4b"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/axolotl_leggings.png"
+hash = "e318727204307a3236a075e9b1c131cc6f69240689e4155c9e4b4093e258b17b"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/bret_boots.png"
+hash = "79fc755aaafd77b2969f00d099ba361cb6622b86221950d99835abc5bd6f378c"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/bret_chestplate.png"
+hash = "b848d0285e98e0b465ff42fd63e54abb1fbbe97f127e0ca320190d5e1e15cf39"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/bret_corsair_boots.png"
+hash = "4a0aa29478f37f3070cad8f2c6301c41885c43956465fcb9b2d0ee1a56bc3474"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/bret_corsair_chestplate.png"
+hash = "8a90e2e57a79aa18fd26f24e4ff12299f9283dbc95a5027ff9d413c5a2a4af69"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/bret_corsair_leggings.png"
+hash = "c4de014d21cf0947b10ece90b15e7c30344a6c544709a190b813bb412417084a"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/bret_corsaire_hat.png"
+hash = "e59cd57d8526451641eb190b7e6c0f06d9565a23e8b65d03b215eea4034e2719"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/bret_hat.png"
+hash = "9b99736d1bc3dea5a20652d04207ed49f10fae61366172bbdee1cd9a46562c28"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/bret_leggings.png"
+hash = "550c392abae5b6fa97e0de858d37ae29bd7364bdac97e0045467500e02e0be1e"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/executioner_boots.png"
+hash = "954a1944f26e6267715dc694eff6601701814472928215e52e8242419dbdf511"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/executioner_chestplate.png"
+hash = "319ea3d497be563132e000a9588e57c3431dd174ffb36bfafecda92c4687393a"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/executioner_helmet.png"
+hash = "d74d54cb5d7508ae4a4e54a621d3bfd9fe5fa4cd30418245b31e6507f011f522"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/executioner_leggings.png"
+hash = "8d26360699e042fcdc87a00940b17a2d42e44a28c078dd21f68ff79409e56d28"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/furnace_master_boots.png"
+hash = "96853a279d5bc94df3f387c829faa48eca136227951682071f371b87be2eb97c"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/furnace_master_chestplate.png"
+hash = "8fb4b929616fdeb492a28a975b1d3b86402df0ed5677e761a3b54527f75364df"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/furnace_master_helmet.png"
+hash = "a9093be8fa8a2cc472755dce16af20523cd318005cd8d33bdcefd784e3eb4c88"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/furnace_master_leggings.png"
+hash = "ef70cf2c8bae1de5e1bbc9b1c4268926e163f80dc3cfc983899f7eec94ec01f7"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/gamekeeper_boots.png"
+hash = "2a1670c6673c2319712d20ae33a661b317abdec5249a69fe3baf2681070bce9a"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/gamekeeper_hat.png"
+hash = "e94069d750d146aee48537d4e6f659847e0221f8f885d1c703651784272b29fe"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/gamekeeper_leggings.png"
+hash = "7c69958708e4ab9c712c090a331db1c67fe8d6cf38be2858bf98a6332740c4a8"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/gamekeeper_shirt.png"
+hash = "7c2a7e92e224f73d020a2dbec88620e673e9b9d1708565206c7dfc89613ce587"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/gatekeeper_boots.png"
+hash = "414bc8e3338561f78397c121b943c82489b870df99a01fa95deb4bb113bdb8d5"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/gatekeeper_chestplate.png"
+hash = "c7d1a3cf0087f5da8d4c9152a83fa8c95e69a1a91d93b06f598f5e2e9b18edf5"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/gatekeeper_helmet.png"
+hash = "f02e780dbaae4a18ecbf7bb648b900788f5dfc12befb65b7be9c6ce6774d7509"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/gatekeeper_leggings.png"
+hash = "459634795431d8a4226f4017e0219d0812dbb04735b83b3b2cc6066187e9ed08"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/guard_captain_boots.png"
+hash = "f132971d8a59ae5db3c5aab49eeb36ce188d4b1fb33a6490bedd9e1f7e1c6f21"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/guard_captain_chestplate.png"
+hash = "aac5b1a67ebd3a233708b9b05799b24070f9d47c82e3f4bf38ec471fa49eb052"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/guard_captain_hat.png"
+hash = "b5fa9594baa284d0675ab83ca4a15434fc4bb6ccb9b07f266fe11bca195b8939"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/guard_captain_leggings.png"
+hash = "47ad338f0eb47ecc69e7314772f1cebc7a96be393e082c9aa713e83e861c6865"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/highlands_suit_boots.png"
+hash = "a45c3e3fee68f93e0581fc56e4ee83c2e693625d97e016e217e62dcab93b7808"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/highlands_suit_hat.png"
+hash = "92d8c96b4dea27a6c79a4e403b2e3f16108482e9192c1a50bf8e5a852428c3cb"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/highlands_suit_shirt.png"
+hash = "5374f5e9beebce53d44a60ead37fec952054a512e7abca9c3aaed999c8029089"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/leather_cap.png"
+hash = "529432db4b4f2843931f8a5ead54f0c1441385d40032ee0c83819fcdcb4af285"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/markerade_chestplate.png"
+hash = "4073f9944e76fab386d4c8661159b3cc369052d6187b650f228ba880ff15b539"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/markerade_helmet.png"
+hash = "e1d466d916fef42b96b384c4706079cbf2ddb02d411dec17e2ac5c186c30facd"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/maskerade_boots.png"
+hash = "f40ad37ab85e5104df31c4db0e35a11b2d8fcd36a461276ab3a4c492262e4415"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/maskerade_leggings.png"
+hash = "9f150046dccfdfebb436741e0a87fe58890c149c2c35cbbcbcb2bc0f085acd3c"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/mercenary_swordman_chestplate.png"
+hash = "5226686d679c6940b0000107d674a81385a531cf89077c09d7bf680496fef886"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/mercenary_swordman_helmet.png"
+hash = "cbfe3c69701a103798aafbc0a04cfde08f28bd6eb767583e7224c704112e3348"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/mercenary_swordman_leggings.png"
+hash = "83027a34a039cda62467d3e40e45559ef7981a16d3a49a35ebcf0a88950540f1"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/mercenary_swordman_shoes.png"
+hash = "ab5fd5de4955c7286575832bb2a0cc19f4f58e5a2a5b4009d4e2995e6610e39b"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/mountainmen_boots.png"
+hash = "3ca0a48191f2f635e8c12e973dbd801aac832ae6d77b3b1dc4860450142fed24"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/mountainmen_fur_coat.png"
+hash = "a7d9f7eba1ad58e8ef9e445bd3c5e8c2dd42b4fe799e5fc0fd4095b4b8d9da53"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/mountainmen_hat.png"
+hash = "8cf8afff62d01dfe0a313841fc1094a02347242b394d672b66dc834aa870dd4f"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/moutainmen_pants.png"
+hash = "d4333bc74848df7bd7d2463b8b8fff7df66ac0f6561de94db44ed2e9beb0b873"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/netherborn_pirate_boots.png"
+hash = "ab794782e5dc1756d0735ac4d5299b61b79011ee334d38e3c821352bdf6134cb"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/netherborn_pirate_chestplate.png"
+hash = "d285cadc7ee8a5b02bd67584b2d306ae4c5513da06c794b4b6283827e9594d5c"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/netherborn_pirate_hat.png"
+hash = "0040a7c43ffc5edb86aca1a5519bb76b7eaac9d998ba9ead7049ed70442add71"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/netherborn_pirate_pants.png"
+hash = "83acfef8cad87ec2e901928efb19b5a60b17a29d89597953c1ed8a3e45af41b6"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/norsianravager_boots.png"
+hash = "0fd451cf18ddb0e9dac91dc0285bc83cfb4aba73cb91268cefc15b20cf3214b5"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/norsianravager_chestplate.png"
+hash = "d36f426ac92922b45a551d0e0a6c93ff874fa6092637f3e972038daef2976aaf"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/norsianravager_helmet.png"
+hash = "d80fa8e3a6e0b5f2fcf757fc6196907d9121332376caf44dc057a329ea329d00"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/norsianravager_leggings.png"
+hash = "3967237f1911dd316d08028dbce26db95ae38e8e341c115d2ff6dd9ba2be5ecf"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/penitant_lower.png"
+hash = "7445287772156b8089325e3ffc229ce6278ab0fe829efadbeb6361632537471e"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/penitant_sandals.png"
+hash = "e3371cc8d26800394d1d0846dbc0846a8c5c4b3539adedd674c738281a2b9a9d"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/penitant_shirt.png"
+hash = "7f0eedd5d30485f6da815d45783075781d2f26ebd8a1cef1b48fe3e90582c829"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/plaguedoctor_apron.png"
+hash = "382a3e67f01f28607519de609031d03db944aa9b2c5153534db835207602ffa6"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/plaguedoctor_mask.png"
+hash = "33e7219c297d224170fc0f036230d62be024bff924f0945af2c3cf909d488441"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/plaguedoctor_pants.png"
+hash = "525801dec19838fc0e77e13be333b789dae6af34ecf76535afc349f2511dad0c"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/plaguedoctor_shoes.png"
+hash = "28fa2e33b5a6897092686de3d284c212caee40e181329f7384f7f64b29a83918"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/ratcatcher_boots.png"
+hash = "268fffde5d9d3f5c4620a600fd1b37e12d83b6923830e415ca7749abaeaea4f5"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/ratcatcher_hat.png"
+hash = "7b9b2bb3b5d32c4402e4474418c402c44e76b5d4537835c8f1636d68037615ca"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/ratcatcher_pants.png"
+hash = "17750ee16dd2bcad150b4e5b891797f8c488ac034647873edba05cc738b8e558"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/ratcatcher_robes.png"
+hash = "22ff8db71d1f2f5ee250855b979b36c92f682b1c6ebf3ec0cb16b74f53ffbc62"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/scaphander_boots.png"
+hash = "83db15713f0c40b75864a33e5cb3e8350b8f2d6bca24ef1f9340c7047a3dec97"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/scaphander_helmet.png"
+hash = "11ce40aab6ac176a7288274acfe0577e7895157e214d9335d247c4753ffa236b"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/scaphander_leggings.png"
+hash = "d8fc00d9c36665c1982b3a6c80e5bad3e40d16d348f3370cfa56afe205831a9d"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/scaphanger_chestplate.png"
+hash = "cea390f06a55de930ce9ab7ea27707431b760b134a0926bdfba56a00534ae53c"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/siege_boots.png"
+hash = "6e37baabfb26701b0eaf0cc43d84e8c71ba12faaecce58630f34bef281c9fea0"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/siege_chestplate.png"
+hash = "5c30f86f44724a3c4e91dd7d98b8ba5b21da88792542483238350b7652501236"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/siege_helmet.png"
+hash = "4a3a20048ebd99234158c0e434d24cab7e9ee01c44352dfc7aadce18899355df"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/siege_leggings.png"
+hash = "d77f5efe9772c90ee1f60900caab16ff96b20a1a226a22fce74d35cc38380f8b"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/snowtiger_boots.png"
+hash = "68242cf430f9a79340b47dcec7478792925f8f1f1cf3d361fde833cb92a9bfb7"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/snowtiger_fur_coat.png"
+hash = "e862dc44bbfb95f4ddc4946027b562d7a7b4c026c6bba17e50fe361c3fc5fba6"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/snowtiger_helmet.png"
+hash = "3f431832180097e7db3f8d65f968b0446a6e8b4aba31daad783fd79e88d63358"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/snowtiger_pants.png"
+hash = "5363a1252a6481e80ebd1331cfb02c18a9344614241f99b36948c0e5da08b51b"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/swampfolk_leggings.png"
+hash = "efb2e927f8bca52068a156968418760f66c10b4da19ec207b59c88ade88a9064"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/swampfolk_mask.png"
+hash = "28bde0f8ce34cf90fd2faf411b0e629aaa75fa9c74acd7a9d4d289f6c4aaaf80"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/swampfolk_vest.png"
+hash = "d55c771373e33593b8424bb2d43bb6c5483495f443641d49122312bbd3fb18a6"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/waldknight_helmet.png"
+hash = "7c2af1fda4cad1a4b58261205af816d56851dc05b0d03d0f1dab791555b7f3f6"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/waldopa_chestplate.png"
+hash = "1fb8c16cdf987e16437f0a4dfcd03cc8b24f533d1987b86b6594f705b0235d84"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/waldopa_leggings.png"
+hash = "46b8626829d68a35b9e774f87c1e0dfc8024f24b7c41df2881c8ae82df19c1c1"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/waldopa_shoes.png"
+hash = "4124567f8a86c1596f1a54d73105b56c1fdb88f82a8e101925b48f3a47874f06"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/wingedcavalery_boots.png"
+hash = "f80ca75c89556fd77131b48185d30d1772cef1cf50a3560cc31da698808c9129"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/wingedcavalery_chesteplate.png"
+hash = "8f29dd13a4a5ee9a0f055b7ca19e3e1906bfc981c52cf31411cb2f4726b901a7"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/wingedcavalery_helmet.png"
+hash = "328ac0910794991f3dbd3b148bedf939ed40f4e33cf2ca48a6f2db166f359ece"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/textures/item/wingedcavalery_leggings.png"
+hash = "495c9cb904770f8d4ac354666e7b829d2dfdb502d036b640047567c580b01008"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/LICENSE"
+hash = "31911093021894ce4605c238b3d1a4e5b7b26738b924887084516c62a14a3cdd"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/equipment/astolfo_armor.json"
+hash = "ea51d06904048e8ea382ecb2e40def7208b5e3bb29ea940d3e039902ace2d7f2"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/equipment/bridget_clothing.json"
+hash = "02829cb2e627db2eb329852162c93e5ac1e3b5d29a68de178305a7467c16bb6d"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/equipment/felix_clothing.json"
+hash = "6133f8fbab141889ff6c74c67477c665ad5b7889c401019e6ec6ea478473beb2"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/equipment/gabriel_armor.json"
+hash = "7268258650a526cdec906a354fd1cae2010303b6e8d22a7a5b3af8123705b1b7"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/equipment/giselle_armor.json"
+hash = "797e40613527ec8644757f8e79714ab348ec6a0978d43dba5fa87becedec0a5b"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/equipment/griffith_armor.json"
+hash = "f52a879421ac0f058cde58589d563f35970ff19925d601b1c78a405363cc8fd1"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/equipment/mikkela_armor.json"
+hash = "1fd67de17aacc71282921dd04dc958db544e0a6176e07c98ad09f191745a3e0a"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/equipment/niko_armor.json"
+hash = "52255a96ebe0edfc1bba643e541d90a7a874f181685e1575eacb70addb371490"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/items/astolfo_armor_boots.json"
+hash = "49d736d290223d337c66a02892adf1cdf3fa754c54dfb00f542eb9c379398d56"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/items/astolfo_armor_chestplate.json"
+hash = "c73711b466c0b70afa4b9b1becd1de917e4eb330f4488d40c3fdee838e6ad0a7"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/items/astolfo_armor_skirt.json"
+hash = "717fd5e2540d1d4cbaf87d175ffee4bfb37a62e3ac960c5b70ef8b36dc61ce15"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/items/astolfo_armor_wig.json"
+hash = "d48735f3561b2e3e830bcda15133dfe9fa81686d07abe60a0000f95540e74153"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/items/bridget_armor_boots.json"
+hash = "7ea81474290666be501c3c76cf5278e184b92ef386219b309ab7104cff01ce43"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/items/bridget_armor_hat.json"
+hash = "2350811ab34fa6b55911ec207035db527151afd5106f9ea65b4b03f8724afa6b"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/items/bridget_armor_jacket.json"
+hash = "62fd078141ed59ed5f1c1bbad67b722770254c5ae54942cef275aeefedf433db"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/items/bridget_armor_skirt.json"
+hash = "d7f3b8bfc6ae47d5b690713037630b2c99e89061852fae0a7289a4a5a9fe04b9"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/items/felix_armor_boots.json"
+hash = "ebb34976696877df1ffc93512016e6716bcedd7e2693e542bdf7f9cbf19fb117"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/items/felix_armor_hat.json"
+hash = "a9a071e8e4a42021dd5e55d3410f2a905d81a8473ebb68bc5c5ce52e211db7bd"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/items/felix_armor_jacket.json"
+hash = "784f14ac782abda0e4f0289e3c8485478fd014b5243e3ad3560aada9f290891e"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/items/felix_armor_skirt.json"
+hash = "cad2aac43662e6d45f5bb375a87cb155ae57e2927765716cf999e7a17d662b12"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/items/gabriel_armor_boots.json"
+hash = "8c665a29e03811808cc49b7bc4d9389d7550aa731121a2bf0fe5ff394b7b7190"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/items/gabriel_armor_chestplate.json"
+hash = "3245d89386f8bb4827ff88701527119e714c61438cda076b32bab037132be062"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/items/gabriel_armor_helmet.json"
+hash = "50f0488aaf7f82d01f347383df74fafb43f07b09b15534daf628f4782f7f4707"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/items/gabriel_armor_leggings.json"
+hash = "b80ac281e1e6bf596a08c2809db8441316ba7fcc8dbbfb6d2480e0ceb672acd5"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/items/giselle_armor_boots.json"
+hash = "4d89fd12bd9715a5a76588222e64e7dfc54dc73bc02cc046257276831965c328"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/items/giselle_armor_chestplate.json"
+hash = "2ef7848021288631f0422500e8ae170735a23e10d45e5807651824f204ae937d"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/items/giselle_armor_leggings.json"
+hash = "23119ab28f9f238d1698ded24850be4e157fc30277df7f01bc5713d04cd295fd"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/items/giselle_armor_wig.json"
+hash = "1e2e33f300be22fcdb1cd36f3fcc12df0c5b64baf3029d62995df110be682a9a"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/items/griffith_armor_boots.json"
+hash = "06dd09f452747b9ee4900668365a91c3b131d914855e040eea32fe5ac7b21afd"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/items/griffith_armor_chestplate.json"
+hash = "606e7f9ccdf20ab3113f4471f3cae92b3ffc9fdadff8b782ba0820d45f08da0f"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/items/griffith_armor_leggings.json"
+hash = "33db4a593b432b7d6a97a5176ec272af860fe5b9bc1649d8734bd50aa4c38d8c"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/items/griffith_armor_wig.json"
+hash = "86d835790d6ae00d7c14f4998883625b76ed077f0b621a7325d5272fb2ed9443"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/items/mikkela_armor_chestplate.json"
+hash = "fbc6e0857c540ef0053ba91910b017f4dac01044a908dff78e56fee5a87ac035"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/items/mikkela_armor_leggings.json"
+hash = "ccf093bebaa09edbbcb21fc87f25528f9c8aa601d5cba4628c8b6f1599612969"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/items/mikkela_armor_wig.json"
+hash = "d774de0277cb276ee874130012768cfa65b55602a87b5964f46978270de393aa"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/items/niko_armor_boots.json"
+hash = "83a20ab59015d2ce670eaee849a5bf15395ab8069e0790d14258f6d5e1e7e67a"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/items/niko_armor_chestplate.json"
+hash = "aaa74b08279a44628cdf4b705e993652fa906efc53ae77f5dde6c483779fd5bf"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/items/niko_armor_hat.json"
+hash = "9957ec43b327e7eed546a62819dccdefb795b76a29e6083002f0863af9d0cdb0"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/items/niko_armor_leggings.json"
+hash = "61e1c46b4833c60a2a6880049bf565028560301abc445a675af8e3fb622ef2f0"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/lang/en_us.json"
+hash = "0b4cd0715d16868e33362f82e5147e13692b18131127193a6a3bce428d84a938"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/models/item/astolfo_armor_boots.json"
+hash = "f97610e877b10d8b89b40b7ba71f63092a58b0c8643930dd0882c7d25fa23383"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/models/item/astolfo_armor_chestplate.json"
+hash = "e81d155c05dc5bc3e520e24d7aea2e2a440b7f7189fd3f3ff99ea155d11d31f6"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/models/item/astolfo_armor_skirt.json"
+hash = "3edc03100d55ecc5219b553f2258f69ff0b8117d245e0154be4288d2e2dcdb9e"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/models/item/astolfo_armor_wig.json"
+hash = "0d14ea50b2b4c18d386072a217366782d090fb85abc39110f90779797ac477b2"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/models/item/bridget_armor_boots.json"
+hash = "cd4eea253414d079a021960c83041830c5a1bc91ba61e0d9b9bc8082df025ece"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/models/item/bridget_armor_hat.json"
+hash = "35af84898df8646e8ba2b8aaee2bd6d7b47651ed340735f7ee348a18baa124e3"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/models/item/bridget_armor_jacket.json"
+hash = "bd13419e0caa6c5a564c092e2075dd0fca31b6b45985f8d7ac37e79cd3552e79"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/models/item/bridget_armor_skirt.json"
+hash = "fdb52e64ca3518606e3ca4702574e4602dd43736aa12d3d91a419a6f3c55f290"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/models/item/felix_armor_boots.json"
+hash = "047ac924d322b7c9ee582bb756fa129c14976b4760f5ae0a395ed6e2f8289d70"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/models/item/felix_armor_hat.json"
+hash = "1b692c2ca65ef2d7662170142b2c179d5fdd574054ff0115f5a7e73caa90fc4e"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/models/item/felix_armor_jacket.json"
+hash = "d7dfe78da67a5626fbcb3e109da8ebee8086258be8e8858da1a7cffd27077318"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/models/item/felix_armor_skirt.json"
+hash = "bd0cdc929cd30f3f300230b361ee4eef76563a3e75a14481803e0449ef90a0a9"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/models/item/gabriel_armor_boots.json"
+hash = "b8b4b125283a87fb9d2f579fd1c69dbe6fc4353a2733e473162ab7c47307444c"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/models/item/gabriel_armor_chestplate.json"
+hash = "8b8fd3d2c78c611aaaee63d9e50555df715ecf85bac1f7b03d358f7f7957fffc"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/models/item/gabriel_armor_helmet.json"
+hash = "ecd2bb3372958ed9072e2fd2ae696b85459be2c93a2456b2591156c0f3ba469d"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/models/item/gabriel_armor_leggings.json"
+hash = "2127b7e3835e8bcda99bff8cbf82b3b233f410e53036aeca24f1e98c440c6284"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/models/item/giselle_armor_boots.json"
+hash = "22d85e3f7fce9dbb369db4cb863033b1d0539a74eb70bf6814970004286d220b"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/models/item/giselle_armor_chestplate.json"
+hash = "b1643ce5dee64edf13e5fd9ea1f8bed08d40e69c18d051e7508ea46062a2a9dd"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/models/item/giselle_armor_leggings.json"
+hash = "46c5c317ab9f9f6728aeb1146ee0e85874bbf3e03366e39882aefa743be872cc"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/models/item/giselle_armor_wig.json"
+hash = "d3f668b56666109daa7d509ae5eced2cbc79f0e13f515ba62b6cf3ff858778c0"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/models/item/griffith_armor_boots.json"
+hash = "f9160645e8f563758d6904a06daefd6a3659c365f0b2357bcfc39026d0ea1127"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/models/item/griffith_armor_chestplate.json"
+hash = "134e7a7172ae570145c124b2a5f99cb1183dfc5725b71edb79a87a9661e88fff"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/models/item/griffith_armor_leggings.json"
+hash = "f2dfde9955128e9aaee63d516fdbc417430cb543917b60373de97ee56692c5b4"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/models/item/griffith_armor_wig.json"
+hash = "5931d5f16b38995cda35e546928d10061032a198268cf104897e8c380ba32a25"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/models/item/mikkela_armor_chestplate.json"
+hash = "77d9c34f9d71ec17a4c85b966bcf0c0b0f14d2361478526484da6b2d5801697c"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/models/item/mikkela_armor_leggings.json"
+hash = "3c3bc12eb4c9e54e3eab112daf61c4315715bcdbcfc2ceded411ff2fea23746f"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/models/item/mikkela_armor_wig.json"
+hash = "4199baa58e81c88f89de18bf7e3e37d2555f9b105d31aea23a19826128b3bf11"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/models/item/niko_armor_boots.json"
+hash = "a9cfa507dbca1b15c16eaab4ff06c2bc40af3c6d7383404b96653d80961742e2"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/models/item/niko_armor_chestplate.json"
+hash = "769d4c7d0e67ac456903edfdf9bb47e46f95105bb3ac69f5d70809b919c165c1"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/models/item/niko_armor_hat.json"
+hash = "697d93c6b4c71dfe280408b359f3aeea3047befbe70c4cb47c43df5036226255"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/models/item/niko_armor_leggings.json"
+hash = "06fb4e5f35b9fc7778b5ccdb16175c0d64ffd070dd793b9fbca35816a601051e"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/textures/entity/equipment/humanoid/astolfo_armor.png"
+hash = "3808b6cc6d325004183afb0661670e54bc4ad088b748efcc23e074a1107a2b15"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/textures/entity/equipment/humanoid/bridget_clothing.png"
+hash = "8e7768c28982f327dbad87fdab5e70cba384a49ccd7b31c3733633c4748570ae"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/textures/entity/equipment/humanoid/felix_clothing.png"
+hash = "0d0d66cb8353ef694e2b4982e118dd98d7beef90f7341fa732c8954fd91050e9"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/textures/entity/equipment/humanoid/gabriel_armor.png"
+hash = "abf7fdcc026bddf96b4ea039e2ee4b3595ea7a410c36ecb7b5ca335283127eaf"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/textures/entity/equipment/humanoid/giselle_armor.png"
+hash = "b8fcd04a0a89ddf97c2a6cf4d67ce47015c288dee14281bf40b80540ae077e92"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/textures/entity/equipment/humanoid/griffith_armor.png"
+hash = "0edabe5291c69ee74fd862e1c2d9520614aa405e1a62cab3d9f6ab2aeba5c536"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/textures/entity/equipment/humanoid/mikkela_armor.png"
+hash = "ac6a515a3598bf19cb15827d2296a1a9c987aba18e9cef8dc793a95453bc0cdf"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/textures/entity/equipment/humanoid/niko_armor.png"
+hash = "5976b47728e5a47bf81aa7dbf4bf3154b4d32842876b854b875ff7759cb049bc"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/textures/item/astolfo_boots.png"
+hash = "7104a50b5710e44162afea824e1bff3c546c5d74de5fc9a677a3081249c6f32b"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/textures/item/astolfo_chestplate.png"
+hash = "1ac76e5a3ff5bcf849092aa0e319da4e210c3cd71dece2a401281a0528b40d59"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/textures/item/astolfo_skirt.png"
+hash = "2f2590ba1cf1ecc60f938278ae9a58b6d1c440ce467c0c708ea42b70d40be1f0"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/textures/item/astolfo_wig.png"
+hash = "f0d7cdb8a5cca52f1856ea53b3c2c1413be60b759063d401ec49cc2e13af5954"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/textures/item/bridget_boots.png"
+hash = "55799275171098d2a3da48e12188b8711da17af869ab0e00d1f6420ccc4dd72d"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/textures/item/bridget_hat.png"
+hash = "025cb94bd809a06b8eaccd7f9287fd137dc121d5bdabfc812f826adf8c6857ba"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/textures/item/bridget_jacket.png"
+hash = "782695858effa3f4fbe2336a94880e190a2b8b730f7775b274dca1f8e9a0102c"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/textures/item/bridget_skirt.png"
+hash = "e267a58e75f3b764f6ac5370a1399d461618d9db754a534ed92d2db6cdc2ec47"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/textures/item/felix_boots.png"
+hash = "e19b42e1b192f59f04f386dda56416beed6a91994da4752f794706326e2494be"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/textures/item/felix_dress.png"
+hash = "f850f1052859dd55760696d7f1989a3bb514458866a64bc4689fcc00c9984d1b"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/textures/item/felix_pantyhose.png"
+hash = "0821244096c412885cf5999381290a72194624297215742f2b9fca72f4e8c5f3"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/textures/item/felix_wig.png"
+hash = "314fd8f9924404e719a3365101bdbefe76893c759dc447b2b27d7b4882450368"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/textures/item/gabriel_boots.png"
+hash = "72723e272ae3ee00ceb49f4d7627b32461333bf3734201267318bb201d3e1a03"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/textures/item/gabriel_chestplate.png"
+hash = "599dafa0cdcb76c5a4fa0da6bb6e3a98955a33e1b4df596173964dc64c4f3f1e"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/textures/item/gabriel_helmet.png"
+hash = "135a1e8d2370d6033620a05da189d4802a0b22d181a4ed00c7439a99f0d24b68"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/textures/item/gabriel_leggings.png"
+hash = "b557558c3b906832c67a325ced159c81284d0e7bebf8b5d2bb03a946c2c94c09"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/textures/item/giselle_boots.png"
+hash = "c55b3430a69fc8d0cae82e094d266f12acaf5ba9dbf1798473ddd4d167c66583"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/textures/item/giselle_chestplate.png"
+hash = "76a9f445916094bcb7be41714eae828b1e2b35002c42a4bdebfde01c0e0d3ef5"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/textures/item/giselle_leggings.png"
+hash = "aa503287b4e35d737e98c3cb997d454112c6d976236c4c231bc2b00387ad0b81"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/textures/item/giselle_wig.png"
+hash = "1b9c9c793b522fd20fed26cf61701d33b9d5a4742be3c3c8bf9fcba9369489cb"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/textures/item/griffith_boots.png"
+hash = "c5657046031c4cee0f34e897d525528243fdd7ea009d1d93eac8e51001c1bc75"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/textures/item/griffith_chestplate.png"
+hash = "862f77d6d52a897e84fa353546f3c28d857166afa549932cc95f2955a1076f70"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/textures/item/griffith_leggings.png"
+hash = "e913b7e61e4dcc212ac05eb0ab37eeaff2851f806de3dcd553dd94fcb44dcb73"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/textures/item/griffith_wig.png"
+hash = "d6a12b2d490df5a78807b7aaae04674acf086c86319d2edf7c485a5cab5f5f36"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/textures/item/mikkela_chestplate.png"
+hash = "432ccde4fb51ef92eb127454b1578d6003cef7cf887ba328bfb51d3b367901c9"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/textures/item/mikkela_leggings.png"
+hash = "0237600de456f2a031f82b4a81f683262a304bdb406e64447365cb5ec4311cd7"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/textures/item/mikkela_wig.png"
+hash = "d5fc5f8a7f15a3f1a9cec02f62948cf61006144bcf7eb8bfaa6dd8a371c4c2a6"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/textures/item/niko_boots.png"
+hash = "ba7fc765c529ba823ca733352e28c3f6cd606f8af26cd595b06295e0cc5c6046"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/textures/item/niko_chestplate.png"
+hash = "74c38fc905072603d6e3222d6fa2b678416ba0a91d31893c018b1eb1dd25a8d3"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/textures/item/niko_leggings.png"
+hash = "ab0af1528a9e44fb4bb1715641bd267dba22a741bf87f48ca3900f060023254c"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/weaversparadise/textures/item/niko_wig.png"
+hash = "a00ad11e5cbe4a26e7da47a49e517e15b6c26081155e582455b211fd59d50d4b"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/pack.mcmeta"
+hash = "75cf7097888528dfe286bae0d19a10ccd97dd45ab05c9d127cd9719f02808211"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/pack.png"
+hash = "84aa2c842e1433d91304c99231648599f47185c5c7c9488864aa783b8ed184f2"
+
+[[files]]
 file = "resourcepacks/toheee1234's Better Combat Animations/assets/bettercombat/player_animations/.mms-swingfix-backup/one_handed_slash_horizontal_left.json.was-two-handed"
 hash = "785e6fbeb76a9d64c5aad07dbc356b29e869ac3a8f622bb78f11c982dabca01f"
 
