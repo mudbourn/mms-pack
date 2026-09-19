@@ -1,6 +1,11 @@
 .git/**
 /__pycache__/**
 *.pyc
+# JVM crash dumps — never index these (a crashing `java` run in the repo dir
+# drops hs_err_pid*.log here, and packwiz refresh would ship them to clients).
+hs_err_pid*.log
+replay_pid*.log
+/*.log
 /xaero/world-map/**
 *.mrpack
 /mms-add.sh
