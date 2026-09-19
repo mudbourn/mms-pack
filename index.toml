@@ -2831,7 +2831,7 @@ metafile = true
 
 [[files]]
 file = "mods/mms-economy.pw.toml"
-hash = "0c145341628f9e0c4a72253cc448f3ce016eee10999c5ea30ea52ce0ce79a6c8"
+hash = "6cf5f0f1df6d550ea658909f8dcff18055022c137f5cb911a3ecdcce856b8994"
 metafile = true
 
 [[files]]
