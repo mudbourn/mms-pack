@@ -2831,7 +2831,7 @@ metafile = true
 
 [[files]]
 file = "mods/mms-economy.pw.toml"
-hash = "6cf5f0f1df6d550ea658909f8dcff18055022c137f5cb911a3ecdcce856b8994"
+hash = "11e4a1ab505a723dff294cd03cfa2e1079615ddfc249eeff3b3ce7d1224d344c"
 metafile = true
 
 [[files]]
@@ -2841,7 +2841,7 @@ metafile = true
 
 [[files]]
 file = "mods/mms-metro.pw.toml"
-hash = "7882506ef30b0c3cef372ddecf5b98a9887fae1891af7f9f05eee86e65fdee33"
+hash = "647fce0362cdc85ef2c5c9e17e795b9eb875daa0efd1c503bfc7ba6391b38f75"
 metafile = true
 
 [[files]]
