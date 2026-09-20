@@ -1,0 +1,13 @@
+name = "NoCreativeDrift"
+filename = "nocreativedrift-fabric-1.21.11-6.0.0.2.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/VPrmY5T9/versions/YQBIHj9a/nocreativedrift-fabric-1.21.11-6.0.0.2.jar"
+hash-format = "sha512"
+hash = "38847fef12e01dd3ba162d3a58e24c03ac5ea393b71ae3e4e4c49c47eab572c46d87ef25a5dd198075bfb1e3c8e8ab77f6d952989f14bc7317a4915a405920e3"
+
+[update]
+[update.modrinth]
+mod-id = "VPrmY5T9"
+version = "YQBIHj9a"

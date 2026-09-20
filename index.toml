@@ -2851,7 +2851,7 @@ metafile = true
 
 [[files]]
 file = "mods/mms-origins.pw.toml"
-hash = "cae4fc639f46740e0d5679d94de5515af8dcdba0c51ce3a48220968cb2268d79"
+hash = "feaa1ba9fc24512f5a9cf5cd43cd14a8e262e4cf6634c31ce5086610f328fc8c"
 metafile = true
 
 [[files]]
@@ -2942,6 +2942,11 @@ metafile = true
 [[files]]
 file = "mods/no-telemetry.pw.toml"
 hash = "c5e7e0a3de03c138f587fc56dca70013978677e0cde2ad19024dc798178a49bd"
+metafile = true
+
+[[files]]
+file = "mods/nocreativedrift.pw.toml"
+hash = "064b421cb1b31634b2a540108baaaab2877913c0ff3943d1a1afd19be0acb96b"
 metafile = true
 
 [[files]]
