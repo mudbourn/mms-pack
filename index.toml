@@ -2805,11 +2805,6 @@ hash = "99f7f707901d895e31e6048e6c7b1ad361b6ba490fbc4f822510f7ae12643ab7"
 metafile = true
 
 [[files]]
-file = "mods/ly-combat-log.pw.toml"
-hash = "3ad82b982bdd750b8e5710ac3178d0fe854a25c4eabcce18d5539995c131598c"
-metafile = true
-
-[[files]]
 file = "mods/main-menu-credits.pw.toml"
 hash = "fa3e6df3d222c94014c840673aa92455210d404eadceb05dd5ab3ae5a3eab6db"
 metafile = true
@@ -2851,7 +2846,7 @@ metafile = true
 
 [[files]]
 file = "mods/mms-origins.pw.toml"
-hash = "b31423dba428d1927b55aed6f922a21a6322e475aab4ab8cdbdf41d24a9b27f6"
+hash = "87a3e7881853f1b89407c7f874fc707f29c114210862b7475ad0356a3430858d"
 metafile = true
 
 [[files]]
