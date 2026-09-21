@@ -2481,7 +2481,7 @@ metafile = true
 
 [[files]]
 file = "mods/entityculling.pw.toml"
-hash = "6853988c852f57190ba3515c5b78472838d44d8d8b2666538a5843ea56382553"
+hash = "9a96591e7402eb103543c8107417666963d5e1a942cc3efc48d15a755a5e14d3"
 metafile = true
 
 [[files]]
@@ -3126,7 +3126,7 @@ metafile = true
 
 [[files]]
 file = "mods/simple-voice-chat.pw.toml"
-hash = "6e8067b0cbe5bf8b6c62cf499746ac1f6bfc66466edf92a42218d7f892008004"
+hash = "58dc0ce5f0f89fcd94dae6df1df1b440078d122173ff0a223b540561221d258a"
 metafile = true
 
 [[files]]
