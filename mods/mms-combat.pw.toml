@@ -1,0 +1,15 @@
+name = "mms-combat"
+filename = "mms-combat-0.1.4.jar"
+side = "both"
+
+[download]
+url = "https://github.com/mudbourn/mms-combat/releases/download/v0.1.4/mms-combat-0.1.4.jar"
+hash-format = "sha256"
+hash = "6a5a51c087e124939446fb3dc6d5271ca87670d75c72b874b46051b8afe70d42"
+
+[update]
+[update.github]
+branch = "main"
+regex = "^.+(?<!-api|-dev|-dev-preshadow|-sources)\\.jar$"
+slug = "mudbourn/mms-combat"
+tag = "v0.1.4"

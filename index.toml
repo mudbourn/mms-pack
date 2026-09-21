@@ -2825,6 +2825,11 @@ hash = "835c556c329a2f55f8f67b36ad5826b63dce0f91073bb28913250c3c80cfab04"
 metafile = true
 
 [[files]]
+file = "mods/mms-combat.pw.toml"
+hash = "94c399f8a1c34c190fe6835da07ba8dcd5df5b5d96e8172cadc9dd9c8601dc3e"
+metafile = true
+
+[[files]]
 file = "mods/mms-economy.pw.toml"
 hash = "549c2ab16db8ff1f681d760cc3bf0d4b5501a738902b76de69295003017bba66"
 metafile = true
