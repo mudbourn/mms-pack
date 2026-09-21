@@ -2068,7 +2068,7 @@ hash = "55a38f9f8e830c0118b3795ec17da050db9aa6709d0d0d314a0e2f482190eb49"
 
 [[files]]
 file = "mms-server-sync.py"
-hash = "da75b54a41436e61a0d7422111f21b6fa7a41e26629dfbf1d505c254ea46a102"
+hash = "947194314f73878a3158052fafc38defe2dd494bd13ab8cd4418267ed45afef1"
 
 [[files]]
 file = "mms-ship.py"
@@ -2826,7 +2826,7 @@ metafile = true
 
 [[files]]
 file = "mods/mms-combat.pw.toml"
-hash = "94c399f8a1c34c190fe6835da07ba8dcd5df5b5d96e8172cadc9dd9c8601dc3e"
+hash = "9b4c1461bc4b83fa5dbc4f6f07fdf8d498021fbbce615b59acd1c4af8c923ce0"
 metafile = true
 
 [[files]]

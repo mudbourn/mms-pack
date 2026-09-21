@@ -3,6 +3,8 @@
 
     mms-server-sync.py <server_mods_dir> [pack_dir] [--prune] [--hold FILE] [--dry-run]
 
+Short flags -n (--dry-run) and -p (--prune) may be stacked, e.g. -np.
+
 Extracted verbatim from mms-deploy.sh so the prod flow (→ MMSLive01) and the
 test flow (→ MMSTesting01) share one implementation. pack_dir defaults to the
 directory this script lives in. Adds new released jars, removes superseded
@@ -31,6 +33,19 @@ Used by `mms-deploy.sh --dev`.
 import json, os, re, shutil, sys, tempfile, urllib.parse, urllib.request, zipfile
 
 raw_args = sys.argv[1:]
+
+# Expand stacked short flags (-np -> --dry-run --prune) so a dry run and a prune
+# can be asked for in one token. Only a run of recognised short flags expands;
+# anything else (a long flag, a path) passes through untouched.
+SHORT_FLAGS = {'n': '--dry-run', 'p': '--prune'}
+expanded = []
+for a in raw_args:
+    if len(a) >= 2 and a[0] == '-' and a[1] != '-' and all(c in SHORT_FLAGS for c in a[1:]):
+        expanded.extend(SHORT_FLAGS[c] for c in a[1:])
+    else:
+        expanded.append(a)
+raw_args = expanded
+
 prune = '--prune' in raw_args
 dry_run = '--dry-run' in raw_args
 TAG = '[dry-run] ' if dry_run else ''
@@ -43,7 +58,7 @@ if '--hold' in raw_args:
     hold_file = raw_args[i + 1]
     raw_args = raw_args[:i] + raw_args[i + 2:]
 
-args = [a for a in raw_args if not a.startswith('--')]
+args = [a for a in raw_args if not a.startswith('-')]
 
 server_mods = args[0]
 pack_dir = args[1] if len(args) > 1 else os.path.dirname(os.path.abspath(__file__))
