@@ -570,7 +570,7 @@ hash = "ae467d883fde485268b59be22eeb2f099fea369f7cd55ad73b548ee4146941b3"
 
 [[files]]
 file = "config/combat_roll/hud_config.json"
-hash = "db68ff2cc09183d7690a479435272f1b527750f39c5886cf29f210546ca92c69"
+hash = "d06ada138bd3a3dd7d4457585909cd2ac127659da1e0ebe41aedf9d2ae5b9dee"
 
 [[files]]
 file = "config/combat_roll/server.json5"
@@ -2826,7 +2826,7 @@ metafile = true
 
 [[files]]
 file = "mods/mms-combat.pw.toml"
-hash = "6e20625621927d8133d2301e980b0642dce5979b25d1198e8927b681b36edf04"
+hash = "6366ef7b1f4a872c4c4bf238bbf0b2cc2a19118d92c36daf520822b2b2f2f163"
 metafile = true
 
 [[files]]
@@ -2841,7 +2841,7 @@ metafile = true
 
 [[files]]
 file = "mods/mms-metro.pw.toml"
-hash = "647fce0362cdc85ef2c5c9e17e795b9eb875daa0efd1c503bfc7ba6391b38f75"
+hash = "f1528338929bb901456a9644d6f480f7c2b6cc8f416e529ede61a22745301152"
 metafile = true
 
 [[files]]
@@ -3374,6 +3374,10 @@ hash = "b9066168f0bf4b93167ed1311f0e5b2671b8019e74fc1de7ff9b21f66182360c"
 [[files]]
 file = "quarantine.txt"
 hash = "87a7dcd7408d9f5ce6e3fbbd296425e7e3cbcb20a39b210a08ddd02ae30fe3d6"
+
+[[files]]
+file = "recommended-jvm-args.txt"
+hash = "fa476a095a72cea45329580b90b62fca95c2549ad7a74ea3cdd2a842efa08968"
 
 [[files]]
 file = "resourcepacks/Better-Leaves-9.5/LICENSE"

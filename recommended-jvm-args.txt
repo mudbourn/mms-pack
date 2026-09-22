@@ -1,0 +1,83 @@
+MMS Live — recommended runtime (players)
+=========================================
+
+This is the player-facing runtime tuning: a quiet, low-pause GC and sane
+memory. It is kept here rather than in the launcher because Prism rewrites
+instance.cfg on save and wipes the `notes` field, so there is nowhere inside
+the launcher to record why these values are what they are. (The developer
+hotswap args live separately in dev-client-jvm-args.txt.)
+
+packwiz syncs mods only; it never touches the instance/JVM layer. So none of
+the below is applied for you automatically — set it once per instance in
+Prism: Edit Instance -> Settings.
+
+
+1. Java runtime: HotSpot, NOT OpenJ9
+------------------------------------
+
+Use a HotSpot build of Java: Eclipse Temurin (Adoptium), Azul Zulu, or Amazon
+Corretto. In Prism, "Download Java" fetches Temurin.
+
+Do NOT run on IBM Semeru / OpenJ9. The whole Fabric ecosystem (Sodium/Chloride,
+Lithium, C2ME) is built and tested against HotSpot, and spark's client profiler
+(/sparkclient) uses HotSpot-only internals -- on OpenJ9 it segfaults the whole
+game with a GPF in getTargetVMThreadHelper. OpenJ9 is also a known source of
+stutter and mod incompatibility in modded MC.
+
+Confirm the selected Java under Settings -> Java shows Temurin/Zulu/Corretto,
+NOT "IBM Corporation". If Prism is on auto-detect and Semeru is the only 21/25
+installed, it will silently pick Semeru again -- install a HotSpot build first.
+
+
+2. Memory (Edit Instance -> Settings -> Memory)
+-----------------------------------------------
+
+Set minimum == maximum so AlwaysPreTouch grabs the whole heap up front (no
+mid-session heap-growth stutter).
+
+  System RAM     Min = Max heap
+  ----------     --------------
+  8 GB           3072 MB   (tight; close other apps)
+  16 GB          6144 MB   <-- typical
+  32 GB+         8192 MB
+
+Do NOT hand the heap most of physical RAM. Modded MC uses a lot of OFF-heap
+memory that -Xmx does not cover (render buffers, texture atlases, native chunk
+data, direct byte buffers), and ZGC keeps more metadata than G1. Overshoot and
+total usage spills into swap -- swap thrash freezes far worse than any GC pause.
+
+
+3. GC: generational ZGC (quiet, low-pause)
+------------------------------------------
+
+ZGC does almost all its work concurrently; pauses are sub-millisecond and
+independent of heap size, so you never feel a GC hitch. This is the "quiet"
+choice and the reason we do NOT use Aikar's G1 flags -- G1 deliberately targets
+~200 ms pauses.
+
+Paste into Prism: Edit Instance -> Settings -> Java -> tick "JVM arguments".
+
+--- Java 25 (the pack's target Java): copy from the next line ---
+-XX:+UseZGC -XX:+AlwaysPreTouch -XX:+PerfDisableSharedMem -XX:+DisableExplicitGC
+--- end ---
+
+--- Java 21 (if you are on 21, generational is opt-in): copy from the next line ---
+-XX:+UseZGC -XX:+ZGenerational -XX:+AlwaysPreTouch -XX:+PerfDisableSharedMem -XX:+DisableExplicitGC
+--- end ---
+
+Why the difference: generational ZGC is the efficient one (it doesn't churn the
+whole heap). On Java 21 it is opt-in via -XX:+ZGenerational. From JDK 24 on it
+is the only ZGC mode and that flag is obsolete -- on Java 25 it is accepted but
+ignored with a warning, so leave it off.
+
+Keep the flag list this short. ZGC is meant to run with minimal knobs; do NOT
+mix in any G1 flags (MaxGCPauseMillis, G1NewSizePercent, G1HeapRegionSize, ...)
+-- they are ignored or rejected under ZGC and only add noise.
+
+
+4. Verify it worked
+-------------------
+
+After launching: the OpenJ9 GPF crash does not recur, and /sparkclient runs
+instead of blowing up the game. If it crashes again, the instance is still on
+Semeru -- fix the Java path (section 1).
