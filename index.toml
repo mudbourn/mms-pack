@@ -2296,7 +2296,7 @@ metafile = true
 
 [[files]]
 file = "mods/cinematic-respawn.pw.toml"
-hash = "4f81b7b4ff5ec7e5343831f75a8e4f24f59800f93c366dd35ebcbccc203e197c"
+hash = "9eea3593c3b5addeb16d57526057ae22c7bcafac5d81deeb60561ef85f1e4198"
 metafile = true
 
 [[files]]
@@ -2666,7 +2666,7 @@ metafile = true
 
 [[files]]
 file = "mods/inspect-animations.pw.toml"
-hash = "c5d96dc597f5cb038ec8193fbd9ede9339239f4301ca4864e7beedb070a00781"
+hash = "1af70fa963225f7de3e9926602b3adcfc8ca63b2407fe95d763a69e8490e86b1"
 metafile = true
 
 [[files]]
