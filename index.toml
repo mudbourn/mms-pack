@@ -2666,7 +2666,7 @@ metafile = true
 
 [[files]]
 file = "mods/inspect-animations.pw.toml"
-hash = "1af70fa963225f7de3e9926602b3adcfc8ca63b2407fe95d763a69e8490e86b1"
+hash = "e87fb83e52e066ceefacc815b27d5887dae0dad9990c5e300147da714d56661f"
 metafile = true
 
 [[files]]
