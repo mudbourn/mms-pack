@@ -1,15 +1,15 @@
 name = "mms-render-common"
-filename = "mms-render-common-0.1.1.jar"
+filename = "mms-render-common-0.1.2.jar"
 side = "both"
 
 [download]
-url = "https://github.com/mudbourn/mms-render-common/releases/download/v0.1.1/mms-render-common-0.1.1.jar"
+url = "https://github.com/mudbourn/mms-render-common/releases/download/v0.1.2/mms-render-common-0.1.2.jar"
 hash-format = "sha256"
-hash = "33cbb9347e00ad84d1fec0d96e705f14e9953ecd8c9b890d1a4a741f5fd7082f"
+hash = "c55677ae4b1b02063c20f758df156364de3211250bf26922d32b0071bc171929"
 
 [update]
 [update.github]
 branch = "main"
 regex = "^.+(?<!-api|-dev|-dev-preshadow|-sources)\\.jar$"
 slug = "mudbourn/mms-render-common"
-tag = "v0.1.1"
+tag = "v0.1.2"

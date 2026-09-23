@@ -2856,7 +2856,7 @@ metafile = true
 
 [[files]]
 file = "mods/mms-render-common.pw.toml"
-hash = "e08567c318e565ed971a1a0652b38dca222d837bc8e536afad80d9a063f9ce43"
+hash = "00b23f55532abd17d69668bb77d8d061580ba70cb15102938eeac11d9053e491"
 metafile = true
 
 [[files]]
