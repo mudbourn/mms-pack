@@ -1,0 +1,9 @@
+{
+  "geo": "armoroftheages:geo/armor/exalted_aurum_armor.geo.json",
+  "slim_geo": "armoroftheages:geo/armor/exalted_aurum_armor_slim.geo.json",
+  "texture": "armoroftheages:textures/models/armor/exalted_aurum_armor.png",
+  "slim_texture": "armoroftheages:textures/models/armor/exalted_aurum_armor_slim.png",
+  "animations": "armoroftheages:animations/armor/exalted_aurum_armor.animation.json",
+  "idle": "idle",
+  "transition_ticks": 0
+}

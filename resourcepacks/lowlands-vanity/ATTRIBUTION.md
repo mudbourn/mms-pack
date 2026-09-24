@@ -27,6 +27,15 @@ the standard MIT terms with the copyright attributed to Vortianski (2025-2026, f
 the upstream repository's own history), so a notice travels with these copies as
 MIT requires.
 
+## Armor of the Ages - `assets/armoroftheages/`
+
+Textures, item models and names from
+[Armor of the Ages](https://modrinth.com/mod/armor-of-the-ages) by Poulpinou and
+TheGoldenWorld, declared MIT; notice at `assets/armoroftheages/LICENSE`. The
+`geo/`, `animations/` and `geo_armor/` files are generated from the mod's Java
+models by mms-render-common's `tools/java_model_to_geo.py`. Patreon-tier skins are
+not included.
+
 ## Clothing of the Lowlands - `assets/lowlands_clothing/`
 
 Textures from **Clothing of the Lowlands** by **Anton_Vaedak**. All rights

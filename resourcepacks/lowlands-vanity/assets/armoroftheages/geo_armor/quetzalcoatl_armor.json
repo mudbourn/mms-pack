@@ -1,0 +1,9 @@
+{
+  "geo": "armoroftheages:geo/armor/quetzalcoatl_armor.geo.json",
+  "slim_geo": "armoroftheages:geo/armor/quetzalcoatl_armor_slim.geo.json",
+  "texture": "armoroftheages:textures/models/armor/quetzalcoatl_armor.png",
+  "slim_texture": "armoroftheages:textures/models/armor/quetzalcoatl_armor_slim.png",
+  "animations": "armoroftheages:animations/armor/quetzalcoatl_armor.animation.json",
+  "idle": "idle",
+  "transition_ticks": 0
+}

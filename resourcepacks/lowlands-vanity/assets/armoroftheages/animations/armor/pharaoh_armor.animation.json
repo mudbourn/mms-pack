@@ -1,0 +1,36 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "idle": {
+      "loop": true,
+      "bones": {
+        "headTail": {
+          "rotation": [
+            "(math.sin(180 * ((q.life_time * 20) / 60 + 1)) * 0.05 - (q.head_x_rotation / 57.29578) * 0.8) * 57.29578 - 0",
+            0,
+            "((0.3 * math.sin(180 * ((q.life_time * 20) / 60 + 1)) + (q.right_leg_x_rotation / 57.29578)) * 0.1) * 57.29578 - 0"
+          ]
+        },
+        "bodyGoldenStrip": {
+          "rotation": [
+            "(math.abs((q.right_leg_x_rotation / 57.29578)) - q.is_riding) * 57.29578 - 0",
+            0,
+            0
+          ],
+          "position": [
+            0,
+            "-((10) - 10)",
+            0
+          ]
+        },
+        "bodyJewel": {
+          "position": [
+            0,
+            "-((10) - 10)",
+            0
+          ]
+        }
+      }
+    }
+  }
+}

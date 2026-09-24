@@ -1,0 +1,183 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "idle": {
+      "loop": true,
+      "bones": {
+        "flyA": {
+          "rotation": [
+            0,
+            0,
+            "(math.mod(((q.life_time * 20) / 60), 2 * 3.14159265) + 0) * 57.29578 - 0"
+          ],
+          "position": [
+            0,
+            "-((-15 + math.sin(180 * (((q.life_time * 20) / 60) + 1.0))) - -15)",
+            0
+          ]
+        },
+        "flyB": {
+          "rotation": [
+            0,
+            0,
+            "(math.mod(((q.life_time * 20) / 60), 2 * 3.14159265) + 0.33) * 57.29578 - 0"
+          ],
+          "position": [
+            0,
+            "-((-15 + math.sin(180 * (((q.life_time * 20) / 60) + 1.333))) - -15)",
+            0
+          ]
+        },
+        "flyC": {
+          "rotation": [
+            0,
+            0,
+            "(math.mod(((q.life_time * 20) / 60), 2 * 3.14159265) + 0.67) * 57.29578 - 0"
+          ],
+          "position": [
+            0,
+            "-((-7.5 + math.sin(180 * (((q.life_time * 20) / 60) + 1.667))) - -7.5)",
+            0
+          ]
+        },
+        "flyD": {
+          "rotation": [
+            0,
+            0,
+            "(math.mod(((q.life_time * 20) / 60), 2 * 3.14159265) + 0.17) * 57.29578 - 0"
+          ],
+          "position": [
+            0,
+            "-((-7.5 + math.sin(180 * (((q.life_time * 20) / 60) + 0.333))) - -7.5)",
+            0
+          ]
+        },
+        "flyE": {
+          "rotation": [
+            0,
+            0,
+            "(math.mod(((q.life_time * 20) / 60), 2 * 3.14159265) + 0.83) * 57.29578 - 0"
+          ],
+          "position": [
+            0,
+            "-((2 + math.sin(180 * (((q.life_time * 20) / 60) + 0))) - 2)",
+            0
+          ]
+        },
+        "flyF": {
+          "rotation": [
+            0,
+            0,
+            "(math.mod(((q.life_time * 20) / 60), 2 * 3.14159265) + 0.5) * 57.29578 - 0"
+          ],
+          "position": [
+            0,
+            "-((2 + math.sin(180 * (((q.life_time * 20) / 60) + 0.667))) - 2)",
+            0
+          ]
+        },
+        "chestScarfTop": {
+          "position": [
+            0,
+            "-((-4.5 - ((0.866 - math.sin(180 * (0.333 - (0.03 * math.sin(180 * (2 * (q.life_time * 20) / 60)))))) * 4) * 0.75) - -4.5)",
+            "(6.5 + ((0.866 - math.sin(180 * (0.333 - (0.03 * math.sin(180 * (2 * (q.life_time * 20) / 60)))))) * 4) * 0.8659) - 6.5"
+          ]
+        },
+        "chestScarfRightA": {
+          "position": [
+            0,
+            "-((((0.866 - math.sin(180 * (0.333 - (0.03 * math.sin(180 * (2 * (q.life_time * 20) / 60)))))) * 4) * 0.5) - 0)",
+            0
+          ]
+        },
+        "chestScarfRightB": {
+          "rotation": [
+            "(1.047 + (0.03 * math.sin(180 * (2 * (q.life_time * 20) / 60))) * 3.14159265) * 57.29578 - 60",
+            0,
+            0
+          ]
+        },
+        "chestScarfTopRightA": {
+          "rotation": [
+            0,
+            0,
+            "(-1.047 - (0.03 * math.sin(180 * (2 * (q.life_time * 20) / 60))) * 3.14159265) * 57.29578 - -60"
+          ]
+        },
+        "chestScarfTopRightB": {
+          "rotation": [
+            0,
+            0,
+            "(-1.047 + 2 * (0.03 * math.sin(180 * (2 * (q.life_time * 20) / 60))) * 3.14159265) * 57.29578 - -60"
+          ]
+        },
+        "chestScarfLeftA": {
+          "position": [
+            0,
+            "-((((0.866 - math.sin(180 * (0.333 - (0.03 * math.sin(180 * (2 * (q.life_time * 20) / 60)))))) * 4) * 0.5) - 0)",
+            0
+          ]
+        },
+        "chestScarfLeftB": {
+          "rotation": [
+            "(1.047 + (0.03 * math.sin(180 * (2 * (q.life_time * 20) / 60))) * 3.14159265) * 57.29578 - 60",
+            0,
+            0
+          ]
+        },
+        "chestScarfTopLeftA": {
+          "rotation": [
+            0,
+            0,
+            "(-2.094 + (0.03 * math.sin(180 * (2 * (q.life_time * 20) / 60))) * 3.14159265) * 57.29578 - -120"
+          ]
+        },
+        "chestScarfTopLeftB": {
+          "rotation": [
+            0,
+            0,
+            "(1.047 - 2 * (0.03 * math.sin(180 * (2 * (q.life_time * 20) / 60))) * 3.14159265) * 57.29578 - 60"
+          ]
+        },
+        "chestScarfRightC": {
+          "rotation": [
+            "((-0.872 + 0.03 * math.sin(180 * (((q.life_time * 20) - 15) / 30)) * 3.14159265)) * 57.29578 - -50",
+            0,
+            0
+          ]
+        },
+        "chestScarfLeftC": {
+          "rotation": [
+            "((-0.872 + 0.03 * math.sin(180 * (((q.life_time * 20) - 15) / 30)) * 3.14159265)) * 57.29578 - -50",
+            0,
+            0
+          ]
+        },
+        "chestBeltHangA": {
+          "rotation": [
+            "(((q.left_leg_x_rotation / 57.29578) > 0 ? (q.left_leg_x_rotation / 57.29578) * 0.5 : (q.left_leg_x_rotation / 57.29578)) + 3 * q.is_riding) * 57.29578 - 0",
+            0,
+            "(math.min((q.left_leg_x_rotation / 57.29578), 0) * 0.25) * 57.29578 - 0"
+          ],
+          "position": [
+            0,
+            "-((11.2) - 11.2)",
+            0
+          ]
+        },
+        "chestBeltHangB": {
+          "rotation": [
+            "(((q.left_leg_x_rotation / 57.29578) > 0 ? (q.left_leg_x_rotation / 57.29578) * 0.5 : (q.left_leg_x_rotation / 57.29578)) + 3 * q.is_riding) * 57.29578 - 0",
+            "(math.min((q.left_leg_x_rotation / 57.29578), 0) * 0.25) * 57.29578 - 0",
+            "(math.min((q.left_leg_x_rotation / 57.29578), 0) * 0.5) * 57.29578 - 0"
+          ],
+          "position": [
+            0,
+            "-((11) - 11)",
+            0
+          ]
+        }
+      }
+    }
+  }
+}

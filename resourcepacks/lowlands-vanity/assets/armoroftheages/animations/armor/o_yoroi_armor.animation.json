@@ -1,0 +1,48 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "idle": {
+      "loop": true,
+      "bones": {
+        "thighBack": {
+          "rotation": [
+            "(math.abs((q.right_leg_x_rotation / 57.29578)) + q.is_riding) * 57.29578 - 0",
+            0,
+            0
+          ]
+        },
+        "thighBackSub": {
+          "rotation": [
+            "(math.abs((q.right_leg_x_rotation / 57.29578)) + q.is_riding) * 57.29578 - 0",
+            0,
+            0
+          ]
+        },
+        "thighFront": {
+          "rotation": [
+            "(-math.abs((q.right_leg_x_rotation / 57.29578)) - q.is_riding) * 57.29578 - 0",
+            0,
+            0
+          ],
+          "position": [
+            0,
+            "-((11) - 11)",
+            0
+          ]
+        },
+        "thighFrontSub": {
+          "rotation": [
+            "(-math.abs((q.right_leg_x_rotation / 57.29578)) - q.is_riding) * 57.29578 - 0",
+            0,
+            0
+          ],
+          "position": [
+            0,
+            "-((11) - 11)",
+            0
+          ]
+        }
+      }
+    }
+  }
+}

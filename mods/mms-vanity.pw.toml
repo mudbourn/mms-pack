@@ -1,15 +1,15 @@
 name = "mms-vanity"
-filename = "mms-vanity-0.1.4.jar"
+filename = "mms-vanity-0.1.5.jar"
 side = "both"
 
 [download]
-url = "https://github.com/mudbourn/mms-vanity/releases/download/v0.1.4/mms-vanity-0.1.4.jar"
+url = "https://github.com/mudbourn/mms-vanity/releases/download/v0.1.5/mms-vanity-0.1.5.jar"
 hash-format = "sha256"
-hash = "7f41e687b6d975f47c902e6c8e39319ede55d350f6990087e71b3900cb1f77b8"
+hash = "69a85b2fcd493c8d80650acaa1c5f4adb604c20cdd1a24d636b4f71e856a2c68"
 
 [update]
 [update.github]
 branch = "main"
 regex = "^.+(?<!-api|-dev|-dev-preshadow|-sources)\\.jar$"
 slug = "mudbourn/mms-vanity"
-tag = "v0.1.4"
+tag = "v0.1.5"

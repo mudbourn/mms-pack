@@ -1,0 +1,9 @@
+{
+  "geo": "armoroftheages:geo/armor/iron_plate_armor.geo.json",
+  "slim_geo": "armoroftheages:geo/armor/iron_plate_armor_slim.geo.json",
+  "texture": "armoroftheages:textures/models/armor/ashes_iron_plate_armor.png",
+  "slim_texture": "armoroftheages:textures/models/armor/ashes_iron_plate_armor_slim.png",
+  "animations": "armoroftheages:animations/armor/iron_plate_armor.animation.json",
+  "idle": "idle",
+  "transition_ticks": 0
+}

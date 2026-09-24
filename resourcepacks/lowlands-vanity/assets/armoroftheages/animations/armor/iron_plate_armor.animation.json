@@ -1,0 +1,57 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "idle": {
+      "loop": true,
+      "bones": {
+        "middleFeatherA": {
+          "rotation": [
+            "(-0.15 - math.abs((q.right_leg_x_rotation / 57.29578)) * 0.1 + 0.05 * math.sin(180 * ((q.life_time * 20) / 60 + 1))) * 57.29578 - -10.9148",
+            0,
+            0
+          ]
+        },
+        "middleFeatherB": {
+          "rotation": [
+            "(-0.15 - math.abs((q.right_leg_x_rotation / 57.29578)) * 0.1 + 0.1 * math.sin(180 * (((q.life_time * 20) - 15) / 60 + 1))) * 57.29578 - -6.8067",
+            0,
+            0
+          ]
+        },
+        "miscA": {
+          "rotation": [
+            "(0.05 + 0.05 * math.sin(180 * ((q.life_time * 20) / 60 + 1)) + q.is_riding + (q.is_sneaking ? -0.18 : math.abs((q.right_leg_x_rotation / 57.29578)))) * 57.29578 - 2.6127",
+            0,
+            0
+          ]
+        },
+        "miscB": {
+          "rotation": [
+            "(-(math.abs((q.right_leg_x_rotation / 57.29578)) + 0.05 * math.sin(180 * ((q.life_time * 20) / 60 + 1))) - q.is_riding) * 57.29578 - -2.6127",
+            0,
+            0
+          ],
+          "position": [
+            0,
+            "-((12.1) - 12.1)",
+            0
+          ]
+        },
+        "beltA": {
+          "position": [
+            0,
+            "-((0) - 0)",
+            0
+          ]
+        },
+        "beltB": {
+          "position": [
+            0,
+            "-((0) - 0)",
+            0
+          ]
+        }
+      }
+    }
+  }
+}

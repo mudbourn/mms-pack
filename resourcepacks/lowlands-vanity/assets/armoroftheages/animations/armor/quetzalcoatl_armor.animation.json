@@ -1,0 +1,122 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "idle": {
+      "loop": true,
+      "bones": {
+        "featherCrownLeft": {
+          "rotation": [
+            "(-0.4363 + 0.1 * math.sin(180 * ((q.life_time * 20) / 40))) * 57.29578 - -24.9981",
+            0,
+            0
+          ]
+        },
+        "featherCrownRight": {
+          "rotation": [
+            "(-0.4363 + 0.1 * math.sin(180 * ((q.life_time * 20) / 40))) * 57.29578 - -24.9981",
+            0,
+            0
+          ]
+        },
+        "featherCrownMiddle": {
+          "rotation": [
+            "(-0.4363 + 0.1 * math.sin(180 * ((q.life_time * 20) / 40))) * 57.29578 - -24.9981",
+            0,
+            0
+          ]
+        },
+        "tail": {
+          "rotation": [
+            "((q.right_arm_x_rotation / 57.29578) < 0 ? (q.right_arm_x_rotation / 57.29578) : (q.right_arm_x_rotation / 57.29578) * 0.1) * 57.29578 - 0",
+            0,
+            "(0.2182 + 0.1 * math.sin(180 * ((q.life_time * 20) / 40))) * 57.29578 - 12.5019"
+          ]
+        },
+        "tailTip": {
+          "rotation": [
+            0,
+            0,
+            "(0.1 * math.sin(180 * (((q.life_time * 20) - 15) / 40))) * 57.29578 - 0"
+          ]
+        },
+        "armFeather": {
+          "rotation": [
+            "(0.1 * math.sin(180 * (((q.life_time * 20) - 15) / 40))) * 57.29578 - 0",
+            0,
+            "(-0.05 * math.sin(180 * (((q.life_time * 20) - 15) / 40))) * 57.29578 - 0"
+          ]
+        },
+        "neckStart": {
+          "rotation": [
+            "(-0.3 + 0.2 * math.sin(180 * ((q.life_time * 20) / 40))) * 57.29578 - -39.7002",
+            0,
+            "(0.2 + 0.04 * math.sin(180 * (((q.life_time * 20) - 15) / 40))) * 57.29578 - 11.4133"
+          ]
+        },
+        "neckEnd": {
+          "rotation": [
+            "(0.6 + 0.1 * math.sin(180 * (((q.life_time * 20) - 15) / 40))) * 57.29578 - 56.7457",
+            0,
+            0
+          ]
+        },
+        "snakeHead": {
+          "rotation": [
+            "(-0.2 * math.sin(180 * (((q.life_time * 20) - 15) / 40)) + 0.02 * q.head_x_rotation) * 57.29578 - 6.738",
+            "(0.02 * q.head_y_rotation) * 57.29578 - 0.4354",
+            0
+          ]
+        },
+        "jow": {
+          "rotation": [
+            "(0.13 + 0.1 * math.sin(180 * ((q.life_time * 20) / 40))) * 57.29578 - 7.5",
+            0,
+            0
+          ]
+        },
+        "snakeCrownRight": {
+          "rotation": [
+            0,
+            "(0.3378 + 0.1 * math.sin(180 * (((q.life_time * 20) - 15) / 40))) * 57.29578 - 19.3545",
+            0
+          ]
+        },
+        "snakeCrownLeft": {
+          "rotation": [
+            0,
+            "(0.3378 - 0.1 * math.sin(180 * (((q.life_time * 20) - 15) / 40))) * 57.29578 - 19.3545",
+            0
+          ]
+        },
+        "underwearFront": {
+          "rotation": [
+            "(-(math.abs(0.05 + 1.02 * (q.right_leg_x_rotation / 57.29578)) + 0.05 * (1 + math.sin(180 * ((q.life_time * 20) / 40))))) * 57.29578 - 0",
+            0,
+            0
+          ]
+        },
+        "underwearBack": {
+          "rotation": [
+            "((math.abs(0.05 + 1.02 * (q.right_leg_x_rotation / 57.29578)) + 0.05 * (1 + math.sin(180 * ((q.life_time * 20) / 40))))) * 57.29578 - 0",
+            0,
+            0
+          ]
+        },
+        "legFeatherRight": {
+          "rotation": [
+            "(-0.7931 + 0.2 * math.sin(180 * (((q.life_time * 20) + 10) / 40))) * 57.29578 - -45.4413",
+            0,
+            0
+          ]
+        },
+        "legFeatherLeft": {
+          "rotation": [
+            "(-0.7931 + 0.2 * math.sin(180 * (((q.life_time * 20) + 10) / 40))) * 57.29578 - -45.4413",
+            0,
+            0
+          ]
+        }
+      }
+    }
+  }
+}

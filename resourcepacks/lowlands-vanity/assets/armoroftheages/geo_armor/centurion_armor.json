@@ -1,0 +1,6 @@
+{
+  "geo": "armoroftheages:geo/armor/centurion_armor.geo.json",
+  "slim_geo": "armoroftheages:geo/armor/centurion_armor_slim.geo.json",
+  "texture": "armoroftheages:textures/models/armor/centurion_armor.png",
+  "slim_texture": "armoroftheages:textures/models/armor/centurion_armor_slim.png"
+}

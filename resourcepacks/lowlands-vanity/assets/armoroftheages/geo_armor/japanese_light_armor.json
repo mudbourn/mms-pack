@@ -1,0 +1,9 @@
+{
+  "geo": "armoroftheages:geo/armor/japanese_light_armor.geo.json",
+  "slim_geo": "armoroftheages:geo/armor/japanese_light_armor_slim.geo.json",
+  "texture": "armoroftheages:textures/models/armor/japanese_light_armor.png",
+  "slim_texture": "armoroftheages:textures/models/armor/japanese_light_armor_slim.png",
+  "animations": "armoroftheages:animations/armor/japanese_light_armor.animation.json",
+  "idle": "idle",
+  "transition_ticks": 0
+}

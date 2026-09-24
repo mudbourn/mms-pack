@@ -1,0 +1,9 @@
+{
+  "geo": "armoroftheages:geo/armor/o_yoroi_armor.geo.json",
+  "slim_geo": "armoroftheages:geo/armor/o_yoroi_armor_slim.geo.json",
+  "texture": "armoroftheages:textures/models/armor/jade_o_yoroi_armor.png",
+  "slim_texture": "armoroftheages:textures/models/armor/jade_o_yoroi_armor_slim.png",
+  "animations": "armoroftheages:animations/armor/o_yoroi_armor.animation.json",
+  "idle": "idle",
+  "transition_ticks": 0
+}

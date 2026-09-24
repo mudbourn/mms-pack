@@ -1,0 +1,80 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "idle": {
+      "loop": true,
+      "bones": {
+        "earRight": {
+          "rotation": [
+            "(0.1 * math.sin(180 * ((q.life_time * 20) / 35))) * 57.29578 - 0",
+            0,
+            0
+          ]
+        },
+        "earLeft": {
+          "rotation": [
+            "(0.1 * math.sin(180 * ((q.life_time * 20) / 35))) * 57.29578 - 0",
+            0,
+            0
+          ]
+        },
+        "ribbonRight": {
+          "rotation": [
+            0,
+            0,
+            "(0.05 * math.sin(180 * (((q.life_time * 20) - 15) / 50))) * 57.29578 - 0"
+          ]
+        },
+        "ribbonLeft": {
+          "rotation": [
+            0,
+            0,
+            "(-0.05 * math.sin(180 * (((q.life_time * 20) - 15) / 50))) * 57.29578 - 0"
+          ]
+        },
+        "collar_back": {
+          "rotation": [
+            "(-1.5708 + 0.08 * (1 + math.sin(180 * ((q.life_time * 20) / 40)))) * 57.29578 - -90.0002",
+            0,
+            0
+          ]
+        },
+        "cross_a": {
+          "position": [
+            "((8.5 + 2 * math.sin(180 * ((q.life_time * 20) / 40))) * math.cos(180 * (2 * 0.5 * ((q.life_time * 20)) / 40))) - 0",
+            "-((30 + (8.5 + 2 * math.sin(180 * (((q.life_time * 20) + 10) / 30))) * math.sin(180 * (2 * -0.5 * ((q.life_time * 20)) / 40))) - 20)",
+            0
+          ]
+        },
+        "cross_b": {
+          "position": [
+            "((8 + 2 * math.sin(180 * ((q.life_time * 20) / 70))) * math.cos(180 * (2 * 0.45 * ((q.life_time * 20) + 5) / 40))) - 0",
+            "-((30 + (8 + 2 * math.sin(180 * (((q.life_time * 20) + 10) / 40))) * math.sin(180 * (2 * 0.45 * ((q.life_time * 20) + 25) / 40))) - 20)",
+            0
+          ]
+        },
+        "cross_c": {
+          "position": [
+            "((9 + 2 * math.sin(180 * (((q.life_time * 20) + 25) / 30))) * math.cos(180 * (2 * 0.55 * ((q.life_time * 20) + 25) / 40))) - 0",
+            "-((30 + (9 + 2 * math.sin(180 * (((q.life_time * 20) + 5) / 50))) * math.sin(180 * (2 * 0.55 * ((q.life_time * 20) + 30) / 40))) - 20)",
+            0
+          ]
+        },
+        "cross_d": {
+          "position": [
+            "((8 + 2 * math.sin(180 * (((q.life_time * 20) + 30) / 80))) * math.cos(180 * (2 * 0.42 * ((q.life_time * 20) + 20) / 40))) - 0",
+            "-((30 + (8 + 2 * math.sin(180 * ((q.life_time * 20) / 50))) * math.sin(180 * (2 * 0.42 * ((q.life_time * 20) + 20) / 40))) - 20)",
+            0
+          ]
+        },
+        "ribbonLegs": {
+          "rotation": [
+            "(-math.abs(0.05 + 1.02 * (q.right_leg_x_rotation / 57.29578)) + 0.05 * (1 + math.sin(180 * ((q.life_time * 20) / 40)))) * 57.29578 - 0",
+            0,
+            0
+          ]
+        }
+      }
+    }
+  }
+}

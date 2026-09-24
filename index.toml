@@ -2826,7 +2826,7 @@ metafile = true
 
 [[files]]
 file = "mods/mms-combat.pw.toml"
-hash = "d6e1d40472dcf9babcf641dd00adab67ba24d14e0e4a762b5d9f910caa4954a6"
+hash = "87fa5c72d5bdcff0a0b400109534367da9b293f71877901ae25e411c6da5212b"
 metafile = true
 
 [[files]]
@@ -2856,12 +2856,12 @@ metafile = true
 
 [[files]]
 file = "mods/mms-render-common.pw.toml"
-hash = "00b23f55532abd17d69668bb77d8d061580ba70cb15102938eeac11d9053e491"
+hash = "b34f74098ef335eb46b6db2eb459e13226a3f2ddbd68d72efd537e8c49c8e166"
 metafile = true
 
 [[files]]
 file = "mods/mms-vanity.pw.toml"
-hash = "4c2ac1c0ed08f08ebc86ee387018d3c5cb764652173288d5c60d53d82d7e87fc"
+hash = "432056bf340751a04c6329d40cc48a2fd2e9ce47398b371555df0a655a40998d"
 metafile = true
 
 [[files]]
@@ -28633,7 +28633,815 @@ hash = "47d6a8e5d7e790e5493dd706c84ff4e4eb4794d1608b75375106d377a0be0f9d"
 
 [[files]]
 file = "resourcepacks/lowlands-vanity/ATTRIBUTION.md"
-hash = "824dd2070ced9fbb2cbe3ac78102872fc6037b7610bfdd41732e6ecb667f136c"
+hash = "2007d69777324e5fc6b3de4a5fd9775658370c80868f37985c842c9190f7425c"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/LICENSE"
+hash = "8a24000f6e6de01588dd3ea50006d8002435fa291692c0806fb53be3579ee7be"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/animations/armor/anubis_armor.animation.json"
+hash = "09e45619f983b974ffcb877b8898988ea548dfb4366ea2892ce8a1de782457d6"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/animations/armor/exalted_aurum_armor.animation.json"
+hash = "bdfdee05ed0410c6c32eb00e539b18c721c25300e6f0ba9f168764964557865d"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/animations/armor/holy_armor.animation.json"
+hash = "f0726e1dcc4a19b28c17b55c5912295022e044baa517af0293eb007e680d7fa4"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/animations/armor/iron_plate_armor.animation.json"
+hash = "01b2ae05af540694a37c876c0e2245067750f960425d276cfb886b04025ae973"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/animations/armor/japanese_light_armor.animation.json"
+hash = "974d818d141bbfa0a9cffe14eeebd4d34a8dc1a4ff59ce62dc9a09a83aed2d80"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/animations/armor/o_yoroi_armor.animation.json"
+hash = "978060dcbc03cd03f7a9a81793128af85f4d5e6b70d7b8384ec5e86312dddfc4"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/animations/armor/pharaoh_armor.animation.json"
+hash = "a8492070bfb786e80f0d5c98c331c261c428409ea74d1b3a684ff749af80a5fb"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/animations/armor/quetzalcoatl_armor.animation.json"
+hash = "ddb12453de84ba5308a5229df14bfb3f72245404ee60fd969bbc1dff1b4b9e85"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/animations/armor/raijin_armor.animation.json"
+hash = "84dd49a64fe78e5ba28b6fe295a274d5a317c307052d9b593a0b3e1fd544eb36"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/geo/armor/anubis_armor.geo.json"
+hash = "e17a9f3cdfd442dd341006e2b232f8266237a70e56bf2bd1123d2990cf9d450e"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/geo/armor/anubis_armor_slim.geo.json"
+hash = "827d254546c9add795abdbe87e6b84e22aa371402b005f8ec848ba7ff7888064"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/geo/armor/centurion_armor.geo.json"
+hash = "c10a36f6ca46b55a7eccf70703133d78d7ee41ce429cd1a5d59169be7fd8c03c"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/geo/armor/centurion_armor_slim.geo.json"
+hash = "6331fdf9ff4ee59690554afc7b4669ace27d878d8c3fb083e3498e469d4a7e23"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/geo/armor/exalted_aurum_armor.geo.json"
+hash = "e4e8b1bc62fc3e4cdb1a9a44696cf406904efb7db4455a2f00ce861c1053dd1c"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/geo/armor/exalted_aurum_armor_slim.geo.json"
+hash = "e09a8f9dc8243fe7790f5769ed6f13216f44398d61f3fbde38257ed83bd123e6"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/geo/armor/holy_armor.geo.json"
+hash = "322d33710dbabb49cce9338090fc9e70d152b1aa8e52730259bb3195411d3fff"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/geo/armor/holy_armor_slim.geo.json"
+hash = "92bc64949173bab413952d3cc7270cdbf7a7db4cdf354430eb75f190dd1f6f0d"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/geo/armor/iron_plate_armor.geo.json"
+hash = "a532d7cbe264c509de08c27ecf96cea4d05ea5174c221256f90b592686738379"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/geo/armor/iron_plate_armor_slim.geo.json"
+hash = "512c479458491e6ea7cacf6a33cee54a172ebb5812e55353898f9f08d08c7f96"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/geo/armor/japanese_light_armor.geo.json"
+hash = "036b51c2e69b9545bb6b89fbbbb1e541a3b81af69a6b7dc74f78f1c31d7cb80c"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/geo/armor/japanese_light_armor_slim.geo.json"
+hash = "a83fe2216913ac1290dae1ba19fc041088bd74a71cbf6ea39e96b08b39543ec7"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/geo/armor/o_yoroi_armor.geo.json"
+hash = "420f49d8300d47dab69ca932894477700e8271946985bfb7a3df58cb68cad66e"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/geo/armor/o_yoroi_armor_slim.geo.json"
+hash = "078d7f782c2ed124ed2484476cee18134dfe20190cd0b1cf2ca4d01478e6aa06"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/geo/armor/pharaoh_armor.geo.json"
+hash = "a57994f57ca26e2445edf855aec4efe4c826df17d6bf252e8f8342afd3eb4049"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/geo/armor/pharaoh_armor_slim.geo.json"
+hash = "7273cf984d1bf4eafc65affad5895b5c50ef490bdd01b28c3a87adf92b117b6e"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/geo/armor/quetzalcoatl_armor.geo.json"
+hash = "bbf4f75ad60f50d12fd668825129d6332b9ed409a630a894ca815e657d5d631d"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/geo/armor/quetzalcoatl_armor_slim.geo.json"
+hash = "ba3f066818de91c0e60a7dace4f689ba68edfff4db9245360fd04a2a140432b9"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/geo/armor/raijin_armor.geo.json"
+hash = "05ad0130f2328c9a8efdc49ec4fcb3c0afdf42843bd5f49d30d5146d6ab1e2fb"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/geo/armor/raijin_armor_slim.geo.json"
+hash = "aa8837528bd906da076a76d9bc20a7c02caf1418f2911e0b595950d895a6aaf5"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/geo_armor/amber_o_yoroi_armor.json"
+hash = "ae6439adb9dc92f3894e5ed08e68da03ff64f34a805e931376689ab024f5dc1f"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/geo_armor/anubis_armor.json"
+hash = "111c1aa808c7d076ae0e9cf0f79b92e6a380e907511b3eba9723a4b82d9361c2"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/geo_armor/ashes_iron_plate_armor.json"
+hash = "a7b3640b13ef2f19686b5fdeed65407741103d0024e23e87ed23eafca17f8d9c"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/geo_armor/centurion_armor.json"
+hash = "5dc301c52f6c53abce4fca85f8a22a65fcd556ac1a9310b4a20a8fda9b357345"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/geo_armor/dusk_o_yoroi_armor.json"
+hash = "b5db5b900dafbb478cc436691de656860a0e0cecd89501c999fd6d4da1d3f5da"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/geo_armor/exalted_aurum_armor.json"
+hash = "a08ce187e3a0dbe501857e4a0700e61f64f4c186199856c524fd66e52995d5b4"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/geo_armor/holy_armor.json"
+hash = "e44bb5037b3c465f8d3fdc1f285f19ea841161be11c5e2a0c23045effd83ac79"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/geo_armor/ink_o_yoroi_armor.json"
+hash = "407995d958ea134e22fec906913831036bd45dfb4ecae9d4d245eba07ba6e2fa"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/geo_armor/iron_plate_armor.json"
+hash = "3c2175c42a5d26f184496e19dbf72cf88fa4b7699271a6dcf59e0ca42537a4a1"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/geo_armor/jade_o_yoroi_armor.json"
+hash = "54f0b3496d3675190d344dafc35737756b0bd3e45118921cb8f488ed4aeec862"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/geo_armor/japanese_light_armor.json"
+hash = "c13adb93e8c13fb7b7ec74b19433daf1cd1d2fe17b94a1f0d94b1d62f8aa460d"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/geo_armor/nightblue_o_yoroi_armor.json"
+hash = "8311b5196bc6a28921513b0c3706d0568c9763d1890bfe38667f3da6981c27f5"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/geo_armor/o_yoroi_armor.json"
+hash = "04f962cd8f32f6321e73768106aace77be5eb4ad3dda7314eaadf90d4541ae88"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/geo_armor/pharaoh_armor.json"
+hash = "32ae380584400c46dcc79151b92bad60d91ecdf6c3c3221afba86b92430b9ca1"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/geo_armor/pinky_o_yoroi_armor.json"
+hash = "e1e1475acc477c764ecded84344878441fdff4e8a8a387cfbbb93b137822fa35"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/geo_armor/quetzalcoatl_armor.json"
+hash = "d122b8129bdc80d7e21ae42becdc435c78bb0c497a04edee9a05e0d13ecd8f25"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/geo_armor/raijin_armor.json"
+hash = "37b37bfe5c8615472f1a3bb42077d940d35c7224aff27e66d10b973ca3bcd8dd"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/items/anubis_armor_chest.json"
+hash = "6ccf878a19360249e1e4639834d2c6f3c2b780a999affbb2fb1c41ea832e98d1"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/items/anubis_armor_feet.json"
+hash = "e6d29d962dc07af4a45750dffb35eac47a94e3f88699eea97feef60ccc4afb79"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/items/anubis_armor_head.json"
+hash = "991bb10159e29051546a68fb9aec0d76fe4634ae8ab2763c806200a08fd73894"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/items/anubis_armor_legs.json"
+hash = "65d579dedbe38854acf27dc371b18d3d56cb3543c4d604faf8aaedc0a5418ba8"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/items/centurion_armor_chest.json"
+hash = "65e33926c9c2f728fea1a242686a23ec630312f20227a6034c13a446c0eb0e8c"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/items/centurion_armor_feet.json"
+hash = "02ab0a65a61f35d344753c6f3ef15e359d52819e3696541ec2cd5bcba30b8eff"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/items/centurion_armor_head.json"
+hash = "2f00bedc080d2e19fd071b48997775e0f3e925c9de1f6858897fb596956ae0f0"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/items/centurion_armor_legs.json"
+hash = "8ed5144de591840c4397e50c97cf3e3d52e4410ff166b5320ab3082a5b11343c"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/items/exalted_aurum_armor_chest.json"
+hash = "96af81b4c5331c56ecd5615b572ae6804d48ab89984d4b45471c0f0eb26656dc"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/items/exalted_aurum_armor_feet.json"
+hash = "1f7001de8ad0e8510df456d2f8dc723acd77edec6630eddbc2da7a3f6b396955"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/items/exalted_aurum_armor_head.json"
+hash = "8f4ed900ce6eb87e4779e7d119bd259ac0429efde7748fa8557d2f146c7a1567"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/items/exalted_aurum_armor_legs.json"
+hash = "8ef14b418542663b8d1c61382151c84c15fa205f973d351646719cfa95f293cd"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/items/holy_armor_chest.json"
+hash = "7a124430e8d57659aaaf0ed1245046ee76fea52d4c19276d0a9211e93d2595a8"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/items/holy_armor_feet.json"
+hash = "2c69a616819d8a3a7360e65799ee2f9c25feb0f77726274a50e196d2c3bf5f67"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/items/holy_armor_head.json"
+hash = "a3e38fd7f1737cf188504bd1d242b0f32baae5198f8d1be1e4e2cf628be8e120"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/items/holy_armor_legs.json"
+hash = "448af37bdfad6d418501ceb1172cc429069739b411b930eef8a770591328b772"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/items/iron_plate_armor_chest.json"
+hash = "eff60c5d27c07571348a5f6d95520359653d8238471b3d656dfef1e33a98f41c"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/items/iron_plate_armor_feet.json"
+hash = "a08b30fb18bd08e11c0d62b5c62b76221e83e1f145b23e2dea45f262cbbddc21"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/items/iron_plate_armor_head.json"
+hash = "ccdf9b909eda7c95ac6cfd50a6bfb8d4f507930ef721f35808650d7e161e0b6b"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/items/iron_plate_armor_legs.json"
+hash = "242c4a5830238492ffb354db163087054a64c83b04853bf2043b95f88898efce"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/items/japanese_light_armor_chest.json"
+hash = "fc0115fe7ae93d89aa8c5cc92763895182839821a81accd8a0e0bf254a2dad47"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/items/japanese_light_armor_feet.json"
+hash = "8a626149ec3cf7c376517b62bb7d811e925d1cdedd2fc907cc5a9423e278c68e"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/items/japanese_light_armor_head.json"
+hash = "a2b744a159d107b3ee7a5fdcebd7c8565a81d2996689bea63343f57854d6a459"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/items/japanese_light_armor_legs.json"
+hash = "1801d41b6ab8255b1fc75b75e367ae2b582172bf2680d7e579b08b5088a5d654"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/items/o_yoroi_armor_chest.json"
+hash = "875d0de9aa66cbaf3fa6ba458c7a5d4697380f1918372b692225e07e185a99d4"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/items/o_yoroi_armor_feet.json"
+hash = "0eed865ccdcd6661b18c1bbceaaf3bf838eed1f7e442a3cbab84c9960027e2d2"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/items/o_yoroi_armor_head.json"
+hash = "8db8a50daefce5db9acc226ef93677288055d7970ad80b4bb3862d951d1f3544"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/items/o_yoroi_armor_legs.json"
+hash = "5afa7ca2c9d1923e49cb178870f8e462ffb52391eb3203b560ebddb66babbfeb"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/items/pharaoh_armor_chest.json"
+hash = "5ac97eada229352ae024c2746b076252d502e8e5d61d131930113e6c289e5acf"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/items/pharaoh_armor_feet.json"
+hash = "56645e421284f9298734ec7c2cfcbee081889448f42e17e01dfd3b4da3df4b06"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/items/pharaoh_armor_head.json"
+hash = "8b685a5a2a53fea475f0cb5b31b84b97d4c98dd21c274d6dfed3a15a50b4bee2"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/items/pharaoh_armor_legs.json"
+hash = "3761e5a17c006968741820a3c3059a6f5eec40300c6a7ca6556e63699a5b5ddf"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/items/quetzalcoatl_armor_chest.json"
+hash = "3b9d5044136cd5b31938bb27d4b901668c40e1352e98cb8a343fabc16bc08ba8"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/items/quetzalcoatl_armor_feet.json"
+hash = "831d72754f82b041590880dddf4331e631b48f2ff5e72756887bbdec3b36d961"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/items/quetzalcoatl_armor_head.json"
+hash = "f12f93c0c60ab15bd45c572135557237f9c333464024ac97f93aab3927c64615"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/items/quetzalcoatl_armor_legs.json"
+hash = "0a812cda6412684c8ac7bc1f0eeffb009df59eaac56883f7cd8c5f5103c752c7"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/items/raijin_armor_chest.json"
+hash = "00cf377b93182fb7bbd2dbe7ee11d9300d1f569a8105cb6f9e2554e4f21b682d"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/items/raijin_armor_feet.json"
+hash = "1b7c512f9741900b3df460f71bc490f6ec62b8d1b3258125b0cac75038380857"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/items/raijin_armor_head.json"
+hash = "f2d2e939aa4ae1c368d698493536d63b55b2f73564c718d497a8ccc229a7c5fd"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/items/raijin_armor_legs.json"
+hash = "644da169f43c83c463c5c550a514872b51ef90a641938aa58035c231835bc224"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/lang/en_us.json"
+hash = "66f9649b65f259253af9afeb920e72aae44752956db21e2784f16d425a2257ff"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/models/item/anubis_armor_chest.json"
+hash = "b40ef14458a2523b9c0b1b5f28045e8a64b75e3d823a707da8c3e07f3dd69aa4"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/models/item/anubis_armor_feet.json"
+hash = "cd7dae04f232767ac506f33f3ed817aeff1f1fc0b35db30b6c976bd88d6ea2af"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/models/item/anubis_armor_head.json"
+hash = "d15584255d7c2d66f25c77b956f3606c1891feefb67043728006244dddc575e4"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/models/item/anubis_armor_legs.json"
+hash = "6e898a8cef4e8f859d2beaef1227a481e9dff1104b8d3480c60ce59ebc47b86d"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/models/item/centurion_armor_chest.json"
+hash = "cfdbc6c43f44c3994880d1b3800d56fb78a4f83d3e06ff7945bd23e62cd21042"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/models/item/centurion_armor_feet.json"
+hash = "c2d66fcd4c44b3f0185cb4844fe2d058e6884dc52ce544ca66241a27985decd4"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/models/item/centurion_armor_head.json"
+hash = "600cad71552742f5e24f6447bdb2a889065814191abeb5eaf033160e224720e2"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/models/item/centurion_armor_legs.json"
+hash = "be35ab5af132d447f47f475372f478937fddd4b5202f66c58d9a0a13365e6901"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/models/item/exalted_aurum_armor_chest.json"
+hash = "706371945cb06d8cd18a162c039da02e13e27e385b23f45894907bbf10732f56"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/models/item/exalted_aurum_armor_feet.json"
+hash = "b13fbb0e6ee5af8cd237a4ad1318ea429575e149d4c322d43792907b545f7423"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/models/item/exalted_aurum_armor_head.json"
+hash = "87301363d3d42a820ca687c1286c6aaa3e0b0c09499cf1d5f14241cbdd5bf4c1"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/models/item/exalted_aurum_armor_legs.json"
+hash = "3c80b5616c63a3ab8bbe644012efe4061ed0df7085348e5d5fb4ba0d27312f9d"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/models/item/holy_armor_chest.json"
+hash = "50e8faa685d8195d69af213b50e458014a043f3dae4ef5b936cd46450fc87592"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/models/item/holy_armor_feet.json"
+hash = "ba8d406b2043bf40b2bd85077247e30d0ca266018e4941a8b00cd2c40bf12f41"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/models/item/holy_armor_head.json"
+hash = "f694c976c132ea136e269236c61df30781b63a216a72005330269d575d3ce37b"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/models/item/holy_armor_legs.json"
+hash = "141d8359830e07c94fc4cbd3ef21d875d8c4f5abcf7fffcd05aea52e9bb89e5b"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/models/item/iron_plate_armor_chest.json"
+hash = "539df693056386701cf75a6a77e3b0bc4668b2f9f74555c7e59b2db96fef6585"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/models/item/iron_plate_armor_feet.json"
+hash = "d2dccf027820e52e7208d5ee49ea58bb7fa72f558a37a890554aebf2c66a18f2"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/models/item/iron_plate_armor_head.json"
+hash = "94dc8a87ed56f0cf4e5b3757d85caea75e1f8c301ec0664c6ca78947080bb1e6"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/models/item/iron_plate_armor_legs.json"
+hash = "50277789473e193d14344e6a8bea622c8ecdcec3b03bae17971f4c23edbad633"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/models/item/japanese_light_armor_chest.json"
+hash = "f321a959fc28aa5a3781332ccf3441ab093fa31fa21278303dcfc01b4ae2ed6d"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/models/item/japanese_light_armor_feet.json"
+hash = "8bfca112e3cbff981616ca2d4e0b2c7bfc56a667fbc8649141e3e23ec301ee56"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/models/item/japanese_light_armor_head.json"
+hash = "e82589225b18fc35a220c9a84d30d7541c2be7f3047ea7d9eda09e381311b6ea"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/models/item/japanese_light_armor_legs.json"
+hash = "884ed9a8777d6900beff14f19501ee08a121ab67db85227ac8a51847deef3ba5"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/models/item/o_yoroi_armor_chest.json"
+hash = "945dfa6edde7d234204402643a7cb708b6dec2ebb5a9365dabaf87ba1c4081a4"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/models/item/o_yoroi_armor_feet.json"
+hash = "ff0aea1e25c73a164dea8b361367450bc03c8455ffb2e10c50a8d15381fc9528"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/models/item/o_yoroi_armor_head.json"
+hash = "19aef7500f5f13f3277aa1e952bcd380fdd3c988c37c7ccfeafea28bf3ad9b7c"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/models/item/o_yoroi_armor_legs.json"
+hash = "7d1fe451fa552a216cf774cdd5b94f07c5547dbf85336aa3129e0158bfff2151"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/models/item/pharaoh_armor_chest.json"
+hash = "bef2efb4ab72f1b0abb9bee400d303e1a79d142a4680e36b61b127304d067e06"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/models/item/pharaoh_armor_feet.json"
+hash = "9d27943e5443c7aa4ad6afa0bed07948e4de2cb45030246d7b5748dbba60de47"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/models/item/pharaoh_armor_head.json"
+hash = "440a29b6266ab7dee8710db2944165473a8eb5da7cc9cc21ee32a3362b3a6aab"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/models/item/pharaoh_armor_legs.json"
+hash = "65c074261cf8dd6d8a9d448e611964055a0d45269935f2bdeaf49c40dbf7c067"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/models/item/quetzalcoatl_armor_chest.json"
+hash = "1c4a814e01ea31efc9010862aa52bef7334e299e33978d484ac9d3685cff2d2e"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/models/item/quetzalcoatl_armor_feet.json"
+hash = "4aaa0974831ddf4642c0b50c6f6a067d0a81e8f476f7ceb08b5a92215c1d5159"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/models/item/quetzalcoatl_armor_head.json"
+hash = "4aae109b3418584e998ef23a50acddc5ca99519169657241ee06a0ae0644f5c4"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/models/item/quetzalcoatl_armor_legs.json"
+hash = "0e298b99f5b670a7358227f751ae4b8a461934f8cb0d231e42a23d29ce15632a"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/models/item/raijin_armor_chest.json"
+hash = "6f31204203a11411328608014f242dec6dce4220ee023f89f34b6d4a18313d90"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/models/item/raijin_armor_feet.json"
+hash = "5ddd3c1e99da1fddc1d1338626f72981207a172f093472d1f5426fa5aa24c0c2"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/models/item/raijin_armor_head.json"
+hash = "4ef0d8a75e47f83bf8fa58ed245b5a2243bc8a251b440357da786d252ca1cf39"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/models/item/raijin_armor_legs.json"
+hash = "388406637123f9298881f291ace6a660a1df1c30f3ce5e1abd320f4f9a668bdb"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/item/anubis_armor_chest.png"
+hash = "e1c957606d9722fbc8d27f7aa2acd1d91a8260c9a55cbd4ced5ae913dec8bd3f"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/item/anubis_armor_feet.png"
+hash = "5d221b8a2d6a9e1505743d9ce02d1a4a8e1033fbf21ba78aa7eb4d520802efe1"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/item/anubis_armor_head.png"
+hash = "323f25863a00701bf13f01e519f5cb3c79c719e6e34a08c3c931db24e3695ebe"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/item/anubis_armor_legs.png"
+hash = "e8d5b3d17c406be146f242a9683580be82af545b2c99bfed6e2d947e7056f69a"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/item/centurion_armor_chest.png"
+hash = "71b723848e2721bac0caf9dba507a6693c38e058456817d07dd601a23bcb42d8"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/item/centurion_armor_feet.png"
+hash = "1c758ba5e1f11a51b70275db94852b2346432e4873248d7ed1727d00721bcb4b"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/item/centurion_armor_head.png"
+hash = "131b5aa338846124d39f62b0a84708fccf8e97f3574b3095dbfcc8a3fc3dc77f"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/item/centurion_armor_legs.png"
+hash = "3320bc5ebd5f006fc646150598702b06e82788e50ead18cb523b6dd615ce0f9b"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/item/exalted_aurum_armor_chest.png"
+hash = "41de32459a744f98e0fc1b5a2ebce71d0bb0908c9998204e4fc7036d51b2a325"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/item/exalted_aurum_armor_feet.png"
+hash = "f6fd85840f3b68ea7d943ecc160524ae136a9658c1fc09a86c6d7b07ebdc14ca"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/item/exalted_aurum_armor_head.png"
+hash = "b11cdb413908d571f0a42b77d83b38a9720cb24743f81179e5a697ae212e3956"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/item/exalted_aurum_armor_legs.png"
+hash = "b098abda7d77744328a474b9c1be675824637b8165916d92956f778ca6cc07fe"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/item/holy_armor_chest.png"
+hash = "af83e1479f833c73e604fa0bfdddade9e4ddabf2eed057d5e99343f9e0f0ce0d"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/item/holy_armor_feet.png"
+hash = "f552ed1596c8fb75c9217c17c4a9b6233112e00300c7bd923afbfaa7cc62e38c"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/item/holy_armor_head.png"
+hash = "f65e69eea0a93692f676a8271e3b36b7c66fcb7b4a8203fa2f12ef6a8e7fd0a1"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/item/holy_armor_legs.png"
+hash = "21037d15a7fe1e49ef072088bbcd5479ad879586d64777fc51bc86530ee362c3"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/item/iron_plate_armor_chest.png"
+hash = "8992a0d4d00fb4555c1f8b37386ec1d81a18bb0ac44844caafa74246ad7978ec"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/item/iron_plate_armor_feet.png"
+hash = "854ae8bec8e0e147f4b95186e14c71a7f10f9efb46b4ade4029fdf554ecbcf13"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/item/iron_plate_armor_head.png"
+hash = "c9456754782f090b5813631be5a173dbcec8ce6b2fe2368346458103ef4a6182"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/item/iron_plate_armor_legs.png"
+hash = "0546a78155d5a1e50f5117be66cf87365a09fdf75de7b4634676455b3eed0262"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/item/japanese_light_armor_chest.png"
+hash = "003f7fb76a5bace371a1b146fccc2cf3ec66023b21c25fa82777082eb3877279"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/item/japanese_light_armor_feet.png"
+hash = "428caf0b43c7a34fb20c91efad0dff754601cbf4dc198c005fb258476bc5d83b"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/item/japanese_light_armor_head.png"
+hash = "2e6e8d38f6955a2abd90f13f4e6a6e2f50bd5f4dfaf6ad36cf10b13cc9600171"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/item/japanese_light_armor_legs.png"
+hash = "36c740e007ad7f25b731e2dfe9e033b6fc8ce574c2776c6f20195d98bf174a17"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/item/o_yoroi_armor_chest.png"
+hash = "e84d7ff65f220b4322b393159a6e927d61909cb11b5f2b5a623987b984b6feb7"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/item/o_yoroi_armor_feet.png"
+hash = "d139d0ca3f44b0418f2f8463abc023512e278126fcee8be76c000a2c46015241"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/item/o_yoroi_armor_head.png"
+hash = "ea80cb72723aa7b5aaa7f938a453b105e66bd995aec9f829dc11c787873d5933"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/item/o_yoroi_armor_legs.png"
+hash = "813a29054ae7bb415a01f27ba6c6472d8f155f536b97ad8cd346bc6cf778ce1a"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/item/pharaoh_armor_chest.png"
+hash = "4ea6f42e95082b25bc8a9762d3ddeb2994cca2b5afa39f17b771dc196be7dd37"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/item/pharaoh_armor_feet.png"
+hash = "07ffef2c0861d613daf3616996208537bdb8db92564fa93c6a8adf9b7434617b"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/item/pharaoh_armor_head.png"
+hash = "a017f1142c23080df38b7084a9097821566adf7cbeda0373f68dd1d49a0e8a94"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/item/pharaoh_armor_legs.png"
+hash = "ba5fd60427b7936d01b61885c5475760697f8073d82a2a87d02fd2ff13b39f66"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/item/quetzalcoatl_armor_chest.png"
+hash = "56a0e4fdb8653620d008bcdfd729e6f0bd4a6803f20eabf77a38655f1d8f5bd0"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/item/quetzalcoatl_armor_feet.png"
+hash = "f61eb3381be2d1575fdc15a14eb0e2e990e220031d4421860171d2f374de844f"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/item/quetzalcoatl_armor_head.png"
+hash = "55eda177bb3f9e615fd2ca56a672cb07b6d2457bed9e2c3f66353320ead8beba"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/item/quetzalcoatl_armor_legs.png"
+hash = "4a0fcbe7fa3e0d1f46b002d6fe3c030ce4d15d321dade8107712874eb09ad03e"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/item/raijin_armor_chest.png"
+hash = "dba4c2c38c8a830ed014453757d79eab2cf1c76d17c240071fce7da26d62aac4"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/item/raijin_armor_feet.png"
+hash = "4df370564de86a9e4933c61fb3185cad7e387fd37a6fe8c3416b2cbaad7d61c1"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/item/raijin_armor_head.png"
+hash = "25036642eaea4458fc735317adcf6f47cda84c0a7cf8b1e0ce1f5f451cbfd27a"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/item/raijin_armor_legs.png"
+hash = "6ac52e903c72d75d66cc9a2270268aa15b56aa417022aebdcf3b9a83c7204db1"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/models/armor/amber_o_yoroi_armor.png"
+hash = "b0b4e62ee451acff271d949cfe2836463b242ae5dffc0ee81bcbacf3ffa9ef23"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/models/armor/amber_o_yoroi_armor_slim.png"
+hash = "9eb74907c9328b03be24ecdc35d6317a797b400fb38cf0f8ca299bc0442cea98"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/models/armor/anubis_armor.png"
+hash = "3ca3dc33bea2a55b5cb6673166f79bc8ed7d5fe4dab4a61d7cd864d531025137"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/models/armor/anubis_armor_slim.png"
+hash = "d7529c73d31bf8fd19fe64da47de95adadceb16566344d6c6e520268f55a8e90"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/models/armor/ashes_iron_plate_armor.png"
+hash = "61e8ed5d785349a89acb9dc8150aae4c5c2280bdfe4cf2b48a6c907ea38a6dcc"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/models/armor/ashes_iron_plate_armor_slim.png"
+hash = "d40608ec42437453fa13dfb1e1218a568cc5643aaf4a73fd4c793fcefb629d78"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/models/armor/centurion_armor.png"
+hash = "d985f0d749bd798eb0ece8d5dfc4672cca1b331f2569e44307f6386d3c4f2a6d"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/models/armor/centurion_armor_slim.png"
+hash = "dfb6bd2bcca0eff8aec0607e3414eb7a68458e4c4b459472a27aa3d0402c90a1"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/models/armor/dusk_o_yoroi_armor.png"
+hash = "0b5a5c7db7431dc35e42f6361d9d9cd692ebe50481b52a1193fc99bdde82f5f5"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/models/armor/dusk_o_yoroi_armor_slim.png"
+hash = "0d7e997fcd3c8978a1f3b0ee7ff88858308ba8a31df47a6b551bf9250dba6c0c"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/models/armor/exalted_aurum_armor.png"
+hash = "6768e49a9d605e635be9fa93c4028bcac8538856baabee09d1ed16268de31828"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/models/armor/exalted_aurum_armor_slim.png"
+hash = "a2bfcb5eaea8b960223d73575c774ebaf8a1f99b3a0fda96052a537d5c847b15"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/models/armor/holy_armor.png"
+hash = "36881b6f47652fb2846636a70d4b1f1cd4f76a93ab0bcae5c7e8473b3be1ce89"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/models/armor/holy_armor_slim.png"
+hash = "bc8226a03281821a53fc9bc63102c6b1faf852f191aea827ce752d9a758d6307"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/models/armor/ink_o_yoroi_armor.png"
+hash = "174d7fc4497966bc14bb60206a2fa3e3f54f455bcbb055ea6cbef80658a62fe9"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/models/armor/ink_o_yoroi_armor_slim.png"
+hash = "31f5d6278f91481630727048a83ef3685b212dde7ae853e9e1d779a1905ef4cc"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/models/armor/iron_plate_armor.png"
+hash = "233d58e6d01b1b83ec8ed226910d8c55068b167a3a4fc55e975c2c20623dc5a3"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/models/armor/iron_plate_armor_slim.png"
+hash = "dea99e84592d08d88b92d8266d28080d5568b6a9ccbdd51164492b53ab7535c4"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/models/armor/jade_o_yoroi_armor.png"
+hash = "e62ad65007ebda977566297e49caeb208658cecb9f81f7b9f165c64fff04b3c1"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/models/armor/jade_o_yoroi_armor_slim.png"
+hash = "c92c7110bbda8a35598663dbb46e1519adc9fe5472e80d8972b53c1d8e693725"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/models/armor/japanese_light_armor.png"
+hash = "40fbf9042c484a9a408894a4485214d3a067bb95e8004dc9e43de453c184925e"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/models/armor/japanese_light_armor_slim.png"
+hash = "8eb8b9f8699da4d432ba39467c3daf15249f30e3619145870edf174b748e252b"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/models/armor/nightblue_o_yoroi_armor.png"
+hash = "437fbacba65a4f665e10901d70cfac4203332ad8cf631d15ff1e573405936391"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/models/armor/nightblue_o_yoroi_armor_slim.png"
+hash = "598b8f9bb9f29e42230f5abaa29e1a4d397bd481d4ab456c450915c82a720069"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/models/armor/o_yoroi_armor.png"
+hash = "9262d527c93d6726e86a420de14709e90ad0183b277fded527ce18e0ae91cdf3"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/models/armor/o_yoroi_armor_slim.png"
+hash = "f31f1539710a33897e2611bbb7fb6bcac83506a0d95b2b652a8cd207e3b24ff2"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/models/armor/pharaoh_armor.png"
+hash = "44b0ffbe41bdf673c126cd1fe2efecef2c16e1dab99e74f10f4603dbe32c5dce"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/models/armor/pharaoh_armor_slim.png"
+hash = "bcff85456a4f4922022988329f02cd6411f85d7fb1202eb98fbb26fb5744103d"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/models/armor/pinky_o_yoroi_armor.png"
+hash = "dbed619b27e2b875751cc3a1dbe0a2e6bd363d15b3053561d39eaf509e347f00"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/models/armor/pinky_o_yoroi_armor_slim.png"
+hash = "c10b05540f51838ddc4c34960dcb2ba7d3452a8b7cee87a34e15ba1fa60aa6c2"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/models/armor/quetzalcoatl_armor.png"
+hash = "e97a9d92c47aa249edd42c1e91c1aff3fd2b557646e5965ec46d0b9c58e836be"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/models/armor/quetzalcoatl_armor_slim.png"
+hash = "ad1f4694354dd485e105f85aaa013b9a972ed485de81d447e727754e7ea39b40"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/models/armor/raijin_armor.png"
+hash = "14b546405d893f44120ceaf406821cf02e54eb37540fa3423bf4ddeb2fa1edf0"
+
+[[files]]
+file = "resourcepacks/lowlands-vanity/assets/armoroftheages/textures/models/armor/raijin_armor_slim.png"
+hash = "9446568a28fe9d7c582f9f43a0b8a49fa1c9de0577be8d1a85595829e7c41cc6"
 
 [[files]]
 file = "resourcepacks/lowlands-vanity/assets/lowlands_clothing/equipment/axolotl_knight.json"
@@ -30441,7 +31249,7 @@ hash = "a00ad11e5cbe4a26e7da47a49e517e15b6c26081155e582455b211fd59d50d4b"
 
 [[files]]
 file = "resourcepacks/lowlands-vanity/pack.mcmeta"
-hash = "75cf7097888528dfe286bae0d19a10ccd97dd45ab05c9d127cd9719f02808211"
+hash = "1efa57efd08fa74066957ef28f0e1f45b2ba3051ceb2ecbc8fc4f215b8d8b31f"
 
 [[files]]
 file = "resourcepacks/lowlands-vanity/pack.png"
