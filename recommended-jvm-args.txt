@@ -58,7 +58,7 @@ choice and the reason we do NOT use Aikar's G1 flags -- G1 deliberately targets
 Paste into Prism: Edit Instance -> Settings -> Java -> tick "JVM arguments".
 
 --- Java 25 (the pack's target Java): copy from the next line ---
--XX:+UseZGC -XX:MetaspaceSize=512m -XX:+AlwaysPreTouch -XX:+PerfDisableSharedMem -XX:+DisableExplicitGC
+-XX:+UseZGC -XX:MetaspaceSize=1024m -XX:+AlwaysPreTouch -XX:+PerfDisableSharedMem -XX:+DisableExplicitGC
 --- end ---
 
 --- Java 21 (if you are on 21, generational is opt-in): copy from the next line ---
