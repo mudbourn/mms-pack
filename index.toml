@@ -2064,7 +2064,7 @@ hash = "1293a0fa32ee0ea2838937b85bbc9070175bbafff01205336d9bb24570ef9a39"
 
 [[files]]
 file = "mms-repos.toml"
-hash = "55a38f9f8e830c0118b3795ec17da050db9aa6709d0d0d314a0e2f482190eb49"
+hash = "3cff248e214d280b70014a0ed29bcc5c032d374ff2458dbe15d5d46a75ff6b73"
 
 [[files]]
 file = "mms-server-sync.py"
