@@ -2440,6 +2440,11 @@ hash = "636904b6508b012550ddb63a124be8b100c77a11536c8697fa39ef8cab90dfc1"
 metafile = true
 
 [[files]]
+file = "mods/distanthorizons.pw.toml"
+hash = "bc9dbc59ed18749ebe8b2545b38cce326611b6a3957ae9e9984b2fc905a0e0af"
+metafile = true
+
+[[files]]
 file = "mods/dungeons-and-taverns.pw.toml"
 hash = "8be1928de42bd2fc1a20a6735d36358145d8b1304649679854d9cb2021010e8d"
 metafile = true
@@ -2846,12 +2851,12 @@ metafile = true
 
 [[files]]
 file = "mods/mms-mod-compat-support.pw.toml"
-hash = "05be30d08cb3e5dbe2cfe6b85c31560dfb5566f929463967cc7a3edc285ea86d"
+hash = "1001c9974d37c5707ed6ee6dd56e9a8e9510143c8e82b326c2cd6ca4a4934a86"
 metafile = true
 
 [[files]]
 file = "mods/mms-origins.pw.toml"
-hash = "bf88006e132d1a26c1631950fb140e6d11dff69724fb39a41b8e8ef79961d7c4"
+hash = "ed506974abb55af82cd013d093c7f44f2fd2b69866d5d2cedce3a9018c9de7d7"
 metafile = true
 
 [[files]]
