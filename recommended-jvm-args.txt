@@ -58,17 +58,25 @@ choice and the reason we do NOT use Aikar's G1 flags -- G1 deliberately targets
 Paste into Prism: Edit Instance -> Settings -> Java -> tick "JVM arguments".
 
 --- Java 25 (the pack's target Java): copy from the next line ---
--XX:+UseZGC -XX:+AlwaysPreTouch -XX:+PerfDisableSharedMem -XX:+DisableExplicitGC
+-XX:+UseZGC -XX:MetaspaceSize=512m -XX:+AlwaysPreTouch -XX:+PerfDisableSharedMem -XX:+DisableExplicitGC
 --- end ---
 
 --- Java 21 (if you are on 21, generational is opt-in): copy from the next line ---
--XX:+UseZGC -XX:+ZGenerational -XX:+AlwaysPreTouch -XX:+PerfDisableSharedMem -XX:+DisableExplicitGC
+-XX:+UseZGC -XX:+ZGenerational -XX:MetaspaceSize=512m -XX:+AlwaysPreTouch -XX:+PerfDisableSharedMem -XX:+DisableExplicitGC
 --- end ---
 
 Why the difference: generational ZGC is the efficient one (it doesn't churn the
 whole heap). On Java 21 it is opt-in via -XX:+ZGenerational. From JDK 24 on it
 is the only ZGC mode and that flag is obsolete -- on Java 25 it is accepted but
 ignored with a warning, so leave it off.
+
+-XX:MetaspaceSize=512m is required, not optional. It is the modern stand-in for
+the old "PermGen 512" setting (PermGen no longer exists; Prism's PermGen field
+is ignored on Java 8+). The pack loads enough classes that the JVM's default
+~21 MB metaspace threshold keeps triggering full metaspace GCs, which showed up
+as a 1-2 s freeze every ~15 s. Starting the threshold at 512 MB stops that.
+Do NOT use -XX:MaxMetaspaceSize=512m instead: that is a hard cap, and going
+over it crashes with "OutOfMemoryError: Metaspace".
 
 Keep the flag list this short. ZGC is meant to run with minimal knobs; do NOT
 mix in any G1 flags (MaxGCPauseMillis, G1NewSizePercent, G1HeapRegionSize, ...)

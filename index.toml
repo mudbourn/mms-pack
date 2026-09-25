@@ -2831,7 +2831,7 @@ metafile = true
 
 [[files]]
 file = "mods/mms-economy.pw.toml"
-hash = "a0430d30c2bd2b7311d6879ddbac25092ffb98fedf3233a87f42ce0447465362"
+hash = "c059a41b593018ae08199bfa2654285e0510aa733976ad18ac8b4723f8dc7454"
 metafile = true
 
 [[files]]
@@ -3377,7 +3377,7 @@ hash = "87a7dcd7408d9f5ce6e3fbbd296425e7e3cbcb20a39b210a08ddd02ae30fe3d6"
 
 [[files]]
 file = "recommended-jvm-args.txt"
-hash = "fa476a095a72cea45329580b90b62fca95c2549ad7a74ea3cdd2a842efa08968"
+hash = "9332dcee5c4ec3ba682c3e104438879d759fb449144e25dab732040fc1d2a97d"
 
 [[files]]
 file = "resourcepacks/Better-Leaves-9.5/LICENSE"
