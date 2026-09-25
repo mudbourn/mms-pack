@@ -40,4 +40,4 @@ mms-combat                   = { role = "mod" }
 mms-mod-compat-support       = { role = "mod" }
 ks-support                   = { role = "mod" }
 # Vertigo-ScalableLux-Compat-Backports retired 2026-09-18: the stopgap vertical
-# view-distance port was replaced in the pack by Distant Horizons (now stable).
+# view-distance port was replaced in the pack by Distant Horizons (itself removed 2026-09-25).
