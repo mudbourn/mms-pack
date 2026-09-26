@@ -63,19 +63,19 @@ then the game starts. First launch pulls the whole pack (a few minutes); after t
 | Problem |
 
 
-| "Cannot find packwiz-installer-bootstrap.jar" |
+"Cannot find packwiz-installer-bootstrap.jar"
 
-| Prelaunch window closes instantly / mods missing |
+Prelaunch window closes instantly / mods missing
 
-| A mod update broke something | 
+A mod update broke something
 
 
 
 | Fix |
 
 
-| The jar must be inside `.minecraft/`, not the instance root. Re-check step 3. |
+The jar must be inside `.minecraft/`, not the instance root. Re-check step 3.
 
-| Confirm the pre-launch box is the **exact** line above, quotes included. |
+Confirm the pre-launch box is the **exact** line above, quotes included.
 
-| Tell an admin the mod + symptom; the pack is rolled forward centrally, then just relaunch. |
+Tell an admin the mod + symptom; the pack is rolled forward centrally, then just relaunch.
