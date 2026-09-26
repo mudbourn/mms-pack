@@ -15,7 +15,7 @@ Please switch to Prism.
 ## Players: one-time setup (~5 minutes)
 
 ### 1. Install Prism Launcher
-Download from **https://prismlauncher.org/download/** and sign in with your Microsoft/Minecraft account
+Download from **https://prismlauncher.org/download/** and sign in with your Microsoft account
 (Prism -> *Accounts* -> *Add Microsoft account*).
 ![alt text](https://save.mudbourn.info/s/sAHdDkxDMdjM5re/download "Graph")
 
