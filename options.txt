@@ -63,7 +63,7 @@ damageTiltStrength:1.0
 highContrast:false
 highContrastBlockOutline:false
 narratorHotkey:true
-resourcePacks:["vanilla","controlify:legacy_console","alcocraftplus:3d_models","file/Chat Reporting Helper","continuity:glass_pane_culling_fix","file/Better-Leaves-9.5","file/jobsplus_renames","file/bountifulfish-tuna-3d","file/bountifulfish-anchor-3d","file/aerialhell-trident-3d","file/lowlands-vanity","file/basicweapons-pike-3d","file/DetailedAnimationsV0.19","file/toheee1234\u0027s Better Combat Animations"]
+resourcePacks:["vanilla","file/SodiumTranslations","file/Mod Menu Helper","controlify:legacy_console","alcocraftplus:3d_models","file/Chat Reporting Helper","continuity:glass_pane_culling_fix","file/Better-Leaves-9.5","file/FreshAnimations_v1.10.4","file/Freshly Modded 3.0.3","file/Fresh Patch - Variants and Ventures","file/FA+All_Extensions-v1.8.1","file/FA+Creepers-v2.1","file/FA+Details-v2.2.1","file/FA+Emissive-v1.6","file/FA+Objects-v2.1.2","file/FA+Spiders-v2.2","file/jobsplus_renames","file/bountifulfish-tuna-3d","file/bountifulfish-anchor-3d","file/aerialhell-trident-3d","file/lowlands-vanity","file/basicweapons-pike-3d","file/Semos Animations Lib 2.0.3","file/DetailedAnimationsV0.19","file/toheee1234\u0027s Better Combat Animations"]
 incompatibleResourcePacks:[]
 lastServer:
 lang:en_us

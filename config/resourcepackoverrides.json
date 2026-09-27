@@ -1,0 +1,64 @@
+{
+  "schema_version": 2,
+  "failed_reloads_per_session": 5,
+  "default_packs": [
+    "file/toheee1234's Better Combat Animations",
+    "file/DetailedAnimationsV0.19",
+    "file/Semos Animations Lib 2.0.3",
+    "file/basicweapons-pike-3d",
+    "file/lowlands-vanity",
+    "file/aerialhell-trident-3d",
+    "file/bountifulfish-anchor-3d",
+    "file/bountifulfish-tuna-3d",
+    "file/jobsplus_renames",
+    "file/FA+Spiders-v2.2",
+    "file/FA+Objects-v2.1.2",
+    "file/FA+Emissive-v1.6",
+    "file/FA+Details-v2.2.1",
+    "file/FA+Creepers-v2.1",
+    "file/FA+All_Extensions-v1.8.1",
+    "file/Fresh Patch - Variants and Ventures",
+    "file/Freshly Modded 3.0.3",
+    "file/FreshAnimations_v1.10.4",
+    "file/Better-Leaves-9.5",
+    "continuity:glass_pane_culling_fix",
+    "file/Chat Reporting Helper",
+    "alcocraftplus:3d_models",
+    "controlify:legacy_console",
+    "file/Mod Menu Helper",
+    "file/SodiumTranslations",
+    "vanilla"
+  ],
+  "default_overrides": {
+    "force_compatible": true
+  },
+  "pack_overrides": {
+    "mms": [
+      "file/SodiumTranslations",
+      "file/Mod Menu Helper",
+      "file/Chat Reporting Helper",
+      "file/Better-Leaves-9.5",
+      "file/FreshAnimations_v1.10.4",
+      "file/Freshly Modded 3.0.3",
+      "file/Fresh Patch - Variants and Ventures",
+      "file/FA+All_Extensions-v1.8.1",
+      "file/FA+Creepers-v2.1",
+      "file/FA+Details-v2.2.1",
+      "file/FA+Emissive-v1.6",
+      "file/FA+Objects-v2.1.2",
+      "file/FA+Spiders-v2.2",
+      "file/jobsplus_renames",
+      "file/bountifulfish-tuna-3d",
+      "file/bountifulfish-anchor-3d",
+      "file/aerialhell-trident-3d",
+      "file/lowlands-vanity",
+      "file/basicweapons-pike-3d",
+      "file/Semos Animations Lib 2.0.3",
+      "file/DetailedAnimationsV0.19",
+      "file/toheee1234's Better Combat Animations"
+    ],
+    "$$mms": {
+      "required": true
+    }
+  }
+}

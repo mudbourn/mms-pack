@@ -2,7 +2,7 @@
   "action_bar_messages": true,
   "use_sleep_percentage": false,
   "tick_game_time": false,
-  "tick_block_entities": false,
+  "tick_block_entities": true,
   "tick_random_block": true,
   "tick_snow_accumulation": true,
   "tick_ice_freezing": true,

@@ -1577,6 +1577,10 @@ file = "config/renderscale.json5"
 hash = "f5101beef129ea119e726f90af1ba9efe5fff73f58877a3ad31acd3c55dfb2d0"
 
 [[files]]
+file = "config/resourcepackoverrides.json"
+hash = "649fcb3d0a7cfc00e841db5bd5867e652da76ee2048043e787692f804508be24"
+
+[[files]]
 file = "config/roughlyenoughitems/collapsible.json5"
 hash = "a59667baa54738c1b294393a9b3652bcf7d392cdb8cba1c08a8006885b18e919"
 
@@ -1674,7 +1678,7 @@ hash = "585412d7693487276419a3b2ff57ba306e67e78d033beb58c514f0c5e80193f6"
 
 [[files]]
 file = "config/sleepwarp.json"
-hash = "397625e7d7d2bfbe12a96fa290bef8f2154e1c3d98fd168e819191d60f0f6b56"
+hash = "53b16e24563c9ef561457e55ff528ccf2791f28ef55437e766b35b47fa509a0b"
 
 [[files]]
 file = "config/slumber.properties"
@@ -2826,22 +2830,22 @@ metafile = true
 
 [[files]]
 file = "mods/mms-combat.pw.toml"
-hash = "87fa5c72d5bdcff0a0b400109534367da9b293f71877901ae25e411c6da5212b"
+hash = "97c619c872492bd396d4585e719cf0156f7da1938c171c77b2de5dad6e07adf0"
 metafile = true
 
 [[files]]
 file = "mods/mms-economy.pw.toml"
-hash = "937d4ca7875f79aa44f3331e07214cadc9d7b1a89020b92fbc303e0e69a36083"
+hash = "fd46146e78392aa9d6bc1524cf856bb6a99506490d66b28c38403a4e6d756fab"
 metafile = true
 
 [[files]]
 file = "mods/mms-jobs.pw.toml"
-hash = "914f25473fa66d2453ad5625f4f3d488507e6e3f0e40bc0937233ef929259dec"
+hash = "26b450faba2634ceac7231edd9a5ca3b2bc232fe39a357a45428eb4347cf3182"
 metafile = true
 
 [[files]]
 file = "mods/mms-metro.pw.toml"
-hash = "33e73c0b08a8bbb6242396e83395aed3058c539aee488c9b48b3189e2260b652"
+hash = "733bebc8e58cf31e331842681e40a211081a7667818b61c42e73c640a313eaca"
 metafile = true
 
 [[files]]
@@ -2851,7 +2855,7 @@ metafile = true
 
 [[files]]
 file = "mods/mms-origins.pw.toml"
-hash = "ed506974abb55af82cd013d093c7f44f2fd2b69866d5d2cedce3a9018c9de7d7"
+hash = "0f488e5b2d8f4593ae7839eb6c0ea5ec5b3b4f468aa448ae460c8b43b18898f7"
 metafile = true
 
 [[files]]
@@ -3082,6 +3086,11 @@ metafile = true
 [[files]]
 file = "mods/renderscale.pw.toml"
 hash = "85fd951cd42fd7b545c096058bf36127718ef9ec45ab3997c3baef5d65a903f8"
+metafile = true
+
+[[files]]
+file = "mods/resource-pack-overrides.pw.toml"
+hash = "85a5ed322f547de3413ed6944f2a09ab53abb6db323f00c42ee13c6e2f391fb4"
 metafile = true
 
 [[files]]
@@ -3364,7 +3373,7 @@ hash = "944f75feb78961494b253915d1e66c6572ae717c891d7e5d0f3bb50c56d16cab"
 
 [[files]]
 file = "options.txt"
-hash = "3f123b30e22d2c212b93269e7a67bbce74c2e44e30f5cbbb68f8bea3ee80b547"
+hash = "6d9267681264e1d08bebdd12b31ae6412e93b35fbe12cb01dc00a6ea0cadbd6b"
 preserve = true
 
 [[files]]

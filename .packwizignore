@@ -21,3 +21,4 @@ replay_pid*.log
 /mms-deploy.sh
 /update-title.sh
 /disabled-mods/**
+.DS_Store
