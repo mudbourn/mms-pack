@@ -1,13 +1,13 @@
 name = "Variants&Ventures"
-filename = "variantsandventures-fabric-1.0.27+mc1.21.11.jar"
+filename = "variantsandventures-fabric-1.0.28+mc1.21.11.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/lNDRiXkY/versions/xHPZXMYc/variantsandventures-fabric-1.0.27%2Bmc1.21.11.jar"
+url = "https://cdn.modrinth.com/data/lNDRiXkY/versions/itBIy9Wx/variantsandventures-fabric-1.0.28%2Bmc1.21.11.jar"
 hash-format = "sha512"
-hash = "c0eb56ca8dfa4f800d0e35f6ad9c3c1bae641989155ac524980d0f7722d0443f46319d3fef8d9e274af371627912ef8d6fd90096ec1696ea0761a1d9a6a81eb8"
+hash = "e3ed4ee251a8e98442f112d29009572d96ef5bd9bd01e3728e9236c44ac50546b4d399572282ebb4e479d8766fa94ddd6a7998e793b10e83a5ba4a5922ef0420"
 
 [update]
 [update.modrinth]
 mod-id = "lNDRiXkY"
-version = "xHPZXMYc"
+version = "itBIy9Wx"
