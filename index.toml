@@ -1066,7 +1066,7 @@ hash = "72c171bed9d554dfa0a3d7af64c39194b95feaf3f787c1219603181c1316e58f"
 
 [[files]]
 file = "config/inspect-animations.json5"
-hash = "748c687cd6ea284bd1001cfaeb6dc3d1eb85e75f28181db99d8b0c2b1f59f3bf"
+hash = "a70371e840bc3863219d13232e6d8bfe79fdfa203795b77cfabb390efdb31342"
 
 [[files]]
 file = "config/isxander-main-menu-credits.json"
@@ -1578,7 +1578,7 @@ hash = "f5101beef129ea119e726f90af1ba9efe5fff73f58877a3ad31acd3c55dfb2d0"
 
 [[files]]
 file = "config/resourcepackoverrides.json"
-hash = "649fcb3d0a7cfc00e841db5bd5867e652da76ee2048043e787692f804508be24"
+hash = "f45ea88402a69970c83eab90684796b113cbcb035cacf9f679c1a0347a4a0964"
 
 [[files]]
 file = "config/roughlyenoughitems/collapsible.json5"
@@ -3373,7 +3373,7 @@ hash = "944f75feb78961494b253915d1e66c6572ae717c891d7e5d0f3bb50c56d16cab"
 
 [[files]]
 file = "options.txt"
-hash = "6d9267681264e1d08bebdd12b31ae6412e93b35fbe12cb01dc00a6ea0cadbd6b"
+hash = "27a61a9c4ae75b5790a63a033ee64cb5c3350c10e7b427dc5ba5f202abcdaa36"
 preserve = true
 
 [[files]]

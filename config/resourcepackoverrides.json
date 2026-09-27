@@ -11,15 +11,6 @@
     "file/bountifulfish-anchor-3d",
     "file/bountifulfish-tuna-3d",
     "file/jobsplus_renames",
-    "file/FA+Spiders-v2.2",
-    "file/FA+Objects-v2.1.2",
-    "file/FA+Emissive-v1.6",
-    "file/FA+Details-v2.2.1",
-    "file/FA+Creepers-v2.1",
-    "file/FA+All_Extensions-v1.8.1",
-    "file/Fresh Patch - Variants and Ventures",
-    "file/Freshly Modded 3.0.3",
-    "file/FreshAnimations_v1.10.4",
     "file/Better-Leaves-9.5",
     "continuity:glass_pane_culling_fix",
     "file/Chat Reporting Helper",
@@ -38,15 +29,6 @@
       "file/Mod Menu Helper",
       "file/Chat Reporting Helper",
       "file/Better-Leaves-9.5",
-      "file/FreshAnimations_v1.10.4",
-      "file/Freshly Modded 3.0.3",
-      "file/Fresh Patch - Variants and Ventures",
-      "file/FA+All_Extensions-v1.8.1",
-      "file/FA+Creepers-v2.1",
-      "file/FA+Details-v2.2.1",
-      "file/FA+Emissive-v1.6",
-      "file/FA+Objects-v2.1.2",
-      "file/FA+Spiders-v2.2",
       "file/jobsplus_renames",
       "file/bountifulfish-tuna-3d",
       "file/bountifulfish-anchor-3d",
@@ -59,6 +41,33 @@
     ],
     "$$mms": {
       "required": true
+    },
+    "file/FA+Spiders-v2.2": {
+      "hidden": true
+    },
+    "file/FA+Objects-v2.1.2": {
+      "hidden": true
+    },
+    "file/FA+Emissive-v1.6": {
+      "hidden": true
+    },
+    "file/FA+Details-v2.2.1": {
+      "hidden": true
+    },
+    "file/FA+Creepers-v2.1": {
+      "hidden": true
+    },
+    "file/FA+All_Extensions-v1.8.1": {
+      "hidden": true
+    },
+    "file/Fresh Patch - Variants and Ventures": {
+      "hidden": true
+    },
+    "file/Freshly Modded 3.0.3": {
+      "hidden": true
+    },
+    "file/FreshAnimations_v1.10.4": {
+      "hidden": true
     }
   }
 }
