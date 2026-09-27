@@ -22,3 +22,25 @@ replay_pid*.log
 /update-title.sh
 /disabled-mods/**
 .DS_Store
+# Repo tooling / docs / dev lists — never ship to clients
+/mms-*.py
+/mms-*.sh
+/mms-repos.toml
+/dev-client-jvm-args.txt
+/recommended-jvm-args.txt
+/netdrift-allow.txt
+/quarantine.txt
+/testing-hold.txt
+/overlay.list
+/.packignore
+/README.md
+/LICENSE
+/.github/**
+# Server-only datapacks
+/server-datapacks/**
+# Caches / backups
+*.backup
+config/voicechat/username-cache.json
+config/.puzzle_cache/**
+config/Easy Shop Mod/PlayerSkins/**
+resourcepacks/**/.*backup/**

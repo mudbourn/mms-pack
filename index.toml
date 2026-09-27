@@ -1,34 +1,6 @@
 hash-format = "sha256"
 
 [[files]]
-file = ".github/workflows/_caller-template.yml"
-hash = "106719850045430ae58f41848b5a54e9ed5c08c35d921005d3372d2c4f231ae9"
-
-[[files]]
-file = ".github/workflows/mod-release.yml"
-hash = "60310426cc17ae121c51569fa3a89a8b9a2226c32de5abde1ba8cd1227bdc89a"
-
-[[files]]
-file = ".packignore"
-hash = "cff20a6727ee8d581a83affb36913f39504e4efcc835a07cbfa0df632bb9d057"
-
-[[files]]
-file = "LICENSE"
-hash = "39b1578c36cfd699e9de71dbd69ff5979ef536c85cd1af774079e8fcad3399f2"
-
-[[files]]
-file = "README.md"
-hash = "cd433f56fd8538b4cf86995115e74b4b7cc69d19864db4400e338b30c0338949"
-
-[[files]]
-file = "config/.puzzle_cache/mojangstudios.png"
-hash = "27d2a588a33e94aff8cea4ea6090509ab3e10640f980e63dfd317c6b0dcd30df"
-
-[[files]]
-file = "config/Easy Shop Mod/PlayerSkins/49cad3d9-0ece-4536-b469-16b1c2c0fdd4.png"
-hash = "664ea2023ccb6d3a820ca533b876fc50d457f1727ae87ecfc846fffc61f85e89"
-
-[[files]]
 file = "config/EssentialCommands.properties"
 hash = "fc01dc3f08884e8fdf7c0796ea7b9e740dc6f2f5d46fd021a73e8e3a30789fdb"
 
@@ -427,10 +399,6 @@ hash = "67cdba9bb7997b14cdea56d990cfb2419357615f2d7c2122e94ebb093ada01a9"
 [[files]]
 file = "config/axesareweapons.json5"
 hash = "80aff5d9a9da2280845645cfeba76415acc85deead3b684940ac235bdc45036e"
-
-[[files]]
-file = "config/axiom/.axiom.json.backup"
-hash = "75fa0834df0d7d18d25b041ec8ff6e3da7f8a9ba6a53dd265c80529aad513672"
 
 [[files]]
 file = "config/axiom/axiom.json"
@@ -1866,10 +1834,6 @@ file = "config/voicechat/translations.properties"
 hash = "b258a94a5ed60fbf93b66c452c3d6e36b044f630741f90e5b13852a4805b235e"
 
 [[files]]
-file = "config/voicechat/username-cache.json"
-hash = "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
-
-[[files]]
 file = "config/voicechat/voicechat-client.properties"
 hash = "dd0aad7699bcc7b2f6c311f1103ef942622e412179195eed767e3d936b0fe8d9"
 
@@ -2013,70 +1977,6 @@ hash = "121b93764159be6fb7dab523b29a844e2bb78400ce8c48f52135a097e9b0006e"
 [[files]]
 file = "config/zfastnoise.mixin.toml"
 hash = "9662f1b3b93e09c023de08253f7b13fbc76bdb71c45ebce196ce80dff7cec1ec"
-
-[[files]]
-file = "dev-client-jvm-args.txt"
-hash = "f3e6cb13cc578c14bd02f19a811f6bb54de49c32d57cdf9cc059910116c2304c"
-
-[[files]]
-file = "mms-client-sweep.py"
-hash = "f0ed4fadac0105655f55d0233a9ff2ac435ee824b4a097f1d674a28f7cbc0ecc"
-
-[[files]]
-file = "mms-config-reconcile.py"
-hash = "4bb3de74a3f94e92c3813492c35e82f2c29c431acaa36ea6ece1dd030f0cb2fa"
-
-[[files]]
-file = "mms-deploy-prod.sh"
-hash = "7dc7730d2bb52654f32d9272c5692e43651719d1a33f939bf6917a7e7b049cd6"
-
-[[files]]
-file = "mms-deploy-test.sh"
-hash = "99683061ef990cd8a2a28bc5a92fcbe7232742ddb7425e5ca9b7da1bb0814b21"
-
-[[files]]
-file = "mms-dev-serve.sh"
-hash = "fa7f97f1c8fd422a817f86f212f9ce6161ef523dcb3b7873b862596332c444ea"
-
-[[files]]
-file = "mms-dev-setup.sh"
-hash = "6e2343e72e080e2b6410e5c419b2dd2c3d34fdee77dc51681d7b1a089a972afe"
-
-[[files]]
-file = "mms-entity-sweep.py"
-hash = "8e19596c18a276d38b2c72dec7cf12bbed8ec438b6c0368e4646afc9f1465e86"
-
-[[files]]
-file = "mms-hotswap-watch.sh"
-hash = "b18c9ba08862f09bf35120437630fb843992b8b1e4ec8ee503a8a14af6db3a2a"
-
-[[files]]
-file = "mms-netdrift-check.py"
-hash = "4232f8a3a8e3c03025d2ef172374ff985ee77926aa3209c019e14b3bb9753c9c"
-
-[[files]]
-file = "mms-overlay-apply.sh"
-hash = "a7cf1d5d5e2a62c2067fa8432a480b698c64678173a985222f0848923f380a82"
-
-[[files]]
-file = "mms-promote.sh"
-hash = "136976d216f9230df662eb767f913d094f986f37ffd5470754c617ea15db2840"
-
-[[files]]
-file = "mms-repos.py"
-hash = "1293a0fa32ee0ea2838937b85bbc9070175bbafff01205336d9bb24570ef9a39"
-
-[[files]]
-file = "mms-repos.toml"
-hash = "3cff248e214d280b70014a0ed29bcc5c032d374ff2458dbe15d5d46a75ff6b73"
-
-[[files]]
-file = "mms-server-sync.py"
-hash = "947194314f73878a3158052fafc38defe2dd494bd13ab8cd4418267ed45afef1"
-
-[[files]]
-file = "mms-ship.py"
-hash = "7fc1658d9b10f180c4f7ab2ce6e960ba073b8f2733a12be34b30dad3dad0932c"
 
 [[files]]
 file = "mods/absolut-revive.pw.toml"
@@ -3368,25 +3268,9 @@ hash = "7791056371acfa8797bc4f230f2cb866728514ef98c351bb898d183e426abbbe"
 metafile = true
 
 [[files]]
-file = "netdrift-allow.txt"
-hash = "944f75feb78961494b253915d1e66c6572ae717c891d7e5d0f3bb50c56d16cab"
-
-[[files]]
 file = "options.txt"
 hash = "27a61a9c4ae75b5790a63a033ee64cb5c3350c10e7b427dc5ba5f202abcdaa36"
 preserve = true
-
-[[files]]
-file = "overlay.list"
-hash = "b9066168f0bf4b93167ed1311f0e5b2671b8019e74fc1de7ff9b21f66182360c"
-
-[[files]]
-file = "quarantine.txt"
-hash = "87a7dcd7408d9f5ce6e3fbbd296425e7e3cbcb20a39b210a08ddd02ae30fe3d6"
-
-[[files]]
-file = "recommended-jvm-args.txt"
-hash = "ff8a1cf3aafeb186cfbfeb8a6c475f78e93ad6a98a407dfd9ee77643cf1892d8"
 
 [[files]]
 file = "resourcepacks/Better-Leaves-9.5/LICENSE"
@@ -21909,114 +21793,6 @@ file = "resourcepacks/Chat Reporting Helper/pack.png"
 hash = "95819780ea0f5a973241aec02d8afed992e7be353bcddf251b53d776e75a753b"
 
 [[files]]
-file = "resourcepacks/DetailedAnimationsV0.19/.da-backup/player.jem"
-hash = "99f4ae6c4097e01d23c0a8b5678768afd6fa7ccea87c702fbb63b67c147592f4"
-
-[[files]]
-file = "resourcepacks/DetailedAnimationsV0.19/.da-backup/player_slim.jem"
-hash = "6c0b4839f5f0562665a2bd26b2ab8e2a89a975a89918626a164c82cd4ec5fd02"
-
-[[files]]
-file = "resourcepacks/DetailedAnimationsV0.19/.mms-armor-jem-backup/player_inner_armor.jem"
-hash = "8a501d6acc2b3644009d5a3e9ab32049fc3e6033f6d4a9ce13280ed01cfe1934"
-
-[[files]]
-file = "resourcepacks/DetailedAnimationsV0.19/.mms-armor-jem-backup/player_outer_armor.jem"
-hash = "788c106356b9ce708da17a7f6b403e5f5d0c601bbfa35e3b24045dba51f8cee5"
-
-[[files]]
-file = "resourcepacks/DetailedAnimationsV0.19/.mms-armor-jem-backup/player_slim_inner_armor.jem"
-hash = "16c0243aa2de11b20270f01b357f736ad081ed911194688f19de239d99e34b67"
-
-[[files]]
-file = "resourcepacks/DetailedAnimationsV0.19/.mms-armor-jem-backup/player_slim_outer_armor.jem"
-hash = "788c106356b9ce708da17a7f6b403e5f5d0c601bbfa35e3b24045dba51f8cee5"
-
-[[files]]
-file = "resourcepacks/DetailedAnimationsV0.19/.mms-crawl-backup/player.jem"
-hash = "82595b981c66ba2024befbf0972f235624d53785cab26881d8748d53ca7bca6d"
-
-[[files]]
-file = "resourcepacks/DetailedAnimationsV0.19/.mms-crawl-backup/player_slim.jem"
-hash = "6049fab10886be1dab480559af4095c784fb48b863f5ac9ce9193e4a31939987"
-
-[[files]]
-file = "resourcepacks/DetailedAnimationsV0.19/.mms-crossbow-backup/player.jem"
-hash = "32c7d8a2174c41daf6e34b46c29df6238644b4afffe98abfe1a104b5cda5e3c1"
-
-[[files]]
-file = "resourcepacks/DetailedAnimationsV0.19/.mms-crossbow-backup/player_slim.jem"
-hash = "6595f3fb75603363450bdc40b7869c41c7c60070590e5844cc530c4e4e694093"
-
-[[files]]
-file = "resourcepacks/DetailedAnimationsV0.19/.mms-preteststate-backup/player.jem"
-hash = "d8f1be3bb012664d405978368e57b900e19861cd0bd4caeb56cc9de93c2c5073"
-
-[[files]]
-file = "resourcepacks/DetailedAnimationsV0.19/.mms-preteststate-backup/player_inner_armor.jem"
-hash = "8a501d6acc2b3644009d5a3e9ab32049fc3e6033f6d4a9ce13280ed01cfe1934"
-
-[[files]]
-file = "resourcepacks/DetailedAnimationsV0.19/.mms-preteststate-backup/player_outer_armor.jem"
-hash = "788c106356b9ce708da17a7f6b403e5f5d0c601bbfa35e3b24045dba51f8cee5"
-
-[[files]]
-file = "resourcepacks/DetailedAnimationsV0.19/.mms-preteststate-backup/player_slim.jem"
-hash = "d66c8c639e35fd7209a910f5957ed4f72c5dfa3ebb684862c0942497117f0d40"
-
-[[files]]
-file = "resourcepacks/DetailedAnimationsV0.19/.mms-preteststate-backup/player_slim_inner_armor.jem"
-hash = "16c0243aa2de11b20270f01b357f736ad081ed911194688f19de239d99e34b67"
-
-[[files]]
-file = "resourcepacks/DetailedAnimationsV0.19/.mms-preteststate-backup/player_slim_outer_armor.jem"
-hash = "788c106356b9ce708da17a7f6b403e5f5d0c601bbfa35e3b24045dba51f8cee5"
-
-[[files]]
-file = "resourcepacks/DetailedAnimationsV0.19/.mms-riding-backup/player.jem"
-hash = "80ac044713ad2a0b04310193ff7574f4e608a6f58d4e5e33680eb091778c711b"
-
-[[files]]
-file = "resourcepacks/DetailedAnimationsV0.19/.mms-riding-backup/player_cape.jem"
-hash = "23d76b0f34e67c15dba601cb1ea795dd41e73f09f31d7b188093b121039d3f98"
-
-[[files]]
-file = "resourcepacks/DetailedAnimationsV0.19/.mms-riding-backup/player_slim.jem"
-hash = "06b8989fc668ee5bff4b88fe0eb0af395bb1b3194adb16f151f30efcac64c077"
-
-[[files]]
-file = "resourcepacks/DetailedAnimationsV0.19/.mms-rootgate-backup/player.jem"
-hash = "d8f1be3bb012664d405978368e57b900e19861cd0bd4caeb56cc9de93c2c5073"
-
-[[files]]
-file = "resourcepacks/DetailedAnimationsV0.19/.mms-rootgate-backup/player_inner_armor.jem"
-hash = "8b4d693906fc09bfb46d6a61ad6527ccac52865ea6a1de69f5f9449d2cb38a26"
-
-[[files]]
-file = "resourcepacks/DetailedAnimationsV0.19/.mms-rootgate-backup/player_outer_armor.jem"
-hash = "54df3e6c585f3063b9507e318cf025c2f21ba5e1fc18aa8afa75f9c15196c162"
-
-[[files]]
-file = "resourcepacks/DetailedAnimationsV0.19/.mms-rootgate-backup/player_slim.jem"
-hash = "d66c8c639e35fd7209a910f5957ed4f72c5dfa3ebb684862c0942497117f0d40"
-
-[[files]]
-file = "resourcepacks/DetailedAnimationsV0.19/.mms-rootgate-backup/player_slim_inner_armor.jem"
-hash = "b51350c00ae72c89448d804c5ceee02e442d239a0ced52f2e6a6a349a3c7c0ea"
-
-[[files]]
-file = "resourcepacks/DetailedAnimationsV0.19/.mms-rootgate-backup/player_slim_outer_armor.jem"
-hash = "54df3e6c585f3063b9507e318cf025c2f21ba5e1fc18aa8afa75f9c15196c162"
-
-[[files]]
-file = "resourcepacks/DetailedAnimationsV0.19/.mms-walkphase-backup/player.jem"
-hash = "d8f1be3bb012664d405978368e57b900e19861cd0bd4caeb56cc9de93c2c5073"
-
-[[files]]
-file = "resourcepacks/DetailedAnimationsV0.19/.mms-walkphase-backup/player_slim.jem"
-hash = "d66c8c639e35fd7209a910f5957ed4f72c5dfa3ebb684862c0942497117f0d40"
-
-[[files]]
 file = "resourcepacks/DetailedAnimationsV0.19/assets/minecraft/emf/cem/player.jem"
 hash = "301cf6160efd8582b066b94816a7c2dca7fa93f9dafc658900502f522ac11df8"
 
@@ -28461,10 +28237,6 @@ file = "resourcepacks/SodiumTranslations/pack.png"
 hash = "d50415986dcc6b9f390e817aec1b723fc9e35b380d7e9cc3c2f5d0907efd2687"
 
 [[files]]
-file = "resourcepacks/aerialhell-trident-3d/.mms-align-backup/forgotten_battle_trident_3d.json"
-hash = "ee0fa2ebd7d358c341e553d045846a846c51473134c707f1c48499236c47a473"
-
-[[files]]
 file = "resourcepacks/aerialhell-trident-3d/assets/aerialhell/items/forgotten_battle_trident.json"
 hash = "1922c1061a1b06f9246e4927ac4ce46c587504125cb662801f3a736e65fa7a68"
 
@@ -28567,26 +28339,6 @@ hash = "0c07949eebdf361022c1d69f617b45c33ab486f5d25c567ee762ec733531adf1"
 [[files]]
 file = "resourcepacks/basicweapons-pike-3d/pack.png"
 hash = "bad275f9d51c99b795bada8a64c2fde5c91d7df8826483f5f7d469c1c75788ee"
-
-[[files]]
-file = "resourcepacks/bountifulfish-anchor-3d/.mms-anchor-backup/anchor_3d.json"
-hash = "32dd262e588de60e556bab3b1b265db00062d225061f834bf496793018515d1e"
-
-[[files]]
-file = "resourcepacks/bountifulfish-anchor-3d/.mms-anchor-backup/anchor_3d.png"
-hash = "63db1342acb3d09caa54c77529c88fd73893319f3abd4fb197de90817fea5fa3"
-
-[[files]]
-file = "resourcepacks/bountifulfish-anchor-3d/.mms-anchor-backup/oldpirate-trimmed-anchor_3d.json"
-hash = "72bdcd8cdad9edfebd69c676226cc0f22ecea07d9829a5daeb67ae4a3a3b25ae"
-
-[[files]]
-file = "resourcepacks/bountifulfish-anchor-3d/.mms-anchor-backup/oldpirate-trimmed-anchor_3d.png"
-hash = "f874db421a1cd2b84c922f94c0d1ffe715362fb8c1bfb438c0a37203ff2816aa"
-
-[[files]]
-file = "resourcepacks/bountifulfish-anchor-3d/.mms-anchor-backup/user-edit-2151-anchor_3d.json"
-hash = "9d84f4ea9023dcd5007c5f439267df5f6c4acc0dc1ed9f0cd7f866ed2138e5d4"
 
 [[files]]
 file = "resourcepacks/bountifulfish-anchor-3d/assets/bountiful-fish/items/anchor.json"
@@ -31265,10 +31017,6 @@ file = "resourcepacks/lowlands-vanity/pack.png"
 hash = "84aa2c842e1433d91304c99231648599f47185c5c7c9488864aa783b8ed184f2"
 
 [[files]]
-file = "resourcepacks/toheee1234's Better Combat Animations/assets/bettercombat/player_animations/.mms-swingfix-backup/one_handed_slash_horizontal_left.json.was-two-handed"
-hash = "785e6fbeb76a9d64c5aad07dbc356b29e869ac3a8f622bb78f11c982dabca01f"
-
-[[files]]
 file = "resourcepacks/toheee1234's Better Combat Animations/assets/bettercombat/player_animations/dual_handed_slash_cross.json"
 hash = "d960e522db4413f538841ccfb1bfbed7157237ae9e4de9dc067608707e79b6d9"
 
@@ -31401,277 +31149,9 @@ file = "resourcepacks/toheee1234's Better Combat Animations/pack.png"
 hash = "7ccefda3287089a9f30f749fd86ec923dac9af3324ed04f5dd1939c0a2c7db00"
 
 [[files]]
-file = "server-datapacks/mms-dagger-recipe-fix/data/expanded_weaponry/advancement/recipes/combat/copper_dagger.json"
-hash = "7e989a13a18eafecc27a96f209a2c05eb63d0c3fc7cf6edf87417cd3d127f5eb"
-
-[[files]]
-file = "server-datapacks/mms-dagger-recipe-fix/data/expanded_weaponry/advancement/recipes/combat/diamond_dagger.json"
-hash = "4f8fa0cd1f642d5ea24005357c72687ab6e4cc88f69ca488a0d239591e83e368"
-
-[[files]]
-file = "server-datapacks/mms-dagger-recipe-fix/data/expanded_weaponry/advancement/recipes/combat/golden_dagger.json"
-hash = "56f74b0762bf2a078b316b350a99cf5ac73218f37dc148d5a692e419709a8c55"
-
-[[files]]
-file = "server-datapacks/mms-dagger-recipe-fix/data/expanded_weaponry/advancement/recipes/combat/iron_dagger.json"
-hash = "51868dcdf461aa82fb7a2a6b6f011fad81a2e11aae965805f905d4c83ca4d513"
-
-[[files]]
-file = "server-datapacks/mms-dagger-recipe-fix/data/expanded_weaponry/advancement/recipes/combat/stone_dagger.json"
-hash = "a2b17055a8b4a987e7a3a74d48eefa68eda57d00c983c8e90f73220dc68d6e38"
-
-[[files]]
-file = "server-datapacks/mms-dagger-recipe-fix/data/expanded_weaponry/advancement/recipes/combat/wooden_dagger.json"
-hash = "fb28459da12bba806294829d05a354aee7e54d7a748be3f9043d91a2c8a10d5d"
-
-[[files]]
-file = "server-datapacks/mms-dagger-recipe-fix/data/expanded_weaponry/recipe/copper_dagger.json"
-hash = "9d4a61ea49853b01da29e4aa338f24c83ce11aae97eb42632e0cd0d98b8fb1e6"
-
-[[files]]
-file = "server-datapacks/mms-dagger-recipe-fix/data/expanded_weaponry/recipe/diamond_dagger.json"
-hash = "8b7738d8cb5fb92c4795cee91365e4daa4336a484a7c05b1177e22d1f80db998"
-
-[[files]]
-file = "server-datapacks/mms-dagger-recipe-fix/data/expanded_weaponry/recipe/golden_dagger.json"
-hash = "8877fb32a297056698555ebe5856f7de2183be76446dae0dfe81ba6816e6eaf1"
-
-[[files]]
-file = "server-datapacks/mms-dagger-recipe-fix/data/expanded_weaponry/recipe/iron_dagger.json"
-hash = "51822a705adb266b1759d4a6c99ce9cc26c4ec321ee3ce9bb55e335f8b56ab0e"
-
-[[files]]
-file = "server-datapacks/mms-dagger-recipe-fix/data/expanded_weaponry/recipe/stone_dagger.json"
-hash = "73fcf5c9ab4d6d4d19dfe88a8c25af92dc34b085882c1318d030707ff5325258"
-
-[[files]]
-file = "server-datapacks/mms-dagger-recipe-fix/data/expanded_weaponry/recipe/wooden_dagger.json"
-hash = "a9d618e8e894babae7bbfe471de5d3937236c502b88adf9d8278edf359f3e99b"
-
-[[files]]
-file = "server-datapacks/mms-dagger-recipe-fix/pack.mcmeta"
-hash = "b12899aee6a2d636e219929d4496ceca9613746bf79d11f1f426104de1a4dd9e"
-
-[[files]]
-file = "server-datapacks/mms-ddd-no-natural-gen/README.md"
-hash = "975e86e5ad60ca1e77fe8db7601a884f6541f4ef9037e7ba6ea65f1823e83953"
-
-[[files]]
-file = "server-datapacks/mms-ddd-no-natural-gen/data/ddd/tags/worldgen/biome/has_new_dungeon/dungeon_desert.json"
-hash = "bef4d172fc1bfb34d342e79090726c4a0c272dd404783c3ea022b992e0e0415e"
-
-[[files]]
-file = "server-datapacks/mms-ddd-no-natural-gen/data/ddd/tags/worldgen/biome/has_new_dungeon/dungeon_frozen.json"
-hash = "bef4d172fc1bfb34d342e79090726c4a0c272dd404783c3ea022b992e0e0415e"
-
-[[files]]
-file = "server-datapacks/mms-ddd-no-natural-gen/data/ddd/tags/worldgen/biome/has_new_dungeon/dungeon_plains.json"
-hash = "bef4d172fc1bfb34d342e79090726c4a0c272dd404783c3ea022b992e0e0415e"
-
-[[files]]
-file = "server-datapacks/mms-ddd-no-natural-gen/data/ddd/tags/worldgen/biome/has_new_dungeon/monolithic_tower.json"
-hash = "bef4d172fc1bfb34d342e79090726c4a0c272dd404783c3ea022b992e0e0415e"
-
-[[files]]
-file = "server-datapacks/mms-ddd-no-natural-gen/data/ddd/tags/worldgen/biome/has_new_dungeon/spider_lair.json"
-hash = "bef4d172fc1bfb34d342e79090726c4a0c272dd404783c3ea022b992e0e0415e"
-
-[[files]]
-file = "server-datapacks/mms-ddd-no-natural-gen/pack.mcmeta"
-hash = "b03928dbb72bc65d64ab09e045543fbb54520a8d6a22704f3c85b505347e4e3d"
-
-[[files]]
-file = "server-datapacks/mms-unstable-recipe-embargo/README.md"
-hash = "6c32fa75f9857ba6cd6404ebf1cb6f0f96e7b2b45bc351e3cb791a1233cd1060"
-
-[[files]]
-file = "server-datapacks/mms-unstable-recipe-embargo/data/aerialhell/recipe/crystal_from_ruby_bucket_freezing.json"
-hash = "e3a2148d269d1b6dce57f85bb6112ace130f425e1eae6120ef80c4c78dd72d99"
-
-[[files]]
-file = "server-datapacks/mms-unstable-recipe-embargo/data/aerialhell/recipe/diamond_shuriken.json"
-hash = "e3a2148d269d1b6dce57f85bb6112ace130f425e1eae6120ef80c4c78dd72d99"
-
-[[files]]
-file = "server-datapacks/mms-unstable-recipe-embargo/data/aerialhell/recipe/frozen_chicken_freezing.json"
-hash = "e3a2148d269d1b6dce57f85bb6112ace130f425e1eae6120ef80c4c78dd72d99"
-
-[[files]]
-file = "server-datapacks/mms-unstable-recipe-embargo/data/aerialhell/recipe/frozen_mutton_freezing.json"
-hash = "e3a2148d269d1b6dce57f85bb6112ace130f425e1eae6120ef80c4c78dd72d99"
-
-[[files]]
-file = "server-datapacks/mms-unstable-recipe-embargo/data/aerialhell/recipe/gold_shuriken.json"
-hash = "e3a2148d269d1b6dce57f85bb6112ace130f425e1eae6120ef80c4c78dd72d99"
-
-[[files]]
-file = "server-datapacks/mms-unstable-recipe-embargo/data/aerialhell/recipe/iron_shuriken.json"
-hash = "e3a2148d269d1b6dce57f85bb6112ace130f425e1eae6120ef80c4c78dd72d99"
-
-[[files]]
-file = "server-datapacks/mms-unstable-recipe-embargo/data/aerialhell/recipe/netherite_shuriken.json"
-hash = "e3a2148d269d1b6dce57f85bb6112ace130f425e1eae6120ef80c4c78dd72d99"
-
-[[files]]
-file = "server-datapacks/mms-unstable-recipe-embargo/data/aerialhell/recipe/stellar_clay_vibration.json"
-hash = "e3a2148d269d1b6dce57f85bb6112ace130f425e1eae6120ef80c4c78dd72d99"
-
-[[files]]
-file = "server-datapacks/mms-unstable-recipe-embargo/data/aerialhell/recipe/vibrant_chicken_vibration.json"
-hash = "e3a2148d269d1b6dce57f85bb6112ace130f425e1eae6120ef80c4c78dd72d99"
-
-[[files]]
-file = "server-datapacks/mms-unstable-recipe-embargo/data/mms_embargo/tags/item/never.json"
-hash = "079b89f1b95b95b5e065eb3cd0dd9024f07cfb7dff103fc1f136f29812692a47"
-
-[[files]]
-file = "server-datapacks/mms-unstable-recipe-embargo/data/uselessreptile/recipe/dragon_chestplate_diamond.json"
-hash = "e3a2148d269d1b6dce57f85bb6112ace130f425e1eae6120ef80c4c78dd72d99"
-
-[[files]]
-file = "server-datapacks/mms-unstable-recipe-embargo/data/uselessreptile/recipe/dragon_chestplate_gold.json"
-hash = "e3a2148d269d1b6dce57f85bb6112ace130f425e1eae6120ef80c4c78dd72d99"
-
-[[files]]
-file = "server-datapacks/mms-unstable-recipe-embargo/data/uselessreptile/recipe/dragon_chestplate_iron.json"
-hash = "e3a2148d269d1b6dce57f85bb6112ace130f425e1eae6120ef80c4c78dd72d99"
-
-[[files]]
-file = "server-datapacks/mms-unstable-recipe-embargo/data/uselessreptile/recipe/dragon_helmet_diamond.json"
-hash = "e3a2148d269d1b6dce57f85bb6112ace130f425e1eae6120ef80c4c78dd72d99"
-
-[[files]]
-file = "server-datapacks/mms-unstable-recipe-embargo/data/uselessreptile/recipe/dragon_helmet_gold.json"
-hash = "e3a2148d269d1b6dce57f85bb6112ace130f425e1eae6120ef80c4c78dd72d99"
-
-[[files]]
-file = "server-datapacks/mms-unstable-recipe-embargo/data/uselessreptile/recipe/dragon_helmet_iron.json"
-hash = "e3a2148d269d1b6dce57f85bb6112ace130f425e1eae6120ef80c4c78dd72d99"
-
-[[files]]
-file = "server-datapacks/mms-unstable-recipe-embargo/data/uselessreptile/recipe/dragon_tail_armor_diamond.json"
-hash = "e3a2148d269d1b6dce57f85bb6112ace130f425e1eae6120ef80c4c78dd72d99"
-
-[[files]]
-file = "server-datapacks/mms-unstable-recipe-embargo/data/uselessreptile/recipe/dragon_tail_armor_gold.json"
-hash = "e3a2148d269d1b6dce57f85bb6112ace130f425e1eae6120ef80c4c78dd72d99"
-
-[[files]]
-file = "server-datapacks/mms-unstable-recipe-embargo/data/uselessreptile/recipe/dragon_tail_armor_iron.json"
-hash = "e3a2148d269d1b6dce57f85bb6112ace130f425e1eae6120ef80c4c78dd72d99"
-
-[[files]]
-file = "server-datapacks/mms-unstable-recipe-embargo/data/uselessreptile/recipe/flute.json"
-hash = "e3a2148d269d1b6dce57f85bb6112ace130f425e1eae6120ef80c4c78dd72d99"
-
-[[files]]
-file = "server-datapacks/mms-unstable-recipe-embargo/data/uselessreptile/recipe/vortex_horn.json"
-hash = "e3a2148d269d1b6dce57f85bb6112ace130f425e1eae6120ef80c4c78dd72d99"
-
-[[files]]
-file = "server-datapacks/mms-unstable-recipe-embargo/pack.mcmeta"
-hash = "2868c221cb40dbddc3075ccc9d8bedba06553d378f10d6a41eda8c702b647c06"
-
-[[files]]
-file = "server-datapacks/mms-unstable-vanilla-embargo/README.md"
-hash = "117dddfbf10fe61bc2eeba7b1b911ece8138451f12cf4c3993745a0a0fc9363f"
-
-[[files]]
-file = "server-datapacks/mms-unstable-vanilla-embargo/data/aerialhell/tags/worldgen/biome/has_structure/overworld_abandonned_portal.json"
-hash = "bef4d172fc1bfb34d342e79090726c4a0c272dd404783c3ea022b992e0e0415e"
-
-[[files]]
-file = "server-datapacks/mms-unstable-vanilla-embargo/data/mutantmonsters/tags/worldgen/biome/without_mutant_creeper_spawns.json"
-hash = "54a94af7857d1951c94ae53f1ed1b3f8d5f369668900f6a3e004257fc15b1735"
-
-[[files]]
-file = "server-datapacks/mms-unstable-vanilla-embargo/data/mutantmonsters/tags/worldgen/biome/without_mutant_enderman_spawns.json"
-hash = "54a94af7857d1951c94ae53f1ed1b3f8d5f369668900f6a3e004257fc15b1735"
-
-[[files]]
-file = "server-datapacks/mms-unstable-vanilla-embargo/data/mutantmonsters/tags/worldgen/biome/without_mutant_skeleton_spawns.json"
-hash = "54a94af7857d1951c94ae53f1ed1b3f8d5f369668900f6a3e004257fc15b1735"
-
-[[files]]
-file = "server-datapacks/mms-unstable-vanilla-embargo/data/mutantmonsters/tags/worldgen/biome/without_mutant_zombie_spawns.json"
-hash = "54a94af7857d1951c94ae53f1ed1b3f8d5f369668900f6a3e004257fc15b1735"
-
-[[files]]
-file = "server-datapacks/mms-unstable-vanilla-embargo/data/uselessreptile/tags/worldgen/biome/lightning_chaser_spawn_blacklist.json"
-hash = "54a94af7857d1951c94ae53f1ed1b3f8d5f369668900f6a3e004257fc15b1735"
-
-[[files]]
-file = "server-datapacks/mms-unstable-vanilla-embargo/data/uselessreptile/tags/worldgen/biome/magmamuncher_spawn_blacklist.json"
-hash = "54a94af7857d1951c94ae53f1ed1b3f8d5f369668900f6a3e004257fc15b1735"
-
-[[files]]
-file = "server-datapacks/mms-unstable-vanilla-embargo/data/uselessreptile/tags/worldgen/biome/moleclaw_spawn_blacklist.json"
-hash = "54a94af7857d1951c94ae53f1ed1b3f8d5f369668900f6a3e004257fc15b1735"
-
-[[files]]
-file = "server-datapacks/mms-unstable-vanilla-embargo/data/uselessreptile/tags/worldgen/biome/river_pikehorn_spawn_blacklist.json"
-hash = "54a94af7857d1951c94ae53f1ed1b3f8d5f369668900f6a3e004257fc15b1735"
-
-[[files]]
-file = "server-datapacks/mms-unstable-vanilla-embargo/data/uselessreptile/tags/worldgen/biome/wyvern_spawn_blacklist.json"
-hash = "54a94af7857d1951c94ae53f1ed1b3f8d5f369668900f6a3e004257fc15b1735"
-
-[[files]]
-file = "server-datapacks/mms-unstable-vanilla-embargo/pack.mcmeta"
-hash = "76771acf67b9439c880d8035d74e2fd9f284f22af9446fa0a4de41038fec107b"
-
-[[files]]
-file = "server-datapacks/recipe_fixes/data/crafting/recipe/saddle.json"
-hash = "3832bc04b00462f5513d1f2c61599bb6fd3ba7aac4c09c6e055ef6d3ac7b7cf6"
-
-[[files]]
-file = "server-datapacks/recipe_fixes/data/expanded_weaponry/recipe/copper_dagger.json"
-hash = "9d4a61ea49853b01da29e4aa338f24c83ce11aae97eb42632e0cd0d98b8fb1e6"
-
-[[files]]
-file = "server-datapacks/recipe_fixes/data/expanded_weaponry/recipe/diamond_dagger.json"
-hash = "8b7738d8cb5fb92c4795cee91365e4daa4336a484a7c05b1177e22d1f80db998"
-
-[[files]]
-file = "server-datapacks/recipe_fixes/data/expanded_weaponry/recipe/golden_dagger.json"
-hash = "8877fb32a297056698555ebe5856f7de2183be76446dae0dfe81ba6816e6eaf1"
-
-[[files]]
-file = "server-datapacks/recipe_fixes/data/expanded_weaponry/recipe/iron_dagger.json"
-hash = "51822a705adb266b1759d4a6c99ce9cc26c4ec321ee3ce9bb55e335f8b56ab0e"
-
-[[files]]
-file = "server-datapacks/recipe_fixes/data/expanded_weaponry/recipe/stone_dagger.json"
-hash = "73fcf5c9ab4d6d4d19dfe88a8c25af92dc34b085882c1318d030707ff5325258"
-
-[[files]]
-file = "server-datapacks/recipe_fixes/data/expanded_weaponry/recipe/wooden_dagger.json"
-hash = "a9d618e8e894babae7bbfe471de5d3937236c502b88adf9d8278edf359f3e99b"
-
-[[files]]
-file = "server-datapacks/recipe_fixes/data/minecraft/recipe/end_stone_bricks.json"
-hash = "ead26333e727988995362f09e5c0bb97602461eb3440c4c4eb63847da1ab3dbc"
-
-[[files]]
-file = "server-datapacks/recipe_fixes/data/superior_stonecutter/recipe/vanilla/metal/iron/chain_1.json"
-hash = "15036033795f1e27f0dfab17a361561a7eee60dac99233b7e72f8f582f47f69d"
-
-[[files]]
-file = "server-datapacks/recipe_fixes/data/superior_stonecutter/recipe/vanilla/metal/iron/chain_9.json"
-hash = "97fbf6e46fafc5d2b95e8046eeec1f582c753593f0b5c58001bd5af5536885e5"
-
-[[files]]
-file = "server-datapacks/recipe_fixes/pack.mcmeta"
-hash = "790b4b245afb2a2726653ac14cfbbafcb78e701bb65eabfb31c9267d23c98345"
-
-[[files]]
 file = "servers.dat"
 hash = "2396f65caf7f45bde09efa3cc89af7c93079d694714b44a412486ee7650dc05e"
 preserve = true
-
-[[files]]
-file = "testing-hold.txt"
-hash = "0469efcb67d3aba3c20ee3f034df416932474938f0dd3ee083106b173bb4f784"
 
 [[files]]
 file = "xaero/minimap/Multiplayer_mc.mudbourn.info/config.txt"
