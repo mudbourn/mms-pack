@@ -2320,7 +2320,7 @@ metafile = true
 
 [[files]]
 file = "mods/debugify.pw.toml"
-hash = "2f4334c909013c446b76c2de88ed149b890afc2daa8f9f32226a0579064bf790"
+hash = "22850b371cb4d8e1d865522f3053363010e4ab2ebcf1fa0efdc492c49923c27e"
 metafile = true
 
 [[files]]
@@ -2785,7 +2785,7 @@ metafile = true
 
 [[files]]
 file = "mods/modernfix-mvus.pw.toml"
-hash = "496f7d1bad22abbde478ccf9fde458732afbc93ab9e5765d85f2501e23ce8db5"
+hash = "db026db2e6fb5b7f395646f39ccd40ed9b2937bf43e531335e103fcdae3b896c"
 metafile = true
 
 [[files]]
@@ -3005,7 +3005,7 @@ metafile = true
 
 [[files]]
 file = "mods/rsls.pw.toml"
-hash = "ab2e57c3a1d78bbe81cfbf6709b9ca1c532ac4fb920924ed233ca88e84ef2960"
+hash = "bde9bf407b9a00a15d04050ceabb28d065e5b27f94c15908097a63fefc8095f6"
 metafile = true
 
 [[files]]
