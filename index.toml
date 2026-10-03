@@ -2730,7 +2730,7 @@ metafile = true
 
 [[files]]
 file = "mods/mms-combat.pw.toml"
-hash = "7b76299667df15fa2aa5cb044fe42c66706839d50f0b77731a3afcb687f4452b"
+hash = "b74f6dbf8e2ee2042a4fcdad632c38b7dced77cdeb4ac60ac153dfa7b7d18cf8"
 metafile = true
 
 [[files]]
@@ -2745,7 +2745,7 @@ metafile = true
 
 [[files]]
 file = "mods/mms-metro.pw.toml"
-hash = "733bebc8e58cf31e331842681e40a211081a7667818b61c42e73c640a313eaca"
+hash = "88e10a21e447fd86b583c2f65c0ed9681fe5b2aa004bb575d1aa84a11ac133b0"
 metafile = true
 
 [[files]]
