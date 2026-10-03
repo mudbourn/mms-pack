@@ -2095,7 +2095,7 @@ metafile = true
 
 [[files]]
 file = "mods/basicweapons.pw.toml"
-hash = "85148bbdc56daaea9a67e4ece2f6d6d64cfb1781f5db0b5618c10b45528e4e1e"
+hash = "c950aff84414e77edbb432d97a97d18c759114f644a7e68a6e7dbdcb44db13ec"
 metafile = true
 
 [[files]]
@@ -2170,7 +2170,7 @@ metafile = true
 
 [[files]]
 file = "mods/chat-heads.pw.toml"
-hash = "4275df649b68e75bc11daf1087551cc5c8344be9bb02d761eb810961c4b1e89c"
+hash = "3c3301ffe3888fac461d77fd613d5ebdd737e5ce20162bd559ac944f40587caf"
 metafile = true
 
 [[files]]
@@ -2485,7 +2485,7 @@ metafile = true
 
 [[files]]
 file = "mods/fish-of-thieves.pw.toml"
-hash = "801c907c2470640b9ef66abb126c7fe3b6d4709dd82d72409d7700bf0011c8ed"
+hash = "d9cc85e64394329059486cffd6d3fcf4c23f6f5383cb7d68f5aff9a00cf0573e"
 metafile = true
 
 [[files]]
@@ -2585,7 +2585,7 @@ metafile = true
 
 [[files]]
 file = "mods/it-takes-a-pillage-continuation.pw.toml"
-hash = "fd939ef6eef8e83c9c669bf7e215db2e6d974ca56f5e7e9d5e78ec06d6cdf06c"
+hash = "6a1983188e66bdbc4c788901c51ffb04437280549a8da1753334552827418c73"
 metafile = true
 
 [[files]]
@@ -2600,7 +2600,7 @@ metafile = true
 
 [[files]]
 file = "mods/jei.pw.toml"
-hash = "920d340913e0f6303391a71d140dd8068dd13dd6a09075dee392a88463a3bdbb"
+hash = "9a338d2e58d605c41550dd77f468c373a6e9967833f2b170a33069653d145535"
 metafile = true
 
 [[files]]
@@ -2890,7 +2890,7 @@ metafile = true
 
 [[files]]
 file = "mods/origins-legacy.pw.toml"
-hash = "737f3161f4d18100bbfbc1fdd0d5b57c4ee74bae42935e47bfb334f2e2bf6976"
+hash = "320292901dcecc55e1f59e0b0c256b2b2575606a07bc157d2932b2cf5ad3273f"
 metafile = true
 
 [[files]]
