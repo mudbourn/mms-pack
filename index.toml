@@ -1979,6 +1979,14 @@ file = "config/zfastnoise.mixin.toml"
 hash = "9662f1b3b93e09c023de08253f7b13fbc76bdb71c45ebce196ce80dff7cec1ec"
 
 [[files]]
+file = "docs/design/mms-restrict.md"
+hash = "19b733c6207122f73537aad0055e2c4f28b554c1ee5d5f3d7f1ae64e8460cb04"
+
+[[files]]
+file = "docs/design/mms-worldgen.md"
+hash = "053cc8e6200d3f8520a4a575ef378bef524eb5a6813763db725333d12c5928b2"
+
+[[files]]
 file = "mods/absolut-revive.pw.toml"
 hash = "cf778cadc90cec63aaf93fbd7fa1a66c4a59c9b3752217d9606a06f7d687a1c2"
 metafile = true
@@ -2494,11 +2502,6 @@ hash = "f2a0beaac8cc4b339d333f918b0114626dccb4942c2ba2b3429785081f439482"
 metafile = true
 
 [[files]]
-file = "mods/footprint.pw.toml"
-hash = "8f122c4d33954eda0b941d14a555384efe3b41e60febc6db6f55a9a193d04981"
-metafile = true
-
-[[files]]
 file = "mods/forge-config-api-port.pw.toml"
 hash = "b22f1d052eee2810fda73d850dd6f425a1214965e03a5a9dada421abfe74603b"
 metafile = true
@@ -2730,7 +2733,7 @@ metafile = true
 
 [[files]]
 file = "mods/mms-combat.pw.toml"
-hash = "b74f6dbf8e2ee2042a4fcdad632c38b7dced77cdeb4ac60ac153dfa7b7d18cf8"
+hash = "0690e71370756b59d087e154f0fe89dde0c683abf27db0ad059a90d36dff87b7"
 metafile = true
 
 [[files]]
