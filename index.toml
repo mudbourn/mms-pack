@@ -2733,7 +2733,7 @@ metafile = true
 
 [[files]]
 file = "mods/mms-combat.pw.toml"
-hash = "0690e71370756b59d087e154f0fe89dde0c683abf27db0ad059a90d36dff87b7"
+hash = "3c71eb511dad43c5e65f19d69e9c70aeadda19d7111b11876d1a027b8218e553"
 metafile = true
 
 [[files]]
@@ -2763,7 +2763,7 @@ metafile = true
 
 [[files]]
 file = "mods/mms-render-common.pw.toml"
-hash = "b34f74098ef335eb46b6db2eb459e13226a3f2ddbd68d72efd537e8c49c8e166"
+hash = "60b8310410c3b2b06affda951852a6e041ce1d40fdc2d4abf01fcaa53a98432d"
 metafile = true
 
 [[files]]
