@@ -2178,17 +2178,17 @@ metafile = true
 
 [[files]]
 file = "mods/chat-heads.pw.toml"
-hash = "3c3301ffe3888fac461d77fd613d5ebdd737e5ce20162bd559ac944f40587caf"
+hash = "ea9de81b1bb06645db0ee635c8e7f3aa8f45ebc0e96317e94a301de2b38361dc"
 metafile = true
 
 [[files]]
 file = "mods/chatanimation.pw.toml"
-hash = "e7c76e9b495749d9a729a94d540950286598f1b9da35c8d38dc8552e3461f091"
+hash = "e300b845948f11939e6cd42b90b36c924b2facf696ebfa076d140ef883de6dad"
 metafile = true
 
 [[files]]
 file = "mods/chatpatches.pw.toml"
-hash = "9b658e1de22632e0ff66ee3608454234bf440b35829435d7662cd328373c4bfd"
+hash = "4b8ce634ab750eb039b591487430bfc5a4244cdde2a23c62e2b6888f6dc5d67c"
 metafile = true
 
 [[files]]
@@ -2538,7 +2538,7 @@ metafile = true
 
 [[files]]
 file = "mods/gnetum.pw.toml"
-hash = "edc6e57f0627e93e008e86c18ca481e7c80045051cd2a85e3fd43c1e86596573"
+hash = "dc97e36a4b1a66e65def18a953d49966210e06b8d6c88f3b69d6261c57ee9aa6"
 metafile = true
 
 [[files]]
@@ -2603,7 +2603,7 @@ metafile = true
 
 [[files]]
 file = "mods/jei.pw.toml"
-hash = "9a338d2e58d605c41550dd77f468c373a6e9967833f2b170a33069653d145535"
+hash = "021f8969f2a9ba81e31e09c3c90f669c23a044ae60a77773d27b76deaefdcfee"
 metafile = true
 
 [[files]]
@@ -2873,17 +2873,17 @@ metafile = true
 
 [[files]]
 file = "mods/oh-the-biomes-weve-gone.pw.toml"
-hash = "e0f1f9d729b05dbbb7bfd68cdf8a6e0c2e1414ffbc29caf37efc79a45481198c"
+hash = "6c2035e0f93df97ef9e3718c4fcd270e0e7e9563cc5f07e3df09fb81cc115604"
 metafile = true
 
 [[files]]
 file = "mods/oh-the-trees-youll-grow.pw.toml"
-hash = "9ad4072be171b8a115520e9b320416636c93d77d7cf070d45d88857644e91e4c"
+hash = "c5861a2edecb52ab9c9a498a748e8c3861254f1b3a5162d6012fa38d115f02c0"
 metafile = true
 
 [[files]]
 file = "mods/open-parties-and-claims.pw.toml"
-hash = "1c66c4bc344e413a7bfe3fb677982b07c714db0fbcac0c6425c372d51074e965"
+hash = "1f4b13d5981a5de1ac0762d229106377820d74e12e600eb55222e67823dc9ea6"
 metafile = true
 
 [[files]]
@@ -3252,12 +3252,12 @@ metafile = true
 
 [[files]]
 file = "mods/xaeros-minimap.pw.toml"
-hash = "704db7b1a2db7f6713ae16aade245c3b31ba2c38577cb0a8e1cae4994784577b"
+hash = "305b27b26e8410932fd2d2eaf9a1fa9d1032bdc96cea97cdd0cb5944f4861afc"
 metafile = true
 
 [[files]]
 file = "mods/xaeros-world-map.pw.toml"
-hash = "b469ff5d0587b0d6e1f77961a67d910383ee8a675472b92c7813d01f29f0830e"
+hash = "c510f96ed07e8234b542ca1b9942a35f6f6883cbadd83873f01a02e6ebaddc78"
 metafile = true
 
 [[files]]
