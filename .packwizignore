@@ -34,6 +34,7 @@ replay_pid*.log
 /overlay.list
 /.packignore
 /README.md
+/docs/**
 /LICENSE
 /.github/**
 # Server-only datapacks
