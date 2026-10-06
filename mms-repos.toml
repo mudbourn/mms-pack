@@ -35,6 +35,7 @@ mms-metro                    = { role = "mod" }
 mms-economy                  = { role = "mod" }
 mms-weapons                  = { role = "mod" }
 mms-combat                   = { role = "mod" }
+mms-arsenal                  = { role = "mod" }
 # camera-glue was embedded into mms-mod-compat-support (2026-09-16) as a guarded
 # client helper; the standalone repo/jar is retired. Nothing to release here.
 mms-mod-compat-support       = { role = "mod" }

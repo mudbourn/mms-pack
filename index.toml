@@ -2732,8 +2732,13 @@ hash = "835c556c329a2f55f8f67b36ad5826b63dce0f91073bb28913250c3c80cfab04"
 metafile = true
 
 [[files]]
+file = "mods/mms-arsenal.pw.toml"
+hash = "20b7728c91e149d37b55549d1bdb2051b744b9e3363a8c75cb8a6f545c26a3d1"
+metafile = true
+
+[[files]]
 file = "mods/mms-combat.pw.toml"
-hash = "3c71eb511dad43c5e65f19d69e9c70aeadda19d7111b11876d1a027b8218e553"
+hash = "0773cfa22ec8d27cb559dff515dc9ff83e64d2d6e34e929c528df56a1aa29bbd"
 metafile = true
 
 [[files]]
@@ -2773,7 +2778,7 @@ metafile = true
 
 [[files]]
 file = "mods/mms-weapons.pw.toml"
-hash = "f3a91a8e1b9b0b52ff33ebb09c4da9ff9400f1c7cdf583f2ffb015e8bd7d5e8c"
+hash = "527bded9cc99899c479040f926d6a7c86d965747af87255623cdc49e101456c6"
 metafile = true
 
 [[files]]
