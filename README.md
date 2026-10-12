@@ -12,7 +12,7 @@ Please switch to Prism.
 
 ---
 
-## Players: one-time setup (~5 minutes)
+## One-time setup (~5 minutes)
 
 ### 1. Install Prism Launcher
 Download from **https://prismlauncher.org/download/** and sign in with your Microsoft account
