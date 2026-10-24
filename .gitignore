@@ -36,3 +36,4 @@ Thumbs.db
 # Python bytecode (mms-ship.py imports mms-repos.py)
 __pycache__/
 *.pyc
+docs/
