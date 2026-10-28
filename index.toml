@@ -1066,7 +1066,7 @@ hash = "b4174dc6e985aa90be5002c14e94b956d8d586683c44b7b6710c44d08fb13648"
 
 [[files]]
 file = "config/jei/ingredient-list-mod-sort-order.ini"
-hash = "9f10a9cad33b44aa14208ab7931cf4da81b54756362d06bfc5bd5a6f5ec8bef6"
+hash = "111b8de4d8cdd5f86cd420cec9b8ac43ba9f415a14b058eb53a18fc20cbaef29"
 
 [[files]]
 file = "config/jei/ingredient-list-type-sort-order.ini"
@@ -1458,11 +1458,11 @@ hash = "902b29e5f2044fa0011ac76281c700b52d83f1b5db6b605b8f702c8a99a55a2b"
 
 [[files]]
 file = "config/modpack_defaults/options.txt"
-hash = "e72451931cdd78d78d9ad71d7e29c2b46297bdb7dd242c23ae642c563e3cce80"
+hash = "a50702b575ebc84b433846d0541535e06a35072d5cb3e131a35a310f2949370d"
 
 [[files]]
 file = "config/moreculling.toml"
-hash = "8ace18f0f149bff690f06cdbccb6e2387cb8ad2969f00d2d7c4b2e633ea3d4fb"
+hash = "fe56b9553d5ff7fc2f7f0c39c25a3224c0ffb6ec10d408d5c2f4ec9a69d5c42f"
 
 [[files]]
 file = "config/mutantmonsters-common.toml"
@@ -1546,7 +1546,7 @@ hash = "f5101beef129ea119e726f90af1ba9efe5fff73f58877a3ad31acd3c55dfb2d0"
 
 [[files]]
 file = "config/resourcepackoverrides.json"
-hash = "f45ea88402a69970c83eab90684796b113cbcb035cacf9f679c1a0347a4a0964"
+hash = "09f3a561602377d5465e27c7a9ecb5cd02b5e20d6371cac02cbb4b40f9b58126"
 
 [[files]]
 file = "config/roughlyenoughitems/collapsible.json5"
@@ -1554,7 +1554,7 @@ hash = "a59667baa54738c1b294393a9b3652bcf7d392cdb8cba1c08a8006885b18e919"
 
 [[files]]
 file = "config/roughlyenoughitems/config.json5"
-hash = "e32b1b2109af37ae0f8f250a7a956dacab6a26af8c44d0cfad6feb6da004f33a"
+hash = "80fd7efe73011cfff1ed9abcec4e439a38e4595e10704523fe3c29798cf76865"
 
 [[files]]
 file = "config/roughlyenoughitems/favorites.json5"
@@ -1654,7 +1654,7 @@ hash = "d291dbeada373e95b36386793bbaae0aeb11597ab610d66ca7f4abf223558caa"
 
 [[files]]
 file = "config/sodium-extra-options.json"
-hash = "0b908eb04e424147b6c37f0f8966ac9b42a7d00cfea509796af5ee7e1e237786"
+hash = "a1d9ee179bb6eb0619a59efb7d73a970e429bfcb1f54d6eaecdfb0cbb5dd32d8"
 preserve = true
 
 [[files]]
@@ -2004,11 +2004,6 @@ hash = "72cfc33e2d90a818b466ea9b02cc08c925a9e2fb46b8f3e71540c5ea96a5b79f"
 metafile = true
 
 [[files]]
-file = "mods/alcocraft.pw.toml"
-hash = "d66361511146730b6dab698911a454c47041d3213da764d9d0c933a5241071b3"
-metafile = true
-
-[[files]]
 file = "mods/almanac.pw.toml"
 hash = "03383af39971df22d4581de1a8b6c0e80c6ecfd53b16716b9fc8e52580070753"
 metafile = true
@@ -2126,6 +2121,11 @@ metafile = true
 [[files]]
 file = "mods/bountiful-fish.pw.toml"
 hash = "a288d7bb11898b5439b3b47d3ef7d433a777be5edb4a3f497d494dc2696cd8ad"
+metafile = true
+
+[[files]]
+file = "mods/brewin-and-chewin-fly.pw.toml"
+hash = "8b78e0c75c65a35f2ca76ee70118180c4c81488d9ca19e9a395c997304591e7e"
 metafile = true
 
 [[files]]
@@ -3269,7 +3269,7 @@ metafile = true
 
 [[files]]
 file = "options.txt"
-hash = "27a61a9c4ae75b5790a63a033ee64cb5c3350c10e7b427dc5ba5f202abcdaa36"
+hash = "a284a4c1bf07650315ff57834432dacd49122963d4a8a03b085b377e55d606e7"
 preserve = true
 
 [[files]]

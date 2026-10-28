@@ -187,8 +187,7 @@
 					"farmersdelight:plugin/cutting",
 					"farmersdelight:plugin/decomposition",
 					"roughlyenoughitems:plugins/information",
-					"minecraft:plugins/tag",
-					"alcocraftplus:beer_brewing"
+					"minecraft:plugins/tag"
 				],
 				"hiddenCategories": []
 			}
