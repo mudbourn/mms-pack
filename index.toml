@@ -509,10 +509,6 @@ file = "config/chefsdelightconfig.properties"
 hash = "19e27780d2b9b6b6f66c9866aa5f3ab96787b9730e7609a644dc97e9a3cd54c9"
 
 [[files]]
-file = "config/chloride-client.toml"
-hash = "8a80ca913e5a63a972bfccfd0daa422984cda19e20f85ce50ce9b5bbdf2d5257"
-
-[[files]]
 file = "config/chunky/config.json"
 hash = "c7384a22595488f79f3125b22cc175eb729267267807a084479419349797abc8"
 
@@ -2574,6 +2570,11 @@ hash = "80bdecdf7911f4b1b6c57d18717d8f435ae237991efdd4c43c50ba6f42bb2139"
 metafile = true
 
 [[files]]
+file = "mods/iris.pw.toml"
+hash = "7da45ae93b814e4979c6baf99268c1648429ab159a93e08c3c2d003ed69269f4"
+metafile = true
+
+[[files]]
 file = "mods/it-takes-a-pillage-continuation.pw.toml"
 hash = "6a1983188e66bdbc4c788901c51ffb04437280549a8da1753334552827418c73"
 metafile = true
@@ -2985,7 +2986,7 @@ metafile = true
 
 [[files]]
 file = "mods/reeses-sodium-options.pw.toml"
-hash = "2785ba5d979ac4f95421a3df7b54ecf2a10e616eb566769388e643a5e91f396b"
+hash = "03bb608f6258ed84c472de82bc53c6e1ca61d2950a2fdb82b7120df1b3c1b083"
 metafile = true
 
 [[files]]
@@ -3080,7 +3081,7 @@ metafile = true
 
 [[files]]
 file = "mods/sodium-extra.pw.toml"
-hash = "5008b709220bcfc7b41402bd7d8fe580edcc4168299f04746d2c596a809ec046"
+hash = "3fed7693b5b9981d18ebc3ed834ee0a5a328142c71da6238334a5abb437dbe4c"
 metafile = true
 
 [[files]]
@@ -3090,7 +3091,7 @@ metafile = true
 
 [[files]]
 file = "mods/sodium.pw.toml"
-hash = "723a13737a51aa682f385ede7e4bfa925b1dfb435436ab2f69dc25c4be1b2c04"
+hash = "6c8575610994168a7c23eef1022c5bc11e69f16ca297a9e0f67d830258fba21b"
 metafile = true
 
 [[files]]
