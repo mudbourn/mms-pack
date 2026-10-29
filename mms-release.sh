@@ -180,7 +180,7 @@ if [[ -z "$JAR" ]]; then
         echo "note: no build/libs jar matches $VERSION — a real run would rebuild."
     else
         echo "Building $NAME ${VERSION}…"
-        (cd "$REPO" && ./gradlew build -q)
+        (cd "$REPO" && ./gradlew build -q -Pnatives.require=true)
         JAR="$(find_jar || true)"
     fi
 fi
