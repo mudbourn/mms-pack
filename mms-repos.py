@@ -65,8 +65,9 @@ def gradle_prop(repo: Path, key: str) -> str | None:
     if not gp.is_file():
         return None
     for line in gp.read_text().splitlines():
-        if line.startswith(f"{key}="):
-            return line.split("=", 1)[1].strip()
+        name, sep, value = line.partition("=")
+        if sep and name.strip() == key:
+            return value.strip()
     return None
 
 

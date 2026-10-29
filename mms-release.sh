@@ -124,7 +124,7 @@ fi
 NAME="$(basename "$REPO")"
 export PATH="$HOME/go/bin:$PATH"
 
-prop() { grep -m1 "^$1=" "$REPO/gradle.properties" | cut -d= -f2- | tr -d '[:space:]'; }
+prop() { grep -m1 -E "^[[:space:]]*$1[[:space:]]*=" "$REPO/gradle.properties" | cut -d= -f2- | tr -d '[:space:]'; }
 VERSION="$(prop mod_version)"
 BASE="$(prop archives_base_name)"
 [[ -n "$VERSION" ]] || { echo "ERROR: no mod_version in gradle.properties." >&2; exit 1; }
@@ -144,7 +144,7 @@ if [[ -n "$BUMP" ]]; then
     if [[ $DRY -eq 1 ]]; then
         echo "note: would bump mod_version $VERSION -> $NEW (gradle.properties; not written in dry run)."
     else
-        sed -i.bak -E "s|^mod_version=.*|mod_version=${NEW}|" "$REPO/gradle.properties"
+        sed -i.bak -E "s|^[[:space:]]*mod_version[[:space:]]*=.*|mod_version=${NEW}|" "$REPO/gradle.properties"
         rm -f "$REPO/gradle.properties.bak"
         echo "Bumped mod_version: $VERSION -> $NEW"
     fi
