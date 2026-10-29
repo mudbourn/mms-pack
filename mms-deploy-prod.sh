@@ -277,13 +277,9 @@ fi
 # mms-server-sync.py by the time it was noticed.
 # Guarded because --dev tolerates an unmounted share; a real deploy exited above.
 if [ -d "$SERVER_MODS" ]; then
-<<<<<<< HEAD
-    python3 ./mms-server-sync.py "$SERVER_MODS" $DRYFLAG
-=======
-    # --prune (mms-deploy --p) applies here only; the Testing sync above never
-    # prunes, for the quarantine reason given below.
-    python3 ./mms-server-sync.py "$SERVER_MODS" $DRYFLAG $PRUNEFLAG || PROD_RC=$?
->>>>>>> 48bd538 (Add --prune flag to deploy scripts for server sync)
+    # --prune (mms-deploy --p) applies here only; the Testing sync below never
+    # prunes, for the quarantine reason given there.
+    python3 ./mms-server-sync.py "$SERVER_MODS" $DRYFLAG $PRUNEFLAG
 fi
 
 echo "── server sync (Server Testing / MMSTesting01) ──"
