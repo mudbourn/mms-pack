@@ -11,8 +11,13 @@
 #   mms-deploy --t   switch to TESTING, then deploy it
 #   mms-deploy --M   MERGE testing → main (strips quarantine), then STOP
 #   mms-deploy --d   DRY RUN — rehearse whichever lane the branch selects
+#   mms-deploy --p   PRUNE — the lane's server sync also removes jars that are
+#                    no longer in the pack (instead of only reporting them).
+#                    On main this prunes prod only; the Testing catch-up sync
+#                    the prod lane runs never prunes (it would wipe the
+#                    quarantine). Combine with --d to see what would go.
 #
-# Long forms (--main/--testing/--merge/--dev) work too.
+# Long forms (--main/--testing/--merge/--dev/--prune) work too.
 #
 # ⚠ --m and --M differ ONLY in case, and they are opposites in blast radius:
 #   --m deploys to the live server, --M merges and deploys nothing. If you mean
@@ -34,6 +39,7 @@ cd ~/Documents/GitHub/mms-pack
 
 DEV=0
 MERGE=0
+PRUNE=0
 WANT_BRANCH=""
 
 for arg in "$@"; do
@@ -42,6 +48,7 @@ for arg in "$@"; do
     # case-sensitive so they dispatch correctly, but see the warning below.
     case "$arg" in
         --d|--dev)     DEV=1 ;;
+        --p|--prune)   PRUNE=1 ;;
         --M|--merge)   MERGE=1 ;;
         --m|--main)    WANT_BRANCH="main" ;;
         --t|--testing) WANT_BRANCH="testing" ;;
@@ -53,8 +60,8 @@ for arg in "$@"; do
             exit 0 ;;
         *)
             echo "!! mms-deploy: unknown argument '$arg'" >&2
-            echo "   usage: mms-deploy [--d] [--m|--t] [--M]" >&2
-            echo "     --m main    --t testing    --M merge    --d dry run" >&2
+            echo "   usage: mms-deploy [--d] [--p] [--m|--t] [--M]" >&2
+            echo "     --m main    --t testing    --M merge    --d dry run    --p prune" >&2
             echo "   run 'mms-deploy --help' for what each one does." >&2
             exit 2 ;;
     esac
@@ -109,6 +116,8 @@ fi
 BRANCH=$(git rev-parse --abbrev-ref HEAD)
 DEVFLAG=""
 [ "$DEV" = "1" ] && DEVFLAG="--dev"
+PRUNEFLAG=""
+[ "$PRUNE" = "1" ] && PRUNEFLAG="--prune"
 
 # ── release suite (mms-ship) ──
 # Bring every MMS mod's GitHub release up to date with the work in its local
@@ -155,10 +164,10 @@ fi
 case "$BRANCH" in
     main)
         echo "── branch 'main' → PROD lane (MMSLive01) ──"
-        exec ./mms-deploy-prod.sh $DEVFLAG ;;
+        exec ./mms-deploy-prod.sh $DEVFLAG $PRUNEFLAG ;;
     testing)
         echo "── branch 'testing' → TESTING lane (MMSTesting01) ──"
-        exec ./mms-deploy-test.sh $DEVFLAG ;;
+        exec ./mms-deploy-test.sh $DEVFLAG $PRUNEFLAG ;;
     *)
         echo "!! mms-deploy: on branch '$BRANCH', which has no lane." >&2
         echo "   Only 'main' (prod) and 'testing' (staging) can be deployed." >&2

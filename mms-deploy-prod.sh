@@ -41,7 +41,13 @@ cd ~/Documents/GitHub/mms-pack
 # This is the prod LANE, invoked by mms-deploy.sh. Run `mms-deploy` instead —
 # it parses flags, picks the lane from the branch, and calls this.
 DEV=0
-[ "$1" = "--dev" ] && DEV=1
+PRUNEFLAG=""
+for arg in "$@"; do
+    case "$arg" in
+        --dev)   DEV=1 ;;
+        --prune) PRUNEFLAG="--prune" ;;
+    esac
+done
 
 # ── branch guard (belt and braces) ──
 # mms-deploy.sh routes by branch and will only ever call this on `main`, so in
@@ -299,7 +305,9 @@ if [ -d "$TEST_SERVER_MODS" ]; then
 fi
 PROD_RC=0
 if [ -d "$SERVER_MODS" ]; then
-    python3 ./mms-server-sync.py "$SERVER_MODS" $DRYFLAG || PROD_RC=$?
+    # --prune (mms-deploy --p) applies here only; the Testing sync above never
+    # prunes, for the quarantine reason given below.
+    python3 ./mms-server-sync.py "$SERVER_MODS" $DRYFLAG $PRUNEFLAG || PROD_RC=$?
 fi
 
 echo "── server sync (Server Testing / MMSTesting01) ──"
