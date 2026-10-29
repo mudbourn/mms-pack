@@ -33,7 +33,13 @@ cd ~/Documents/GitHub/mms-pack
 # lane did not, which meant the only way to find out what a staging deploy would
 # do was to do it. Same contract as prod: no commits, no server or client writes.
 DEV=0
-[ "$1" = "--dev" ] && DEV=1
+PRUNEFLAG=""
+for arg in "$@"; do
+    case "$arg" in
+        --dev)   DEV=1 ;;
+        --prune) PRUNEFLAG="--prune" ;;
+    esac
+done
 DRYFLAG=""
 [ "$DEV" = "1" ] && DRYFLAG="--dry-run"
 
@@ -93,7 +99,7 @@ if [ ! -d "$TEST_SERVER_MODS" ]; then
     echo "!! test server mods not found at $TEST_SERVER_MODS — skipping server sync." >&2
     exit 1
 fi
-python3 ./mms-server-sync.py "$TEST_SERVER_MODS" $DRYFLAG
+python3 ./mms-server-sync.py "$TEST_SERVER_MODS" $DRYFLAG $PRUNEFLAG
 
 echo "── dev-jar overlay ──"
 run ./mms-overlay-apply.sh "$TEST_SERVER_MODS"
