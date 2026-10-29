@@ -2739,6 +2739,11 @@ hash = "fd46146e78392aa9d6bc1524cf856bb6a99506490d66b28c38403a4e6d756fab"
 metafile = true
 
 [[files]]
+file = "mods/mms-ferrite.pw.toml"
+hash = "c5ce6a61357e1eff6c12965a32be52abf23100ea126dc8038675d3b1c1ba9486"
+metafile = true
+
+[[files]]
 file = "mods/mms-jobs.pw.toml"
 hash = "3df9a494cdd418cfa9c3d3d123c03fc9eade330db16a2d1d6c9cbc6a7c7bb9b2"
 metafile = true
@@ -2771,6 +2776,11 @@ metafile = true
 [[files]]
 file = "mods/mms-weapons.pw.toml"
 hash = "7926b7ab13f4aa8f5779f102cc5c051f50ee4a3c8b7a1f95cb2c66aabad0bcb6"
+metafile = true
+
+[[files]]
+file = "mods/mms-worldgen.pw.toml"
+hash = "b214407d376ab9019ebac047792f27f79fbdfaa96226bd7a71ee50b01bdb3b23"
 metafile = true
 
 [[files]]

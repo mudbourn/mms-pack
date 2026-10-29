@@ -1,0 +1,15 @@
+name = "mms-ferrite"
+filename = "mms-ferrite-0.1.0.jar"
+side = "both"
+
+[download]
+url = "https://github.com/mudbourn/mms-ferrite/releases/download/v0.1.0/mms-ferrite-0.1.0.jar"
+hash-format = "sha256"
+hash = "e001e6f31d7d3aeaba736ed7b54a940fd1dde56b9241cec99dccf61f2ca353ef"
+
+[update]
+[update.github]
+branch = "main"
+regex = "^.+(?<!-api|-dev|-dev-preshadow|-sources)\\.jar$"
+slug = "mudbourn/mms-ferrite"
+tag = "v0.1.0"
