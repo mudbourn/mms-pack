@@ -143,9 +143,10 @@ fi
 # a mod you bumped locally but never released, or a release the pack hasn't
 # picked up. Reconcile deliberately with `mms-release <repo>` (or --all).
 if [ -x ./mms-repos.py ]; then
-    if ! ./mms-repos.py drift --no-online >/dev/null 2>&1; then
+    # Run once and keep the output, rather than once to test and again to show.
+    if ! DRIFT_OUT="$(./mms-repos.py drift --no-online 2>/dev/null)"; then
         echo "── heads-up: version drift detected (pack pin vs source) ──"
-        ./mms-repos.py drift --no-online 2>/dev/null | sed 's/^/   /' || true
+        echo "$DRIFT_OUT" | sed 's/^/   /'
         echo "   (informational only — deploying anyway; run ./mms-repos.py drift for the online view)"
         echo
     fi

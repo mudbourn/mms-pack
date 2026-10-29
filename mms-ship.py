@@ -343,6 +343,7 @@ def main(argv=None):
     if named:
         order = [n for n in order if n in named]
 
+    R.prefetch_releases(manifest, order)
     rows = [plan_repo(manifest, n, prodmap, named, bump_specs, args.bump)
             for n in order]
 
