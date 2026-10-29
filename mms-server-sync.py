@@ -106,6 +106,58 @@ def ver_key(v):
 server_jars = {f: mod_info(os.path.join(server_mods, f))
                for f in os.listdir(server_mods) if f.endswith('.jar')}
 
+# Per-process scratch dir: the prod and testing syncs run side by side, and a
+# shared mms-dryrun-<jar> path would let one delete the other's copy.
+scratch = tempfile.mkdtemp(prefix='mms-sync-') if dry_run else None
+
+
+def fetch_dest(fname):
+    return os.path.join(scratch, fname) if dry_run else os.path.join(server_mods, fname)
+
+
+def jar_url(name, txt, fname):
+    """Download URL for a metafile; None if it has neither url nor file-id."""
+    url_m = re.search(r'^url = "(.+)"', txt, re.M)
+    if url_m:
+        return url_m.group(1)
+    # CurseForge metadata mode: no direct url; build the forgecdn one
+    fid = re.search(r'^file-id = (\d+)', txt, re.M)
+    if not fid:
+        return None
+    fid = int(fid.group(1))
+    return (f"https://edge.forgecdn.net/files/{fid // 1000}/{fid % 1000}/"
+            + urllib.parse.quote(fname))
+
+
+def fetch(fname, url):
+    # prefer the bundled local copy
+    local = os.path.join(mods_dir, fname)
+    if os.path.exists(local):
+        shutil.copy(local, fetch_dest(fname))
+    else:
+        urllib.request.urlretrieve(url, fetch_dest(fname))
+
+
+# Fetch every missing jar up front, in parallel — one at a time, a deploy with
+# a dozen updates spent most of its sync waiting on downloads. The decisions
+# below still run in order, against jars that are already on disk.
+to_fetch = []
+for name in sorted(os.listdir(mods_dir)):
+    if not name.endswith('.pw.toml'):
+        continue
+    txt = open(os.path.join(mods_dir, name)).read()
+    fname = re.search(r'^filename = "(.+)"', txt, re.M).group(1)
+    side = re.search(r'^side = "(\w+)"', txt, re.M)
+    if (side and side.group(1) == 'client') or fname in server_jars:
+        continue
+    url = jar_url(name, txt, fname)
+    if url:
+        to_fetch.append((fname, url))
+if to_fetch:
+    from concurrent.futures import ThreadPoolExecutor
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        list(pool.map(lambda a: fetch(*a), to_fetch))
+
 for name in sorted(os.listdir(mods_dir)):
     if not name.endswith('.pw.toml'):
         continue
@@ -120,31 +172,16 @@ for name in sorted(os.listdir(mods_dir)):
     side = re.search(r'^side = "(\w+)"', txt, re.M)
     if side and side.group(1) == 'client':
         continue
-    url_m = re.search(r'^url = "(.+)"', txt, re.M)
-    if url_m:
-        url = url_m.group(1)
-    else:
-        # CurseForge metadata mode: no direct url; build the forgecdn one
-        fid = re.search(r'^file-id = (\d+)', txt, re.M)
-        if not fid:
-            print(f"!! {name}: no url and no file-id — skipping", file=sys.stderr)
-            continue
-        fid = int(fid.group(1))
-        url = (f"https://edge.forgecdn.net/files/{fid // 1000}/{fid % 1000}/"
-               + urllib.parse.quote(fname))
-
     if fname in server_jars:
         continue  # already in sync
 
-    # fetch the new jar (prefer bundled local copy). Under --dry-run this lands
-    # in a scratch dir instead of the server, and is deleted before we move on.
-    dest = (os.path.join(tempfile.gettempdir(), 'mms-dryrun-' + fname) if dry_run
-            else os.path.join(server_mods, fname))
-    local = os.path.join(mods_dir, fname)
-    if os.path.exists(local):
-        shutil.copy(local, dest)
-    else:
-        urllib.request.urlretrieve(url, dest)
+    if not jar_url(name, txt, fname):
+        print(f"!! {name}: no url and no file-id — skipping", file=sys.stderr)
+        continue
+
+    # Fetched by the parallel pass above. Under --dry-run it sits in the
+    # scratch dir instead of the server, and is deleted before we move on.
+    dest = fetch_dest(fname)
 
     new_id, new_ver = mod_info(dest)
 
@@ -269,3 +306,6 @@ if changed:
         print("\nserver: jars updated — RESTART to apply (clients desync until then).")
 else:
     print(f"{TAG}server: already in sync")
+
+if scratch:
+    shutil.rmtree(scratch, ignore_errors=True)

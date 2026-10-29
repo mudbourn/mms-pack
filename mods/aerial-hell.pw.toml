@@ -1,6 +1,7 @@
 name = "Aerial Hell"
 filename = "aerialhell-0.7.7.9_fabric1.21.11.jar"
 side = "both"
+pin = true
 
 [download]
 url = "https://cdn.modrinth.com/data/hvaVU41U/versions/3Qa1vOwf/aerialhell-0.7.7.9_fabric1.21.11.jar"

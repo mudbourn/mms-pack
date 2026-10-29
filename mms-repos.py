@@ -157,7 +157,29 @@ def pack_entry(manifest: dict, name: str) -> dict | None:
 # ── GitHub ─────────────────────────────────────────────────────────────────────
 
 
+_RELEASES: dict[str, str | None] = {}
+
+
+def prefetch_releases(manifest: dict, names) -> None:
+    """Look up every repo's latest release at once, filling latest_release's cache.
+
+    Each lookup is a separate gh round trip; one at a time over ~14 repos was
+    most of the wait in `drift` and mms-ship's planning pass.
+    """
+    from concurrent.futures import ThreadPoolExecutor
+    todo = [n for n in names if n not in _RELEASES]
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        for name, tag in zip(todo, pool.map(lambda n: _fetch_release(manifest, n), todo)):
+            _RELEASES[name] = tag
+
+
 def latest_release(manifest: dict, name: str) -> str | None:
+    if name not in _RELEASES:
+        _RELEASES[name] = _fetch_release(manifest, name)
+    return _RELEASES[name]
+
+
+def _fetch_release(manifest: dict, name: str) -> str | None:
     try:
         out = subprocess.run(
             ["gh", "release", "view", "--repo", f'{manifest["owner"]}/{name}',
@@ -175,6 +197,8 @@ def latest_release(manifest: dict, name: str) -> str | None:
 
 def collect(manifest: dict, online: bool) -> list[dict]:
     rows = []
+    if online:
+        prefetch_releases(manifest, manifest["repos"])
     for name, meta in manifest["repos"].items():
         rd = repo_dir(manifest, name)
         pe = pack_entry(manifest, name)

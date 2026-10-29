@@ -150,6 +150,18 @@ echo "── release reconcile (local mods) ──"
 # So: adopt-first, release-only-if-genuinely-unreleased. `packwiz update -a`
 # below would eventually adopt too, but doing it here gives clear per-mod
 # messaging and absorbs the releases-API lag with a retry.
+#
+# The latest-release lookups are fetched up front, all at once: one gh round
+# trip per mod, one at a time, was most of this step's wait. The loop below
+# still acts on them in order.
+RELEASE_TAGS=$(mktemp -d)
+for toml in mods/*.pw.toml; do
+    slug=$(grep -m1 '^slug = "mudbourn/' "$toml" | sed 's|.*mudbourn/||; s|"||')
+    [ -z "$slug" ] && continue
+    gh release view --repo "mudbourn/$slug" --json tagName -q .tagName \
+        >"$RELEASE_TAGS/$slug" 2>/dev/null &
+done
+wait
 for toml in mods/*.pw.toml; do
     slug=$(grep -m1 '^slug = "mudbourn/' "$toml" | sed 's|.*mudbourn/||; s|"||')
     [ -z "$slug" ] && continue
@@ -159,7 +171,7 @@ for toml in mods/*.pw.toml; do
     # ── case A: adopt a release that already exists on GitHub ──
     # Read-only, so it runs under --dev too. Empty when there is no release or gh
     # is offline — in which case we simply fall through to the local path.
-    latest=$(gh release view --repo "mudbourn/$slug" --json tagName -q .tagName 2>/dev/null | sed 's/^v//')
+    latest=$(sed 's/^v//' "$RELEASE_TAGS/$slug" 2>/dev/null)
     if [ -n "$latest" ] && [ -n "$tag" ] && [ "$latest" != "$tag" ] \
        && [ "$(printf '%s\n%s\n' "$tag" "$latest" | sort -V | tail -1)" = "$latest" ]; then
         echo "→ $slug: released v$latest is ahead of pack v$tag — adopting (you released it)"
@@ -253,6 +265,8 @@ else
     fi
 fi
 
+rm -rf "$RELEASE_TAGS"
+
 echo "── server sync (Server Prod / MMSLive01) ──"
 # Symlink → /Volumes/AMP-Instances/instances/MMSLive01/Minecraft/. Renamed from
 # "MMSLive01" on 2026-07-23; the old name is gone, so this path is the only one
@@ -276,10 +290,30 @@ fi
 # the two servers. This was an inline copy that had already drifted from
 # mms-server-sync.py by the time it was noticed.
 # Guarded because --dev tolerates an unmounted share; a real deploy exited above.
+#
+# The two syncs write to different folders and only read the pack, so Testing's
+# (below) runs in the background alongside prod's. Its output is held and
+# printed after prod's, so the log still reads prod-then-testing, and a failed
+# prod sync waits for it before stopping the deploy.
+TEST_SERVER_MODS="$HOME/Documents/GitHub/Server Testing/mods"
+TEST_PID=""
+if [ -d "$TEST_SERVER_MODS" ]; then
+    TEST_LOG=$(mktemp)
+    python3 ./mms-server-sync.py "$TEST_SERVER_MODS" . --hold testing-hold.txt $DRYFLAG \
+        >"$TEST_LOG" 2>&1 &
+    TEST_PID=$!
+fi
+PROD_RC=0
 if [ -d "$SERVER_MODS" ]; then
+<<<<<<< HEAD
     # --prune (mms-deploy --p) applies here only; the Testing sync below never
     # prunes, for the quarantine reason given there.
     python3 ./mms-server-sync.py "$SERVER_MODS" $DRYFLAG $PRUNEFLAG
+=======
+    # --prune (mms-deploy --p) applies here only; the Testing sync above never
+    # prunes, for the quarantine reason given below.
+    python3 ./mms-server-sync.py "$SERVER_MODS" $DRYFLAG $PRUNEFLAG || PROD_RC=$?
+>>>>>>> main
 fi
 
 echo "── server sync (Server Testing / MMSTesting01) ──"
@@ -298,15 +332,16 @@ echo "── server sync (Server Testing / MMSTesting01) ──"
 #   • non-fatal                 prod has already been synced by this point.
 #                               Testing being unmounted must not fail the deploy
 #                               or leave prod half-deployed.
-TEST_SERVER_MODS="$HOME/Documents/GitHub/Server Testing/mods"
-if [ ! -d "$TEST_SERVER_MODS" ]; then
+if [ -z "$TEST_PID" ]; then
     echo "?? test server mods not mounted at $TEST_SERVER_MODS — skipped." >&2
     echo "   (prod is already synced; re-run when the share is up to catch Testing up.)" >&2
 else
-    python3 ./mms-server-sync.py "$TEST_SERVER_MODS" . --hold testing-hold.txt $DRYFLAG || {
-        echo "?? testing sync reported problems — prod is unaffected." >&2
-    }
+    wait "$TEST_PID" && TEST_RC=0 || TEST_RC=$?
+    cat "$TEST_LOG"
+    rm -f "$TEST_LOG"
+    [ "$TEST_RC" -eq 0 ] || echo "?? testing sync reported problems — prod is unaffected." >&2
 fi
+[ "$PROD_RC" -eq 0 ] || { echo "!! prod server sync failed (exit $PROD_RC)." >&2; exit "$PROD_RC"; }
 
 # Gate the deploy on network-path drift, after the sync so it checks the state
 # the server will actually run. A mod that patches packet framing on only one

@@ -1,13 +1,13 @@
 name = "Inspect Animations"
-filename = "inspectanimations-0.2.5-fabric+1.21.11.jar"
+filename = "inspectanimations-0.2.6-fabric+1.21.11.jar"
 side = "client"
 
 [download]
-url = "https://cdn.modrinth.com/data/fRpkaLG9/versions/iRRfxU7R/inspectanimations-0.2.5-fabric%2B1.21.11.jar"
+url = "https://cdn.modrinth.com/data/fRpkaLG9/versions/X6f3vDQV/inspectanimations-0.2.6-fabric%2B1.21.11.jar"
 hash-format = "sha512"
-hash = "abb985cff27e198266bd7a5f425beff02e6f48733a77a0041a48d113c4a2e98c23467f351f84091dcc73123fd152a8baced4e013fc0b1aede3d69f6567022e5d"
+hash = "4a2f796691b3956530fa514d32fa9386bc867b2f73833ec28c9f3c9ef1362f53a5e7558ef3e0ad71b101ee637509968009a816fbb0e18a0cd045b6e2fda584bc"
 
 [update]
 [update.modrinth]
 mod-id = "fRpkaLG9"
-version = "iRRfxU7R"
+version = "X6f3vDQV"
