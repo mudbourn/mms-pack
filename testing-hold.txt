@@ -21,3 +21,10 @@
 # with it. See the training-dummy-silenced-by-jar-edit note.
 # (uncomment if this mod is present on Testing)
 #trainingdummy
+
+# Testing-only: new MMS mods under evaluation on the `testing` branch, not yet
+# promoted to main. Without these, the prod lane's Testing catch-up sync (which
+# reads main's pack) reports them as "not in the pack". Remove both once
+# testing is merged into main with mms-deploy --M.
+mms_ferrite
+mms_worldgen
