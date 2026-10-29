@@ -2736,7 +2736,7 @@ metafile = true
 
 [[files]]
 file = "mods/mms-ferrite.pw.toml"
-hash = "7abbe3adb559de9b9a5f809d20e48198f29f2621dafb1b6c21f72887115bc51a"
+hash = "728b53811a8b8e083f52b17d4ec480c27aecb98c781df89d60065f794d46e646"
 metafile = true
 
 [[files]]
@@ -2776,7 +2776,7 @@ metafile = true
 
 [[files]]
 file = "mods/mms-worldgen.pw.toml"
-hash = "06124be7fbfd2f9af6522e092465b91c865ef7a02a407f85905fcc8f38a6505b"
+hash = "599c909a9d3d36981924c17f2e64f12ea9d6491c0113a25d7935dbedeb907df4"
 metafile = true
 
 [[files]]
