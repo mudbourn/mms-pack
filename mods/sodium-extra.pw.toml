@@ -1,14 +1,13 @@
 name = "Sodium Extra"
-filename = "sodium-extra-fabric-0.9.1+mc1.21.11.jar"
+filename = "sodium-extra-fabric-0.9.5+mc1.21.11.jar"
 side = "client"
-pin = true
 
 [download]
-url = "https://cdn.modrinth.com/data/PtjYWJkn/versions/zmsIDdn6/sodium-extra-fabric-0.9.1%2Bmc1.21.11.jar"
+url = "https://cdn.modrinth.com/data/PtjYWJkn/versions/efIKaD8Q/sodium-extra-fabric-0.9.5%2Bmc1.21.11.jar"
 hash-format = "sha512"
-hash = "6fb4228c2466efd5f2a4766f5c29ba31123e75842fdcfd3699f45646abe1ed17418f47d1468066f4e059e6d8f20d583b6d77696e78f3dd8a0af5e041dec84487"
+hash = "60716a8f0780dcedc230dda3c93265d55d823313a0846d6e7da482ed0c38506e04079ab72629c8c2201f1b248431d0037fc44e9be89e664b507be53a9a1668f4"
 
 [update]
 [update.modrinth]
 mod-id = "PtjYWJkn"
-version = "zmsIDdn6"
+version = "efIKaD8Q"

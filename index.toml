@@ -509,10 +509,6 @@ file = "config/chefsdelightconfig.properties"
 hash = "19e27780d2b9b6b6f66c9866aa5f3ab96787b9730e7609a644dc97e9a3cd54c9"
 
 [[files]]
-file = "config/chloride-client.toml"
-hash = "8a80ca913e5a63a972bfccfd0daa422984cda19e20f85ce50ce9b5bbdf2d5257"
-
-[[files]]
 file = "config/chunky/config.json"
 hash = "c7384a22595488f79f3125b22cc175eb729267267807a084479419349797abc8"
 
@@ -2189,11 +2185,6 @@ hash = "d3caba947887f26d04bfd96474140e3e8e5457c82ef8c5661d79c39c285c0ab3"
 metafile = true
 
 [[files]]
-file = "mods/chloride.pw.toml"
-hash = "f75f068f9802413d269316dddc59745b63e76124712074e5261e46e07d385150"
-metafile = true
-
-[[files]]
 file = "mods/chunky.pw.toml"
 hash = "eaa52d6ff1bcb539956d50626085d9185eca346fabcf6b3c176c53192b9958ec"
 metafile = true
@@ -2579,6 +2570,11 @@ hash = "80bdecdf7911f4b1b6c57d18717d8f435ae237991efdd4c43c50ba6f42bb2139"
 metafile = true
 
 [[files]]
+file = "mods/iris.pw.toml"
+hash = "7da45ae93b814e4979c6baf99268c1648429ab159a93e08c3c2d003ed69269f4"
+metafile = true
+
+[[files]]
 file = "mods/it-takes-a-pillage-continuation.pw.toml"
 hash = "6a1983188e66bdbc4c788901c51ffb04437280549a8da1753334552827418c73"
 metafile = true
@@ -2739,6 +2735,11 @@ hash = "fd46146e78392aa9d6bc1524cf856bb6a99506490d66b28c38403a4e6d756fab"
 metafile = true
 
 [[files]]
+file = "mods/mms-ferrite.pw.toml"
+hash = "728b53811a8b8e083f52b17d4ec480c27aecb98c781df89d60065f794d46e646"
+metafile = true
+
+[[files]]
 file = "mods/mms-jobs.pw.toml"
 hash = "3df9a494cdd418cfa9c3d3d123c03fc9eade330db16a2d1d6c9cbc6a7c7bb9b2"
 metafile = true
@@ -2750,12 +2751,12 @@ metafile = true
 
 [[files]]
 file = "mods/mms-mod-compat-support.pw.toml"
-hash = "e888a90da836f37e7d4945943ab457eb1fd89a8bd254e67c0eaea21c0c4b60d9"
+hash = "ecf3426e386f480837ad358b57913c6492b1dcefd8052925d0be8269c1125344"
 metafile = true
 
 [[files]]
 file = "mods/mms-origins.pw.toml"
-hash = "3aaa9ebfef60e5f74548b5752257817f3726b56ac3085eef7c3117b077f2e21b"
+hash = "e584495046a5f129c68525fb4ef5556629a45690824e4b97989c65405e01200c"
 metafile = true
 
 [[files]]
@@ -2771,6 +2772,11 @@ metafile = true
 [[files]]
 file = "mods/mms-weapons.pw.toml"
 hash = "7926b7ab13f4aa8f5779f102cc5c051f50ee4a3c8b7a1f95cb2c66aabad0bcb6"
+metafile = true
+
+[[files]]
+file = "mods/mms-worldgen.pw.toml"
+hash = "599c909a9d3d36981924c17f2e64f12ea9d6491c0113a25d7935dbedeb907df4"
 metafile = true
 
 [[files]]
@@ -2980,7 +2986,7 @@ metafile = true
 
 [[files]]
 file = "mods/reeses-sodium-options.pw.toml"
-hash = "09bc85fbbde3eab9c3cbf8e543b708eaebdca08d8f7e12492588a1be4db3adee"
+hash = "03bb608f6258ed84c472de82bc53c6e1ca61d2950a2fdb82b7120df1b3c1b083"
 metafile = true
 
 [[files]]
@@ -3075,7 +3081,7 @@ metafile = true
 
 [[files]]
 file = "mods/sodium-extra.pw.toml"
-hash = "f628fb27a4ac42dc6340d7b496747e4a1a4bbf764e8a00854b8cb79581c1ae59"
+hash = "3fed7693b5b9981d18ebc3ed834ee0a5a328142c71da6238334a5abb437dbe4c"
 metafile = true
 
 [[files]]
@@ -3085,7 +3091,7 @@ metafile = true
 
 [[files]]
 file = "mods/sodium.pw.toml"
-hash = "3fcd35690ccd5f8f04ed3fddefd5328720314f92839d75768ca5e09c4fdf013c"
+hash = "6c8575610994168a7c23eef1022c5bc11e69f16ca297a9e0f67d830258fba21b"
 metafile = true
 
 [[files]]
