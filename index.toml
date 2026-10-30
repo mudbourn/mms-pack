@@ -2556,7 +2556,7 @@ metafile = true
 
 [[files]]
 file = "mods/inspect-animations.pw.toml"
-hash = "4c93f5d5aa54e578d2e5ed372d713e53788d94d7f57f7979191feb6455a8c6e0"
+hash = "9817a558069814933855a774091861733d6924f66842946e41832f6bf3138496"
 metafile = true
 
 [[files]]
@@ -2591,7 +2591,7 @@ metafile = true
 
 [[files]]
 file = "mods/jei.pw.toml"
-hash = "55d111a4794ef0ad8b573f3e8f913fb01ffe62d761b8f851a20bc73c2a3968d2"
+hash = "bb6e93e5a79e25c55497d3c986ee3e2333c2ad4ddaa57d818b5700cefe42be09"
 metafile = true
 
 [[files]]
@@ -2986,7 +2986,7 @@ metafile = true
 
 [[files]]
 file = "mods/reeses-sodium-options.pw.toml"
-hash = "03bb608f6258ed84c472de82bc53c6e1ca61d2950a2fdb82b7120df1b3c1b083"
+hash = "6223e0994b9141d83426fc3e3a84b71d1db39e1cfd142e2789a9aaeb21819ebc"
 metafile = true
 
 [[files]]
@@ -3066,7 +3066,7 @@ metafile = true
 
 [[files]]
 file = "mods/skyboxify.pw.toml"
-hash = "e143ce9213f46bd81f46b903e2eeb4d006eca59cf50eabe8f51785eef405c30f"
+hash = "034ea939abe0bf5a534eacee38d9c524fbc92e2d1f1580427fb8bf26cd0bf8d4"
 metafile = true
 
 [[files]]
@@ -3081,7 +3081,7 @@ metafile = true
 
 [[files]]
 file = "mods/sodium-extra.pw.toml"
-hash = "3fed7693b5b9981d18ebc3ed834ee0a5a328142c71da6238334a5abb437dbe4c"
+hash = "5ff8e394478f56b131ef90b797a3b4a273c9c4faaa4853dd1289c7ebddda111a"
 metafile = true
 
 [[files]]
@@ -3091,7 +3091,7 @@ metafile = true
 
 [[files]]
 file = "mods/sodium.pw.toml"
-hash = "6c8575610994168a7c23eef1022c5bc11e69f16ca297a9e0f67d830258fba21b"
+hash = "e243aee66d3bce50082e7d61936f535688002ea81d021d0808fd6cdd40b6bd66"
 metafile = true
 
 [[files]]
