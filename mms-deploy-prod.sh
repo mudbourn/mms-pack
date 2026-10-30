@@ -305,15 +305,9 @@ if [ -d "$TEST_SERVER_MODS" ]; then
 fi
 PROD_RC=0
 if [ -d "$SERVER_MODS" ]; then
-<<<<<<< HEAD
-    # --prune (mms-deploy --p) applies here only; the Testing sync below never
-    # prunes, for the quarantine reason given there.
-    python3 ./mms-server-sync.py "$SERVER_MODS" $DRYFLAG $PRUNEFLAG
-=======
     # --prune (mms-deploy --p) applies here only; the Testing sync above never
     # prunes, for the quarantine reason given below.
     python3 ./mms-server-sync.py "$SERVER_MODS" $DRYFLAG $PRUNEFLAG || PROD_RC=$?
->>>>>>> main
 fi
 
 echo "── server sync (Server Testing / MMSTesting01) ──"
