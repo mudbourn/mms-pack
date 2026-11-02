@@ -1,6 +1,6 @@
 # MMS Live: Minecraft Modpack
 
-**Minecraft 1.21.11 | Fabric loader 0.19.5 | Java 21 | pack version 2.6.0**
+**Minecraft 1.21.11 | Fabric loader 0.20.1 | Java 21 | pack version 2.6.0**
 
 This repo is a [packwiz](https://packwiz.infra.link/) pack, which means once
 your launcher is pointed at it, **you get every update automatically just by launching the game**.
@@ -23,7 +23,7 @@ Download from **https://prismlauncher.org/download/** and sign in with your Micr
 - Click **Add Instance**.
 - Name it `MMS Live`.
 - Choose **Minecraft 1.21.11**.
-- Click **Fabric** and select loader version **0.19.5** (or newest 1.21.11-compatible).
+- Click **Fabric** and select loader version **0.20.1**.
 - Create the instance. **Don't add any mods by hand yet**, the pack installs them for you.
 ![alt text](https://save.mudbourn.info/s/mgFTSBj6qxxxKJM/download "Graph")
 
