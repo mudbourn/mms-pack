@@ -2715,6 +2715,11 @@ hash = "62e3abad53a6041a47f5c0755918b6ed6b3a2cf8b57920d20075084e508b0fa4"
 metafile = true
 
 [[files]]
+file = "mods/minevegas-casino.pw.toml"
+hash = "50d93b43cc0fda242527d6e90ec1aab28820001d2bcdf39da02931715163f688"
+metafile = true
+
+[[files]]
 file = "mods/mixintrace-reloaded.pw.toml"
 hash = "835c556c329a2f55f8f67b36ad5826b63dce0f91073bb28913250c3c80cfab04"
 metafile = true
@@ -2731,7 +2736,7 @@ metafile = true
 
 [[files]]
 file = "mods/mms-economy.pw.toml"
-hash = "fd46146e78392aa9d6bc1524cf856bb6a99506490d66b28c38403a4e6d756fab"
+hash = "34051ada583d6316a0b2477c951ab7304851863ce928269ada9580e934c33bce"
 metafile = true
 
 [[files]]
