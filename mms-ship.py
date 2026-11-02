@@ -139,15 +139,23 @@ def repo_mod_id(repo: Path) -> str | None:
 
 
 # ── does the local repo hold work its version number does not reflect? ────────
-def has_local_work(repo: Path) -> bool:
-    """True if the tree is dirty or has commits not yet on its upstream — i.e.
-    there is local work that a release would not currently capture. Falls back to
-    'commits since the latest tag' when there is no tracked upstream."""
+def has_local_work(repo: Path, rel: str | None = None) -> bool:
+    """True if the tree is dirty, has commits not yet on its upstream, or has
+    commits (pushed or not) after the latest release's tag — i.e. there is work
+    that a release would not currently capture. Falls back to 'commits since the
+    latest tag' when there is no release and no tracked upstream."""
     def git(*a):
         return subprocess.run(["git", "-C", str(repo), *a],
                               capture_output=True, text=True)
     if git("status", "--porcelain").stdout.strip():
         return True
+    if rel:
+        tag = f"v{rel}"
+        if git("rev-parse", "-q", "--verify", f"refs/tags/{tag}").returncode != 0:
+            git("fetch", "-q", "origin", f"refs/tags/{tag}:refs/tags/{tag}")
+        since = git("rev-list", "--count", f"{tag}..HEAD")
+        if since.returncode == 0 and since.stdout.strip() not in ("", "0"):
+            return True
     up = git("rev-parse", "--abbrev-ref", "--symbolic-full-name", "@{u}")
     if up.returncode == 0 and up.stdout.strip():
         ahead = git("rev-list", "--count", "@{u}..HEAD").stdout.strip()
@@ -209,7 +217,7 @@ def plan_repo(manifest, name, prodmap, named, bump_specs, default_bump):
         row["action"], row["note"] = "SKIP", "disabled in pack (name it to ship)"
         return row
 
-    work = has_local_work(rd)
+    work = has_local_work(rd, rel)
     src_ahead = ((prod_ver and R._vgt(src, prod_ver)) or
                  (rel and R._vgt(src, rel)) or
                  (rel is None and prod_ver is None))
