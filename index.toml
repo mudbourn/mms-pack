@@ -2751,12 +2751,12 @@ metafile = true
 
 [[files]]
 file = "mods/mms-mod-compat-support.pw.toml"
-hash = "e9a4b96ec10835c76d4409afac7556141eb7e48a330fdbc221064e207720cc06"
+hash = "74a72dec75e1f1126ede4ea9f96300d33afaed35017de83e097d0de0eef198b0"
 metafile = true
 
 [[files]]
 file = "mods/mms-origins.pw.toml"
-hash = "e584495046a5f129c68525fb4ef5556629a45690824e4b97989c65405e01200c"
+hash = "fab1767780c32878e7ae891e7f208aad289fba61c959ac38d84530dc95a30f09"
 metafile = true
 
 [[files]]
@@ -2776,7 +2776,7 @@ metafile = true
 
 [[files]]
 file = "mods/mms-worldgen.pw.toml"
-hash = "599c909a9d3d36981924c17f2e64f12ea9d6491c0113a25d7935dbedeb907df4"
+hash = "64e7604694c50f9dd5e9ea1e36cee36962edc4f694264e70233fe9fb2bf96567"
 metafile = true
 
 [[files]]
