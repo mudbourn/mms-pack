@@ -2776,7 +2776,7 @@ metafile = true
 
 [[files]]
 file = "mods/mms-worldgen.pw.toml"
-hash = "64e7604694c50f9dd5e9ea1e36cee36962edc4f694264e70233fe9fb2bf96567"
+hash = "d4b148abaae2b13d14b18609f4f7f8cfd4b4d015cda928f1cfe0d5d2080a1f9e"
 metafile = true
 
 [[files]]

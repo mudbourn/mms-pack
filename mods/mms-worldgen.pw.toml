@@ -1,15 +1,15 @@
 name = "mms-worldgen"
-filename = "mms-worldgen-0.1.6.jar"
+filename = "mms-worldgen-0.1.7.jar"
 side = "both"
 
 [download]
-url = "https://github.com/mudbourn/mms-worldgen/releases/download/v0.1.6/mms-worldgen-0.1.6.jar"
+url = "https://github.com/mudbourn/mms-worldgen/releases/download/v0.1.7/mms-worldgen-0.1.7.jar"
 hash-format = "sha256"
-hash = "7d1490c761aac8d745fd2ba1058d8568951f2caf6fb5ce9a4222f90635d86838"
+hash = "56e06cb647615bdacf3d4e3568f7764474ffe72d68a67868cb1d7c156d0e65dd"
 
 [update]
 [update.github]
 branch = "main"
 regex = "^.+(?<!-api|-dev|-dev-preshadow|-sources)\\.jar$"
 slug = "mudbourn/mms-worldgen"
-tag = "v0.1.6"
+tag = "v0.1.7"
