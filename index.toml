@@ -930,7 +930,7 @@ hash = "563ef8b3af904f888af73d369a8fd4a4f76ec0bc794974396cb0a583b59fe591"
 
 [[files]]
 file = "config/fabric_loader_dependencies.json"
-hash = "4ab71565094c73805e8af65a063ca70d4193e03e39aa672f2bd404b40cd5e4ce"
+hash = "651abb0d4acf399b23a84318ec030fa133dd8637920af48c8a03ac1e27bd2294"
 
 [[files]]
 file = "config/fabrishot.properties"
