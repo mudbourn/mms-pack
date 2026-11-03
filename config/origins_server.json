@@ -189,7 +189,8 @@
       "mms_origins:fairy_allure": true,
       "mms_origins:fairy_flight": true,
       "mms_origins:anxious_heart": true,
-      "mms_origins:fairy_sounds": true
+      "mms_origins:fairy_sounds": true,
+      "mms_origins:skyris_homeland": true
     },
     "originstweaks:melan_wings": {
       "enabled": true
@@ -290,7 +291,8 @@
       "originstweaks:phantomize_overlay": true,
       "originstweaks:invisibility": true,
       "originstweaks:phantom_sounds": true,
-      "originstweaks:phantom_advancements": true
+      "originstweaks:phantom_advancements": true,
+      "originstweaks:summon_phantoms": true
     },
     "mms_origins:floran": {
       "enabled": true,
@@ -342,7 +344,10 @@
       "originstweaks:beastfolk_sounds": true,
       "originstweaks:beastfolk_advancements": true,
       "mms_origins:beast_tongue": true,
-      "mms_origins:carnivore_diet": true
+      "mms_origins:carnivore_diet": true,
+      "originstweaks:hunter_physique": true,
+      "originstweaks:predators_appetite": true,
+      "originstweaks:vicious_appearance": true
     },
     "originstweaks:hiyori_wings": {
       "enabled": true
@@ -421,6 +426,15 @@
       "mms_origins:fungal_constitution": true,
       "mms_origins:saprophyte_diet": true,
       "mms_origins:truffle_sounds": true
+    },
+    "originstweaks:beastfolk_tail_fox": {
+      "enabled": true
+    },
+    "originstweaks:beastfolk_no_tail": {
+      "enabled": true
+    },
+    "originstweaks:beastfolk_tail_wolf": {
+      "enabled": true
     }
   }
 }

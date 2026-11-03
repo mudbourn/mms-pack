@@ -1,0 +1,11 @@
+# Brewin' And Chewin' client config
+# Changing version makes the mod ignore this file and write defaults.
+version = 2
+
+[client]
+numbedHeartFlickering = true
+intoxicationFoodOverlay = true
+scrambleChat = true
+scrambleName = true
+scrambleSign = true
+renderFluidInKeg = true

@@ -1,0 +1,9 @@
+{
+  "configVersion": "0.7.8",
+  "shadowSpreadSpeedMultiplier": 1.0,
+  "enableShadowBindReloadTexture": true,
+  "enableShadowBindTextureShift": true,
+  "doBossGriefing": true,
+  "useCustomMainMenuBackground": true,
+  "overworldAbandonnedPortalSpacingOverride": 60
+}

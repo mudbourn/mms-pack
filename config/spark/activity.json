@@ -1,0 +1,54 @@
+[
+  {
+    "user": {
+      "type": "player",
+      "name": "mudbourn",
+      "uniqueId": "49cad3d9-0ece-4536-b469-16b1c2c0fdd4"
+    },
+    "time": 1793582297720,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/thnceUi5jd"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "mudbourn",
+      "uniqueId": "49cad3d9-0ece-4536-b469-16b1c2c0fdd4"
+    },
+    "time": 1790298240981,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/3jKRglVjyo"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "mudbourn",
+      "uniqueId": "49cad3d9-0ece-4536-b469-16b1c2c0fdd4"
+    },
+    "time": 1790128321687,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/ThUoCCRz9C"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "mudbourn",
+      "uniqueId": "49cad3d9-0ece-4536-b469-16b1c2c0fdd4"
+    },
+    "time": 1790128132507,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/7smCiu8SL9"
+    }
+  }
+]

@@ -1,24 +1,18 @@
 {
   "rain": {},
-  "heavy_dust": {},
+  "vertical_fog_after_rain": {},
   "splatter": {},
+  "skittering_dust": {},
   "smoke": {},
+  "heavy_snow": {},
+  "vertical_fog": {},
   "streak": {},
-  "mist": {},
-  "shrub": {
-    "enabled": true
-  },
-  "snow_haze": {
-    "enabled": true
-  },
-  "mist_after_rain": {},
+  "fog_after_rain": {},
+  "shrub": {},
   "ripple": {},
-  "rain_haze": {
-    "enabled": true
-  },
   "snow": {},
+  "heavy_rain": {},
   "dust": {},
-  "dust_haze": {
-    "enabled": true
-  }
+  "dust_haze": {},
+  "fog": {}
 }

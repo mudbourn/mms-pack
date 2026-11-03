@@ -1,0 +1,38 @@
+sets:MMS:gui.xaero_default
+#
+#waypoint:name:initials:x:y:z:color:disabled:type:set:rotate_on_tp:tp_yaw:visibility_type:destination
+#
+waypoint:Peaceland (Nether):P:611:129:-591:1:false:0:MMS:false:0:1:false
+waypoint:Edenvale:E:425:129:-605:1:false:0:MMS:false:0:1:false
+waypoint:Equestria (Nether):E:-151:129:-610:1:false:0:MMS:false:0:1:false
+waypoint:Delmon (Nether):D:-685:129:-695:1:false:0:MMS:false:0:1:false
+waypoint:Vinewood (Nether):V:-284:129:-143:15:false:0:MMS:false:0:1:false
+waypoint:Cherry Park (Nether):C:132:129:-197:15:false:0:MMS:false:0:1:false
+waypoint:Elgin (Nether):E:-727:129:-48:12:false:0:MMS:false:0:1:false
+waypoint:Ymir (Nether):Y:-432:129:-60:12:false:0:MMS:false:0:1:false
+waypoint:Ocram (Nether):O:-55:129:-190:12:false:0:MMS:false:0:1:false
+waypoint:Vermillion (Nether):V:291:129:-95:12:false:0:MMS:false:0:1:false
+waypoint:Orihara (Nether):O:431:129:-205:12:false:0:MMS:false:0:1:false
+waypoint:New Vegas (Nether):N:727:129:-89:12:false:0:MMS:false:0:1:false
+waypoint:Harcourt (Nether):H:764:129:684:14:false:0:MMS:false:0:1:false
+waypoint:Allium Peaks (Nether):A:557:129:620:14:false:0:MMS:false:0:1:false
+waypoint:Hoenheim (Nether:H:-234:129:458:15:false:0:MMS:false:0:1:false
+waypoint:Fort Kelvin (Nether):F:-8:129:14:15:false:0:MMS:false:0:1:false
+waypoint:Blackwell (Nether):B:65:129:478:14:false:0:MMS:false:0:1:false
+waypoint:Bellwoods (Nether):B:-574:129:540:14:false:0:MMS:false:0:1:false
+waypoint:Marion (Nether):M:-706:129:686:14:false:0:MMS:false:0:1:false
+waypoint:Serpent's Coast (Nether):S:408:129:608:15:false:0:MMS:false:0:1:false
+waypoint:Ebony Falls (Nether):E:501:129:755:5:false:0:MMS:false:0:1:false
+waypoint:Boom Point (Nether):B:121:129:-447:11:false:0:MMS:false:0:1:false
+waypoint:Groveside (Nether):G:335:129:417:5:false:0:MMS:false:0:1:false
+waypoint:Aspenia (Nether):A:-453:129:-773:5:false:0:MMS:false:0:1:false
+waypoint:Sycamore (Nether):S:-397:129:-505:5:false:0:MMS:false:0:1:false
+waypoint:Caledon (Nether):C:-205:129:731:11:false:0:MMS:false:0:1:false
+waypoint:Remotus (Nether):R:-136:129:-150:5:false:0:MMS:true:0:0:false
+waypoint:Old Bark Yard (Nether):O:-130:129:306:4:false:0:MMS:true:0:0:false
+waypoint:Crimson Hill (Nether):C:129:129:230:5:false:0:MMS:true:0:0:false
+waypoint:Bessarion (Nether:B:-168:129:119:11:false:0:MMS:true:0:0:false
+waypoint:Bunker (Nether):B:-231:129:-308:5:false:0:MMS:true:0:0:false
+waypoint:Strandway (Nether):S:151:129:-643:11:false:0:MMS:true:0:0:false
+waypoint:Castle Valley (Nether):C:-298:129:281:11:false:0:MMS:true:0:0:false
+waypoint:Bessarion (Nether):B:-168:129:119:11:false:0:MMS:true:0:0:false

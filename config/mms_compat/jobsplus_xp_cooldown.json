@@ -1,0 +1,40 @@
+{
+  "enabled": true,
+  "easyCooldownTicks": 80,
+  "hardCooldownTicks": 40,
+  "easyActionTypes": [
+    "arc:on_crouch",
+    "arc:on_interact_entity",
+    "arc:on_place_block",
+    "arc:on_plant_crop",
+    "arc:on_strip_log",
+    "arc:on_swim",
+    "arc:on_till_soil"
+  ],
+  "hardActionTypes": [
+    "arc:on_break_block",
+    "arc:on_breed_animal",
+    "arc:on_brew_potion",
+    "arc:on_craft_item",
+    "arc:on_drink",
+    "arc:on_enchant_item",
+    "arc:on_fished_up_item",
+    "arc:on_grind_item",
+    "arc:on_harvest_crop",
+    "arc:on_hurt_entity",
+    "arc:on_kill_entity",
+    "arc:on_smelt_item",
+    "arc:on_tame_animal",
+    "arc:on_throw_item",
+    "arc:on_use_anvil"
+  ],
+  "weaponGating": true,
+  "rangedJobs": [
+    "jobsplus:hunter"
+  ],
+  "meleeJobs": [
+    "jobsplus:warrior"
+  ],
+  "meleeProjectiles": [],
+  "arrowProjectiles": []
+}

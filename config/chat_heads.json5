@@ -6,11 +6,21 @@
 	"smartHeuristics": true,
 	"handleSystemMessages": true,
 	"drawShadow": true,
+	"rightPadding": 1,
 	"nameAliases": {
 		"<mudbourn>": "he",
 		"mudbourn": "down!",
 		"oohvee3": "down!",
 		"b00bfan123": "down!",
-		"Tester1": "down!"
+		"Tester1": "down!",
+		"Cight13": "down!",
+		"relictuss02": "down!",
+		"Egnoggs": "down!",
+		"gehennasgrace": "down!",
+		"kickzjs": "down!",
+		"Awooooona": "down!",
+		"flubbygubbygub": "down!",
+		"qtXell": "down!",
+		"SoKoga": "down!"
 	}
 }

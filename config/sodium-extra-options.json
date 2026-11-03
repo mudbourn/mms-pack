@@ -191,6 +191,7 @@
       "bettercombat:topslash90": true,
       "bettercombat:topstab": true,
       "immersive-storms:black_rain": true,
+      "alcocraftplus:yellow_bubble": true,
       "combatamenities:crit_attack": true,
       "combatamenities:hit_marker": true,
       "combatamenities:left_normal_attack": true,
@@ -252,30 +253,26 @@
         "distance_chunks": 8,
         "start_percent": 80,
         "shape_mode": "RADIAL",
-        "affect_sky_fog": true,
-        "affect_cloud_fog": true
+        "cloud_fog_percent": 100
       },
       "dimension_overrides": {
         "minecraft:overworld": {
           "distance_chunks": 0,
           "start_percent": 80,
           "shape_mode": "RADIAL",
-          "affect_sky_fog": true,
-          "affect_cloud_fog": true
+          "cloud_fog_percent": 100
         },
         "minecraft:the_end": {
           "distance_chunks": 0,
           "start_percent": 80,
           "shape_mode": "RADIAL",
-          "affect_sky_fog": true,
-          "affect_cloud_fog": true
+          "cloud_fog_percent": 100
         },
         "minecraft:the_nether": {
           "distance_chunks": 0,
           "start_percent": 80,
           "shape_mode": "RADIAL",
-          "affect_sky_fog": true,
-          "affect_cloud_fog": true
+          "cloud_fog_percent": 100
         }
       },
       "protected_gameplay": {
@@ -317,6 +314,9 @@
     "tutorial_toast": false,
     "instant_sneak": true,
     "prevent_shaders": false,
+    "panini_projection": false,
+    "panini_projection_strength": 25,
+    "panini_projection_quality": 150,
     "steady_debug_hud": true,
     "steady_debug_hud_refresh_interval": 20
   }

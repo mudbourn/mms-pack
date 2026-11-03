@@ -33,6 +33,14 @@ file = "config/accurateblockplacement.properties"
 hash = "f7a77e760ea6b5c96e1c9b69078a1cec210d5ab4f669e50d4334364d960bf518"
 
 [[files]]
+file = "config/aerialhell/config-outdated_2026-10-29-021424.json"
+hash = "a98fc074af3e1b8a4ef3363c048b41068f4d8ed535b1a65225f77f4a4ee8f4ba"
+
+[[files]]
+file = "config/aerialhell/config-outdated_2026-10-30-034032.json"
+hash = "340300f181ed8b8ecc64940712bf6bc8cb5dc5788b4e66686be4fc41a8354b56"
+
+[[files]]
 file = "config/aerialhell/config.json"
 hash = "a98fc074af3e1b8a4ef3363c048b41068f4d8ed535b1a65225f77f4a4ee8f4ba"
 
@@ -402,11 +410,11 @@ hash = "80aff5d9a9da2280845645cfeba76415acc85deead3b684940ac235bdc45036e"
 
 [[files]]
 file = "config/axiom/axiom.json"
-hash = "75fa0834df0d7d18d25b041ec8ff6e3da7f8a9ba6a53dd265c80529aad513672"
+hash = "c29bf380f0135cf1907f3ecfaf2e56d072687f72b6c164ccc4014f8716206cc9"
 
 [[files]]
 file = "config/axiom/imgui.ini"
-hash = "8cc3089b7eaf1bcb69b4103cf38ca94cd130a5ca6a806740606fdb8a8f8b6041"
+hash = "b9ff75677503beea2d08ef2b8bcca29ebe777fc76927a6ddf3f005d611a12e20"
 
 [[files]]
 file = "config/badoptimizations.txt"
@@ -418,7 +426,7 @@ hash = "4a363ac0b76af46e8db725951e186df783d7f10340cc177003031d867ed91f27"
 
 [[files]]
 file = "config/bettercombat/client.json5"
-hash = "fc3b8f38228409f41d4d2487568a72a32ce875321daf3305c3e1b0a884aa0649"
+hash = "ad5c9561f61e721e0b270b8572966b9d21607510d21cbebdabc521f5d4c51be4"
 
 [[files]]
 file = "config/bettercombat/fallback_compatibility.json"
@@ -458,11 +466,19 @@ hash = "0b05a8814f09fead55b1901b7efab7d3ab87227ea3fc6b5e65a6197261832710"
 
 [[files]]
 file = "config/biomeswevegone/world_generation.json"
-hash = "6fb6ff3e2cb4d1c47431b2e9fb48090fd985e0b43777949ec0c346cda85e532d"
+hash = "4e644f8324221022aed71d39b3d56a6cd189d5bd3f67c4aa72b889fb208421da"
 
 [[files]]
 file = "config/bobby.conf"
 hash = "2b537201fc80ff324413829904450720706869fb5e4d753e14f4bff1525f5438"
+
+[[files]]
+file = "config/brewinandchewin-client.toml"
+hash = "1ee5786cf85bde8b2820ca39295895d0e3713da329f3c42aa5a64926dac563f5"
+
+[[files]]
+file = "config/brewinandchewin-common.toml"
+hash = "2881c615cea734d92cf53d3f19063c44f1a3d986adadb0dad37d6640492ee172"
 
 [[files]]
 file = "config/bura.json"
@@ -494,7 +510,7 @@ hash = "9aacfa29cc077a92f2e601daf6b60a2d85e8731aa5b239d1ac86f96e89461420"
 
 [[files]]
 file = "config/chat_heads.json5"
-hash = "c0d29bbc64b3326d927b133fa930fc8a4bd8a1bb0dcb3091ae5e39b0407b1f5a"
+hash = "525f566eb2b4b10d016591137dc65d97e2bdf667550a97e54cd41d06472dee63"
 
 [[files]]
 file = "config/chatanimation.json"
@@ -514,7 +530,7 @@ hash = "c7384a22595488f79f3125b22cc175eb729267267807a084479419349797abc8"
 
 [[files]]
 file = "config/cinematic_respawn.properties"
-hash = "d5446c230bfbc37d2b16e50b5544b98b80b8e882808ae8cbd49e6af0ee4979d5"
+hash = "48ecb0df7709e525a6fdadfa67062a2b36bf0dc814c88ad046deaacdf426c1e5"
 
 [[files]]
 file = "config/citresewn.json"
@@ -870,7 +886,7 @@ hash = "bd66edf9d1a72cd717bbe9b17b41ffd16963b089493e5ddae3d3ad69153105ba"
 
 [[files]]
 file = "config/entityculling.json"
-hash = "1221c2fc8eac84274bef4cdda1757aca2e6e83ebb98390e4dd5a752a01de9abc"
+hash = "157a313920c49c525f4b5615d31ee5b8add7bdca7218cfbc76b7a4b6f535981a"
 
 [[files]]
 file = "config/essentialcommands/rules.txt"
@@ -910,11 +926,11 @@ hash = "89fe72875ce58b622de37198ec78e12131f5d413532ca93eeccd4fdf8561207b"
 
 [[files]]
 file = "config/fabric/indigo-renderer.properties"
-hash = "ae4b2b550308eaa1069a22f38020d8f24411b375ab975c0d593c95e467f688dd"
+hash = "563ef8b3af904f888af73d369a8fd4a4f76ec0bc794974396cb0a583b59fe591"
 
 [[files]]
 file = "config/fabric_loader_dependencies.json"
-hash = "8f49ea9f1a5874096b998b6c489ce3381388c810ef9899ab6f8e0963484b30aa"
+hash = "4ab71565094c73805e8af65a063ca70d4193e03e39aa672f2bd404b40cd5e4ce"
 
 [[files]]
 file = "config/fabrishot.properties"
@@ -994,7 +1010,7 @@ hash = "4c7635099e27953f03e0257106284ffa36aa91294bd89ba75a387242ece84cff"
 
 [[files]]
 file = "config/gnetum.json"
-hash = "0d9a97b8bee9ff36624a7e76737097c57b3dfc42a8aceb845315a5c7ba10885d"
+hash = "921dbd5ef94bc2aa2f7e17a9a1b51ed0427eadfebf5debd448f175409b2fa64e"
 
 [[files]]
 file = "config/guardvillagers.json"
@@ -1033,6 +1049,14 @@ file = "config/inspect-animations.json5"
 hash = "a70371e840bc3863219d13232e6d8bfe79fdfa203795b77cfabb390efdb31342"
 
 [[files]]
+file = "config/iris-excluded.json"
+hash = "4d3264b58c502afaeca3f44e8d2db0843c54b8ba957afd21a2d450fe10dafefb"
+
+[[files]]
+file = "config/iris.properties"
+hash = "3dfd9e3b16572aa0a896e82690ed141c2b54acdc22ccc09ae9a62f55903176ca"
+
+[[files]]
 file = "config/isxander-main-menu-credits.json"
 hash = "b03844cdc566017ecdb87b567556bc08154533332097ec99824ca702cd702e10"
 
@@ -1061,11 +1085,71 @@ file = "config/jei/blacklist.json"
 hash = "b4174dc6e985aa90be5002c14e94b956d8d586683c44b7b6710c44d08fb13648"
 
 [[files]]
+file = "config/jei/client/default/jei-client.ini"
+hash = "89a0bc3f3ebca2e647d9a4e3662e9b24aabab6faf0c8b3fb2c3315ce8b791f6e"
+
+[[files]]
+file = "config/jei/client/default/jei-client.ini.bak.1"
+hash = "0150ffb941f953f0d2cd48c19cffbcbb4f95d521e870e204d74201156041fec0"
+
+[[files]]
+file = "config/jei/client/default/jei-colors.ini"
+hash = "1372b094bf8f1d444f04cf4da7f9dc05c445d7ab5b3f73ecd7cfbef79ccad1d7"
+
+[[files]]
+file = "config/jei/client/default/jei-debug.ini"
+hash = "6fbae6db21c604fa008d2e4a696789c1fd2fccdbc741194c8fdfb3f1cd8bdc05"
+
+[[files]]
+file = "config/jei/client/default/jei-mod-id-format.ini"
+hash = "e64349cae34367965848d7fb390dcd6a52d23c012c4711005a70084d958cee67"
+
+[[files]]
+file = "config/jei/client/ingredient-list-mod-sort-order.ini"
+hash = "6412c857f44ba0bdbd545693b947f746dc031a627dbeea12a456958546aa0eb4"
+
+[[files]]
+file = "config/jei/client/ingredient-list-type-sort-order.ini"
+hash = "43a1184ff93d9f20a87817badd43048ee9ec271de5124eebae97f814f01cf1bb"
+
+[[files]]
+file = "config/jei/client/jei-client.ini"
+hash = "bca8ed171b260292a9081075d935af1e35ffd88df8a93079bc922945c01b8996"
+
+[[files]]
+file = "config/jei/client/jei-client.ini.bak.1"
+hash = "75431053d6667ac4ad8f9eb3327d8f8aecb515d6c5baea4b71509b711e08a914"
+
+[[files]]
+file = "config/jei/client/jei-colors.ini"
+hash = "1372b094bf8f1d444f04cf4da7f9dc05c445d7ab5b3f73ecd7cfbef79ccad1d7"
+
+[[files]]
+file = "config/jei/client/jei-debug.ini"
+hash = "6fbae6db21c604fa008d2e4a696789c1fd2fccdbc741194c8fdfb3f1cd8bdc05"
+
+[[files]]
+file = "config/jei/client/jei-mod-id-format.ini"
+hash = "e64349cae34367965848d7fb390dcd6a52d23c012c4711005a70084d958cee67"
+
+[[files]]
+file = "config/jei/client/recipe-category-sort-order.ini"
+hash = "1708c0e5c32350fca6a37b71e209b27501b634b53236ba37ae0b5c3f5f5cb11e"
+
+[[files]]
 file = "config/jei/ingredient-list-mod-sort-order.ini"
 hash = "111b8de4d8cdd5f86cd420cec9b8ac43ba9f415a14b058eb53a18fc20cbaef29"
 
 [[files]]
+file = "config/jei/ingredient-list-mod-sort-order.ini.bak.1"
+hash = "9f10a9cad33b44aa14208ab7931cf4da81b54756362d06bfc5bd5a6f5ec8bef6"
+
+[[files]]
 file = "config/jei/ingredient-list-type-sort-order.ini"
+hash = "f6faa8cf111795b26bb59fe7618381fba1879ddc35dbac176297f57941496ff6"
+
+[[files]]
+file = "config/jei/ingredient-list-type-sort-order.ini.bak.1"
 hash = "f6faa8cf111795b26bb59fe7618381fba1879ddc35dbac176297f57941496ff6"
 
 [[files]]
@@ -1073,7 +1157,15 @@ file = "config/jei/jei-client.ini"
 hash = "17e3883ecc473f4312f47c2873f56644ce7180cf2fdf30cd5f8ed950435de750"
 
 [[files]]
+file = "config/jei/jei-client.ini.bak.1"
+hash = "17e3883ecc473f4312f47c2873f56644ce7180cf2fdf30cd5f8ed950435de750"
+
+[[files]]
 file = "config/jei/jei-colors.ini"
+hash = "e4bc0c5fce5a7536bce14c94b30e30482e65d63792b29db0ad59d4fa9eb4d1a5"
+
+[[files]]
+file = "config/jei/jei-colors.ini.bak.1"
 hash = "e4bc0c5fce5a7536bce14c94b30e30482e65d63792b29db0ad59d4fa9eb4d1a5"
 
 [[files]]
@@ -1081,12 +1173,28 @@ file = "config/jei/jei-debug.ini"
 hash = "5de3969a31149d8974d96bfebb8a1c160d6d5e93fd54fed8e95f6d8ea48427c3"
 
 [[files]]
+file = "config/jei/jei-debug.ini.bak.1"
+hash = "5de3969a31149d8974d96bfebb8a1c160d6d5e93fd54fed8e95f6d8ea48427c3"
+
+[[files]]
 file = "config/jei/jei-mod-id-format.ini"
+hash = "4eb3a3eb280558bdd2665fb4792d32551cb6dddc468776e66afc1c3ea981781e"
+
+[[files]]
+file = "config/jei/jei-mod-id-format.ini.bak.1"
 hash = "4eb3a3eb280558bdd2665fb4792d32551cb6dddc468776e66afc1c3ea981781e"
 
 [[files]]
 file = "config/jei/recipe-category-sort-order.ini"
 hash = "781b98a026930d891bebda43b07e323c78234f34131a2798f9613419f9b64264"
+
+[[files]]
+file = "config/jei/recipe-category-sort-order.ini.bak.1"
+hash = "781b98a026930d891bebda43b07e323c78234f34131a2798f9613419f9b64264"
+
+[[files]]
+file = "config/jei/server/world/default/jei-server.ini"
+hash = "729cd9f0817c7870e5c22d77b4db4b5f98d78c86c6f3214dcb777f5e720ee703"
 
 [[files]]
 file = "config/jei/world/local/Testing/bookmarks.json"
@@ -1102,11 +1210,11 @@ hash = "55794e89908d527fc516987a2c1bb3d8f26415b69a4bef930013c38fa3ff599b"
 
 [[files]]
 file = "config/jei/world/server/mudbourn_s_MC_Server__MMS__30c7fcbc/bookmarks.json"
-hash = "263e23ebb030fcb6842abb8c27ecf6d76cf2cf637a8bc633c280f099d012bf49"
+hash = "ead9d8e3e75b5139d92c58e541b54fee67f6efedc106cb441c57cb3be63f9382"
 
 [[files]]
 file = "config/jei/world/server/mudbourn_s_MC_Server__MMS__30c7fcbc/lookupHistory.json"
-hash = "7dbf972473c31eba28eb5c03dce3ec1b5a632bd4fed082067f958eee66e43bae"
+hash = "a934f1e4d65b0fa19bcb72e4000ce729b62bcd1b478d87cac63624bc24bda20f"
 
 [[files]]
 file = "config/jobsplus/jobsplus-client.yaml"
@@ -1138,7 +1246,7 @@ hash = "a9fed9f65d7c8216c478dd471c01c17c1af78c5c77caf17d1f48e5899b960ec8"
 
 [[files]]
 file = "config/leawind_third_person.json"
-hash = "b5ac63500fd0ac9e22008d36a7ba74a8a2e8b8c4af77988108ead69dba3a269c"
+hash = "65480181ad605f41e91fb4a0b0bb21fe1a71b8f70b15698501964e9dd1f8ad53"
 
 [[files]]
 file = "config/leawind_third_person/default_template.txt"
@@ -1202,11 +1310,15 @@ hash = "c3b9a08bfa0b981e2e6cdca99b940411053e1f17c1edfbeb49b06223b95e6959"
 
 [[files]]
 file = "config/mcef/mcef.properties"
-hash = "5ffae5bb00cd666c377b1ed841cf4d286b212ad787354837093fb2f5d9d492a1"
+hash = "97d4b9aa587a783ac18b0640070c5ca982f08b5bc05e27161b562c5d3ba61f8f"
 
 [[files]]
 file = "config/metro_config.json"
 hash = "b454d8acce9811c604d8dfea575c5f93aaef0b2f3bba2fcb047366c6db5b0e0d"
+
+[[files]]
+file = "config/mezz_config/client/default/settings.ini"
+hash = "1ea4410cacf1baa6ee372daf59d4c5989ad944c0eaf26f043d702f13bad204b1"
 
 [[files]]
 file = "config/midnightlib.json"
@@ -1219,6 +1331,18 @@ hash = "8befd4ffb72535c410827aa10cdce9aa79df3601b4092c905effe53a6d75713a"
 [[files]]
 file = "config/minecart-trains-fork.json"
 hash = "62e27d531ebb30645777bbd7804645b6c27255c6959df1a9458b9f80364282a1"
+
+[[files]]
+file = "config/mms_arsenal.json"
+hash = "04a079f93754108e37217cad528964e05c20cfc2d3f7f0dc003965fce79e0b8b"
+
+[[files]]
+file = "config/mms_combat.json"
+hash = "f479c5217a71746f4edb28a099de309203fcfbcd80049a7f79ce5fa0b861facc"
+
+[[files]]
+file = "config/mms_compat/jobsplus_xp_cooldown.json"
+hash = "ffce51638d7770663a1429edbfcee1409d024bcb25f2112dd99f84b235586cc4"
 
 [[files]]
 file = "config/mms_compat_lean.json"
@@ -1242,11 +1366,15 @@ hash = "37a915e0517429efc2f076d05db6e5953d188712fb01920bc3f3dc47e09247e9"
 
 [[files]]
 file = "config/mms_economy_buylist.json"
-hash = "9d6790b316145b77593398a3d3201b0c0c8bc3c5b3ef119d333ecbfb8d64e809"
+hash = "f74a2b374397d47ea28ae6d59b1ae1c3572df740f43fb892c9862b8b7c0181cf"
 
 [[files]]
 file = "config/mms_metro.json"
 hash = "db4f938e2bcc3d2de04f4744ea050230239e612ca5833049c49e86b276b6a4af"
+
+[[files]]
+file = "config/mms_worldgen.json"
+hash = "cedd2bb1abc275a662174c6249e23bf00553cc41feae8609dc95c6bde716dcd3"
 
 [[files]]
 file = "config/mob-ai-tweaks/blacklists/allay_weapons.txt"
@@ -1282,7 +1410,7 @@ hash = "abe82f381dc5ca7f5ed946301bc35748a421c69c105d3726a30a055cd4ffd30b"
 
 [[files]]
 file = "config/modernfix-mixins.properties"
-hash = "86c0cf16ca221cb0de8b46da9a0c81d558ca84d2b515a6ab7f85f2b801333e22"
+hash = "f6c383020f37b3d8c64c0961011eecb9e6458c0724c101e5b1fc209b5247eb92"
 
 [[files]]
 file = "config/modmenu.json"
@@ -1469,6 +1597,10 @@ file = "config/mutantmonsters-server.toml"
 hash = "934143a55755d4d0b07fedb452005d7af56f5b848ed032e26d334ea36db32fba"
 
 [[files]]
+file = "config/nocreativedrift.json"
+hash = "f02433e32fbe626f3113a9dab29293e077f07ae69bcc81f568c1e9220648ce46"
+
+[[files]]
 file = "config/noisium.json"
 hash = "3b6acdbc5ce36d9a81fb2a889760b5eb9fd88683cb06e234eca92559ad151329"
 
@@ -1482,15 +1614,15 @@ hash = "e604a3705ca2adf9499a412afefc61fb589448de43e4652db6232f94699e3950"
 
 [[files]]
 file = "config/openpartiesandclaims-server.toml"
-hash = "a3ead57c066de1e168bbbfc57fadf05451058b755e85512025c23fde05b8f712"
+hash = "9c6d7c922081b4e8d75af660540f7fcaf980025d3ba3092700a7df19e559edc2"
 
 [[files]]
 file = "config/origins_server.json"
-hash = "48c32dd86ef73e1633b74332f072799e515d53235bd8573bd00d6a8483a4dc0a"
+hash = "bab9bed4838df937783de33158f883135792bde9511ac1e1b8f14fa2448c106e"
 
 [[files]]
 file = "config/packetfixer.properties"
-hash = "874649a5e4f5aa4785be7d02d3f60495f3337dc9a4f143820bcf30281c551f27"
+hash = "2c033cc25ed4d02e1e938b3959d01947566257fe8fd4849f7d5d7f3a0af8e573"
 
 [[files]]
 file = "config/pal.properties"
@@ -1506,15 +1638,15 @@ hash = "3d731115173b34dd0fe9de6f52fa14dc271c848495a52f66c0016e24150f59d6"
 
 [[files]]
 file = "config/particlerain/config.json"
-hash = "e467bad5ddd60ec1f2deee790243ea6a08712d365da472cf46542c8adba84d38"
+hash = "10f75ef386c1ecb715cb6e1bf98c4804f834b5d266af95ee112b9a4866ad4631"
 
 [[files]]
 file = "config/particlerain/particles.json"
-hash = "e23ab0a08260e91394d9d8232343156197e8f915e6dbc49da50a73c3038c68ea"
+hash = "1eaf0b7e4caa07bd75ea609430f34169712893bfbe58116ba8fdcc05461987d3"
 
 [[files]]
 file = "config/perspective_api.json"
-hash = "7132631f29f35fd4cc12485c070961a11798e1f4f92fc13306f2fff5df8cfe09"
+hash = "36aa2cfe869d1bf23e8fb672cc9c9da711adb74426481e58e00d111718e8c9e2"
 
 [[files]]
 file = "config/polymer/common.json"
@@ -1574,7 +1706,7 @@ hash = "6b44bfd3fc7ee9d8f589425503e2af2748aa274d080f6d270d34cbc1b5604d45"
 
 [[files]]
 file = "config/rsls.properties"
-hash = "5209a621112bc45ac359a6a373da1dcb841647bb0c9ed216ca78c69f0849d3ac"
+hash = "d88b8e5c2fb8d2569397d24c0ffd4064d2d40199e80d7e1e35af81ba4cffd0a0"
 
 [[files]]
 file = "config/rusticdelight.json"
@@ -1634,7 +1766,7 @@ hash = "3765c332a3a1f2697b4ec88dc206f5c93c063ca86663faeef3181fe5e01d44df"
 
 [[files]]
 file = "config/skyboxify.json"
-hash = "c032efa00c2fdfd23000881733881e19e7c40374bd86c7ebdb1b1d0d4edd7c41"
+hash = "52a46286ba3ece4be3cd5e912813ec76dd10731e10d4ec3df1d3e6553522a1f1"
 
 [[files]]
 file = "config/sleepsooner.json5"
@@ -1650,7 +1782,7 @@ hash = "d291dbeada373e95b36386793bbaae0aeb11597ab610d66ca7f4abf223558caa"
 
 [[files]]
 file = "config/sodium-extra-options.json"
-hash = "a1d9ee179bb6eb0619a59efb7d73a970e429bfcb1f54d6eaecdfb0cbb5dd32d8"
+hash = "a262873cd2694cfe72ca1e65c8fde94969774bb9182584b457512fb6424aabc5"
 preserve = true
 
 [[files]]
@@ -1687,7 +1819,7 @@ hash = "bc029afc200ba2fba522a27245d65c8e5db0f20cd0eddd5873a316054d962923"
 
 [[files]]
 file = "config/sound_physics_remastered/sound_rates.properties"
-hash = "97eb4d4e7eee3403aea673c27fc2c42fc807608245e7412761c534f0eeb61fad"
+hash = "cccf6e8caef7b95dda9419a4fe0e47bc3a7988c828a3213152c585bad8d66ebe"
 
 [[files]]
 file = "config/sound_physics_remastered/soundphysics.properties"
@@ -1811,11 +1943,11 @@ hash = "a50b4ca77d21ae105e68560c1af694125ea06360374c82e87f4da54b7ecfa51d"
 
 [[files]]
 file = "config/variantsandventures.json"
-hash = "3722e961204446525a1057da429c14898cf9f2244870aec769d8784585b6656c"
+hash = "7a0a4afa46f27207c58bba03e89245bcad9510f74b9cdf58153bd924c3c12652"
 
 [[files]]
 file = "config/vmp.properties"
-hash = "1870ef03a9a990fd7c5344e0b32d5e152c5ce379c9661bba8890a5394aa4aa6f"
+hash = "530273c4d330b40139931fbf7b348d3ded7b0a164f80f7e109b2810c8c533c9f"
 
 [[files]]
 file = "config/voicechat/category-volumes.properties"
@@ -1831,11 +1963,11 @@ hash = "b258a94a5ed60fbf93b66c452c3d6e36b044f630741f90e5b13852a4805b235e"
 
 [[files]]
 file = "config/voicechat/voicechat-client.properties"
-hash = "dd0aad7699bcc7b2f6c311f1103ef942622e412179195eed767e3d936b0fe8d9"
+hash = "461b6a4f2757bde4efae7174b627ab05158e2d5f06df4da605a6b9075d924580"
 
 [[files]]
 file = "config/voicechat/voicechat-server.properties"
-hash = "8de3a2ae97b7d9b468902b308afc92f1ccfb2c1577c4868febcca50f75d4c60c"
+hash = "c5931e362ec300c6fb85407f1bd76c10d082c538ef282f6226656c9f4da418f3"
 
 [[files]]
 file = "config/waddles-common.toml"
@@ -1944,7 +2076,7 @@ hash = "d438aea41ca41e93697e059f523686935c0add482f6abe96b532bbf10c6ed80a"
 
 [[files]]
 file = "config/xaero/world-map/client.cfg"
-hash = "334ed3477969e80ff44bce2fc3ddd3e942ab0b1a3c72ece2af75ff183b50e989"
+hash = "0cb33804b76062bf6fd37f82c8276576f9f5f183e1541b968c7febeefc9a6155"
 
 [[files]]
 file = "config/xaero/world-map/common.cfg"
@@ -1972,7 +2104,7 @@ hash = "121b93764159be6fb7dab523b29a844e2bb78400ce8c48f52135a097e9b0006e"
 
 [[files]]
 file = "config/zfastnoise.mixin.toml"
-hash = "9662f1b3b93e09c023de08253f7b13fbc76bdb71c45ebce196ce80dff7cec1ec"
+hash = "e895969d7c68d8b22934d6cdff7c61606a8429d42b509616487f5a1ceab1076d"
 
 [[files]]
 file = "mods/absolut-revive.pw.toml"
@@ -3285,7 +3417,7 @@ metafile = true
 
 [[files]]
 file = "options.txt"
-hash = "a284a4c1bf07650315ff57834432dacd49122963d4a8a03b085b377e55d606e7"
+hash = "590082d4d55b3ae202dc03dcea02d5922e7c52795df247ee31bc63cded46a456"
 preserve = true
 
 [[files]]
@@ -31170,18 +31302,34 @@ hash = "2396f65caf7f45bde09efa3cc89af7c93079d694714b44a412486ee7650dc05e"
 preserve = true
 
 [[files]]
+file = "xaero/minimap/IanXO4's Guardian XP Farm/config.txt"
+hash = "d8af0188b8be547a42d0a69cf60d997321736b99937b3d31fafa0f4fbbd14854"
+
+[[files]]
 file = "xaero/minimap/Multiplayer_mc.mudbourn.info/config.txt"
-hash = "f832c1e18dd908f494fee54ab82fefcc78ff881f114b35ab31320a91ba07b3b8"
+hash = "f04d05e1c718531cb98904687b0d44abe0468825f2c2024a8df4944bfd31b7bd"
 
 [[files]]
 file = "xaero/minimap/Multiplayer_mc.mudbourn.info/dim%-1/mw$-29775643_1.txt"
-hash = "050cedcdf039a16f841c843091877d8457c744da8611b9b87adddbfc9a8cfe79"
+hash = "7ceff876d06bee16b375f176f08a37145be4b9ddbd9eec75c3ce7aaec0169ec5"
 preserve = true
 
 [[files]]
+file = "xaero/minimap/Multiplayer_mc.mudbourn.info/dim%-1/mw$-29775643_1.txt.bak-20261102"
+hash = "73bda87eb1a850b4bc32f38c25681406b18c5aac14d20d18f99c7888e2e2bc3c"
+
+[[files]]
 file = "xaero/minimap/Multiplayer_mc.mudbourn.info/dim%0/mw$-29775643_2.txt"
-hash = "fa3ac41238727b5a758e4ed9fc734596825882ecdc7f40a9570c7ea7ddb70045"
+hash = "feaac89ca168526b9eb054bcfc3e4368a305e015ba05524c13173491a407f6a2"
 preserve = true
+
+[[files]]
+file = "xaero/minimap/Multiplayer_mc.mudbourn.info/dim%0/mw$-29775643_2.txt.bak-20261101"
+hash = "1e01333d84e0329e00b4e8984640b5e11edb8d5637b0af4a52b797e6b9031c15"
+
+[[files]]
+file = "xaero/minimap/Multiplayer_mc.mudbourn.info/dim%0/mw$-29775643_2.txt.bak-20261102"
+hash = "05d9201fa57638cd1c2c873a5759ea7a393ff42ab1a39aca4e9c57f6aa1dc9a9"
 
 [[files]]
 file = "xaero/minimap/Multiplayer_mc.mudbourn.info/dim%0/mw-1,1,0_1.txt"
@@ -31192,3 +31340,7 @@ preserve = true
 file = "xaero/minimap/Multiplayer_mc.mudbourn.info/dim%1/mw$-29775643_1.txt"
 hash = "d0e2425ae49d8b9074cf96e36d22e806a586f4930af8d57e0413a31701a0bc71"
 preserve = true
+
+[[files]]
+file = "xaero/minimap/New World/config.txt"
+hash = "d8af0188b8be547a42d0a69cf60d997321736b99937b3d31fafa0f4fbbd14854"

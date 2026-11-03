@@ -1,0 +1,23 @@
+# Brewin' And Chewin' common config
+# Changing version makes the mod ignore this file and write defaults.
+version = 3
+
+[root]
+levelChatScramble = 3
+levelSignScramble = 3
+levelNameScramble = 3
+
+[keg]
+# Valid units: "liters", "millibuckets", "droplets". Capacity is converted to droplets internally.
+# 1 liter = 1 millibucket = 81 droplets.
+kegCapacityUnit = "millibuckets"
+kegCapacity = 1000
+kegCold = 2
+kegChilly = 1
+kegWarm = 1
+kegHot = 2
+kegBiomeTemp = true
+kegDimTemp = true
+
+[recipe_book]
+enableRecipeBookKeg = true

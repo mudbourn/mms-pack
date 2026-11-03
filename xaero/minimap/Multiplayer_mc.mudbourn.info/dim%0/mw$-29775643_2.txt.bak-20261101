@@ -1,0 +1,61 @@
+sets:MMS:gui.xaero_default:POIs:METRO
+#
+#waypoint:name:initials:x:y:z:color:disabled:type:set:rotate_on_tp:tp_yaw:visibility_type:destination
+#
+waypoint:Boom Point:B:1088:64:-3691:11:false:0:gui.xaero_default:false:0:1:false
+waypoint:Old Bark Yard:O:-1010:5:2345:4:false:0:gui.xaero_default:false:0:0:false
+waypoint:Cherry Park:C:1053:117:-1485:15:false:0:MMS:false:0:1:false
+waypoint:placeholder:P:5027:67:-5895:18:false:0:MMS:false:0:0:false
+waypoint:Jarul:J:4917:115:3378:6:false:0:MMS:false:0:0:false
+waypoint:Edenvale:E:3377:71:-4753:15:false:0:MMS:false:0:0:false
+waypoint:Jericho:J:-4291:78:6188:18:false:0:MMS:false:0:0:false
+waypoint:Bluemond:B:4621:74:1000:6:false:0:MMS:false:0:0:false
+waypoint:Fayeville:F:-5300:64:-3044:18:false:0:MMS:false:0:0:false
+waypoint:Boston:B:-4354:79:1459:18:false:0:MMS:false:0:0:false
+waypoint:Peaceland:P:5040:109:-4663:1:false:0:MMS:false:0:0:false
+waypoint:Equestria:E:-1100:72:-4854:1:false:0:MMS:false:0:0:false
+waypoint:Delmon:D:-5454:64:-5528:15:false:0:MMS:false:0:0:false
+waypoint:New Vegas:N:5886:65:-814:12:false:0:MMS:false:0:0:false
+waypoint:Orihara:O:3468:64:-1705:15:false:0:MMS:false:0:0:false
+waypoint:Ocram:O:-422:88:-1503:12:false:0:MMS:false:0:1:false
+waypoint:Vermillion:V:2348:75:-865:12:false:0:MMS:false:0:0:false
+waypoint:Ymir:Y:-3469:81:-405:12:false:0:MMS:false:0:1:false
+waypoint:Elgin:E:-5851:71:-347:12:false:0:MMS:false:0:1:false
+waypoint:Pickering:P:2088:64:4374:14:true:0:MMS:false:0:0:false
+waypoint:Fort Kelvin:F:-68:63:126:15:false:0:MMS:false:0:1:false
+waypoint:Serpent's Coast:S:3252:70:4894:15:false:0:MMS:false:0:1:false
+waypoint:Hoenheim:H:-1844:102:3785:15:false:0:MMS:false:0:1:false
+waypoint:Sycamore:S:-3183:83:-4012:5:false:0:MMS:false:0:1:false
+waypoint:Flub's Isle:F:-3267:65:-329:2:false:0:MMS:false:0:1:false
+waypoint:Harcourt:H:6093:64:5440:14:false:0:MMS:false:0:1:false
+waypoint:Allium Peaks:A:4440:94:4869:14:false:0:MMS:false:0:1:false
+waypoint:Blackwell:B:505:74:3901:14:false:0:MMS:false:0:1:false
+waypoint:Marion:M:-5713:71:5454:14:false:0:MMS:false:0:1:false
+waypoint:Bellwoods:B:-4567:72:4243:14:false:0:MMS:false:0:1:false
+waypoint:Ebony Falls:E:3998:87:6042:5:false:0:MMS:false:0:1:false
+waypoint:Groveside:G:2669:63:3372:5:false:0:MMS:false:0:1:false
+waypoint:Aspenia:A:-3660:75:-6203:5:false:0:MMS:false:0:1:false
+waypoint:Bank of Aspenia:B:-3643:76:-6212:0:false:0:MMS:false:0:1:false
+waypoint:Boom Point:B:1088:64:-3691:11:false:0:MMS:false:0:1:false
+waypoint:Caledon:C:-1581:71:5811:11:false:0:MMS:false:0:1:false
+waypoint:Colosseum Exit to Metro:C:-1925:83:5924:0:false:0:MMS:false:0:1:false
+waypoint:Colosseum Maintenance Exit Hall:C:-1913:55:5992:0:false:0:MMS:false:0:1:false
+waypoint:Colosseum Maintenance Basement:C:-1913:63:6054:0:false:0:MMS:false:0:1:false
+waypoint:Colosseum:C:-1923:77:5901:0:false:0:MMS:false:0:1:false
+waypoint:Nate's Isle:N:1777:90:-721:2:false:0:MMS:true:0:0:false
+waypoint:Outpost Base:O:551:85:72:0:false:0:MMS:true:0:0:false
+waypoint:Crimson Hill:C:1000:67:1840:5:false:0:MMS:true:0:0:false
+waypoint:Slime Farm:S:-1830:20:-2462:0:false:0:MMS:true:0:0:false
+waypoint:Beehive Cluster:B:-2193:63:-1247:0:false:0:MMS:true:0:0:false
+waypoint:Witch Farm:W:2722:63:3370:0:false:0:MMS:true:0:0:false
+waypoint:Bunker:B:-1835:20:-2461:5:false:0:MMS:true:0:0:false
+waypoint:Vinewood:V:-2182:63:-1185:5:false:0:MMS:true:0:0:false
+waypoint:Remotus:R:-1134:16:-1216:5:false:0:MMS:true:0:0:false
+waypoint:End Portal:E:-1162:20:-1216:0:false:0:MMS:true:0:0:false
+waypoint:XP Farm:X:1135:160:-4993:0:false:0:MMS:true:0:0:false
+waypoint:Strandway:S:1193:64:-5102:11:false:0:MMS:true:0:0:false
+waypoint:Mob Farm:M:-1191:63:966:0:false:0:MMS:true:0:0:false
+waypoint:Castle Valley:C:-2290:98:2265:11:false:0:MMS:true:0:0:false
+waypoint:Iron Farm:I:1144:214:-1469:0:false:0:MMS:true:0:0:false
+waypoint:Bessarion:B:-1330:70:957:11:false:0:MMS:true:0:0:false
+waypoint:Witch Hut:W:2722:63:3370:0:false:0:MMS:true:0:0:false

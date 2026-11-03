@@ -1,0 +1,9 @@
+{
+  "disableVerticalDrift": true,
+  "enableToggleKeyBind": false,
+  "saveConfigOnToggle": false,
+  "enableHudMessage": false,
+  "enableHudFading": false,
+  "disableNonCreativeDrift": false,
+  "driftStrength": 3
+}

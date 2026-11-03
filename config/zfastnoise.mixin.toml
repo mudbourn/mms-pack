@@ -1,16 +1,26 @@
 version = 1
 
 	[mixin.perf]
+		#Replace populateNoise with optimized implementation
+		#default: true
+		noise = true
+		#Replace ore vein sampler impl with allocation free version
+		# defaultValue: true
+		#
+		ore = true
 		#Replace buildSurface with optimized implementation
 		#default: true
 		#incompatibleWith: biolith
 		surface = true
-		#Replace populateNoise with optimized implementation
-		#default: true
-		noise = true
 		#Replace populateBiomes with optimized implementation
 		#default: true
 		biome = true
+
+	[mixin.debug]
+		#Disable carve, features and entites chunk generation step
+		# defaultValue: false
+		#
+		disable_carve_features_and_entities = false
 
 	[perf.surface]
 		#Predict biomes in advance in surface builder. Major speedup for surface builder

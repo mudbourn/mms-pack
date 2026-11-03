@@ -1,5 +1,5 @@
 {
-  "manager.current": "leawind_third_person.third_person",
+  "manager.current": "perspective_api.first_person",
   "manager.switcher": "perspective_api.orbit_switcher",
   "transition.duration_ms": 260.0,
   "sections": {
@@ -10,7 +10,8 @@
         "perspective_api.third_person_front",
         "leawind_third_person.third_person"
       ],
-      "wheel_hint_completed": true
+      "wheel_hint_completed": true,
+      "editor_hint_completed": true
     }
   }
 }

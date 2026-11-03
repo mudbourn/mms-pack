@@ -1,0 +1,41 @@
+{
+  "scheduling": {
+    "enabled": false,
+    "player_max_generate_rate": 40,
+    "player_max_concurrent_generates": 10,
+    "min_concurrent_generates": 10,
+    "uncapped_generate_rate": 1000,
+    "uncapped_concurrent_generates": 128,
+    "cap_start_players": 15,
+    "cap_full_players": 25,
+    "player_max_load_rate": 120,
+    "heading_bias": true,
+    "lookahead_seconds": 8.0,
+    "prefetch_cone_degrees": 35.0,
+    "max_prefetch_chunks": 1024,
+    "prefetch_share": 0.75
+  },
+  "parity": {
+    "mode": "off",
+    "label": "default"
+  },
+  "rust": {
+    "noise_mode": "off",
+    "surface_mode": "off",
+    "biomes_mode": "off"
+  },
+  "compat": {
+    "bwg_biome_cache": true,
+    "terrablender_lockfree": true
+  },
+  "movement": {
+    "reject_unready_chunks": true
+  },
+  "templates": {
+    "disk_cache": false
+  },
+  "prechunk": {
+    "enabled": true,
+    "margin": 3
+  }
+}
