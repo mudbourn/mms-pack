@@ -1,1 +1,262 @@
-{}
+{
+  "minecraft:netherite_block": {
+    "sell": 35000,
+    "category": "valuable"
+  },
+  "minecraft:dragon_egg": {
+    "sell": 5000,
+    "category": "unobtainable"
+  },
+  "minecraft:netherite_ingot": {
+    "sell": 7500,
+    "category": "valuable"
+  },
+  "minecraft:recovery_compass": {
+    "sell": 7000,
+    "category": "treasure"
+  },
+  "minecraft:mace": {
+    "sell": 12000,
+    "category": "treasure"
+  },
+  "minecraft:netherite_upgrade_smithing_template": {
+    "sell": 400,
+    "category": "unobtainable"
+  },
+  "minecraft:enchanted_golden_apple": {
+    "sell": 7000,
+    "category": "treasure"
+  },
+  "minecraft:heart_of_the_sea": {
+    "sell": 2000,
+    "category": "treasure"
+  },
+  "minecraft:heavy_core": {
+    "sell": 6000,
+    "category": "treasure"
+  },
+  "minecraft:silence_armor_trim_smithing_template": {
+    "sell": 400,
+    "category": "unobtainable"
+  },
+  "minecraft:dragon_head": {
+    "sell": 2000,
+    "category": "treasure"
+  },
+  "minecraft:ancient_debris": {
+    "sell": 1500,
+    "category": "valuable"
+  },
+  "minecraft:elytra": {
+    "sell": 2000,
+    "category": "treasure"
+  },
+  "minecraft:diamond_block": {
+    "sell": 10000,
+    "category": "valuable"
+  },
+  "minecraft:nether_star": {
+    "sell": 2500,
+    "category": "treasure"
+  },
+  "minecraft:music_disc_pigstep": {
+    "sell": 400,
+    "category": "unobtainable"
+  },
+  "minecraft:music_disc_5": {
+    "sell": 500,
+    "category": "unobtainable"
+  },
+  "minecraft:music_disc_otherside": {
+    "sell": 400,
+    "category": "unobtainable"
+  },
+  "minecraft:music_disc_relic": {
+    "sell": 400,
+    "category": "unobtainable"
+  },
+  "minecraft:music_disc_creator": {
+    "sell": 500,
+    "category": "unobtainable"
+  },
+  "minecraft:music_disc_creator_music_box": {
+    "sell": 400,
+    "category": "unobtainable"
+  },
+  "minecraft:music_disc_precipice": {
+    "sell": 400,
+    "category": "unobtainable"
+  },
+  "minecraft:trident": {
+    "sell": 4500,
+    "category": "treasure"
+  },
+  "minecraft:bolt_armor_trim_smithing_template": {
+    "sell": 400,
+    "category": "unobtainable"
+  },
+  "minecraft:flow_armor_trim_smithing_template": {
+    "sell": 400,
+    "category": "unobtainable"
+  },
+  "minecraft:coast_armor_trim_smithing_template": {
+    "sell": 400,
+    "category": "unobtainable"
+  },
+  "minecraft:dune_armor_trim_smithing_template": {
+    "sell": 400,
+    "category": "unobtainable"
+  },
+  "minecraft:eye_armor_trim_smithing_template": {
+    "sell": 400,
+    "category": "unobtainable"
+  },
+  "minecraft:host_armor_trim_smithing_template": {
+    "sell": 400,
+    "category": "unobtainable"
+  },
+  "minecraft:raiser_armor_trim_smithing_template": {
+    "sell": 400,
+    "category": "unobtainable"
+  },
+  "minecraft:rib_armor_trim_smithing_template": {
+    "sell": 400,
+    "category": "unobtainable"
+  },
+  "minecraft:sentry_armor_trim_smithing_template": {
+    "sell": 400,
+    "category": "unobtainable"
+  },
+  "minecraft:shaper_armor_trim_smithing_template": {
+    "sell": 400,
+    "category": "unobtainable"
+  },
+  "minecraft:snout_armor_trim_smithing_template": {
+    "sell": 400,
+    "category": "unobtainable"
+  },
+  "minecraft:spire_armor_trim_smithing_template": {
+    "sell": 400,
+    "category": "unobtainable"
+  },
+  "minecraft:tide_armor_trim_smithing_template": {
+    "sell": 400,
+    "category": "unobtainable"
+  },
+  "minecraft:vex_armor_trim_smithing_template": {
+    "sell": 400,
+    "category": "unobtainable"
+  },
+  "minecraft:ward_armor_trim_smithing_template": {
+    "sell": 400,
+    "category": "unobtainable"
+  },
+  "minecraft:wayfinder_armor_trim_smithing_template": {
+    "sell": 400,
+    "category": "unobtainable"
+  },
+  "minecraft:wild_armor_trim_smithing_template": {
+    "sell": 400,
+    "category": "unobtainable"
+  },
+  "minecraft:totem_of_undying": {
+    "sell": 2000,
+    "category": "treasure"
+  },
+  "minecraft:echo_shard": {
+    "sell": 1000,
+    "category": "treasure"
+  },
+  "minecraft:shulker_shell": {
+    "sell": 30,
+    "category": "treasure"
+  },
+  "minecraft:music_disc_13": {
+    "sell": 200,
+    "category": "unobtainable"
+  },
+  "minecraft:music_disc_cat": {
+    "sell": 200,
+    "category": "unobtainable"
+  },
+  "minecraft:music_disc_blocks": {
+    "sell": 200,
+    "category": "unobtainable"
+  },
+  "minecraft:music_disc_chirp": {
+    "sell": 200,
+    "category": "unobtainable"
+  },
+  "minecraft:music_disc_far": {
+    "sell": 200,
+    "category": "unobtainable"
+  },
+  "minecraft:music_disc_mall": {
+    "sell": 200,
+    "category": "unobtainable"
+  },
+  "minecraft:music_disc_mellohi": {
+    "sell": 200,
+    "category": "unobtainable"
+  },
+  "minecraft:music_disc_stal": {
+    "sell": 200,
+    "category": "unobtainable"
+  },
+  "minecraft:music_disc_strad": {
+    "sell": 200,
+    "category": "unobtainable"
+  },
+  "minecraft:music_disc_ward": {
+    "sell": 200,
+    "category": "unobtainable"
+  },
+  "minecraft:music_disc_11": {
+    "sell": 200,
+    "category": "unobtainable"
+  },
+  "minecraft:music_disc_wait": {
+    "sell": 200,
+    "category": "unobtainable"
+  },
+  "minecraft:wither_skeleton_skull": {
+    "sell": 4000,
+    "category": "treasure"
+  },
+  "minecraft:breeze_rod": {
+    "sell": 30,
+    "category": "treasure"
+  },
+  "minecraft:ominous_trial_key": {
+    "sell": 3000,
+    "category": "treasure"
+  },
+  "minecraft:diamond": {
+    "sell": 1000,
+    "category": "valuable"
+  },
+  "minecraft:nautilus_shell": {
+    "sell": 1500,
+    "category": "treasure"
+  },
+  "minecraft:trial_key": {
+    "sell": 1500,
+    "category": "treasure"
+  },
+  "minecraft:piglin_head": {
+    "sell": 1500,
+    "category": "treasure"
+  },
+  "minecraft:creeper_head": {
+    "sell": 1500,
+    "category": "treasure"
+  },
+  "minecraft:zombie_head": {
+    "sell": 1500,
+    "category": "treasure"
+  },
+  "minecraft:skeleton_skull": {
+    "sell": 1500,
+    "category": "treasure"
+  }
+}
