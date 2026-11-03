@@ -914,7 +914,7 @@ hash = "ae4b2b550308eaa1069a22f38020d8f24411b375ab975c0d593c95e467f688dd"
 
 [[files]]
 file = "config/fabric_loader_dependencies.json"
-hash = "4ab71565094c73805e8af65a063ca70d4193e03e39aa672f2bd404b40cd5e4ce"
+hash = "8f49ea9f1a5874096b998b6c489ce3381388c810ef9899ab6f8e0963484b30aa"
 
 [[files]]
 file = "config/fabrishot.properties"
@@ -2556,7 +2556,7 @@ metafile = true
 
 [[files]]
 file = "mods/inspect-animations.pw.toml"
-hash = "9817a558069814933855a774091861733d6924f66842946e41832f6bf3138496"
+hash = "34a74b3bd5b2cd93f220ebeeb80ab9c7457e1b19974bc074b418a7336ab876c0"
 metafile = true
 
 [[files]]
@@ -2756,7 +2756,7 @@ metafile = true
 
 [[files]]
 file = "mods/mms-mod-compat-support.pw.toml"
-hash = "c3fb010cf3b4e77aa355df09d7b20942ada4bfc5155176cb91f07235058246dc"
+hash = "014085051b781473be186ba8c9d9dc8262deebb9362ebfa5c2a961ad3387fa9e"
 metafile = true
 
 [[files]]
