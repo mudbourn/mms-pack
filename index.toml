@@ -3058,7 +3058,7 @@ metafile = true
 
 [[files]]
 file = "mods/particle-rain.pw.toml"
-hash = "356e784d637672d79fea82c0c63dca307d05ca12ede21740ff410483db6d0a2e"
+hash = "5446f7c87a901a797fbbc0079982b9680a960ae6dae2ca3669694d4a38b1871f"
 metafile = true
 
 [[files]]
