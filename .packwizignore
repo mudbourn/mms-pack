@@ -45,3 +45,25 @@ config/voicechat/username-cache.json
 config/.puzzle_cache/**
 config/Easy Shop Mod/PlayerSkins/**
 resourcepacks/**/.*backup/**
+# Not needed to play; animatica/xaeropatreon also 501 from raw.githubusercontent
+config/animatica.properties
+config/xaeropatreon.txt
+# Not needed to play: leftover backups, personal world/session data, docs,
+# per-install generated files, build tooling
+config/aerialhell/config-outdated_*
+*-had-error.json5
+*.bak-*
+config/litematica/litematica_*.json
+config/litematica/material_list_*.csv
+xaero/minimap/IanXO4's Guardian XP Farm/**
+xaero/minimap/New World/**
+config/axiom/imgui.ini
+config/fake_afk.txt
+config/NoChatReports/README.md
+config/crash_assistant/crash_assistant_localization_overrides/**
+config/crash_assistant/scripts/**/example.jexl
+config/sodium-fingerprint.json
+config/presencefootsteps/updater.json
+config/etf_warnings.json
+config/isxander-main-menu-credits.json
+/octane.list

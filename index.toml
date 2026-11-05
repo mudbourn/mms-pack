@@ -17,10 +17,6 @@ file = "config/NoChatReports/NCR-ServerPreferences.json"
 hash = "df32843b853e0a493ef3a9b1e39276818294353fbb0d833f7f61e77da0f5bca1"
 
 [[files]]
-file = "config/NoChatReports/README.md"
-hash = "c52b76ccad2bd1063a22c7f6bb9e7c5db6b00fb53a6fd605585972ee0e5fc01f"
-
-[[files]]
 file = "config/PaginatedAdvancements.json5"
 hash = "151c2f7d5c2ca2836a98093f0328ad32970ed71610f2b450707b3b2fdd1c3c6b"
 
@@ -33,14 +29,6 @@ file = "config/accurateblockplacement.properties"
 hash = "f7a77e760ea6b5c96e1c9b69078a1cec210d5ab4f669e50d4334364d960bf518"
 
 [[files]]
-file = "config/aerialhell/config-outdated_2026-10-29-021424.json"
-hash = "a98fc074af3e1b8a4ef3363c048b41068f4d8ed535b1a65225f77f4a4ee8f4ba"
-
-[[files]]
-file = "config/aerialhell/config-outdated_2026-10-30-034032.json"
-hash = "340300f181ed8b8ecc64940712bf6bc8cb5dc5788b4e66686be4fc41a8354b56"
-
-[[files]]
 file = "config/aerialhell/config.json"
 hash = "a98fc074af3e1b8a4ef3363c048b41068f4d8ed535b1a65225f77f4a4ee8f4ba"
 
@@ -51,10 +39,6 @@ hash = "c5c31e999c8252566f58c4d36b716a9fb674cd88021b3ffe9996c7e77d2b4c44"
 [[files]]
 file = "config/ambientsounds-client.json"
 hash = "97ffccad0f35becf381d51920df89841602daa2105b1a97f9d1a0d70214fcecc"
-
-[[files]]
-file = "config/animatica.properties"
-hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
 
 [[files]]
 file = "config/appleskin.json5"
@@ -413,10 +397,6 @@ file = "config/axiom/axiom.json"
 hash = "c29bf380f0135cf1907f3ecfaf2e56d072687f72b6c164ccc4014f8716206cc9"
 
 [[files]]
-file = "config/axiom/imgui.ini"
-hash = "b9ff75677503beea2d08ef2b8bcca29ebe777fc76927a6ddf3f005d611a12e20"
-
-[[files]]
 file = "config/badoptimizations.txt"
 hash = "cae5ba66971b2f61e0b523c5aeb8b8d4fa806f0bea8a1709860e4fea94426ac9"
 
@@ -597,82 +577,6 @@ file = "config/crash_assistant/config.toml"
 hash = "e0f191c264b930ea7a3ca57cc1243bae88c3e7fd2985a46368f2f94e5f127db1"
 
 [[files]]
-file = "config/crash_assistant/crash_assistant_localization_overrides/README.md"
-hash = "943e1c3672b8a03f27519b357091133205119c7b3db2fcc4c25b597cabf8926d"
-
-[[files]]
-file = "config/crash_assistant/crash_assistant_localization_overrides/be_by.json"
-hash = "fe862762a6d3a5fa7c026c15f47e4e4d3b923e9729b8bc7a3073c1c9dd7b7c7e"
-
-[[files]]
-file = "config/crash_assistant/crash_assistant_localization_overrides/en_us.json"
-hash = "efdde04ecbd64a676d071b078507312ddbb018763241cdd6d34c6fed8f833035"
-
-[[files]]
-file = "config/crash_assistant/crash_assistant_localization_overrides/es_es.json"
-hash = "9f51e51dc97d0191f0965d350e48cd54dbdf25f20c3d34905e31249a38e726d4"
-
-[[files]]
-file = "config/crash_assistant/crash_assistant_localization_overrides/es_ve.json"
-hash = "38ad8154a1880ace6c4d54edf7b84279d23b4b055847e08f97da31eb05fb117e"
-
-[[files]]
-file = "config/crash_assistant/crash_assistant_localization_overrides/et_ee.json"
-hash = "c814c43d5adb568f850fce2bd045de3f01028e7e06e7857dacb2124035456160"
-
-[[files]]
-file = "config/crash_assistant/crash_assistant_localization_overrides/fr_fr.json"
-hash = "7dc8fc3ba594b52486aaafa2a3ea92249f60a4fd2665972c7f8cc489eb7bae2e"
-
-[[files]]
-file = "config/crash_assistant/crash_assistant_localization_overrides/he_il.json"
-hash = "f999b73940ba3e4d0a2ddd642af9359e867d98c2c56f2755717817fefce98438"
-
-[[files]]
-file = "config/crash_assistant/crash_assistant_localization_overrides/it_it.json"
-hash = "c8ebc53b618c65a9c608a0f7f45898546a54213ec7b73189765b2722433cd70b"
-
-[[files]]
-file = "config/crash_assistant/crash_assistant_localization_overrides/ms_my.json"
-hash = "ceb047c1e4ef341c080b7ff250236a2eb250cce7466bbdd55f0df8eb47b7c5d1"
-
-[[files]]
-file = "config/crash_assistant/crash_assistant_localization_overrides/pl_pl.json"
-hash = "59452bd8dfff205600d2e4120b44677e9ff9c60b4e3313ec7f3846738701a2fe"
-
-[[files]]
-file = "config/crash_assistant/crash_assistant_localization_overrides/ro_ro.json"
-hash = "7cbf156e9f308ef31ea05cd588e043bf6d12714597ad478ed651655db6432d9f"
-
-[[files]]
-file = "config/crash_assistant/crash_assistant_localization_overrides/ru_ru.json"
-hash = "0d5650064720ba81f1aef7dc1b02211823f71a2722a41a2fd7f243c53d636d19"
-
-[[files]]
-file = "config/crash_assistant/crash_assistant_localization_overrides/vi_vn.json"
-hash = "bbaa4d8ce2c8acec5c4a6bc87ad880f608964ed252f3f93d613e7894eed88541"
-
-[[files]]
-file = "config/crash_assistant/crash_assistant_localization_overrides/zh_cn.json"
-hash = "849472b2d67b0c5317c4e9f9c67ccc4aa4fbf35152b74c5be2e3eaa70b4c0d8d"
-
-[[files]]
-file = "config/crash_assistant/crash_assistant_localization_overrides/zh_tw.json"
-hash = "d530065008f8f4ea4cb2de44b8714ab06148b90f0e618f143ccf4dc5ab8be65b"
-
-[[files]]
-file = "config/crash_assistant/crash_assistant_localization_overrides/zlm_arab.json"
-hash = "7e400b5926a3cbe0e3de565fb4f17389b75f315f7d56c4ff7ee276b79ace2e0f"
-
-[[files]]
-file = "config/crash_assistant/scripts/log_analysis/example.jexl"
-hash = "adde7e5e42b9d716f14a9bc49797999a21a0ee05cc67e71410a232f830115b3b"
-
-[[files]]
-file = "config/crash_assistant/scripts/startup/example.jexl"
-hash = "346378f04a9e7319cdcb405fad82d6e7f1b36b39e0e4129c00a226b49f41cf37"
-
-[[files]]
 file = "config/crawlondemand.json"
 hash = "ae14b04faa2aa08ffd67a1c1693257d3fb172d31b5651a0df2d9a3c7f757fe9f"
 
@@ -793,16 +697,8 @@ file = "config/cristellib/mr_scorched/structure_toggle_config.json5"
 hash = "538c4a4709799d69abf7a4e4ce31384d561ad49926d66fc14a0888d76a71a832"
 
 [[files]]
-file = "config/cristellib/mr_towerinator/structure_placement_config-had-error.json5"
-hash = "7f569f23b38926733e3983d2c698944678be36f37382e3d578d691d413d47d29"
-
-[[files]]
 file = "config/cristellib/mr_towerinator/structure_placement_config.json5"
 hash = "96c3751719b63ca7816d25e0a9d62c97e9e5c9386c4486774319bb17f52d8ce8"
-
-[[files]]
-file = "config/cristellib/mr_towerinator/structure_toggle_config-had-error.json5"
-hash = "6e54405448df4eacf1d4749cd93fda99208762bae6768ab201c02666cfaedafc"
 
 [[files]]
 file = "config/cristellib/mr_towerinator/structure_toggle_config.json5"
@@ -893,10 +789,6 @@ file = "config/essentialcommands/rules.txt"
 hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
 
 [[files]]
-file = "config/etf_warnings.json"
-hash = "a5ba22e63061c1fb67f0f895f17681351eaeccc225faef966c29ee630593275e"
-
-[[files]]
 file = "config/expanded_armor_enchanting.json5"
 hash = "32a820384fa7b12325a1a4f9fe6748368ae2cf9edc787721195039dd5363e5ea"
 
@@ -935,10 +827,6 @@ hash = "651abb0d4acf399b23a84318ec030fa133dd8637920af48c8a03ac1e27bd2294"
 [[files]]
 file = "config/fabrishot.properties"
 hash = "ba5f5ccfd31e25f9feb4730dfc01ef7bee4156b3336453cbe797ffb0c51ab46f"
-
-[[files]]
-file = "config/fake_afk.txt"
-hash = "a9616a9ca349a614f3a6d9649aeb40202b25eee222d24803cc77475017deb71f"
 
 [[files]]
 file = "config/fallingleaves2.json"
@@ -1055,10 +943,6 @@ hash = "4d3264b58c502afaeca3f44e8d2db0843c54b8ba957afd21a2d450fe10dafefb"
 [[files]]
 file = "config/iris.properties"
 hash = "3dfd9e3b16572aa0a896e82690ed141c2b54acdc22ccc09ae9a62f55903176ca"
-
-[[files]]
-file = "config/isxander-main-menu-credits.json"
-hash = "b03844cdc566017ecdb87b567556bc08154533332097ec99824ca702cd702e10"
 
 [[files]]
 file = "config/itemrestrictions/item-restrictions-common.yaml"
@@ -1257,38 +1141,6 @@ file = "config/litematica.json"
 hash = "fec0b66399d22467312d109696aa2628cd275fef7749f2532905a948e73d785d"
 
 [[files]]
-file = "config/litematica/litematica_Chromoss Bone Meal Farm.json"
-hash = "5d29bb9831d9ac13fa53d332030ce32fbef668b08e28976b50fabbc275229eac"
-
-[[files]]
-file = "config/litematica/litematica_Chromoss Bone Meal Farm_dim_minecraft_overworld.json"
-hash = "adcadb841e38244e0121845e5c11366cb7fca48d1e6518db75eb8369eb9cc582"
-
-[[files]]
-file = "config/litematica/litematica_New World.json"
-hash = "5d29bb9831d9ac13fa53d332030ce32fbef668b08e28976b50fabbc275229eac"
-
-[[files]]
-file = "config/litematica/litematica_New World_dim_minecraft_overworld.json"
-hash = "adcadb841e38244e0121845e5c11366cb7fca48d1e6518db75eb8369eb9cc582"
-
-[[files]]
-file = "config/litematica/litematica_mc.mudbourn.info.json"
-hash = "5d29bb9831d9ac13fa53d332030ce32fbef668b08e28976b50fabbc275229eac"
-
-[[files]]
-file = "config/litematica/litematica_mc.mudbourn.info_dim_minecraft_overworld.json"
-hash = "adcadb841e38244e0121845e5c11366cb7fca48d1e6518db75eb8369eb9cc582"
-
-[[files]]
-file = "config/litematica/litematica_mc.mudbourn.info_dim_minecraft_the_nether.json"
-hash = "adcadb841e38244e0121845e5c11366cb7fca48d1e6518db75eb8369eb9cc582"
-
-[[files]]
-file = "config/litematica/material_list_2026-08-09_06.12.48.csv"
-hash = "3d4f91b78cd54d03ec60e7216aa81fb8857a909add4c5a569424e2a84d928d07"
-
-[[files]]
 file = "config/lithium.properties"
 hash = "6cf6f83720071fd1657c8e79b357caf68d40f410ae123e5f922483eb1d1d25be"
 
@@ -1445,70 +1297,6 @@ file = "config/modpack_defaults/config/crash_assistant/config.toml"
 hash = "6bd5050eb3d7ea31591690755677aa99de72d594861da8a0e94e950c3c54b1b8"
 
 [[files]]
-file = "config/modpack_defaults/config/crash_assistant/crash_assistant_localization_overrides/be_by.json"
-hash = "fe862762a6d3a5fa7c026c15f47e4e4d3b923e9729b8bc7a3073c1c9dd7b7c7e"
-
-[[files]]
-file = "config/modpack_defaults/config/crash_assistant/crash_assistant_localization_overrides/en_us.json"
-hash = "388c98a5bf8225bdc11bba9ebc0b7f2fd5d4a1af64e1460a6f957428c36ea00c"
-
-[[files]]
-file = "config/modpack_defaults/config/crash_assistant/crash_assistant_localization_overrides/es_es.json"
-hash = "38ad8154a1880ace6c4d54edf7b84279d23b4b055847e08f97da31eb05fb117e"
-
-[[files]]
-file = "config/modpack_defaults/config/crash_assistant/crash_assistant_localization_overrides/es_ve.json"
-hash = "38ad8154a1880ace6c4d54edf7b84279d23b4b055847e08f97da31eb05fb117e"
-
-[[files]]
-file = "config/modpack_defaults/config/crash_assistant/crash_assistant_localization_overrides/et_ee.json"
-hash = "c814c43d5adb568f850fce2bd045de3f01028e7e06e7857dacb2124035456160"
-
-[[files]]
-file = "config/modpack_defaults/config/crash_assistant/crash_assistant_localization_overrides/fr_fr.json"
-hash = "7dc8fc3ba594b52486aaafa2a3ea92249f60a4fd2665972c7f8cc489eb7bae2e"
-
-[[files]]
-file = "config/modpack_defaults/config/crash_assistant/crash_assistant_localization_overrides/he_il.json"
-hash = "f999b73940ba3e4d0a2ddd642af9359e867d98c2c56f2755717817fefce98438"
-
-[[files]]
-file = "config/modpack_defaults/config/crash_assistant/crash_assistant_localization_overrides/it_it.json"
-hash = "dd694ffb0f0c8c2d9d40b580f9b1f446918eb4d6cbbaa5d0cd32fd76ef4196e4"
-
-[[files]]
-file = "config/modpack_defaults/config/crash_assistant/crash_assistant_localization_overrides/ms_my.json"
-hash = "aec7c8bb62c5fd5da2b57b4aa944abc829a2856b8b07ec5061013fa6329a382f"
-
-[[files]]
-file = "config/modpack_defaults/config/crash_assistant/crash_assistant_localization_overrides/pl_pl.json"
-hash = "59452bd8dfff205600d2e4120b44677e9ff9c60b4e3313ec7f3846738701a2fe"
-
-[[files]]
-file = "config/modpack_defaults/config/crash_assistant/crash_assistant_localization_overrides/ro_ro.json"
-hash = "7cbf156e9f308ef31ea05cd588e043bf6d12714597ad478ed651655db6432d9f"
-
-[[files]]
-file = "config/modpack_defaults/config/crash_assistant/crash_assistant_localization_overrides/ru_ru.json"
-hash = "801d86937187537c04587b07c4907e03247fb0a6fdf7087175686f304a5241b9"
-
-[[files]]
-file = "config/modpack_defaults/config/crash_assistant/crash_assistant_localization_overrides/vi_vn.json"
-hash = "bbaa4d8ce2c8acec5c4a6bc87ad880f608964ed252f3f93d613e7894eed88541"
-
-[[files]]
-file = "config/modpack_defaults/config/crash_assistant/crash_assistant_localization_overrides/zh_cn.json"
-hash = "ad019bd8f4d095c2e24dcf3c7889821dfcb23a49a12992790290b68809ff0406"
-
-[[files]]
-file = "config/modpack_defaults/config/crash_assistant/crash_assistant_localization_overrides/zh_tw.json"
-hash = "d530065008f8f4ea4cb2de44b8714ab06148b90f0e618f143ccf4dc5ab8be65b"
-
-[[files]]
-file = "config/modpack_defaults/config/crash_assistant/crash_assistant_localization_overrides/zlm_arab.json"
-hash = "86ff57f8096fefd33ccd16976f4ddfdb01a1a8469025ab0093753e77d5044d41"
-
-[[files]]
 file = "config/modpack_defaults/config/debugify.json"
 hash = "0f225ab8423940db883938663ef73097674164e1f41aefc79b0179df0893d554"
 
@@ -1531,10 +1319,6 @@ hash = "ba5f5ccfd31e25f9feb4730dfc01ef7bee4156b3336453cbe797ffb0c51ab46f"
 [[files]]
 file = "config/modpack_defaults/config/fastquit.toml"
 hash = "17225e085e6759210cec7e829e00c8c90f9c5d38714835cb5da9c98398842f7d"
-
-[[files]]
-file = "config/modpack_defaults/config/isxander-main-menu-credits.json"
-hash = "b03844cdc566017ecdb87b567556bc08154533332097ec99824ca702cd702e10"
 
 [[files]]
 file = "config/modpack_defaults/config/lambdynlights.toml"
@@ -1655,10 +1439,6 @@ hash = "310dee45deffb1f13169492bf25cee00503e91403daa8cffa653939feb76cc03"
 [[files]]
 file = "config/power_config.json5"
 hash = "4a0492a46ebe8c5870fccbd5451cfff5a6557779ae34270e33620024b0896245"
-
-[[files]]
-file = "config/presencefootsteps/updater.json"
-hash = "1e7c61df09c105e1eeca8cf3dcbdfeb976700e9904bcb3983fc7791adb7fad2e"
 
 [[files]]
 file = "config/presencefootsteps/userconfig.json5"
@@ -1788,11 +1568,6 @@ preserve = true
 [[files]]
 file = "config/sodium-extra.properties"
 hash = "a2f1b47c1eaa119ab34727f1d43c2506cb3d7f17ba8fb4efb49e20c8e0b58e70"
-preserve = true
-
-[[files]]
-file = "config/sodium-fingerprint.json"
-hash = "9d8f0acbe050119fcd816ac9d910fdf97dcff4457940b717197ee094e40931f5"
 preserve = true
 
 [[files]]
@@ -1926,16 +1701,8 @@ file = "config/uselessreptile_mob_attributes.json5"
 hash = "b622260958cf648d8c4b146cdaf26f7f0aff6666de3b8cde7ed7ce3e3c8e2352"
 
 [[files]]
-file = "config/vanilla_structures/placement_structure_config-had-error.json5"
-hash = "1f069468e438ae66f65ee41732603c895741b063add626a9e56ef7d0040ac4e6"
-
-[[files]]
 file = "config/vanilla_structures/placement_structure_config.json5"
 hash = "10fad560389f96ec7cb04966a0948b7fe5ba126559194fc81d7e53b8fd73c7ad"
-
-[[files]]
-file = "config/vanilla_structures/toggle_structure_config-had-error.json5"
-hash = "c4fb220488de3c1afc569f4b8a89d8e97f8b5504eeb59d9700b491f29718d2f9"
 
 [[files]]
 file = "config/vanilla_structures/toggle_structure_config.json5"
@@ -2093,10 +1860,6 @@ hash = "d438aea41ca41e93697e059f523686935c0add482f6abe96b532bbf10c6ed80a"
 [[files]]
 file = "config/xaerohud.txt"
 hash = "d00ab19999a244c6b64c7f0fbce55a9050587126c41725834c0e49f163a51609"
-
-[[files]]
-file = "config/xaeropatreon.txt"
-hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
 
 [[files]]
 file = "config/yacl.json5"
@@ -3414,10 +3177,6 @@ metafile = true
 file = "mods/zfastnoise.pw.toml"
 hash = "fb89391dca2449dc19c92a1446a4432693195736d40dc3d0a1d096800e6ceeac"
 metafile = true
-
-[[files]]
-file = "octane.list"
-hash = "1f700ee38cd22019aad4581ab17338cb533c5173a4a1518187b0d765d057a728"
 
 [[files]]
 file = "options.txt"
@@ -31306,10 +31065,6 @@ hash = "2396f65caf7f45bde09efa3cc89af7c93079d694714b44a412486ee7650dc05e"
 preserve = true
 
 [[files]]
-file = "xaero/minimap/IanXO4's Guardian XP Farm/config.txt"
-hash = "d8af0188b8be547a42d0a69cf60d997321736b99937b3d31fafa0f4fbbd14854"
-
-[[files]]
 file = "xaero/minimap/Multiplayer_mc.mudbourn.info/config.txt"
 hash = "f04d05e1c718531cb98904687b0d44abe0468825f2c2024a8df4944bfd31b7bd"
 
@@ -31319,21 +31074,9 @@ hash = "7ceff876d06bee16b375f176f08a37145be4b9ddbd9eec75c3ce7aaec0169ec5"
 preserve = true
 
 [[files]]
-file = "xaero/minimap/Multiplayer_mc.mudbourn.info/dim%-1/mw$-29775643_1.txt.bak-20261102"
-hash = "73bda87eb1a850b4bc32f38c25681406b18c5aac14d20d18f99c7888e2e2bc3c"
-
-[[files]]
 file = "xaero/minimap/Multiplayer_mc.mudbourn.info/dim%0/mw$-29775643_2.txt"
 hash = "feaac89ca168526b9eb054bcfc3e4368a305e015ba05524c13173491a407f6a2"
 preserve = true
-
-[[files]]
-file = "xaero/minimap/Multiplayer_mc.mudbourn.info/dim%0/mw$-29775643_2.txt.bak-20261101"
-hash = "1e01333d84e0329e00b4e8984640b5e11edb8d5637b0af4a52b797e6b9031c15"
-
-[[files]]
-file = "xaero/minimap/Multiplayer_mc.mudbourn.info/dim%0/mw$-29775643_2.txt.bak-20261102"
-hash = "05d9201fa57638cd1c2c873a5759ea7a393ff42ab1a39aca4e9c57f6aa1dc9a9"
 
 [[files]]
 file = "xaero/minimap/Multiplayer_mc.mudbourn.info/dim%0/mw-1,1,0_1.txt"
@@ -31344,7 +31087,3 @@ preserve = true
 file = "xaero/minimap/Multiplayer_mc.mudbourn.info/dim%1/mw$-29775643_1.txt"
 hash = "d0e2425ae49d8b9074cf96e36d22e806a586f4930af8d57e0413a31701a0bc71"
 preserve = true
-
-[[files]]
-file = "xaero/minimap/New World/config.txt"
-hash = "d8af0188b8be547a42d0a69cf60d997321736b99937b3d31fafa0f4fbbd14854"
