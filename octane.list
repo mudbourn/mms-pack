@@ -36,6 +36,8 @@ mod ambientsounds
 mod presence-footsteps
 mod sound
 mod cosy-critters
+# Marked both, but it adds no blocks or items, so clients without it can still join.
+mod sound-physics-remastered
 
 # ── memory ──
 mod bobby
@@ -65,3 +67,8 @@ pack bountifulfish-tuna-3d
 option renderDistance:8
 option simulationDistance:6
 option particles:2
+option mipmapLevels:0
+option biomeBlendRadius:0
+option entityShadows:false
+option improvedTransparency:false
+option menuBackgroundBlurriness:0

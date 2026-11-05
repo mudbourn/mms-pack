@@ -470,7 +470,7 @@ hash = "4e644f8324221022aed71d39b3d56a6cd189d5bd3f67c4aa72b889fb208421da"
 
 [[files]]
 file = "config/bobby.conf"
-hash = "2b537201fc80ff324413829904450720706869fb5e4d753e14f4bff1525f5438"
+hash = "6ef5a8aa90318d55efb5717893144e07266dd2e0a902e63888e27419397d3871"
 
 [[files]]
 file = "config/brewinandchewin-client.toml"
@@ -1410,7 +1410,7 @@ hash = "abe82f381dc5ca7f5ed946301bc35748a421c69c105d3726a30a055cd4ffd30b"
 
 [[files]]
 file = "config/modernfix-mixins.properties"
-hash = "f6c383020f37b3d8c64c0961011eecb9e6458c0724c101e5b1fc209b5247eb92"
+hash = "2a65067870b4f02c7bb40ed3eb23ed5f35e4894d6c23fb097c053c2f173d127c"
 
 [[files]]
 file = "config/modmenu.json"
@@ -1582,7 +1582,7 @@ hash = "902b29e5f2044fa0011ac76281c700b52d83f1b5db6b605b8f702c8a99a55a2b"
 
 [[files]]
 file = "config/modpack_defaults/options.txt"
-hash = "a50702b575ebc84b433846d0541535e06a35072d5cb3e131a35a310f2949370d"
+hash = "3742036a8822856dc405cc1397a11a76bbb08f54f7a2fac073a455171ff5ec88"
 
 [[files]]
 file = "config/moreculling.toml"
@@ -3414,6 +3414,10 @@ metafile = true
 file = "mods/zfastnoise.pw.toml"
 hash = "fb89391dca2449dc19c92a1446a4432693195736d40dc3d0a1d096800e6ceeac"
 metafile = true
+
+[[files]]
+file = "octane.list"
+hash = "1f700ee38cd22019aad4581ab17338cb533c5173a4a1518187b0d765d057a728"
 
 [[files]]
 file = "options.txt"
