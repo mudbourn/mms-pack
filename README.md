@@ -38,11 +38,19 @@ Download from **https://prismlauncher.org/download/** and sign in with your Micr
 ### 4. Turn on auto-update
 - Right-click the instance -> **Edit** -> **Settings** -> **Custom commands**.
 - Tick **Ovweeide Global Settings**.
-- In the **Pre-launch command** box, paste **exactly**:
+- In the **Pre-launch command** box, paste **exactly one** of these:
 
+  **Standard** (most PCs, full visuals):
   ```
   "$INST_JAVA" -jar packwiz-installer-bootstrap.jar https://raw.githubusercontent.com/mudbourn/mms-pack/main/pack.toml
   ```
+
+  **Octane** (low-end PCs: no shaders, animation packs or ambient extras, lighter defaults):
+  ```
+  "$INST_JAVA" -jar packwiz-installer-bootstrap.jar https://raw.githubusercontent.com/mudbourn/mms-pack/octane/pack.toml
+  ```
+
+  Both join the same server. To switch later, swap the command and relaunch.
 
 - Close.
 ![alt text](https://save.mudbourn.info/s/YDNAdrSyDrALRiz/download "Graph")

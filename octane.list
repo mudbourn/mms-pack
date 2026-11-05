@@ -1,0 +1,67 @@
+# Octane cut list: what the low-end-PC version of the pack drops or changes.
+#
+# The `octane` branch is never edited by hand. mms-octane-build.sh rebuilds it
+# from main on every prod deploy: it resets octane to main, applies this list,
+# runs packwiz refresh, and force-pushes. Change Octane by editing this file on
+# main, never by committing to the octane branch.
+#
+# Players opt in by pointing their Prism pre-launch command at
+#   https://raw.githubusercontent.com/mudbourn/mms-pack/octane/pack.toml
+#
+# Only client-side mods belong here. Cutting anything the server also runs
+# would stop Octane players joining.
+#
+# Line formats:
+#   mod <slug>          remove mods/<slug>.pw.toml
+#   pack <folder>       remove resourcepacks/<folder> and drop it from the
+#                       resourcePacks line in both options files
+#   option <key>:<val>  set an options.txt value (both options files)
+
+# ── shaders and visuals ──
+mod iris
+mod lambdynamiclights
+mod fallingleaves
+mod particle-rain
+mod particle-core
+mod continuity
+mod bettergrassify
+mod skyboxify
+mod animatica-continuation
+mod polytone
+mod cinematic-respawn
+mod chatanimation
+
+# ── ambient extras ──
+mod ambientsounds
+mod presence-footsteps
+mod sound
+mod cosy-critters
+
+# ── memory ──
+mod bobby
+
+# ── resource packs ──
+pack FreshAnimations_v1.10.4
+pack FA+All_Extensions-v1.8.1
+pack FA+Creepers-v2.1
+pack FA+Details-v2.2.1
+pack FA+Emissive-v1.6
+pack FA+Objects-v2.1.2
+pack FA+Spiders-v2.2
+pack Freshly Modded 3.0.3
+pack Fresh Patch - Variants and Ventures
+pack DetailedAnimationsV0.19
+pack Better-Leaves-9.5
+pack toheee1234's Better Combat Animations
+pack Semos Animations Lib 2.0.3
+pack aerialhell-trident-3d
+pack basicweapons-pike-3d
+pack bountifulfish-anchor-3d
+pack bountifulfish-tuna-3d
+
+# ── lighter defaults ──
+# options.txt is preserve=true, so these only reach new installs; existing
+# players keep the settings they already have.
+option renderDistance:8
+option simulationDistance:6
+option particles:2

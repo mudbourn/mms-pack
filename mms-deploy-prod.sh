@@ -267,6 +267,16 @@ fi
 
 rm -rf "$RELEASE_TAGS"
 
+# ── octane (low-end PC branch) ──
+# Rebuild octane from the main just pushed, so it never lags behind. Client
+# only: no server runs octane. A failure here must not block the server sync.
+echo "── octane rebuild ──"
+if [ "$DEV" = "1" ]; then
+    ./mms-octane-build.sh --dry-run || echo "?? octane dry run failed — prod is unaffected." >&2
+else
+    ./mms-octane-build.sh || echo "?? octane rebuild failed — prod is unaffected; rerun ./mms-octane-build.sh." >&2
+fi
+
 echo "── server sync (Server Prod / MMSLive01) ──"
 # Symlink → /Volumes/AMP-Instances/instances/MMSLive01/Minecraft/. Renamed from
 # "MMSLive01" on 2026-07-23; the old name is gone, so this path is the only one
