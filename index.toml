@@ -2858,17 +2858,17 @@ metafile = true
 
 [[files]]
 file = "mods/mms-arsenal.pw.toml"
-hash = "cc4bfe36d9247b313afa5a4ded3bbfdf6f2b47a229c9460f0c55372113390be6"
+hash = "4258ebd488be4ac68f3127cca5c3ee077d31612bbbcb4e1bb04d7b123798874a"
 metafile = true
 
 [[files]]
 file = "mods/mms-combat.pw.toml"
-hash = "44e44f9740c6610ec77c5a8b2128501809de2ccf7ef543e3831ed1aab5396cd2"
+hash = "cd599be9e91421b90978e70b3ce13ae10d50d926e5a634a3498f43a07c397535"
 metafile = true
 
 [[files]]
 file = "mods/mms-economy.pw.toml"
-hash = "6da1532aa6e206a3a5a3f44aff3c306700bbe26e5711c5f272b829ea031a9f66"
+hash = "e492069d2ca6bee57a8af93b38e56ed8b285545460fba7a8ccfdcc87d621cc91"
 metafile = true
 
 [[files]]
@@ -2893,7 +2893,7 @@ metafile = true
 
 [[files]]
 file = "mods/mms-origins.pw.toml"
-hash = "05f0b437969dbb15e24bfa076a38e5e7d686f7f4fdbae437d0563f9f47ed6385"
+hash = "25b0a5af7ee03b254056051185a52de666e1e2cb17504be42d3022ed46b3d9bb"
 metafile = true
 
 [[files]]
