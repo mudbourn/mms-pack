@@ -55,6 +55,13 @@ Download from **https://prismlauncher.org/download/** and sign in with your Micr
 - Close.
 ![alt text](https://save.mudbourn.info/s/YDNAdrSyDrALRiz/download "Graph")
 
+> **Octane users:** right-click the instance -> **Edit** -> **Settings** -> **Java**. Tick **Memory** and set
+> **Minimum** to `2048` MiB and **Maximum** to `4096` MiB, then tick **Java Arguments** and paste:
+> ```
+> -XX:+UseG1GC -XX:MaxGCPauseMillis=50 -XX:+UseStringDeduplication -XX:+PerfDisableSharedMem -XX:+DisableExplicitGC -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=heapdumps
+> ```
+![alt text](https://save.mudbourn.info/s/FXq8yKqbQCJKJab/download "Graph")
+
 ### 5. Launch
 Hit **Launch**. On every launch the installer checks this repo and downloads/updates only what changed,
 then the game starts. First launch pulls the whole pack (a few minutes); after that updates are tiny.
