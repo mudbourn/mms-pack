@@ -1,13 +1,13 @@
 name = "MineVegas Casino"
-filename = "minevegas-casino-fabric-1.21.11-1.1.0.jar"
+filename = "minevegas-casino-fabric-1.21.11-1.1.1.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "e999933580db40a6d7117aea9df9abe79b9b5625"
+hash = "95a951844af6712cb9aed38bbb93f9d8bda4b448"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 9388708
+file-id = 9458413
 project-id = 1732776

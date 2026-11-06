@@ -2611,7 +2611,7 @@ metafile = true
 
 [[files]]
 file = "mods/minevegas-casino.pw.toml"
-hash = "50d93b43cc0fda242527d6e90ec1aab28820001d2bcdf39da02931715163f688"
+hash = "7060fa98b9ee9dfe9f99d4c9bb87bd7a688298bc682e690d2d09e5e70d3f94ab"
 metafile = true
 
 [[files]]
@@ -2776,7 +2776,7 @@ metafile = true
 
 [[files]]
 file = "mods/oh-the-trees-youll-grow.pw.toml"
-hash = "53cc94d15c0ea88832484aa3cd66f50d48521c72620fa4e9f6d4b9f5a94751f0"
+hash = "a03ce206a4e16e1e6613dd53d6a69efa603df5c8aaae96755c3f99c6ddec0ada"
 metafile = true
 
 [[files]]
