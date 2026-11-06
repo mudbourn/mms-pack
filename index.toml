@@ -2641,7 +2641,7 @@ metafile = true
 
 [[files]]
 file = "mods/mms-jobs.pw.toml"
-hash = "3df9a494cdd418cfa9c3d3d123c03fc9eade330db16a2d1d6c9cbc6a7c7bb9b2"
+hash = "98c4b4732f414143aad847ce6216da3038f46dacf3d35e4f954899b4cd13281b"
 metafile = true
 
 [[files]]
@@ -2651,12 +2651,12 @@ metafile = true
 
 [[files]]
 file = "mods/mms-mod-compat-support.pw.toml"
-hash = "014085051b781473be186ba8c9d9dc8262deebb9362ebfa5c2a961ad3387fa9e"
+hash = "e48c73f4e069260ffb324599446e98c2d81b1e11546c49d6e3e84c94752d4b0f"
 metafile = true
 
 [[files]]
 file = "mods/mms-origins.pw.toml"
-hash = "72a41158a13b832a1c36ccc7b0416602dcabc6ac501ec9242f5add33d96dbf0f"
+hash = "ce4cc36918a7b03ee5268101f05b763b2e322014c7f3731c27d0b22996ec379f"
 metafile = true
 
 [[files]]
