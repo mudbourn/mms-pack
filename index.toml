@@ -2626,7 +2626,7 @@ metafile = true
 
 [[files]]
 file = "mods/mms-combat.pw.toml"
-hash = "cd599be9e91421b90978e70b3ce13ae10d50d926e5a634a3498f43a07c397535"
+hash = "6d2676db184c38f1be42845de90547c8c70448273b43277fed08a42a2f7768b2"
 metafile = true
 
 [[files]]
@@ -2646,17 +2646,17 @@ metafile = true
 
 [[files]]
 file = "mods/mms-metro.pw.toml"
-hash = "601b40f4e2ac6d0651c7f4a166666d052c031546e87eb4d658d2da54aa30b29b"
+hash = "1d55e4e1606e9f2644455e63cb683515d98be11d3f9b94a7fa930d8c752a1dcf"
 metafile = true
 
 [[files]]
 file = "mods/mms-mod-compat-support.pw.toml"
-hash = "f36efe87e6ce851af0b265f7f1f0d155203aa51729245d5c9d1dd6359c781d14"
+hash = "a0f212022418e95a8edf595c9313260418c3d0b45b6c658a8939f9b75f79b621"
 metafile = true
 
 [[files]]
 file = "mods/mms-origins.pw.toml"
-hash = "48b5634b1ac1fa7712dda45a53cb8018e56a78e809fd36be4681b1e6acffa91a"
+hash = "db4498c77022be498b4e11356cbf5c9e9010b3552171d6fd63c229ddfe5c74ef"
 metafile = true
 
 [[files]]
