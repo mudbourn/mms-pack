@@ -11,8 +11,11 @@
 # meant a merge you wanted to eyeball first went straight to the live server.
 # Ship it yourself with `mms-deploy` once the merged pack looks right.
 #
-# Not the entry point: `mms-deploy --m` calls this. Run from a clean tree.
+# Not the entry point: `mms-deploy --M` calls this. Run from a clean tree.
+# -y skips the active-overlay confirmation (mms-deploy --M --y passes it).
 set -e
+YES=0
+[ "$1" = "-y" ] && YES=1
 cd ~/Documents/GitHub/mms-pack
 
 # active overlays are dev builds with no release — surface them before promoting
@@ -22,9 +25,13 @@ if [ -n "$active" ]; then
     echo "$active" | sed 's/^/     /' >&2
     echo "   Promotion cuts their real release via mms-deploy (release reconcile)." >&2
     echo "   After a clean prod deploy, clear them from overlay.list." >&2
-    printf "   Continue merging testing → main? [y/N] " >&2
-    read -r ans
-    [ "$ans" = "y" ] || [ "$ans" = "Y" ] || { echo "aborted."; exit 1; }
+    if [ "$YES" = "1" ]; then
+        echo "   (--y given: continuing without asking)" >&2
+    else
+        printf "   Continue merging testing → main? [y/N] " >&2
+        read -r ans
+        [ "$ans" = "y" ] || [ "$ans" = "Y" ] || { echo "aborted."; exit 1; }
+    fi
 fi
 
 git checkout main

@@ -16,8 +16,12 @@
 #                    On main this prunes prod only; the Testing catch-up sync
 #                    the prod lane runs never prunes (it would wipe the
 #                    quarantine). Combine with --d to see what would go.
+#   mms-deploy --y   YES — skip confirmation prompts: mms-ship's "Proceed with
+#                    these releases?" (and mms-release's, via ship -y) and
+#                    --M's "overlays still active, continue?" prompt. The
+#                    branch, dirty-tree and flag-combination guards still apply.
 #
-# Long forms (--main/--testing/--merge/--dev/--prune) work too.
+# Long forms (--main/--testing/--merge/--dev/--prune/--yes) work too.
 #
 # ⚠ --m and --M differ ONLY in case, and they are opposites in blast radius:
 #   --m deploys to the live server, --M merges and deploys nothing. If you mean
@@ -40,6 +44,7 @@ cd ~/Documents/GitHub/mms-pack
 DEV=0
 MERGE=0
 PRUNE=0
+YES=0
 WANT_BRANCH=""
 
 for arg in "$@"; do
@@ -49,6 +54,7 @@ for arg in "$@"; do
     case "$arg" in
         --d|--dev)     DEV=1 ;;
         --p|--prune)   PRUNE=1 ;;
+        --y|--yes)     YES=1 ;;
         --M|--merge)   MERGE=1 ;;
         --m|--main)    WANT_BRANCH="main" ;;
         --t|--testing) WANT_BRANCH="testing" ;;
@@ -60,8 +66,8 @@ for arg in "$@"; do
             exit 0 ;;
         *)
             echo "!! mms-deploy: unknown argument '$arg'" >&2
-            echo "   usage: mms-deploy [--d] [--p] [--m|--t] [--M]" >&2
-            echo "     --m main    --t testing    --M merge    --d dry run    --p prune" >&2
+            echo "   usage: mms-deploy [--d] [--p] [--y] [--m|--t] [--M]" >&2
+            echo "     --m main    --t testing    --M merge    --d dry run    --p prune    --y skip prompts" >&2
             echo "   run 'mms-deploy --help' for what each one does." >&2
             exit 2 ;;
     esac
@@ -107,7 +113,9 @@ if [ "$MERGE" = "1" ]; then
         exit 2
     fi
     switch_to "main"
-    exec ./mms-promote.sh
+    PROMOTEFLAG=""
+    [ "$YES" = "1" ] && PROMOTEFLAG="-y"
+    exec ./mms-promote.sh $PROMOTEFLAG
 fi
 
 # ── lane selection ──
@@ -128,7 +136,7 @@ PRUNEFLAG=""
 # pins; the packwiz update -a and the server sync stay in the lane below (which
 # then adopts what ship just released). It reuses mms-release.sh per repo, so the
 # jar==version / never-walk-backward / pack-pin guards all still apply, and it
-# prompts before cutting anything (we do not pass -y here).
+# prompts before cutting anything unless --y was given (then it gets -y).
 #
 # Under --d it runs `mms-ship -n` — a full rehearsal that shows the prod diff and
 # the per-repo release plan without cutting anything. A non-zero exit (a failed
@@ -143,6 +151,7 @@ if [ -n "$SHIP_SERVER" ] && [ -x ./mms-ship.py ]; then
     echo "── release suite (mms-ship, diff vs ${BRANCH} server) ──"
     SHIPFLAG=""
     [ "$DEV" = "1" ] && SHIPFLAG="-n"
+    [ "$DEV" != "1" ] && [ "$YES" = "1" ] && SHIPFLAG="-y"
     ./mms-ship.py --server "$SHIP_SERVER" $SHIPFLAG
 fi
 
