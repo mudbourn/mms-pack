@@ -1,6 +1,0 @@
-{
-  "parent": "basicweapons:item/pike_3d",
-  "textures": {
-    "pike": "basicweapons:item/pike_3d/golden_pike"
-  }
-}
