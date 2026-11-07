@@ -1366,7 +1366,7 @@ hash = "902b29e5f2044fa0011ac76281c700b52d83f1b5db6b605b8f702c8a99a55a2b"
 
 [[files]]
 file = "config/modpack_defaults/options.txt"
-hash = "3742036a8822856dc405cc1397a11a76bbb08f54f7a2fac073a455171ff5ec88"
+hash = "15d2eecc24d575b1826d3322e5b6ca545ccbcb0803dfa5f78d75a77f4440d4eb"
 
 [[files]]
 file = "config/moreculling.toml"
@@ -1454,7 +1454,7 @@ hash = "f5101beef129ea119e726f90af1ba9efe5fff73f58877a3ad31acd3c55dfb2d0"
 
 [[files]]
 file = "config/resourcepackoverrides.json"
-hash = "09f3a561602377d5465e27c7a9ecb5cd02b5e20d6371cac02cbb4b40f9b58126"
+hash = "8699dcfa8eeae0e56dd7e0f172aa44b967705c910f1254192847193ee4726cef"
 
 [[files]]
 file = "config/roughlyenoughitems/collapsible.json5"
@@ -3180,7 +3180,7 @@ metafile = true
 
 [[files]]
 file = "options.txt"
-hash = "590082d4d55b3ae202dc03dcea02d5922e7c52795df247ee31bc63cded46a456"
+hash = "bd29e3f8d91452fef793d9c044b345482ecaa99ec5e98be1e8e622442d8fc6e7"
 preserve = true
 
 [[files]]
@@ -28146,150 +28146,6 @@ hash = "eb925c26d5c83fe099f747d4df26c774eac6d1dd53c674e9370520cdb8deaaa8"
 [[files]]
 file = "resourcepacks/SodiumTranslations/pack.png"
 hash = "d50415986dcc6b9f390e817aec1b723fc9e35b380d7e9cc3c2f5d0907efd2687"
-
-[[files]]
-file = "resourcepacks/aerialhell-trident-3d/assets/aerialhell/items/forgotten_battle_trident.json"
-hash = "1922c1061a1b06f9246e4927ac4ce46c587504125cb662801f3a736e65fa7a68"
-
-[[files]]
-file = "resourcepacks/aerialhell-trident-3d/assets/aerialhell/models/item/forgotten_battle_trident_3d.json"
-hash = "ee0fa2ebd7d358c341e553d045846a846c51473134c707f1c48499236c47a473"
-
-[[files]]
-file = "resourcepacks/aerialhell-trident-3d/assets/aerialhell/textures/item/forgotten_battle_trident_3d.png"
-hash = "637758b2a333711bbe789a30c351f8d6e09865cec6e0b4af4e35e665cd2a22f1"
-
-[[files]]
-file = "resourcepacks/aerialhell-trident-3d/pack.mcmeta"
-hash = "d064557006220f299803ea77c3367b3efec029a11ac1c6532b4e61fd3b549011"
-
-[[files]]
-file = "resourcepacks/aerialhell-trident-3d/pack.png"
-hash = "9b5f27360cfa947cfead03ae45a7ca3250e588dbc17ef315fd5017a5d0cfc2e2"
-
-[[files]]
-file = "resourcepacks/basicweapons-pike-3d/assets/basicweapons/models/item/bronze_pike_held.json"
-hash = "99dee48dc9093514df9ade49587a7d88603d7b3cfd65b6323be071837719e4a0"
-
-[[files]]
-file = "resourcepacks/basicweapons-pike-3d/assets/basicweapons/models/item/copper_pike_held.json"
-hash = "c04d5fd0ad6d0a1bc83b0ca4179afd64b07fa8d9c4bf660a5f8113349b73eea2"
-
-[[files]]
-file = "resourcepacks/basicweapons-pike-3d/assets/basicweapons/models/item/diamond_pike_held.json"
-hash = "9843a558959b6c799db821a69932711c5cb7a4938502650b937b786a32c99a6e"
-
-[[files]]
-file = "resourcepacks/basicweapons-pike-3d/assets/basicweapons/models/item/golden_pike_held.json"
-hash = "ef862a7a0cad1864ac07123dc9bfba4eb6cced5a36fd0699fe6cf8288b8068d1"
-
-[[files]]
-file = "resourcepacks/basicweapons-pike-3d/assets/basicweapons/models/item/iron_pike_held.json"
-hash = "da9a4502fd272789d7b185f5fd3ab9eb75cb810355c18f8e563b8f7be9b9bb23"
-
-[[files]]
-file = "resourcepacks/basicweapons-pike-3d/assets/basicweapons/models/item/netherite_pike_held.json"
-hash = "1bc2f93c99f1eb4d0be05df16ac705d0745539e5205df76ba967d5a14ea2e863"
-
-[[files]]
-file = "resourcepacks/basicweapons-pike-3d/assets/basicweapons/models/item/pike_3d.json"
-hash = "d9672c5ec737d299d06c63941204e7b7e808758e7c32f74b81625751a21405ea"
-
-[[files]]
-file = "resourcepacks/basicweapons-pike-3d/assets/basicweapons/models/item/stone_pike_held.json"
-hash = "dd7de188caa8f4874e210d831f477ca4118ba92a12a0e0856fd36317e30225c9"
-
-[[files]]
-file = "resourcepacks/basicweapons-pike-3d/assets/basicweapons/models/item/tin_pike_held.json"
-hash = "08270dc690bab791559dc0135336aebddf52b80735f1666250431743391f6dfa"
-
-[[files]]
-file = "resourcepacks/basicweapons-pike-3d/assets/basicweapons/models/item/wooden_pike_held.json"
-hash = "6db136812f02536adf03f19bcc7580a80fc63aab6296680957558ddfe99ab22d"
-
-[[files]]
-file = "resourcepacks/basicweapons-pike-3d/assets/basicweapons/textures/item/pike_3d/bronze_pike.png"
-hash = "b8db3a526458601999363d4047bd4f0c6b1aa15a753649219e004a3098835167"
-
-[[files]]
-file = "resourcepacks/basicweapons-pike-3d/assets/basicweapons/textures/item/pike_3d/copper_pike.png"
-hash = "73168aa4e8f77854f79129deed637a1f140beb77628580464734b73013363462"
-
-[[files]]
-file = "resourcepacks/basicweapons-pike-3d/assets/basicweapons/textures/item/pike_3d/diamond_pike.png"
-hash = "ed23c5130d45d91402e106fbbf8d3c92ebe5574dd1ab55438d231384ca92a472"
-
-[[files]]
-file = "resourcepacks/basicweapons-pike-3d/assets/basicweapons/textures/item/pike_3d/golden_pike.png"
-hash = "0df13803f1a227be67a62bac4e8fb071ab2361321c7ea17d7ada9b5717316ad3"
-
-[[files]]
-file = "resourcepacks/basicweapons-pike-3d/assets/basicweapons/textures/item/pike_3d/iron_pike.png"
-hash = "15f76baf32b25307567b2fec46ced735905a9a8ba7ceb02a01e75384a46d4caf"
-
-[[files]]
-file = "resourcepacks/basicweapons-pike-3d/assets/basicweapons/textures/item/pike_3d/netherite_pike.png"
-hash = "a0d4604a4f8e96880a5a5d3ad03eaaebdd42a49d34f430ea7cb38db3659f6f9e"
-
-[[files]]
-file = "resourcepacks/basicweapons-pike-3d/assets/basicweapons/textures/item/pike_3d/stone_pike.png"
-hash = "3135451e063b8edb5a11bdc59068175394fbc6a9ebb705245834bd03be165a79"
-
-[[files]]
-file = "resourcepacks/basicweapons-pike-3d/assets/basicweapons/textures/item/pike_3d/tin_pike.png"
-hash = "cf311dade573b795c2f772c3600622bf4795c451d90edf7721f4354ca0564338"
-
-[[files]]
-file = "resourcepacks/basicweapons-pike-3d/assets/basicweapons/textures/item/pike_3d/wooden_pike.png"
-hash = "7bbd7921618d17c11c197bbc799c55d9c6524abefde161fb67812c5de40dbea9"
-
-[[files]]
-file = "resourcepacks/basicweapons-pike-3d/pack.mcmeta"
-hash = "0c07949eebdf361022c1d69f617b45c33ab486f5d25c567ee762ec733531adf1"
-
-[[files]]
-file = "resourcepacks/basicweapons-pike-3d/pack.png"
-hash = "bad275f9d51c99b795bada8a64c2fde5c91d7df8826483f5f7d469c1c75788ee"
-
-[[files]]
-file = "resourcepacks/bountifulfish-anchor-3d/assets/bountiful-fish/items/anchor.json"
-hash = "f57c80c65fd7a03651490fe81bb69b705d4a9fa2d497ea61bf45c57246efbe2b"
-
-[[files]]
-file = "resourcepacks/bountifulfish-anchor-3d/assets/bountiful-fish/models/item/anchor_3d.json"
-hash = "cc91a0b1a192ba133ea8e0f63b1c6b0b5907df845f2ee7d33d4ab7094261c8ce"
-
-[[files]]
-file = "resourcepacks/bountifulfish-anchor-3d/assets/bountiful-fish/textures/item/anchor_3d.png"
-hash = "dc4cdfe1cc84ccc9983511f8a5304d7c253f9299bb511ea57dee774a65a80c85"
-
-[[files]]
-file = "resourcepacks/bountifulfish-anchor-3d/pack.mcmeta"
-hash = "d7925bbd7cc3cb09d067e571bd0906d743a9b67373605e4e5ef984af595813cc"
-
-[[files]]
-file = "resourcepacks/bountifulfish-anchor-3d/pack.png"
-hash = "77ebe7214aed1e05667d1ee900dd62abdbc1a3f1ad48e80a472bee5e9aa79b3a"
-
-[[files]]
-file = "resourcepacks/bountifulfish-tuna-3d/assets/bountiful-fish/models/item/large_tuna.json"
-hash = "29e314f005fc71adbb4f3c0ed061f7272f333cf0e44d3b2e40841365c7fff87b"
-
-[[files]]
-file = "resourcepacks/bountifulfish-tuna-3d/assets/bountiful-fish/models/item/large_tuna_blocking.json"
-hash = "83cd219d3eea9717ca6bd66315832a9c80079c687e2f463548b88a85cc535c58"
-
-[[files]]
-file = "resourcepacks/bountifulfish-tuna-3d/assets/bountiful-fish/textures/item/large_tuna.png"
-hash = "1112f2d547c0113f60db0fe12f7bcb2a37491264c2e9debaa723638d9a54dba6"
-
-[[files]]
-file = "resourcepacks/bountifulfish-tuna-3d/pack.mcmeta"
-hash = "16adf4e99a1386e26463eff01b86f96a4d42973eed5b4947f02afc4a55c403f4"
-
-[[files]]
-file = "resourcepacks/bountifulfish-tuna-3d/pack.png"
-hash = "28755e1ae65e99c817604b855b50bba8edd680aa802d5ab06fb48f53ef34023c"
 
 [[files]]
 file = "resourcepacks/jobsplus_renames/assets/jobsplus/lang/en_us.json"
