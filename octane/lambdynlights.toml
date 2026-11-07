@@ -1,0 +1,30 @@
+# LambDynamicLights configuration for Octane: held and worn lights only.
+mode = "fastest"
+chunk_rebuild_scheduler = "culling"
+
+[light_sources]
+	water_sensitive_check = false
+	beam = false
+	firefly = false
+	glowing_effect = false
+	block_entities = false
+	entities = true
+	self = true
+	tnt = "off"
+	sonic_boom = false
+	creeper = "off"
+	guardian_laser = false
+
+			[light_sources.settings.entities.minecraft]
+				item = false
+				experience_orb = false
+				glow_item_frame = false
+				item_frame = false
+				item_display = false
+				block_display = false
+				falling_block = false
+
+[adaptive_ticking]
+	background_sleep = true
+	slow = 2
+	slower = 3

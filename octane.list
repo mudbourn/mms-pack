@@ -16,10 +16,10 @@
 #   pack <folder>       remove resourcepacks/<folder> and drop it from the
 #                       resourcePacks line in both options files
 #   option <key>:<val>  set an options.txt value (both options files)
+#   copy <file> <dest>  overwrite <dest> with octane/<file>
 
 # ── shaders and visuals ──
 mod iris
-mod lambdynamiclights
 mod fallingleaves
 mod particle-rain
 mod particle-core
@@ -60,6 +60,11 @@ pack aerialhell-trident-3d
 pack basicweapons-pike-3d
 pack bountifulfish-anchor-3d
 pack bountifulfish-tuna-3d
+
+# ── lighter mod configs ──
+# Dynamic lights stay, but only for held and worn lights at the slowest rate.
+copy lambdynlights.toml config/lambdynlights.toml
+copy lambdynlights.toml config/modpack_defaults/config/lambdynlights.toml
 
 # ── lighter defaults ──
 # options.txt is preserve=true, so these only reach new installs; existing

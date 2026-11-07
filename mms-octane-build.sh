@@ -60,6 +60,11 @@ while IFS= read -r raw; do
             if [ -e "resourcepacks/$arg" ]; then rm -rf "resourcepacks/$arg"
             else echo "?? octane: resource pack '$arg' is not in main any more" >&2; missing=1; fi
             packs+=("$arg") ;;
+        copy)
+            src="octane/${arg%% *}"
+            dest="${arg#* }"
+            if [ -f "$src" ]; then mkdir -p "${dest:h}" && cp "$src" "$dest"
+            else echo "!! octane: no $src to copy" >&2; exit 1; fi ;;
         option)
             key="${arg%%:*}"
             for f in $OPTS; do
