@@ -10,7 +10,7 @@ hash = "e1ef79c2827deb3971b388c2bd63c183ac03ac327c91a4e28b7af96c69c472db"
 
 [[files]]
 file = "config/NoChatReports/NCR-Common.json"
-hash = "77777d6d4901caa3b49847bde37722ee3cf81d745cfc2e8ffdd2aca6211418e8"
+hash = "9aef01d1f3a5ef88db25608cb9d99095b247c9406d057d79e7062e26b9ef4bb6"
 
 [[files]]
 file = "config/NoChatReports/NCR-ServerPreferences.json"
@@ -1274,7 +1274,7 @@ hash = "616e09c8ff849f4a9a07165a0a3513f468469237377546b64135591fca8a0592"
 
 [[files]]
 file = "config/modpack_defaults/config/NoChatReports/NCR-Common.json"
-hash = "c335cb5e65abce1bfc063eaddcff3eca759636e32ba7e4993ea249a31ab18816"
+hash = "12f951aa37814d2a03d17a6ce7b37d667b76cb86c88cf26da6fa434024a757c6"
 
 [[files]]
 file = "config/modpack_defaults/config/PaginatedAdvancements.json5"
@@ -2651,7 +2651,7 @@ metafile = true
 
 [[files]]
 file = "mods/mms-mod-compat-support.pw.toml"
-hash = "67e370fa25eb2d0f4c5a1a6409571d457eb9f57c68d372e6317fc8103789fbf1"
+hash = "67e80cc94679443e3ab119806e59499a9fe08dedb2d777e305b811b86aef82d9"
 metafile = true
 
 [[files]]
