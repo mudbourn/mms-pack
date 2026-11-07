@@ -1,13 +1,13 @@
 name = "Bubblellaneous"
-filename = "bubblellaneous-3.0.6.jar"
+filename = "bubblellaneous-3.0.8.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/jDGGUJ9V/versions/guLo8Ip4/bubblellaneous-3.0.6.jar"
+url = "https://cdn.modrinth.com/data/jDGGUJ9V/versions/bpxW6fVi/bubblellaneous-3.0.8.jar"
 hash-format = "sha512"
-hash = "715e05da9a5fecd6701db8aa9090b63944eb0ed145b9b8da7a445b4e923a90a3af5cbc4beeb0ce38f9d5d8bfcc6636b1e43d0aa6b18fe61402c33e0dfbecd49e"
+hash = "eb27671594d0a1f5a977d3ceafe0f6935d69c460dfb94a4733593aa51eeea1ff2a1281ca1a0a34658c52f4a61a254238f868a89dfde7c0219787d794f9d7e27f"
 
 [update]
 [update.modrinth]
 mod-id = "jDGGUJ9V"
-version = "guLo8Ip4"
+version = "bpxW6fVi"
