@@ -2631,12 +2631,12 @@ metafile = true
 
 [[files]]
 file = "mods/mms-economy.pw.toml"
-hash = "e492069d2ca6bee57a8af93b38e56ed8b285545460fba7a8ccfdcc87d621cc91"
+hash = "e10df03432df053559a4e885262ac3c6c0cb37db1e2cb04bf494d211826213a4"
 metafile = true
 
 [[files]]
 file = "mods/mms-ferrite.pw.toml"
-hash = "744b3ee747cbc9a003cb832019c0e56f66aeb2c16a1cbf190fc5021606fbe673"
+hash = "2055d288efe67003fda5d6425e1d1263d65a403ddcf8b765b05cfbc4175300dc"
 metafile = true
 
 [[files]]
@@ -2646,12 +2646,12 @@ metafile = true
 
 [[files]]
 file = "mods/mms-metro.pw.toml"
-hash = "37d1502a22081225b03c8cefb210dca8a35c61014df66ec1cd91f26d10da455d"
+hash = "ae5a76f8bd67acd8177a585bcb56d16243e4367b11a8b96c94c739dc9051d50f"
 metafile = true
 
 [[files]]
 file = "mods/mms-mod-compat-support.pw.toml"
-hash = "e48c73f4e069260ffb324599446e98c2d81b1e11546c49d6e3e84c94752d4b0f"
+hash = "f36efe87e6ce851af0b265f7f1f0d155203aa51729245d5c9d1dd6359c781d14"
 metafile = true
 
 [[files]]
