@@ -1,15 +1,15 @@
 name = "mms-economy"
-filename = "mms-economy-1.0.18.jar"
+filename = "mms-economy-1.0.19.jar"
 side = "both"
 
 [download]
-url = "https://github.com/mudbourn/mms-economy/releases/download/v1.0.18/mms-economy-1.0.18.jar"
+url = "https://github.com/mudbourn/mms-economy/releases/download/v1.0.19/mms-economy-1.0.19.jar"
 hash-format = "sha256"
-hash = "d1faf42f5bb743d59e4df167e5a91912f6943a24d7f860feec5e98d3af9a24dc"
+hash = "096894c9531970938c703aa5edb93493aa5b22f0489cfa9931b1f34a9a91c72f"
 
 [update]
 [update.github]
 branch = "main"
 regex = "^.+(?<!-api|-dev|-dev-preshadow|-sources)\\.jar$"
 slug = "mudbourn/mms-economy"
-tag = "v1.0.18"
+tag = "v1.0.19"
