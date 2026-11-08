@@ -1,15 +1,15 @@
 name = "mms-metro"
-filename = "mms-metro-0.2.22.jar"
+filename = "mms-metro-0.2.23.jar"
 side = "both"
 
 [download]
-url = "https://github.com/mudbourn/mms-metro/releases/download/v0.2.22/mms-metro-0.2.22.jar"
+url = "https://github.com/mudbourn/mms-metro/releases/download/v0.2.23/mms-metro-0.2.23.jar"
 hash-format = "sha256"
-hash = "25908b8f241a4bd32ddf1106bc1716173459a6ba683158bc67bbcd064fd1a873"
+hash = "d12f84c7f81b58b5512b4f6eca63125de27783f11b8603358c8bdf591815a176"
 
 [update]
 [update.github]
 branch = "main"
 regex = "^.+(?<!-api|-dev|-dev-preshadow|-sources)\\.jar$"
 slug = "mudbourn/mms-metro"
-tag = "v0.2.22"
+tag = "v0.2.23"
