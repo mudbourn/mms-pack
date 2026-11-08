@@ -1,15 +1,15 @@
 name = "mms-combat"
-filename = "mms-combat-0.1.33.jar"
+filename = "mms-combat-0.1.34.jar"
 side = "both"
 
 [download]
-url = "https://github.com/mudbourn/mms-combat/releases/download/v0.1.33/mms-combat-0.1.33.jar"
+url = "https://github.com/mudbourn/mms-combat/releases/download/v0.1.34/mms-combat-0.1.34.jar"
 hash-format = "sha256"
-hash = "ef2ce286fdc35961b095465686b2d20fa175ed1810125ef37b846062a39c33ae"
+hash = "9526959975592cde57c92363ca2f5034cb4d8ac53c9bc7506f1c2aaf54395155"
 
 [update]
 [update.github]
 branch = "main"
 regex = "^.+(?<!-api|-dev|-dev-preshadow|-sources)\\.jar$"
 slug = "mudbourn/mms-combat"
-tag = "v0.1.33"
+tag = "v0.1.34"
