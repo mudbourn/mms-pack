@@ -498,7 +498,7 @@ hash = "fa8eebf200c797ea7f62eb932f3eee7dfa50356daccd7a5dff8017827215e8d9"
 
 [[files]]
 file = "config/chatpatches.json"
-hash = "d8b7fd0f6296038d40a3f70812eec2afc9e498284f2475119e80f67fcd656d60"
+hash = "ba3a61eb7c363b2e14ad46593b02db0b3552ec219aa8fbfcf0cece52fb58bc49"
 
 [[files]]
 file = "config/chefsdelightconfig.properties"
@@ -2626,7 +2626,7 @@ metafile = true
 
 [[files]]
 file = "mods/mms-combat.pw.toml"
-hash = "321f3266915d8d1338acdd2a01b6c50618e752332c4f71c846ee2d28315c927a"
+hash = "3890f7c86fb0ab31ec75389261455e827eb6f1d1d9fa60e1b8b6e2a464cd6080"
 metafile = true
 
 [[files]]
@@ -2651,7 +2651,7 @@ metafile = true
 
 [[files]]
 file = "mods/mms-mod-compat-support.pw.toml"
-hash = "d48cb5ceefabae73a60210f0922ad51043bf21ce38185889110373c4d69fa216"
+hash = "58dafe7e9888e6f0fe89cb2dca1a619f874f85e06fff677072e8ab3109cb7fdd"
 metafile = true
 
 [[files]]

@@ -15,7 +15,7 @@
   "compactChat": false,
   "compactDistance": 0,
   "boundary": true,
-  "boundaryFormat": "&8[&r$&8]",
+  "boundaryFormat": "&8[&rWelcome back to &b$&8]",
   "boundaryColor": "#55FFFF",
   "chatlog": true,
   "chatlogSaveInterval": 0,
