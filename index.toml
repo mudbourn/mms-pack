@@ -2626,7 +2626,7 @@ metafile = true
 
 [[files]]
 file = "mods/mms-combat.pw.toml"
-hash = "b97467cbfe16d0a8537673a89b08206f96b0848a1bd8265465840a3501ab2726"
+hash = "4d0ff67e0a55393521b14a9dc2276b24d1c045d8e9e0c8848963f54aa557ce58"
 metafile = true
 
 [[files]]
