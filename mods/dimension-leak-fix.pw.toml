@@ -1,13 +1,13 @@
 name = "Dimension Leak Fix"
-filename = "dimension-leak-fix-mc1.21.11-fabric-1.0.3.jar"
+filename = "dimension-leak-fix-mc1.21.11-fabric-1.0.4.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/nT8BgIrU/versions/DEgKTEX8/dimension-leak-fix-mc1.21.11-fabric-1.0.3.jar"
+url = "https://cdn.modrinth.com/data/nT8BgIrU/versions/PLEUiRAK/dimension-leak-fix-mc1.21.11-fabric-1.0.4.jar"
 hash-format = "sha512"
-hash = "f6ed4b55e7fc9dbf75e1f4f29b6f67dffad90500135325b02d5cc32443e7895d0927e65f1d0692998694a4c568155200453cbf429c54ed1659cee835596b095d"
+hash = "ccee849debdd16d57fc4960054cc21a1cb29e0a8425012afb4f86e1081f7dac26676d7c8aa86bee79d95b66a04dce0fbb475e55941d77f959c07457ba4ffadfb"
 
 [update]
 [update.modrinth]
 mod-id = "nT8BgIrU"
-version = "DEgKTEX8"
+version = "PLEUiRAK"
