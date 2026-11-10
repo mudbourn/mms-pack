@@ -280,7 +280,7 @@ elif [[ $UPDATE_PACK -eq 1 ]]; then
     # The releases API is eventually consistent: a just-created release can be
     # missing from the list for a few seconds, so retry until the toml moves.
     for attempt in 1 2 3 4 5; do
-        packwiz --pack-file pack/pack.toml update "$slug" || true
+        (cd pack && packwiz update "$slug") || true
         grep -q "^tag = \"$TAG\"" "$TOML" && break
         echo "   (release not visible yet, retrying in 5s...)"
         sleep 5
@@ -289,7 +289,7 @@ elif [[ $UPDATE_PACK -eq 1 ]]; then
         echo "!! pack still points at $PACK_TAG — re-run mms-release once the release is visible." >&2
         exit 1
     fi
-    packwiz --pack-file pack/pack.toml refresh
+    (cd pack && packwiz refresh)
     ./scripts/update-title.sh
     echo "Pack updated: $slug -> $TAG (uncommitted — commit when you're ready)."
 fi

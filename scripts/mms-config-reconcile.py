@@ -163,4 +163,4 @@ if gone:
     else:
         print(f'Left {len(gone)} repo-only file(s) alone; pass --prune to delete them.')
 
-print("Run 'packwiz --pack-file pack/pack.toml refresh' to pick the changes up into the index.")
+print("Run 'cd pack && packwiz refresh' to pick the changes up into the index.")

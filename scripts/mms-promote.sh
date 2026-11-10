@@ -64,7 +64,7 @@ done < lists/quarantine.txt
 if [ ${#stripped[@]} -gt 0 ]; then
     echo "── quarantine: removed ${#stripped[@]} mod(s) from the prod pack ──"
     printf '     %s\n' "${stripped[@]}"
-    packwiz --pack-file pack/pack.toml refresh
+    (cd pack && packwiz refresh)
     git add -A
     git commit -q -m "strip quarantined mods from prod pack"
 else

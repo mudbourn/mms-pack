@@ -167,7 +167,7 @@ ship_start
 PW_RC=0
 # --q (MMS_QUICK=1): skip the third-party bump. The pin below repoints every
 # released MMS mod on its own, so a quick deploy still ships them.
-[ "$MMS_QUICK" = "1" ] || packwiz --pack-file pack/pack.toml $PWYES update -a || PW_RC=$?
+[ "$MMS_QUICK" = "1" ] || (cd pack && packwiz $PWYES update -a) || PW_RC=$?
 # A release in flight cannot be taken back, so wait for all of them before
 # acting on a packwiz failure.
 [ -n "$SHIP_PID" ] && echo "── waiting for mod releases ──"
@@ -236,7 +236,7 @@ for toml in pack/mods/*.pw.toml; do
             echo "  [dry-run] would packwiz update $base to v$latest"
         else
             for attempt in 1 2 3 4 5; do
-                packwiz --pack-file pack/pack.toml $PWYES update "$base"
+                (cd pack && packwiz $PWYES update "$base")
                 grep -q "^tag = \"v$latest\"" "$toml" && break
                 echo "   (release not visible yet, retrying in 5s...)"
                 sleep 5
@@ -294,7 +294,7 @@ for toml in pack/mods/*.pw.toml; do
     # be missing from the list for a few seconds, so retry until the toml
     # actually points at the new tag
     for attempt in 1 2 3 4 5; do
-        packwiz --pack-file pack/pack.toml $PWYES update "${${toml:t}%.pw.toml}"
+        (cd pack && packwiz $PWYES update "${${toml:t}%.pw.toml}")
         grep -q "^tag = \"v$ver\"" "$toml" && break
         echo "   (release not visible yet, retrying in 5s...)"
         sleep 5
@@ -304,7 +304,7 @@ for toml in pack/mods/*.pw.toml; do
     fi
 done
 
-packwiz --pack-file pack/pack.toml refresh
+(cd pack && packwiz refresh)
 ./scripts/update-title.sh
 
 # An empty file cannot be fetched by the installer, which then warns on every

@@ -127,7 +127,7 @@ if data.get("overrides", {}).pop(slug, None) is not None:
 EOF
 done
 
-packwiz --pack-file pack/pack.toml refresh
+(cd pack && packwiz refresh)
 
 echo "Done. Removed $SLUG from the pack."
 echo "Note: client jars are not swept — run mms-client-sweep.py if it's in your instance."

@@ -103,7 +103,7 @@ else
     else
         git commit -m "testing pack changes"
     fi
-    packwiz --pack-file pack/pack.toml refresh
+    (cd pack && packwiz refresh)
     git add -A
     git diff --cached --quiet || git commit -m "refresh index"
 fi

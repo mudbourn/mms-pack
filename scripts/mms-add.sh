@@ -91,10 +91,10 @@ hash = "$HASH"
 EOF
     echo "Metadata: $(basename "$TOML")"
 
-    packwiz --pack-file pack/pack.toml refresh
+    (cd pack && packwiz refresh)
     echo "Done. Bundled $JAR_NAME into the pack."
 
 else
     # Modrinth slug or URL
-    packwiz --pack-file pack/pack.toml modrinth add "$ARG" -y
+    (cd pack && packwiz modrinth add "$ARG" -y)
 fi

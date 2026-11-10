@@ -21,8 +21,8 @@ if [ "$branch" != "testing" ]; then
 fi
 
 # refresh so the index matches the working tree before anyone installs from it
-packwiz --pack-file pack/pack.toml refresh
+(cd pack && packwiz refresh)
 
 echo "── serving $branch on http://127.0.0.1:8080/pack.toml (ctrl-C to stop) ──"
 echo "   After editing the pack, run 'packwiz refresh' and relaunch MMS Dev."
-exec packwiz --pack-file pack/pack.toml serve --port 8080
+cd pack && exec packwiz serve --port 8080

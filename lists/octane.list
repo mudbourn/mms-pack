@@ -6,7 +6,7 @@
 # main, never by committing to the octane branch.
 #
 # Players opt in by pointing their Prism pre-launch command at
-#   https://raw.githubusercontent.com/mudbourn/mms-pack/octane/pack.toml
+#   https://raw.githubusercontent.com/mudbourn/mms-pack/octane/pack/pack.toml
 #
 # Only client-side mods belong here. Cutting anything the server also runs
 # would stop Octane players joining.

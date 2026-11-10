@@ -97,7 +97,7 @@ EOF
 done
 
 sed -i '' 's/^name = "MMS Live"$/name = "MMS Live Octane"/' pack/pack.toml
-packwiz --pack-file pack/pack.toml refresh >/dev/null
+(cd pack && packwiz refresh) >/dev/null
 
 git add -A
 echo "── octane vs main ──"

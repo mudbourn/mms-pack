@@ -364,7 +364,7 @@ def pin_releases(manifest, todo, released) -> bool:
         # The releases API is eventually consistent: a release cut seconds ago
         # can be missing from the list, so retry until the metafile moves.
         for attempt in range(5):
-            subprocess.run(["packwiz", "--pack-file", "pack/pack.toml", "-y", "update", slug], cwd=PACK_DIR,
+            subprocess.run(["packwiz", "-y", "update", slug], cwd=PACK_DIR / "pack",
                            stdin=subprocess.DEVNULL, capture_output=True)
             if want in toml.read_text():
                 break
@@ -558,7 +558,7 @@ def main(argv=None):
         print("\n── pinning the pack ──", flush=True)
         if not pin_releases(manifest, todo, released):
             rc = 1
-        subprocess.run(["packwiz", "--pack-file", "pack/pack.toml", "refresh"], cwd=PACK_DIR)
+        subprocess.run(["packwiz", "refresh"], cwd=PACK_DIR / "pack")
         subprocess.run([str(PACK_DIR / "scripts" / "update-title.sh")], cwd=PACK_DIR)
         print("Pack updated (uncommitted — commit when you're ready).")
     return rc
