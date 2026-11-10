@@ -258,5 +258,25 @@
   "minecraft:skeleton_skull": {
     "sell": 1500,
     "category": "treasure"
+  },
+  "bountiful-fish:wooden_crate": {
+    "sell": 500,
+    "category": "treasure"
+  },
+  "bountiful-fish:metal_crate": {
+    "sell": 1200,
+    "category": "treasure"
+  },
+  "bountiful-fish:diamond_crate": {
+    "sell": 1500,
+    "category": "treasure"
+  },
+  "origins:orb_of_origin": {
+    "sell": 6667,
+    "category": "unobtainable"
+  },
+  "enderscape:nebulite": {
+    "sell": 2000,
+    "category": "valuable"
   }
 }
