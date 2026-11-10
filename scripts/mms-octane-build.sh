@@ -1,8 +1,8 @@
 #!/bin/zsh
 # mms-octane-build — rebuild the `octane` (low-end PC) branch from main.
 #
-#   ./mms-octane-build.sh             rebuild octane from main and push it
-#   ./mms-octane-build.sh --dry-run   build it in a scratch worktree, show the
+#   ./scripts/mms-octane-build.sh             rebuild octane from main and push it
+#   ./scripts/mms-octane-build.sh --dry-run   build it in a scratch worktree, show the
 #                                     diff against main, push nothing
 #
 # octane is a derived branch: main minus octane.list. Each run resets octane to
@@ -24,8 +24,8 @@ case "$1" in
     *) echo "usage: mms-octane-build.sh [--dry-run]" >&2; exit 2 ;;
 esac
 
-PACK="${0:A:h}"
-LIST="$PACK/octane.list"
+PACK="${0:A:h:h}"
+LIST="$PACK/lists/octane.list"
 cd "$PACK"
 [ -f "$LIST" ] || { echo "!! octane: no octane.list at $LIST" >&2; exit 1; }
 
@@ -42,7 +42,7 @@ else
 fi
 cd "$WT"
 
-OPTS=(options.txt config/modpack_defaults/options.txt)
+OPTS=(pack/options.txt pack/config/modpack_defaults/options.txt)
 missing=0
 packs=()
 
@@ -54,15 +54,15 @@ while IFS= read -r raw; do
     arg="${line#* }"
     case "$kind" in
         mod)
-            if [ -f "mods/$arg.pw.toml" ]; then rm "mods/$arg.pw.toml"
+            if [ -f "pack/mods/$arg.pw.toml" ]; then rm "pack/mods/$arg.pw.toml"
             else echo "?? octane: mod '$arg' is not in main any more" >&2; missing=1; fi ;;
         pack)
-            if [ -e "resourcepacks/$arg" ]; then rm -rf "resourcepacks/$arg"
+            if [ -e "pack/resourcepacks/$arg" ]; then rm -rf "pack/resourcepacks/$arg"
             else echo "?? octane: resource pack '$arg' is not in main any more" >&2; missing=1; fi
             packs+=("$arg") ;;
         copy)
             src="octane/${arg%% *}"
-            dest="${arg#* }"
+            dest="pack/${arg#* }"
             if [ -f "$src" ]; then mkdir -p "${dest:h}" && cp "$src" "$dest"
             else echo "!! octane: no $src to copy" >&2; exit 1; fi ;;
         option)
@@ -96,8 +96,8 @@ open(path, "w", encoding="utf-8").write("\n".join(lines) + "\n")
 EOF
 done
 
-sed -i '' 's/^name = "MMS Live"$/name = "MMS Live Octane"/' pack.toml
-packwiz refresh >/dev/null
+sed -i '' 's/^name = "MMS Live"$/name = "MMS Live Octane"/' pack/pack.toml
+packwiz --pack-file pack/pack.toml refresh >/dev/null
 
 git add -A
 echo "── octane vs main ──"

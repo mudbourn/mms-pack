@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+. "$(dirname "$0")/paths.local.env" || { echo "!! missing scripts/paths.local.env (copy scripts/paths.env.example)" >&2; exit 1; }
 # mms-add — Add a mod to the mms-pack.
 # Usage:
 #   mms-add <modrinth-slug-or-url>   Add from Modrinth
@@ -7,8 +8,8 @@
 #   mms-add -u ...                   Update a previously bundled local JAR
 set -euo pipefail
 
-PACK_DIR="$HOME/Documents/GitHub/mms-pack"
-MODS_DIR="$PACK_DIR/mods"
+PACK_DIR="$MMS_PACK_DIR"
+MODS_DIR="$PACK_DIR/pack/mods"
 UPDATE=0
 
 if [[ "${1:-}" == "-u" ]]; then
@@ -90,10 +91,10 @@ hash = "$HASH"
 EOF
     echo "Metadata: $(basename "$TOML")"
 
-    packwiz refresh
+    packwiz --pack-file pack/pack.toml refresh
     echo "Done. Bundled $JAR_NAME into the pack."
 
 else
     # Modrinth slug or URL
-    packwiz modrinth add "$ARG" -y
+    packwiz --pack-file pack/pack.toml modrinth add "$ARG" -y
 fi

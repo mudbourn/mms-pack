@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+. "$(dirname "$0")/paths.local.env" || { echo "!! missing scripts/paths.local.env (copy scripts/paths.env.example)" >&2; exit 1; }
 # mms-release — cut a tagged GitHub release for one of our own mods, and point
 # the pack at it.
 #
@@ -31,8 +32,8 @@
 # never cut for a version at or behind the one the pack already points at.
 set -euo pipefail
 
-PACK_DIR="$HOME/Documents/GitHub/mms-pack"
-GITHUB_DIR="$HOME/Documents/GitHub"
+PACK_DIR="$MMS_PACK_DIR"
+GITHUB_DIR="$MMS_GITHUB_DIR"
 DRY=0
 YES=0
 UPDATE_PACK=1
@@ -95,7 +96,7 @@ if [[ "$ALL" -eq 1 ]]; then
     [[ -n "${1:-}" ]] && { echo "ERROR: --all takes no repo argument." >&2; exit 1; }
     [[ -n "$BUMP" ]] && { echo "ERROR: -b cannot be combined with --all — a single bump" >&2; \
                           echo "       across every repo makes no sense. Bump each one on its own run." >&2; exit 1; }
-    PY="$PACK_DIR/mms-repos.py"
+    PY="$PACK_DIR/scripts/mms-repos.py"
     [[ -x "$PY" ]] || { echo "ERROR: $PY not found." >&2; exit 1; }
     TARGETS=()
     while IFS= read -r line; do
@@ -206,7 +207,7 @@ TAG="v$VERSION"
 # ── find the pack metafile that tracks this repo, if any ──
 TOML=""
 if [[ $UPDATE_PACK -eq 1 ]]; then
-    TOML="$(grep -l "^slug = \"mudbourn/$NAME\"" "$PACK_DIR"/mods/*.pw.toml 2>/dev/null | head -1 || true)"
+    TOML="$(grep -l "^slug = \"mudbourn/$NAME\"" "$PACK_DIR"/pack/mods/*.pw.toml 2>/dev/null | head -1 || true)"
     if [[ -z "$TOML" ]]; then
         echo "note: no pack metafile points at mudbourn/$NAME — releasing only."
         UPDATE_PACK=0
@@ -279,7 +280,7 @@ elif [[ $UPDATE_PACK -eq 1 ]]; then
     # The releases API is eventually consistent: a just-created release can be
     # missing from the list for a few seconds, so retry until the toml moves.
     for attempt in 1 2 3 4 5; do
-        packwiz update "$slug" || true
+        packwiz --pack-file pack/pack.toml update "$slug" || true
         grep -q "^tag = \"$TAG\"" "$TOML" && break
         echo "   (release not visible yet, retrying in 5s...)"
         sleep 5
@@ -288,7 +289,7 @@ elif [[ $UPDATE_PACK -eq 1 ]]; then
         echo "!! pack still points at $PACK_TAG — re-run mms-release once the release is visible." >&2
         exit 1
     fi
-    packwiz refresh
-    ./update-title.sh
+    packwiz --pack-file pack/pack.toml refresh
+    ./scripts/update-title.sh
     echo "Pack updated: $slug -> $TAG (uncommitted — commit when you're ready)."
 fi

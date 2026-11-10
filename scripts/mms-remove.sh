@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+. "$(dirname "$0")/paths.local.env" || { echo "!! missing scripts/paths.local.env (copy scripts/paths.env.example)" >&2; exit 1; }
 # mms-remove — Remove a mod from the mms-pack.
 # Usage:
 #   mms-remove <slug-or-name-or-jar>   Remove a mod and its leftovers
@@ -11,8 +12,8 @@
 # override keyed to it, then refreshes the index.
 set -euo pipefail
 
-PACK_DIR="$HOME/Documents/GitHub/mms-pack"
-MODS_DIR="$PACK_DIR/mods"
+PACK_DIR="$MMS_PACK_DIR"
+MODS_DIR="$PACK_DIR/pack/mods"
 DRY=0
 YES=0
 
@@ -83,15 +84,15 @@ JAR="$(sed -n 's/^filename *= *"\(.*\)"$/\1/p' "$TOML" | head -1)"
 # Everything we intend to delete
 TARGETS=("$TOML")
 [[ -n "$JAR" && -f "$MODS_DIR/$JAR" ]] && TARGETS+=("$MODS_DIR/$JAR")   # bundled local jars
-for cfg in "config/$SLUG.json" "config/$SLUG.json5" "config/$SLUG.toml" \
-           "config/$SLUG.properties" "config/$SLUG.txt" "config/$SLUG"; do
+for cfg in "pack/config/$SLUG.json" "pack/config/$SLUG.json5" "pack/config/$SLUG.toml" \
+           "pack/config/$SLUG.properties" "pack/config/$SLUG.txt" "pack/config/$SLUG"; do
     [[ -e "$cfg" ]] && TARGETS+=("$cfg")
 done
 
 # fabric_loader_dependencies overrides keyed to this mod
 FLD_FILES=()
-for fld in config/fabric_loader_dependencies.json \
-           config/modpack_defaults/config/fabric_loader_dependencies.json; do
+for fld in pack/config/fabric_loader_dependencies.json \
+           pack/config/modpack_defaults/config/fabric_loader_dependencies.json; do
     [[ -f "$fld" ]] || continue
     if grep -q "\"$SLUG\"" "$fld"; then
         FLD_FILES+=("$fld")
@@ -126,7 +127,7 @@ if data.get("overrides", {}).pop(slug, None) is not None:
 EOF
 done
 
-packwiz refresh
+packwiz --pack-file pack/pack.toml refresh
 
 echo "Done. Removed $SLUG from the pack."
 echo "Note: client jars are not swept — run mms-client-sweep.py if it's in your instance."

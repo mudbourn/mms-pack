@@ -13,8 +13,8 @@
 # launch until this script has run.
 #
 # Usage:
-#   ./mms-dev-setup.sh                 # resolve latest builds from GitHub
-#   ./mms-dev-setup.sh <jbr-tar-url>   # pin a specific JBR build
+#   ./scripts/mms-dev-setup.sh                 # resolve latest builds from GitHub
+#   ./scripts/mms-dev-setup.sh <jbr-tar-url>   # pin a specific JBR build
 set -e
 
 DEV=~/.mms-dev
@@ -56,7 +56,7 @@ else
         echo "   Pick a jbr-release-21.* tag from" >&2
         echo "     https://github.com/JetBrains/JetBrainsRuntime/releases" >&2
         echo "   and re-run with the matching CDN URL, e.g. for tag 21.0.11b1163.116:" >&2
-        echo "     ./mms-dev-setup.sh https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.11-osx-aarch64-b1163.116.tar.gz" >&2
+        echo "     ./scripts/mms-dev-setup.sh https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.11-osx-aarch64-b1163.116.tar.gz" >&2
         exit 1
     fi
     echo "jbr: downloading $url"
@@ -117,6 +117,6 @@ fi
 echo
 echo "── done. Next: ──"
 echo "  1. Restart Prism Launcher so it picks up the new 'MMS Dev' instance."
-echo "  2. Start the pack server:   ./mms-dev-serve.sh"
+echo "  2. Start the pack server:   ./scripts/mms-dev-serve.sh"
 echo "  3. Launch 'MMS Dev', connect to the test server."
-echo "  4. Watch a mod for changes: ./mms-hotswap-watch.sh mms-mod-compat-support"
+echo "  4. Watch a mod for changes: ./scripts/mms-hotswap-watch.sh mms-mod-compat-support"

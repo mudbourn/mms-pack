@@ -102,15 +102,26 @@ import zipfile
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
-PACK_DIR = Path(__file__).resolve().parent
-RELEASE_SH = PACK_DIR / "mms-release.sh"
-DEFAULT_SERVER = Path(os.path.expanduser("~/Documents/GitHub/Server Prod/mods"))
+def _mms_path(key):
+    """Read KEY from scripts/paths.local.env (see paths.env.example)."""
+    env = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'paths.local.env')
+    with open(env) as fh:
+        for line in fh:
+            k, _, v = line.strip().partition('=')
+            if k == key:
+                return v.strip().strip('"')
+    sys.exit(f"!! {key} missing from {env}")
+
+
+PACK_DIR = Path(__file__).resolve().parent.parent
+RELEASE_SH = PACK_DIR / "scripts" / "mms-release.sh"
+DEFAULT_SERVER = Path(os.path.join(_mms_path('MMS_GITHUB_DIR'), 'Server Prod/mods'))
 
 
 # ── reuse mms-repos.py's discovery rather than re-deriving any of it ───────────
 def _load_repos_module():
     """Import mms-repos.py as a module despite the dash in its filename."""
-    path = PACK_DIR / "mms-repos.py"
+    path = PACK_DIR / "scripts" / "mms-repos.py"
     spec = importlib.util.spec_from_file_location("mms_repos", path)
     mod = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(mod)
@@ -353,7 +364,7 @@ def pin_releases(manifest, todo, released) -> bool:
         # The releases API is eventually consistent: a release cut seconds ago
         # can be missing from the list, so retry until the metafile moves.
         for attempt in range(5):
-            subprocess.run(["packwiz", "-y", "update", slug], cwd=PACK_DIR,
+            subprocess.run(["packwiz", "--pack-file", "pack/pack.toml", "-y", "update", slug], cwd=PACK_DIR,
                            stdin=subprocess.DEVNULL, capture_output=True)
             if want in toml.read_text():
                 break
@@ -407,7 +418,7 @@ def sync_resourcepacks(manifest, dry: bool) -> list[str]:
     All-Rights-Reserved Lowlands textures): those are exactly what has to reach the
     client, and are in neither repo's history to sync any other way. Returns the
     pack names synced."""
-    dest_root = PACK_DIR / "resourcepacks"
+    dest_root = PACK_DIR / "pack" / "resourcepacks"
     synced: list[str] = []
     for name in manifest["repos"]:
         rd = R.repo_dir(manifest, name)
@@ -547,8 +558,8 @@ def main(argv=None):
         print("\n── pinning the pack ──", flush=True)
         if not pin_releases(manifest, todo, released):
             rc = 1
-        subprocess.run(["packwiz", "refresh"], cwd=PACK_DIR)
-        subprocess.run([str(PACK_DIR / "update-title.sh")], cwd=PACK_DIR)
+        subprocess.run(["packwiz", "--pack-file", "pack/pack.toml", "refresh"], cwd=PACK_DIR)
+        subprocess.run([str(PACK_DIR / "scripts" / "update-title.sh")], cwd=PACK_DIR)
         print("Pack updated (uncommitted — commit when you're ready).")
     return rc
 

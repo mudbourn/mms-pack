@@ -37,8 +37,8 @@ import tomllib
 from functools import lru_cache
 from pathlib import Path
 
-PACK_DIR = Path(__file__).resolve().parent
-MANIFEST = PACK_DIR / "mms-repos.toml"
+PACK_DIR = Path(__file__).resolve().parent.parent
+MANIFEST = PACK_DIR / "lists" / "mms-repos.toml"
 CALLER_TEMPLATE = PACK_DIR / ".github/workflows/_caller-template.yml"
 
 # ── manifest ──────────────────────────────────────────────────────────────────
@@ -129,7 +129,7 @@ def needs_libs(repo: Path) -> bool:
 @lru_cache(maxsize=1)
 def _metafiles() -> list[tuple[Path, bool]]:
     files = []
-    for sub, disabled in (("mods", False), ("disabled-mods", True)):
+    for sub, disabled in (("pack/mods", False), ("disabled-mods", True)):
         d = PACK_DIR / sub
         if d.is_dir():
             files += [(p, disabled) for p in d.glob("*.pw.toml")]

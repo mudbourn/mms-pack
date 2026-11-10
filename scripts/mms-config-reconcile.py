@@ -73,10 +73,10 @@ apply_changes = '--apply' in sys.argv[1:]
 prune = '--prune' in sys.argv[1:]
 
 instance = _argv[0] if _argv else DEFAULT_INSTANCE
-pack_dir = _argv[1] if len(_argv) > 1 else os.path.dirname(os.path.abspath(__file__))
+pack_dir = _argv[1] if len(_argv) > 1 else os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 src_root = os.path.join(instance, 'config')
-dst_root = os.path.join(pack_dir, 'config')
+dst_root = os.path.join(pack_dir, 'pack', 'config')
 
 if prune and not apply_changes:
     print('--prune has no effect without --apply', file=sys.stderr)
@@ -163,4 +163,4 @@ if gone:
     else:
         print(f'Left {len(gone)} repo-only file(s) alone; pass --prune to delete them.')
 
-print("Run 'packwiz refresh' to pick the changes up into the index.")
+print("Run 'packwiz --pack-file pack/pack.toml refresh' to pick the changes up into the index.")

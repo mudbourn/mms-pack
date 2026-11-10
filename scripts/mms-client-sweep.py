@@ -40,6 +40,17 @@ import subprocess
 import sys
 import zipfile
 
+def _mms_path(key):
+    """Read KEY from scripts/paths.local.env (see paths.env.example)."""
+    env = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'paths.local.env')
+    with open(env) as fh:
+        for line in fh:
+            k, _, v = line.strip().partition('=')
+            if k == key:
+                return v.strip().strip('"')
+    sys.exit(f"!! {key} missing from {env}")
+
+
 # Flags are stripped before the positional read: pack_dir is optional, so a
 # trailing --dry-run would otherwise be taken as the pack directory.
 _argv = [a for a in sys.argv[1:] if not a.startswith('--')]
@@ -47,7 +58,7 @@ dry_run = '--dry-run' in sys.argv[1:]
 TAG = '[dry-run] ' if dry_run else ''
 
 instance = _argv[0]
-pack_dir = _argv[1] if len(_argv) > 1 else os.path.dirname(os.path.abspath(__file__))
+pack_dir = _argv[1] if len(_argv) > 1 else os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 mods_dir = os.path.join(instance, 'mods')
 packwiz_json = os.path.join(instance, 'packwiz.json')
 
@@ -78,7 +89,7 @@ def managed_jar_names():
 
 def overlay_protected_ids():
     """Mod ids currently under test via overlay.list — never sweep these."""
-    list_path = os.path.join(pack_dir, 'overlay.list')
+    list_path = os.path.join(pack_dir, 'lists', 'overlay.list')
     if not os.path.exists(list_path):
         return set()
     ids = set()
@@ -86,7 +97,7 @@ def overlay_protected_ids():
         slug = raw.split('#', 1)[0].strip()
         if not slug:
             continue
-        libs = os.path.expanduser(f'~/Documents/GitHub/{slug}/build/libs')
+        libs = os.path.join(_mms_path('MMS_GITHUB_DIR'), slug, 'build', 'libs')
         if not os.path.isdir(libs):
             continue
         jars = [os.path.join(libs, f) for f in os.listdir(libs)

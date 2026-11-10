@@ -1,4 +1,5 @@
 #!/bin/zsh
+. "$(dirname "$0")/paths.local.env" || { echo "!! missing scripts/paths.local.env (copy scripts/paths.env.example)" >&2; exit 1; }
 # mms-dev-serve — serve the local `testing` checkout to the MMS Dev client.
 #
 # The dev client's pre-launch step fetches http://127.0.0.1:8080/pack.toml, so
@@ -8,7 +9,7 @@
 #
 # Leave this running in its own terminal for the whole dev session.
 set -e
-cd ~/Documents/GitHub/mms-pack
+cd "$MMS_PACK_DIR"
 
 branch=$(git rev-parse --abbrev-ref HEAD)
 if [ "$branch" != "testing" ]; then
@@ -20,8 +21,8 @@ if [ "$branch" != "testing" ]; then
 fi
 
 # refresh so the index matches the working tree before anyone installs from it
-packwiz refresh
+packwiz --pack-file pack/pack.toml refresh
 
 echo "── serving $branch on http://127.0.0.1:8080/pack.toml (ctrl-C to stop) ──"
 echo "   After editing the pack, run 'packwiz refresh' and relaunch MMS Dev."
-exec packwiz serve --port 8080
+exec packwiz --pack-file pack/pack.toml serve --port 8080

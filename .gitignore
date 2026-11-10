@@ -3,8 +3,8 @@
 *.mrpack
 
 # --- Per-user / per-OS generated data (mirrors .packignore) ---
-mods/mcef-libraries/
-xaero/world-map/
+pack/mods/mcef-libraries/
+pack/xaero/world-map/
 .fabric/
 .cache/
 .mixin.out/
@@ -37,3 +37,6 @@ Thumbs.db
 __pycache__/
 *.pyc
 docs/
+
+# Machine-local script paths (see scripts/paths.env.example)
+scripts/paths.local.env

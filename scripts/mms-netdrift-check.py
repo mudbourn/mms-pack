@@ -60,7 +60,7 @@ import zipfile
 from collections import defaultdict
 
 server_mods = sys.argv[1]
-pack_dir = sys.argv[2] if len(sys.argv) > 2 else os.path.dirname(os.path.abspath(__file__))
+pack_dir = sys.argv[2] if len(sys.argv) > 2 else os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 pack_mods = os.path.join(pack_dir, 'mods')
 
 # Constant-pool markers for the networking stack. The first is the broad net —
@@ -133,7 +133,7 @@ def allowed_overlaps():
     An allowed entry silences the overlap only if the mod set matches exactly —
     a fourth mod joining the pile re-raises it.
     """
-    path = os.path.join(pack_dir, 'netdrift-allow.txt')
+    path = os.path.join(pack_dir, 'lists', 'netdrift-allow.txt')
     out = {}
     if not os.path.exists(path):
         return out

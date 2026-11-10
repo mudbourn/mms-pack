@@ -32,6 +32,17 @@ Used by `mms-deploy.sh --dev`.
 """
 import json, os, re, shutil, sys, tempfile, urllib.parse, urllib.request, zipfile
 
+def _mms_path(key):
+    """Read KEY from scripts/paths.local.env (see paths.env.example)."""
+    env = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'paths.local.env')
+    with open(env) as fh:
+        for line in fh:
+            k, _, v = line.strip().partition('=')
+            if k == key:
+                return v.strip().strip('"')
+    sys.exit(f"!! {key} missing from {env}")
+
+
 raw_args = sys.argv[1:]
 
 # Expand stacked short flags (-np -> --dry-run --prune) so a dry run and a prune
@@ -61,7 +72,7 @@ if '--hold' in raw_args:
 args = [a for a in raw_args if not a.startswith('-')]
 
 server_mods = args[0]
-pack_dir = args[1] if len(args) > 1 else os.path.dirname(os.path.abspath(__file__))
+pack_dir = args[1] if len(args) > 1 else os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 mods_dir = os.path.join(pack_dir, 'mods')
 changed = False
 expected = set()   # filenames the pack expects this server to hold
@@ -241,7 +252,7 @@ def overlay_protected_ids():
     unreleased build deliberately absent from the pack index, so it looks
     exactly like an orphan and must not be treated as one.
     """
-    list_path = os.path.join(pack_dir, 'overlay.list')
+    list_path = os.path.join(pack_dir, 'lists', 'overlay.list')
     if not os.path.exists(list_path):
         return set()
     ids = set()
@@ -249,7 +260,7 @@ def overlay_protected_ids():
         slug = raw.split('#', 1)[0].strip()
         if not slug:
             continue
-        libs = os.path.expanduser(f'~/Documents/GitHub/{slug}/build/libs')
+        libs = os.path.join(_mms_path('MMS_GITHUB_DIR'), slug, 'build', 'libs')
         if not os.path.isdir(libs):
             continue
         jars = [os.path.join(libs, f) for f in os.listdir(libs)

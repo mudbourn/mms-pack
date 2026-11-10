@@ -2,7 +2,7 @@
 # Reads version from pack.toml and updates main menu title text
 set -e
 
-PACK_DIR="$(cd "$(dirname "$0")" && pwd)"
+PACK_DIR="$(cd "$(dirname "$0")/../pack" && pwd)"
 VERSION=$(grep '^version' "$PACK_DIR/pack.toml" | sed 's/.*"\(.*\)"/\1/')
 TITLE="MMS Live Official Modpack $VERSION"
 

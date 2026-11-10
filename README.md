@@ -42,12 +42,12 @@ Download from **https://prismlauncher.org/download/** and sign in with your Micr
 
   **Standard** (most PCs, full visuals):
   ```
-  "$INST_JAVA" -jar packwiz-installer-bootstrap.jar https://raw.githubusercontent.com/mudbourn/mms-pack/main/pack.toml
+  "$INST_JAVA" -jar packwiz-installer-bootstrap.jar https://raw.githubusercontent.com/mudbourn/mms-pack/main/pack/pack.toml
   ```
 
   **Octane** (low-end PCs: no shaders, animation packs or ambient extras, lighter defaults):
   ```
-  "$INST_JAVA" -jar packwiz-installer-bootstrap.jar https://raw.githubusercontent.com/mudbourn/mms-pack/octane/pack.toml
+  "$INST_JAVA" -jar packwiz-installer-bootstrap.jar https://raw.githubusercontent.com/mudbourn/mms-pack/octane/pack/pack.toml
   ```
 
   Both join the same server. To switch later, swap the command and relaunch.

@@ -1,4 +1,5 @@
 #!/bin/zsh
+. "$(dirname "$0")/paths.local.env" || { echo "!! missing scripts/paths.local.env (copy scripts/paths.env.example)" >&2; exit 1; }
 # mms-deploy-test — stage pack changes on the `testing` branch and push them to
 # the test targets ONLY. Mirror of mms-deploy.sh for the staging lane.
 #
@@ -19,18 +20,18 @@
 # Transport note: this script used to `git push -u origin testing` and claim the
 # test client would pull it. That never worked — there is no origin/testing, and
 # the test clients' pre-launch step pointed at main. The dev client now installs
-# from a local `packwiz serve` instead (./mms-dev-serve.sh), so the branch only
+# from a local `packwiz serve` instead (./scripts/mms-dev-serve.sh), so the branch only
 # has to exist locally. Keep that server running while testing.
 #
-# Promote a validated fix with ./mms-promote.sh (or by hand: remove its slug
-# from overlay.list, git checkout main && git merge testing, ./mms-deploy.sh).
+# Promote a validated fix with ./scripts/mms-promote.sh (or by hand: remove its slug
+# from overlay.list, git checkout main && git merge testing, ./scripts/mms-deploy.sh).
 #
 # ── NOT THE ENTRY POINT ──
 # This is the testing LANE, invoked by mms-deploy.sh. Run `mms-deploy` from the
 # `testing` branch instead — it parses flags, picks the lane, and calls this.
 set -e
-cd ~/Documents/GitHub/mms-pack
-source ./mms-deploy-phase.sh
+cd "$MMS_PACK_DIR"
+source ./scripts/mms-deploy-phase.sh
 
 # --dev: rehearse without writing. The prod lane has always had this; the test
 # lane did not, which meant the only way to find out what a staging deploy would
@@ -58,7 +59,7 @@ run() {
 
 # Symlink → /Volumes/AMP-Instances/instances/MMSTesting01/Minecraft/. Renamed
 # from "MMSTesting01" on 2026-07-23; the old name no longer resolves.
-TEST_SERVER_MODS="$HOME/Documents/GitHub/Server Testing/mods"
+TEST_SERVER_MODS="$MMS_GITHUB_DIR/Server Testing/mods"
 TEST_CLIENT_MODS="$HOME/Library/Application Support/PrismLauncher/instances/MMS Dev/minecraft/mods"
 
 branch=$(git rev-parse --abbrev-ref HEAD)
@@ -102,14 +103,14 @@ else
     else
         git commit -m "testing pack changes"
     fi
-    packwiz refresh
+    packwiz --pack-file pack/pack.toml refresh
     git add -A
     git diff --cached --quiet || git commit -m "refresh index"
 fi
-echo "pack: testing branch updated — served to MMS Dev by ./mms-dev-serve.sh"
+echo "pack: testing branch updated — served to MMS Dev by ./scripts/mms-dev-serve.sh"
 
 if ! curl -fsS --max-time 2 http://127.0.0.1:8080/pack.toml >/dev/null 2>&1; then
-    echo "   note: nothing serving on 127.0.0.1:8080 — start ./mms-dev-serve.sh"
+    echo "   note: nothing serving on 127.0.0.1:8080 — start ./scripts/mms-dev-serve.sh"
     echo "         before launching MMS Dev, or its pre-launch step will fail."
 fi
 
@@ -118,12 +119,12 @@ if [ ! -d "$TEST_SERVER_MODS" ]; then
     echo "!! test server mods not found at $TEST_SERVER_MODS — skipping server sync." >&2
     exit 1
 fi
-python3 ./mms-server-sync.py "$TEST_SERVER_MODS" $DRYFLAG $PRUNEFLAG
+python3 ./scripts/mms-server-sync.py "$TEST_SERVER_MODS" $DRYFLAG $PRUNEFLAG
 
 echo "── dev-jar overlay ──"
-run ./mms-overlay-apply.sh "$TEST_SERVER_MODS"
+run ./scripts/mms-overlay-apply.sh "$TEST_SERVER_MODS"
 if [ -d "$TEST_CLIENT_MODS" ]; then
-    run ./mms-overlay-apply.sh "$TEST_CLIENT_MODS"
+    run ./scripts/mms-overlay-apply.sh "$TEST_CLIENT_MODS"
 else
     echo "overlay: dev client mods dir not found yet ($TEST_CLIENT_MODS)"
     echo "         (launch 'MMS Dev' once so packwiz creates it, then re-run.)"

@@ -30,7 +30,18 @@ import struct
 import sys
 import zlib
 
-DEFAULT_WORLD = os.path.expanduser("~/Documents/GitHub/Server Prod/world")
+def _mms_path(key):
+    """Read KEY from scripts/paths.local.env (see paths.env.example)."""
+    env = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'paths.local.env')
+    with open(env) as fh:
+        for line in fh:
+            k, _, v = line.strip().partition('=')
+            if k == key:
+                return v.strip().strip('"')
+    sys.exit(f"!! {key} missing from {env}")
+
+
+DEFAULT_WORLD = os.path.join(_mms_path('MMS_GITHUB_DIR'), 'Server Prod/world')
 
 # tag -> (entity id that leaks, human description)
 KNOWN = {

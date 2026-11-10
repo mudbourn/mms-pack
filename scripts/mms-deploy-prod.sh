@@ -1,4 +1,5 @@
 #!/bin/zsh
+. "$(dirname "$0")/paths.local.env" || { echo "!! missing scripts/paths.local.env (copy scripts/paths.env.example)" >&2; exit 1; }
 # mms-deploy — update the pack, publish to clients, and sync shared mods to the server.
 #
 # 1. commit + push             any pending local changes ship first, untangled
@@ -13,7 +14,7 @@
 #                              has that the pack is still behind (you pushed +
 #                              released it yourself).
 # 4. packwiz refresh           rebuild index, once
-# 5. ./update-title.sh         re-apply preserve flags
+# 5. ./scripts/update-title.sh         re-apply preserve flags
 # 6. commit + push             the packwiz changes; clients pick both up on
 #                              next Prism launch
 # 7. PARALLEL PHASE            three things at once, then wait for all:
@@ -41,8 +42,8 @@
 #        end. That is why it refuses to start on a dirty one: the restore is a
 #        hard reset and it must not be able to eat uncommitted work.
 set -e
-cd ~/Documents/GitHub/mms-pack
-source ./mms-deploy-phase.sh
+cd "$MMS_PACK_DIR"
+source ./scripts/mms-deploy-phase.sh
 
 # ── NOT THE ENTRY POINT ──
 # This is the prod LANE, invoked by mms-deploy.sh. Run `mms-deploy` instead —
@@ -83,8 +84,8 @@ fi
 # mod reaching the prod index by any other route (a bad merge, a hand edit)
 # must not reach the server either. mms-promote.sh already proves this after
 # its strip; prove it again here, at the last point before prod is touched.
-for slug in $(grep -vE '^\s*#|^\s*$' quarantine.txt); do
-    if grep -q "mods/$slug.pw.toml" index.toml; then
+for slug in $(grep -vE '^\s*#|^\s*$' lists/quarantine.txt); do
+    if grep -q "mods/$slug.pw.toml" pack/index.toml; then
         echo "!! quarantined mod '$slug' is in the prod pack index — aborting." >&2
         echo "   See quarantine.txt. Nothing has been pushed or synced." >&2
         exit 1
@@ -130,7 +131,7 @@ PWYES=""
 # in by hand is never cleaned up — and two jars sharing a Fabric mod id stop the
 # client booting at all. The server side has always deduped by mod id; this is
 # the missing client-side half. Overlay dev jars are exempt (see the script).
-python3 ./mms-client-sweep.py "$LIVE_CLIENT" $DRYFLAG
+python3 ./scripts/mms-client-sweep.py "$LIVE_CLIENT" $DRYFLAG
 
 # ship pending local edits before packwiz mixes its changes in with them.
 # --dev guarantees a clean tree, so this branch has nothing to do there.
@@ -166,7 +167,7 @@ ship_start
 PW_RC=0
 # --q (MMS_QUICK=1): skip the third-party bump. The pin below repoints every
 # released MMS mod on its own, so a quick deploy still ships them.
-[ "$MMS_QUICK" = "1" ] || packwiz $PWYES update -a || PW_RC=$?
+[ "$MMS_QUICK" = "1" ] || packwiz --pack-file pack/pack.toml $PWYES update -a || PW_RC=$?
 # A release in flight cannot be taken back, so wait for all of them before
 # acting on a packwiz failure.
 [ -n "$SHIP_PID" ] && echo "── waiting for mod releases ──"
@@ -211,14 +212,14 @@ echo "── release reconcile (local mods) ──"
 # trip per mod, one at a time, was most of this step's wait. The loop below
 # still acts on them in order.
 RELEASE_TAGS=$(mktemp -d)
-for toml in mods/*.pw.toml; do
+for toml in pack/mods/*.pw.toml; do
     slug=$(grep -m1 '^slug = "mudbourn/' "$toml" | sed 's|.*mudbourn/||; s|"||')
     [ -z "$slug" ] && continue
     gh release view --repo "mudbourn/$slug" --json tagName -q .tagName \
         >"$RELEASE_TAGS/$slug" 2>/dev/null &
 done
 wait
-for toml in mods/*.pw.toml; do
+for toml in pack/mods/*.pw.toml; do
     slug=$(grep -m1 '^slug = "mudbourn/' "$toml" | sed 's|.*mudbourn/||; s|"||')
     [ -z "$slug" ] && continue
     base="${${toml:t}%.pw.toml}"
@@ -235,7 +236,7 @@ for toml in mods/*.pw.toml; do
             echo "  [dry-run] would packwiz update $base to v$latest"
         else
             for attempt in 1 2 3 4 5; do
-                packwiz $PWYES update "$base"
+                packwiz --pack-file pack/pack.toml $PWYES update "$base"
                 grep -q "^tag = \"v$latest\"" "$toml" && break
                 echo "   (release not visible yet, retrying in 5s...)"
                 sleep 5
@@ -247,7 +248,7 @@ for toml in mods/*.pw.toml; do
     fi
 
     # ── case B: cut a release for genuinely-unreleased local work ──
-    repo="$HOME/Documents/GitHub/$slug"
+    repo="$MMS_GITHUB_DIR/$slug"
     [ -d "$repo/.git" ] || continue
     # (N) is the NULL_GLOB qualifier: expand to nothing when the repo has never
     # been built, instead of erroring. The 2>/dev/null only ever covered ls's
@@ -293,7 +294,7 @@ for toml in mods/*.pw.toml; do
     # be missing from the list for a few seconds, so retry until the toml
     # actually points at the new tag
     for attempt in 1 2 3 4 5; do
-        packwiz $PWYES update "${${toml:t}%.pw.toml}"
+        packwiz --pack-file pack/pack.toml $PWYES update "${${toml:t}%.pw.toml}"
         grep -q "^tag = \"v$ver\"" "$toml" && break
         echo "   (release not visible yet, retrying in 5s...)"
         sleep 5
@@ -303,16 +304,16 @@ for toml in mods/*.pw.toml; do
     fi
 done
 
-packwiz refresh
-./update-title.sh
+packwiz --pack-file pack/pack.toml refresh
+./scripts/update-title.sh
 
 # An empty file cannot be fetched by the installer, which then warns on every
 # member's launch. Globs cannot match "empty", so each one needs its own line
 # in .packwizignore. Warn here; do not block a deploy over it.
-EMPTY=$(grep -B1 '^hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"' index.toml \
+EMPTY=$(grep -B1 '^hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991bbd7852b855"' pack/index.toml \
         | sed -n 's/^file = "\(.*\)"$/\1/p')
 if [ -n "$EMPTY" ]; then
-    echo "?? empty file(s) in the index — clients will warn. Add to .packwizignore:" >&2
+    echo "?? empty file(s) in the index — clients will warn. Add to pack/.packwizignore:" >&2
     echo "$EMPTY" | sed 's/^/     /' >&2
 fi
 
@@ -341,9 +342,9 @@ rm -rf "$RELEASE_TAGS"
 # Its output is held and printed after theirs.
 OCTANE_LOG=$(mktemp)
 if [ "$DEV" = "1" ]; then
-    ./mms-octane-build.sh --dry-run >"$OCTANE_LOG" 2>&1 &
+    ./scripts/mms-octane-build.sh --dry-run >"$OCTANE_LOG" 2>&1 &
 else
-    ./mms-octane-build.sh >"$OCTANE_LOG" 2>&1 &
+    ./scripts/mms-octane-build.sh >"$OCTANE_LOG" 2>&1 &
 fi
 OCTANE_PID=$!
 
@@ -352,7 +353,7 @@ echo "── server sync (Server Prod / MMSLive01) ──"
 # "MMSLive01" on 2026-07-23; the old name is gone, so this path is the only one
 # that resolves. A dangling link (share unmounted) fails the -d test below just
 # as a missing one does.
-SERVER_MODS="$HOME/Documents/GitHub/Server Prod/mods"
+SERVER_MODS="$MMS_GITHUB_DIR/Server Prod/mods"
 if [ ! -d "$SERVER_MODS" ]; then
     echo "!! server mods folder not mounted at $SERVER_MODS — skipping server sync." >&2
     if [ "$DEV" = "1" ]; then
@@ -375,11 +376,11 @@ fi
 # (below) runs in the background alongside prod's. Its output is held and
 # printed after prod's, so the log still reads prod-then-testing, and a failed
 # prod sync waits for it before stopping the deploy.
-TEST_SERVER_MODS="$HOME/Documents/GitHub/Server Testing/mods"
+TEST_SERVER_MODS="$MMS_GITHUB_DIR/Server Testing/mods"
 TEST_PID=""
 if [ -d "$TEST_SERVER_MODS" ]; then
     TEST_LOG=$(mktemp)
-    python3 ./mms-server-sync.py "$TEST_SERVER_MODS" . --hold testing-hold.txt $DRYFLAG \
+    python3 ./scripts/mms-server-sync.py "$TEST_SERVER_MODS" . --hold lists/testing-hold.txt $DRYFLAG \
         >"$TEST_LOG" 2>&1 &
     TEST_PID=$!
 fi
@@ -387,7 +388,7 @@ PROD_RC=0
 if [ -d "$SERVER_MODS" ]; then
     # --prune (mms-deploy --p) applies here only; the Testing sync above never
     # prunes, for the quarantine reason given below.
-    python3 ./mms-server-sync.py "$SERVER_MODS" $DRYFLAG $PRUNEFLAG || PROD_RC=$?
+    python3 ./scripts/mms-server-sync.py "$SERVER_MODS" $DRYFLAG $PRUNEFLAG || PROD_RC=$?
 fi
 
 echo "── server sync (Server Testing / MMSTesting01) ──"
@@ -397,7 +398,7 @@ echo "── server sync (Server Testing / MMSTesting01) ──"
 # brings it along with released mod updates.
 #
 # It is deliberately weaker than the prod sync:
-#   • --hold testing-hold.txt   mods the test lane owns are never touched
+#   • --hold lists/testing-hold.txt   mods the test lane owns are never touched
 #   • no --prune                a jar that is not in the pack is REPORTED, never
 #                               removed. The unstable quarantine (Aerial Hell,
 #                               DDD, Mutant Monsters, Useless Reptile) lives on
@@ -424,7 +425,7 @@ if [ "$OCTANE_RC" -ne 0 ]; then
     if [ "$DEV" = "1" ]; then
         echo "?? octane dry run failed — prod is unaffected." >&2
     else
-        echo "?? octane rebuild failed — prod is unaffected; rerun ./mms-octane-build.sh." >&2
+        echo "?? octane rebuild failed — prod is unaffected; rerun ./scripts/mms-octane-build.sh." >&2
     fi
 fi
 [ "$PROD_RC" -eq 0 ] || { echo "!! prod server sync failed (exit $PROD_RC)." >&2; exit "$PROD_RC"; }
@@ -445,7 +446,7 @@ fi
 if [ ! -d "$SERVER_MODS" ]; then
     echo "?? netdrift check skipped — $SERVER_MODS not mounted." >&2
 else
-    NETDRIFT_OUT="$(python3 ./mms-netdrift-check.py "$SERVER_MODS" .)" && NETDRIFT_RC=0 || NETDRIFT_RC=$?
+    NETDRIFT_OUT="$(python3 ./scripts/mms-netdrift-check.py "$SERVER_MODS" .)" && NETDRIFT_RC=0 || NETDRIFT_RC=$?
     # NOTE lines are baggage-level drift and are intentionally not shown here.
     echo "$NETDRIFT_OUT" | grep -vE '^NOTE' || true
     if [ "$NETDRIFT_RC" -ne 0 ]; then

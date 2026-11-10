@@ -4,9 +4,9 @@
 # repo-specific. All the real logic — libs, sibling composite builds, version
 # stamping, publishing — lives in the reusable engine it calls, which derives
 # everything from the repo's own tree. Adding a new mod repo is: drop this file
-# in, add one line to mms-pack/mms-repos.toml.
+# in, add one line to mms-pack/lists/mms-repos.toml.
 #
-# mms-repos.py --check-callers verifies every manifested repo's release.yml
+# scripts/mms-repos.py --check-callers verifies every manifested repo's release.yml
 # still matches this template, so a hand-edit here is caught instead of drifting.
 name: Release
 

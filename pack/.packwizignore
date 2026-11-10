@@ -1,5 +1,4 @@
 .git/**
-/__pycache__/**
 *.pyc
 # JVM crash dumps — never index these (a crashing `java` run in the repo dir
 # drops hs_err_pid*.log here, and packwiz refresh would ship them to clients).
@@ -15,30 +14,7 @@ replay_pid*.log
 /config/spark/activity.json
 /xaero/world-map/**
 *.mrpack
-/mms-add.sh
-/mms-remove.sh
-/mms-release.sh
-/mms-deploy.sh
-/update-title.sh
-/disabled-mods/**
 .DS_Store
-# Repo tooling / docs / dev lists — never ship to clients
-/mms-*.py
-/mms-*.sh
-/mms-repos.toml
-/dev-client-jvm-args.txt
-/recommended-jvm-args.txt
-/netdrift-allow.txt
-/quarantine.txt
-/testing-hold.txt
-/overlay.list
-/.packignore
-/README.md
-/docs/**
-/LICENSE
-/.github/**
-# Server-only datapacks
-/server-datapacks/**
 # Caches / backups
 *.backup
 config/voicechat/username-cache.json
@@ -72,5 +48,3 @@ config/isxander-main-menu-credits.json
 # main with this same ignore file, so one entry covers both packs. The prod
 # lane warns if a new empty file reaches the index.
 config/essentialcommands/rules.txt
-/octane.list
-/octane/

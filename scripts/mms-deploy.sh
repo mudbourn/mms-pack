@@ -1,4 +1,5 @@
 #!/bin/zsh
+. "$(dirname "$0")/paths.local.env" || { echo "!! missing scripts/paths.local.env (copy scripts/paths.env.example)" >&2; exit 1; }
 # mms-deploy — the single entry point for shipping the pack.
 #
 # There used to be three commands, and knowing which one to run meant knowing
@@ -45,7 +46,7 @@
 # in mms-promote.sh. Call those directly only when debugging — they assume this
 # script has already validated the branch.
 set -e
-cd ~/Documents/GitHub/mms-pack
+cd "$MMS_PACK_DIR"
 
 DEV=0
 MERGE=0
@@ -123,7 +124,7 @@ if [ "$MERGE" = "1" ]; then
     switch_to "main"
     PROMOTEFLAG=""
     [ "$YES" = "1" ] && PROMOTEFLAG="-y"
-    exec ./mms-promote.sh $PROMOTEFLAG
+    exec ./scripts/mms-promote.sh $PROMOTEFLAG
 fi
 
 # ── lane selection ──
@@ -153,16 +154,16 @@ PRUNEFLAG=""
 # `set -e`.
 SHIP_SERVER=""
 case "$BRANCH" in
-    main)    SHIP_SERVER="$HOME/Documents/GitHub/Server Prod/mods" ;;
-    testing) SHIP_SERVER="$HOME/Documents/GitHub/Server Testing/mods" ;;
+    main)    SHIP_SERVER="$MMS_GITHUB_DIR/Server Prod/mods" ;;
+    testing) SHIP_SERVER="$MMS_GITHUB_DIR/Server Testing/mods" ;;
 esac
-if [ -n "$SHIP_SERVER" ] && [ -x ./mms-ship.py ]; then
+if [ -n "$SHIP_SERVER" ] && [ -x ./scripts/mms-ship.py ]; then
     echo "── release plan (mms-ship, diff vs ${BRANCH} server) ──"
     SHIPFLAG=""
     [ "$DEV" = "1" ] && SHIPFLAG="-n"
     [ "$DEV" != "1" ] && [ "$YES" = "1" ] && SHIPFLAG="-y"
     export MMS_SHIP_PLAN="$(mktemp -t mms-ship-plan)"
-    ./mms-ship.py --server "$SHIP_SERVER" $SHIPFLAG --plan-out "$MMS_SHIP_PLAN"
+    ./scripts/mms-ship.py --server "$SHIP_SERVER" $SHIPFLAG --plan-out "$MMS_SHIP_PLAN"
 fi
 # The drift heads-up that used to print here now prints in the lane, after the
 # releases and the pin. Up here it would list every repo the plan above is
@@ -177,10 +178,10 @@ export MMS_QUICK="$QUICK"
 case "$BRANCH" in
     main)
         echo "── branch 'main' → PROD lane (MMSLive01) ──"
-        exec ./mms-deploy-prod.sh $DEVFLAG $PRUNEFLAG ;;
+        exec ./scripts/mms-deploy-prod.sh $DEVFLAG $PRUNEFLAG ;;
     testing)
         echo "── branch 'testing' → TESTING lane (MMSTesting01) ──"
-        exec ./mms-deploy-test.sh $DEVFLAG $PRUNEFLAG ;;
+        exec ./scripts/mms-deploy-test.sh $DEVFLAG $PRUNEFLAG ;;
     *)
         echo "!! mms-deploy: on branch '$BRANCH', which has no lane." >&2
         echo "   Only 'main' (prod) and 'testing' (staging) can be deployed." >&2

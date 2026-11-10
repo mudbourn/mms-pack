@@ -15,7 +15,7 @@ SHIP_LOG=""
 ship_start() {
     [ -n "$MMS_SHIP_PLAN" ] && [ -s "$MMS_SHIP_PLAN" ] || return 0
     SHIP_LOG=$(mktemp -t mms-ship-log)
-    ./mms-ship.py --run "$MMS_SHIP_PLAN" >"$SHIP_LOG" 2>&1 &
+    ./scripts/mms-ship.py --run "$MMS_SHIP_PLAN" >"$SHIP_LOG" 2>&1 &
     SHIP_PID=$!
 }
 
@@ -41,7 +41,7 @@ ship_wait() {
 ship_pin() {
     PIN_RC=0
     [ -n "$MMS_SHIP_PLAN" ] && [ -s "$MMS_SHIP_PLAN" ] || return 0
-    ./mms-ship.py --pin "$MMS_SHIP_PLAN" || PIN_RC=$?
+    ./scripts/mms-ship.py --pin "$MMS_SHIP_PLAN" || PIN_RC=$?
     rm -f "$MMS_SHIP_PLAN"
 }
 
@@ -49,12 +49,12 @@ ship_pin() {
 # pack pin and latest release still disagree after the releases and the pin.
 # Reconcile deliberately with `mms-release <repo>` (or --all).
 drift_report() {
-    [ -x ./mms-repos.py ] || return 0
+    [ -x ./scripts/mms-repos.py ] || return 0
     local out
-    if ! out="$(./mms-repos.py drift --no-online 2>/dev/null)"; then
+    if ! out="$(./scripts/mms-repos.py drift --no-online 2>/dev/null)"; then
         echo "── heads-up: version drift detected (pack pin vs source) ──"
         echo "$out" | sed 's/^/   /'
-        echo "   (informational only — deploying anyway; run ./mms-repos.py drift for the online view)"
+        echo "   (informational only — deploying anyway; run ./scripts/mms-repos.py drift for the online view)"
         echo
     fi
 }

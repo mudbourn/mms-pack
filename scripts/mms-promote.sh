@@ -1,10 +1,11 @@
 #!/bin/zsh
+. "$(dirname "$0")/paths.local.env" || { echo "!! missing scripts/paths.local.env (copy scripts/paths.env.example)" >&2; exit 1; }
 # mms-promote — promote validated testing-branch changes to production.
 #
 #   1. warn if any dev-jar overlays are still active (those must be released,
 #      not merged — they are not tracked in the pack)
 #   2. merge `testing` → `main`
-#   3. strip quarantined mods back out on the main side (see quarantine.txt)
+#   3. strip quarantined mods back out on the main side (see lists/quarantine.txt)
 #   4. stop, on main, with the merge result for you to inspect
 #
 # MERGE ONLY — this does not deploy. It used to call mms-deploy.sh itself, which
@@ -16,12 +17,12 @@
 set -e
 YES=0
 [ "$1" = "-y" ] && YES=1
-cd ~/Documents/GitHub/mms-pack
+cd "$MMS_PACK_DIR"
 
 # active overlays are dev builds with no release — surface them before promoting
-active=$(grep -vE '^\s*#|^\s*$' overlay.list 2>/dev/null || true)
+active=$(grep -vE '^\s*#|^\s*$' lists/overlay.list 2>/dev/null || true)
 if [ -n "$active" ]; then
-    echo "!! overlay.list still lists dev jars under test:" >&2
+    echo "!! lists/overlay.list still lists dev jars under test:" >&2
     echo "$active" | sed 's/^/     /' >&2
     echo "   Promotion cuts their real release via mms-deploy (release reconcile)." >&2
     echo "   After a clean prod deploy, clear them from overlay.list." >&2
@@ -53,17 +54,17 @@ stripped=()
 while IFS= read -r slug; do
     slug="${${slug%%\#*}## }"; slug="${slug%% }"
     [ -z "$slug" ] && continue
-    meta="mods/${slug}.pw.toml"
+    meta="pack/mods/${slug}.pw.toml"
     if [ -f "$meta" ]; then
         git rm -q "$meta"
         stripped+=("$slug")
     fi
-done < quarantine.txt
+done < lists/quarantine.txt
 
 if [ ${#stripped[@]} -gt 0 ]; then
     echo "── quarantine: removed ${#stripped[@]} mod(s) from the prod pack ──"
     printf '     %s\n' "${stripped[@]}"
-    packwiz refresh
+    packwiz --pack-file pack/pack.toml refresh
     git add -A
     git commit -q -m "strip quarantined mods from prod pack"
 else
@@ -71,9 +72,9 @@ else
 fi
 
 # Belt and braces: prove the quarantine is actually gone before prod is touched.
-# A typo'd slug in quarantine.txt would silently strip nothing above.
-for slug in $(grep -vE '^\s*#|^\s*$' quarantine.txt); do
-    if [ -f "mods/${slug}.pw.toml" ]; then
+# A typo'd slug in lists/quarantine.txt would silently strip nothing above.
+for slug in $(grep -vE '^\s*#|^\s*$' lists/quarantine.txt); do
+    if [ -f "pack/mods/${slug}.pw.toml" ]; then
         echo "!! quarantined mod '$slug' is STILL in the prod pack — aborting." >&2
         echo "   Prod deploy not run. Investigate before re-promoting." >&2
         exit 1

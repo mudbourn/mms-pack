@@ -1,8 +1,9 @@
 #!/bin/zsh
+. "$(dirname "$0")/paths.local.env" || { echo "!! missing scripts/paths.local.env (copy scripts/paths.env.example)" >&2; exit 1; }
 # mms-overlay-apply — drop locally-built "dev jars" into a mods folder, on top
 # of whatever packwiz already installed there.
 #
-#   ./mms-overlay-apply.sh <target_mods_dir>
+#   ./scripts/mms-overlay-apply.sh <target_mods_dir>
 #
 # An unreleased build has no packwiz download URL, so it can't ride the pack.
 # Instead, `overlay.list` names the repo slugs currently under active testing;
@@ -15,8 +16,8 @@
 set -e
 
 TARGET="$1"
-PACK="$HOME/Documents/GitHub/mms-pack"
-LIST="$PACK/overlay.list"
+PACK="$MMS_PACK_DIR"
+LIST="$PACK/lists/overlay.list"
 
 [ -n "$TARGET" ] || { echo "overlay: usage: mms-overlay-apply.sh <target_mods_dir>" >&2; exit 2; }
 [ -d "$TARGET" ] || { echo "overlay: target '$TARGET' does not exist" >&2; exit 1; }
@@ -34,7 +35,7 @@ while IFS= read -r raw; do
     slug="${slug//[[:space:]]/}"            # strip whitespace
     [ -z "$slug" ] && continue
 
-    repo="$HOME/Documents/GitHub/$slug"
+    repo="$MMS_GITHUB_DIR/$slug"
     jar=$(ls -t "$repo"/build/libs/*.jar 2>/dev/null | grep -v -- -sources | head -1)
     if [ -z "$jar" ]; then
         echo "overlay: no build/libs jar for '$slug' — skipping" >&2

@@ -1,8 +1,9 @@
 #!/bin/zsh
+. "$(dirname "$0")/paths.local.env" || { echo "!! missing scripts/paths.local.env (copy scripts/paths.env.example)" >&2; exit 1; }
 # mms-hotswap-watch — recompile a mod on save and push the classes into the
 # running MMS Dev client, with no game restart.
 #
-#   ./mms-hotswap-watch.sh mms-mod-compat-support
+#   ./scripts/mms-hotswap-watch.sh mms-mod-compat-support
 #
 # How the pieces fit:
 #   • Gradle runs with --continuous, so saving a .java file rebuilds it.
@@ -21,17 +22,17 @@
 #   ✗ registry and mod-init code -- it swaps, but it already ran
 #
 # The mod must already be running in the client. Deploy it once through the
-# normal overlay path (./mms-deploy-test.sh with the slug in overlay.list)
+# normal overlay path (./scripts/mms-deploy-test.sh with the slug in overlay.list)
 # before hotswapping onto it.
 set -e
 
 slug="$1"
 if [ -z "$slug" ]; then
-    echo "usage: ./mms-hotswap-watch.sh <repo-slug>   e.g. mms-mod-compat-support" >&2
+    echo "usage: ./scripts/mms-hotswap-watch.sh <repo-slug>   e.g. mms-mod-compat-support" >&2
     exit 1
 fi
 
-repo="$HOME/Documents/GitHub/$slug"
+repo="$MMS_GITHUB_DIR/$slug"
 [ -d "$repo" ] || { echo "!! no repo at $repo" >&2; exit 1; }
 [ -f "$repo/gradlew" ] || { echo "!! $slug has no gradlew — not a Gradle mod repo." >&2; exit 1; }
 

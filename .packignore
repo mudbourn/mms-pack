@@ -1,5 +1,5 @@
 # Per-user / per-OS generated data — never distribute
-mods/mcef-libraries/
+pack/mods/mcef-libraries/
 .fabric/
 .cache/
 .mixin.out/
