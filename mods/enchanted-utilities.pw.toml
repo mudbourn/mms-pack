@@ -3,11 +3,11 @@ filename = "enchanted-utilities-1.2.0.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/Tu3w5HjV/versions/jKaeYndB/enchanted-utilities-1.2.0.jar"
+url = "https://cdn.modrinth.com/data/Tu3w5HjV/versions/M0hBXgk7/enchanted-utilities-1.2.0.jar"
 hash-format = "sha512"
-hash = "a7c51df9aa3690ee841e2d36f5ae1340239f88821393c68ba53ef9ee3ae7c661c26926fb1ff1aa6c1b0cfb1f84c1592718f1f494845203275a360f8d3f71a6a0"
+hash = "cecef41ed151e15b631f427165d11c669f9b99017567a1acd9731db74f441ed19837ddd01cc63bec2c4dc84e97daa9fe1a812c94973928b9138a3e1b23218d8a"
 
 [update]
 [update.modrinth]
 mod-id = "Tu3w5HjV"
-version = "jKaeYndB"
+version = "M0hBXgk7"

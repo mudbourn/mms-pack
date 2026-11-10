@@ -2244,7 +2244,7 @@ metafile = true
 
 [[files]]
 file = "mods/enchanted-utilities.pw.toml"
-hash = "ab47199a98582e64c0d9c14e3dfcac407fb278b2b1ab7f7f42ce54af3bfd57e1"
+hash = "1e19a2a7aed724c49945fe33b79b60c85571dfd43f15c2bb346cdb3d072bfb8f"
 metafile = true
 
 [[files]]
@@ -2629,7 +2629,7 @@ metafile = true
 
 [[files]]
 file = "mods/mms-metro.pw.toml"
-hash = "d0720b3b8c850f347242c07cf4048a32c56f4bfe07c24b6bfbb4ddcd8f55187b"
+hash = "e2fdb385c0ddb9620b22cbc5aa30f6ca2f0bb3b94e66ab1dbd157c3bf58dca6d"
 metafile = true
 
 [[files]]
