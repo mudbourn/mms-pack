@@ -20,8 +20,14 @@
 #                    these releases?" (and mms-release's, via ship -y) and
 #                    --M's "overlays still active, continue?" prompt. The
 #                    branch, dirty-tree and flag-combination guards still apply.
+#   mms-deploy --q   QUICK — skip `packwiz update -a` on the prod lane, which
+#                    checks every third-party mod against Modrinth/CurseForge and
+#                    is most of a deploy's wait. Your own mods still release,
+#                    pin and sync as normal; third-party mods stay where they
+#                    are until a deploy without --q. The testing lane never
+#                    runs update -a, so --q changes nothing there.
 #
-# Long forms (--main/--testing/--merge/--dev/--prune/--yes) work too.
+# Long forms (--main/--testing/--merge/--dev/--prune/--yes/--quick) work too.
 #
 # ⚠ --m and --M differ ONLY in case, and they are opposites in blast radius:
 #   --m deploys to the live server, --M merges and deploys nothing. If you mean
@@ -45,6 +51,7 @@ DEV=0
 MERGE=0
 PRUNE=0
 YES=0
+QUICK=0
 WANT_BRANCH=""
 
 for arg in "$@"; do
@@ -55,6 +62,7 @@ for arg in "$@"; do
         --d|--dev)     DEV=1 ;;
         --p|--prune)   PRUNE=1 ;;
         --y|--yes)     YES=1 ;;
+        --q|--quick)   QUICK=1 ;;
         --M|--merge)   MERGE=1 ;;
         --m|--main)    WANT_BRANCH="main" ;;
         --t|--testing) WANT_BRANCH="testing" ;;
@@ -66,8 +74,8 @@ for arg in "$@"; do
             exit 0 ;;
         *)
             echo "!! mms-deploy: unknown argument '$arg'" >&2
-            echo "   usage: mms-deploy [--d] [--p] [--y] [--m|--t] [--M]" >&2
-            echo "     --m main    --t testing    --M merge    --d dry run    --p prune    --y skip prompts" >&2
+            echo "   usage: mms-deploy [--d] [--p] [--y] [--q] [--m|--t] [--M]" >&2
+            echo "     --m main    --t testing    --M merge    --d dry run    --p prune    --y skip prompts    --q skip third-party update" >&2
             echo "   run 'mms-deploy --help' for what each one does." >&2
             exit 2 ;;
     esac
@@ -159,6 +167,12 @@ fi
 # The drift heads-up that used to print here now prints in the lane, after the
 # releases and the pin. Up here it would list every repo the plan above is
 # about to release.
+
+# --y reaches the lanes through the environment, so their packwiz calls
+# (update -a and the per-mod adopts) skip their "Do you want to update?" prompts.
+export MMS_YES="$YES"
+# --q likewise: the prod lane skips `packwiz update -a`.
+export MMS_QUICK="$QUICK"
 
 case "$BRANCH" in
     main)

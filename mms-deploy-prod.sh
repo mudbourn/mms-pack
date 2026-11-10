@@ -120,6 +120,10 @@ fi
 LIVE_CLIENT="$HOME/Library/Application Support/PrismLauncher/instances/MMS Live/minecraft"
 DRYFLAG=""
 [ "$DEV" = "1" ] && DRYFLAG="--dry-run"
+# mms-deploy --y exports MMS_YES=1: packwiz then applies its update list
+# without asking, same as every other prompt --y skips.
+PWYES=""
+[ "$MMS_YES" = "1" ] && PWYES="-y"
 
 # ── client sweep (preflight) ──
 # packwiz-installer only manages files listed in packwiz.json, so a jar copied
@@ -148,13 +152,21 @@ fi
 # packwiz may or may not see a release cut while it runs. That does not matter:
 # the pin below repoints every mod that was released, whatever packwiz saw.
 if [ -n "$MMS_SHIP_PLAN" ] && [ -s "$MMS_SHIP_PLAN" ]; then
-    echo "── parallel: mod releases (background) + packwiz update -a ──"
+    if [ "$MMS_QUICK" = "1" ]; then
+        echo "── mod releases (--q: packwiz update -a skipped) ──"
+    else
+        echo "── parallel: mod releases (background) + packwiz update -a ──"
+    fi
+elif [ "$MMS_QUICK" = "1" ]; then
+    echo "── --q: packwiz update -a skipped (third-party mods unchanged) ──"
 else
     echo "── packwiz update -a ──"
 fi
 ship_start
 PW_RC=0
-packwiz update -a || PW_RC=$?
+# --q (MMS_QUICK=1): skip the third-party bump. The pin below repoints every
+# released MMS mod on its own, so a quick deploy still ships them.
+[ "$MMS_QUICK" = "1" ] || packwiz $PWYES update -a || PW_RC=$?
 # A release in flight cannot be taken back, so wait for all of them before
 # acting on a packwiz failure.
 [ -n "$SHIP_PID" ] && echo "── waiting for mod releases ──"
@@ -223,7 +235,7 @@ for toml in mods/*.pw.toml; do
             echo "  [dry-run] would packwiz update $base to v$latest"
         else
             for attempt in 1 2 3 4 5; do
-                packwiz update "$base"
+                packwiz $PWYES update "$base"
                 grep -q "^tag = \"v$latest\"" "$toml" && break
                 echo "   (release not visible yet, retrying in 5s...)"
                 sleep 5
@@ -281,7 +293,7 @@ for toml in mods/*.pw.toml; do
     # be missing from the list for a few seconds, so retry until the toml
     # actually points at the new tag
     for attempt in 1 2 3 4 5; do
-        packwiz update "${${toml:t}%.pw.toml}"
+        packwiz $PWYES update "${${toml:t}%.pw.toml}"
         grep -q "^tag = \"v$ver\"" "$toml" && break
         echo "   (release not visible yet, retrying in 5s...)"
         sleep 5

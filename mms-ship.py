@@ -353,7 +353,7 @@ def pin_releases(manifest, todo, released) -> bool:
         # The releases API is eventually consistent: a release cut seconds ago
         # can be missing from the list, so retry until the metafile moves.
         for attempt in range(5):
-            subprocess.run(["packwiz", "update", slug], cwd=PACK_DIR,
+            subprocess.run(["packwiz", "-y", "update", slug], cwd=PACK_DIR,
                            stdin=subprocess.DEVNULL, capture_output=True)
             if want in toml.read_text():
                 break
