@@ -1206,7 +1206,7 @@ hash = "37a915e0517429efc2f076d05db6e5953d188712fb01920bc3f3dc47e09247e9"
 
 [[files]]
 file = "config/mms_economy_buylist.json"
-hash = "f74a2b374397d47ea28ae6d59b1ae1c3572df740f43fb892c9862b8b7c0181cf"
+hash = "a14b717566c9a5c834c4b77e8c442b479927325a207398e6d77de49143984eb4"
 
 [[files]]
 file = "config/mms_metro.json"
@@ -2629,7 +2629,7 @@ metafile = true
 
 [[files]]
 file = "mods/mms-metro.pw.toml"
-hash = "32adcd2ca230e1f633de4bf2ced5b1f6b41030dc3007aae518545f62caccbeb9"
+hash = "4093c7dd05adce140d0820975c435fc55f2dbb2d4de74023669f539a4ed32fd7"
 metafile = true
 
 [[files]]
