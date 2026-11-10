@@ -55,7 +55,7 @@ Download from **https://prismlauncher.org/download/** and sign in with your Micr
 - Close.
 ![alt text](https://save.mudbourn.info/s/YDNAdrSyDrALRiz/download "Graph")
 
-> **Octane users:** right-click the instance -> **Edit** -> **Settings** -> **Java**. Tick **Memory** and set
+> **ALL users:** right-click the instance -> **Edit** -> **Settings** -> **Java**. Tick **Memory** and set
 > **Minimum** and **Maximum** to a **comfortably low number**. 
 > I've tested with a maximum of both **4096** and **2048** on separate occasions and both work well.
 > Tick **Java Arguments** and paste:
