@@ -3,6 +3,6 @@
   "enableEntityMeleeEquipment": true,
   "enableTrialChamberMeleeEquipment": true,
   "enableWeaponsmithTrades": true,
-  "altTwoHandedSwordHandling": false,
+  "altTwoHandedSwordHandling": true,
   "disableExtraDurabilityDamageForAxes": true
 }

@@ -953,14 +953,6 @@ file = "config/ixeris.toml"
 hash = "1a3a9a49ed9d246c0fcc62da8d6d89092eb4161cf6e6cfed72b048c63bd91628"
 
 [[files]]
-file = "config/jeg-client.toml"
-hash = "46b2c7e03946af3057bc03a1e04f86e7bb6e6a3386158e66ba379d28f0267aed"
-
-[[files]]
-file = "config/jeg-server.toml"
-hash = "edc18e39429637e2c2fa4ba5181f8d80e5e181cbed18ee14ac5ed3d13af375fe"
-
-[[files]]
 file = "config/jei-server.properties"
 hash = "866b0d3890088e93bbaa0eb498bdc610dc043df1af99f43fdc3b46fbca79d360"
 
@@ -1786,7 +1778,7 @@ hash = "e5806ca350b26f9c299c7b75728f3f9c0664c286470daa027e4ce547097b90a5"
 
 [[files]]
 file = "config/weaponsexpanded.json"
-hash = "3ecc321496bda06b0fe958777bdb91f88f29677d6f44d863cbe3c636d08a6ad0"
+hash = "2dd6e8257bc16bda968d817c9f85f5a776d2d1850aafe6fec1bc9d19e97fd06c"
 
 [[files]]
 file = "config/xaero/lib/client.cfg"
@@ -2500,11 +2492,6 @@ hash = "3abcbe7591abd53c5ef6c6cb8efff256cd3e7e2c1131341aebe5d49c99548648"
 metafile = true
 
 [[files]]
-file = "mods/just-enough-guns-neoforge.pw.toml"
-hash = "0164c53757bcd5546d415cd8bad463b43a39c13d6e45ae9f436c76b844771d9d"
-metafile = true
-
-[[files]]
 file = "mods/just-scythe.pw.toml"
 hash = "56f26e05f27bb10deec2b2b4776ba3efb267dfbaca70411b780acf7981160d22"
 metafile = true
@@ -2621,17 +2608,17 @@ metafile = true
 
 [[files]]
 file = "mods/mms-arsenal.pw.toml"
-hash = "4258ebd488be4ac68f3127cca5c3ee077d31612bbbcb4e1bb04d7b123798874a"
+hash = "bee90bfcb5628bc1cd54f654330be5e7a82510fb37919638981365bf60ebef1f"
 metafile = true
 
 [[files]]
 file = "mods/mms-combat.pw.toml"
-hash = "13175734a0ce1122e8fd65f98fdc924fbb187813c677649299dd5a78a7a50c2b"
+hash = "b7f6d4f6c522c5e0249bab08baf628964f5ea0f4d183991c748c99a11d3fa4fe"
 metafile = true
 
 [[files]]
 file = "mods/mms-economy.pw.toml"
-hash = "dcfd805397c448481f798a5ed74f39301dc324d857472fbb3615555a21c0efc6"
+hash = "e198a178fbc4c82fcdf2b71cceacf5275921faa91adf4e5eafb6e72926f20558"
 metafile = true
 
 [[files]]
@@ -2651,12 +2638,12 @@ metafile = true
 
 [[files]]
 file = "mods/mms-mod-compat-support.pw.toml"
-hash = "28cf54a5797a8871ae4278e7f3ebd52a47c353228ce49389a70c5ae8f50c3c7e"
+hash = "2f3a682a553335015afdbe2bd7a4f8b15d6ab63b456f0df59e25bf51f937f9e7"
 metafile = true
 
 [[files]]
 file = "mods/mms-origins.pw.toml"
-hash = "fdf247081a17f2c7ecbe15bf03507ef86eb16bc33ce0ace972574430bc63139c"
+hash = "65f28b31d448f6972462f801d68766a9686143b47a3010b95021cde6fce74d0a"
 metafile = true
 
 [[files]]
@@ -2671,7 +2658,7 @@ metafile = true
 
 [[files]]
 file = "mods/mms-weapons.pw.toml"
-hash = "7926b7ab13f4aa8f5779f102cc5c051f50ee4a3c8b7a1f95cb2c66aabad0bcb6"
+hash = "653f728b01ed863ee76e7ffdc03a1c718a773c2e073995004b18e6a53b3eb614"
 metafile = true
 
 [[files]]

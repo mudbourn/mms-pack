@@ -1,15 +1,15 @@
 name = "mms-mod-compat-support"
-filename = "mms-mod-compat-support-1.1.27.jar"
+filename = "mms-mod-compat-support-1.1.28.jar"
 side = "both"
 
 [download]
-url = "https://github.com/mudbourn/mms-mod-compat-support/releases/download/v1.1.27/mms-mod-compat-support-1.1.27.jar"
+url = "https://github.com/mudbourn/mms-mod-compat-support/releases/download/v1.1.28/mms-mod-compat-support-1.1.28.jar"
 hash-format = "sha256"
-hash = "8680f27f2e00d9a0f776823c19f9ffaa7f9f7b784f84166b91aa42360c9aa7d2"
+hash = "eef56178e577776e102117a72b12ea5933028c4733c594780b13d74010578654"
 
 [update]
 [update.github]
 branch = "main"
 regex = "^.+(?<!-api|-dev|-dev-preshadow|-sources)\\.jar$"
 slug = "mudbourn/mms-mod-compat-support"
-tag = "v1.1.27"
+tag = "v1.1.28"
