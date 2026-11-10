@@ -3,21 +3,27 @@
 #
 # 1. commit + push             any pending local changes ship first, untangled
 #                              from whatever packwiz is about to touch
-# 2. release reconcile         for our own mods (mudbourn/* slugs). ADOPT-FIRST:
-#                              if GitHub already has a release the pack is behind
-#                              (you pushed + released it yourself), just point the
-#                              pack at it. Only if a LOCAL build is newer than any
-#                              release does it commit+push the repo and cut one.
-# 3. packwiz update -a         bump every mod to latest
-# 4. packwiz refresh           rebuild index
+# 2. PARALLEL PHASE            two things at once, then wait for both:
+#      mod releases            the plan mms-deploy.sh confirmed, one task per
+#                              repo (mms-ship --run). Cuts releases only.
+#      packwiz update -a       bump every third-party mod to latest
+# 3. pin + release reconcile   one after the other, since each rewrites the
+#                              index: point the pack at the releases just cut
+#                              (mms-ship --pin), then ADOPT any release GitHub
+#                              has that the pack is still behind (you pushed +
+#                              released it yourself).
+# 4. packwiz refresh           rebuild index, once
 # 5. ./update-title.sh         re-apply preserve flags
 # 6. commit + push             the packwiz changes; clients pick both up on
 #                              next Prism launch
-# 7. server sync (prod)        diff side=both/server mods against MMSLive01/mods,
+# 7. PARALLEL PHASE            three things at once, then wait for all:
+#      server sync (prod)      diff side=both/server mods against MMSLive01/mods,
 #                              copy new jars in, remove superseded versions
-# 8. server sync (testing)     same, against MMSTesting01/mods, but read-only
+#      server sync (testing)   same, against MMSTesting01/mods, but read-only
 #                              about anything the test lane owns — see
 #                              testing-hold.txt. Never prunes, never fatal.
+#      octane rebuild          the low-end branch, from the main just pushed.
+#                              Never fatal.
 #
 # 0. client sweep (preflight)  remove hand-dropped jars in the live instance that
 #                              duplicate a packwiz-managed mod id. Runs FIRST, so
@@ -36,6 +42,7 @@
 #        hard reset and it must not be able to eat uncommitted work.
 set -e
 cd ~/Documents/GitHub/mms-pack
+source ./mms-deploy-phase.sh
 
 # ── NOT THE ENTRY POINT ──
 # This is the prod LANE, invoked by mms-deploy.sh. Run `mms-deploy` instead —
@@ -132,7 +139,44 @@ else
     echo "pack: local changes pushed"
 fi
 
+# ── parallel phase: mod releases ‖ third-party update ──
+# The releases only build, push and cut GitHub releases; packwiz update -a only
+# rewrites the pack. Neither reads what the other writes, so they run together.
+# The releases go to the background and log to a file. packwiz keeps the
+# terminal, because it asks before applying its update list.
+#
+# packwiz may or may not see a release cut while it runs. That does not matter:
+# the pin below repoints every mod that was released, whatever packwiz saw.
+if [ -n "$MMS_SHIP_PLAN" ] && [ -s "$MMS_SHIP_PLAN" ]; then
+    echo "── parallel: mod releases (background) + packwiz update -a ──"
+else
+    echo "── packwiz update -a ──"
+fi
+ship_start
+PW_RC=0
+packwiz update -a || PW_RC=$?
+# A release in flight cannot be taken back, so wait for all of them before
+# acting on a packwiz failure.
+[ -n "$SHIP_PID" ] && echo "── waiting for mod releases ──"
+ship_wait
+
+echo "── pin released mods ──"
+ship_pin
+if [ "$PW_RC" -ne 0 ]; then
+    echo "!! packwiz update -a failed (exit $PW_RC). Nothing pushed or synced." >&2
+    exit "$PW_RC"
+fi
+if [ "$SHIP_RC" -ne 0 ] || [ "$PIN_RC" -ne 0 ]; then
+    # Same stop as before the rework: a half-released suite must not reach the
+    # server. What did release is pinned in the working tree, uncommitted.
+    echo "!! a mod release or its pack pin failed — see above. Nothing synced." >&2
+    exit 1
+fi
+drift_report
+
 echo "── release reconcile (local mods) ──"
+# Runs after the parallel phase so it also adopts anything a release above
+# made visible that the pin did not cover.
 # Two ways one of our mods gets a new version, and this handles both:
 #
 #   A. You released it yourself — pushed the repo to main and let its release.yml
@@ -247,9 +291,18 @@ for toml in mods/*.pw.toml; do
     fi
 done
 
-packwiz update -a
 packwiz refresh
 ./update-title.sh
+
+# An empty file cannot be fetched by the installer, which then warns on every
+# member's launch. Globs cannot match "empty", so each one needs its own line
+# in .packwizignore. Warn here; do not block a deploy over it.
+EMPTY=$(grep -B1 '^hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"' index.toml \
+        | sed -n 's/^file = "\(.*\)"$/\1/p')
+if [ -n "$EMPTY" ]; then
+    echo "?? empty file(s) in the index — clients will warn. Add to .packwizignore:" >&2
+    echo "$EMPTY" | sed 's/^/     /' >&2
+fi
 
 git add -A
 if git diff --cached --quiet; then
@@ -270,12 +323,17 @@ rm -rf "$RELEASE_TAGS"
 # ── octane (low-end PC branch) ──
 # Rebuild octane from the main just pushed, so it never lags behind. Client
 # only: no server runs octane. A failure here must not block the server sync.
-echo "── octane rebuild ──"
+#
+# It builds in its own git worktree from the pushed commit and never reads the
+# server folders, so it runs in the background alongside both server syncs.
+# Its output is held and printed after theirs.
+OCTANE_LOG=$(mktemp)
 if [ "$DEV" = "1" ]; then
-    ./mms-octane-build.sh --dry-run || echo "?? octane dry run failed — prod is unaffected." >&2
+    ./mms-octane-build.sh --dry-run >"$OCTANE_LOG" 2>&1 &
 else
-    ./mms-octane-build.sh || echo "?? octane rebuild failed — prod is unaffected; rerun ./mms-octane-build.sh." >&2
+    ./mms-octane-build.sh >"$OCTANE_LOG" 2>&1 &
 fi
+OCTANE_PID=$!
 
 echo "── server sync (Server Prod / MMSLive01) ──"
 # Symlink → /Volumes/AMP-Instances/instances/MMSLive01/Minecraft/. Renamed from
@@ -344,6 +402,18 @@ else
     cat "$TEST_LOG"
     rm -f "$TEST_LOG"
     [ "$TEST_RC" -eq 0 ] || echo "?? testing sync reported problems — prod is unaffected." >&2
+fi
+
+echo "── octane rebuild ──"
+wait "$OCTANE_PID" && OCTANE_RC=0 || OCTANE_RC=$?
+cat "$OCTANE_LOG"
+rm -f "$OCTANE_LOG"
+if [ "$OCTANE_RC" -ne 0 ]; then
+    if [ "$DEV" = "1" ]; then
+        echo "?? octane dry run failed — prod is unaffected." >&2
+    else
+        echo "?? octane rebuild failed — prod is unaffected; rerun ./mms-octane-build.sh." >&2
+    fi
 fi
 [ "$PROD_RC" -eq 0 ] || { echo "!! prod server sync failed (exit $PROD_RC)." >&2; exit "$PROD_RC"; }
 

@@ -37,9 +37,33 @@ mods that includeBuild it):
   3. For every BUMP/RELEASE, hand the repo to mms-release.sh, which owns the
      irreversible part: it rewrites gradle.properties (for a bump), builds,
      verifies the built jar actually carries the target version, refuses to walk
-     a release backwards, cuts the tagged GitHub release, and repoints the pack
-     metafile. mms-ship never re-implements any of that; it only decides the set
-     and the bump level.
+     a release backwards, and cuts the tagged GitHub release. mms-ship never
+     re-implements any of that; it only decides the set and the bump level.
+
+     The releases run AT THE SAME TIME, one task per repo, and mms-ship waits
+     for all of them. Two rules bound that:
+       • build order still holds. Repos are released in waves by sibling depth,
+         so a library is out before anything that includeBuilds it starts.
+       • two repos that share a sibling never build together. A composite build
+         compiles the included sibling inside the sibling's own directory, so
+         two Gradle processes would write the same build/ at once. Each task
+         holds its own repo and its transitive siblings for its whole run.
+     Each task's output is held and printed as one block when it finishes.
+
+  4. PIN. Once every release is out, repoint the pack metafiles one after the
+     other (`packwiz update <mod>`), then refresh the index once. This part is
+     never parallel: packwiz rewrites index.toml on every update. That is why
+     the releases above run with `mms-release --defer-pack`.
+
+Stages (for mms-deploy, which runs other work between and alongside them):
+  --plan-out FILE  Steps 1-2 and the confirmation prompt only. Writes the plan
+                   to FILE and releases nothing.
+  --run FILE       Step 3 for the plan in FILE. Never prompts and never touches
+                   the pack index, so `packwiz update -a` can run beside it.
+                   Records which releases succeeded back into FILE.
+  --pin FILE       Step 4 for the releases --run recorded. Leaves the final
+                   `packwiz refresh` to the caller.
+With none of these, mms-ship runs all four steps itself and refreshes the index.
 
 Selection:
   • No repo arguments  → auto-select every enabled pack mod that is not IN SYNC.
@@ -72,7 +96,10 @@ import re
 import shutil
 import subprocess
 import sys
+import threading
+import time
 import zipfile
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 PACK_DIR = Path(__file__).resolve().parent
@@ -254,21 +281,102 @@ def plan_repo(manifest, name, prodmap, named, bump_specs, default_bump):
     return row
 
 
-def run_release(row, dry, yes):
-    """Invoke mms-release.sh for a BUMP/RELEASE row. Returns True on success."""
-    cmd = ["bash", str(RELEASE_SH)]
-    if dry:
-        cmd.append("-n")
-    if yes:
-        cmd.append("-y")
+_PRINT = threading.Lock()
+
+
+def release_one(row, dry, locks):
+    """Run mms-release.sh for one BUMP/RELEASE row. Returns True on success.
+
+    Always non-interactive (-y): the plan was confirmed before any task started,
+    and several tasks cannot share one prompt. Output is captured and printed as
+    a single block, so parallel releases do not interleave line by line."""
+    cmd = ["bash", str(RELEASE_SH), "--defer-pack"]
+    cmd.append("-n" if dry else "-y")
     if row["action"] == "BUMP":
         cmd += ["-b", row["bump"]]
     cmd.append(row["name"])
-    print(f"\n──────── {row['name']} ({row['action']}"
-          f"{' ' + row['bump'] if row['bump'] else ''}) ────────")
-    sys.stdout.flush()  # mms-release writes to the tty directly; flush our
-                        # buffered output first so it doesn't print underneath.
-    return subprocess.run(cmd).returncode == 0
+    held = sorted(row["locks"])
+    for name in held:          # one global order, so two tasks cannot deadlock
+        locks[name].acquire()
+    try:
+        with _PRINT:
+            print(f"▶ {row['name']}: started", flush=True)
+        t0 = time.monotonic()
+        proc = subprocess.run(cmd, stdin=subprocess.DEVNULL, text=True,
+                              stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+        took = time.monotonic() - t0
+    finally:
+        for name in reversed(held):
+            locks[name].release()
+    ok = proc.returncode == 0
+    with _PRINT:
+        print(f"\n──────── {row['name']} ({row['action']}"
+              f"{' ' + row['bump'] if row['bump'] else ''}) — "
+              f"{'ok' if ok else 'FAILED'} in {took:.0f}s ────────")
+        print(proc.stdout.rstrip(), flush=True)
+    return ok
+
+
+def run_releases(todo, dry):
+    """Release every row in `todo`, in parallel within each sibling-depth wave.
+    Returns the names that succeeded."""
+    locks = {n: threading.Lock() for r in todo for n in r["locks"]}
+    done: list[str] = []
+    for depth in sorted({r["depth"] for r in todo}):
+        wave = [r for r in todo if r["depth"] == depth]
+        print(f"\n── release wave {depth}: {', '.join(r['name'] for r in wave)} ──",
+              flush=True)
+        with ThreadPoolExecutor(max_workers=len(wave)) as pool:
+            results = list(pool.map(lambda r: release_one(r, dry, locks), wave))
+        for r, ok in zip(wave, results):
+            if ok:
+                done.append(r["name"])
+            else:
+                print(f"!! {r['name']} failed — the rest carry on.",
+                      file=sys.stderr, flush=True)
+    return done
+
+
+def pin_releases(manifest, todo, released) -> bool:
+    """Point the pack at each release in `released`, one at a time. Returns False
+    if any metafile is still behind afterwards."""
+    ok = True
+    for r in todo:
+        if r["name"] not in released:
+            continue
+        pe = R.pack_entry(manifest, r["name"])
+        if pe is None or pe["disabled"]:
+            continue            # released only; nothing enabled in the pack pins it
+        toml = PACK_DIR / "mods" / pe["file"]
+        slug = pe["file"][:-len(".pw.toml")]
+        want = f'tag = "v{r["target"]}"'
+        # The releases API is eventually consistent: a release cut seconds ago
+        # can be missing from the list, so retry until the metafile moves.
+        for attempt in range(5):
+            subprocess.run(["packwiz", "update", slug], cwd=PACK_DIR,
+                           stdin=subprocess.DEVNULL, capture_output=True)
+            if want in toml.read_text():
+                break
+            print(f"   ({r['name']}: release not visible yet, retrying in 5s...)",
+                  flush=True)
+            time.sleep(5)
+        if want in toml.read_text():
+            print(f"pack: {slug} -> v{r['target']}", flush=True)
+        else:
+            ok = False
+            print(f"!! {r['name']}: pack still behind v{r['target']} — re-run "
+                  f"once the release is visible.", file=sys.stderr, flush=True)
+    return ok
+
+
+def load_plan(path):
+    with open(path) as fh:
+        return json.load(fh)
+
+
+def save_plan(path, plan):
+    with open(path, "w") as fh:
+        json.dump(plan, fh)
 
 
 def parse_targets(argv_repos):
@@ -329,9 +437,33 @@ def main(argv=None):
                     help="default bump for repos that need one (default: patch)")
     ap.add_argument("-n", "--dry-run", action="store_true")
     ap.add_argument("-y", "--yes", action="store_true")
+    ap.add_argument("--plan-out", metavar="FILE",
+                    help="plan and confirm only; write the plan to FILE")
+    ap.add_argument("--run", metavar="FILE",
+                    help="release the plan in FILE, in parallel; no pack writes")
+    ap.add_argument("--pin", metavar="FILE",
+                    help="point the pack at the releases --run recorded in FILE")
     args = ap.parse_args(argv)
 
     manifest = R.load_manifest()
+
+    if args.run:
+        plan = load_plan(args.run)
+        todo = plan["todo"]
+        if not todo:
+            return 0
+        plan["released"] = run_releases(todo, plan["dry"])
+        save_plan(args.run, plan)
+        if plan["dry"]:
+            print("\nDry run complete — nothing was released.", flush=True)
+        return 0 if len(plan["released"]) == len(todo) else 1
+
+    if args.pin:
+        plan = load_plan(args.pin)
+        if plan["dry"] or not plan.get("released"):
+            return 0
+        return 0 if pin_releases(manifest, plan["todo"], plan["released"]) else 1
+
     named, bump_specs = parse_targets(args.repos)
     unknown = [n for n in named if n not in manifest["repos"]]
     if unknown:
@@ -378,15 +510,21 @@ def main(argv=None):
         print(f"\nResource packs {verb} into the pack: {', '.join(sorted(set(synced)))}")
 
     todo = [r for r in rows if r["action"] in ("BUMP", "RELEASE")]
+    for r in todo:
+        r["depth"] = R.sibling_depth(manifest, r["name"])
+        r["locks"] = [r["name"], *R.transitive_siblings(manifest, r["name"])]
+    plan = {"dry": args.dry_run, "todo": todo, "released": []}
     if not todo:
         print("\nNothing to release — every named/enabled mod is in sync or "
               "only needs adoption at deploy time.")
+        if args.plan_out:
+            save_plan(args.plan_out, plan)
         return 0
 
     print(f"\n{len(todo)} repo(s) to release: "
           f"{', '.join(r['name'] for r in todo)}")
     if args.dry_run:
-        print("\nDry run — walking mms-release -n for each (nothing is cut):")
+        print("\nDry run — mms-release -n runs for each (nothing is cut).")
     elif not args.yes:
         try:
             reply = input("\nProceed with these releases? [y/N] ")
@@ -396,14 +534,22 @@ def main(argv=None):
             print("Aborted.")
             return 1
 
-    rc = 0
-    for r in todo:
-        if not run_release(r, args.dry_run, args.yes):
-            rc = 1
-            print(f"!! {r['name']} failed — continuing with the rest.",
-                  file=sys.stderr)
+    if args.plan_out:
+        save_plan(args.plan_out, plan)
+        return 0
+
+    released = run_releases(todo, args.dry_run)
     if args.dry_run:
         print("\nDry run complete — nothing was released.")
+        return 0
+    rc = 0 if len(released) == len(todo) else 1
+    if released:
+        print("\n── pinning the pack ──", flush=True)
+        if not pin_releases(manifest, todo, released):
+            rc = 1
+        subprocess.run(["packwiz", "refresh"], cwd=PACK_DIR)
+        subprocess.run([str(PACK_DIR / "update-title.sh")], cwd=PACK_DIR)
+        print("Pack updated (uncommitted — commit when you're ready).")
     return rc
 
 

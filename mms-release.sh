@@ -17,6 +17,12 @@
 #   mms-release -n ...           Dry run: show what would happen
 #   mms-release -y ...           Skip the confirmation prompt
 #   mms-release --no-pack ...    Cut the release only; leave the pack alone
+#   mms-release --defer-pack ... Cut the release, and check it against the pack
+#                                pin as usual, but do not repoint the pack. For
+#                                mms-ship, which runs several releases at once
+#                                and pins them itself afterwards: packwiz
+#                                rewrites index.toml on every update, so two
+#                                releases must not repoint at the same time.
 #
 # This is the standalone half of what mms-deploy does in its "release reconcile"
 # step, for when you want a release without also running packwiz update -a and
@@ -30,6 +36,7 @@ GITHUB_DIR="$HOME/Documents/GitHub"
 DRY=0
 YES=0
 UPDATE_PACK=1
+DEFER_PACK=0
 ALL=0
 BUMP=""
 
@@ -38,6 +45,7 @@ while [[ "${1:-}" == -* ]]; do
         -n) DRY=1 ;;
         -y) YES=1 ;;
         --no-pack) UPDATE_PACK=0 ;;
+        --defer-pack) DEFER_PACK=1 ;;
         --all) ALL=1 ;;
         -b|--bump)
             shift
@@ -234,7 +242,13 @@ if [[ "$DIRTY" != "0" ]]; then
 fi
 echo "  push       $(git -C "$REPO" remote get-url origin 2>/dev/null || echo '(no remote)')"
 echo "  gh release create $TAG"
-[[ $UPDATE_PACK -eq 1 ]] && echo "  pack       $(basename "$TOML"): $PACK_TAG -> $TAG"
+if [[ $UPDATE_PACK -eq 1 ]]; then
+    if [[ $DEFER_PACK -eq 1 ]]; then
+        echo "  pack       $(basename "$TOML"): $PACK_TAG -> $TAG (pinned by the caller afterwards)"
+    else
+        echo "  pack       $(basename "$TOML"): $PACK_TAG -> $TAG"
+    fi
+fi
 
 if [[ $DRY -eq 1 ]]; then
     echo "Dry run — nothing changed."
@@ -257,7 +271,9 @@ fi
 echo "Released $NAME $TAG"
 
 # ── point the pack at it ──
-if [[ $UPDATE_PACK -eq 1 ]]; then
+if [[ $UPDATE_PACK -eq 1 && $DEFER_PACK -eq 1 ]]; then
+    echo "Pack pin deferred: $(basename "$TOML") still at $PACK_TAG."
+elif [[ $UPDATE_PACK -eq 1 ]]; then
     cd "$PACK_DIR"
     slug="$(basename "$TOML" .pw.toml)"
     # The releases API is eventually consistent: a just-created release can be

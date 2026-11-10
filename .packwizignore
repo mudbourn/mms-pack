@@ -66,5 +66,11 @@ config/sodium-fingerprint.json
 config/presencefootsteps/updater.json
 config/etf_warnings.json
 config/isxander-main-menu-credits.json
+# Zero-byte files. The installer cannot fetch an empty file and warns that it
+# failed to find it (rules.txt did this on a member's instance). The mod writes
+# its own empty file on first run, so nothing is lost. Octane is built from
+# main with this same ignore file, so one entry covers both packs. The prod
+# lane warns if a new empty file reaches the index.
+config/essentialcommands/rules.txt
 /octane.list
 /octane/

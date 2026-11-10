@@ -127,48 +127,38 @@ DEVFLAG=""
 PRUNEFLAG=""
 [ "$PRUNE" = "1" ] && PRUNEFLAG="--prune"
 
-# ── release suite (mms-ship) ──
+# ── release suite, stage 1: plan (mms-ship --plan-out) ──
 # Bring every MMS mod's GitHub release up to date with the work in its local
-# repo BEFORE the pack update + server sync: diff each mod against what the
-# lane's server runs, auto-bump repos with unreleased local work, build, and cut
-# the releases. This is what makes `mms-deploy` the one-stop shop for shipping a
-# whole suite of mod updates at once. mms-ship only cuts releases + repoints pack
-# pins; the packwiz update -a and the server sync stay in the lane below (which
-# then adopts what ship just released). It reuses mms-release.sh per repo, so the
-# jar==version / never-walk-backward / pack-pin guards all still apply, and it
-# prompts before cutting anything unless --y was given (then it gets -y).
+# repo BEFORE the server sync: diff each mod against what the lane's server
+# runs and decide which repos need a bump or a release. This is what makes
+# `mms-deploy` the one-stop shop for shipping a whole suite of mod updates.
 #
-# Under --d it runs `mms-ship -n` — a full rehearsal that shows the prod diff and
-# the per-repo release plan without cutting anything. A non-zero exit (a failed
-# or declined release) stops the deploy under `set -e`, before a half-released
-# suite can reach the server.
+# Only the PLAN happens here: the diff table, the resource pack mirror, and the
+# one "Proceed with these releases?" prompt (skipped under --y). The plan goes
+# to a file the lane picks up through MMS_SHIP_PLAN. The lane then runs the
+# releases in parallel, one task per repo, next to its own packwiz work, waits
+# for all of it, and pins the pack once (see "parallel phase" in each lane).
+# Asking here keeps the question at the top, before anything is in flight.
+#
+# Under --d the plan is marked dry, so the lane runs `mms-release -n` per repo
+# and cuts nothing. A non-zero exit (a declined plan) stops the deploy under
+# `set -e`.
 SHIP_SERVER=""
 case "$BRANCH" in
     main)    SHIP_SERVER="$HOME/Documents/GitHub/Server Prod/mods" ;;
     testing) SHIP_SERVER="$HOME/Documents/GitHub/Server Testing/mods" ;;
 esac
 if [ -n "$SHIP_SERVER" ] && [ -x ./mms-ship.py ]; then
-    echo "── release suite (mms-ship, diff vs ${BRANCH} server) ──"
+    echo "── release plan (mms-ship, diff vs ${BRANCH} server) ──"
     SHIPFLAG=""
     [ "$DEV" = "1" ] && SHIPFLAG="-n"
     [ "$DEV" != "1" ] && [ "$YES" = "1" ] && SHIPFLAG="-y"
-    ./mms-ship.py --server "$SHIP_SERVER" $SHIPFLAG
+    export MMS_SHIP_PLAN="$(mktemp -t mms-ship-plan)"
+    ./mms-ship.py --server "$SHIP_SERVER" $SHIPFLAG --plan-out "$MMS_SHIP_PLAN"
 fi
-
-# ── drift pre-flight (informational, never blocks) ──
-# Surface any repo whose source, pack pin, and latest release disagree before we
-# ship. This does NOT reconcile anything — it is the heads-up so you notice, say,
-# a mod you bumped locally but never released, or a release the pack hasn't
-# picked up. Reconcile deliberately with `mms-release <repo>` (or --all).
-if [ -x ./mms-repos.py ]; then
-    # Run once and keep the output, rather than once to test and again to show.
-    if ! DRIFT_OUT="$(./mms-repos.py drift --no-online 2>/dev/null)"; then
-        echo "── heads-up: version drift detected (pack pin vs source) ──"
-        echo "$DRIFT_OUT" | sed 's/^/   /'
-        echo "   (informational only — deploying anyway; run ./mms-repos.py drift for the online view)"
-        echo
-    fi
-fi
+# The drift heads-up that used to print here now prints in the lane, after the
+# releases and the pin. Up here it would list every repo the plan above is
+# about to release.
 
 case "$BRANCH" in
     main)

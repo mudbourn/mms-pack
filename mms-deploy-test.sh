@@ -9,6 +9,8 @@
 #   • push the testing branch      (see below)
 #
 # It DOES:
+#   0. run the mod releases mms-deploy.sh planned, in parallel (one task per
+#      repo), wait for all of them, then pin the pack to each
 #   1. commit pack edits to `testing` locally and refresh the index
 #   2. sync released side=both/server mods into MMSTesting01/mods
 #   3. apply overlay.list dev jars on top, on both the test server and the
@@ -28,6 +30,7 @@
 # `testing` branch instead — it parses flags, picks the lane, and calls this.
 set -e
 cd ~/Documents/GitHub/mms-pack
+source ./mms-deploy-phase.sh
 
 # --dev: rehearse without writing. The prod lane has always had this; the test
 # lane did not, which meant the only way to find out what a staging deploy would
@@ -63,6 +66,22 @@ if [ "$branch" != "testing" ]; then
     echo "!! not on 'testing' branch (on '$branch'). Run: git checkout testing" >&2
     exit 1
 fi
+
+# ── mod releases (parallel), then pin ──
+# One task per repo with unreleased work; this lane has no packwiz update to
+# run beside them, so it only waits. The pins land in the working tree and are
+# committed with the pack edits below. A dry plan releases and pins nothing.
+if [ -n "$MMS_SHIP_PLAN" ] && [ -s "$MMS_SHIP_PLAN" ]; then
+    echo "── mod releases (parallel) ──"
+    ship_start
+    ship_wait
+    ship_pin
+    if [ "$SHIP_RC" -ne 0 ] || [ "$PIN_RC" -ne 0 ]; then
+        echo "!! a mod release or its pack pin failed — see above. Nothing synced." >&2
+        exit 1
+    fi
+fi
+drift_report
 
 # ship pending branch edits, then refresh the index and ship that too
 if [ "$DEV" = "1" ]; then
