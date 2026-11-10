@@ -785,10 +785,6 @@ file = "config/entityculling.json"
 hash = "157a313920c49c525f4b5615d31ee5b8add7bdca7218cfbc76b7a4b6f535981a"
 
 [[files]]
-file = "config/essentialcommands/rules.txt"
-hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-
-[[files]]
 file = "config/expanded_armor_enchanting.json5"
 hash = "32a820384fa7b12325a1a4f9fe6748368ae2cf9edc787721195039dd5363e5ea"
 
@@ -2608,17 +2604,17 @@ metafile = true
 
 [[files]]
 file = "mods/mms-arsenal.pw.toml"
-hash = "bee90bfcb5628bc1cd54f654330be5e7a82510fb37919638981365bf60ebef1f"
+hash = "e4c50a147ce34fb4a52102981e9ddc202ff3ed649b99dfa553696b7fd42b1033"
 metafile = true
 
 [[files]]
 file = "mods/mms-combat.pw.toml"
-hash = "b7f6d4f6c522c5e0249bab08baf628964f5ea0f4d183991c748c99a11d3fa4fe"
+hash = "08d2c4dd62959e5a3b2aeae2235f2c258d4163b918b0e1eed2ca44834c05d43c"
 metafile = true
 
 [[files]]
 file = "mods/mms-economy.pw.toml"
-hash = "e198a178fbc4c82fcdf2b71cceacf5275921faa91adf4e5eafb6e72926f20558"
+hash = "73adf6f4ed179dfab47c9c9cc907e0b907139eb9de2aea5394611fb21cbba44e"
 metafile = true
 
 [[files]]
@@ -2638,7 +2634,7 @@ metafile = true
 
 [[files]]
 file = "mods/mms-mod-compat-support.pw.toml"
-hash = "2f3a682a553335015afdbe2bd7a4f8b15d6ab63b456f0df59e25bf51f937f9e7"
+hash = "9ca4277cb9ca4dd3bd0752ffb5f87ff67a1af56b61a727aed900c57274aa3cf7"
 metafile = true
 
 [[files]]
@@ -2658,7 +2654,7 @@ metafile = true
 
 [[files]]
 file = "mods/mms-weapons.pw.toml"
-hash = "653f728b01ed863ee76e7ffdc03a1c718a773c2e073995004b18e6a53b3eb614"
+hash = "81123bf2209681c921cda92c61de261182a057b38a89ba18e3e8fb9310d5bcb9"
 metafile = true
 
 [[files]]
