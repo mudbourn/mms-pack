@@ -2629,7 +2629,7 @@ metafile = true
 
 [[files]]
 file = "mods/mms-metro.pw.toml"
-hash = "188e9ccb807dfd718e6c4ba1787899d804e2310cfc595a9f5cb6a670c31bf670"
+hash = "10fa0653366fa6408f43361f709b60460a3b2efb7e98dbc5d6f8abaf573431b1"
 metafile = true
 
 [[files]]
