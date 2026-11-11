@@ -2619,7 +2619,7 @@ metafile = true
 
 [[files]]
 file = "mods/mms-ferrite.pw.toml"
-hash = "2055d288efe67003fda5d6425e1d1263d65a403ddcf8b765b05cfbc4175300dc"
+hash = "dfc849788dd15577bb9c9a677ece553c37f6f572c13f1bd3222481bf61740400"
 metafile = true
 
 [[files]]
