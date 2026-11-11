@@ -2619,7 +2619,7 @@ metafile = true
 
 [[files]]
 file = "mods/mms-ferrite.pw.toml"
-hash = "44a5031e6029c8b8df0c90f12d6b35609ca6d34c12bed9074538dd6c2596d3e1"
+hash = "39af48ed766b69a20f0b0f1b90b19e74f33f750617d9bf4433dd95817355eaa5"
 metafile = true
 
 [[files]]
@@ -2654,7 +2654,7 @@ metafile = true
 
 [[files]]
 file = "mods/mms-weapons.pw.toml"
-hash = "22223aed4d55659a7b5627c6f9e0baea2bd5669f55d24a996794a1ff22fc75cd"
+hash = "50c5365b5e412e1d15621016004243bac388136888c69e45789cfa114a8cd818"
 metafile = true
 
 [[files]]
