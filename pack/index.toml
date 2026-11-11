@@ -1354,7 +1354,7 @@ hash = "902b29e5f2044fa0011ac76281c700b52d83f1b5db6b605b8f702c8a99a55a2b"
 
 [[files]]
 file = "config/modpack_defaults/options.txt"
-hash = "33ed7b86841630c9d67eefd73bbb49f1acb9328e7358ad4724d0c3d72bede820"
+hash = "15d2eecc24d575b1826d3322e5b6ca545ccbcb0803dfa5f78d75a77f4440d4eb"
 
 [[files]]
 file = "config/moreculling.toml"
@@ -3172,7 +3172,7 @@ metafile = true
 
 [[files]]
 file = "options.txt"
-hash = "142eb29cca3a1ad50720e716b9bd4f8acaf83b8a2cb5fdb7bc6d127fb5efcadf"
+hash = "bd29e3f8d91452fef793d9c044b345482ecaa99ec5e98be1e8e622442d8fc6e7"
 preserve = true
 
 [[files]]

@@ -259,9 +259,9 @@ key_key.mms_arsenal.reload:key.keyboard.r
 key_key.mms_arsenal.unload:key.keyboard.u
 key_key.mms_arsenal.melee:key.keyboard.z
 key_key.mms_arsenal.inspect:key.keyboard.y
-key_key.mms_economy.open_hub:key.keyboard.unknown
+key_key.mms_economy.open_hub:key.keyboard.semicolon
 key_key.modmenu.open_menu:key.keyboard.unknown
-key_gui.xaero_pac_key_open_menu:key.keyboard.unknown
+key_gui.xaero_pac_key_open_menu:key.keyboard.apostrophe
 key_key.optigui.inspect:key.keyboard.f12
 key_key.origins.primary_active:key.keyboard.g
 key_key.origins.secondary_active:key.keyboard.b
@@ -310,7 +310,7 @@ key_gui.xaero_alternative_list_players:key.keyboard.unknown
 key_gui.xaero_toggle_tracked_players_on_map:key.keyboard.unknown
 key_gui.xaero_toggle_tracked_players_in_world:key.keyboard.unknown
 key_gui.xaero_toggle_pac_chunk_claims:key.keyboard.unknown
-key_gui.xaero_minimap_settings:key.keyboard.unknown
+key_gui.xaero_minimap_settings:key.keyboard.right.bracket
 key_gui.xaero_minimap_server_profiles:key.keyboard.unknown
 key_gui.xaero_open_map:key.keyboard.m
 key_gui.xaero_open_settings:key.keyboard.unknown
@@ -383,4 +383,3 @@ jei_modifiers_key.jei.previousCategory:0
 jei_modifiers_key.jei.nextCategory:0
 jei_modifiers_key.jei.closeRecipeGui:0
 jei_modifiers_key.jei.copy.recipe.id:0
-key_key.mms_settings.open_hub:key.keyboard.semicolon
