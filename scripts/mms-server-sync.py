@@ -73,7 +73,7 @@ args = [a for a in raw_args if not a.startswith('-')]
 
 server_mods = args[0]
 pack_dir = args[1] if len(args) > 1 else os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-mods_dir = os.path.join(pack_dir, 'mods')
+mods_dir = os.path.join(pack_dir, 'pack', 'mods')
 changed = False
 expected = set()   # filenames the pack expects this server to hold
 

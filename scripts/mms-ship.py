@@ -358,7 +358,7 @@ def pin_releases(manifest, todo, released) -> bool:
         pe = R.pack_entry(manifest, r["name"])
         if pe is None or pe["disabled"]:
             continue            # released only; nothing enabled in the pack pins it
-        toml = PACK_DIR / "mods" / pe["file"]
+        toml = PACK_DIR / "pack" / "mods" / pe["file"]
         slug = pe["file"][:-len(".pw.toml")]
         want = f'tag = "v{r["target"]}"'
         # The releases API is eventually consistent: a release cut seconds ago
@@ -410,7 +410,7 @@ def sync_resourcepacks(manifest, dry: bool) -> list[str]:
     deploy's later `packwiz refresh` always indexes the current files.
 
     A mod's pack is authored in that mod's repo (mms-vanity owns lowlands-vanity),
-    but packwiz refreshes from PACK_DIR, so the two drift by hand unless something
+    but packwiz refreshes from PACK_DIR/pack, so the two drift by hand unless something
     copies. Discovery, not a hardcoded list, so a future port that adds its own
     resourcepacks/<pack>/ is picked up with no change here.
 

@@ -61,7 +61,7 @@ from collections import defaultdict
 
 server_mods = sys.argv[1]
 pack_dir = sys.argv[2] if len(sys.argv) > 2 else os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-pack_mods = os.path.join(pack_dir, 'mods')
+pack_mods = os.path.join(pack_dir, 'pack', 'mods')
 
 # Constant-pool markers for the networking stack. The first is the broad net —
 # anything touching the packet path at all. The rest are the specific choke
