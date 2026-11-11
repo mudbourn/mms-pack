@@ -1,0 +1,10 @@
+name = "OPAC UI"
+filename = "opacui-fabric-1.21.11-1.1.0.jar"
+side = "client"
+
+[download]
+url = "https://raw.githubusercontent.com/mudbourn/mms-pack/main/pack/mods/opacui-fabric-1.21.11-1.1.0.jar"
+hash-format = "sha512"
+hash = "6a41bd77eafa90ae2b3fd1e2cd80a9ac301fec6b04db907de6584b043dbfc9d0ecee9835243ed43708eb7b9de05dabc5fbf79866d3d263463af7764d9bbf2c0e"
+
+[update]

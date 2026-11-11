@@ -2763,6 +2763,15 @@ hash = "a03ce206a4e16e1e6613dd53d6a69efa603df5c8aaae96755c3f99c6ddec0ada"
 metafile = true
 
 [[files]]
+file = "mods/opacui-fabric-1.21.11-1.1.0.jar"
+hash = "831994c5d35601ee2e555178230bd003fbd2e2131d4c4dc6e2e1235133927949"
+
+[[files]]
+file = "mods/opacui-fabric.pw.toml"
+hash = "306d78f5dd02602440a4c720ea2be23784be4f933e21f8886cbd209106766db7"
+metafile = true
+
+[[files]]
 file = "mods/open-parties-and-claims.pw.toml"
 hash = "7d2451cd837cb6543f3bf13ef23ddf3d0361a96a60db0780ffc7c5481617feff"
 metafile = true

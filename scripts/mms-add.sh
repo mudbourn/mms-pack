@@ -64,6 +64,11 @@ if [[ -n "$JAR_PATH" ]]; then
 
     HASH="$(shasum -a 512 "$JAR_PATH" | awk '{print $1}')"
 
+    # Clients download bundled jars from the pushed repo, on the branch being edited.
+    BRANCH="$(git -C "$PACK_DIR" branch --show-current)"
+    REL_DEST="${DEST#"$(git -C "$PACK_DIR" rev-parse --show-toplevel)"/}"
+    JAR_URL="https://raw.githubusercontent.com/mudbourn/mms-pack/$BRANCH/$REL_DEST"
+
     if [[ $UPDATE -eq 1 ]]; then
         EXISTING="$(grep -rl "filename = \"$JAR_NAME\"" "$MODS_DIR"/*.pw.toml 2>/dev/null | head -1 || true)"
         if [[ -n "$EXISTING" ]]; then
@@ -83,7 +88,7 @@ filename = "$JAR_NAME"
 side = "both"
 
 [download]
-url = "file://$JAR_PATH"
+url = "$JAR_URL"
 hash-format = "sha512"
 hash = "$HASH"
 
