@@ -1,0 +1,13 @@
+name = "Alex's Caves Continued Delight"
+filename = "accdelight-1.0.0-fabric+1.21.11.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/7sC7Bn8p/versions/FQl21y7Y/accdelight-1.0.0-fabric%2B1.21.11.jar"
+hash-format = "sha512"
+hash = "cab8adb1051403d6a4dc84106907924484b534d9b8acf753a4a441b5c18de9c7edfee0469db5fb9022496fb9bbed884d6935a314884f9878b6e3ce35c48acbe4"
+
+[update]
+[update.modrinth]
+mod-id = "7sC7Bn8p"
+version = "FQl21y7Y"

@@ -1883,6 +1883,16 @@ hash = "dcf6921fca8814bbe25f45f1df89218b8005f2175d64ab98f97d5dc1f616b4e5"
 metafile = true
 
 [[files]]
+file = "mods/alexs-caves-continued-delight.pw.toml"
+hash = "39c033376c095de058d60f6ce9c6381236f8dc32d96972af11e273ab885bddfc"
+metafile = true
+
+[[files]]
+file = "mods/alexs-caves-continued.pw.toml"
+hash = "e0759ea7e92660e7f120129f1da109337edb064beb4c77a842dcf456911c3d79"
+metafile = true
+
+[[files]]
 file = "mods/almanac.pw.toml"
 hash = "03383af39971df22d4581de1a8b6c0e80c6ecfd53b16716b9fc8e52580070753"
 metafile = true
@@ -2090,6 +2100,11 @@ metafile = true
 [[files]]
 file = "mods/cobweb.pw.toml"
 hash = "69a96afb665b11531714611ba692afd5b012a3a463ef695dd555b3f6ba41a1e7"
+metafile = true
+
+[[files]]
+file = "mods/codxlib.pw.toml"
+hash = "07bc047b8ad30bd9004f6d7668698238241eceafee0c2e24fe1b4b42d7b8e0bc"
 metafile = true
 
 [[files]]
