@@ -1,0 +1,15 @@
+name = "mms-settings"
+filename = "mms-settings-0.1.1.jar"
+side = "client"
+
+[download]
+url = "https://github.com/mudbourn/mms-settings/releases/download/v0.1.1/mms-settings-0.1.1.jar"
+hash-format = "sha256"
+hash = "b6ba821ae18b5ccdf1d0af1fae320f99d5a147d482ad6428bb375370f06cbef9"
+
+[update]
+[update.github]
+branch = "main"
+regex = "^.+(?<!-api|-dev|-dev-preshadow|-sources)\\.jar$"
+slug = "mudbourn/mms-settings"
+tag = "v0.1.1"

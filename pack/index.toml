@@ -1354,7 +1354,7 @@ hash = "902b29e5f2044fa0011ac76281c700b52d83f1b5db6b605b8f702c8a99a55a2b"
 
 [[files]]
 file = "config/modpack_defaults/options.txt"
-hash = "15d2eecc24d575b1826d3322e5b6ca545ccbcb0803dfa5f78d75a77f4440d4eb"
+hash = "242001d5c2cdc224d58d94d00aca438fbc5f0734cdd77f92e103c2b11225d8d4"
 
 [[files]]
 file = "config/moreculling.toml"
@@ -2648,6 +2648,11 @@ hash = "60b8310410c3b2b06affda951852a6e041ce1d40fdc2d4abf01fcaa53a98432d"
 metafile = true
 
 [[files]]
+file = "mods/mms-settings.pw.toml"
+hash = "d72a3a956e5edd21f6481a6d5d1c48bffb066bb264451e8e5a4569f32b40c58e"
+metafile = true
+
+[[files]]
 file = "mods/mms-vanity.pw.toml"
 hash = "432056bf340751a04c6329d40cc48a2fd2e9ce47398b371555df0a655a40998d"
 metafile = true
@@ -3172,7 +3177,7 @@ metafile = true
 
 [[files]]
 file = "options.txt"
-hash = "bd29e3f8d91452fef793d9c044b345482ecaa99ec5e98be1e8e622442d8fc6e7"
+hash = "496123027126bde6350071fb93171a8f389e1cad44abb6fbaa9f0a8181b9ffbe"
 preserve = true
 
 [[files]]
