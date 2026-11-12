@@ -1,15 +1,15 @@
 name = "mms-arsenal"
-filename = "mms-arsenal-0.1.11.jar"
+filename = "mms-arsenal-0.1.12.jar"
 side = "both"
 
 [download]
-url = "https://github.com/mudbourn/mms-arsenal/releases/download/v0.1.11/mms-arsenal-0.1.11.jar"
+url = "https://github.com/mudbourn/mms-arsenal/releases/download/v0.1.12/mms-arsenal-0.1.12.jar"
 hash-format = "sha256"
-hash = "a4bf2c77083a359d75ae28bffbf6bb691cf6ef0bc8cb0334215e88f20313be7b"
+hash = "eff8c1dbf6c2306af5ca13160c226ff56adfe6aff9a4736db00ce4c372422120"
 
 [update]
 [update.github]
 branch = "main"
 regex = "^.+(?<!-api|-dev|-dev-preshadow|-sources)\\.jar$"
 slug = "mudbourn/mms-arsenal"
-tag = "v0.1.11"
+tag = "v0.1.12"

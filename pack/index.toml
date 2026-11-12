@@ -1206,7 +1206,7 @@ hash = "37a915e0517429efc2f076d05db6e5953d188712fb01920bc3f3dc47e09247e9"
 
 [[files]]
 file = "config/mms_economy_buylist.json"
-hash = "7ad9dcb99b2d92f7e98e566ac74371fa72cf9d94d48727bbf09bdb99c1d8e44f"
+hash = "72ed53478026eafb1924a95fd521762ab57935286fb42757b235810bdfe3fc2d"
 
 [[files]]
 file = "config/mms_metro.json"
@@ -2619,7 +2619,7 @@ metafile = true
 
 [[files]]
 file = "mods/mms-arsenal.pw.toml"
-hash = "4aa968302ebe42fd0ff578c8014f5601b5ef25a1a6c3bfdb6bad54b02cef881d"
+hash = "b4e7994b72c875c7d8c1cb35078f9e8ec23794d537731da87759fa9e78be5110"
 metafile = true
 
 [[files]]
@@ -2639,7 +2639,7 @@ metafile = true
 
 [[files]]
 file = "mods/mms-jobs.pw.toml"
-hash = "c9f44bd0ce9701c7afd6c4d7f315d8ec483cc2dcd9b233f3f0f495e01779df5d"
+hash = "5228ad38370741dbe2144feb962e2aec0ea418cb031f393696d134ec188feec6"
 metafile = true
 
 [[files]]
@@ -2654,7 +2654,7 @@ metafile = true
 
 [[files]]
 file = "mods/mms-origins.pw.toml"
-hash = "afab3062c3d786aafef3ab6ab6b3ebcd709bd98d1fd647c2230c19fe45226bf2"
+hash = "13a6fe7d9adc44c3c6b77956a53664822b6fed0abb0252545e2d0db946e868e0"
 metafile = true
 
 [[files]]
@@ -2674,7 +2674,7 @@ metafile = true
 
 [[files]]
 file = "mods/mms-weapons.pw.toml"
-hash = "cf1742392ceb924d986c73459159d5b7a2749e5e2349cd1374f68e35c30f9272"
+hash = "371c53d5c0fb598d8034d14c5567fcf177e1d4969c25dd856429dcfaee4c0cdc"
 metafile = true
 
 [[files]]
