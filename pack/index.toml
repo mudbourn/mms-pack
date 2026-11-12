@@ -1182,7 +1182,7 @@ hash = "f479c5217a71746f4edb28a099de309203fcfbcd80049a7f79ce5fa0b861facc"
 
 [[files]]
 file = "config/mms_compat/jobsplus_xp_cooldown.json"
-hash = "ffce51638d7770663a1429edbfcee1409d024bcb25f2112dd99f84b235586cc4"
+hash = "d8418e8a6ba1075cf1bc130176a55fa76a43e8aa3358f2b835945c7f3735dad9"
 
 [[files]]
 file = "config/mms_compat_lean.json"
@@ -1206,7 +1206,7 @@ hash = "37a915e0517429efc2f076d05db6e5953d188712fb01920bc3f3dc47e09247e9"
 
 [[files]]
 file = "config/mms_economy_buylist.json"
-hash = "a14b717566c9a5c834c4b77e8c442b479927325a207398e6d77de49143984eb4"
+hash = "7ad9dcb99b2d92f7e98e566ac74371fa72cf9d94d48727bbf09bdb99c1d8e44f"
 
 [[files]]
 file = "config/mms_metro.json"
@@ -1686,7 +1686,7 @@ hash = "2de1709abaa5b543cecf2b0d04721349abaf7741fc082513f6afbd58a2ccc454"
 
 [[files]]
 file = "config/uselessreptile_mob_attributes.json5"
-hash = "b622260958cf648d8c4b146cdaf26f7f0aff6666de3b8cde7ed7ce3e3c8e2352"
+hash = "65550d38e336b3bacba366c8549043f2fe5d89628607e2568a88f4ff991335a3"
 
 [[files]]
 file = "config/vanilla_structures/placement_structure_config.json5"
@@ -2639,7 +2639,7 @@ metafile = true
 
 [[files]]
 file = "mods/mms-jobs.pw.toml"
-hash = "153b79e7e82ee8d6dd1d291e7282be4fd2e255a41e027faa6e2e8a6280cdc862"
+hash = "c9f44bd0ce9701c7afd6c4d7f315d8ec483cc2dcd9b233f3f0f495e01779df5d"
 metafile = true
 
 [[files]]
@@ -2654,7 +2654,7 @@ metafile = true
 
 [[files]]
 file = "mods/mms-origins.pw.toml"
-hash = "e5cf7f3a2ccada3827f55228e5e760046d88874da6761fa65e5d60ca20ad0f95"
+hash = "afab3062c3d786aafef3ab6ab6b3ebcd709bd98d1fd647c2230c19fe45226bf2"
 metafile = true
 
 [[files]]
@@ -2674,7 +2674,7 @@ metafile = true
 
 [[files]]
 file = "mods/mms-weapons.pw.toml"
-hash = "8119a92443750f12ddfa4f533fe51fb2e43e42e071968b920503b9b895bc728e"
+hash = "cf1742392ceb924d986c73459159d5b7a2749e5e2349cd1374f68e35c30f9272"
 metafile = true
 
 [[files]]
@@ -28161,7 +28161,7 @@ hash = "d50415986dcc6b9f390e817aec1b723fc9e35b380d7e9cc3c2f5d0907efd2687"
 
 [[files]]
 file = "resourcepacks/jobsplus_renames/assets/jobsplus/lang/en_us.json"
-hash = "e76116d282f056436916a6bf43f3b2551600f0471c8e847ca4eda53aaef5fc78"
+hash = "fb353d31e73cbfb02c26917ce9a9650d092ce59a07aeaa5a0f9cb5aa31dab324"
 
 [[files]]
 file = "resourcepacks/jobsplus_renames/pack.mcmeta"
