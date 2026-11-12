@@ -1,6 +1,6 @@
 name = "CodxLib"
 filename = "codxlib-1.6.1-fabric+1.21.11.jar"
-side = "server"
+side = "both"
 
 [download]
 url = "https://cdn.modrinth.com/data/6oyMM4yX/versions/Gs8yqEvq/codxlib-1.6.1-fabric%2B1.21.11.jar"
