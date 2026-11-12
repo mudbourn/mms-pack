@@ -1,15 +1,15 @@
 name = "mms-origins"
-filename = "mms-origins-1.1.49.jar"
+filename = "mms-origins-1.1.50.jar"
 side = "both"
 
 [download]
-url = "https://github.com/mudbourn/mms-origins/releases/download/v1.1.49/mms-origins-1.1.49.jar"
+url = "https://github.com/mudbourn/mms-origins/releases/download/v1.1.50/mms-origins-1.1.50.jar"
 hash-format = "sha256"
-hash = "95548f8a19be3721e4760986d6e77be87ec186931414c7610b3ddc4553b07805"
+hash = "0d4d1412928763daf7db70ca310ddab67a05fdcd3c70496404f39ddd07e1707b"
 
 [update]
 [update.github]
 branch = "main"
 regex = "^.+(?<!-api|-dev|-dev-preshadow|-sources)\\.jar$"
 slug = "mudbourn/mms-origins"
-tag = "v1.1.49"
+tag = "v1.1.50"

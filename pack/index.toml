@@ -2654,7 +2654,7 @@ metafile = true
 
 [[files]]
 file = "mods/mms-origins.pw.toml"
-hash = "5540a4bb1000aba1338f9b8aad34c60fb781857382ef8b250813b0cd7cbdbe85"
+hash = "43b4d947e8cb3a7bb9232099dbaff6ffa5be4fe39508229cd9bf918961f19230"
 metafile = true
 
 [[files]]
