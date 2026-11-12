@@ -278,5 +278,9 @@
   "enderscape:nebulite": {
     "sell": 2000,
     "category": "valuable"
+  },
+  "mms_jobs:respec_badge": {
+    "sell": 1000,
+    "category": "unobtainable"
   }
 }

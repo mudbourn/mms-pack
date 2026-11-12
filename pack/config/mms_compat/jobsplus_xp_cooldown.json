@@ -3,9 +3,7 @@
   "easyCooldownTicks": 80,
   "hardCooldownTicks": 40,
   "easyActionTypes": [
-    "arc:on_crouch",
     "arc:on_interact_entity",
-    "arc:on_place_block",
     "arc:on_plant_crop",
     "arc:on_strip_log",
     "arc:on_swim",
@@ -33,6 +31,7 @@
     "jobsplus:hunter"
   ],
   "meleeJobs": [
+    "jobsplus:rogue",
     "jobsplus:warrior"
   ],
   "meleeProjectiles": [],
