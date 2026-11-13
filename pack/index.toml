@@ -410,7 +410,7 @@ hash = "ad5c9561f61e721e0b270b8572966b9d21607510d21cbebdabc521f5d4c51be4"
 
 [[files]]
 file = "config/bettercombat/fallback_compatibility.json"
-hash = "df745efd3c07d1ceda02fcb17ec04198f9f9cbe0cba5fb2bba512130c31cdb5a"
+hash = "993f92d659840a24cd8e8996edc278675039fa2d10e2a8d8bc1d224c15c2460e"
 
 [[files]]
 file = "config/bettercombat/server.json5"
