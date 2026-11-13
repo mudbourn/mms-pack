@@ -1,15 +1,15 @@
 name = "mms-jobs"
-filename = "mms-jobs-0.2.11.jar"
+filename = "mms-jobs-0.2.12.jar"
 side = "both"
 
 [download]
-url = "https://github.com/mudbourn/mms-jobs/releases/download/v0.2.11/mms-jobs-0.2.11.jar"
+url = "https://github.com/mudbourn/mms-jobs/releases/download/v0.2.12/mms-jobs-0.2.12.jar"
 hash-format = "sha256"
-hash = "1eb99efb167b9bed2c696e12a2d99cf9a4bb34c46ce3fd99f1ca51d0c2760853"
+hash = "237b621e2e888b27f1b6dd90a1f1915a193d2bb549e92865a239b202163a98ed"
 
 [update]
 [update.github]
 branch = "main"
 regex = "^.+(?<!-api|-dev|-dev-preshadow|-sources)\\.jar$"
 slug = "mudbourn/mms-jobs"
-tag = "v0.2.11"
+tag = "v0.2.12"
