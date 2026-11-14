@@ -1,0 +1,12 @@
+{
+  "pack": {
+    "pack_format": 81,
+    "description": "MMS: keep Alex's Caves out of the world while it is embargoed",
+    "supported_formats": [
+      81,
+      99
+    ],
+    "min_format": 81,
+    "max_format": 99
+  }
+}

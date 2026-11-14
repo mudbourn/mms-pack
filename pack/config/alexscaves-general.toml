@@ -1,0 +1,55 @@
+[generation]
+	cave_biome_mean_width = 300.0
+	cave_biome_mean_separation = 900
+	cave_biome_width_randomness = 0.15
+	cave_biome_spacing_randomness = 0.45
+	warn_generation_incompatibility = true
+
+[mob-spawning]
+	cave_creature_spawn_count_modifier = 1.75
+	drowned_diving_gear_spawn_chance = 0.0
+
+[mob-behavior]
+	pathfinding_threads = 5
+	luxtructosaurus_block_drop_chance = 0.75
+	atlatitan_max_block_explosion_resistance = 10
+	nucleeper_fuse_time = 300
+	mobs_can_target_themselves = false
+	devastating_tremorzilla_beam = true
+	tremorzilla_beam_breaks_blocks = true
+	watcher_possession = true
+	watcher_possession_cooldown = 300
+
+[block-behavior]
+	walking_on_magnets = true
+	amber_monolith_mean_time = 32000
+	nuclear_furnace_blasting_only = true
+	nuclear_furnace_custom_type = false
+
+[item-behavior]
+	only_one_research_needed = false
+	cave_map_search_attempts = 128000
+	cave_map_search_width = 64
+	nuke_max_block_explosion_resistance = 1000
+	nuke_spawn_item_drops = true
+	nuclear_explosion_size_modifier = 3.0
+	totem_of_possession_works_on_players = true
+	darkness_cloak_charge_time = 1000
+	darkness_cloak_fly_time = 200
+
+[potion-behavior]
+	sugar_rush_slows_time = true
+
+[vanilla-changes]
+	magnetic_tablet_loot_chance = 0.0
+	primordial_tablet_loot_chance = 0.0
+	toxic_tablet_loot_chance = 0.0
+	abyssal_tablet_loot_chance = 0.0
+	forlorn_tablet_loot_chance = 0.0
+	candy_cavity_loot_chance = 0.0
+	cabin_map_loot_chance = 0.0
+	cartographers_sell_cabin_maps = false
+	wandering_traders_sell_cabin_maps = false
+	loot_chest_in_witch_huts = false
+	enchantments_in_loot = false
+	enchantment_loot_chance = 0.5
