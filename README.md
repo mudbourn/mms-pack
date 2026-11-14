@@ -61,8 +61,13 @@ Download from **https://prismlauncher.org/download/** and sign in with your Micr
 > I've tested with a maximum of both **4096** and **2048** on separate occasions and both work well.
 > Tick **Java Arguments** and paste:
 > ```
-> -XX:+UseG1GC -XX:MaxGCPauseMillis=50 -XX:+UseStringDeduplication -XX:+PerfDisableSharedMem -XX:+DisableExplicitGC -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=heapdumps
+> -XX:+UseG1GC -XX:+UnlockExperimentalVMOptions -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=37 -XX:G1NewSizePercent=23 -XX:G1MaxNewSizePercent=50 -XX:G1HeapRegionSize=16M -XX:G1ReservePercent=20 -XX:G1MixedGCCountTarget=3 -XX:InitiatingHeapOccupancyPercent=20 -XX:G1RSetUpdatingPauseTimePercent=0 -XX:SurvivorRatio=32 -XX:MaxTenuringThreshold=1 -XX:G1SATBBufferEnqueueingThresholdPercent=30 -XX:G1ConcMarkStepDurationMillis=5 -XX:+UseStringDeduplication -XX:+PerfDisableSharedMem -XX:+DisableExplicitGC -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=heapdumps
 > ```
+>
+> **Adding shaders or Distant Horizons?** Neither ships with the pack, but both work with it.
+> Distant Horizons needs more memory: set **Maximum** to about **6144**, and only if your PC has 16 GB of RAM or more.
+> Shaders mostly use your GPU, not the Java memory above, so leave some RAM free for them.
+> Keep the Java Arguments above. Distant Horizons may suggest switching away from G1, but ignore that: ZGC has crashed the game with this pack.
 ![alt text](https://save.mudbourn.info/s/FXq8yKqbQCJKJab/download "Graph")
 
 ### 5. Launch
