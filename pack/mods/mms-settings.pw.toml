@@ -1,15 +1,15 @@
 name = "mms-settings"
-filename = "mms-settings-0.1.4.jar"
+filename = "mms-settings-0.1.5.jar"
 side = "client"
 
 [download]
-url = "https://github.com/mudbourn/mms-settings/releases/download/v0.1.4/mms-settings-0.1.4.jar"
+url = "https://github.com/mudbourn/mms-settings/releases/download/v0.1.5/mms-settings-0.1.5.jar"
 hash-format = "sha256"
-hash = "76a1d0bd1b0d20d1952c11893031c7610374e5b58cd7a9165c231c8f06dbe603"
+hash = "adb0cc4e8fb109c5df077d232c35fe0e3e6ac2b89ac4241e446a6d6e432e7cec"
 
 [update]
 [update.github]
 branch = "main"
 regex = "^.+(?<!-api|-dev|-dev-preshadow|-sources)\\.jar$"
 slug = "mudbourn/mms-settings"
-tag = "v0.1.4"
+tag = "v0.1.5"
