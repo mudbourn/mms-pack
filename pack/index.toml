@@ -2112,6 +2112,11 @@ hash = "4948b12e35cebda89f250ca3cdee8a7649887fa9e6fecfe5f706d50f5df55ad1"
 metafile = true
 
 [[files]]
+file = "mods/clientsort.pw.toml"
+hash = "419845064317ff1ab67e35eff2ec42b970e0de06c4a312de21a4472da7ecca1a"
+metafile = true
+
+[[files]]
 file = "mods/cloth-config.pw.toml"
 hash = "a06ef129798265e0d7249426fb0ed5c506725b0460dc3dfdb975b8978480895e"
 metafile = true
@@ -2279,6 +2284,11 @@ metafile = true
 [[files]]
 file = "mods/easy-craft-chainmail-armor.pw.toml"
 hash = "7cd9637c5324674d6b7995310236cd102a40cf6413754134eaf7a12220839641"
+metafile = true
+
+[[files]]
+file = "mods/easy-shulker-boxes.pw.toml"
+hash = "08c9613a4fa61f4d22c3f1a04f3503fb2bb6a34d3b1bce43a275719dcd6a0efc"
 metafile = true
 
 [[files]]
@@ -2717,6 +2727,11 @@ hash = "db026db2e6fb5b7f395646f39ccd40ed9b2937bf43e531335e103fcdae3b896c"
 metafile = true
 
 [[files]]
+file = "mods/modifier-keybinds.pw.toml"
+hash = "6c6f71a7a5f4848f499717e1a83aa98ed62429c3a5b11004defc9024682cd037"
+metafile = true
+
+[[files]]
 file = "mods/modmenu.pw.toml"
 hash = "85b7612aaf49e6c2eac33697e6d909f2e94adadc50d0bc706d9a552a0ac95d51"
 metafile = true
@@ -2734,6 +2749,11 @@ metafile = true
 [[files]]
 file = "mods/moreculling.pw.toml"
 hash = "e4b9192ce7f54715dde7eb682ebab23aaaac10658b1bd08ba553a5f99b0124d1"
+metafile = true
+
+[[files]]
+file = "mods/mouse-tweaks.pw.toml"
+hash = "44f00c1a0e3d4f8717e805c30c862a597e7856472e72637800fd1a38d73fbd08"
 metafile = true
 
 [[files]]

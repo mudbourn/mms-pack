@@ -1,0 +1,13 @@
+name = "Modifier Keybinds"
+filename = "modifier_keybinds-fabric-1.1.0+1.21.11.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/fUIcgq6j/versions/IqSrKyuJ/modifier_keybinds-fabric-1.1.0%2B1.21.11.jar"
+hash-format = "sha512"
+hash = "56ebd2eeb267d204e1b71fe8b02f8571fb98389f8a803c87c7f2984da7aeb0ce65d9b48c1aafcfb57e3f102f1ec57265cc295ad5a1acc3938b9926650a9f6299"
+
+[update]
+[update.modrinth]
+mod-id = "fUIcgq6j"
+version = "IqSrKyuJ"
