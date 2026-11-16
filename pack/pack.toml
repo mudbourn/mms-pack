@@ -1,4 +1,4 @@
-name = "MMS Live"
+name = "MMS Live Octane"
 author = "eli3"
 version = "2.6.0"
 pack-format = "packwiz:1.1.0"
@@ -6,7 +6,7 @@ pack-format = "packwiz:1.1.0"
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "10c5c33b5c5ded2ad808570bf6125fe6259668be29d0d7cc974b92ce828ccec0"
+hash = "29cb5be4c1ff5c9774d93715074c0e3db20610b2f5f6c28444a5b3ea292b2121"
 
 [versions]
 fabric = "0.20.1"

@@ -1,11 +1,11 @@
 version:4671
 ao:true
-biomeBlendRadius:2
+biomeBlendRadius:0
 chunkSectionFadeInTime:0.0
 cutoutLeaves:true
 enableVsync:true
 entityDistanceScaling:0.5
-entityShadows:true
+entityShadows:false
 forceUnicodeFont:false
 japaneseGlyphVariants:false
 fov:0.375
@@ -21,16 +21,16 @@ guiScale:2
 maxAnisotropyBit:1
 textureFiltering:2
 maxFps:90
-improvedTransparency:true
+improvedTransparency:false
 inactivityFpsLimit:"afk"
-mipmapLevels:1
+mipmapLevels:0
 narrator:0
-particles:1
+particles:2
 reducedDebugInfo:false
 renderClouds:"false"
 cloudRange:64
-renderDistance:14
-simulationDistance:12
+renderDistance:8
+simulationDistance:6
 screenEffectScale:1.0
 soundDevice:""
 vignette:true
@@ -63,7 +63,7 @@ damageTiltStrength:1.0
 highContrast:false
 highContrastBlockOutline:false
 narratorHotkey:true
-resourcePacks:["vanilla","file/SodiumTranslations","file/Mod Menu Helper","controlify:legacy_console","file/Chat Reporting Helper","continuity:glass_pane_culling_fix","file/Better-Leaves-9.5","file/jobsplus_renames","file/lowlands-vanity","mms_combat:weapon_models","file/Semos Animations Lib 2.0.3","file/DetailedAnimationsV0.19","file/toheee1234\u0027s Better Combat Animations"]
+resourcePacks:["vanilla","file/SodiumTranslations","file/Mod Menu Helper","controlify:legacy_console","file/Chat Reporting Helper","continuity:glass_pane_culling_fix","file/jobsplus_renames","file/lowlands-vanity","mms_combat:weapon_models"]
 incompatibleResourcePacks:[]
 lastServer:
 lang:en_us
@@ -102,7 +102,7 @@ saveChatDrafts:true
 panoramaScrollSpeed:1.0
 telemetryOptInExtra:false
 onboardAccessibility:false
-menuBackgroundBlurriness:5
+menuBackgroundBlurriness:0
 startedCleanly:true
 musicToast:"pause_and_toast"
 musicFrequency:"FREQUENT"
