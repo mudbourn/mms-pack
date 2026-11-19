@@ -187,7 +187,7 @@ key_axiom.keybind.nudge_with_scroll:key.keyboard.unknown
 key_axiom.keybind.nudge_forwards:key.keyboard.unknown
 key_axiom.keybind.nudge_backwards:key.keyboard.unknown
 key_key.fabrishot.screenshot:key.keyboard.f9
-key_keybinds.give_up:key.keyboard.e
+key_keybinds.give_up:key.keyboard.backspace
 key_net.clayborn.accurateblockplacement.togglevanillaplacement:key.keyboard.unknown
 key_net.clayborn.accurateblockplacement.togglefastbreaking:key.keyboard.unknown
 key_keybinds.bettercombat.feint:key.keyboard.unknown
@@ -209,7 +209,6 @@ key_key.inspectanimations.play_toss:key.keyboard.unknown
 key_key.inspectanimations.play_flip:key.keyboard.unknown
 key_key.inspectanimations.play_flourish:key.keyboard.unknown
 key_key.inspectanimations.play_random:key.keyboard.unknown
-key_key.jeg.reload:key.keyboard.r
 key_key.jei.toggleOverlay:key.keyboard.unknown
 key_key.jei.focusSearch:key.keyboard.unknown
 key_key.jei.previousPage:key.keyboard.unknown
@@ -280,7 +279,7 @@ key_key.uselessreptile.secondaryAttackKey:key.keyboard.2
 key_key.uselessreptile.freeLookKey:key.keyboard.unknown
 key_key.push_to_talk:key.keyboard.t
 key_key.whisper:key.keyboard.unknown
-key_key.mute_microphone:key.keyboard.y
+key_key.mute_microphone:key.keyboard.unknown
 key_key.disable_voice_chat:key.keyboard.unknown
 key_key.hide_icons:key.keyboard.unknown
 key_key.voice_chat:key.keyboard.left.bracket
@@ -292,7 +291,7 @@ key_key.weaponsexpanded.toggle_bastard_sword_mode:key.keyboard.unknown
 key_gui.xaero_zoom_in:key.keyboard.unknown
 key_gui.xaero_zoom_out:key.keyboard.unknown
 key_gui.xaero_new_waypoint:key.keyboard.unknown
-key_gui.xaero_waypoints_key:key.keyboard.u
+key_gui.xaero_waypoints_key:key.keyboard.unknown
 key_gui.xaero_enlarge_map:key.keyboard.tab
 key_gui.xaero_toggle_map:key.keyboard.unknown
 key_gui.xaero_toggle_waypoints:key.keyboard.unknown
@@ -385,3 +384,8 @@ jei_modifiers_key.jei.closeRecipeGui:0
 jei_modifiers_key.jei.copy.recipe.id:0
 key_key.opacui.open_party_screen:key.keyboard.unknown
 key_key.mms_settings.open_hub:key.keyboard.semicolon
+key_key.dungeonconfig.open:key.keyboard.unknown
+key_key.mms_tweaks.self_revive:key.keyboard.r
+key_key.special_ability:key.keyboard.n
+key_key.clientsort.op.sort:key.mouse.middle
+key_key.mms_compat.spell_hotbar_toggle:key.keyboard.left.alt
